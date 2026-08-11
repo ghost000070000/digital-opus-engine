@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital Opus Engine - Browser Smoke Test</title>
+<style>
+  :root { color-scheme: dark; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+  body { margin: 0; padding: 24px; background: #0a0e1a; color: #e8edf7; }
+  canvas { width: 320px; height: 180px; display: block; border: 1px solid #3d4b68; }
+  #status { margin: 16px 0 8px; font-weight: 700; }
+  #status.pass { color: #63d69b; }
+  #status.fail { color: #ff7b86; }
+  ol { padding-left: 24px; line-height: 1.7; }
+  li.pass { color: #9ce6bd; }
+  li.fail { color: #ff9da5; }
+</style>
+</head>
+<body>
+<h1>Browser Smoke Test</h1>
+<canvas id="game"></canvas>
+<div id="status">Running...</div>
+<ol id="results"></ol>
+<script src="../dist/opus-engine.js"></script>
+<script>
+(async () => {
+  const status = document.getElementById('status');
+  const results = document.getElementById('results');
+  const report = [];
+  window.__OPUS_SMOKE__ = { state: 'running', report };
+
+  function assert(condition, message) {
+    if (!condition) throw new Error(message);
+  }
+
+  async function test(name, fn) {
+    const row = document.createElement('li');
+    try {
+      await fn();
+      row.className = 'pass';
+      row.textContent = `PASS - ${name}`;
+      report.push({ name, passed: true });
+    } catch (error) {
+      row.className = 'fail';
+      row.textContent = `FAIL - ${name}: ${error.message}`;
+      report.push({ name, passed: false, error: error.message });
+    }
+    results.appendChild(row);
+  }
+
+  function frames(count = 1) {
+    return new Promise((resolve) => {
+      function next() {
+        if (--count <= 0) resolve();
+        else requestAnimationFrame(next);
+      }
+      requestAnimationFrame(next);
+    });
+  }
+
+  let app;
+  let entity;
+  let updates = 0;
+  let pauseStates = [];
+
+  await test('WebGL2 context is available', () => {
+    const probe = document.createElement('canvas').getContext('webgl2');
+    assert(probe, 'WebGL2 unavailable');
+  });
+
+  await test('App creates and renders through the public API', async () => {
+    const suffix = `${Date.now()}:${Math.random()}`;
+    app = Opus.create(document.getElementById('game'), {
+      hud: false,
+      settingsNamespace: `opus:smoke:settings:${suffix}`,
+      saveNamespace: `opus:smoke:save:${suffix}`,
+    });
+    entity = app.addEntity({
+      mesh: Opus.Mesh.cube(),
+      color: [0.25, 0.7, 1],
+      position: new Opus.Vec3(),
+    });
+    entity.spin = 2;
+    app.onUpdate(() => updates++);
+    app.onPauseChange((paused) => pauseStates.push(paused));
+    await frames(4);
+    assert(updates > 0, 'update callback did not run');
+    assert(entity.rotationY > 0, 'entity did not update');
+    assert(document.getElementById('game').width > 0, 'drawing buffer was not sized');
+  });
+
+  await test('Pause freezes simulation and resume restarts it', async () => {
+    app.pause();
+    const pausedUpdates = updates;
+    const pausedRotation = entity.rotationY;
+    await frames(3);
+    assert(updates === pausedUpdates, 'updates advanced while paused');
+    assert(entity.rotationY === pausedRotation, 'entity advanced while paused');
+    app.resume();
+    await frames(3);
+    assert(updates > pausedUpdates, 'updates did not resume');
+    assert(pauseStates.join(',') === 'true,false', 'pause callbacks were not ordered');
+  });
+
+  await test('Scene removal destroys owned entities', () => {
+    assert(app.scene.remove(entity), 'scene did not remove entity');
+    assert(entity.destroyed && !entity.visible, 'removed entity was not destroyed');
+    assert(app.scene.entities.length === 0, 'scene retained removed entity');
+  });
+
+  await test('App destruction is idempotent and terminal', () => {
+    app.destroy();
+    app.destroy();
+    assert(app.destroyed, 'App did not enter destroyed state');
+    assert(app.scene.entities.length === 0, 'App retained scene entities');
+    let threw = false;
+    try { app.start(); } catch (error) { threw = /not destroyed/.test(error.message); }
+    assert(threw, 'post-destroy start did not report a lifecycle error');
+  });
+
+  if (app && !app.destroyed) app.destroy();
+  const failed = report.filter((item) => !item.passed).length;
+  const passed = report.length - failed;
+  status.className = failed ? 'fail' : 'pass';
+  status.textContent = `${passed} passed, ${failed} failed`;
+  window.__OPUS_SMOKE__.state = failed ? 'failed' : 'passed';
+  document.title = `Opus smoke: ${passed} passed, ${failed} failed`;
+})().catch((error) => {
+  document.getElementById('status').className = 'fail';
+  document.getElementById('status').textContent = `Harness failed: ${error.message}`;
+  window.__OPUS_SMOKE__ = { state: 'failed', report: [], error: error.message };
+});
+</script>
+</body>
+</html>

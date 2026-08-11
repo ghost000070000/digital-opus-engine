@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example 05 — Mini-Game (Digital Opus Engine)</title>
+<style>
+  html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #0a0e1a; }
+  #game { width: 100%; height: 100%; display: block; }
+</style>
+</head>
+<body>
+<canvas id="game"></canvas>
+<script src="../dist/opus-engine.js"></script>
+<script>
+/**
+ * Example 05: Complete Orb-Collector Mini-Game in under 150 lines.
+ * Objective: Drive around with WASD/Arrows to collect 3 floating orbs and reach the win screen.
+ */
+const canvas = document.getElementById('game');
+const app = Opus.create(canvas);
+
+// 1. Setup scene geometry, island terrain, and ocean
+const terrain = app.createTerrain({ size: 18, segments: 40, seed: 5, radius: 7.5, waterLevel: -1.6 });
+const water = app.createWater({ size: 28, segments: 40, position: new Opus.Vec3(0, -1.6, 0) });
+const cube = Opus.Mesh.cube();
+
+// 2. Player entity & chase camera
+const player = app.addEntity({ mesh: cube, color: [0.2, 0.6, 0.9], position: new Opus.Vec3(0, 0, 0), scale: new Opus.Vec3(0.8, 0.4, 1.2) });
+app.camera.setTarget(player);
+app.camera.setMode('chase');
+
+// 3. Orbs data & triggers
+// A short straight teaching path keeps this example focused on triggers/state.
+const ORB_POSITIONS = [new Opus.Vec3(0, 0, 2), new Opus.Vec3(0, 0, 4), new Opus.Vec3(0, 0, 6)];
+const orbs = [];
+const triggers = [];
+let collectedCount = 0;
+const counter = app.hud && app.hud.addCounter({
+  text: 'Orbs: 0/3',
+  style: { top: '52px', left: '14px', font: 'bold 16px system-ui', color: '#fbbf24' },
+});
+
+ORB_POSITIONS.forEach((pos, i) => {
+  const groundY = Opus.Terrain.sampleHeight(pos.x, pos.z, { size: 18, seed: 5, radius: 7.5 });
+  const orbPos = new Opus.Vec3(pos.x, Math.max(groundY, -1.6) + 0.5, pos.z);
+  const orb = app.addEntity({ mesh: cube, color: [0.95, 0.8, 0.2], position: orbPos, scale: new Opus.Vec3(0.5, 0.5, 0.5) });
+  orb.spin = 1.0;
+  orbs.push({ entity: orb, basePos: orbPos, collected: false });
+
+  triggers.push(new Opus.Physics.TriggerVolume({
+    center: orbPos, radius: 1.5,
+    onEnter: () => {
+      if (orb.collected) return;
+      orb.collected = true;
+      orb.scale.set(0, 0, 0);
+      collectedCount++;
+      counter && counter.update(`Orbs: ${collectedCount}/3`);
+      app.audio.playPickup();
+      app.hud && app.hud.showStatus(`Orbs: ${collectedCount}/3`);
+      if (collectedCount === 3) win();
+    },
+  }));
+});
+
+// 4. Game state & lifecycle
+let velocity = new Opus.Vec3(0, 0, 0);
+let playing = false;
+
+function start() {
+  app.audio.resume();
+  playing = true;
+  collectedCount = 0;
+  player.position.set(0, 0, 0);
+  player.rotationY = 0;
+  velocity.set(0, 0, 0);
+  counter && counter.update('Orbs: 0/3');
+  orbs.forEach(o => { o.collected = false; o.entity.scale.set(0.5, 0.5, 0.5); });
+  app.hud && app.hud.showControlsOverlay({ duration: 3.0 });
+  app.hud && app.hud.showStatus('Collect all 3 orbs!');
+}
+
+function win() {
+  playing = false;
+  app.audio.playWin();
+  app.hud && app.hud.showWinModal({ timeText: 'Complete!', onRestart: () => start() });
+}
+
+app.hud && app.hud.showTitleCard({ title: 'ORB COLLECTOR DEMO', subtitle: 'Collect 3 glowing orbs on the island', buttonText: 'START GAME', onStart: () => start() });
+
+// 5. Physics & Driving Loop
+app.onUpdate((dt, elapsed) => {
+  if (!playing) return;
+  const previousPosition = player.position.clone();
+  const input = app.input;
+  if (input.isDown('KeyA') || input.isDown('ArrowLeft')) player.rotationY += 2.2 * dt;
+  if (input.isDown('KeyD') || input.isDown('ArrowRight')) player.rotationY -= 2.2 * dt;
+
+  let accel = 0;
+  if (input.isDown('KeyW') || input.isDown('ArrowUp')) accel += 12.0;
+  if (input.isDown('KeyS') || input.isDown('ArrowDown')) accel -= 6.0;
+
+  const dir = new Opus.Vec3(Math.sin(player.rotationY), 0, Math.cos(player.rotationY));
+  velocity = velocity.add(dir.scale(accel * dt)).scale(Math.max(0, 1.0 - 2.5 * dt));
+  if (input.wasPressed('KeyW') || input.wasPressed('ArrowUp')) velocity = velocity.add(dir.scale(1.4));
+  player.position = player.position.add(velocity.scale(dt));
+
+  // Surface height & collision
+  const groundY = Opus.Terrain.sampleHeight(player.position.x, player.position.z, { size: 18, seed: 5, radius: 7.5 });
+  player.position.y = Math.max(groundY, -1.6) + 0.35;
+
+  const res = Opus.Physics.resolveTerrainCollision(player.position, velocity, 0.5, { size: 18, seed: 5, radius: 7.5 });
+  player.position = res.correctedPosition;
+  velocity = res.correctedVelocity;
+
+  // Animate orbs & check triggers
+  orbs.forEach((o, i) => { if (!o.collected) o.entity.position.y = o.basePos.y + Math.sin(elapsed * 3 + i) * 0.15; });
+  triggers.forEach(t => t.update(player.position, previousPosition));
+});
+</script>
+</body>
+</html>

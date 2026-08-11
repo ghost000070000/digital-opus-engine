@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example 02 — Terrain & Water (Digital Opus Engine)</title>
+<style>
+  html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #0a0e1a; }
+  #game { width: 100%; height: 100%; display: block; }
+</style>
+</head>
+<body>
+<canvas id="game"></canvas>
+<script src="../dist/opus-engine.js"></script>
+<script>
+/**
+ * Example 02: Terrain & Water
+ * Demonstrates generating a procedural island heightfield and animated sum-of-sines ocean.
+ */
+const canvas = document.getElementById('game');
+const app = Opus.create(canvas);
+
+const WATER_LEVEL = -1.6;
+
+// Create procedural island terrain heightfield with height/slope vertex coloring
+const terrain = app.createTerrain({
+  size: 24,
+  segments: 56,
+  seed: 12,
+  radius: 9.5,
+  amplitude: 1.8,
+  waterLevel: WATER_LEVEL,
+});
+
+// Create animated water plane with analytic wave displacement and fresnel shading
+const water = app.createWater({
+  size: 36,
+  segments: 56,
+  position: new Opus.Vec3(0, WATER_LEVEL, 0),
+});
+</script>
+</body>
+</html>

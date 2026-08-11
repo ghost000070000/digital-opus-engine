@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example 03 — Physics (Digital Opus Engine)</title>
+<style>
+  html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #0a0e1a; }
+  #game { width: 100%; height: 100%; display: block; }
+</style>
+</head>
+<body>
+<canvas id="game"></canvas>
+<script src="../dist/opus-engine.js"></script>
+<script>
+/**
+ * Example 03: Physics (Buoyancy, Raycast Picking, and Trigger Volumes)
+ * Demonstrates CPU wave height sampling for floating objects, clicking to raycast pick objects,
+ * and proximity trigger volumes.
+ */
+const canvas = document.getElementById('game');
+const app = Opus.create(canvas);
+
+const WATER_LEVEL = -1.6;
+const water = app.createWater({
+  size: 30,
+  segments: 48,
+  position: new Opus.Vec3(0, WATER_LEVEL, 0),
+});
+
+// Create a buoyant object (floating buoy)
+const cube = Opus.Mesh.cube();
+const buoy = app.addEntity({
+  mesh: cube,
+  color: [0.95, 0.5, 0.2],
+  position: new Opus.Vec3(2, WATER_LEVEL, 2),
+  scale: new Opus.Vec3(0.6, 0.6, 0.6),
+});
+
+// Trigger volume around center
+const trigger = new Opus.Physics.TriggerVolume({
+  center: new Opus.Vec3(0, 0, 0),
+  radius: 4.0,
+  onEnter: () => app.hud && app.hud.showStatus('Entered center zone!'),
+  onExit: () => app.hud && app.hud.showStatus('Left center zone!'),
+});
+
+app.onUpdate((dt, elapsed) => {
+  // Apply CPU-side wave sampling so buoy sits on active water surface
+  Opus.Physics.applyBuoyancy(buoy, water, elapsed, { bobOffset: 0.1 });
+  trigger.update(app.camera.eye);
+});
+
+// Raycast picking on click
+canvas.addEventListener('click', (e) => {
+  const rect = canvas.getBoundingClientRect();
+  const ndcX = ((e.clientX - rect.left) / rect.width) * 2 - 1;
+  const ndcY = -(((e.clientY - rect.top) / rect.height) * 2 - 1);
+  const ray = app.camera.screenPointToRay(ndcX, ndcY, canvas.width / canvas.height);
+
+  const t = Opus.Physics.raySphere(ray.origin, ray.direction, buoy.position, 0.6);
+  if (t !== null) {
+    app.hud && app.hud.showStatus('Raycast HIT buoy!');
+    app.audio.playBlip({ frequency: 880, duration: 0.1 });
+  }
+});
+</script>
+</body>
+</html>

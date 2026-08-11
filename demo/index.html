@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Digital Opus Engine — demo (dev)</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #0a0e1a; overflow: hidden; }
+  #game { width: 100%; height: 100%; display: block; touch-action: none; }
+</style>
+</head>
+<body>
+<canvas id="game"></canvas>
+<!-- Dev loader: flat <script> tags, everything global, for live-editing.
+     The shipped build (build/build.js) wraps engine/src/*.js in an IIFE so
+     only window.Opus is reachable — this page intentionally does not, so
+     engine internals stay inspectable while developing the engine itself. -->
+<script src="../engine/src/01-vec3.js"></script>
+<script src="../engine/src/02-mat4.js"></script>
+<script src="../engine/src/03-time.js"></script>
+<script src="../engine/src/04-input.js"></script>
+<script src="../engine/src/05-camera.js"></script>
+<script src="../engine/src/06-gl-context.js"></script>
+<script src="../engine/src/07-shader.js"></script>
+<script src="../engine/src/08-mesh.js"></script>
+<script src="../engine/src/09-renderer.js"></script>
+<script src="../engine/src/10-loop.js"></script>
+<script src="../engine/src/11-entity.js"></script>
+<script src="../engine/src/12-scene.js"></script>
+<script src="../engine/src/13-particles.js"></script>
+<script src="../engine/src/14-ui.js"></script>
+<script src="../engine/src/15-settings.js"></script>
+<script src="../engine/src/16-save.js"></script>
+<script src="../engine/src/17-audio.js"></script>
+<script src="../engine/src/18-noise.js"></script>
+<script src="../engine/src/19-terrain.js"></script>
+<script src="../engine/src/20-physics.js"></script>
+<script src="../engine/src/21-api.js"></script>
+<script src="src/21-game.js"></script>
+</body>
+</html>

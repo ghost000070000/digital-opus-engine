@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example 01 — Hello Scene (Digital Opus Engine)</title>
+<style>
+  html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #0a0e1a; }
+  #game { width: 100%; height: 100%; display: block; }
+</style>
+</head>
+<body>
+<canvas id="game"></canvas>
+<script src="../dist/opus-engine.js"></script>
+<script>
+/**
+ * Example 01: Hello Scene
+ * Demonstrates engine initialization, setting up a camera, and spawning a lit 3D cube.
+ */
+const canvas = document.getElementById('game');
+const app = Opus.create(canvas);
+
+// Build a cube mesh using the built-in primitive generator
+const cube = Opus.Mesh.cube();
+
+// Spawn an entity with color, position, and spin rate
+const entity = app.addEntity({
+  mesh: cube,
+  color: [0.25, 0.75, 0.95],
+  position: new Opus.Vec3(0, 0, 0),
+  scale: new Opus.Vec3(1.2, 1.2, 1.2),
+});
+
+// Setting spin automatically rotates rotationY in scene update
+entity.spin = 0.8;
+</script>
+</body>
+</html>

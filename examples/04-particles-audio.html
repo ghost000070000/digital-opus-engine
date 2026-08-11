@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example 04 — Particles & Audio (Digital Opus Engine)</title>
+<style>
+  html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #0a0e1a; }
+  #game { width: 100%; height: 100%; display: block; }
+</style>
+</head>
+<body>
+<canvas id="game"></canvas>
+<script src="../dist/opus-engine.js"></script>
+<script>
+/**
+ * Example 04: Particles & Audio
+ * Demonstrates GPU-instanced particle emitters and procedural web audio effects.
+ */
+const canvas = document.getElementById('game');
+const app = Opus.create(canvas);
+
+// Particle emitter at origin
+const emitter = app.createEmitter({
+  position: new Opus.Vec3(0, 0, 0),
+  rate: 40,
+  life: [1.0, 2.0],
+  riseSpeed: [0.5, 1.2],
+  spread: 0.6,
+  size: [0.06, 0.15],
+  color: [1.0, 0.7, 0.3],
+  gravity: -0.1,
+  maxParticles: 200,
+});
+
+// Title gate to ensure Web Audio unlock on user interaction
+app.hud && app.hud.showTitleCard({
+  title: 'PARTICLES & AUDIO DEMO',
+  subtitle: 'Click below to activate procedural web audio sounds',
+  buttonText: 'ACTIVATE AUDIO & EMITTER',
+  onStart: () => {
+    app.audio.startAmbientDrone();
+    app.audio.playPickup();
+    app.hud.showStatus('Audio activated! Move mouse or click to play sounds.');
+  },
+});
+
+canvas.addEventListener('pointerdown', () => {
+  app.audio.playBlip({ frequency: 440 + Math.random() * 400, duration: 0.1 });
+});
+</script>
+</body>
+</html>
