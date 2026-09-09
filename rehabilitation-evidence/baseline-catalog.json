@@ -1,0 +1,536 @@
+{
+  "version": 1,
+  "games": [
+    {
+      "id": "foglight",
+      "title": "Foglight",
+      "file": "foglight.json",
+      "category": "featured",
+      "featured": true,
+      "genre": "Third-Person Adventure",
+      "controller": "Third-Person",
+      "estimatedMinutes": 15,
+      "description": "Explore a mist-covered vale, light three ancient beacons while avoiding a roaming guardian, and reach the sanctuary.",
+      "tags": [
+        "exploration",
+        "platforming",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "mechanics-sample"
+    },
+    {
+      "id": "signal-relay",
+      "title": "Signal Relay",
+      "file": "signal-relay.json",
+      "category": "featured",
+      "featured": true,
+      "genre": "Stealth / Objective",
+      "controller": "First-Person",
+      "estimatedMinutes": 12,
+      "description": "Restore power at three relay consoles inside a dark facility while avoiding patrolling security drones, then extract.",
+      "tags": [
+        "stealth",
+        "first-person",
+        "objective"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "mechanics-sample"
+    },
+    {
+      "id": "arsenal-run",
+      "title": "Arsenal Run",
+      "file": "arsenal-run.json",
+      "category": "featured",
+      "featured": true,
+      "genre": "First-Person Action",
+      "controller": "First-Person",
+      "estimatedMinutes": 8,
+      "description": "Gear up and fight through a compact combat gauntlet with a real weapon loadout.",
+      "tags": [
+        "action",
+        "shooter",
+        "first-person"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "mechanics-sample"
+    },
+    {
+      "id": "silent-sector",
+      "title": "Silent Sector",
+      "file": "silent-sector.json",
+      "category": "featured",
+      "featured": true,
+      "genre": "Stealth / Objective",
+      "controller": "First-Person",
+      "estimatedMinutes": 10,
+      "description": "A multi-objective infiltration through a quiet, watchful sector.",
+      "tags": [
+        "stealth",
+        "first-person",
+        "objective"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "mechanics-sample"
+    },
+    {
+      "id": "power-grid",
+      "title": "Power Grid",
+      "file": "power-grid.json",
+      "category": "featured",
+      "featured": true,
+      "genre": "First-Person Puzzle/Objective",
+      "controller": "First-Person",
+      "estimatedMinutes": 10,
+      "description": "Bring a failing power grid back online by restoring its systems in the right order.",
+      "tags": [
+        "puzzle",
+        "objective",
+        "first-person"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "mechanics-sample"
+    },
+    {
+      "id": "relic-frontier",
+      "title": "Relic Frontier",
+      "file": "relic-frontier.json",
+      "category": "featured",
+      "featured": true,
+      "genre": "Third-Person Adventure",
+      "controller": "Third-Person",
+      "estimatedMinutes": 10,
+      "description": "Push into a frontier dig site chasing a set of ancient relics across a multi-objective run.",
+      "tags": [
+        "adventure",
+        "exploration",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "mechanics-sample"
+    },
+    {
+      "id": "relic-island",
+      "title": "Relic Island",
+      "file": "relic-island.json",
+      "category": "featured",
+      "featured": true,
+      "genre": "Third-Person Adventure",
+      "controller": "Third-Person",
+      "estimatedMinutes": 8,
+      "description": "Collect three relics scattered across an open island, find the key to the gate, and reach the shrine while dodging lava.",
+      "tags": [
+        "adventure",
+        "exploration",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "mechanics-sample"
+    },
+    {
+      "id": "forest-range",
+      "title": "Forest Range",
+      "file": "forest-range.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Exploration",
+      "controller": "Third-Person",
+      "estimatedMinutes": 6,
+      "description": "Wander a dense, hand-scattered forest range showing off large-scale outdoor set dressing.",
+      "tags": [
+        "exploration",
+        "scatter",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "mechanics-sample"
+    },
+    {
+      "id": "iron-arena",
+      "title": "Iron Arena",
+      "file": "iron-arena.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "First-Person Combat",
+      "controller": "First-Person",
+      "estimatedMinutes": 6,
+      "description": "A compact first-person combat arena for testing weapons and enemy encounters.",
+      "tags": [
+        "combat",
+        "first-person",
+        "arena"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "mechanics-sample"
+    },
+    {
+      "id": "dungeon-descent",
+      "title": "Dungeon Descent",
+      "file": "dungeon-descent.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Top-Down Dungeon Puzzle",
+      "controller": "Top-Down",
+      "estimatedMinutes": 6,
+      "description": "Navigate a walled dungeon corridor, trip two switches in either order, and open the way to the exit.",
+      "tags": [
+        "puzzle",
+        "top-down",
+        "dungeon"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "mechanics-sample"
+    },
+    {
+      "id": "npc-puzzle-adventure",
+      "title": "The Sanctum Key",
+      "file": "npc-puzzle-adventure.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Dialogue / Inventory Puzzle",
+      "controller": "Third-Person",
+      "estimatedMinutes": 8,
+      "description": "Talk your way past an NPC, solve an inventory puzzle, and unlock the sanctum across two levels.",
+      "tags": [
+        "puzzle",
+        "dialogue",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "mechanics-sample"
+    },
+    {
+      "id": "opus-arena",
+      "title": "Opus Arena",
+      "file": "opus-arena.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Arena Shooter",
+      "controller": "Third-Person",
+      "estimatedMinutes": 5,
+      "description": "A small third-person arena shootout.",
+      "tags": [
+        "action",
+        "arena",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "mechanics-sample"
+    },
+    {
+      "id": "power-station",
+      "title": "Power Station",
+      "file": "power-station.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Puzzle",
+      "controller": "Third-Person",
+      "estimatedMinutes": 6,
+      "description": "A hierarchy-and-machinery puzzle inside a small power station.",
+      "tags": [
+        "puzzle",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "mechanics-sample"
+    },
+    {
+      "id": "relic-runner-2",
+      "title": "Relic Runner 2",
+      "file": "relic-runner-2.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Adventure",
+      "controller": "Third-Person",
+      "estimatedMinutes": 6,
+      "description": "A follow-up relic run across a fresh course.",
+      "tags": [
+        "adventure",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "mechanics-sample"
+    },
+    {
+      "id": "sentinel-maze",
+      "title": "Sentinel Maze",
+      "file": "sentinel-maze.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Maze",
+      "controller": "Third-Person",
+      "estimatedMinutes": 6,
+      "description": "Find a path through a real maze while a waypoint-patrolling sentinel hunts for you.",
+      "tags": [
+        "maze",
+        "stealth",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "mechanics-sample"
+    },
+    {
+      "id": "signal-zero",
+      "title": "Signal Zero",
+      "file": "signal-zero.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Objective",
+      "controller": "Third-Person",
+      "estimatedMinutes": 6,
+      "description": "A two-level signal-tracking objective run.",
+      "tags": [
+        "objective",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "mechanics-sample"
+    },
+    {
+      "id": "survival-arena-2",
+      "title": "Survival Arena 2.0",
+      "file": "survival-arena-2.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Hovercraft Survival",
+      "controller": "Hovercraft",
+      "estimatedMinutes": 5,
+      "description": "Survive two real spawned waves of hunters on a water-ringed hovercraft arena.",
+      "tags": [
+        "survival",
+        "hovercraft",
+        "arena"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "mechanics-sample"
+    },
+    {
+      "id": "survival-arena-3",
+      "title": "Survival Arena 3",
+      "file": "survival-arena-3.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Hovercraft Survival",
+      "controller": "Hovercraft",
+      "estimatedMinutes": 5,
+      "description": "A Spawner-driven rebuild of the hovercraft survival arena.",
+      "tags": [
+        "survival",
+        "hovercraft",
+        "arena"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "mechanics-sample"
+    },
+    {
+      "id": "textured-adventure",
+      "title": "Textured Adventure",
+      "file": "textured-adventure.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Adventure",
+      "controller": "Third-Person",
+      "estimatedMinutes": 5,
+      "description": "A short adventure showing off real imported textures across the scene.",
+      "tags": [
+        "adventure",
+        "textures",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "mechanics-sample"
+    },
+    {
+      "id": "valley-run",
+      "title": "Valley Run",
+      "file": "valley-run.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Platforming",
+      "controller": "Third-Person",
+      "estimatedMinutes": 6,
+      "description": "Run a sculpted valley course past patrolling hazards.",
+      "tags": [
+        "platforming",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "mechanics-sample"
+    },
+    {
+      "id": "painted-wilds",
+      "title": "Painted Wilds",
+      "file": "painted-wilds.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Exploration",
+      "controller": "Third-Person",
+      "estimatedMinutes": 4,
+      "description": "A small painted-terrain wilds scene.",
+      "tags": [
+        "exploration",
+        "terrain",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "mechanics-sample"
+    },
+    {
+      "id": "assembly-line",
+      "title": "Assembly Line",
+      "file": "assembly-line.json",
+      "category": "technical",
+      "featured": false,
+      "genre": "First-Person Experiment",
+      "controller": "First-Person",
+      "estimatedMinutes": 3,
+      "description": "A short first-person interactive experiment.",
+      "tags": [
+        "technical",
+        "regression"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "regression"
+    },
+    {
+      "id": "blacksite",
+      "title": "Blacksite",
+      "file": "blacksite.json",
+      "category": "technical",
+      "featured": false,
+      "genre": "First-Person Experiment",
+      "controller": "First-Person",
+      "estimatedMinutes": 5,
+      "description": "A two-level first-person interactive experiment.",
+      "tags": [
+        "technical",
+        "regression"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "regression"
+    },
+    {
+      "id": "moving-temple",
+      "title": "Moving Temple",
+      "file": "moving-temple.json",
+      "category": "technical",
+      "featured": false,
+      "genre": "Third-Person Experiment",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "A short third-person interactive experiment.",
+      "tags": [
+        "technical",
+        "regression"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "regression"
+    },
+    {
+      "id": "shifting-facility",
+      "title": "Shifting Facility",
+      "file": "shifting-facility.json",
+      "category": "technical",
+      "featured": false,
+      "genre": "First-Person Experiment",
+      "controller": "First-Person",
+      "estimatedMinutes": 3,
+      "description": "A short first-person interactive experiment.",
+      "tags": [
+        "technical",
+        "regression"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "regression"
+    },
+    {
+      "id": "skyway-trial",
+      "title": "Skyway Trial",
+      "file": "skyway-trial.json",
+      "category": "technical",
+      "featured": false,
+      "genre": "Platforming Experiment",
+      "controller": "Third-Person",
+      "estimatedMinutes": 4,
+      "description": "A vertical platforming trial across a floating skyway.",
+      "tags": [
+        "technical",
+        "platforming",
+        "regression"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "regression"
+    },
+    {
+      "id": "survival-arena",
+      "title": "Survival Arena",
+      "file": "survival-arena.json",
+      "category": "technical",
+      "featured": false,
+      "genre": "Survival Experiment",
+      "controller": "n/a",
+      "estimatedMinutes": 3,
+      "description": "An early survival-arena experiment.",
+      "tags": [
+        "technical",
+        "regression",
+        "legacy-format"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "regression"
+    },
+    {
+      "id": "temple-switch-puzzle",
+      "title": "Temple Switch Puzzle",
+      "file": "temple-switch-puzzle.json",
+      "category": "technical",
+      "featured": false,
+      "genre": "Puzzle Experiment",
+      "controller": "n/a",
+      "estimatedMinutes": 3,
+      "description": "A small switch-and-gate puzzle experiment.",
+      "tags": [
+        "technical",
+        "puzzle",
+        "regression",
+        "legacy-format"
+      ],
+      "playable": true,
+      "visibility": "internal",
+      "purpose": "regression"
+    }
+  ],
+  "excluded": [
+    {
+      "file": "crate-run-expanded.patch.js",
+      "reason": "Not a project JSON -- a small patch script applied on top of the shipped Crate Run starter game's own mechanics, not a standalone loadable project. Kept in games/ as a technical/patch-style sample, excluded from the catalog and launcher v1."
+    }
+  ]
+}

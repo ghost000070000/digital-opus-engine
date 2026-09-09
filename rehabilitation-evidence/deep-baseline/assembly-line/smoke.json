@@ -1,0 +1,24 @@
+{
+  "id": "assembly-line",
+  "sourceSHA256": "bd44e3f4dfc351d248cdf35384711a45c5e40f780bfce80e27ad1849e2489168",
+  "errors": [],
+  "capturedAt": "2026-09-08T17:10:11.074Z",
+  "sha256": "493038e0016793d6d2aead0c27bcebff04b20fe97f7c9ce32179a037b2306c7c",
+  "state": {
+    "title": "Assembly Line",
+    "sim": 1.4181000000014898,
+    "ended": false,
+    "text": "Observe the three active bays, then use the inspection console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+    "controller": "firstperson",
+    "bodyVisible": false,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 62
+  },
+  "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nObserve the three active bays, then use the inspection console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+  "passed": true
+}

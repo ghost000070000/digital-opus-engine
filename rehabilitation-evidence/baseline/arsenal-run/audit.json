@@ -1,0 +1,161 @@
+{
+  "id": "arsenal-run",
+  "phase": "baseline",
+  "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/arsenal-run.html",
+  "startedAt": "2026-09-08T00:01:29.724Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Arsenal Run",
+      "text": "Sidearm 10/30\nClear the compound\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 1.0777000000476837,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 0
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_clear": "active"
+      },
+      "inventory": {
+        "Sidearm": 1,
+        "Rifle": 1
+      },
+      "helpers": []
+    },
+    {
+      "title": "Arsenal Run",
+      "text": "Sidearm 9/30\nClear the compound\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 84
+      },
+      "playtime": 6.158600000143045,
+      "player": {
+        "position": {
+          "x": 8.44999999730814,
+          "y": 0.55,
+          "z": 16.260000000000026
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_clear": "active"
+      },
+      "inventory": {
+        "Sidearm": 1,
+        "Rifle": 1
+      },
+      "helpers": []
+    },
+    {
+      "title": "Arsenal Run",
+      "text": "Sidearm 10/28\nClear the compound\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 60
+      },
+      "playtime": 13.670300000071494,
+      "player": {
+        "position": {
+          "x": 5.801013063397599,
+          "y": 0.55,
+          "z": 16.1
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_clear": "active"
+      },
+      "inventory": {
+        "Sidearm": 1,
+        "Rifle": 1
+      },
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Arsenal Run",
+    "text": "Arsenal Run\n\nTwo weapons. Three guards. One way out.\n\nDeploy\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+    "state": {},
+    "playtime": 0,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 0.55,
+        "z": 0
+      },
+      "visible": false,
+      "controller": "firstperson"
+    },
+    "camera": {
+      "mode": "fixed"
+    },
+    "audio": {},
+    "objectives": {
+      "obj_clear": "active"
+    },
+    "inventory": {
+      "Sidearm": 1,
+      "Rifle": 1
+    },
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nSidearm 10/28\nClear the compound\nPress F to interact",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:02:02.240Z"
+}

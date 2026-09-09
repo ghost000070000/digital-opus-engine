@@ -1,0 +1,141 @@
+{
+  "id": "valley-run",
+  "phase": "baseline",
+  "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/valley-run.html",
+  "startedAt": "2026-09-08T00:06:03.589Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Valley Run",
+      "text": "Press F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 1.0556999999284744,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": -1.9942011014227994,
+          "z": -17
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Valley Run",
+      "text": "Checkpoint reached.\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 95
+      },
+      "playtime": 10.465199999809261,
+      "player": {
+        "position": {
+          "x": 5.228838554548171,
+          "y": -1.9703116864909642,
+          "z": -21.719493530138198
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Valley Run",
+      "text": "Checkpoint reached.\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 95
+      },
+      "playtime": 25.48609999978544,
+      "player": {
+        "position": {
+          "x": -5.6793291567312405,
+          "y": -1.944601133056378,
+          "z": -20.903686742366848
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Valley Run",
+    "text": "Valley Run\n\nCross the valley and reach the far ridge.\n\nStart\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+    "state": {},
+    "playtime": 0,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": -1.4442011014227993,
+        "z": -17
+      },
+      "visible": true,
+      "controller": "thirdperson"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "Checkpoint reached.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:06:35.257Z"
+}

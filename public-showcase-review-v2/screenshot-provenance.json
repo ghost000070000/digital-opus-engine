@@ -1,0 +1,164 @@
+[
+  {
+    "id": "foglight",
+    "role": "gameplay",
+    "source": "rehabilitation-evidence/playthroughs/foglight/grove.png",
+    "destination": "public-showcase-review/foglight/gameplay.png",
+    "sha256": "e3cc02f650e2c5589ba5429fd81df75f2ba35c6c2f81678e0091152b06e0a127",
+    "method": "Unedited real standalone browser frame",
+    "copiedAt": "2026-09-08T09:10:50.021Z"
+  },
+  {
+    "id": "signal-relay",
+    "role": "gameplay",
+    "source": "rehabilitation-evidence/combat-playtest/signal-relay-normal/encounter-obj58.png",
+    "destination": "public-showcase-review/signal-relay/gameplay.png",
+    "sha256": "db4b18dc17b5c549ca4a7badd5b8638c5d0678432398a09b2a83ae9a57853dbe",
+    "method": "Unedited real standalone browser frame",
+    "copiedAt": "2026-09-08T09:10:50.021Z"
+  },
+  {
+    "id": "arsenal-run",
+    "role": "opening",
+    "source": "rehabilitation-evidence/combat-playtest/arsenal-run-normal/opening.png",
+    "destination": "public-showcase-review/arsenal-run/opening.png",
+    "sha256": "03302aaff86fa3f7224ecded3c5416e8f89a60b03b2acdb69ca4e3dbac825be9",
+    "method": "Unedited real standalone browser frame",
+    "copiedAt": "2026-09-08T09:10:50.021Z"
+  },
+  {
+    "id": "arsenal-run",
+    "role": "gameplay",
+    "source": "rehabilitation-evidence/combat-playtest/arsenal-run-normal/encounter-obj2010.png",
+    "destination": "public-showcase-review/arsenal-run/gameplay.png",
+    "sha256": "edee5069215b133f0d1bb26269e5b205057126dfe17fac05041c0bc20e45a62e",
+    "method": "Unedited real standalone browser frame",
+    "copiedAt": "2026-09-08T09:10:50.021Z"
+  },
+  {
+    "id": "arsenal-run",
+    "role": "highlight",
+    "source": "rehabilitation-evidence/combat-playtest/arsenal-run-normal/extraction-attempt.png",
+    "destination": "public-showcase-review/arsenal-run/highlight.png",
+    "sha256": "96ac04a1c4c88dc709b04d485544fbae49b63e9187290afd6a7e69d2d0c63304",
+    "method": "Unedited real standalone browser frame",
+    "copiedAt": "2026-09-08T09:10:50.021Z"
+  },
+  {
+    "id": "silent-sector",
+    "role": "gameplay",
+    "source": "rehabilitation-evidence/playthroughs/silent-sector/core-approach.png",
+    "destination": "public-showcase-review/silent-sector/gameplay.png",
+    "sha256": "f50269cfb9c6ab8c5a3f5d2fb95e38f55c1d7f1b88ed7471446dbda55911f7dd",
+    "method": "Unedited real standalone browser frame",
+    "copiedAt": "2026-09-08T09:10:50.021Z"
+  },
+  {
+    "id": "power-grid",
+    "role": "opening",
+    "source": "rehabilitation-evidence/playthroughs/power-grid/opening.png",
+    "destination": "public-showcase-review/power-grid/opening.png",
+    "sha256": "333301e431de0d90bf8a6000623ee0f10410c36a5f4dedddeb2da27499e615eb",
+    "method": "Unedited real standalone browser frame",
+    "copiedAt": "2026-09-08T09:10:50.021Z"
+  },
+  {
+    "id": "power-grid",
+    "role": "gameplay",
+    "source": "rehabilitation-evidence/playthroughs/power-grid/coolant.png",
+    "destination": "public-showcase-review/power-grid/gameplay.png",
+    "sha256": "04635270c1e1728b324777ad2dcbba44cca63e5c99ad1a62ce52d1297db6535b",
+    "method": "Unedited real standalone browser frame",
+    "copiedAt": "2026-09-08T09:10:50.021Z"
+  },
+  {
+    "id": "power-grid",
+    "role": "highlight",
+    "source": "rehabilitation-evidence/playthroughs/power-grid/generator.png",
+    "destination": "public-showcase-review/power-grid/highlight.png",
+    "sha256": "d10def9305c9906f2165c2e9654063aacd1e1634d47c9131373fd9044caa810d",
+    "method": "Unedited real standalone browser frame",
+    "copiedAt": "2026-09-08T09:10:50.021Z"
+  },
+  {
+    "id": "forest-range",
+    "role": "opening",
+    "source": "rehabilitation-evidence/final-review/forest-range/opening.png",
+    "destination": "public-showcase-review/forest-range/opening.png",
+    "sha256": "035890c40a1a664e5435ead52b188b39988deb1c312f67bb373e36e176132366",
+    "method": "Unedited real standalone browser frame",
+    "copiedAt": "2026-09-08T09:10:50.021Z"
+  },
+  {
+    "id": "forest-range",
+    "role": "gameplay",
+    "source": "rehabilitation-evidence/sample-play/forest-range/step-2.png",
+    "destination": "public-showcase-review/forest-range/gameplay.png",
+    "sha256": "1c1f6769381debca7db5c5cf9bc5df285609fb8b280db42abb9c385db57ae19d",
+    "method": "Unedited real standalone browser frame",
+    "copiedAt": "2026-09-08T09:10:50.021Z"
+  },
+  {
+    "id": "forest-range",
+    "role": "highlight",
+    "source": "rehabilitation-evidence/sample-play/forest-range/outcome.png",
+    "destination": "public-showcase-review/forest-range/highlight.png",
+    "sha256": "4d3e2972a43190083c4778bc5b2be4d68d40e4ad1899eb5c45f5b4da7dedfcc4",
+    "method": "Unedited real standalone browser frame",
+    "copiedAt": "2026-09-08T09:10:50.021Z"
+  },
+  {
+    "id": "survival-arena-2",
+    "role": "gameplay",
+    "source": "rehabilitation-evidence/featured-promotion/internal-play/survival-arena-2/survival-outcome.png",
+    "destination": "public-showcase-review/survival-arena-2/gameplay.png",
+    "sha256": "3a63ecd3dfbc1c1687bc96f3e65d74d5c4d0da649553fae59ef726a664fbbbf3",
+    "method": "Unedited real standalone browser frame",
+    "copiedAt": "2026-09-08T09:10:50.021Z"
+  },
+  {
+    "id": "survival-arena-3",
+    "role": "gameplay",
+    "source": "rehabilitation-evidence/featured-promotion/internal-play/survival-arena-3/survival-outcome.png",
+    "destination": "public-showcase-review/survival-arena-3/gameplay.png",
+    "sha256": "ab73c4b14fcdf79edaa79ad3b4f7753af7cd0a7cca99518ebbb68716480374ea",
+    "method": "Unedited real standalone browser frame",
+    "copiedAt": "2026-09-08T09:10:50.021Z"
+  },
+  {
+    "id": "valley-run",
+    "role": "gameplay",
+    "source": "rehabilitation-evidence/featured-promotion/internal-play/valley-run/route-14.png",
+    "destination": "public-showcase-review/valley-run/gameplay.png",
+    "sha256": "0bd927889e014049cc54de1f30005f22d33335f065abb4f05e929adfca54c397",
+    "method": "Unedited real standalone browser frame",
+    "copiedAt": "2026-09-08T09:10:50.021Z"
+  },
+  {
+    "id": "moving-temple",
+    "role": "opening",
+    "source": "rehabilitation-evidence/traversal-play/moving-temple/opening.png",
+    "destination": "public-showcase-review/moving-temple/opening.png",
+    "sha256": "70af0de301f02a37d6993a58b70af844f6b9e339b86f9e59d1239efa0bdb2b07",
+    "method": "Unedited real standalone browser frame",
+    "copiedAt": "2026-09-08T09:10:50.021Z"
+  },
+  {
+    "id": "moving-temple",
+    "role": "gameplay",
+    "source": "rehabilitation-evidence/traversal-play/moving-temple/lift-raised.png",
+    "destination": "public-showcase-review/moving-temple/gameplay.png",
+    "sha256": "1d68cee290f2d88ceb8591084c61a1e41954e6444143ca43e6c2df5dc8107f84",
+    "method": "Unedited real standalone browser frame",
+    "copiedAt": "2026-09-08T09:10:50.021Z"
+  },
+  {
+    "id": "moving-temple",
+    "role": "highlight",
+    "source": "rehabilitation-evidence/traversal-play/moving-temple/outcome.png",
+    "destination": "public-showcase-review/moving-temple/highlight.png",
+    "sha256": "b17ccd51d6cb8c48b47a0ff0b1cb8b74ba794fc9cbeec4467d78165cb59cb0b1",
+    "method": "Unedited real standalone browser frame",
+    "copiedAt": "2026-09-08T09:10:50.021Z"
+  }
+]

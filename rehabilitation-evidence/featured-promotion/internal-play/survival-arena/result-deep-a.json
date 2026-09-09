@@ -1,0 +1,479 @@
+{
+  "id": "survival-arena",
+  "method": "Native keyboard input with read-only telemetry; no state mutation.",
+  "events": [
+    {
+      "name": "opening",
+      "ended": false,
+      "sim": 0.9179999999999996,
+      "pos": {
+        "x": 0,
+        "y": -0.2505871526561789,
+        "z": 0
+      },
+      "forward": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "text": "Survive! Collect 4 orbs, avoid the red hunters.\nLives: 3\nOrbs: 0 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "health": 3,
+        "collected": 0
+      },
+      "visual": true,
+      "body": false,
+      "craftParts": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "checkpoint": null,
+      "errors": []
+    },
+    {
+      "drive": [
+        0,
+        -6
+      ],
+      "result": "arrived",
+      "state": {
+        "ended": false,
+        "sim": 5.005399999998515,
+        "pos": {
+          "x": -0.20535430360209864,
+          "y": -0.09055140621179812,
+          "z": -5.186487538067468
+        },
+        "forward": {
+          "x": -0.12330397658782553,
+          "y": 0,
+          "z": -0.9923689482030509
+        },
+        "velocity": {
+          "x": -1.1800397410747814,
+          "y": 0,
+          "z": -12.42079189910549
+        },
+        "text": "Survive! Collect 4 orbs, avoid the red hunters.\nLives: 3\nOrbs: 1 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+        "state": {
+          "health": 3,
+          "collected": 1
+        },
+        "visual": true,
+        "body": false,
+        "craftParts": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "checkpoint": null,
+        "errors": []
+      }
+    },
+    {
+      "name": "relic-site-0--6",
+      "ended": false,
+      "sim": 5.005399999998515,
+      "pos": {
+        "x": -0.20535430360209864,
+        "y": -0.09055140621179812,
+        "z": -5.186487538067468
+      },
+      "forward": {
+        "x": -0.12330397658782553,
+        "y": 0,
+        "z": -0.9923689482030509
+      },
+      "velocity": {
+        "x": -1.1800397410747814,
+        "y": 0,
+        "z": -12.42079189910549
+      },
+      "text": "Survive! Collect 4 orbs, avoid the red hunters.\nLives: 3\nOrbs: 1 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "health": 3,
+        "collected": 1
+      },
+      "visual": true,
+      "body": false,
+      "craftParts": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "checkpoint": null,
+      "errors": []
+    },
+    {
+      "drive": [
+        6,
+        0
+      ],
+      "result": "arrived",
+      "state": {
+        "ended": false,
+        "sim": 8.676200000002993,
+        "pos": {
+          "x": 5.7240215555992675,
+          "y": 0.09543907999323793,
+          "z": 0.16275460555059096
+        },
+        "forward": {
+          "x": 0.8991228966565152,
+          "y": 0,
+          "z": 0.437696260788229
+        },
+        "velocity": {
+          "x": 10.878399100783804,
+          "y": 0,
+          "z": 7.511163345113351
+        },
+        "text": "Survive! Collect 4 orbs, avoid the red hunters.\nLives: 3\nOrbs: 3 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+        "state": {
+          "health": 3,
+          "collected": 3
+        },
+        "visual": true,
+        "body": false,
+        "craftParts": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "checkpoint": null,
+        "errors": []
+      }
+    },
+    {
+      "name": "relic-site-6-0",
+      "ended": false,
+      "sim": 8.676200000002993,
+      "pos": {
+        "x": 5.7240215555992675,
+        "y": 0.09543907999323793,
+        "z": 0.16275460555059096
+      },
+      "forward": {
+        "x": 0.8991228966565152,
+        "y": 0,
+        "z": 0.437696260788229
+      },
+      "velocity": {
+        "x": 10.878399100783804,
+        "y": 0,
+        "z": 7.511163345113351
+      },
+      "text": "Survive! Collect 4 orbs, avoid the red hunters.\nLives: 3\nOrbs: 3 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "health": 3,
+        "collected": 3
+      },
+      "visual": true,
+      "body": false,
+      "craftParts": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "checkpoint": null,
+      "errors": []
+    },
+    {
+      "drive": [
+        0,
+        6
+      ],
+      "result": "arrived",
+      "state": {
+        "ended": false,
+        "sim": 11.696200000003023,
+        "pos": {
+          "x": 0.926907444084442,
+          "y": -0.8513688246017777,
+          "z": 5.814886932168326
+        },
+        "forward": {
+          "x": -0.9677677231562405,
+          "y": 0,
+          "z": -0.2518444639395241
+        },
+        "velocity": {
+          "x": -12.510824701993853,
+          "y": 0,
+          "z": -3.9824526128351145
+        },
+        "text": "MAP EDGE — TURN INWARD\nSurvive! Collect 4 orbs, avoid the red hunters.\nLives: 3\nOrbs: 3 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+        "state": {
+          "health": 3,
+          "collected": 3
+        },
+        "visual": true,
+        "body": false,
+        "craftParts": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "checkpoint": null,
+        "errors": []
+      }
+    },
+    {
+      "name": "relic-site-0-6",
+      "ended": false,
+      "sim": 11.696200000003023,
+      "pos": {
+        "x": 0.926907444084442,
+        "y": -0.8513688246017777,
+        "z": 5.814886932168326
+      },
+      "forward": {
+        "x": -0.9677677231562405,
+        "y": 0,
+        "z": -0.2518444639395241
+      },
+      "velocity": {
+        "x": -12.510824701993853,
+        "y": 0,
+        "z": -3.9824526128351145
+      },
+      "text": "MAP EDGE — TURN INWARD\nSurvive! Collect 4 orbs, avoid the red hunters.\nLives: 3\nOrbs: 3 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "health": 3,
+        "collected": 3
+      },
+      "visual": true,
+      "body": false,
+      "craftParts": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "checkpoint": null,
+      "errors": []
+    },
+    {
+      "name": "outcome",
+      "ended": true,
+      "sim": 11.796200000003024,
+      "pos": {
+        "x": -0.28768108502660894,
+        "y": -0.3591254572517051,
+        "z": 5.440511755787611
+      },
+      "forward": {
+        "x": -0.9715149824105448,
+        "y": 0,
+        "z": -0.2369781402404849
+      },
+      "velocity": {
+        "x": -11.889036140768852,
+        "y": 0,
+        "z": -3.5784275272549557
+      },
+      "text": "MAP EDGE — TURN INWARD\nSurvive! Collect 4 orbs, avoid the red hunters.\nOrbs recovered\n\nAll four orbs are secure.\n\nRestart\nLives: 3\nOrbs: 4 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "health": 3,
+        "collected": 4
+      },
+      "visual": true,
+      "body": false,
+      "craftParts": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "checkpoint": null,
+      "errors": []
+    },
+    {
+      "name": "restart",
+      "ended": false,
+      "sim": 0.517,
+      "pos": {
+        "x": 0,
+        "y": -0.2505871526561789,
+        "z": 0
+      },
+      "forward": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "text": "Survive! Collect 4 orbs, avoid the red hunters.\nLives: 3\nOrbs: 0 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "health": 3,
+        "collected": 0
+      },
+      "visual": true,
+      "body": false,
+      "craftParts": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "checkpoint": null,
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "opening": {
+    "ended": false,
+    "sim": 0.9179999999999996,
+    "pos": {
+      "x": 0,
+      "y": -0.2505871526561789,
+      "z": 0
+    },
+    "forward": {
+      "x": 0,
+      "y": 0,
+      "z": 1
+    },
+    "velocity": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "text": "Survive! Collect 4 orbs, avoid the red hunters.\nLives: 3\nOrbs: 0 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "state": {
+      "health": 3,
+      "collected": 0
+    },
+    "visual": true,
+    "body": false,
+    "craftParts": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "checkpoint": null,
+    "errors": []
+  },
+  "final": {
+    "ended": true,
+    "sim": 11.796200000003024,
+    "pos": {
+      "x": -0.28768108502660894,
+      "y": -0.3591254572517051,
+      "z": 5.440511755787611
+    },
+    "forward": {
+      "x": -0.9715149824105448,
+      "y": 0,
+      "z": -0.2369781402404849
+    },
+    "velocity": {
+      "x": -11.889036140768852,
+      "y": 0,
+      "z": -3.5784275272549557
+    },
+    "text": "MAP EDGE — TURN INWARD\nSurvive! Collect 4 orbs, avoid the red hunters.\nOrbs recovered\n\nAll four orbs are secure.\n\nRestart\nLives: 3\nOrbs: 4 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "state": {
+      "health": 3,
+      "collected": 4
+    },
+    "visual": true,
+    "body": false,
+    "craftParts": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "checkpoint": null,
+    "errors": []
+  },
+  "completed": true,
+  "restart": {
+    "ended": false,
+    "sim": 0.517,
+    "pos": {
+      "x": 0,
+      "y": -0.2505871526561789,
+      "z": 0
+    },
+    "forward": {
+      "x": 0,
+      "y": 0,
+      "z": 1
+    },
+    "velocity": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "text": "Survive! Collect 4 orbs, avoid the red hunters.\nLives: 3\nOrbs: 0 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "state": {
+      "health": 3,
+      "collected": 0
+    },
+    "visual": true,
+    "body": false,
+    "craftParts": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "checkpoint": null,
+    "errors": []
+  }
+}

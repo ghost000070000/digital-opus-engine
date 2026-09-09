@@ -1,0 +1,236 @@
+{
+  "id": "relic-runner-2",
+  "inputs": [
+    {
+      "target": [
+        -8,
+        -3
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 3.2371999999955303,
+        "position": {
+          "x": -8.108860467906073,
+          "y": 0.45062657305536685,
+          "z": -1.8267696596253313
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": -0.014186400769954857,
+          "y": -0.3547859653942797,
+          "z": 0.9348399139919321
+        },
+        "text": "A relic glows atop the ridge...\nHealth 100 / 100\nReach the relic on the ridge!\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        -1,
+        -3
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 5.873299999997021,
+        "position": {
+          "x": -0.8774117549547206,
+          "y": -0.10362290025177132,
+          "z": -2.5950731545404855
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": 0.03172649086168769,
+          "y": -0.4706727420621003,
+          "z": 0.8817372622597657
+        },
+        "text": "A relic glows atop the ridge...\nHealth 100 / 100\nReach the relic on the ridge!\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        2,
+        0
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 10.753899999998525,
+        "position": {
+          "x": 1.750848657388356,
+          "y": 1.1016667887453218,
+          "z": 0.7652604341110673
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": -0.3471792621187725,
+          "y": -0.38979196273302835,
+          "z": 0.8529529797963064
+        },
+        "text": "A relic glows atop the ridge...\nHealth 100 / 100\nReach the relic on the ridge!\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        7,
+        0
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 15.06779999998213,
+        "position": {
+          "x": 6.0561240340271905,
+          "y": 2.578062017013595,
+          "z": -0.8826504438132006
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": -0.8675727539669412,
+          "y": -0.48612815447399566,
+          "z": -0.1048662672260442
+        },
+        "text": "A relic glows atop the ridge...\nHealth 100 / 100\nReach the relic on the ridge!\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        10,
+        0
+      ],
+      "result": "ended",
+      "state": {
+        "level": 0,
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": true,
+        "playtime": 16.685599999979143,
+        "position": {
+          "x": 8.498256664868533,
+          "y": 2.8,
+          "z": -1.8661681892721604
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": 0.924754716124746,
+          "y": -0.3804006256544653,
+          "z": -0.011139075667744887
+        },
+        "text": "A relic glows atop the ridge...\nRelic claimed\n\nYou reached the ridge and claimed its relic.\n\nRestart\nHealth 100 / 100\nReach the relic on the ridge!\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+        "dialogue": false
+      }
+    }
+  ],
+  "errors": [],
+  "started": "2026-09-08T16:01:16.317Z",
+  "start": {
+    "level": 0,
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 2.035799999997021,
+    "position": {
+      "x": -8,
+      "y": -0.19111882869149222,
+      "z": -8
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": 0,
+      "y": -0.4552594651435893,
+      "z": 0.8903588149713424
+    },
+    "text": "A relic glows atop the ridge...\nHealth 100 / 100\nReach the relic on the ridge!\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+    "dialogue": false
+  },
+  "final": {
+    "level": 0,
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "flags": {},
+    "inventory": {},
+    "ended": true,
+    "playtime": 17.819399999983613,
+    "position": {
+      "x": 10.741469348202905,
+      "y": 2.8,
+      "z": 1.4215984095766707
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": -0.00787505253671935,
+      "y": -0.42207566362487375,
+      "z": 0.9065264021103667
+    },
+    "text": "A relic glows atop the ridge...\nRelic claimed\n\nYou reached the ridge and claimed its relic.\n\nRestart\nHealth 100 / 100\nReach the relic on the ridge!\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+    "dialogue": false
+  },
+  "completed": true,
+  "restart": {
+    "level": 0,
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 0.5680999999940394,
+    "position": {
+      "x": -8,
+      "y": 0.55,
+      "z": -8
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": -0.5096058290067302,
+      "y": -0.394944517480216,
+      "z": 0.7644087435100954
+    },
+    "text": "A relic glows atop the ridge...\nHealth 100 / 100\nReach the relic on the ridge!\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+    "dialogue": false
+  },
+  "finished": "2026-09-08T16:01:38.861Z"
+}

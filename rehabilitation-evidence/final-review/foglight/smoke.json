@@ -1,0 +1,25 @@
+{
+  "id": "foglight",
+  "sourceSHA256": "d662795f5f69994de4063c803971f4c06f948e6dd82fee11ae338ad8366751f3",
+  "errors": [],
+  "capturedAt": "2026-09-08T16:23:25.155Z",
+  "sha256": "42f9cb7ede461fc22806b383fe17e727ac66328db0b1fcd025d1f2b81799ff38",
+  "state": {
+    "title": "Foglight",
+    "sim": 1.4187999999970198,
+    "ended": false,
+    "text": "Health 100 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+    "controller": "thirdperson",
+    "bodyVisible": false,
+    "visualVisible": true,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 199
+  },
+  "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+  "passed": true
+}

@@ -1,0 +1,629 @@
+{
+  "id": "valley-run",
+  "method": "Native keyboard input with read-only telemetry; no state mutation.",
+  "events": [
+    {
+      "name": "opening",
+      "ended": false,
+      "sim": 0.9178000000044697,
+      "pos": {
+        "x": 0,
+        "y": -1.9942011014227994,
+        "z": -17
+      },
+      "forward": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "text": "Health 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "visual": true,
+      "body": false,
+      "craftParts": [],
+      "checkpoint": null,
+      "errors": []
+    },
+    {
+      "walk": [
+        0,
+        -12
+      ],
+      "result": "arrived",
+      "state": {
+        "ended": false,
+        "sim": 1.9692000000029803,
+        "pos": {
+          "x": 0,
+          "y": -1.9949839960332776,
+          "z": -12.53207049559523
+        },
+        "forward": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 6.407107270844204
+        },
+        "text": "Health 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "visual": true,
+        "body": false,
+        "craftParts": [],
+        "checkpoint": null,
+        "errors": []
+      }
+    },
+    {
+      "name": "route-n12",
+      "ended": false,
+      "sim": 1.9692000000029803,
+      "pos": {
+        "x": 0,
+        "y": -1.9949839960332776,
+        "z": -12.53207049559523
+      },
+      "forward": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 6.407107270844204
+      },
+      "text": "Health 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "visual": true,
+      "body": false,
+      "craftParts": [],
+      "checkpoint": null,
+      "errors": []
+    },
+    {
+      "walk": [
+        0,
+        -5
+      ],
+      "result": "arrived",
+      "state": {
+        "ended": false,
+        "sim": 3.1702000000029815,
+        "pos": {
+          "x": 0,
+          "y": -1.2637082561637012,
+          "z": -5.518264243686389
+        },
+        "forward": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 6.453854682736676
+        },
+        "text": "Checkpoint reached.\nHealth 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "visual": true,
+        "body": false,
+        "craftParts": [],
+        "checkpoint": {
+          "x": 0,
+          "y": -0.9176178725397451,
+          "z": -5
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "route-n5",
+      "ended": false,
+      "sim": 3.1702000000029815,
+      "pos": {
+        "x": 0,
+        "y": -1.2637082561637012,
+        "z": -5.518264243686389
+      },
+      "forward": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 6.453854682736676
+      },
+      "text": "Checkpoint reached.\nHealth 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "visual": true,
+      "body": false,
+      "craftParts": [],
+      "checkpoint": {
+        "x": 0,
+        "y": -0.9176178725397451,
+        "z": -5
+      },
+      "errors": []
+    },
+    {
+      "walk": [
+        0,
+        1
+      ],
+      "result": "arrived",
+      "state": {
+        "ended": false,
+        "sim": 4.271500000000003,
+        "pos": {
+          "x": 0,
+          "y": 0.14405708050949606,
+          "z": 0.9052294171205745
+        },
+        "forward": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 6.457999961835119
+        },
+        "text": "Checkpoint reached.\nHealth 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "visual": true,
+        "body": false,
+        "craftParts": [],
+        "checkpoint": {
+          "x": 0,
+          "y": -0.9176178725397451,
+          "z": -5
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "route-1",
+      "ended": false,
+      "sim": 4.271500000000003,
+      "pos": {
+        "x": 0,
+        "y": 0.14405708050949606,
+        "z": 0.9052294171205745
+      },
+      "forward": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 6.457999961835119
+      },
+      "text": "Checkpoint reached.\nHealth 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "visual": true,
+      "body": false,
+      "craftParts": [],
+      "checkpoint": {
+        "x": 0,
+        "y": -0.9176178725397451,
+        "z": -5
+      },
+      "errors": []
+    },
+    {
+      "walk": [
+        0,
+        8
+      ],
+      "result": "arrived",
+      "state": {
+        "ended": false,
+        "sim": 5.339399999998512,
+        "pos": {
+          "x": 0,
+          "y": -1.8773045803570716,
+          "z": 7.308089535349964
+        },
+        "forward": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "velocity": {
+          "x": 0,
+          "y": -4.665999999940395,
+          "z": 6.312593794746254
+        },
+        "text": "Checkpoint reached.\nHealth 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "visual": true,
+        "body": false,
+        "craftParts": [],
+        "checkpoint": {
+          "x": 0,
+          "y": -0.9176178725397451,
+          "z": -5
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "route-8",
+      "ended": false,
+      "sim": 5.339399999998512,
+      "pos": {
+        "x": 0,
+        "y": -1.8773045803570716,
+        "z": 7.308089535349964
+      },
+      "forward": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "velocity": {
+        "x": 0,
+        "y": -4.665999999940395,
+        "z": 6.312593794746254
+      },
+      "text": "Checkpoint reached.\nHealth 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "visual": true,
+      "body": false,
+      "craftParts": [],
+      "checkpoint": {
+        "x": 0,
+        "y": -0.9176178725397451,
+        "z": -5
+      },
+      "errors": []
+    },
+    {
+      "walk": [
+        0,
+        14
+      ],
+      "result": "arrived",
+      "state": {
+        "ended": false,
+        "sim": 6.457800000004472,
+        "pos": {
+          "x": 0,
+          "y": -4.217120795967899,
+          "z": 13.85663332542778
+        },
+        "forward": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 6.123571660649247
+        },
+        "text": "Checkpoint reached.\nHealth 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "visual": true,
+        "body": false,
+        "craftParts": [],
+        "checkpoint": {
+          "x": 0,
+          "y": -0.9176178725397451,
+          "z": -5
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "route-14",
+      "ended": false,
+      "sim": 6.474000000000001,
+      "pos": {
+        "x": 0,
+        "y": -4.218365197775047,
+        "z": 13.952984229010465
+      },
+      "forward": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 5.947586642547677
+      },
+      "text": "Checkpoint reached.\nHealth 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "visual": true,
+      "body": false,
+      "craftParts": [],
+      "checkpoint": {
+        "x": 0,
+        "y": -0.9176178725397451,
+        "z": -5
+      },
+      "errors": []
+    },
+    {
+      "walk": [
+        0,
+        22
+      ],
+      "result": "ended",
+      "state": {
+        "ended": true,
+        "sim": 7.758899999998509,
+        "pos": {
+          "x": 0,
+          "y": -1.8943576476043917,
+          "z": 21.269331340394793
+        },
+        "forward": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 6.088671538314264
+        },
+        "text": "Checkpoint reached.\nValley crossed\n\nYou reached the far ridge.\n\nRestart\nHealth 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "visual": true,
+        "body": false,
+        "craftParts": [],
+        "checkpoint": {
+          "x": 0,
+          "y": -0.9176178725397451,
+          "z": -5
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "route-22",
+      "ended": true,
+      "sim": 7.758899999998509,
+      "pos": {
+        "x": 0,
+        "y": -1.8943576476043917,
+        "z": 21.269331340394793
+      },
+      "forward": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 6.088671538314264
+      },
+      "text": "Checkpoint reached.\nValley crossed\n\nYou reached the far ridge.\n\nRestart\nHealth 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "visual": true,
+      "body": false,
+      "craftParts": [],
+      "checkpoint": {
+        "x": 0,
+        "y": -0.9176178725397451,
+        "z": -5
+      },
+      "errors": []
+    },
+    {
+      "name": "outcome",
+      "ended": true,
+      "sim": 7.880399999998509,
+      "pos": {
+        "x": 0,
+        "y": -1.8733073467487156,
+        "z": 21.92342527107683
+      },
+      "forward": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 4.892629650180434
+      },
+      "text": "Checkpoint reached.\nValley crossed\n\nYou reached the far ridge.\n\nRestart\nHealth 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "visual": true,
+      "body": false,
+      "craftParts": [],
+      "checkpoint": {
+        "x": 0,
+        "y": -0.9176178725397451,
+        "z": -5
+      },
+      "errors": []
+    },
+    {
+      "name": "restart",
+      "ended": false,
+      "sim": 0.5662000000029801,
+      "pos": {
+        "x": 0,
+        "y": -1.9942011014227994,
+        "z": -17
+      },
+      "forward": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "text": "Health 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "visual": true,
+      "body": false,
+      "craftParts": [],
+      "checkpoint": null,
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "opening": {
+    "ended": false,
+    "sim": 0.9178000000044697,
+    "pos": {
+      "x": 0,
+      "y": -1.9942011014227994,
+      "z": -17
+    },
+    "forward": {
+      "x": 0,
+      "y": 0,
+      "z": 1
+    },
+    "velocity": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "text": "Health 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "visual": true,
+    "body": false,
+    "craftParts": [],
+    "checkpoint": null,
+    "errors": []
+  },
+  "final": {
+    "ended": true,
+    "sim": 7.880399999998509,
+    "pos": {
+      "x": 0,
+      "y": -1.8733073467487156,
+      "z": 21.92342527107683
+    },
+    "forward": {
+      "x": 0,
+      "y": 0,
+      "z": 1
+    },
+    "velocity": {
+      "x": 0,
+      "y": 0,
+      "z": 4.892629650180434
+    },
+    "text": "Checkpoint reached.\nValley crossed\n\nYou reached the far ridge.\n\nRestart\nHealth 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "visual": true,
+    "body": false,
+    "craftParts": [],
+    "checkpoint": {
+      "x": 0,
+      "y": -0.9176178725397451,
+      "z": -5
+    },
+    "errors": []
+  },
+  "completed": true,
+  "restart": {
+    "ended": false,
+    "sim": 0.5662000000029801,
+    "pos": {
+      "x": 0,
+      "y": -1.9942011014227994,
+      "z": -17
+    },
+    "forward": {
+      "x": 0,
+      "y": 0,
+      "z": 1
+    },
+    "velocity": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "text": "Health 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "visual": true,
+    "body": false,
+    "craftParts": [],
+    "checkpoint": null,
+    "errors": []
+  }
+}

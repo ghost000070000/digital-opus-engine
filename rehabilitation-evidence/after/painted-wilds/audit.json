@@ -1,0 +1,330 @@
+{
+  "id": "painted-wilds",
+  "phase": "after",
+  "url": "http://localhost:8837/dist/games/painted-wilds.html",
+  "startedAt": "2026-09-08T16:36:15.768Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Painted Wilds",
+      "text": "Visit all three survey stones.\nStudies: 0 / 3\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "state": {},
+      "playtime": 0.4,
+      "simulationSeconds": 0.4,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": -13,
+          "y": -0.9500000000000001,
+          "z": 0
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Painted Wilds",
+      "text": "Visit all three survey stones.\nStudies: 0 / 3\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "state": {},
+      "playtime": 4.227499999992551,
+      "simulationSeconds": 4.227499999992551,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": -5.632026181974762,
+          "y": -1.9562093281175912,
+          "z": 12.828158035420858
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Painted Wilds",
+      "text": "Visit all three survey stones.\nStudies: 0 / 3\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "state": {},
+      "playtime": 20.027499999992568,
+      "simulationSeconds": 20.027499999992568,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": -5.779563161813123,
+          "y": -1.8617677952083476,
+          "z": 11.545864095647792
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Painted Wilds",
+    "text": "Painted Wilds\n\nA short landscape walk through moss, ochre and slate. Follow the three survey stones. Visual landmark: Painted totem.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "state": {},
+    "playtime": 0,
+    "simulationSeconds": 0,
+    "ended": false,
+    "player": {
+      "position": {
+        "x": -13,
+        "y": 1.05,
+        "z": 0
+      },
+      "visible": false,
+      "controller": "thirdperson"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nVisit all three survey stones.\nStudies: 0 / 3\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+  "completed": true,
+  "finishedAt": "2026-09-08T16:37:28.072Z"
+}

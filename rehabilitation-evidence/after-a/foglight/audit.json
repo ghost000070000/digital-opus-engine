@@ -1,0 +1,149 @@
+{
+  "id": "foglight",
+  "phase": "after-a",
+  "url": "http://localhost:8837/dist/games/foglight.html",
+  "startedAt": "2026-09-08T00:08:25.038Z",
+  "seconds": 26,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 3120
+    },
+    {
+      "key": "d",
+      "milliseconds": 2600
+    },
+    {
+      "key": "w",
+      "milliseconds": 3900
+    },
+    {
+      "key": "a",
+      "milliseconds": 2600
+    },
+    {
+      "key": "s",
+      "milliseconds": 2080
+    },
+    {
+      "key": "w",
+      "milliseconds": 2600
+    },
+    {
+      "key": "d",
+      "milliseconds": 1300
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Foglight",
+      "text": "Light the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 0.1,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.6500000000000001,
+          "z": 0
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {
+        "objective1": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Foglight",
+      "text": "Light the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 1.6000000000000003,
+      "player": {
+        "position": {
+          "x": 3.6939354744395505,
+          "y": 3.0500000000000003,
+          "z": 0.5242983246727618
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {
+        "objective1": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Foglight",
+      "text": "Light the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 4.717499999999999,
+      "player": {
+        "position": {
+          "x": 1.435338107800049,
+          "y": -2.937529090384965,
+          "z": 3.5266638710781626
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {
+        "objective1": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Foglight",
+    "text": "Foglight\n\nCarry light through a mist-filled vale. Awaken three ancient beacons, evade the antlered guardian, and open the sanctuary.\n\nBegin journey\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+    "state": {},
+    "playtime": 0,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 1.85,
+        "z": 0
+      },
+      "visible": true,
+      "controller": "thirdperson"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {
+      "objective1": "active"
+    },
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:09:14.314Z"
+}

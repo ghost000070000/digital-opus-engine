@@ -1,0 +1,140 @@
+{
+  "id": "assembly-line",
+  "phase": "after",
+  "url": "http://localhost:8837/dist/games/assembly-line.html",
+  "startedAt": "2026-09-08T16:37:16.233Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Assembly Line",
+      "text": "Observe the three active bays, then use the inspection console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 0.30000000000000004,
+      "simulationSeconds": 0.30000000000000004,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": -5
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Assembly Line",
+      "text": "Observe the three active bays, then use the inspection console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 4.043199999995532,
+      "simulationSeconds": 4.043199999995532,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 4.799999937287014,
+          "y": 0.55,
+          "z": 9.70000006271299
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Assembly Line",
+      "text": "Inspection complete\n\nAll three fabrication bays are operational.\n\nRestart\nObserve the three active bays, then use the inspection console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 8.066899999998498,
+      "simulationSeconds": 8.066899999998498,
+      "ended": true,
+      "player": {
+        "position": {
+          "x": 4.205156871534042,
+          "y": 0.55,
+          "z": 10.698037190782081
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Assembly Line",
+    "text": "Assembly Line\n\nThree fabrication bays assemble drones in real time. Clear space with your blaster, then inspect the control desk. Visual landmark: Factory index tower.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+    "state": {},
+    "playtime": 0,
+    "simulationSeconds": 0,
+    "ended": false,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 1.25,
+        "z": -5
+      },
+      "visible": false,
+      "controller": "firstperson"
+    },
+    "camera": {
+      "mode": "fixed"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "Inspection complete\n\nAll three fabrication bays are operational.\n\nRestart\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nObserve the three active bays, then use the inspection console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+  "completed": true,
+  "finishedAt": "2026-09-08T16:38:00.244Z"
+}

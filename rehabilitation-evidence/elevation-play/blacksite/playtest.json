@@ -1,0 +1,52 @@
+{
+  "id": "blacksite",
+  "index": 23,
+  "inputOnly": true,
+  "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+  "errors": [],
+  "actions": [
+    {
+      "key": "w",
+      "ms": 950
+    },
+    {
+      "key": "d",
+      "ms": 520
+    },
+    {
+      "key": "f",
+      "ms": 0
+    },
+    {
+      "key": "q",
+      "ms": 0
+    },
+    {
+      "key": "w",
+      "ms": 700
+    }
+  ],
+  "startedAt": "2026-09-08T17:43:09.644Z",
+  "sourceSHA256": "cb34e95a363d62b3d4394e6615df8c57c5b2317b47fe67be3cce5de03e73d356",
+  "final": {
+    "title": "Blacksite",
+    "sim": 3.8873999999985154,
+    "ended": false,
+    "paused": false,
+    "controller": "firstperson",
+    "position": {
+      "x": 4.663072223667629,
+      "y": 0.79,
+      "z": 7.6874983200062585
+    },
+    "state": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": [],
+    "webglLost": false
+  },
+  "pauseVisible": true,
+  "restartPassed": true,
+  "passed": true,
+  "finishedAt": "2026-09-08T17:43:14.594Z"
+}

@@ -1,0 +1,144 @@
+{
+  "id": "power-station",
+  "phase": "after-bc-final",
+  "url": "http://localhost:8837/dist/games/power-station.html",
+  "startedAt": "2026-09-08T00:47:25.869Z",
+  "seconds": 4,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 480
+    },
+    {
+      "key": "d",
+      "milliseconds": 400
+    },
+    {
+      "key": "w",
+      "milliseconds": 600
+    },
+    {
+      "key": "a",
+      "milliseconds": 400
+    },
+    {
+      "key": "s",
+      "milliseconds": 320
+    },
+    {
+      "key": "w",
+      "milliseconds": 400
+    },
+    {
+      "key": "d",
+      "milliseconds": 200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Power Station",
+      "text": "Fuel Cells: 0/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 0.3213000000715256,
+      "simulationSeconds": 0.3213000000715256,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 0
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Power Station",
+      "text": "Fuel Cells: 0/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 1.5691000001430515,
+      "simulationSeconds": 1.5691000001430515,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 2.0090293392552026,
+          "y": 2.35,
+          "z": 2.1318548126566395
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Power Station",
+      "text": "Fuel Cell collected.\nFuel Cells: 1/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "state": {
+        "fuelCell": 1
+      },
+      "playtime": 3.5691000001430533,
+      "simulationSeconds": 3.5691000001430533,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 5.109379176572232,
+          "y": 0.55,
+          "z": 2.012417914790133
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {
+        "fuelCell": 1
+      },
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Power Station",
+    "text": "Power Station\n\nThe turbine is silent. Collect three fuel cells, speak to the engineer, and restart the machine.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "state": {},
+    "playtime": 0,
+    "simulationSeconds": 0,
+    "ended": false,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 0.55,
+        "z": 0
+      },
+      "visible": false,
+      "controller": "thirdperson"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "Fuel Cell collected.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nFuel Cells: 1/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:47:41.380Z"
+}

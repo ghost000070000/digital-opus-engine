@@ -1,0 +1,25 @@
+{
+  "id": "textured-adventure",
+  "sourceSHA256": "859b27004acf2902352dd4c8dd21d51af3efd2d5dcbec99bf76330c96478875b",
+  "errors": [],
+  "capturedAt": "2026-09-08T16:25:10.012Z",
+  "sha256": "ab31bad1ac7354ecc0ea90cc648fe5bd4c87acac4c48f46af6c53b1c523bfcbf",
+  "state": {
+    "title": "Textured Adventure",
+    "sim": 1.4356000000014895,
+    "ended": false,
+    "text": "Relics: 0/3\nHealth 100 / 100\nCollect three relics and enter the shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "controller": "thirdperson",
+    "bodyVisible": false,
+    "visualVisible": true,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 26
+  },
+  "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nRelics: 0/3\nHealth 100 / 100\nCollect three relics and enter the shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+  "passed": true
+}

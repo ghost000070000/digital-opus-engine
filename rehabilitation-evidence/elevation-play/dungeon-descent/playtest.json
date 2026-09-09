@@ -1,0 +1,56 @@
+{
+  "id": "dungeon-descent",
+  "index": 10,
+  "inputOnly": true,
+  "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+  "errors": [],
+  "actions": [
+    {
+      "key": "w",
+      "ms": 950
+    },
+    {
+      "key": "a",
+      "ms": 520
+    },
+    {
+      "key": "Space",
+      "ms": 100
+    },
+    {
+      "key": "f",
+      "ms": 0
+    },
+    {
+      "key": "q",
+      "ms": 0
+    },
+    {
+      "key": "w",
+      "ms": 700
+    }
+  ],
+  "startedAt": "2026-09-08T17:42:02.355Z",
+  "sourceSHA256": "5fa80bcb148b8c1e6ea179d17a0c8dc403ed12723625f6653a2817477a4fad16",
+  "final": {
+    "title": "Dungeon Descent",
+    "sim": 4.121100000001495,
+    "ended": false,
+    "paused": false,
+    "controller": "topdown",
+    "position": {
+      "x": -14.5,
+      "y": 1.15,
+      "z": -9.733389868941646
+    },
+    "state": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": [],
+    "webglLost": false
+  },
+  "pauseVisible": true,
+  "restartPassed": true,
+  "passed": true,
+  "finishedAt": "2026-09-08T17:42:07.533Z"
+}

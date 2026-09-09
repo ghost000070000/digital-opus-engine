@@ -1,0 +1,6937 @@
+{
+  "id": "relic-island",
+  "inputOnly": true,
+  "startedAt": "2026-09-08T15:59:00.193Z",
+  "events": [
+    {
+      "capture": "start",
+      "state": {
+        "pos": {
+          "x": 0,
+          "y": 1.9244689090810891,
+          "z": 0
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "forward": {
+            "x": 1.1370560075755593e-16,
+            "y": -0.3713906763541038,
+            "z": -0.9284766908852593
+          },
+          "right": {
+            "x": 0.9999999999999999,
+            "y": 0,
+            "z": 1.2246467991473532e-16
+          },
+          "up": {
+            "x": 4.548224030302238e-17,
+            "y": 0.9284766908852592,
+            "z": -0.3713906763541037
+          }
+        },
+        "eye": {
+          "x": -7.960204194457795e-16,
+          "y": 4.524468909081089,
+          "z": 6.5
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022,
+        "pointerLocked": false,
+        "sim": 0,
+        "ended": false,
+        "frozen": false,
+        "health": {},
+        "inventory": {},
+        "objectives": {},
+        "held": null,
+        "nearest": null,
+        "text": "Find 3 relics, unlock the gate, reach the shrine\nRelic Island\n\nA small island treasure hunt. Recover three golden relics and the gate key, then awaken the hilltop shrine. Visual landmark: Tidal relic.\n\nBegin journey\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nThree relics • One key • F use the gate lever",
+        "beacons": [],
+        "objs": [
+          {
+            "id": "obj45",
+            "name": "Relic",
+            "pos": {
+              "x": 8,
+              "y": -0.2793950652525449,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "obj46",
+            "name": "Relic",
+            "pos": {
+              "x": -8,
+              "y": 0.10302075556051965,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "obj47",
+            "name": "Relic",
+            "pos": {
+              "x": 0,
+              "y": -0.526589551854872,
+              "z": -10
+            },
+            "visible": true
+          },
+          {
+            "id": "obj48",
+            "name": "Key Pickup",
+            "pos": {
+              "x": 10,
+              "y": -0.38708677544177766,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "obj49",
+            "name": "Gate",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "obj50",
+            "name": "Shrine",
+            "pos": {
+              "x": 0,
+              "y": -1.6934647207147573,
+              "z": 14
+            },
+            "visible": true
+          },
+          {
+            "id": "obj51",
+            "name": "Gate Lever",
+            "pos": {
+              "x": 1.5,
+              "y": 0.18412067075828276,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-1",
+            "name": "Arrival",
+            "pos": {
+              "x": 0,
+              "y": 1.374468909081089,
+              "z": 0
+            },
+            "visible": false
+          },
+          {
+            "id": "rehab-2",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.249999999999998,
+              "y": -0.4715634459461815,
+              "z": 0.6291651245988517
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-3",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.449999999999998,
+              "y": 0.3163401410329927,
+              "z": -0.37083487540114835
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-4",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -12.98738727668022,
+              "y": -1.5277362980855298,
+              "z": -2.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-5",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -11.18738727668022,
+              "y": -1.2727987588009433,
+              "z": -3.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-6",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -13.98738727668022,
+              "y": -1.6564463638098073,
+              "z": -1.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-7",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -14.866772518252038,
+              "y": -2.189979339760823,
+              "z": -8.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-8",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -13.066772518252037,
+              "y": -2.1235183122499324,
+              "z": -9.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-9",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.250000000000004,
+              "y": -1.4241846483244915,
+              "z": -10.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-10",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.450000000000004,
+              "y": -1.238379160041313,
+              "z": -11.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-11",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -9.250000000000004,
+              "y": -1.4775499112719612,
+              "z": -9.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-12",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 11.971474217349176,
+              "y": -1.9604939768564416,
+              "z": 9.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-13",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 13.771474217349176,
+              "y": -2.2545320170806606,
+              "z": 8.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-14",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 10.971474217349176,
+              "y": -1.890928098326333,
+              "z": 10.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-15",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.460367661147,
+              "y": -2.0807716633809257,
+              "z": 13.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-16",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 10.260367661147,
+              "y": -2.132773676114169,
+              "z": 12.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-17",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.140670628973552,
+              "y": 0.0776495622566804,
+              "z": -1.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-18",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 9.940670628973553,
+              "y": -0.08086201085744316,
+              "z": -2.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-19",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 7.140670628973552,
+              "y": 0.2976124033411054,
+              "z": -0.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-20",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 13.521574212874103,
+              "y": -1.606034081984321,
+              "z": -0.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-21",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 15.321574212874104,
+              "y": -2.2136981707937067,
+              "z": -1.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-22",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 17.499981674660305,
+              "y": -2.5221887407898333,
+              "z": 5.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-23",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 19.299981674660305,
+              "y": -2.5216869360347087,
+              "z": 4.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-24",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 16.499981674660305,
+              "y": -2.5120550806688793,
+              "z": 6.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-25",
+            "name": "Molten pool",
+            "pos": {
+              "x": -5,
+              "y": 0.2075622332131951,
+              "z": -3
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-26",
+            "name": "Sanctuary arch",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-27",
+            "name": "Relic marker",
+            "pos": {
+              "x": 9.2,
+              "y": -1.0531837717502024,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-28",
+            "name": "Relic marker",
+            "pos": {
+              "x": -6.8,
+              "y": -0.07192977700936476,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-29",
+            "name": "Relic marker",
+            "pos": {
+              "x": 1.2,
+              "y": -0.9774926949000315,
+              "z": -10
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-1",
+            "name": "Tidal relic",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 0.07446890908108905,
+              "z": -11
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-2",
+            "name": "Tidal relic key light",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 4.274468909081089,
+              "z": -11
+            },
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "capture": "opening",
+      "state": {
+        "pos": {
+          "x": 0,
+          "y": 1.1744689090810891,
+          "z": 0
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "forward": {
+            "x": 1.1653373233481098e-16,
+            "y": -0.3074317370743053,
+            "z": -0.9515701377405005
+          },
+          "right": {
+            "x": 0.9999999999999999,
+            "y": 0,
+            "z": 1.224646799147353e-16
+          },
+          "up": {
+            "x": 3.7649529276435864e-17,
+            "y": 0.9515701377405004,
+            "z": -0.30743173707430527
+          }
+        },
+        "eye": {
+          "x": -7.960204194457795e-16,
+          "y": 3.774528139422921,
+          "z": 6.5
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022,
+        "pointerLocked": false,
+        "sim": 1.5366999999955302,
+        "ended": false,
+        "frozen": false,
+        "health": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "inventory": {},
+        "objectives": {},
+        "held": null,
+        "nearest": null,
+        "text": "Find 3 relics, unlock the gate, reach the shrine\nHealth 100 / 100\nRelics: 0/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+        "beacons": [],
+        "objs": [
+          {
+            "id": "obj45",
+            "name": "Relic",
+            "pos": {
+              "x": 8,
+              "y": -0.2793950652525449,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "obj46",
+            "name": "Relic",
+            "pos": {
+              "x": -8,
+              "y": 0.10302075556051965,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "obj47",
+            "name": "Relic",
+            "pos": {
+              "x": 0,
+              "y": -0.526589551854872,
+              "z": -10
+            },
+            "visible": true
+          },
+          {
+            "id": "obj48",
+            "name": "Key Pickup",
+            "pos": {
+              "x": 10,
+              "y": -0.38708677544177766,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "obj49",
+            "name": "Gate",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "obj50",
+            "name": "Shrine",
+            "pos": {
+              "x": 0,
+              "y": -1.6934647207147573,
+              "z": 14
+            },
+            "visible": true
+          },
+          {
+            "id": "obj51",
+            "name": "Gate Lever",
+            "pos": {
+              "x": 1.5,
+              "y": 0.18412067075828276,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-1",
+            "name": "Arrival",
+            "pos": {
+              "x": 0,
+              "y": 1.374468909081089,
+              "z": 0
+            },
+            "visible": false
+          },
+          {
+            "id": "rehab-2",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.249999999999998,
+              "y": -0.4715634459461815,
+              "z": 0.6291651245988517
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-3",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.449999999999998,
+              "y": 0.3163401410329927,
+              "z": -0.37083487540114835
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-4",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -12.98738727668022,
+              "y": -1.5277362980855298,
+              "z": -2.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-5",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -11.18738727668022,
+              "y": -1.2727987588009433,
+              "z": -3.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-6",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -13.98738727668022,
+              "y": -1.6564463638098073,
+              "z": -1.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-7",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -14.866772518252038,
+              "y": -2.189979339760823,
+              "z": -8.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-8",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -13.066772518252037,
+              "y": -2.1235183122499324,
+              "z": -9.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-9",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.250000000000004,
+              "y": -1.4241846483244915,
+              "z": -10.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-10",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.450000000000004,
+              "y": -1.238379160041313,
+              "z": -11.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-11",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -9.250000000000004,
+              "y": -1.4775499112719612,
+              "z": -9.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-12",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 11.971474217349176,
+              "y": -1.9604939768564416,
+              "z": 9.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-13",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 13.771474217349176,
+              "y": -2.2545320170806606,
+              "z": 8.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-14",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 10.971474217349176,
+              "y": -1.890928098326333,
+              "z": 10.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-15",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.460367661147,
+              "y": -2.0807716633809257,
+              "z": 13.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-16",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 10.260367661147,
+              "y": -2.132773676114169,
+              "z": 12.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-17",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.140670628973552,
+              "y": 0.0776495622566804,
+              "z": -1.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-18",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 9.940670628973553,
+              "y": -0.08086201085744316,
+              "z": -2.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-19",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 7.140670628973552,
+              "y": 0.2976124033411054,
+              "z": -0.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-20",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 13.521574212874103,
+              "y": -1.606034081984321,
+              "z": -0.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-21",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 15.321574212874104,
+              "y": -2.2136981707937067,
+              "z": -1.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-22",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 17.499981674660305,
+              "y": -2.5221887407898333,
+              "z": 5.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-23",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 19.299981674660305,
+              "y": -2.5216869360347087,
+              "z": 4.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-24",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 16.499981674660305,
+              "y": -2.5120550806688793,
+              "z": 6.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-25",
+            "name": "Molten pool",
+            "pos": {
+              "x": -5,
+              "y": 0.2075622332131951,
+              "z": -3
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-26",
+            "name": "Sanctuary arch",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-27",
+            "name": "Relic marker",
+            "pos": {
+              "x": 9.2,
+              "y": -1.0531837717502024,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-28",
+            "name": "Relic marker",
+            "pos": {
+              "x": -6.8,
+              "y": -0.07192977700936476,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-29",
+            "name": "Relic marker",
+            "pos": {
+              "x": 1.2,
+              "y": -0.9774926949000315,
+              "z": -10
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-1",
+            "name": "Tidal relic",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 0.07446890908108905,
+              "z": -11
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-2",
+            "name": "Tidal relic key light",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 4.274468909081089,
+              "z": -11
+            },
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "walk": "east relic",
+      "reached": true,
+      "state": {
+        "pos": {
+          "x": 8.099086453812111,
+          "y": -0.29457357900561276,
+          "z": 8.47065735679671
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "forward": {
+            "x": 0.9544448785642933,
+            "y": -0.2598989145775007,
+            "z": -0.14658624759447442
+          },
+          "right": {
+            "x": 0.15180282586446472,
+            "y": 0,
+            "z": 0.9884107962075095
+          },
+          "up": {
+            "x": 0.256886893091015,
+            "y": 0.9656358289756222,
+            "z": -0.039453389671971734
+          }
+        },
+        "eye": {
+          "x": 2.7134893040442916,
+          "y": 2.419902021421397,
+          "z": 10.100067972579172
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022,
+        "pointerLocked": false,
+        "sim": 3.9071000000014924,
+        "ended": false,
+        "frozen": false,
+        "health": {
+          "maxHealth": 100,
+          "health": 100,
+          "relics": 1
+        },
+        "inventory": {},
+        "objectives": {},
+        "held": null,
+        "nearest": null,
+        "text": "Relic collected!\nFind 3 relics, unlock the gate, reach the shrine\nHealth 100 / 100\nRelics: 1/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+        "beacons": [],
+        "objs": [
+          {
+            "id": "obj46",
+            "name": "Relic",
+            "pos": {
+              "x": -8,
+              "y": 0.10302075556051965,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "obj47",
+            "name": "Relic",
+            "pos": {
+              "x": 0,
+              "y": -0.526589551854872,
+              "z": -10
+            },
+            "visible": true
+          },
+          {
+            "id": "obj48",
+            "name": "Key Pickup",
+            "pos": {
+              "x": 10,
+              "y": -0.38708677544177766,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "obj49",
+            "name": "Gate",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "obj50",
+            "name": "Shrine",
+            "pos": {
+              "x": 0,
+              "y": -1.6934647207147573,
+              "z": 14
+            },
+            "visible": true
+          },
+          {
+            "id": "obj51",
+            "name": "Gate Lever",
+            "pos": {
+              "x": 1.5,
+              "y": 0.18412067075828276,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-1",
+            "name": "Arrival",
+            "pos": {
+              "x": 0,
+              "y": 1.374468909081089,
+              "z": 0
+            },
+            "visible": false
+          },
+          {
+            "id": "rehab-2",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.249999999999998,
+              "y": -0.4715634459461815,
+              "z": 0.6291651245988517
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-3",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.449999999999998,
+              "y": 0.3163401410329927,
+              "z": -0.37083487540114835
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-4",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -12.98738727668022,
+              "y": -1.5277362980855298,
+              "z": -2.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-5",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -11.18738727668022,
+              "y": -1.2727987588009433,
+              "z": -3.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-6",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -13.98738727668022,
+              "y": -1.6564463638098073,
+              "z": -1.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-7",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -14.866772518252038,
+              "y": -2.189979339760823,
+              "z": -8.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-8",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -13.066772518252037,
+              "y": -2.1235183122499324,
+              "z": -9.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-9",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.250000000000004,
+              "y": -1.4241846483244915,
+              "z": -10.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-10",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.450000000000004,
+              "y": -1.238379160041313,
+              "z": -11.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-11",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -9.250000000000004,
+              "y": -1.4775499112719612,
+              "z": -9.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-12",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 11.971474217349176,
+              "y": -1.9604939768564416,
+              "z": 9.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-13",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 13.771474217349176,
+              "y": -2.2545320170806606,
+              "z": 8.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-14",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 10.971474217349176,
+              "y": -1.890928098326333,
+              "z": 10.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-15",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.460367661147,
+              "y": -2.0807716633809257,
+              "z": 13.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-16",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 10.260367661147,
+              "y": -2.132773676114169,
+              "z": 12.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-17",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.140670628973552,
+              "y": 0.0776495622566804,
+              "z": -1.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-18",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 9.940670628973553,
+              "y": -0.08086201085744316,
+              "z": -2.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-19",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 7.140670628973552,
+              "y": 0.2976124033411054,
+              "z": -0.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-20",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 13.521574212874103,
+              "y": -1.606034081984321,
+              "z": -0.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-21",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 15.321574212874104,
+              "y": -2.2136981707937067,
+              "z": -1.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-22",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 17.499981674660305,
+              "y": -2.5221887407898333,
+              "z": 5.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-23",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 19.299981674660305,
+              "y": -2.5216869360347087,
+              "z": 4.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-24",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 16.499981674660305,
+              "y": -2.5120550806688793,
+              "z": 6.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-25",
+            "name": "Molten pool",
+            "pos": {
+              "x": -5,
+              "y": 0.2075622332131951,
+              "z": -3
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-26",
+            "name": "Sanctuary arch",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-27",
+            "name": "Relic marker",
+            "pos": {
+              "x": 9.2,
+              "y": -1.0531837717502024,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-28",
+            "name": "Relic marker",
+            "pos": {
+              "x": -6.8,
+              "y": -0.07192977700936476,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-29",
+            "name": "Relic marker",
+            "pos": {
+              "x": 1.2,
+              "y": -0.9774926949000315,
+              "z": -10
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-1",
+            "name": "Tidal relic",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 0.07446890908108905,
+              "z": -11
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-2",
+            "name": "Tidal relic key light",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 4.274468909081089,
+              "z": -11
+            },
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "capture": "east-relic",
+      "state": {
+        "pos": {
+          "x": 8.98609327002071,
+          "y": -0.46085858170248706,
+          "z": 7.770975757448944
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "forward": {
+            "x": 0.13647422877573379,
+            "y": -0.27576956656107193,
+            "z": -0.95148616965187
+          },
+          "right": {
+            "x": 0.9898695747274739,
+            "y": 0,
+            "z": 0.14197966413838992
+          },
+          "up": {
+            "x": 0.03915367043993036,
+            "y": 0.9612237752774941,
+            "z": -0.2729759035745881
+          }
+        },
+        "eye": {
+          "x": 8.869703513264954,
+          "y": 2.176374496910941,
+          "z": 14.331194731418545
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022,
+        "pointerLocked": false,
+        "sim": 4.422600000001493,
+        "ended": false,
+        "frozen": false,
+        "health": {
+          "maxHealth": 100,
+          "health": 100,
+          "relics": 1
+        },
+        "inventory": {},
+        "objectives": {},
+        "held": null,
+        "nearest": null,
+        "text": "Relic collected!\nFind 3 relics, unlock the gate, reach the shrine\nHealth 100 / 100\nRelics: 1/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+        "beacons": [],
+        "objs": [
+          {
+            "id": "obj46",
+            "name": "Relic",
+            "pos": {
+              "x": -8,
+              "y": 0.10302075556051965,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "obj47",
+            "name": "Relic",
+            "pos": {
+              "x": 0,
+              "y": -0.526589551854872,
+              "z": -10
+            },
+            "visible": true
+          },
+          {
+            "id": "obj48",
+            "name": "Key Pickup",
+            "pos": {
+              "x": 10,
+              "y": -0.38708677544177766,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "obj49",
+            "name": "Gate",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "obj50",
+            "name": "Shrine",
+            "pos": {
+              "x": 0,
+              "y": -1.6934647207147573,
+              "z": 14
+            },
+            "visible": true
+          },
+          {
+            "id": "obj51",
+            "name": "Gate Lever",
+            "pos": {
+              "x": 1.5,
+              "y": 0.18412067075828276,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-1",
+            "name": "Arrival",
+            "pos": {
+              "x": 0,
+              "y": 1.374468909081089,
+              "z": 0
+            },
+            "visible": false
+          },
+          {
+            "id": "rehab-2",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.249999999999998,
+              "y": -0.4715634459461815,
+              "z": 0.6291651245988517
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-3",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.449999999999998,
+              "y": 0.3163401410329927,
+              "z": -0.37083487540114835
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-4",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -12.98738727668022,
+              "y": -1.5277362980855298,
+              "z": -2.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-5",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -11.18738727668022,
+              "y": -1.2727987588009433,
+              "z": -3.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-6",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -13.98738727668022,
+              "y": -1.6564463638098073,
+              "z": -1.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-7",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -14.866772518252038,
+              "y": -2.189979339760823,
+              "z": -8.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-8",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -13.066772518252037,
+              "y": -2.1235183122499324,
+              "z": -9.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-9",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.250000000000004,
+              "y": -1.4241846483244915,
+              "z": -10.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-10",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.450000000000004,
+              "y": -1.238379160041313,
+              "z": -11.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-11",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -9.250000000000004,
+              "y": -1.4775499112719612,
+              "z": -9.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-12",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 11.971474217349176,
+              "y": -1.9604939768564416,
+              "z": 9.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-13",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 13.771474217349176,
+              "y": -2.2545320170806606,
+              "z": 8.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-14",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 10.971474217349176,
+              "y": -1.890928098326333,
+              "z": 10.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-15",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.460367661147,
+              "y": -2.0807716633809257,
+              "z": 13.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-16",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 10.260367661147,
+              "y": -2.132773676114169,
+              "z": 12.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-17",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.140670628973552,
+              "y": 0.0776495622566804,
+              "z": -1.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-18",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 9.940670628973553,
+              "y": -0.08086201085744316,
+              "z": -2.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-19",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 7.140670628973552,
+              "y": 0.2976124033411054,
+              "z": -0.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-20",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 13.521574212874103,
+              "y": -1.606034081984321,
+              "z": -0.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-21",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 15.321574212874104,
+              "y": -2.2136981707937067,
+              "z": -1.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-22",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 17.499981674660305,
+              "y": -2.5221887407898333,
+              "z": 5.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-23",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 19.299981674660305,
+              "y": -2.5216869360347087,
+              "z": 4.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-24",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 16.499981674660305,
+              "y": -2.5120550806688793,
+              "z": 6.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-25",
+            "name": "Molten pool",
+            "pos": {
+              "x": -5,
+              "y": 0.2075622332131951,
+              "z": -3
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-26",
+            "name": "Sanctuary arch",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-27",
+            "name": "Relic marker",
+            "pos": {
+              "x": 9.2,
+              "y": -1.0531837717502024,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-28",
+            "name": "Relic marker",
+            "pos": {
+              "x": -6.8,
+              "y": -0.07192977700936476,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-29",
+            "name": "Relic marker",
+            "pos": {
+              "x": 1.2,
+              "y": -0.9774926949000315,
+              "z": -10
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-1",
+            "name": "Tidal relic",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 0.07446890908108905,
+              "z": -11
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-2",
+            "name": "Tidal relic key light",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 4.274468909081089,
+              "z": -11
+            },
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "walk": "west relic",
+      "reached": true,
+      "state": {
+        "pos": {
+          "x": -7.804442497319237,
+          "y": 0.25141371827950554,
+          "z": 6.127311446230568
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "forward": {
+            "x": 0.33737643341280654,
+            "y": -0.23191303512748254,
+            "z": -0.9123560085381217
+          },
+          "right": {
+            "x": 0.9379271637314484,
+            "y": 0,
+            "z": 0.34683228733017507
+          },
+          "up": {
+            "x": 0.08043492843494801,
+            "y": 0.9727365234933658,
+            "z": -0.21751753526947146
+          }
+        },
+        "eye": {
+          "x": -10.381931730625709,
+          "y": 2.7672480679047906,
+          "z": 12.10443660126398
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022,
+        "pointerLocked": false,
+        "sim": 8.831799999997015,
+        "ended": false,
+        "frozen": false,
+        "health": {
+          "maxHealth": 100,
+          "health": 100,
+          "relics": 2
+        },
+        "inventory": {},
+        "objectives": {},
+        "held": null,
+        "nearest": null,
+        "text": "Relic collected!\nFind 3 relics, unlock the gate, reach the shrine\nHealth 100 / 100\nRelics: 2/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+        "beacons": [],
+        "objs": [
+          {
+            "id": "obj47",
+            "name": "Relic",
+            "pos": {
+              "x": 0,
+              "y": -0.526589551854872,
+              "z": -10
+            },
+            "visible": true
+          },
+          {
+            "id": "obj48",
+            "name": "Key Pickup",
+            "pos": {
+              "x": 10,
+              "y": -0.38708677544177766,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "obj49",
+            "name": "Gate",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "obj50",
+            "name": "Shrine",
+            "pos": {
+              "x": 0,
+              "y": -1.6934647207147573,
+              "z": 14
+            },
+            "visible": true
+          },
+          {
+            "id": "obj51",
+            "name": "Gate Lever",
+            "pos": {
+              "x": 1.5,
+              "y": 0.18412067075828276,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-1",
+            "name": "Arrival",
+            "pos": {
+              "x": 0,
+              "y": 1.374468909081089,
+              "z": 0
+            },
+            "visible": false
+          },
+          {
+            "id": "rehab-2",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.249999999999998,
+              "y": -0.4715634459461815,
+              "z": 0.6291651245988517
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-3",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.449999999999998,
+              "y": 0.3163401410329927,
+              "z": -0.37083487540114835
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-4",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -12.98738727668022,
+              "y": -1.5277362980855298,
+              "z": -2.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-5",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -11.18738727668022,
+              "y": -1.2727987588009433,
+              "z": -3.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-6",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -13.98738727668022,
+              "y": -1.6564463638098073,
+              "z": -1.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-7",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -14.866772518252038,
+              "y": -2.189979339760823,
+              "z": -8.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-8",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -13.066772518252037,
+              "y": -2.1235183122499324,
+              "z": -9.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-9",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.250000000000004,
+              "y": -1.4241846483244915,
+              "z": -10.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-10",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.450000000000004,
+              "y": -1.238379160041313,
+              "z": -11.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-11",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -9.250000000000004,
+              "y": -1.4775499112719612,
+              "z": -9.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-12",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 11.971474217349176,
+              "y": -1.9604939768564416,
+              "z": 9.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-13",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 13.771474217349176,
+              "y": -2.2545320170806606,
+              "z": 8.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-14",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 10.971474217349176,
+              "y": -1.890928098326333,
+              "z": 10.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-15",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.460367661147,
+              "y": -2.0807716633809257,
+              "z": 13.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-16",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 10.260367661147,
+              "y": -2.132773676114169,
+              "z": 12.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-17",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.140670628973552,
+              "y": 0.0776495622566804,
+              "z": -1.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-18",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 9.940670628973553,
+              "y": -0.08086201085744316,
+              "z": -2.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-19",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 7.140670628973552,
+              "y": 0.2976124033411054,
+              "z": -0.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-20",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 13.521574212874103,
+              "y": -1.606034081984321,
+              "z": -0.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-21",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 15.321574212874104,
+              "y": -2.2136981707937067,
+              "z": -1.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-22",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 17.499981674660305,
+              "y": -2.5221887407898333,
+              "z": 5.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-23",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 19.299981674660305,
+              "y": -2.5216869360347087,
+              "z": 4.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-24",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 16.499981674660305,
+              "y": -2.5120550806688793,
+              "z": 6.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-25",
+            "name": "Molten pool",
+            "pos": {
+              "x": -5,
+              "y": 0.2075622332131951,
+              "z": -3
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-26",
+            "name": "Sanctuary arch",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-27",
+            "name": "Relic marker",
+            "pos": {
+              "x": 9.2,
+              "y": -1.0531837717502024,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-28",
+            "name": "Relic marker",
+            "pos": {
+              "x": -6.8,
+              "y": -0.07192977700936476,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-29",
+            "name": "Relic marker",
+            "pos": {
+              "x": 1.2,
+              "y": -0.9774926949000315,
+              "z": -10
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-1",
+            "name": "Tidal relic",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 0.07446890908108905,
+              "z": -11
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-2",
+            "name": "Tidal relic key light",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 4.274468909081089,
+              "z": -11
+            },
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "capture": "west-relic",
+      "state": {
+        "pos": {
+          "x": -7.386235803109268,
+          "y": 0.45077232882252183,
+          "z": 4.9230855606918595
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "forward": {
+            "x": 0.3332348560052114,
+            "y": -0.25839739635745884,
+            "z": -0.906744350023132
+          },
+          "right": {
+            "x": 0.9386211364165143,
+            "y": 0,
+            "z": 0.344949796741745
+          },
+          "up": {
+            "x": 0.08913412935210153,
+            "y": 0.9660387081042282,
+            "z": -0.2425372578161065
+          }
+        },
+        "eye": {
+          "x": -9.787381035018345,
+          "y": 2.976959615753336,
+          "z": 11.36706591545155
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022,
+        "pointerLocked": false,
+        "sim": 9.232499999999998,
+        "ended": false,
+        "frozen": false,
+        "health": {
+          "maxHealth": 100,
+          "health": 100,
+          "relics": 2
+        },
+        "inventory": {},
+        "objectives": {},
+        "held": null,
+        "nearest": null,
+        "text": "Relic collected!\nFind 3 relics, unlock the gate, reach the shrine\nHealth 100 / 100\nRelics: 2/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+        "beacons": [],
+        "objs": [
+          {
+            "id": "obj47",
+            "name": "Relic",
+            "pos": {
+              "x": 0,
+              "y": -0.526589551854872,
+              "z": -10
+            },
+            "visible": true
+          },
+          {
+            "id": "obj48",
+            "name": "Key Pickup",
+            "pos": {
+              "x": 10,
+              "y": -0.38708677544177766,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "obj49",
+            "name": "Gate",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "obj50",
+            "name": "Shrine",
+            "pos": {
+              "x": 0,
+              "y": -1.6934647207147573,
+              "z": 14
+            },
+            "visible": true
+          },
+          {
+            "id": "obj51",
+            "name": "Gate Lever",
+            "pos": {
+              "x": 1.5,
+              "y": 0.18412067075828276,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-1",
+            "name": "Arrival",
+            "pos": {
+              "x": 0,
+              "y": 1.374468909081089,
+              "z": 0
+            },
+            "visible": false
+          },
+          {
+            "id": "rehab-2",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.249999999999998,
+              "y": -0.4715634459461815,
+              "z": 0.6291651245988517
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-3",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.449999999999998,
+              "y": 0.3163401410329927,
+              "z": -0.37083487540114835
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-4",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -12.98738727668022,
+              "y": -1.5277362980855298,
+              "z": -2.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-5",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -11.18738727668022,
+              "y": -1.2727987588009433,
+              "z": -3.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-6",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -13.98738727668022,
+              "y": -1.6564463638098073,
+              "z": -1.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-7",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -14.866772518252038,
+              "y": -2.189979339760823,
+              "z": -8.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-8",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -13.066772518252037,
+              "y": -2.1235183122499324,
+              "z": -9.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-9",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.250000000000004,
+              "y": -1.4241846483244915,
+              "z": -10.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-10",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.450000000000004,
+              "y": -1.238379160041313,
+              "z": -11.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-11",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -9.250000000000004,
+              "y": -1.4775499112719612,
+              "z": -9.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-12",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 11.971474217349176,
+              "y": -1.9604939768564416,
+              "z": 9.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-13",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 13.771474217349176,
+              "y": -2.2545320170806606,
+              "z": 8.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-14",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 10.971474217349176,
+              "y": -1.890928098326333,
+              "z": 10.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-15",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.460367661147,
+              "y": -2.0807716633809257,
+              "z": 13.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-16",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 10.260367661147,
+              "y": -2.132773676114169,
+              "z": 12.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-17",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.140670628973552,
+              "y": 0.0776495622566804,
+              "z": -1.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-18",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 9.940670628973553,
+              "y": -0.08086201085744316,
+              "z": -2.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-19",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 7.140670628973552,
+              "y": 0.2976124033411054,
+              "z": -0.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-20",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 13.521574212874103,
+              "y": -1.606034081984321,
+              "z": -0.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-21",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 15.321574212874104,
+              "y": -2.2136981707937067,
+              "z": -1.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-22",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 17.499981674660305,
+              "y": -2.5221887407898333,
+              "z": 5.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-23",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 19.299981674660305,
+              "y": -2.5216869360347087,
+              "z": 4.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-24",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 16.499981674660305,
+              "y": -2.5120550806688793,
+              "z": 6.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-25",
+            "name": "Molten pool",
+            "pos": {
+              "x": -5,
+              "y": 0.2075622332131951,
+              "z": -3
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-26",
+            "name": "Sanctuary arch",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-27",
+            "name": "Relic marker",
+            "pos": {
+              "x": 9.2,
+              "y": -1.0531837717502024,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-28",
+            "name": "Relic marker",
+            "pos": {
+              "x": -6.8,
+              "y": -0.07192977700936476,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-29",
+            "name": "Relic marker",
+            "pos": {
+              "x": 1.2,
+              "y": -0.9774926949000315,
+              "z": -10
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-1",
+            "name": "Tidal relic",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 0.07446890908108905,
+              "z": -11
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-2",
+            "name": "Tidal relic key light",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 4.274468909081089,
+              "z": -11
+            },
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "walk": "south relic",
+      "reached": true,
+      "state": {
+        "pos": {
+          "x": 0.28154512154172673,
+          "y": -0.6336463113080835,
+          "z": -10.322051831538419
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "forward": {
+            "x": -0.5869885811858623,
+            "y": -0.2999575487993585,
+            "z": -0.7519773098143913
+          },
+          "right": {
+            "x": 0.7882753804589188,
+            "y": 0,
+            "z": -0.6153226182762559
+          },
+          "up": {
+            "x": -0.18457066429894906,
+            "y": 0.953952550663963,
+            "z": -0.236449150901339
+          }
+        },
+        "eye": {
+          "x": 3.7686795427322113,
+          "y": 2.038095453099909,
+          "z": -6.538482992770958
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022,
+        "pointerLocked": false,
+        "sim": 13.186500000000004,
+        "ended": false,
+        "frozen": false,
+        "health": {
+          "maxHealth": 100,
+          "health": 85,
+          "relics": 3
+        },
+        "inventory": {},
+        "objectives": {},
+        "held": null,
+        "nearest": null,
+        "text": "Relic collected!\nFind 3 relics, unlock the gate, reach the shrine\nHealth 85 / 100\nRelics: 3/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+        "beacons": [],
+        "objs": [
+          {
+            "id": "obj48",
+            "name": "Key Pickup",
+            "pos": {
+              "x": 10,
+              "y": -0.38708677544177766,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "obj49",
+            "name": "Gate",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "obj50",
+            "name": "Shrine",
+            "pos": {
+              "x": 0,
+              "y": -1.6934647207147573,
+              "z": 14
+            },
+            "visible": true
+          },
+          {
+            "id": "obj51",
+            "name": "Gate Lever",
+            "pos": {
+              "x": 1.5,
+              "y": 0.18412067075828276,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-1",
+            "name": "Arrival",
+            "pos": {
+              "x": 0,
+              "y": 1.374468909081089,
+              "z": 0
+            },
+            "visible": false
+          },
+          {
+            "id": "rehab-2",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.249999999999998,
+              "y": -0.4715634459461815,
+              "z": 0.6291651245988517
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-3",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.449999999999998,
+              "y": 0.3163401410329927,
+              "z": -0.37083487540114835
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-4",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -12.98738727668022,
+              "y": -1.5277362980855298,
+              "z": -2.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-5",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -11.18738727668022,
+              "y": -1.2727987588009433,
+              "z": -3.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-6",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -13.98738727668022,
+              "y": -1.6564463638098073,
+              "z": -1.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-7",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -14.866772518252038,
+              "y": -2.189979339760823,
+              "z": -8.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-8",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -13.066772518252037,
+              "y": -2.1235183122499324,
+              "z": -9.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-9",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.250000000000004,
+              "y": -1.4241846483244915,
+              "z": -10.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-10",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.450000000000004,
+              "y": -1.238379160041313,
+              "z": -11.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-11",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -9.250000000000004,
+              "y": -1.4775499112719612,
+              "z": -9.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-12",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 11.971474217349176,
+              "y": -1.9604939768564416,
+              "z": 9.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-13",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 13.771474217349176,
+              "y": -2.2545320170806606,
+              "z": 8.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-14",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 10.971474217349176,
+              "y": -1.890928098326333,
+              "z": 10.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-15",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.460367661147,
+              "y": -2.0807716633809257,
+              "z": 13.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-16",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 10.260367661147,
+              "y": -2.132773676114169,
+              "z": 12.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-17",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.140670628973552,
+              "y": 0.0776495622566804,
+              "z": -1.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-18",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 9.940670628973553,
+              "y": -0.08086201085744316,
+              "z": -2.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-19",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 7.140670628973552,
+              "y": 0.2976124033411054,
+              "z": -0.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-20",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 13.521574212874103,
+              "y": -1.606034081984321,
+              "z": -0.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-21",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 15.321574212874104,
+              "y": -2.2136981707937067,
+              "z": -1.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-22",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 17.499981674660305,
+              "y": -2.5221887407898333,
+              "z": 5.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-23",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 19.299981674660305,
+              "y": -2.5216869360347087,
+              "z": 4.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-24",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 16.499981674660305,
+              "y": -2.5120550806688793,
+              "z": 6.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-25",
+            "name": "Molten pool",
+            "pos": {
+              "x": -5,
+              "y": 0.2075622332131951,
+              "z": -3
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-26",
+            "name": "Sanctuary arch",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-27",
+            "name": "Relic marker",
+            "pos": {
+              "x": 9.2,
+              "y": -1.0531837717502024,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-28",
+            "name": "Relic marker",
+            "pos": {
+              "x": -6.8,
+              "y": -0.07192977700936476,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-29",
+            "name": "Relic marker",
+            "pos": {
+              "x": 1.2,
+              "y": -0.9774926949000315,
+              "z": -10
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-1",
+            "name": "Tidal relic",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 0.07446890908108905,
+              "z": -11
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-2",
+            "name": "Tidal relic key light",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 4.274468909081089,
+              "z": -11
+            },
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "capture": "south-relic",
+      "state": {
+        "pos": {
+          "x": -0.4284222279492768,
+          "y": -0.6175251120070453,
+          "z": -10.56721573356449
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "forward": {
+            "x": -0.9240420072801184,
+            "y": -0.2794923011399958,
+            "z": 0.26082642194608974
+          },
+          "right": {
+            "x": -0.2716523286992924,
+            "y": 0,
+            "z": -0.9623954552637142
+          },
+          "up": {
+            "x": -0.26898212039832936,
+            "y": 0.9601479331871053,
+            "z": 0.07592473445820375
+          }
+        },
+        "eye": {
+          "x": 5.326336314714474,
+          "y": 1.981595554101699,
+          "z": -13.036915723139884
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022,
+        "pointerLocked": false,
+        "sim": 13.531299999997021,
+        "ended": false,
+        "frozen": false,
+        "health": {
+          "maxHealth": 100,
+          "health": 85,
+          "relics": 3
+        },
+        "inventory": {},
+        "objectives": {},
+        "held": null,
+        "nearest": null,
+        "text": "Relic collected!\nFind 3 relics, unlock the gate, reach the shrine\nHealth 85 / 100\nRelics: 3/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+        "beacons": [],
+        "objs": [
+          {
+            "id": "obj48",
+            "name": "Key Pickup",
+            "pos": {
+              "x": 10,
+              "y": -0.38708677544177766,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "obj49",
+            "name": "Gate",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "obj50",
+            "name": "Shrine",
+            "pos": {
+              "x": 0,
+              "y": -1.6934647207147573,
+              "z": 14
+            },
+            "visible": true
+          },
+          {
+            "id": "obj51",
+            "name": "Gate Lever",
+            "pos": {
+              "x": 1.5,
+              "y": 0.18412067075828276,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-1",
+            "name": "Arrival",
+            "pos": {
+              "x": 0,
+              "y": 1.374468909081089,
+              "z": 0
+            },
+            "visible": false
+          },
+          {
+            "id": "rehab-2",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.249999999999998,
+              "y": -0.4715634459461815,
+              "z": 0.6291651245988517
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-3",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.449999999999998,
+              "y": 0.3163401410329927,
+              "z": -0.37083487540114835
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-4",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -12.98738727668022,
+              "y": -1.5277362980855298,
+              "z": -2.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-5",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -11.18738727668022,
+              "y": -1.2727987588009433,
+              "z": -3.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-6",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -13.98738727668022,
+              "y": -1.6564463638098073,
+              "z": -1.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-7",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -14.866772518252038,
+              "y": -2.189979339760823,
+              "z": -8.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-8",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -13.066772518252037,
+              "y": -2.1235183122499324,
+              "z": -9.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-9",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.250000000000004,
+              "y": -1.4241846483244915,
+              "z": -10.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-10",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.450000000000004,
+              "y": -1.238379160041313,
+              "z": -11.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-11",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -9.250000000000004,
+              "y": -1.4775499112719612,
+              "z": -9.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-12",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 11.971474217349176,
+              "y": -1.9604939768564416,
+              "z": 9.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-13",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 13.771474217349176,
+              "y": -2.2545320170806606,
+              "z": 8.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-14",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 10.971474217349176,
+              "y": -1.890928098326333,
+              "z": 10.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-15",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.460367661147,
+              "y": -2.0807716633809257,
+              "z": 13.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-16",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 10.260367661147,
+              "y": -2.132773676114169,
+              "z": 12.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-17",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.140670628973552,
+              "y": 0.0776495622566804,
+              "z": -1.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-18",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 9.940670628973553,
+              "y": -0.08086201085744316,
+              "z": -2.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-19",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 7.140670628973552,
+              "y": 0.2976124033411054,
+              "z": -0.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-20",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 13.521574212874103,
+              "y": -1.606034081984321,
+              "z": -0.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-21",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 15.321574212874104,
+              "y": -2.2136981707937067,
+              "z": -1.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-22",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 17.499981674660305,
+              "y": -2.5221887407898333,
+              "z": 5.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-23",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 19.299981674660305,
+              "y": -2.5216869360347087,
+              "z": 4.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-24",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 16.499981674660305,
+              "y": -2.5120550806688793,
+              "z": 6.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-25",
+            "name": "Molten pool",
+            "pos": {
+              "x": -5,
+              "y": 0.2075622332131951,
+              "z": -3
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-26",
+            "name": "Sanctuary arch",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-27",
+            "name": "Relic marker",
+            "pos": {
+              "x": 9.2,
+              "y": -1.0531837717502024,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-28",
+            "name": "Relic marker",
+            "pos": {
+              "x": -6.8,
+              "y": -0.07192977700936476,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-29",
+            "name": "Relic marker",
+            "pos": {
+              "x": 1.2,
+              "y": -0.9774926949000315,
+              "z": -10
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-1",
+            "name": "Tidal relic",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 0.07446890908108905,
+              "z": -11
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-2",
+            "name": "Tidal relic key light",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 4.274468909081089,
+              "z": -11
+            },
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "walk": "gate key",
+      "reached": true,
+      "state": {
+        "pos": {
+          "x": 9.623497491159553,
+          "y": -0.13970105313413814,
+          "z": -5.690989684343299
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "forward": {
+            "x": 0.6012667411925942,
+            "y": -0.2979476303298809,
+            "z": 0.7414212807280667
+          },
+          "right": {
+            "x": -0.7766971427846315,
+            "y": 0,
+            "z": 0.6298742322005162
+          },
+          "up": {
+            "x": 0.18766953488999696,
+            "y": 0.9545822172976033,
+            "z": 0.23141507317667012
+          }
+        },
+        "eye": {
+          "x": 6.075200231361109,
+          "y": 2.366934114612054,
+          "z": -9.402464884350433
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022,
+        "pointerLocked": false,
+        "sim": 17.109199999995525,
+        "ended": false,
+        "frozen": false,
+        "health": {
+          "maxHealth": 100,
+          "health": 85,
+          "relics": 3
+        },
+        "inventory": {
+          "key": 1
+        },
+        "objectives": {},
+        "held": null,
+        "nearest": null,
+        "text": "Picked up the Gate Key\nFind 3 relics, unlock the gate, reach the shrine\nHealth 85 / 100\nRelics: 3/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+        "beacons": [],
+        "objs": [
+          {
+            "id": "obj49",
+            "name": "Gate",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "obj50",
+            "name": "Shrine",
+            "pos": {
+              "x": 0,
+              "y": -1.6934647207147573,
+              "z": 14
+            },
+            "visible": true
+          },
+          {
+            "id": "obj51",
+            "name": "Gate Lever",
+            "pos": {
+              "x": 1.5,
+              "y": 0.18412067075828276,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-1",
+            "name": "Arrival",
+            "pos": {
+              "x": 0,
+              "y": 1.374468909081089,
+              "z": 0
+            },
+            "visible": false
+          },
+          {
+            "id": "rehab-2",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.249999999999998,
+              "y": -0.4715634459461815,
+              "z": 0.6291651245988517
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-3",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.449999999999998,
+              "y": 0.3163401410329927,
+              "z": -0.37083487540114835
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-4",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -12.98738727668022,
+              "y": -1.5277362980855298,
+              "z": -2.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-5",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -11.18738727668022,
+              "y": -1.2727987588009433,
+              "z": -3.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-6",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -13.98738727668022,
+              "y": -1.6564463638098073,
+              "z": -1.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-7",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -14.866772518252038,
+              "y": -2.189979339760823,
+              "z": -8.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-8",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -13.066772518252037,
+              "y": -2.1235183122499324,
+              "z": -9.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-9",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.250000000000004,
+              "y": -1.4241846483244915,
+              "z": -10.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-10",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.450000000000004,
+              "y": -1.238379160041313,
+              "z": -11.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-11",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -9.250000000000004,
+              "y": -1.4775499112719612,
+              "z": -9.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-12",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 11.971474217349176,
+              "y": -1.9604939768564416,
+              "z": 9.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-13",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 13.771474217349176,
+              "y": -2.2545320170806606,
+              "z": 8.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-14",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 10.971474217349176,
+              "y": -1.890928098326333,
+              "z": 10.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-15",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.460367661147,
+              "y": -2.0807716633809257,
+              "z": 13.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-16",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 10.260367661147,
+              "y": -2.132773676114169,
+              "z": 12.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-17",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.140670628973552,
+              "y": 0.0776495622566804,
+              "z": -1.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-18",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 9.940670628973553,
+              "y": -0.08086201085744316,
+              "z": -2.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-19",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 7.140670628973552,
+              "y": 0.2976124033411054,
+              "z": -0.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-20",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 13.521574212874103,
+              "y": -1.606034081984321,
+              "z": -0.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-21",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 15.321574212874104,
+              "y": -2.2136981707937067,
+              "z": -1.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-22",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 17.499981674660305,
+              "y": -2.5221887407898333,
+              "z": 5.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-23",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 19.299981674660305,
+              "y": -2.5216869360347087,
+              "z": 4.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-24",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 16.499981674660305,
+              "y": -2.5120550806688793,
+              "z": 6.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-25",
+            "name": "Molten pool",
+            "pos": {
+              "x": -5,
+              "y": 0.2075622332131951,
+              "z": -3
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-26",
+            "name": "Sanctuary arch",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-27",
+            "name": "Relic marker",
+            "pos": {
+              "x": 9.2,
+              "y": -1.0531837717502024,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-28",
+            "name": "Relic marker",
+            "pos": {
+              "x": -6.8,
+              "y": -0.07192977700936476,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-29",
+            "name": "Relic marker",
+            "pos": {
+              "x": 1.2,
+              "y": -0.9774926949000315,
+              "z": -10
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-1",
+            "name": "Tidal relic",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 0.07446890908108905,
+              "z": -11
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-2",
+            "name": "Tidal relic key light",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 4.274468909081089,
+              "z": -11
+            },
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "capture": "gate-key",
+      "state": {
+        "pos": {
+          "x": 10.242229168887343,
+          "y": -0.23517731003248254,
+          "z": -5.5083653830839125
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "forward": {
+            "x": 0.929020688464855,
+            "y": -0.28745203462052793,
+            "z": -0.23300619776479237
+          },
+          "right": {
+            "x": 0.24327354957223277,
+            "y": 0,
+            "z": 0.969957720768553
+          },
+          "up": {
+            "x": 0.27881632033081044,
+            "y": 0.9577950343327735,
+            "z": -0.06992947679389618
+          }
+        },
+        "eye": {
+          "x": 4.648282193043702,
+          "y": 2.3993851402092603,
+          "z": -3.2895276478888906
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022,
+        "pointerLocked": false,
+        "sim": 17.408,
+        "ended": false,
+        "frozen": false,
+        "health": {
+          "maxHealth": 100,
+          "health": 85,
+          "relics": 3
+        },
+        "inventory": {
+          "key": 1
+        },
+        "objectives": {},
+        "held": null,
+        "nearest": null,
+        "text": "Picked up the Gate Key\nFind 3 relics, unlock the gate, reach the shrine\nHealth 85 / 100\nRelics: 3/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+        "beacons": [],
+        "objs": [
+          {
+            "id": "obj49",
+            "name": "Gate",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "obj50",
+            "name": "Shrine",
+            "pos": {
+              "x": 0,
+              "y": -1.6934647207147573,
+              "z": 14
+            },
+            "visible": true
+          },
+          {
+            "id": "obj51",
+            "name": "Gate Lever",
+            "pos": {
+              "x": 1.5,
+              "y": 0.18412067075828276,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-1",
+            "name": "Arrival",
+            "pos": {
+              "x": 0,
+              "y": 1.374468909081089,
+              "z": 0
+            },
+            "visible": false
+          },
+          {
+            "id": "rehab-2",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.249999999999998,
+              "y": -0.4715634459461815,
+              "z": 0.6291651245988517
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-3",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.449999999999998,
+              "y": 0.3163401410329927,
+              "z": -0.37083487540114835
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-4",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -12.98738727668022,
+              "y": -1.5277362980855298,
+              "z": -2.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-5",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -11.18738727668022,
+              "y": -1.2727987588009433,
+              "z": -3.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-6",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -13.98738727668022,
+              "y": -1.6564463638098073,
+              "z": -1.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-7",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -14.866772518252038,
+              "y": -2.189979339760823,
+              "z": -8.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-8",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -13.066772518252037,
+              "y": -2.1235183122499324,
+              "z": -9.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-9",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.250000000000004,
+              "y": -1.4241846483244915,
+              "z": -10.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-10",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.450000000000004,
+              "y": -1.238379160041313,
+              "z": -11.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-11",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -9.250000000000004,
+              "y": -1.4775499112719612,
+              "z": -9.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-12",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 11.971474217349176,
+              "y": -1.9604939768564416,
+              "z": 9.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-13",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 13.771474217349176,
+              "y": -2.2545320170806606,
+              "z": 8.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-14",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 10.971474217349176,
+              "y": -1.890928098326333,
+              "z": 10.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-15",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.460367661147,
+              "y": -2.0807716633809257,
+              "z": 13.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-16",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 10.260367661147,
+              "y": -2.132773676114169,
+              "z": 12.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-17",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.140670628973552,
+              "y": 0.0776495622566804,
+              "z": -1.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-18",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 9.940670628973553,
+              "y": -0.08086201085744316,
+              "z": -2.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-19",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 7.140670628973552,
+              "y": 0.2976124033411054,
+              "z": -0.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-20",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 13.521574212874103,
+              "y": -1.606034081984321,
+              "z": -0.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-21",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 15.321574212874104,
+              "y": -2.2136981707937067,
+              "z": -1.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-22",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 17.499981674660305,
+              "y": -2.5221887407898333,
+              "z": 5.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-23",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 19.299981674660305,
+              "y": -2.5216869360347087,
+              "z": 4.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-24",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 16.499981674660305,
+              "y": -2.5120550806688793,
+              "z": 6.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-25",
+            "name": "Molten pool",
+            "pos": {
+              "x": -5,
+              "y": 0.2075622332131951,
+              "z": -3
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-26",
+            "name": "Sanctuary arch",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-27",
+            "name": "Relic marker",
+            "pos": {
+              "x": 9.2,
+              "y": -1.0531837717502024,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-28",
+            "name": "Relic marker",
+            "pos": {
+              "x": -6.8,
+              "y": -0.07192977700936476,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-29",
+            "name": "Relic marker",
+            "pos": {
+              "x": 1.2,
+              "y": -0.9774926949000315,
+              "z": -10
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-1",
+            "name": "Tidal relic",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 0.07446890908108905,
+              "z": -11
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-2",
+            "name": "Tidal relic key light",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 4.274468909081089,
+              "z": -11
+            },
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "walk": "Gate lever",
+      "reached": true,
+      "state": {
+        "pos": {
+          "x": 2.294101864907593,
+          "y": 0.24062384123812786,
+          "z": 6.114618705040372
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "forward": {
+            "x": -0.5320625415574552,
+            "y": -0.2632158092716023,
+            "z": 0.8047526884831864
+          },
+          "right": {
+            "x": -0.8341679715715768,
+            "y": 0,
+            "z": -0.5515104669942003
+          },
+          "up": {
+            "x": -0.14516627389163775,
+            "y": 0.9647369785332659,
+            "z": 0.21956619770566355
+          }
+        },
+        "eye": {
+          "x": 5.716095663299642,
+          "y": 2.8841133489796107,
+          "z": 1.7285151436211468
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022,
+        "pointerLocked": false,
+        "sim": 21.061799999997007,
+        "ended": false,
+        "frozen": false,
+        "health": {
+          "maxHealth": 100,
+          "health": 85,
+          "relics": 3
+        },
+        "inventory": {
+          "key": 1
+        },
+        "objectives": {},
+        "held": null,
+        "nearest": "obj51",
+        "text": "Picked up the Gate Key\nFind 3 relics, unlock the gate, reach the shrine\nHealth 85 / 100\nRelics: 3/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+        "beacons": [],
+        "objs": [
+          {
+            "id": "obj49",
+            "name": "Gate",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "obj50",
+            "name": "Shrine",
+            "pos": {
+              "x": 0,
+              "y": -1.6934647207147573,
+              "z": 14
+            },
+            "visible": true
+          },
+          {
+            "id": "obj51",
+            "name": "Gate Lever",
+            "pos": {
+              "x": 1.5,
+              "y": 0.18412067075828276,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-1",
+            "name": "Arrival",
+            "pos": {
+              "x": 0,
+              "y": 1.374468909081089,
+              "z": 0
+            },
+            "visible": false
+          },
+          {
+            "id": "rehab-2",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.249999999999998,
+              "y": -0.4715634459461815,
+              "z": 0.6291651245988517
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-3",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.449999999999998,
+              "y": 0.3163401410329927,
+              "z": -0.37083487540114835
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-4",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -12.98738727668022,
+              "y": -1.5277362980855298,
+              "z": -2.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-5",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -11.18738727668022,
+              "y": -1.2727987588009433,
+              "z": -3.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-6",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -13.98738727668022,
+              "y": -1.6564463638098073,
+              "z": -1.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-7",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -14.866772518252038,
+              "y": -2.189979339760823,
+              "z": -8.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-8",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -13.066772518252037,
+              "y": -2.1235183122499324,
+              "z": -9.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-9",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.250000000000004,
+              "y": -1.4241846483244915,
+              "z": -10.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-10",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.450000000000004,
+              "y": -1.238379160041313,
+              "z": -11.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-11",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -9.250000000000004,
+              "y": -1.4775499112719612,
+              "z": -9.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-12",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 11.971474217349176,
+              "y": -1.9604939768564416,
+              "z": 9.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-13",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 13.771474217349176,
+              "y": -2.2545320170806606,
+              "z": 8.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-14",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 10.971474217349176,
+              "y": -1.890928098326333,
+              "z": 10.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-15",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.460367661147,
+              "y": -2.0807716633809257,
+              "z": 13.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-16",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 10.260367661147,
+              "y": -2.132773676114169,
+              "z": 12.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-17",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.140670628973552,
+              "y": 0.0776495622566804,
+              "z": -1.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-18",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 9.940670628973553,
+              "y": -0.08086201085744316,
+              "z": -2.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-19",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 7.140670628973552,
+              "y": 0.2976124033411054,
+              "z": -0.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-20",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 13.521574212874103,
+              "y": -1.606034081984321,
+              "z": -0.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-21",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 15.321574212874104,
+              "y": -2.2136981707937067,
+              "z": -1.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-22",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 17.499981674660305,
+              "y": -2.5221887407898333,
+              "z": 5.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-23",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 19.299981674660305,
+              "y": -2.5216869360347087,
+              "z": 4.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-24",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 16.499981674660305,
+              "y": -2.5120550806688793,
+              "z": 6.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-25",
+            "name": "Molten pool",
+            "pos": {
+              "x": -5,
+              "y": 0.2075622332131951,
+              "z": -3
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-26",
+            "name": "Sanctuary arch",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-27",
+            "name": "Relic marker",
+            "pos": {
+              "x": 9.2,
+              "y": -1.0531837717502024,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-28",
+            "name": "Relic marker",
+            "pos": {
+              "x": -6.8,
+              "y": -0.07192977700936476,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-29",
+            "name": "Relic marker",
+            "pos": {
+              "x": 1.2,
+              "y": -0.9774926949000315,
+              "z": -10
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-1",
+            "name": "Tidal relic",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 0.07446890908108905,
+              "z": -11
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-2",
+            "name": "Tidal relic key light",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 4.274468909081089,
+              "z": -11
+            },
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "interact": "Open gate",
+      "state": {
+        "pos": {
+          "x": 1.189465088778708,
+          "y": 0.5617327615119607,
+          "z": 6.396746914923088
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "forward": {
+            "x": -0.9008116005831485,
+            "y": -0.2661995994588209,
+            "z": -0.34303969668653445
+          },
+          "right": {
+            "x": 0.355880606093838,
+            "y": 0,
+            "z": -0.9345314302934292
+          },
+          "up": {
+            "x": -0.24877189242578984,
+            "y": 0.9639179286889332,
+            "z": -0.09473527479734208
+          }
+        },
+        "eye": {
+          "x": 6.933121872336458,
+          "y": 3.0534415917109725,
+          "z": 9.50895458734739
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022,
+        "pointerLocked": false,
+        "sim": 21.509799999997004,
+        "ended": false,
+        "frozen": false,
+        "health": {
+          "maxHealth": 100,
+          "health": 85,
+          "relics": 3
+        },
+        "inventory": {
+          "key": 1
+        },
+        "objectives": {},
+        "held": null,
+        "nearest": "obj51",
+        "text": "The gate creaks open!\nFind 3 relics, unlock the gate, reach the shrine\nHealth 85 / 100\nRelics: 3/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+        "beacons": [],
+        "objs": [
+          {
+            "id": "obj49",
+            "name": "Gate",
+            "pos": {
+              "x": 0,
+              "y": 2.072028446521762,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "obj50",
+            "name": "Shrine",
+            "pos": {
+              "x": 0,
+              "y": -1.6934647207147573,
+              "z": 14
+            },
+            "visible": true
+          },
+          {
+            "id": "obj51",
+            "name": "Gate Lever",
+            "pos": {
+              "x": 1.5,
+              "y": 0.18412067075828276,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-1",
+            "name": "Arrival",
+            "pos": {
+              "x": 0,
+              "y": 1.374468909081089,
+              "z": 0
+            },
+            "visible": false
+          },
+          {
+            "id": "rehab-2",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.249999999999998,
+              "y": -0.4715634459461815,
+              "z": 0.6291651245988517
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-3",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.449999999999998,
+              "y": 0.3163401410329927,
+              "z": -0.37083487540114835
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-4",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -12.98738727668022,
+              "y": -1.5277362980855298,
+              "z": -2.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-5",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -11.18738727668022,
+              "y": -1.2727987588009433,
+              "z": -3.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-6",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -13.98738727668022,
+              "y": -1.6564463638098073,
+              "z": -1.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-7",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -14.866772518252038,
+              "y": -2.189979339760823,
+              "z": -8.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-8",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -13.066772518252037,
+              "y": -2.1235183122499324,
+              "z": -9.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-9",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.250000000000004,
+              "y": -1.4241846483244915,
+              "z": -10.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-10",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.450000000000004,
+              "y": -1.238379160041313,
+              "z": -11.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-11",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -9.250000000000004,
+              "y": -1.4775499112719612,
+              "z": -9.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-12",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 11.971474217349176,
+              "y": -1.9604939768564416,
+              "z": 9.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-13",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 13.771474217349176,
+              "y": -2.2545320170806606,
+              "z": 8.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-14",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 10.971474217349176,
+              "y": -1.890928098326333,
+              "z": 10.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-15",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.460367661147,
+              "y": -2.0807716633809257,
+              "z": 13.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-16",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 10.260367661147,
+              "y": -2.132773676114169,
+              "z": 12.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-17",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.140670628973552,
+              "y": 0.0776495622566804,
+              "z": -1.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-18",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 9.940670628973553,
+              "y": -0.08086201085744316,
+              "z": -2.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-19",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 7.140670628973552,
+              "y": 0.2976124033411054,
+              "z": -0.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-20",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 13.521574212874103,
+              "y": -1.606034081984321,
+              "z": -0.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-21",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 15.321574212874104,
+              "y": -2.2136981707937067,
+              "z": -1.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-22",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 17.499981674660305,
+              "y": -2.5221887407898333,
+              "z": 5.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-23",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 19.299981674660305,
+              "y": -2.5216869360347087,
+              "z": 4.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-24",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 16.499981674660305,
+              "y": -2.5120550806688793,
+              "z": 6.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-25",
+            "name": "Molten pool",
+            "pos": {
+              "x": -5,
+              "y": 0.2075622332131951,
+              "z": -3
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-26",
+            "name": "Sanctuary arch",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-27",
+            "name": "Relic marker",
+            "pos": {
+              "x": 9.2,
+              "y": -1.0531837717502024,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-28",
+            "name": "Relic marker",
+            "pos": {
+              "x": -6.8,
+              "y": -0.07192977700936476,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-29",
+            "name": "Relic marker",
+            "pos": {
+              "x": 1.2,
+              "y": -0.9774926949000315,
+              "z": -10
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-1",
+            "name": "Tidal relic",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 0.07446890908108905,
+              "z": -11
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-2",
+            "name": "Tidal relic key light",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 4.274468909081089,
+              "z": -11
+            },
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "capture": "gate",
+      "state": {
+        "pos": {
+          "x": 0.2934754111218482,
+          "y": 1.0483089739519778,
+          "z": 6.625585904619395
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "forward": {
+            "x": -0.7945134884011473,
+            "y": -0.3071132627330171,
+            "z": -0.5238604400048937
+          },
+          "right": {
+            "x": 0.5504626651519673,
+            "y": 0,
+            "z": -0.8348597812050794
+          },
+          "up": {
+            "x": -0.2563965113304647,
+            "y": 0.9516729710638423,
+            "z": -0.16905438510753293
+          }
+        },
+        "eye": {
+          "x": 5.717546112861959,
+          "y": 3.647895144017825,
+          "z": 10.209898525064387
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022,
+        "pointerLocked": false,
+        "sim": 24.358599999994023,
+        "ended": false,
+        "frozen": false,
+        "health": {
+          "maxHealth": 100,
+          "health": 85,
+          "relics": 3
+        },
+        "inventory": {
+          "key": 1
+        },
+        "objectives": {},
+        "held": null,
+        "nearest": "obj51",
+        "text": "The gate creaks open!\nFind 3 relics, unlock the gate, reach the shrine\nHealth 85 / 100\nRelics: 3/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+        "beacons": [],
+        "objs": [
+          {
+            "id": "obj49",
+            "name": "Gate",
+            "pos": {
+              "x": 0,
+              "y": 3.9185899777860804,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "obj50",
+            "name": "Shrine",
+            "pos": {
+              "x": 0,
+              "y": -1.6934647207147573,
+              "z": 14
+            },
+            "visible": true
+          },
+          {
+            "id": "obj51",
+            "name": "Gate Lever",
+            "pos": {
+              "x": 1.5,
+              "y": 0.18412067075828276,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-1",
+            "name": "Arrival",
+            "pos": {
+              "x": 0,
+              "y": 1.374468909081089,
+              "z": 0
+            },
+            "visible": false
+          },
+          {
+            "id": "rehab-2",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.249999999999998,
+              "y": -0.4715634459461815,
+              "z": 0.6291651245988517
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-3",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.449999999999998,
+              "y": 0.3163401410329927,
+              "z": -0.37083487540114835
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-4",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -12.98738727668022,
+              "y": -1.5277362980855298,
+              "z": -2.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-5",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -11.18738727668022,
+              "y": -1.2727987588009433,
+              "z": -3.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-6",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -13.98738727668022,
+              "y": -1.6564463638098073,
+              "z": -1.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-7",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -14.866772518252038,
+              "y": -2.189979339760823,
+              "z": -8.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-8",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -13.066772518252037,
+              "y": -2.1235183122499324,
+              "z": -9.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-9",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.250000000000004,
+              "y": -1.4241846483244915,
+              "z": -10.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-10",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.450000000000004,
+              "y": -1.238379160041313,
+              "z": -11.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-11",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -9.250000000000004,
+              "y": -1.4775499112719612,
+              "z": -9.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-12",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 11.971474217349176,
+              "y": -1.9604939768564416,
+              "z": 9.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-13",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 13.771474217349176,
+              "y": -2.2545320170806606,
+              "z": 8.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-14",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 10.971474217349176,
+              "y": -1.890928098326333,
+              "z": 10.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-15",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.460367661147,
+              "y": -2.0807716633809257,
+              "z": 13.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-16",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 10.260367661147,
+              "y": -2.132773676114169,
+              "z": 12.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-17",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.140670628973552,
+              "y": 0.0776495622566804,
+              "z": -1.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-18",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 9.940670628973553,
+              "y": -0.08086201085744316,
+              "z": -2.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-19",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 7.140670628973552,
+              "y": 0.2976124033411054,
+              "z": -0.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-20",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 13.521574212874103,
+              "y": -1.606034081984321,
+              "z": -0.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-21",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 15.321574212874104,
+              "y": -2.2136981707937067,
+              "z": -1.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-22",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 17.499981674660305,
+              "y": -2.5221887407898333,
+              "z": 5.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-23",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 19.299981674660305,
+              "y": -2.5216869360347087,
+              "z": 4.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-24",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 16.499981674660305,
+              "y": -2.5120550806688793,
+              "z": 6.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-25",
+            "name": "Molten pool",
+            "pos": {
+              "x": -5,
+              "y": 0.2075622332131951,
+              "z": -3
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-26",
+            "name": "Sanctuary arch",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-27",
+            "name": "Relic marker",
+            "pos": {
+              "x": 9.2,
+              "y": -1.0531837717502024,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-28",
+            "name": "Relic marker",
+            "pos": {
+              "x": -6.8,
+              "y": -0.07192977700936476,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-29",
+            "name": "Relic marker",
+            "pos": {
+              "x": 1.2,
+              "y": -0.9774926949000315,
+              "z": -10
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-1",
+            "name": "Tidal relic",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 0.07446890908108905,
+              "z": -11
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-2",
+            "name": "Tidal relic key light",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 4.274468909081089,
+              "z": -11
+            },
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "walk": "Shrine",
+      "reached": false,
+      "state": {
+        "pos": {
+          "x": 1.2092097741984107,
+          "y": -1.170347801894951,
+          "z": 13.966153658475685
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "forward": {
+            "x": 0.13615501593139617,
+            "y": -0.18287883465143834,
+            "z": 0.9736617192193875
+          },
+          "right": {
+            "x": -0.9903637487137695,
+            "y": 0,
+            "z": 0.1384905961919793
+          },
+          "up": {
+            "x": 0.025326998841772096,
+            "y": 0.9831354595560738,
+            "z": 0.18111656824580408
+          }
+        },
+        "eye": {
+          "x": 0.18314948522224067,
+          "y": 1.7063056862352781,
+          "z": 6.6287060824216795
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022,
+        "pointerLocked": false,
+        "sim": 25.86449999999998,
+        "ended": true,
+        "frozen": false,
+        "health": {
+          "maxHealth": 100,
+          "health": 85,
+          "relics": 3
+        },
+        "inventory": {
+          "key": 1
+        },
+        "objectives": {},
+        "held": null,
+        "nearest": null,
+        "text": "The gate creaks open!\nFind 3 relics, unlock the gate, reach the shrine\nThe Shrine Awakens\n\nYou recovered all 3 relics and reached the shrine.\n\nRestart\nHealth 85 / 100\nRelics: 3/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+        "beacons": [],
+        "objs": [
+          {
+            "id": "obj49",
+            "name": "Gate",
+            "pos": {
+              "x": 0,
+              "y": 3.9185899777860804,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "obj50",
+            "name": "Shrine",
+            "pos": {
+              "x": 0,
+              "y": -1.6934647207147573,
+              "z": 14
+            },
+            "visible": true
+          },
+          {
+            "id": "obj51",
+            "name": "Gate Lever",
+            "pos": {
+              "x": 1.5,
+              "y": 0.18412067075828276,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-1",
+            "name": "Arrival",
+            "pos": {
+              "x": 0,
+              "y": 1.374468909081089,
+              "z": 0
+            },
+            "visible": false
+          },
+          {
+            "id": "rehab-2",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.249999999999998,
+              "y": -0.4715634459461815,
+              "z": 0.6291651245988517
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-3",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.449999999999998,
+              "y": 0.3163401410329927,
+              "z": -0.37083487540114835
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-4",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -12.98738727668022,
+              "y": -1.5277362980855298,
+              "z": -2.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-5",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -11.18738727668022,
+              "y": -1.2727987588009433,
+              "z": -3.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-6",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -13.98738727668022,
+              "y": -1.6564463638098073,
+              "z": -1.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-7",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -14.866772518252038,
+              "y": -2.189979339760823,
+              "z": -8.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-8",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -13.066772518252037,
+              "y": -2.1235183122499324,
+              "z": -9.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-9",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.250000000000004,
+              "y": -1.4241846483244915,
+              "z": -10.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-10",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.450000000000004,
+              "y": -1.238379160041313,
+              "z": -11.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-11",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -9.250000000000004,
+              "y": -1.4775499112719612,
+              "z": -9.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-12",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 11.971474217349176,
+              "y": -1.9604939768564416,
+              "z": 9.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-13",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 13.771474217349176,
+              "y": -2.2545320170806606,
+              "z": 8.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-14",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 10.971474217349176,
+              "y": -1.890928098326333,
+              "z": 10.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-15",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.460367661147,
+              "y": -2.0807716633809257,
+              "z": 13.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-16",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 10.260367661147,
+              "y": -2.132773676114169,
+              "z": 12.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-17",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.140670628973552,
+              "y": 0.0776495622566804,
+              "z": -1.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-18",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 9.940670628973553,
+              "y": -0.08086201085744316,
+              "z": -2.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-19",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 7.140670628973552,
+              "y": 0.2976124033411054,
+              "z": -0.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-20",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 13.521574212874103,
+              "y": -1.606034081984321,
+              "z": -0.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-21",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 15.321574212874104,
+              "y": -2.2136981707937067,
+              "z": -1.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-22",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 17.499981674660305,
+              "y": -2.5221887407898333,
+              "z": 5.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-23",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 19.299981674660305,
+              "y": -2.5216869360347087,
+              "z": 4.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-24",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 16.499981674660305,
+              "y": -2.5120550806688793,
+              "z": 6.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-25",
+            "name": "Molten pool",
+            "pos": {
+              "x": -5,
+              "y": 0.2075622332131951,
+              "z": -3
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-26",
+            "name": "Sanctuary arch",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-27",
+            "name": "Relic marker",
+            "pos": {
+              "x": 9.2,
+              "y": -1.0531837717502024,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-28",
+            "name": "Relic marker",
+            "pos": {
+              "x": -6.8,
+              "y": -0.07192977700936476,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-29",
+            "name": "Relic marker",
+            "pos": {
+              "x": 1.2,
+              "y": -0.9774926949000315,
+              "z": -10
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-1",
+            "name": "Tidal relic",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 0.07446890908108905,
+              "z": -11
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-2",
+            "name": "Tidal relic key light",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 4.274468909081089,
+              "z": -11
+            },
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "capture": "outcome",
+      "state": {
+        "pos": {
+          "x": 1.6543904093411448,
+          "y": -1.6961650158530759,
+          "z": 17.149820829758024
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "forward": {
+            "x": 0.13227132636287176,
+            "y": -0.2963032030060415,
+            "z": 0.9458904313452839
+          },
+          "right": {
+            "x": -0.9903637781702245,
+            "y": 0,
+            "z": 0.13849038554498494
+          },
+          "up": {
+            "x": 0.04103514482252063,
+            "y": 0.9550939283067194,
+            "z": 0.2934479596130023
+          }
+        },
+        "eye": {
+          "x": 0.7482758925997476,
+          "y": 0.9068897086995747,
+          "z": 10.67007979929198
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022,
+        "pointerLocked": false,
+        "sim": 27.696799999996994,
+        "ended": true,
+        "frozen": false,
+        "health": {
+          "maxHealth": 100,
+          "health": 85,
+          "relics": 3
+        },
+        "inventory": {
+          "key": 1
+        },
+        "objectives": {},
+        "held": null,
+        "nearest": null,
+        "text": "The gate creaks open!\nFind 3 relics, unlock the gate, reach the shrine\nThe Shrine Awakens\n\nYou recovered all 3 relics and reached the shrine.\n\nRestart\nHealth 85 / 100\nRelics: 3/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+        "beacons": [],
+        "objs": [
+          {
+            "id": "obj49",
+            "name": "Gate",
+            "pos": {
+              "x": 0,
+              "y": 3.9185899777860804,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "obj50",
+            "name": "Shrine",
+            "pos": {
+              "x": 0,
+              "y": -1.6934647207147573,
+              "z": 14
+            },
+            "visible": true
+          },
+          {
+            "id": "obj51",
+            "name": "Gate Lever",
+            "pos": {
+              "x": 1.5,
+              "y": 0.18412067075828276,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-1",
+            "name": "Arrival",
+            "pos": {
+              "x": 0,
+              "y": 1.374468909081089,
+              "z": 0
+            },
+            "visible": false
+          },
+          {
+            "id": "rehab-2",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.249999999999998,
+              "y": -0.4715634459461815,
+              "z": 0.6291651245988517
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-3",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.449999999999998,
+              "y": 0.3163401410329927,
+              "z": -0.37083487540114835
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-4",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -12.98738727668022,
+              "y": -1.5277362980855298,
+              "z": -2.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-5",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -11.18738727668022,
+              "y": -1.2727987588009433,
+              "z": -3.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-6",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -13.98738727668022,
+              "y": -1.6564463638098073,
+              "z": -1.0928287817318143
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-7",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -14.866772518252038,
+              "y": -2.189979339760823,
+              "z": -8.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-8",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -13.066772518252037,
+              "y": -2.1235183122499324,
+              "z": -9.59121150491952
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-9",
+            "name": "Vale canopy",
+            "pos": {
+              "x": -8.250000000000004,
+              "y": -1.4241846483244915,
+              "z": -10.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-10",
+            "name": "Weathered stone",
+            "pos": {
+              "x": -6.450000000000004,
+              "y": -1.238379160041313,
+              "z": -11.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-11",
+            "name": "Undergrowth",
+            "pos": {
+              "x": -9.250000000000004,
+              "y": -1.4775499112719612,
+              "z": -9.629165124598849
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-12",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 11.971474217349176,
+              "y": -1.9604939768564416,
+              "z": 9.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-13",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 13.771474217349176,
+              "y": -2.2545320170806606,
+              "z": 8.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-14",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 10.971474217349176,
+              "y": -1.890928098326333,
+              "z": 10.187414967044992
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-15",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.460367661147,
+              "y": -2.0807716633809257,
+              "z": 13.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-16",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 10.260367661147,
+              "y": -2.132773676114169,
+              "z": 12.373608916965017
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-17",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 8.140670628973552,
+              "y": 0.0776495622566804,
+              "z": -1.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-18",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 9.940670628973553,
+              "y": -0.08086201085744316,
+              "z": -2.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-19",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 7.140670628973552,
+              "y": 0.2976124033411054,
+              "z": -0.3991304500062416
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-20",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 13.521574212874103,
+              "y": -1.606034081984321,
+              "z": -0.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-21",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 15.321574212874104,
+              "y": -2.2136981707937067,
+              "z": -1.4515199519010755
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-22",
+            "name": "Vale canopy",
+            "pos": {
+              "x": 17.499981674660305,
+              "y": -2.5221887407898333,
+              "z": 5.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-23",
+            "name": "Weathered stone",
+            "pos": {
+              "x": 19.299981674660305,
+              "y": -2.5216869360347087,
+              "z": 4.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-24",
+            "name": "Undergrowth",
+            "pos": {
+              "x": 16.499981674660305,
+              "y": -2.5120550806688793,
+              "z": 6.019617130211407
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-25",
+            "name": "Molten pool",
+            "pos": {
+              "x": -5,
+              "y": 0.2075622332131951,
+              "z": -3
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-26",
+            "name": "Sanctuary arch",
+            "pos": {
+              "x": 0,
+              "y": -0.5814100222139196,
+              "z": 10
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-27",
+            "name": "Relic marker",
+            "pos": {
+              "x": 9.2,
+              "y": -1.0531837717502024,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-28",
+            "name": "Relic marker",
+            "pos": {
+              "x": -6.8,
+              "y": -0.07192977700936476,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-29",
+            "name": "Relic marker",
+            "pos": {
+              "x": 1.2,
+              "y": -0.9774926949000315,
+              "z": -10
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-1",
+            "name": "Tidal relic",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 0.07446890908108905,
+              "z": -11
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-2",
+            "name": "Tidal relic key light",
+            "pos": {
+              "x": -3.9999999999999987,
+              "y": 4.274468909081089,
+              "z": -11
+            },
+            "visible": false
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "final": {
+    "pos": {
+      "x": 1.6408547404474332,
+      "y": -1.6891837408577657,
+      "z": 17.053021774955376
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "forward": {
+        "x": 0.13257382371699555,
+        "y": -0.28916556291500023,
+        "z": 0.9480545651433285
+      },
+      "right": {
+        "x": -0.9903637968763803,
+        "y": 0,
+        "z": 0.13849025177462654
+      },
+      "up": {
+        "x": 0.04004661161264999,
+        "y": 0.9572791010066242,
+        "z": 0.28637910481439544
+      }
+    },
+    "eye": {
+      "x": 0.7290204342898139,
+      "y": 0.9176434558628767,
+      "z": 10.532376217784051
+    },
+    "yaw": 0,
+    "pitch": 0,
+    "sensitivity": 0.0022,
+    "pointerLocked": false,
+    "sim": 27.367200000002953,
+    "ended": true,
+    "frozen": false,
+    "health": {
+      "maxHealth": 100,
+      "health": 85,
+      "relics": 3
+    },
+    "inventory": {
+      "key": 1
+    },
+    "objectives": {},
+    "held": null,
+    "nearest": null,
+    "text": "The gate creaks open!\nFind 3 relics, unlock the gate, reach the shrine\nThe Shrine Awakens\n\nYou recovered all 3 relics and reached the shrine.\n\nRestart\nHealth 85 / 100\nRelics: 3/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+    "beacons": [],
+    "objs": [
+      {
+        "id": "obj49",
+        "name": "Gate",
+        "pos": {
+          "x": 0,
+          "y": 3.9185899777860804,
+          "z": 10
+        },
+        "visible": true
+      },
+      {
+        "id": "obj50",
+        "name": "Shrine",
+        "pos": {
+          "x": 0,
+          "y": -1.6934647207147573,
+          "z": 14
+        },
+        "visible": true
+      },
+      {
+        "id": "obj51",
+        "name": "Gate Lever",
+        "pos": {
+          "x": 1.5,
+          "y": 0.18412067075828276,
+          "z": 8
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-1",
+        "name": "Arrival",
+        "pos": {
+          "x": 0,
+          "y": 1.374468909081089,
+          "z": 0
+        },
+        "visible": false
+      },
+      {
+        "id": "rehab-2",
+        "name": "Vale canopy",
+        "pos": {
+          "x": -8.249999999999998,
+          "y": -0.4715634459461815,
+          "z": 0.6291651245988517
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-3",
+        "name": "Weathered stone",
+        "pos": {
+          "x": -6.449999999999998,
+          "y": 0.3163401410329927,
+          "z": -0.37083487540114835
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-4",
+        "name": "Vale canopy",
+        "pos": {
+          "x": -12.98738727668022,
+          "y": -1.5277362980855298,
+          "z": -2.0928287817318143
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-5",
+        "name": "Weathered stone",
+        "pos": {
+          "x": -11.18738727668022,
+          "y": -1.2727987588009433,
+          "z": -3.0928287817318143
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-6",
+        "name": "Undergrowth",
+        "pos": {
+          "x": -13.98738727668022,
+          "y": -1.6564463638098073,
+          "z": -1.0928287817318143
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-7",
+        "name": "Vale canopy",
+        "pos": {
+          "x": -14.866772518252038,
+          "y": -2.189979339760823,
+          "z": -8.59121150491952
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-8",
+        "name": "Weathered stone",
+        "pos": {
+          "x": -13.066772518252037,
+          "y": -2.1235183122499324,
+          "z": -9.59121150491952
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-9",
+        "name": "Vale canopy",
+        "pos": {
+          "x": -8.250000000000004,
+          "y": -1.4241846483244915,
+          "z": -10.629165124598849
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-10",
+        "name": "Weathered stone",
+        "pos": {
+          "x": -6.450000000000004,
+          "y": -1.238379160041313,
+          "z": -11.629165124598849
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-11",
+        "name": "Undergrowth",
+        "pos": {
+          "x": -9.250000000000004,
+          "y": -1.4775499112719612,
+          "z": -9.629165124598849
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-12",
+        "name": "Vale canopy",
+        "pos": {
+          "x": 11.971474217349176,
+          "y": -1.9604939768564416,
+          "z": 9.187414967044992
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-13",
+        "name": "Weathered stone",
+        "pos": {
+          "x": 13.771474217349176,
+          "y": -2.2545320170806606,
+          "z": 8.187414967044992
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-14",
+        "name": "Undergrowth",
+        "pos": {
+          "x": 10.971474217349176,
+          "y": -1.890928098326333,
+          "z": 10.187414967044992
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-15",
+        "name": "Vale canopy",
+        "pos": {
+          "x": 8.460367661147,
+          "y": -2.0807716633809257,
+          "z": 13.373608916965017
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-16",
+        "name": "Weathered stone",
+        "pos": {
+          "x": 10.260367661147,
+          "y": -2.132773676114169,
+          "z": 12.373608916965017
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-17",
+        "name": "Vale canopy",
+        "pos": {
+          "x": 8.140670628973552,
+          "y": 0.0776495622566804,
+          "z": -1.3991304500062416
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-18",
+        "name": "Weathered stone",
+        "pos": {
+          "x": 9.940670628973553,
+          "y": -0.08086201085744316,
+          "z": -2.3991304500062416
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-19",
+        "name": "Undergrowth",
+        "pos": {
+          "x": 7.140670628973552,
+          "y": 0.2976124033411054,
+          "z": -0.3991304500062416
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-20",
+        "name": "Vale canopy",
+        "pos": {
+          "x": 13.521574212874103,
+          "y": -1.606034081984321,
+          "z": -0.4515199519010755
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-21",
+        "name": "Weathered stone",
+        "pos": {
+          "x": 15.321574212874104,
+          "y": -2.2136981707937067,
+          "z": -1.4515199519010755
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-22",
+        "name": "Vale canopy",
+        "pos": {
+          "x": 17.499981674660305,
+          "y": -2.5221887407898333,
+          "z": 5.019617130211407
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-23",
+        "name": "Weathered stone",
+        "pos": {
+          "x": 19.299981674660305,
+          "y": -2.5216869360347087,
+          "z": 4.019617130211407
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-24",
+        "name": "Undergrowth",
+        "pos": {
+          "x": 16.499981674660305,
+          "y": -2.5120550806688793,
+          "z": 6.019617130211407
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-25",
+        "name": "Molten pool",
+        "pos": {
+          "x": -5,
+          "y": 0.2075622332131951,
+          "z": -3
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-26",
+        "name": "Sanctuary arch",
+        "pos": {
+          "x": 0,
+          "y": -0.5814100222139196,
+          "z": 10
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-27",
+        "name": "Relic marker",
+        "pos": {
+          "x": 9.2,
+          "y": -1.0531837717502024,
+          "z": 8
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-28",
+        "name": "Relic marker",
+        "pos": {
+          "x": -6.8,
+          "y": -0.07192977700936476,
+          "z": 6
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-29",
+        "name": "Relic marker",
+        "pos": {
+          "x": 1.2,
+          "y": -0.9774926949000315,
+          "z": -10
+        },
+        "visible": true
+      },
+      {
+        "id": "elev-1",
+        "name": "Tidal relic",
+        "pos": {
+          "x": -3.9999999999999987,
+          "y": 0.07446890908108905,
+          "z": -11
+        },
+        "visible": true
+      },
+      {
+        "id": "elev-2",
+        "name": "Tidal relic key light",
+        "pos": {
+          "x": -3.9999999999999987,
+          "y": 4.274468909081089,
+          "z": -11
+        },
+        "visible": false
+      }
+    ]
+  },
+  "restart": {
+    "pos": {
+      "x": 0,
+      "y": 1.9244689090810891,
+      "z": 0
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "forward": {
+        "x": 1.1370560075755593e-16,
+        "y": -0.3713906763541038,
+        "z": -0.9284766908852593
+      },
+      "right": {
+        "x": 0.9999999999999999,
+        "y": 0,
+        "z": 1.2246467991473532e-16
+      },
+      "up": {
+        "x": 4.548224030302238e-17,
+        "y": 0.9284766908852592,
+        "z": -0.3713906763541037
+      }
+    },
+    "eye": {
+      "x": -7.960204194457795e-16,
+      "y": 4.524468909081089,
+      "z": 6.5
+    },
+    "yaw": 0,
+    "pitch": 0,
+    "sensitivity": 0.0022,
+    "pointerLocked": false,
+    "sim": 0,
+    "ended": false,
+    "frozen": false,
+    "health": {},
+    "inventory": {},
+    "objectives": {},
+    "held": null,
+    "nearest": null,
+    "text": "Find 3 relics, unlock the gate, reach the shrine\nRelic Island\n\nA small island treasure hunt. Recover three golden relics and the gate key, then awaken the hilltop shrine. Visual landmark: Tidal relic.\n\nBegin journey\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nThree relics • One key • F use the gate lever",
+    "beacons": [],
+    "objs": [
+      {
+        "id": "obj45",
+        "name": "Relic",
+        "pos": {
+          "x": 8,
+          "y": -0.2793950652525449,
+          "z": 8
+        },
+        "visible": true
+      },
+      {
+        "id": "obj46",
+        "name": "Relic",
+        "pos": {
+          "x": -8,
+          "y": 0.10302075556051965,
+          "z": 6
+        },
+        "visible": true
+      },
+      {
+        "id": "obj47",
+        "name": "Relic",
+        "pos": {
+          "x": 0,
+          "y": -0.526589551854872,
+          "z": -10
+        },
+        "visible": true
+      },
+      {
+        "id": "obj48",
+        "name": "Key Pickup",
+        "pos": {
+          "x": 10,
+          "y": -0.38708677544177766,
+          "z": -6
+        },
+        "visible": true
+      },
+      {
+        "id": "obj49",
+        "name": "Gate",
+        "pos": {
+          "x": 0,
+          "y": -0.5814100222139196,
+          "z": 10
+        },
+        "visible": true
+      },
+      {
+        "id": "obj50",
+        "name": "Shrine",
+        "pos": {
+          "x": 0,
+          "y": -1.6934647207147573,
+          "z": 14
+        },
+        "visible": true
+      },
+      {
+        "id": "obj51",
+        "name": "Gate Lever",
+        "pos": {
+          "x": 1.5,
+          "y": 0.18412067075828276,
+          "z": 8
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-1",
+        "name": "Arrival",
+        "pos": {
+          "x": 0,
+          "y": 1.374468909081089,
+          "z": 0
+        },
+        "visible": false
+      },
+      {
+        "id": "rehab-2",
+        "name": "Vale canopy",
+        "pos": {
+          "x": -8.249999999999998,
+          "y": -0.4715634459461815,
+          "z": 0.6291651245988517
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-3",
+        "name": "Weathered stone",
+        "pos": {
+          "x": -6.449999999999998,
+          "y": 0.3163401410329927,
+          "z": -0.37083487540114835
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-4",
+        "name": "Vale canopy",
+        "pos": {
+          "x": -12.98738727668022,
+          "y": -1.5277362980855298,
+          "z": -2.0928287817318143
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-5",
+        "name": "Weathered stone",
+        "pos": {
+          "x": -11.18738727668022,
+          "y": -1.2727987588009433,
+          "z": -3.0928287817318143
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-6",
+        "name": "Undergrowth",
+        "pos": {
+          "x": -13.98738727668022,
+          "y": -1.6564463638098073,
+          "z": -1.0928287817318143
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-7",
+        "name": "Vale canopy",
+        "pos": {
+          "x": -14.866772518252038,
+          "y": -2.189979339760823,
+          "z": -8.59121150491952
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-8",
+        "name": "Weathered stone",
+        "pos": {
+          "x": -13.066772518252037,
+          "y": -2.1235183122499324,
+          "z": -9.59121150491952
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-9",
+        "name": "Vale canopy",
+        "pos": {
+          "x": -8.250000000000004,
+          "y": -1.4241846483244915,
+          "z": -10.629165124598849
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-10",
+        "name": "Weathered stone",
+        "pos": {
+          "x": -6.450000000000004,
+          "y": -1.238379160041313,
+          "z": -11.629165124598849
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-11",
+        "name": "Undergrowth",
+        "pos": {
+          "x": -9.250000000000004,
+          "y": -1.4775499112719612,
+          "z": -9.629165124598849
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-12",
+        "name": "Vale canopy",
+        "pos": {
+          "x": 11.971474217349176,
+          "y": -1.9604939768564416,
+          "z": 9.187414967044992
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-13",
+        "name": "Weathered stone",
+        "pos": {
+          "x": 13.771474217349176,
+          "y": -2.2545320170806606,
+          "z": 8.187414967044992
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-14",
+        "name": "Undergrowth",
+        "pos": {
+          "x": 10.971474217349176,
+          "y": -1.890928098326333,
+          "z": 10.187414967044992
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-15",
+        "name": "Vale canopy",
+        "pos": {
+          "x": 8.460367661147,
+          "y": -2.0807716633809257,
+          "z": 13.373608916965017
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-16",
+        "name": "Weathered stone",
+        "pos": {
+          "x": 10.260367661147,
+          "y": -2.132773676114169,
+          "z": 12.373608916965017
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-17",
+        "name": "Vale canopy",
+        "pos": {
+          "x": 8.140670628973552,
+          "y": 0.0776495622566804,
+          "z": -1.3991304500062416
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-18",
+        "name": "Weathered stone",
+        "pos": {
+          "x": 9.940670628973553,
+          "y": -0.08086201085744316,
+          "z": -2.3991304500062416
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-19",
+        "name": "Undergrowth",
+        "pos": {
+          "x": 7.140670628973552,
+          "y": 0.2976124033411054,
+          "z": -0.3991304500062416
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-20",
+        "name": "Vale canopy",
+        "pos": {
+          "x": 13.521574212874103,
+          "y": -1.606034081984321,
+          "z": -0.4515199519010755
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-21",
+        "name": "Weathered stone",
+        "pos": {
+          "x": 15.321574212874104,
+          "y": -2.2136981707937067,
+          "z": -1.4515199519010755
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-22",
+        "name": "Vale canopy",
+        "pos": {
+          "x": 17.499981674660305,
+          "y": -2.5221887407898333,
+          "z": 5.019617130211407
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-23",
+        "name": "Weathered stone",
+        "pos": {
+          "x": 19.299981674660305,
+          "y": -2.5216869360347087,
+          "z": 4.019617130211407
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-24",
+        "name": "Undergrowth",
+        "pos": {
+          "x": 16.499981674660305,
+          "y": -2.5120550806688793,
+          "z": 6.019617130211407
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-25",
+        "name": "Molten pool",
+        "pos": {
+          "x": -5,
+          "y": 0.2075622332131951,
+          "z": -3
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-26",
+        "name": "Sanctuary arch",
+        "pos": {
+          "x": 0,
+          "y": -0.5814100222139196,
+          "z": 10
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-27",
+        "name": "Relic marker",
+        "pos": {
+          "x": 9.2,
+          "y": -1.0531837717502024,
+          "z": 8
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-28",
+        "name": "Relic marker",
+        "pos": {
+          "x": -6.8,
+          "y": -0.07192977700936476,
+          "z": 6
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-29",
+        "name": "Relic marker",
+        "pos": {
+          "x": 1.2,
+          "y": -0.9774926949000315,
+          "z": -10
+        },
+        "visible": true
+      },
+      {
+        "id": "elev-1",
+        "name": "Tidal relic",
+        "pos": {
+          "x": -3.9999999999999987,
+          "y": 0.07446890908108905,
+          "z": -11
+        },
+        "visible": true
+      },
+      {
+        "id": "elev-2",
+        "name": "Tidal relic key light",
+        "pos": {
+          "x": -3.9999999999999987,
+          "y": 4.274468909081089,
+          "z": -11
+        },
+        "visible": false
+      }
+    ]
+  },
+  "finishedAt": "2026-09-08T15:59:32.383Z"
+}

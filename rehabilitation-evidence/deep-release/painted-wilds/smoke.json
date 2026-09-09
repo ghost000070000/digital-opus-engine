@@ -1,0 +1,25 @@
+{
+  "id": "painted-wilds",
+  "sourceSHA256": "c5bedeedf579414630d43111b54bff30bfe8ebfe23f289a28e57c408d63122e3",
+  "errors": [],
+  "capturedAt": "2026-09-08T17:59:16.139Z",
+  "sha256": "f86e188acd2dfcdafe8aed97fc7687deafbd8a456db269d9dba7fb6593cdd344",
+  "state": {
+    "title": "Painted Wilds",
+    "sim": 1.4187000000029797,
+    "ended": false,
+    "text": "Visit all three survey stones.\nStudies: 0 / 3\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "controller": "thirdperson",
+    "bodyVisible": false,
+    "visualVisible": true,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 40
+  },
+  "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nVisit all three survey stones.\nStudies: 0 / 3\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+  "passed": true
+}

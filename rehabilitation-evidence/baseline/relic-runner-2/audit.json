@@ -1,0 +1,141 @@
+{
+  "id": "relic-runner-2",
+  "phase": "baseline",
+  "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/relic-runner-2.html",
+  "startedAt": "2026-09-08T00:04:25.458Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Relic Runner 2",
+      "text": "A relic glows atop the ridge...\nReach the relic on the ridge!\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 1.1049999998807907,
+      "player": {
+        "position": {
+          "x": -8,
+          "y": 0.55,
+          "z": -8
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Relic Runner 2",
+      "text": "A relic glows atop the ridge...\nReach the relic on the ridge!\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 9.905699999928466,
+      "player": {
+        "position": {
+          "x": -24.590255168198382,
+          "y": -1.9,
+          "z": 23.493773836406124
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Relic Runner 2",
+      "text": "A relic glows atop the ridge...\nReach the relic on the ridge!\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 24.601700000047693,
+      "player": {
+        "position": {
+          "x": -29.379392775003975,
+          "y": -1.9,
+          "z": 11.376173550916986
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Relic Runner 2",
+    "text": "Relic Runner 2\n\nClimb the ridge, dodge the Sentry, claim the relic.\n\nStart\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+    "state": {},
+    "playtime": 0,
+    "player": {
+      "position": {
+        "x": -8,
+        "y": 0.55,
+        "z": -8
+      },
+      "visible": true,
+      "controller": "thirdperson"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "A relic glows atop the ridge...\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nReach the relic on the ridge!\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:04:57.937Z"
+}

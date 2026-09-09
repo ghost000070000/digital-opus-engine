@@ -1,0 +1,210 @@
+{
+  "id": "textured-adventure",
+  "inputs": [
+    {
+      "target": [
+        5,
+        3
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "maxHealth": 100,
+          "health": 100,
+          "relics": 1
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 3.5788999999985096,
+        "position": {
+          "x": 6.078731776100359,
+          "y": -1.8618431679395688,
+          "z": 4.330486361808157
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": 0.5842620327011118,
+          "y": -0.3517264338169993,
+          "z": 0.7313866234067595
+        },
+        "text": "Relics: 1/3\nHealth 100 / 100\nCollect three relics and enter the shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        -4,
+        4
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "maxHealth": 100,
+          "health": 100,
+          "relics": 2
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 10.135199999995534,
+        "position": {
+          "x": -4.256079399684447,
+          "y": -0.9410512015009885,
+          "z": 4.001970395157074
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": -0.8211904320429079,
+          "y": -0.5607343850954776,
+          "z": 0.10593971725835018
+        },
+        "text": "Relics: 2/3\nHealth 100 / 100\nCollect three relics and enter the shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        0,
+        -6
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "maxHealth": 100,
+          "health": 100,
+          "relics": 3
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 17.02529999999704,
+        "position": {
+          "x": -0.14316236447005679,
+          "y": -0.6639183536045341,
+          "z": -5.370925044957039
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": -0.8023843489434581,
+          "y": -0.46320844666239724,
+          "z": 0.3763207295794265
+        },
+        "text": "Relics: 3/3\nHealth 100 / 100\nCollect three relics and enter the shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        0,
+        8
+      ],
+      "result": "ended",
+      "state": {
+        "level": 0,
+        "state": {
+          "maxHealth": 100,
+          "health": 100,
+          "relics": 3
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": true,
+        "playtime": 20.15450000000001,
+        "position": {
+          "x": -0.6711746762183547,
+          "y": -1.7469026838364323,
+          "z": 7.55340360284413
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": 0.22355275705441077,
+          "y": -0.3556833442283513,
+          "z": 0.9074764588968176
+        },
+        "text": "Shrine restored\n\nThe three relics are home.\n\nRestart\nRelics: 3/3\nHealth 100 / 100\nCollect three relics and enter the shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "dialogue": false
+      }
+    }
+  ],
+  "errors": [],
+  "started": "2026-09-08T16:00:03.602Z",
+  "start": {
+    "level": 0,
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 2.095999999992549,
+    "position": {
+      "x": 0,
+      "y": 0.3557277948441615,
+      "z": 0
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": 0,
+      "y": -0.5141378580346326,
+      "z": 0.8577075625966929
+    },
+    "text": "Relics: 0/3\nHealth 100 / 100\nCollect three relics and enter the shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "dialogue": false
+  },
+  "final": {
+    "level": 0,
+    "state": {
+      "maxHealth": 100,
+      "health": 100,
+      "relics": 3
+    },
+    "flags": {},
+    "inventory": {},
+    "ended": true,
+    "playtime": 21.239500000000007,
+    "position": {
+      "x": 2.664628920731089,
+      "y": -1.810282505847003,
+      "z": 8.5
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": 0.8851860329330125,
+      "y": -0.4481344100567704,
+      "z": -0.12498494958748475
+    },
+    "text": "Shrine restored\n\nThe three relics are home.\n\nRestart\nRelics: 3/3\nHealth 100 / 100\nCollect three relics and enter the shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "dialogue": false
+  },
+  "completed": true,
+  "restart": {
+    "level": 0,
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 0.5173999999985098,
+    "position": {
+      "x": 0,
+      "y": 0.3557277948441615,
+      "z": 0
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": 0,
+      "y": -0.5155051226589044,
+      "z": 0.8568864968666666
+    },
+    "text": "Relics: 0/3\nHealth 100 / 100\nCollect three relics and enter the shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "dialogue": false
+  },
+  "finished": "2026-09-08T16:00:28.873Z"
+}

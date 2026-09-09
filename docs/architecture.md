@@ -14,7 +14,7 @@ The Digital Opus Engine is designed with a core philosophy: **Zero dependencies,
                                   v
 +-------------------------------------------------------------------+
 |                       Public API Surface                          |
-|                       (engine/src/21-api.js)                      |
+|                       (engine/src/22-api.js)                      |
 |  Opus.create(), App, Mesh, Terrain, Water, Physics, Camera, HUD   |
 +-------------------------------------------------------------------+
                                   |
@@ -29,7 +29,7 @@ The Digital Opus Engine is designed with a core philosophy: **Zero dependencies,
 
 ## Build Pipeline & Closure Isolation
 
-- **Source Layout**: Engine source files live in `engine/src/01-vec3.js` through `21-api.js`, arranged in strict dependency order.
+- **Source Layout**: Engine source files live in `engine/src/01-vec3.js` through `22-api.js`, arranged in strict dependency order.
 - **Build Artifact**: `node build/build.js` concatenates source files into an IIFE closure in `dist/opus-engine.js`.
 - **Encapsulation**: Only `window.Opus` is exposed globally. Internal GL context state, raw shader strings, buffer allocations, and VAO pooling are hidden inside the closure.
 
@@ -55,14 +55,22 @@ The Digital Opus Engine is designed with a core philosophy: **Zero dependencies,
 
 Game code stays outside the engine IIFE and communicates only through `window.Opus` and its App. Renderer contexts, shaders, programs, buffers, and caches are implementation details.
 
-## Out of Scope (v0.1.0 Intentional Exclusions)
+## Current status vs. this document
 
-To keep v0.1.0 focused and protect the zero-runtime-dependency promise, the following are intentionally NOT included in that release:
+This document describes the v0.1.0-era engine core and predates the
+project's primary product: `editor/` (Crate Run), a no-code game editor
+built entirely on the public API described above. glTF import
+(`Opus.Mesh.fromGLTF`), touch input (`Input.simulateKeyDown/Up`,
+`HUD.addTouchButton`), and a node-graph visual scripting editor have all
+since shipped — see the top-level [`README.md`](../README.md) for the
+current architecture (editor + engine), and [`ROADMAP.md`](../ROADMAP.md)
+for the full build history. This file is kept as engine-core-only
+background reading; the README is the up-to-date reference.
 
-- External 3D asset importers (glTF, OBJ, FBX)
+## Still out of scope
+
+- OBJ/FBX import (glTF only)
 - Networking, sockets, or multiplayer state sync
 - 2D Canvas fallback or 2D physics
-- Visual editor / GUI tools / node graphs
 - Plugin architectures
 - TypeScript definitions or npm packaging
-- Mobile touch virtual joysticks / Gamepad API mapping

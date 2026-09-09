@@ -1,0 +1,2 @@
+const fs=require('fs');const p='build/build-engine-site.js';let s=fs.readFileSync(p,'utf8').replace('Play a featured world or explore a focused sample.','Play a compact game or explore a focused sample.');fs.writeFileSync(p,s);
+const c=JSON.parse(fs.readFileSync('games/catalog.json'));for(const g of c.games){const raw=fs.readFileSync('games/'+g.file,'utf8');if(raw.includes('damagePlayer'))console.log(g.id,'damagePlayer',raw.match(/damagePlayer/g)?.length,'healthAtMost',raw.match(/healthAtMost/g)?.length||0,'lose',raw.match(/"lose"/g)?.length||0);}

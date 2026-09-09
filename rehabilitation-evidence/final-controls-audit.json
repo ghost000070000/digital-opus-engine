@@ -1,0 +1,1274 @@
+{
+  "generatedAt": "2026-09-08T01:10:25.734Z",
+  "scope": "All28 retained projects, including current public candidates. Authored default bindings only; player-custom overrides are shown by the runtime Controls panel.",
+  "evidence": {
+    "inputDefaults": "editor/src/01-editor.js INPUT_ACTION_DEFAULTS",
+    "authorMerge": "loadProjectFull merges normalized.inputActionMap over INPUT_ACTION_DEFAULTS",
+    "runtimeOverride": "effectiveInputMap reads playerInputOverrides before current inputActionMap",
+    "arrowAliases": "All four controller movement routines explicitly OR directional keys with ArrowUp/Down/Left/Right",
+    "drop": "No Drop input action is defined; carry socket flows use authored interact actions and no help claims G drop."
+  },
+  "games": [
+    {
+      "id": "foglight",
+      "visibility": "public",
+      "sourceSHA256": "7ed5fd0c3c4987973afd5858b3f2fad5888c327b9f8e384f507aece84394e878",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "thirdperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": true,
+          "claims": [
+            {
+              "action": "sprint",
+              "claimed": "ShiftLeft",
+              "actual": "ShiftLeft"
+            },
+            {
+              "action": "interact",
+              "claimed": "KeyF",
+              "actual": "KeyF"
+            },
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "WASD move · Space jump · Shift sprint · F interact · Esc pause. Follow the stone path. Light all three beacons, collect the Vale Key beside the first beacon, then cross the sanctuary gate. Stay on the stone path: falling into the mist returns you to the last checkpoint and costs health.",
+          "controlsHint": "Follow the lanterns • F lights beacons • Find the Vale Key"
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "signal-relay",
+      "visibility": "public",
+      "sourceSHA256": "e5416b1cc0463edbd07fe8bb9ac26394962fc77f1ac9ba14629ded51686abb6a",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "firstperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": true,
+          "claims": [
+            {
+              "action": "attack",
+              "claimed": "KeyQ",
+              "actual": "KeyQ"
+            },
+            {
+              "action": "reload",
+              "claimed": "KeyR",
+              "actual": "KeyR"
+            },
+            {
+              "action": "crouch",
+              "claimed": "KeyC",
+              "actual": "KeyC"
+            },
+            {
+              "action": "sprint",
+              "claimed": "ShiftLeft",
+              "actual": "ShiftLeft"
+            },
+            {
+              "action": "interact",
+              "claimed": "KeyF",
+              "actual": "KeyF"
+            }
+          ],
+          "howToPlay": "WASD move · Mouse look · F restore console · Q fire · R reload · C crouch · Shift sprint · Esc pause. Activate Alpha, Beta and Gamma. The security gate opens after all three are powered.",
+          "controlsHint": "Three relays to restore • F interact • C move quietly"
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "arsenal-run",
+      "visibility": "public",
+      "sourceSHA256": "55d27c9fa80004ecee35756fc8b73002f25ad0a21d70f0042e85ce25e0b1ddf9",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "firstperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": false,
+          "claims": [
+            {
+              "action": "attack",
+              "claimed": "KeyQ",
+              "actual": "KeyQ"
+            },
+            {
+              "action": "reload",
+              "claimed": "KeyR",
+              "actual": "KeyR"
+            },
+            {
+              "action": "switchWeapon",
+              "claimed": "KeyV",
+              "actual": "KeyV"
+            },
+            {
+              "action": "crouch",
+              "claimed": "KeyC",
+              "actual": "KeyC"
+            },
+            {
+              "action": "sprint",
+              "claimed": "ShiftLeft",
+              "actual": "ShiftLeft"
+            }
+          ],
+          "howToPlay": "WASD move · Mouse look · Q fire · R reload · V switch weapon · C crouch · Shift sprint · Esc pause. Defeat the three sentries, then enter the green extraction bay at the far end.",
+          "controlsHint": "Q fire • R reload • V switch • Clear the three sentries"
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "silent-sector",
+      "visibility": "public",
+      "sourceSHA256": "a3e82a1c41e870809674d478186aa05c277cd69e5edb7dbcbb652ef92e108d5d",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "firstperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": true,
+          "claims": [
+            {
+              "action": "crouch",
+              "claimed": "KeyC",
+              "actual": "KeyC"
+            },
+            {
+              "action": "sprint",
+              "claimed": "ShiftLeft",
+              "actual": "ShiftLeft"
+            },
+            {
+              "action": "interact",
+              "claimed": "KeyF",
+              "actual": "KeyF"
+            }
+          ],
+          "howToPlay": "WASD move · Mouse look · C crouch · Shift sprint · F interact · Esc pause. Stay behind machinery and watch the sentries. Crouching makes less noise. Reach the security wing, take the cyan Data Core, then follow green lights to extraction.",
+          "controlsHint": "C crouch • Use cover • Secure the Data Core"
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "power-grid",
+      "visibility": "public",
+      "sourceSHA256": "1a3a58299998eb8e7d1a97c538e0f5b55298ce92bd3ba63b238c180997fb0e9b",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "firstperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": true,
+          "claims": [
+            {
+              "action": "interact",
+              "claimed": "KeyF",
+              "actual": "KeyF"
+            }
+          ],
+          "howToPlay": "WASD move · Mouse look · F pick up / interact · Esc pause. Carry the amber Power Cell to the generator. Activate both cyan coolant consoles. The green exit opens when power and coolant are restored.",
+          "controlsHint": "F carry / interact • Cell → generator → two coolant consoles"
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "relic-frontier",
+      "visibility": "public",
+      "sourceSHA256": "1cc44d6160bb1e477bd97a0b52068d56d22cb1bf3ad44186c6e4a4a6d3c01c1c",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "thirdperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": false,
+          "claims": [
+            {
+              "action": "attack",
+              "claimed": "KeyQ",
+              "actual": "KeyQ"
+            },
+            {
+              "action": "crouch",
+              "claimed": "KeyC",
+              "actual": "KeyC"
+            },
+            {
+              "action": "sprint",
+              "claimed": "ShiftLeft",
+              "actual": "ShiftLeft"
+            },
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "WASD move · Space jump · Shift sprint · C crouch · Q attack · Esc pause. Find the weapon near the old road. Defeat the guardian, collect the ridge relic and reach the arch beyond the gate.",
+          "controlsHint": "Find the weapon • Defeat the guardian • Claim the ridge relic"
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "relic-island",
+      "visibility": "public",
+      "sourceSHA256": "7f65cf1ede1b8c82c909cbd15224c1efd5b133f573e3dfc6a0dd2c29e7ee594f",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "thirdperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": true,
+          "claims": [
+            {
+              "action": "interact",
+              "claimed": "KeyF",
+              "actual": "KeyF"
+            },
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "WASD move · Space jump · F interact · Esc pause. Collect three golden relics and the silver gate key. Use the lever beside the gate, then enter the shrine. Keep clear of the glowing lava pool.",
+          "controlsHint": "Three relics • One key • F use the gate lever"
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "forest-range",
+      "visibility": "public",
+      "sourceSHA256": "b5b9e07b439afa9961e03f12cc15d2add9794d3fb8a1b58490ced579541725b6",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "thirdperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": false,
+          "claims": [
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "Explore the three groves and reach the lookout.\n\nWASD / arrows move; Space jumps; Escape pauses.",
+          "controlsHint": "WASD / arrows move; Space jumps; Escape pauses."
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "iron-arena",
+      "visibility": "internal",
+      "sourceSHA256": "e6b6cdb82c8f1968d00bead4512a73616fe4ee11e9ce2530b9cc6c89328fddfb",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "firstperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": false,
+          "claims": [
+            {
+              "action": "attack",
+              "claimed": "KeyQ",
+              "actual": "KeyQ"
+            },
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "Defeat all three sentries.\n\nWASD / arrows move; mouse looks; Space jumps; Q attacks; Escape pauses.",
+          "controlsHint": "WASD / arrows move; mouse looks; Space jumps; Q attacks; Escape pauses."
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "dungeon-descent",
+      "visibility": "public",
+      "sourceSHA256": "53697b9cd910fc60ef512022d577fe8d83444c721700a36d80b15dbfa0878fc6",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "topdown",
+          "jumpSupported": false,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": false,
+          "claims": [],
+          "howToPlay": "Activate the two seals, then reach the eastern exit.\n\nWASD / arrows move; Escape pauses.",
+          "controlsHint": "WASD / arrows move; Escape pauses."
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "npc-puzzle-adventure",
+      "visibility": "public",
+      "sourceSHA256": "9eb76e7121b099d2e4b9ff8d9a312818b253fd717323346b4eb729b842ed6059",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "thirdperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": true,
+          "claims": [
+            {
+              "action": "interact",
+              "claimed": "KeyF",
+              "actual": "KeyF"
+            },
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "Speak to the sailor, use the door console, and enter the sanctum.\n\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+          "controlsHint": "WASD / arrows move; Space jumps; F interacts; Escape pauses."
+        },
+        {
+          "index": 1,
+          "controller": "thirdperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": false,
+          "claims": [
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "Speak to the sailor, use the door console, and enter the sanctum.\n\nWASD / arrows move; Space jumps; Escape pauses.",
+          "controlsHint": "WASD / arrows move; Space jumps; Escape pauses."
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "opus-arena",
+      "visibility": "internal",
+      "sourceSHA256": "d2ed1367ff51bf40eaa5de531730433182563f62e449dfa1f8167c6c82250099",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "thirdperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": false,
+          "claims": [
+            {
+              "action": "attack",
+              "claimed": "KeyQ",
+              "actual": "KeyQ"
+            },
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "Defeat eight guardians.\n\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+          "controlsHint": "WASD / arrows move; Space jumps; Q attacks; Escape pauses."
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "power-station",
+      "visibility": "public",
+      "sourceSHA256": "4d1ec46b3b42825fe6ad4ed46fc35ba701f20162f3e106a892e29aaf0c0ee62a",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "thirdperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": true,
+          "claims": [
+            {
+              "action": "interact",
+              "claimed": "KeyF",
+              "actual": "KeyF"
+            },
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "Find three cells, unlock the shed, then activate the turbine.\n\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+          "controlsHint": "WASD / arrows move; Space jumps; F interacts; Escape pauses."
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "relic-runner-2",
+      "visibility": "public",
+      "sourceSHA256": "303ef0fcafedf2b3e463100bfc002bd25beeb7a157e6831ee9513af17427d6d6",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "thirdperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": false,
+          "claims": [
+            {
+              "action": "attack",
+              "claimed": "KeyQ",
+              "actual": "KeyQ"
+            },
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "Climb the ramp and claim the ridge relic.\n\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+          "controlsHint": "WASD / arrows move; Space jumps; Q attacks; Escape pauses."
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "sentinel-maze",
+      "visibility": "public",
+      "sourceSHA256": "c12942fa82975b7b189bc5f62d5bf2609a83252344beded50fcdf95d4480412d",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "thirdperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": false,
+          "claims": [
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "Reach the amber arch beyond the maze.\n\nWASD / arrows move; Space jumps; Escape pauses.",
+          "controlsHint": "WASD / arrows move; Space jumps; Escape pauses."
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "signal-zero",
+      "visibility": "public",
+      "sourceSHA256": "933bbef4052b916bb3ac12afc7873df7ac83650965b355f25aeb7c910d54e829",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "Mouse0",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "thirdperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": false,
+          "claims": [
+            {
+              "action": "attack",
+              "claimed": "Mouse0",
+              "actual": "Mouse0"
+            },
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "Reach the outpost console, then restore the deep relay.\n\nWASD / arrows move; Space jumps; Left Click attacks; Escape pauses.",
+          "controlsHint": "WASD / arrows move; Space jumps; Left Click attacks; Escape pauses."
+        },
+        {
+          "index": 1,
+          "controller": "thirdperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": false,
+          "claims": [
+            {
+              "action": "attack",
+              "claimed": "Mouse0",
+              "actual": "Mouse0"
+            },
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "Reach the outpost console, then restore the deep relay.\n\nWASD / arrows move; Space jumps; Left Click attacks; Escape pauses.",
+          "controlsHint": "WASD / arrows move; Space jumps; Left Click attacks; Escape pauses."
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "survival-arena-2",
+      "visibility": "internal",
+      "sourceSHA256": "cdead78a3167f3b1abc0efd31f34e7207508c9405d630ef25af0a4a84414b29c",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "hovercraft",
+          "jumpSupported": false,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": false,
+          "claims": [
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "Survive both waves for 32 seconds.\n\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+          "controlsHint": "WASD / arrows steer and accelerate; Space boosts; Escape pauses."
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "survival-arena-3",
+      "visibility": "internal",
+      "sourceSHA256": "485da73ecad19a0f469510b49efb52b34c19eac665401ac54428e80e36cc525d",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "hovercraft",
+          "jumpSupported": false,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": false,
+          "claims": [
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "Evade the hunter drones for 20 seconds.\n\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+          "controlsHint": "WASD / arrows steer and accelerate; Space boosts; Escape pauses."
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "textured-adventure",
+      "visibility": "public",
+      "sourceSHA256": "53c878bf3b19b31c4cee5b8c6a7020481554814cc560afb9ba5e532b9636b8d6",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "thirdperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": false,
+          "claims": [
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "Collect three relics and enter the shrine.\n\nWASD / arrows move; Space jumps; Escape pauses.",
+          "controlsHint": "WASD / arrows move; Space jumps; Escape pauses."
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "valley-run",
+      "visibility": "internal",
+      "sourceSHA256": "099e8bf171e19c0b5320f114207fed6f8d062c1a1958793b947e47aeb3bc8690",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "thirdperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": false,
+          "claims": [
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "Reach the far ridge using the raised stepping stones.\n\nWASD / arrows move; Space jumps; Escape pauses.",
+          "controlsHint": "WASD / arrows move; Space jumps; Escape pauses."
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "painted-wilds",
+      "visibility": "public",
+      "sourceSHA256": "58fff8d4c40224607334ce058a59a32e9c294c0e159bfba884bccad3bb579bef",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "thirdperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": false,
+          "claims": [
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "Visit all three survey stones.\n\nWASD / arrows move; Space jumps; Escape pauses.",
+          "controlsHint": "WASD / arrows move; Space jumps; Escape pauses."
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "assembly-line",
+      "visibility": "public",
+      "sourceSHA256": "50654d9ca499e78e51ab655985813f89f1371e547f868a6118503ebca03f2368",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "firstperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": true,
+          "claims": [
+            {
+              "action": "attack",
+              "claimed": "KeyQ",
+              "actual": "KeyQ"
+            },
+            {
+              "action": "interact",
+              "claimed": "KeyF",
+              "actual": "KeyF"
+            },
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "Observe the three active bays, then use the inspection console.\n\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+          "controlsHint": "WASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses."
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "blacksite",
+      "visibility": "public",
+      "sourceSHA256": "02a70985a250fbf05696f98282beeccb2a4f68c5fa60a49fd868cfff324dea83",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "firstperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": true,
+          "claims": [
+            {
+              "action": "attack",
+              "claimed": "KeyQ",
+              "actual": "KeyQ"
+            },
+            {
+              "action": "interact",
+              "claimed": "KeyF",
+              "actual": "KeyF"
+            },
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "Recover the card, enter the core, and reach extraction.\n\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+          "controlsHint": "WASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses."
+        },
+        {
+          "index": 1,
+          "controller": "firstperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": false,
+          "claims": [
+            {
+              "action": "attack",
+              "claimed": "KeyQ",
+              "actual": "KeyQ"
+            },
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "Recover the card, enter the core, and reach extraction.\n\nWASD / arrows move; mouse looks; Space jumps; Q attacks; Escape pauses.",
+          "controlsHint": "WASD / arrows move; mouse looks; Space jumps; Q attacks; Escape pauses."
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "moving-temple",
+      "visibility": "internal",
+      "sourceSHA256": "9f99480918798a8dcf350ae77913c7e7af31e31b4091853ab45e7e0b4614d289",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "thirdperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": true,
+          "claims": [
+            {
+              "action": "interact",
+              "claimed": "KeyF",
+              "actual": "KeyF"
+            },
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "Cross the moving slab, use the lift switch, and reach the high shrine.\n\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+          "controlsHint": "WASD / arrows move; Space jumps; F interacts; Escape pauses."
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "shifting-facility",
+      "visibility": "public",
+      "sourceSHA256": "401bc77344e011e0321fb579cfef8eb02cb21638b7bbfa2113024504e43e9d6a",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "firstperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": true,
+          "claims": [
+            {
+              "action": "interact",
+              "claimed": "KeyF",
+              "actual": "KeyF"
+            },
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "Pass the entry scanner, try the swing door, and reach the far console.\n\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+          "controlsHint": "WASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses."
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "skyway-trial",
+      "visibility": "internal",
+      "sourceSHA256": "a4099b3627ce7fabb9b034486bddeb00f5ab0de345c82f4ede6895a75ff6dfc9",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "thirdperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": false,
+          "claims": [
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "Jump across five platforms to the summit.\n\nWASD / arrows move; Space jumps; Escape pauses.",
+          "controlsHint": "WASD / arrows move; Space jumps; Escape pauses."
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "survival-arena",
+      "visibility": "internal",
+      "sourceSHA256": "b9bd8a75b98fa5cbcb4d5f8b82889ff12620d606f021f6063dd4e57ab0e9f70a",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "hovercraft",
+          "jumpSupported": false,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": false,
+          "claims": [
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "Collect all four orbs before losing three lives.\n\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+          "controlsHint": "WASD / arrows steer and accelerate; Space boosts; Escape pauses."
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "id": "temple-switch-puzzle",
+      "visibility": "public",
+      "sourceSHA256": "21898eb8eab1bba919ea01e3ab6e8120c439749dc9e53beab05fe65305652c7f",
+      "bindings": {
+        "interact": "KeyF",
+        "attack": "KeyQ",
+        "moveForward": "KeyW",
+        "moveBack": "KeyS",
+        "moveLeft": "KeyA",
+        "moveRight": "KeyD",
+        "jump": "Space",
+        "crouch": "KeyC",
+        "sprint": "ShiftLeft",
+        "inventory": "KeyI",
+        "reload": "KeyR",
+        "switchWeapon": "KeyV"
+      },
+      "levels": [
+        {
+          "index": 0,
+          "controller": "thirdperson",
+          "jumpSupported": true,
+          "arrowsSupported": true,
+          "hasAuthoredInteract": false,
+          "claims": [
+            {
+              "action": "jump",
+              "claimed": "Space",
+              "actual": "Space"
+            }
+          ],
+          "howToPlay": "Activate both seals, then enter the northern shrine.\n\nWASD / arrows move; Space jumps; Escape pauses.",
+          "controlsHint": "WASD / arrows move; Space jumps; Escape pauses."
+        }
+      ],
+      "mismatches": []
+    }
+  ],
+  "summary": {
+    "games": 28,
+    "mismatches": 0,
+    "signalZeroAttack": "Mouse0"
+  }
+}

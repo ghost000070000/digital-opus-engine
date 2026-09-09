@@ -1,0 +1,932 @@
+{
+  "format": "digital-opus-project",
+  "version": 3,
+  "levels": [
+    {
+      "id": "level2",
+      "name": "Blacksite - Entry",
+      "objects": [
+        {
+          "kind": "cube",
+          "id": "obj44",
+          "position": [
+            0,
+            -0.25,
+            6
+          ],
+          "scale": [
+            14,
+            0.5,
+            20
+          ],
+          "color": [
+            0.35,
+            0.37,
+            0.4
+          ],
+          "rotationY": 0,
+          "behaviors": [],
+          "spin": 0,
+          "patrol": null,
+          "ai": null,
+          "mesh": "cube",
+          "solid": true
+        },
+        {
+          "kind": "cube",
+          "id": "obj45",
+          "position": [
+            -7,
+            2.5,
+            6
+          ],
+          "scale": [
+            0.5,
+            5,
+            20
+          ],
+          "color": [
+            0.42,
+            0.44,
+            0.48
+          ],
+          "rotationY": 0,
+          "behaviors": [],
+          "spin": 0,
+          "patrol": null,
+          "ai": null,
+          "mesh": "cube",
+          "solid": true
+        },
+        {
+          "kind": "cube",
+          "id": "obj46",
+          "position": [
+            7,
+            2.5,
+            6
+          ],
+          "scale": [
+            0.5,
+            5,
+            20
+          ],
+          "color": [
+            0.42,
+            0.44,
+            0.48
+          ],
+          "rotationY": 0,
+          "behaviors": [],
+          "spin": 0,
+          "patrol": null,
+          "ai": null,
+          "mesh": "cube",
+          "solid": true
+        },
+        {
+          "kind": "cube",
+          "id": "obj47",
+          "position": [
+            0,
+            2.5,
+            -4
+          ],
+          "scale": [
+            14,
+            5,
+            0.5
+          ],
+          "color": [
+            0.42,
+            0.44,
+            0.48
+          ],
+          "rotationY": 0,
+          "behaviors": [],
+          "spin": 0,
+          "patrol": null,
+          "ai": null,
+          "mesh": "cube",
+          "solid": true
+        },
+        {
+          "kind": "cube",
+          "id": "obj48",
+          "position": [
+            0,
+            0.7,
+            -2
+          ],
+          "scale": [
+            0.5,
+            0.9,
+            0.5
+          ],
+          "color": [
+            0.3,
+            0.9,
+            0.95
+          ],
+          "rotationY": 0,
+          "behaviors": [],
+          "spin": 0,
+          "patrol": null,
+          "ai": null,
+          "mesh": "cube",
+          "isSpawnPoint": true,
+          "isDefaultSpawn": true
+        },
+        {
+          "kind": "cube",
+          "id": "obj49",
+          "position": [
+            0,
+            1.5,
+            15.5
+          ],
+          "scale": [
+            4,
+            3,
+            0.4
+          ],
+          "color": [
+            0.5,
+            0.4,
+            0.25
+          ],
+          "rotationY": 0,
+          "behaviors": [],
+          "spin": 0,
+          "patrol": null,
+          "ai": null,
+          "mesh": "cube",
+          "solid": true
+        },
+        {
+          "kind": "cube",
+          "id": "obj50",
+          "position": [
+            4,
+            1,
+            2
+          ],
+          "scale": [
+            0.35,
+            0.35,
+            0.35
+          ],
+          "color": [
+            1,
+            0.85,
+            0.2
+          ],
+          "rotationY": 26.736800000071533,
+          "behaviors": [
+            {
+              "trigger": "enter",
+              "action": "giveItem",
+              "params": {
+                "name": "Sector Key",
+                "count": 1
+              }
+            },
+            {
+              "trigger": "enter",
+              "action": "setVisibility",
+              "params": {
+                "targetId": "obj49",
+                "visible": false
+              }
+            },
+            {
+              "trigger": "enter",
+              "action": "destroyObject"
+            }
+          ],
+          "spin": 2,
+          "patrol": null,
+          "ai": null,
+          "mesh": "cube",
+          "isTrigger": true,
+          "triggerRepeat": false
+        },
+        {
+          "kind": "cube",
+          "id": "obj51",
+          "position": [
+            -4,
+            0.6,
+            2
+          ],
+          "scale": [
+            0.6,
+            1.2,
+            0.4
+          ],
+          "color": [
+            0.2,
+            0.55,
+            0.6
+          ],
+          "rotationY": 0,
+          "behaviors": [
+            {
+              "trigger": "interact",
+              "action": "showDialogue",
+              "params": {
+                "speaker": "Terminal",
+                "text": "Sector Key required for southern access. Sentries active -- proceed with caution."
+              }
+            }
+          ],
+          "spin": 0,
+          "patrol": null,
+          "ai": null,
+          "mesh": "cube"
+        },
+        {
+          "kind": "spawner",
+          "id": "obj54",
+          "options": {
+            "position": [
+              -3,
+              1,
+              8
+            ],
+            "prefabName": "Sentry",
+            "interval": 3,
+            "initialDelay": 1,
+            "maxActive": 2,
+            "totalCount": 0,
+            "radius": 2,
+            "startEnabled": true,
+            "tag": ""
+          }
+        },
+        {
+          "kind": "spawner",
+          "id": "obj55",
+          "options": {
+            "position": [
+              3,
+              1,
+              8
+            ],
+            "prefabName": "Sentry",
+            "interval": 3,
+            "initialDelay": 1.5,
+            "maxActive": 2,
+            "totalCount": 0,
+            "radius": 2,
+            "startEnabled": true,
+            "tag": ""
+          }
+        },
+        {
+          "kind": "cube",
+          "id": "obj56",
+          "position": [
+            0,
+            0.6,
+            9
+          ],
+          "scale": [
+            1.4,
+            0.15,
+            1.4
+          ],
+          "color": [
+            0.3,
+            0.9,
+            0.95
+          ],
+          "rotationY": 0,
+          "behaviors": [
+            {
+              "trigger": "enter",
+              "action": "setCheckpoint"
+            }
+          ],
+          "spin": 0,
+          "patrol": null,
+          "ai": null,
+          "mesh": "cube",
+          "isTrigger": true,
+          "triggerRepeat": true
+        },
+        {
+          "kind": "light",
+          "id": "obj57",
+          "options": {
+            "lightType": "point",
+            "position": [
+              0,
+              4,
+              6
+            ],
+            "color": [
+              1,
+              0.92,
+              0.75
+            ],
+            "intensity": 1.2,
+            "range": 18
+          }
+        },
+        {
+          "kind": "light",
+          "id": "obj58",
+          "options": {
+            "lightType": "spot",
+            "position": [
+              -4,
+              3,
+              1.5
+            ],
+            "color": [
+              1,
+              0.92,
+              0.75
+            ],
+            "intensity": 1.5,
+            "range": 8,
+            "angle": 0.4,
+            "direction": [
+              0.2,
+              -1,
+              0.3
+            ]
+          }
+        },
+        {
+          "kind": "cube",
+          "id": "obj59",
+          "position": [
+            0,
+            0.6,
+            17
+          ],
+          "scale": [
+            2,
+            1.5,
+            1.5
+          ],
+          "color": [
+            0.85,
+            0.35,
+            0.95
+          ],
+          "rotationY": 0,
+          "behaviors": [
+            {
+              "trigger": "enter",
+              "action": "nextLevel"
+            }
+          ],
+          "spin": 0,
+          "patrol": null,
+          "ai": null,
+          "mesh": "cube",
+          "isTrigger": true,
+          "triggerRepeat": false
+        }
+      ],
+      "environment": {
+        "lightDir": {
+          "x": -0.5,
+          "y": -1,
+          "z": -0.3
+        },
+        "shadows": {
+          "enabled": true,
+          "resolution": 1024,
+          "distance": 20,
+          "bias": 0.0025
+        },
+        "skyTop": [
+          0.06,
+          0.1,
+          0.24
+        ],
+        "skyHorizon": [
+          0.62,
+          0.68,
+          0.8
+        ],
+        "groundColor": [
+          0.16,
+          0.16,
+          0.14
+        ],
+        "sunColor": [
+          1,
+          0.92,
+          0.75
+        ],
+        "fogDensity": 0.035
+      },
+      "playerSettings": {
+        "controllerType": "firstperson",
+        "moveSpeed": 6,
+        "acceleration": 40,
+        "collisionRadius": 0.4,
+        "maxHealth": 100,
+        "gravity": 20,
+        "jumpSpeed": 8,
+        "mouseSensitivity": 0.0022,
+        "fovDegrees": 70,
+        "eyeHeight": 0.6,
+        "weapon": {
+          "enabled": true,
+          "mode": "hitscan",
+          "damage": 40,
+          "cooldown": 0.25,
+          "range": 40,
+          "prefabName": "",
+          "speed": 18
+        }
+      },
+      "ui": {
+        "hudElements": [
+          {
+            "id": "hud1",
+            "kind": "label",
+            "anchor": "top-left",
+            "offsetX": 0,
+            "offsetY": 0,
+            "text": "BLACKSITE",
+            "visible": true,
+            "buttonAction": "message",
+            "panelWidth": 120,
+            "panelHeight": 60
+          }
+        ],
+        "startScreen": {
+          "enabled": false,
+          "title": "",
+          "subtitle": "",
+          "buttonText": "Start"
+        },
+        "winTitle": "",
+        "winMessage": "",
+        "loseTitle": "",
+        "loseMessage": ""
+      },
+      "description": "The required FPS/puzzle facility stress game: First-Person + Pointer Lock + complete Input Actions, Jump, solids, a Hitscan Player Weapon, damageable multi-piece Spawner-assembly enemies, hierarchy, lights + shadows, an Interact dialogue console, a key pickup unlocking a door, a Checkpoint, a HUD label, and a level transition to a second level.",
+      "ambientAudio": {
+        "audioAssetId": null,
+        "volume": 0.4
+      }
+    },
+    {
+      "id": "level3",
+      "name": "Blacksite - Core",
+      "objects": [
+        {
+          "kind": "cube",
+          "id": "obj60",
+          "position": [
+            0,
+            -0.25,
+            0
+          ],
+          "scale": [
+            10,
+            0.5,
+            10
+          ],
+          "color": [
+            0.3,
+            0.32,
+            0.36
+          ],
+          "rotationY": 0,
+          "behaviors": [],
+          "spin": 0,
+          "patrol": null,
+          "ai": null,
+          "mesh": "cube",
+          "solid": true
+        },
+        {
+          "kind": "cube",
+          "id": "obj61",
+          "position": [
+            -5,
+            2.5,
+            0
+          ],
+          "scale": [
+            0.5,
+            5,
+            10
+          ],
+          "color": [
+            0.38,
+            0.4,
+            0.44
+          ],
+          "rotationY": 0,
+          "behaviors": [],
+          "spin": 0,
+          "patrol": null,
+          "ai": null,
+          "mesh": "cube",
+          "solid": true
+        },
+        {
+          "kind": "cube",
+          "id": "obj62",
+          "position": [
+            5,
+            2.5,
+            0
+          ],
+          "scale": [
+            0.5,
+            5,
+            10
+          ],
+          "color": [
+            0.38,
+            0.4,
+            0.44
+          ],
+          "rotationY": 0,
+          "behaviors": [],
+          "spin": 0,
+          "patrol": null,
+          "ai": null,
+          "mesh": "cube",
+          "solid": true
+        },
+        {
+          "kind": "cube",
+          "id": "obj63",
+          "position": [
+            0,
+            2.5,
+            -5
+          ],
+          "scale": [
+            10,
+            5,
+            0.5
+          ],
+          "color": [
+            0.38,
+            0.4,
+            0.44
+          ],
+          "rotationY": 0,
+          "behaviors": [],
+          "spin": 0,
+          "patrol": null,
+          "ai": null,
+          "mesh": "cube",
+          "solid": true
+        },
+        {
+          "kind": "cube",
+          "id": "obj64",
+          "position": [
+            0,
+            2.5,
+            5
+          ],
+          "scale": [
+            10,
+            5,
+            0.5
+          ],
+          "color": [
+            0.38,
+            0.4,
+            0.44
+          ],
+          "rotationY": 0,
+          "behaviors": [],
+          "spin": 0,
+          "patrol": null,
+          "ai": null,
+          "mesh": "cube",
+          "solid": true
+        },
+        {
+          "kind": "cube",
+          "id": "obj65",
+          "position": [
+            0,
+            0.7,
+            -3
+          ],
+          "scale": [
+            0.5,
+            0.9,
+            0.5
+          ],
+          "color": [
+            0.3,
+            0.9,
+            0.95
+          ],
+          "rotationY": 0,
+          "behaviors": [],
+          "spin": 0,
+          "patrol": null,
+          "ai": null,
+          "mesh": "cube",
+          "isSpawnPoint": true,
+          "isDefaultSpawn": true
+        },
+        {
+          "kind": "light",
+          "id": "obj66",
+          "options": {
+            "lightType": "point",
+            "position": [
+              0,
+              4,
+              0
+            ],
+            "color": [
+              1,
+              0.92,
+              0.75
+            ],
+            "intensity": 1.5,
+            "range": 14
+          }
+        },
+        {
+          "kind": "spawner",
+          "id": "obj67",
+          "options": {
+            "position": [
+              0,
+              1,
+              2
+            ],
+            "prefabName": "Sentry",
+            "interval": 5,
+            "initialDelay": 0.5,
+            "maxActive": 1,
+            "totalCount": 1,
+            "radius": 0.5,
+            "startEnabled": true,
+            "tag": ""
+          }
+        },
+        {
+          "kind": "cube",
+          "id": "obj68",
+          "position": [
+            0,
+            0.6,
+            4
+          ],
+          "scale": [
+            2,
+            1.5,
+            1.5
+          ],
+          "color": [
+            0.85,
+            0.35,
+            0.95
+          ],
+          "rotationY": 0,
+          "behaviors": [
+            {
+              "trigger": "enter",
+              "action": "win"
+            }
+          ],
+          "spin": 0,
+          "patrol": null,
+          "ai": null,
+          "mesh": "cube",
+          "isTrigger": true,
+          "triggerRepeat": true
+        }
+      ],
+      "environment": {
+        "lightDir": {
+          "x": -0.5,
+          "y": -1,
+          "z": -0.3
+        },
+        "shadows": {
+          "enabled": true,
+          "resolution": 1024,
+          "distance": 15,
+          "bias": 0.0025
+        },
+        "skyTop": [
+          0.06,
+          0.1,
+          0.24
+        ],
+        "skyHorizon": [
+          0.62,
+          0.68,
+          0.8
+        ],
+        "groundColor": [
+          0.16,
+          0.16,
+          0.14
+        ],
+        "sunColor": [
+          1,
+          0.92,
+          0.75
+        ],
+        "fogDensity": 0.035
+      },
+      "playerSettings": {
+        "controllerType": "firstperson",
+        "moveSpeed": 6,
+        "acceleration": 40,
+        "collisionRadius": 0.4,
+        "maxHealth": 100,
+        "gravity": 20,
+        "jumpSpeed": 8,
+        "mouseSensitivity": 0.0022,
+        "fovDegrees": 70,
+        "eyeHeight": 0.6,
+        "weapon": {
+          "enabled": true,
+          "mode": "hitscan",
+          "damage": 40,
+          "cooldown": 0.25,
+          "range": 40,
+          "prefabName": "",
+          "speed": 18
+        }
+      },
+      "ui": {
+        "hudElements": [
+          {
+            "id": "hud2",
+            "kind": "label",
+            "anchor": "top-left",
+            "offsetX": 0,
+            "offsetY": 0,
+            "text": "BLACKSITE - CORE",
+            "visible": true,
+            "buttonAction": "message",
+            "panelWidth": 140,
+            "panelHeight": 60
+          }
+        ],
+        "startScreen": {
+          "enabled": false,
+          "title": "",
+          "subtitle": "",
+          "buttonText": "Start"
+        },
+        "winTitle": "",
+        "winMessage": "",
+        "loseTitle": "",
+        "loseMessage": ""
+      },
+      "description": "Second, short level -- proves multi-level structure and mid-session state carry-over (score/kills survive the Switch/Next Level transition).",
+      "ambientAudio": {
+        "audioAssetId": null,
+        "volume": 0.4
+      }
+    }
+  ],
+  "currentLevelIndex": 0,
+  "startLevelIndex": 0,
+  "levelTransition": {
+    "mode": "instant",
+    "duration": 0.4
+  },
+  "prefabs": [
+    {
+      "name": "Sentry",
+      "records": [
+        {
+          "kind": "cube",
+          "id": "obj52",
+          "position": [
+            0,
+            1,
+            0
+          ],
+          "scale": [
+            0.8,
+            0.8,
+            0.8
+          ],
+          "color": [
+            0.7,
+            0.15,
+            0.15
+          ],
+          "rotationY": 0,
+          "behaviors": [],
+          "spin": 0,
+          "patrol": null,
+          "ai": null,
+          "mesh": "cube",
+          "tags": [
+            "enemy"
+          ]
+        },
+        {
+          "kind": "cube",
+          "id": "obj53",
+          "position": [
+            0,
+            1.65,
+            0
+          ],
+          "scale": [
+            0.25,
+            0.25,
+            0.25
+          ],
+          "color": [
+            1,
+            0.3,
+            0.2
+          ],
+          "rotationY": 0,
+          "behaviors": [],
+          "spin": 0,
+          "patrol": null,
+          "ai": null,
+          "mesh": "cube",
+          "parentId": "obj52",
+          "localPosition": [
+            0,
+            0.8124999999999999,
+            0
+          ],
+          "localQuat": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "localScale": [
+            0.3125,
+            0.3125,
+            0.3125
+          ]
+        }
+      ],
+      "record": {
+        "kind": "cube",
+        "id": "obj52",
+        "position": [
+          0,
+          1,
+          0
+        ],
+        "scale": [
+          0.8,
+          0.8,
+          0.8
+        ],
+        "color": [
+          0.7,
+          0.15,
+          0.15
+        ],
+        "rotationY": 0,
+        "behaviors": [],
+        "spin": 0,
+        "patrol": null,
+        "ai": null,
+        "mesh": "cube",
+        "tags": [
+          "enemy"
+        ]
+      },
+      "rootId": "obj52"
+    }
+  ],
+  "assets": [],
+  "textures": [],
+  "audio": [],
+  "meta": {
+    "title": "",
+    "author": "",
+    "version": "1.0.0",
+    "description": ""
+  },
+  "inputActionMap": {
+    "interact": "KeyF",
+    "attack": "KeyQ",
+    "moveForward": "KeyW",
+    "moveBack": "KeyS",
+    "moveLeft": "KeyA",
+    "moveRight": "KeyD",
+    "jump": "Space"
+  }
+}

@@ -1,0 +1,340 @@
+{
+  "id": "power-station",
+  "inputs": [
+    {
+      "target": [
+        5,
+        2
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 3.169299999997019,
+        "position": {
+          "x": 5.341449333428602,
+          "y": 0.55,
+          "z": 2.70229094658771
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": 0.5071947672241229,
+          "y": -0.3678700117267591,
+          "z": 0.77937482803374
+        },
+        "text": "Fuel Cells: 0/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        -5,
+        4
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "fuelCell": 1
+        },
+        "flags": {},
+        "inventory": {
+          "fuelCell": 1
+        },
+        "ended": false,
+        "playtime": 6.522999999992549,
+        "position": {
+          "x": -6.037135712216431,
+          "y": 0.55,
+          "z": 3.8906749507368863
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": -0.9436202493882061,
+          "y": -0.32930767538643535,
+          "z": -0.03372358041670254
+        },
+        "text": "Fuel Cell collected.\nFuel Cells: 1/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        4,
+        -2
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "fuelCell": 2
+        },
+        "flags": {},
+        "inventory": {
+          "fuelCell": 2
+        },
+        "ended": false,
+        "playtime": 9.777699999995532,
+        "position": {
+          "x": 4.630869325359246,
+          "y": 0.55,
+          "z": -2.593364924230024
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": 0.4293302992151917,
+          "y": -0.3581449012438133,
+          "z": -0.8291005511328845
+        },
+        "text": "Fuel Cell collected.\nFuel Cells: 2/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        4,
+        -6.5
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "fuelCell": 2
+        },
+        "flags": {
+          "shedUnlocked": true
+        },
+        "inventory": {
+          "fuelCell": 2
+        },
+        "ended": false,
+        "playtime": 11.104899999998516,
+        "position": {
+          "x": 3.5468977509409427,
+          "y": 0.55,
+          "z": -7.382804384904771
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": -0.4182373530351885,
+          "y": -0.33407777025561247,
+          "z": -0.8446712733052766
+        },
+        "text": "Fuel Cell collected.\nFuel Cells: 2/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        6,
+        -10
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "fuelCell": 2
+        },
+        "flags": {
+          "shedUnlocked": true
+        },
+        "inventory": {
+          "fuelCell": 2
+        },
+        "ended": false,
+        "playtime": 13.526199999995557,
+        "position": {
+          "x": 5.017005679768216,
+          "y": 0.55,
+          "z": -9.906952884629812
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": -0.8464274097149944,
+          "y": -0.39730118916108936,
+          "z": 0.354559452242285
+        },
+        "text": "Fuel Cell collected.\nFuel Cells: 2/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        4,
+        -11
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "fuelCell": 2
+        },
+        "flags": {
+          "shedUnlocked": true
+        },
+        "inventory": {
+          "fuelCell": 2
+        },
+        "ended": false,
+        "playtime": 14.992299999997048,
+        "position": {
+          "x": 3.777797080930964,
+          "y": 0.55,
+          "z": -10.95122405522462
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": -0.8581218348886727,
+          "y": -0.47335477158662725,
+          "z": 0.19890243010951275
+        },
+        "text": "Fuel Cell collected.\nFuel Cells: 2/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        1,
+        -9
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "fuelCell": 3
+        },
+        "flags": {
+          "shedUnlocked": true
+        },
+        "inventory": {
+          "fuelCell": 3
+        },
+        "ended": false,
+        "playtime": 16.577499999992572,
+        "position": {
+          "x": 0.47184770677015814,
+          "y": 0.55,
+          "z": -8.536125089388776
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": -0.6265017989845456,
+          "y": -0.34650997599168964,
+          "z": 0.6981592457365058
+        },
+        "text": "Fuel Cell collected.\nFuel Cells: 3/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        0,
+        -6
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "fuelCell": 3
+        },
+        "flags": {
+          "shedUnlocked": true
+        },
+        "inventory": {
+          "fuelCell": 3
+        },
+        "ended": false,
+        "playtime": 17.59519999999554,
+        "position": {
+          "x": 0.6009178904276856,
+          "y": 0.55,
+          "z": -5.626780796664972
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": 0.6893495870217314,
+          "y": -0.3724364873620315,
+          "z": 0.6213599679367829
+        },
+        "text": "Fuel Cell collected.\nFuel Cells: 3/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "dialogue": false
+      }
+    }
+  ],
+  "errors": [],
+  "started": "2026-09-08T16:01:39.821Z",
+  "start": {
+    "level": 0,
+    "state": {},
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 1.8298999999985095,
+    "position": {
+      "x": 0,
+      "y": 0.55,
+      "z": 0
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": 0,
+      "y": -0.5141378916317145,
+      "z": 0.8577075424575065
+    },
+    "text": "Fuel Cells: 0/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "dialogue": false
+  },
+  "final": {
+    "level": 0,
+    "state": {
+      "fuelCell": 3
+    },
+    "flags": {
+      "shedUnlocked": true
+    },
+    "inventory": {
+      "fuelCell": 3
+    },
+    "ended": true,
+    "playtime": 19.397999999992546,
+    "position": {
+      "x": 2.01361315252077,
+      "y": 0.55,
+      "z": -4.287964878940093
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": 0.8017876530099649,
+      "y": -0.5056449603267219,
+      "z": 0.3185274455631094
+    },
+    "text": "Fuel Cell collected.\nPower restored\n\nThe turbine is turning again.\n\nRestart\nFuel Cells: 3/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "dialogue": false
+  },
+  "completed": true,
+  "restart": {
+    "level": 0,
+    "state": {},
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 0.561,
+    "position": {
+      "x": 0,
+      "y": 0.55,
+      "z": 0
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": 0,
+      "y": -0.5150987147457574,
+      "z": 0.8571308616933991
+    },
+    "text": "Fuel Cells: 0/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "dialogue": false
+  },
+  "finished": "2026-09-08T16:02:04.661Z"
+}

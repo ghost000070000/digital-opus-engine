@@ -43,4 +43,23 @@ class SaveSystem {
     const key = this._key(slot, 'SaveSystem.delete');
     try { localStorage.removeItem(key); } catch (e) {}
   }
+
+  // Enumerates every slot saved under this namespace -- save/load/has/delete
+  // all require already knowing a slot's name, but nothing could discover
+  // what slots exist at all (needed for e.g. a multi-project "open" list).
+  // localStorage has no native prefix-listing, so this scans every key.
+  list() {
+    const prefix = `${this.namespace}:`;
+    const slots = [];
+    try {
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (!key || !key.startsWith(prefix)) continue;
+        let savedAt = null;
+        try { savedAt = JSON.parse(localStorage.getItem(key)).savedAt ?? null; } catch (e) { /* corrupt entry: still list it, just without a timestamp */ }
+        slots.push({ slot: key.slice(prefix.length), savedAt });
+      }
+    } catch (e) { return []; }
+    return slots.sort((a, b) => (b.savedAt ?? 0) - (a.savedAt ?? 0));
+  }
 }

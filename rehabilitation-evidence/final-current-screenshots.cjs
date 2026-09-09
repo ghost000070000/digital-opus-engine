@@ -1,0 +1,4 @@
+const fs=require('fs');const p='tools/merge-rehabilitation-reviews.js';let s=fs.readFileSync(p,'utf8');s=s.replace("'rehabilitation-evidence/health-quality-overrides.json'","'rehabilitation-evidence/health-quality-overrides.json','rehabilitation-evidence/current-screenshot-selections.json'");s=s.replace('map.set(r.id,r)','map.set(r.id,{...map.get(r.id),...r})');fs.writeFileSync(p,s);
+const changes=JSON.parse(fs.readFileSync('rehabilitation-evidence/controls-copy-fixes.json')).changes;
+const games=changes.filter(r=>r.id!=='sentinel-maze'&&r.edits.some(e=>e.field!=='howToPlay')).map(r=>({id:r.id,screenshots:['rehabilitation-evidence/final-review/'+r.id+'/opening.png'],screenshotSelectionReason:'Fresh standalone gameplay opening after authored controls-HUD copy correction; no image editing.'}));
+fs.writeFileSync('rehabilitation-evidence/current-screenshot-selections.json',JSON.stringify({games},null,2)+'\n');

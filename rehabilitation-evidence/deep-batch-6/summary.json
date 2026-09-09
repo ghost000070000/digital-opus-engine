@@ -1,0 +1,100 @@
+[
+  {
+    "id": "painted-wilds",
+    "sourceSHA256": "c5bedeedf579414630d43111b54bff30bfe8ebfe23f289a28e57c408d63122e3",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:30:42.759Z",
+    "sha256": "f86e188acd2dfcdafe8aed97fc7687deafbd8a456db269d9dba7fb6593cdd344",
+    "state": {
+      "title": "Painted Wilds",
+      "sim": 1.4016000000014897,
+      "ended": false,
+      "text": "Visit all three survey stones.\nStudies: 0 / 3\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 40
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nVisit all three survey stones.\nStudies: 0 / 3\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "assembly-line",
+    "sourceSHA256": "432d56ed9bbe85709ea3af5eca0164cff4bf2ef026f0152958f766d2de05a298",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:30:46.770Z",
+    "sha256": "fd96cddcc22f12be5bc0c41799e702545afb5f3a31397ae1334e336cdf2582cc",
+    "state": {
+      "title": "Assembly Line",
+      "sim": 1.4014999999999995,
+      "ended": false,
+      "text": "Observe the three active bays, then use the inspection console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "controller": "firstperson",
+      "bodyVisible": false,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 74
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nObserve the three active bays, then use the inspection console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "blacksite",
+    "sourceSHA256": "cb34e95a363d62b3d4394e6615df8c57c5b2317b47fe67be3cce5de03e73d356",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:30:50.080Z",
+    "sha256": "1bae4483d0e211b0b2a075ca32dedc1f0f39010c91dada4f3aac1c4cf2f14e86",
+    "state": {
+      "title": "Blacksite",
+      "sim": 1.4014000000059603,
+      "ended": false,
+      "text": "Recover the card, enter the core, and reach extraction.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "controller": "firstperson",
+      "bodyVisible": false,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 47
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nRecover the card, enter the core, and reach extraction.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "moving-temple",
+    "sourceSHA256": "84db498b28a8e500e122e6e4c581b7fb55cd400e0bcbe3185fc43a47c2ee4f66",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:30:53.233Z",
+    "sha256": "d12a54e78b8854d10c30325250ee771c49d67d6e247d16deda98f19d5c773ff2",
+    "state": {
+      "title": "Moving Temple",
+      "sim": 1.4016999999955297,
+      "ended": false,
+      "text": "Cross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 64
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nCross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "passed": true
+  }
+]

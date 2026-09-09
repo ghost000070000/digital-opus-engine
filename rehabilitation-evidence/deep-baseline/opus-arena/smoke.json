@@ -1,0 +1,25 @@
+{
+  "id": "opus-arena",
+  "sourceSHA256": "50da33f5b0b27a4a572b82d42450dbcbfe67a5ff01243b90c54f7ad13f651024",
+  "errors": [],
+  "capturedAt": "2026-09-08T17:09:37.374Z",
+  "sha256": "dcd6da748669029da464088e4950c00f6721253d3478348a9167f6e34cf682b7",
+  "state": {
+    "title": "Opus Arena",
+    "sim": 1.4182999999970196,
+    "ended": false,
+    "text": "Health 100 / 100\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+    "controller": "thirdperson",
+    "bodyVisible": false,
+    "visualVisible": true,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 33
+  },
+  "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 92 / 100\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+  "passed": true
+}

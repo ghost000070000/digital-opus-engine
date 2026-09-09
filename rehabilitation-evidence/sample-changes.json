@@ -1,0 +1,840 @@
+[
+  {
+    "id": "forest-range",
+    "title": "Forest Range",
+    "purpose": "Woodland exploration and reusable vegetation",
+    "artFamily": "fantasy",
+    "description": "A woodland trail through three groves. Follow the amber waystones to the old lookout.",
+    "objective": "Explore the three groves and reach the lookout.",
+    "beforeObjects": 483,
+    "afterObjects": 503,
+    "levels": 1,
+    "models": [
+      "ranger",
+      "rock-4",
+      "rock-5",
+      "tree-pine",
+      "tree-oak",
+      "bush",
+      "grass",
+      "rock-1",
+      "tree-birch",
+      "rock-2",
+      "rock-3",
+      "beacon",
+      "shrine"
+    ],
+    "textures": [
+      "stone",
+      "ground-sand",
+      "ground-moss"
+    ],
+    "audio": [
+      "ambient-fantasy",
+      "win"
+    ],
+    "unreplacedModelReferences": [],
+    "changes": [
+      "Authored title, start screen, controls, objective and outcome text",
+      "Original kit models and environment composition specific to sample purpose",
+      "Coherent lighting, ambient loop and interaction feedback",
+      "Original gameplay ids and technical systems retained",
+      "Authored play bounds and low edging contain compact samples; third-person gravity enabled",
+      "Historical fixture imports preserved only in the internal baseline snapshots"
+    ],
+    "caveats": [
+      "Requires standalone visual and representative-play audit before public classification",
+      "Enemy collision remains a simple gameplay proxy; sample scope stays deliberately compact"
+    ]
+  },
+  {
+    "id": "painted-wilds",
+    "title": "Painted Wilds",
+    "purpose": "Terrain painting and blended ground materials",
+    "artFamily": "fantasy",
+    "description": "A short landscape walk through moss, ochre and slate. Follow the three survey stones.",
+    "objective": "Visit all three survey stones.",
+    "beforeObjects": 3,
+    "afterObjects": 29,
+    "levels": 1,
+    "models": [
+      "ranger",
+      "rock-5",
+      "tree-birch",
+      "beacon",
+      "rock-2"
+    ],
+    "textures": [
+      "stone",
+      "ground-sand",
+      "ground-moss"
+    ],
+    "audio": [
+      "ambient-fantasy",
+      "beacon",
+      "pickup"
+    ],
+    "unreplacedModelReferences": [],
+    "changes": [
+      "Authored title, start screen, controls, objective and outcome text",
+      "Original kit models and environment composition specific to sample purpose",
+      "Coherent lighting, ambient loop and interaction feedback",
+      "Original gameplay ids and technical systems retained",
+      "Authored play bounds and low edging contain compact samples; third-person gravity enabled",
+      "Historical fixture imports preserved only in the internal baseline snapshots"
+    ],
+    "caveats": [
+      "Requires standalone visual and representative-play audit before public classification",
+      "Enemy collision remains a simple gameplay proxy; sample scope stays deliberately compact"
+    ]
+  },
+  {
+    "id": "iron-arena",
+    "title": "Iron Arena",
+    "purpose": "Skeletal combat animation and hitscan combat",
+    "artFamily": "arena",
+    "description": "Three armored sentries hold the forge courtyard. Keep moving and use the pillars for cover.",
+    "objective": "Defeat all three sentries.",
+    "beforeObjects": 10,
+    "afterObjects": 35,
+    "levels": 1,
+    "models": [
+      "ranger",
+      "pillar",
+      "generator",
+      "wall-panel",
+      "crate"
+    ],
+    "textures": [
+      "metal"
+    ],
+    "audio": [
+      "ambient-arena"
+    ],
+    "unreplacedModelReferences": [],
+    "changes": [
+      "Authored title, start screen, controls, objective and outcome text",
+      "Original kit models and environment composition specific to sample purpose",
+      "Coherent lighting, ambient loop and interaction feedback",
+      "Original gameplay ids and technical systems retained",
+      "Authored play bounds and low edging contain compact samples; third-person gravity enabled",
+      "Historical fixture imports preserved only in the internal baseline snapshots"
+    ],
+    "caveats": [
+      "Requires standalone visual and representative-play audit before public classification",
+      "Enemy collision remains a simple gameplay proxy; sample scope stays deliberately compact"
+    ]
+  },
+  {
+    "id": "dungeon-descent",
+    "title": "Dungeon Descent",
+    "purpose": "Flags, switches and a gated objective",
+    "artFamily": "fantasy",
+    "description": "Two distant seals hold the stone gate shut. Light both seals and pass through the eastern arch.",
+    "objective": "Activate the two seals, then reach the eastern exit.",
+    "beforeObjects": 16,
+    "afterObjects": 38,
+    "levels": 1,
+    "models": [
+      "ranger",
+      "beacon",
+      "relic",
+      "pillar",
+      "arch"
+    ],
+    "textures": [
+      "stone"
+    ],
+    "audio": [
+      "ambient-fantasy",
+      "interaction",
+      "win"
+    ],
+    "unreplacedModelReferences": [],
+    "changes": [
+      "Authored title, start screen, controls, objective and outcome text",
+      "Original kit models and environment composition specific to sample purpose",
+      "Coherent lighting, ambient loop and interaction feedback",
+      "Original gameplay ids and technical systems retained",
+      "Authored play bounds and low edging contain compact samples; third-person gravity enabled",
+      "Historical fixture imports preserved only in the internal baseline snapshots"
+    ],
+    "caveats": [
+      "Requires standalone visual and representative-play audit before public classification",
+      "Enemy collision remains a simple gameplay proxy; sample scope stays deliberately compact"
+    ]
+  },
+  {
+    "id": "npc-puzzle-adventure",
+    "title": "The Sanctum Key",
+    "purpose": "Branching dialogue, inventory and level transitions",
+    "artFamily": "fantasy",
+    "description": "An old sailor carries the key to a forgotten sanctuary. Speak with him, then unlock the northern door.",
+    "objective": "Speak to the sailor, use the door console, and enter the sanctum.",
+    "beforeObjects": 8,
+    "afterObjects": 38,
+    "levels": 2,
+    "models": [
+      "ranger",
+      "beacon",
+      "shrine",
+      "tree-birch",
+      "tree-oak",
+      "arch",
+      "broken-wall",
+      "pillar"
+    ],
+    "textures": [
+      "stone"
+    ],
+    "audio": [
+      "ambient-fantasy",
+      "win"
+    ],
+    "unreplacedModelReferences": [],
+    "changes": [
+      "Authored title, start screen, controls, objective and outcome text",
+      "Original kit models and environment composition specific to sample purpose",
+      "Coherent lighting, ambient loop and interaction feedback",
+      "Original gameplay ids and technical systems retained",
+      "Authored play bounds and low edging contain compact samples; third-person gravity enabled",
+      "Historical fixture imports preserved only in the internal baseline snapshots"
+    ],
+    "caveats": [
+      "Requires standalone visual and representative-play audit before public classification",
+      "Enemy collision remains a simple gameplay proxy; sample scope stays deliberately compact"
+    ]
+  },
+  {
+    "id": "opus-arena",
+    "title": "Opus Arena",
+    "purpose": "Projectile weapons and bounded enemy spawning",
+    "artFamily": "arena",
+    "description": "Hold the blue courtyard against eight approaching guardians. Face each target before firing.",
+    "objective": "Defeat eight guardians.",
+    "beforeObjects": 3,
+    "afterObjects": 25,
+    "levels": 1,
+    "models": [
+      "ranger",
+      "relic",
+      "guardian",
+      "pillar",
+      "rock-4",
+      "arch"
+    ],
+    "textures": [
+      "metal"
+    ],
+    "audio": [
+      "ambient-arena"
+    ],
+    "unreplacedModelReferences": [],
+    "changes": [
+      "Authored title, start screen, controls, objective and outcome text",
+      "Original kit models and environment composition specific to sample purpose",
+      "Coherent lighting, ambient loop and interaction feedback",
+      "Original gameplay ids and technical systems retained",
+      "Authored play bounds and low edging contain compact samples; third-person gravity enabled",
+      "Historical fixture imports preserved only in the internal baseline snapshots"
+    ],
+    "caveats": [
+      "Requires standalone visual and representative-play audit before public classification",
+      "Enemy collision remains a simple gameplay proxy; sample scope stays deliberately compact"
+    ]
+  },
+  {
+    "id": "power-station",
+    "title": "Power Station",
+    "purpose": "Inventory, dialogue and animated machinery",
+    "artFamily": "scifi",
+    "description": "The turbine is silent. Collect three fuel cells, speak to the engineer, and restart the machine.",
+    "objective": "Find three cells, unlock the shed, then activate the turbine.",
+    "beforeObjects": 10,
+    "afterObjects": 27,
+    "levels": 1,
+    "models": [
+      "ranger",
+      "generator",
+      "relic",
+      "terminal",
+      "pipe",
+      "wall-panel"
+    ],
+    "textures": [
+      "metal"
+    ],
+    "audio": [
+      "ambient-facility",
+      "pickup"
+    ],
+    "unreplacedModelReferences": [],
+    "changes": [
+      "Authored title, start screen, controls, objective and outcome text",
+      "Original kit models and environment composition specific to sample purpose",
+      "Coherent lighting, ambient loop and interaction feedback",
+      "Original gameplay ids and technical systems retained",
+      "Authored play bounds and low edging contain compact samples; third-person gravity enabled",
+      "Historical fixture imports preserved only in the internal baseline snapshots"
+    ],
+    "caveats": [
+      "Requires standalone visual and representative-play audit before public classification",
+      "Enemy collision remains a simple gameplay proxy; sample scope stays deliberately compact"
+    ]
+  },
+  {
+    "id": "relic-runner-2",
+    "title": "Relic Runner 2",
+    "purpose": "Animated traversal, ramps and checkpoint recovery",
+    "artFamily": "fantasy",
+    "description": "Reach the amber ridge relic. Use the low ramp, keep clear of the guardian, and claim the high ground.",
+    "objective": "Climb the ramp and claim the ridge relic.",
+    "beforeObjects": 11,
+    "afterObjects": 29,
+    "levels": 1,
+    "models": [
+      "ranger",
+      "rock-4",
+      "beacon",
+      "relic",
+      "tree-birch",
+      "tree-pine",
+      "broken-wall",
+      "pillar",
+      "arch"
+    ],
+    "textures": [
+      "stone",
+      "ground-moss"
+    ],
+    "audio": [
+      "ambient-fantasy",
+      "beacon",
+      "win"
+    ],
+    "unreplacedModelReferences": [],
+    "changes": [
+      "Authored title, start screen, controls, objective and outcome text",
+      "Original kit models and environment composition specific to sample purpose",
+      "Coherent lighting, ambient loop and interaction feedback",
+      "Original gameplay ids and technical systems retained",
+      "Authored play bounds and low edging contain compact samples; third-person gravity enabled",
+      "Historical fixture imports preserved only in the internal baseline snapshots"
+    ],
+    "caveats": [
+      "Requires standalone visual and representative-play audit before public classification",
+      "Enemy collision remains a simple gameplay proxy; sample scope stays deliberately compact"
+    ]
+  },
+  {
+    "id": "sentinel-maze",
+    "title": "Sentinel Maze",
+    "purpose": "Waypoint navigation around solid obstacles",
+    "artFamily": "abstract",
+    "description": "A watchful guardian patrols a slate labyrinth. Follow the amber route around the walls to the exit.",
+    "objective": "Reach the amber arch beyond the maze.",
+    "beforeObjects": 8,
+    "afterObjects": 36,
+    "levels": 1,
+    "models": [
+      "ranger",
+      "guardian",
+      "pillar",
+      "beacon",
+      "arch",
+      "rock-2"
+    ],
+    "textures": [
+      "stone"
+    ],
+    "audio": [
+      "ambient-fantasy",
+      "win"
+    ],
+    "unreplacedModelReferences": [],
+    "changes": [
+      "Authored title, start screen, controls, objective and outcome text",
+      "Original kit models and environment composition specific to sample purpose",
+      "Coherent lighting, ambient loop and interaction feedback",
+      "Original gameplay ids and technical systems retained",
+      "Authored play bounds and low edging contain compact samples; third-person gravity enabled",
+      "Historical fixture imports preserved only in the internal baseline snapshots"
+    ],
+    "caveats": [
+      "Requires standalone visual and representative-play audit before public classification",
+      "Enemy collision remains a simple gameplay proxy; sample scope stays deliberately compact"
+    ]
+  },
+  {
+    "id": "signal-zero",
+    "title": "Signal Zero",
+    "purpose": "Menus, saving and a two-level sequence",
+    "artFamily": "scifi",
+    "description": "Trace a silent outpost to its deep relay. Reach the cyan console to save your progress and descend.",
+    "objective": "Reach the outpost console, then restore the deep relay.",
+    "beforeObjects": 10,
+    "afterObjects": 66,
+    "levels": 2,
+    "models": [
+      "ranger",
+      "relay-console",
+      "wall-panel",
+      "terminal",
+      "crate",
+      "hazard-panel",
+      "beacon",
+      "generator"
+    ],
+    "textures": [
+      "metal"
+    ],
+    "audio": [
+      "ambient-facility",
+      "interaction",
+      "win"
+    ],
+    "unreplacedModelReferences": [],
+    "changes": [
+      "Authored title, start screen, controls, objective and outcome text",
+      "Original kit models and environment composition specific to sample purpose",
+      "Coherent lighting, ambient loop and interaction feedback",
+      "Original gameplay ids and technical systems retained",
+      "Authored play bounds and low edging contain compact samples; third-person gravity enabled",
+      "Historical fixture imports preserved only in the internal baseline snapshots"
+    ],
+    "caveats": [
+      "Requires standalone visual and representative-play audit before public classification",
+      "Enemy collision remains a simple gameplay proxy; sample scope stays deliberately compact"
+    ]
+  },
+  {
+    "id": "survival-arena-2",
+    "title": "Survival Arena 2",
+    "purpose": "Timed wave sequencing and hovercraft survival",
+    "artFamily": "arena",
+    "description": "A hovercraft endurance run on a tidal ring. Two waves arrive; keep moving for thirty-two seconds.",
+    "objective": "Survive both waves for 32 seconds.",
+    "beforeObjects": 3,
+    "afterObjects": 19,
+    "levels": 1,
+    "models": [
+      "drone",
+      "rock-3",
+      "beacon"
+    ],
+    "textures": [
+      "metal"
+    ],
+    "audio": [
+      "ambient-arena"
+    ],
+    "unreplacedModelReferences": [],
+    "changes": [
+      "Authored title, start screen, controls, objective and outcome text",
+      "Original kit models and environment composition specific to sample purpose",
+      "Coherent lighting, ambient loop and interaction feedback",
+      "Original gameplay ids and technical systems retained",
+      "Authored play bounds and low edging contain compact samples; third-person gravity enabled",
+      "Historical fixture imports preserved only in the internal baseline snapshots"
+    ],
+    "caveats": [
+      "Requires standalone visual and representative-play audit before public classification",
+      "Enemy collision remains a simple gameplay proxy; sample scope stays deliberately compact"
+    ]
+  },
+  {
+    "id": "survival-arena-3",
+    "title": "Survival Arena 3",
+    "purpose": "Capped runtime spawning and timed survival",
+    "artFamily": "arena",
+    "description": "Twenty seconds on the copper island. Hunter drones enter from the central transmitter.",
+    "objective": "Evade the hunter drones for 20 seconds.",
+    "beforeObjects": 4,
+    "afterObjects": 20,
+    "levels": 1,
+    "models": [
+      "drone",
+      "pillar",
+      "generator"
+    ],
+    "textures": [
+      "metal"
+    ],
+    "audio": [
+      "ambient-arena"
+    ],
+    "unreplacedModelReferences": [],
+    "changes": [
+      "Authored title, start screen, controls, objective and outcome text",
+      "Original kit models and environment composition specific to sample purpose",
+      "Coherent lighting, ambient loop and interaction feedback",
+      "Original gameplay ids and technical systems retained",
+      "Authored play bounds and low edging contain compact samples; third-person gravity enabled",
+      "Historical fixture imports preserved only in the internal baseline snapshots"
+    ],
+    "caveats": [
+      "Requires standalone visual and representative-play audit before public classification",
+      "Enemy collision remains a simple gameplay proxy; sample scope stays deliberately compact"
+    ]
+  },
+  {
+    "id": "textured-adventure",
+    "title": "Textured Adventure",
+    "purpose": "Textured objects, pickups and an objective gate",
+    "artFamily": "fantasy",
+    "description": "Three amber relics rest among violet ruins. Collect them, avoid the red fissure, and restore the shrine.",
+    "objective": "Collect three relics and enter the shrine.",
+    "beforeObjects": 6,
+    "afterObjects": 24,
+    "levels": 1,
+    "models": [
+      "ranger",
+      "relic",
+      "shrine",
+      "broken-wall",
+      "pillar",
+      "tree-birch"
+    ],
+    "textures": [
+      "hazard",
+      "stone"
+    ],
+    "audio": [
+      "ambient-fantasy",
+      "pickup"
+    ],
+    "unreplacedModelReferences": [],
+    "changes": [
+      "Authored title, start screen, controls, objective and outcome text",
+      "Original kit models and environment composition specific to sample purpose",
+      "Coherent lighting, ambient loop and interaction feedback",
+      "Original gameplay ids and technical systems retained",
+      "Authored play bounds and low edging contain compact samples; third-person gravity enabled",
+      "Historical fixture imports preserved only in the internal baseline snapshots"
+    ],
+    "caveats": [
+      "Requires standalone visual and representative-play audit before public classification",
+      "Enemy collision remains a simple gameplay proxy; sample scope stays deliberately compact"
+    ]
+  },
+  {
+    "id": "valley-run",
+    "title": "Valley Run",
+    "purpose": "Terrain traversal, jumping and checkpoint recovery",
+    "artFamily": "fantasy",
+    "description": "Cross a narrow valley and climb the stepping stones to the far ridge. The amber camp marks your checkpoint.",
+    "objective": "Reach the far ridge using the raised stepping stones.",
+    "beforeObjects": 14,
+    "afterObjects": 35,
+    "levels": 1,
+    "models": [
+      "ranger",
+      "relic",
+      "beacon",
+      "guardian",
+      "tree-birch",
+      "tree-pine",
+      "arch",
+      "rock-2"
+    ],
+    "textures": [
+      "stone"
+    ],
+    "audio": [
+      "ambient-fantasy",
+      "win",
+      "beacon"
+    ],
+    "unreplacedModelReferences": [],
+    "changes": [
+      "Authored title, start screen, controls, objective and outcome text",
+      "Original kit models and environment composition specific to sample purpose",
+      "Coherent lighting, ambient loop and interaction feedback",
+      "Original gameplay ids and technical systems retained",
+      "Authored play bounds and low edging contain compact samples; third-person gravity enabled",
+      "Historical fixture imports preserved only in the internal baseline snapshots"
+    ],
+    "caveats": [
+      "Requires standalone visual and representative-play audit before public classification",
+      "Enemy collision remains a simple gameplay proxy; sample scope stays deliberately compact"
+    ]
+  },
+  {
+    "id": "assembly-line",
+    "title": "Assembly Line",
+    "purpose": "Runtime prefab assemblies and reusable spawners",
+    "artFamily": "scifi",
+    "description": "Three fabrication bays assemble drones in real time. Clear space with your blaster, then inspect the control desk.",
+    "objective": "Observe the three active bays, then use the inspection console.",
+    "beforeObjects": 5,
+    "afterObjects": 36,
+    "levels": 1,
+    "models": [
+      "drone",
+      "light",
+      "generator",
+      "wall-panel",
+      "hazard-panel",
+      "terminal"
+    ],
+    "textures": [
+      "metal"
+    ],
+    "audio": [
+      "ambient-facility",
+      "interaction",
+      "win"
+    ],
+    "unreplacedModelReferences": [],
+    "changes": [
+      "Authored title, start screen, controls, objective and outcome text",
+      "Original kit models and environment composition specific to sample purpose",
+      "Coherent lighting, ambient loop and interaction feedback",
+      "Original gameplay ids and technical systems retained",
+      "Authored play bounds and low edging contain compact samples; third-person gravity enabled",
+      "Historical fixture imports preserved only in the internal baseline snapshots"
+    ],
+    "caveats": [
+      "Requires standalone visual and representative-play audit before public classification",
+      "Enemy collision remains a simple gameplay proxy; sample scope stays deliberately compact"
+    ]
+  },
+  {
+    "id": "blacksite",
+    "title": "Blacksite",
+    "purpose": "Access gates, checkpoints and two-level facility play",
+    "artFamily": "scifi",
+    "description": "Take the access card, open the security door, and cross the checkpoint into the core.",
+    "objective": "Recover the card, enter the core, and reach extraction.",
+    "beforeObjects": 23,
+    "afterObjects": 64,
+    "levels": 2,
+    "models": [
+      "drone",
+      "light",
+      "relic",
+      "terminal",
+      "beacon",
+      "wall-panel",
+      "generator",
+      "crate"
+    ],
+    "textures": [
+      "metal"
+    ],
+    "audio": [
+      "ambient-facility",
+      "pickup",
+      "beacon",
+      "win"
+    ],
+    "unreplacedModelReferences": [],
+    "changes": [
+      "Authored title, start screen, controls, objective and outcome text",
+      "Original kit models and environment composition specific to sample purpose",
+      "Coherent lighting, ambient loop and interaction feedback",
+      "Original gameplay ids and technical systems retained",
+      "Authored play bounds and low edging contain compact samples; third-person gravity enabled",
+      "Historical fixture imports preserved only in the internal baseline snapshots"
+    ],
+    "caveats": [
+      "Requires standalone visual and representative-play audit before public classification",
+      "Enemy collision remains a simple gameplay proxy; sample scope stays deliberately compact"
+    ]
+  },
+  {
+    "id": "moving-temple",
+    "title": "Moving Temple",
+    "purpose": "Moving platforms, elevators and player carry",
+    "artFamily": "abstract",
+    "description": "Ride the crossing slab, activate the amber lift, and jump to the high shrine.",
+    "objective": "Cross the moving slab, use the lift switch, and reach the high shrine.",
+    "beforeObjects": 9,
+    "afterObjects": 32,
+    "levels": 1,
+    "models": [
+      "ranger",
+      "beacon",
+      "relic",
+      "pillar",
+      "arch",
+      "tree-birch",
+      "tree-pine",
+      "ruin-wall"
+    ],
+    "textures": [
+      "stone"
+    ],
+    "audio": [
+      "ambient-fantasy",
+      "interaction",
+      "win"
+    ],
+    "unreplacedModelReferences": [],
+    "changes": [
+      "Authored title, start screen, controls, objective and outcome text",
+      "Original kit models and environment composition specific to sample purpose",
+      "Coherent lighting, ambient loop and interaction feedback",
+      "Original gameplay ids and technical systems retained",
+      "Authored play bounds and low edging contain compact samples; third-person gravity enabled",
+      "Historical fixture imports preserved only in the internal baseline snapshots"
+    ],
+    "caveats": [
+      "Requires standalone visual and representative-play audit before public classification",
+      "Enemy collision remains a simple gameplay proxy; sample scope stays deliberately compact"
+    ]
+  },
+  {
+    "id": "shifting-facility",
+    "title": "Shifting Facility",
+    "purpose": "Hierarchy transforms and shaped collision",
+    "artFamily": "scifi",
+    "description": "Walk the three machinery bays. Test the swing door and follow the amber lane to the far inspection station.",
+    "objective": "Pass the entry scanner, try the swing door, and reach the far console.",
+    "beforeObjects": 8,
+    "afterObjects": 37,
+    "levels": 1,
+    "models": [
+      "pillar",
+      "beacon",
+      "generator",
+      "floor-panel",
+      "wall-panel",
+      "terminal"
+    ],
+    "textures": [
+      "metal"
+    ],
+    "audio": [
+      "ambient-facility",
+      "door",
+      "beacon",
+      "interaction"
+    ],
+    "unreplacedModelReferences": [],
+    "changes": [
+      "Authored title, start screen, controls, objective and outcome text",
+      "Original kit models and environment composition specific to sample purpose",
+      "Coherent lighting, ambient loop and interaction feedback",
+      "Original gameplay ids and technical systems retained",
+      "Authored play bounds and low edging contain compact samples; third-person gravity enabled",
+      "Historical fixture imports preserved only in the internal baseline snapshots"
+    ],
+    "caveats": [
+      "Requires standalone visual and representative-play audit before public classification",
+      "Enemy collision remains a simple gameplay proxy; sample scope stays deliberately compact"
+    ]
+  },
+  {
+    "id": "skyway-trial",
+    "title": "Skyway Trial",
+    "purpose": "Platform jumps and a fall condition",
+    "artFamily": "abstract",
+    "description": "Five suspended platforms rise above a quiet blue void. Commit to each jump and reach the amber summit.",
+    "objective": "Jump across five platforms to the summit.",
+    "beforeObjects": 8,
+    "afterObjects": 22,
+    "levels": 1,
+    "models": [
+      "ranger",
+      "floor-panel",
+      "relic",
+      "arch"
+    ],
+    "textures": [
+      "stone"
+    ],
+    "audio": [
+      "ambient-fantasy",
+      "win"
+    ],
+    "unreplacedModelReferences": [],
+    "changes": [
+      "Authored title, start screen, controls, objective and outcome text",
+      "Original kit models and environment composition specific to sample purpose",
+      "Coherent lighting, ambient loop and interaction feedback",
+      "Original gameplay ids and technical systems retained",
+      "Authored play bounds and low edging contain compact samples; third-person gravity enabled",
+      "Historical fixture imports preserved only in the internal baseline snapshots"
+    ],
+    "caveats": [
+      "Requires standalone visual and representative-play audit before public classification",
+      "Enemy collision remains a simple gameplay proxy; sample scope stays deliberately compact"
+    ]
+  },
+  {
+    "id": "survival-arena",
+    "title": "Survival Arena",
+    "purpose": "Counter-driven pickups and contact hazards",
+    "artFamily": "arena",
+    "description": "Four amber orbs, three lives, and three hunters. Sweep the courtyard before they surround you.",
+    "objective": "Collect all four orbs before losing three lives.",
+    "beforeObjects": 9,
+    "afterObjects": 25,
+    "levels": 1,
+    "models": [
+      "drone",
+      "relic",
+      "pillar",
+      "generator"
+    ],
+    "textures": [
+      "metal"
+    ],
+    "audio": [
+      "ambient-arena"
+    ],
+    "unreplacedModelReferences": [],
+    "changes": [
+      "Authored title, start screen, controls, objective and outcome text",
+      "Original kit models and environment composition specific to sample purpose",
+      "Coherent lighting, ambient loop and interaction feedback",
+      "Original gameplay ids and technical systems retained",
+      "Authored play bounds and low edging contain compact samples; third-person gravity enabled",
+      "Historical fixture imports preserved only in the internal baseline snapshots"
+    ],
+    "caveats": [
+      "Requires standalone visual and representative-play audit before public classification",
+      "Enemy collision remains a simple gameplay proxy; sample scope stays deliberately compact"
+    ]
+  },
+  {
+    "id": "temple-switch-puzzle",
+    "title": "Temple Switch Puzzle",
+    "purpose": "Two-switch logic and a gated goal",
+    "artFamily": "fantasy",
+    "description": "Two amber seals power an ancient gateway. Step onto each seal and cross the open gate.",
+    "objective": "Activate both seals, then enter the northern shrine.",
+    "beforeObjects": 6,
+    "afterObjects": 27,
+    "levels": 1,
+    "models": [
+      "ranger",
+      "beacon",
+      "shrine",
+      "arch",
+      "pillar",
+      "tree-birch",
+      "tree-pine"
+    ],
+    "textures": [
+      "stone"
+    ],
+    "audio": [
+      "ambient-fantasy"
+    ],
+    "unreplacedModelReferences": [],
+    "changes": [
+      "Authored title, start screen, controls, objective and outcome text",
+      "Original kit models and environment composition specific to sample purpose",
+      "Coherent lighting, ambient loop and interaction feedback",
+      "Original gameplay ids and technical systems retained",
+      "Authored play bounds and low edging contain compact samples; third-person gravity enabled",
+      "Historical fixture imports preserved only in the internal baseline snapshots"
+    ],
+    "caveats": [
+      "Requires standalone visual and representative-play audit before public classification",
+      "Enemy collision remains a simple gameplay proxy; sample scope stays deliberately compact"
+    ]
+  }
+]

@@ -1,0 +1,1899 @@
+{
+  "models": [
+    {
+      "key": "ranger",
+      "vertices": 2868,
+      "triangles": 956,
+      "joints": 12,
+      "bounds": {
+        "min": [
+          -0.48309,
+          0,
+          -0.2395
+        ],
+        "max": [
+          0.48309,
+          1.855,
+          0.23
+        ]
+      }
+    },
+    {
+      "key": "guardian",
+      "vertices": 4164,
+      "triangles": 1388,
+      "joints": 7,
+      "bounds": {
+        "min": [
+          -0.65083,
+          0,
+          -1.56338
+        ],
+        "max": [
+          0.65091,
+          2.46128,
+          1.35124
+        ]
+      }
+    },
+    {
+      "key": "drone",
+      "vertices": 2646,
+      "triangles": 882,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.9,
+          -0.25,
+          -0.67874
+        ],
+        "max": [
+          0.9,
+          0.565,
+          0.67874
+        ]
+      }
+    },
+    {
+      "key": "tree-pine",
+      "vertices": 612,
+      "triangles": 204,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.27,
+          -0.0032,
+          -1.13
+        ],
+        "max": [
+          1.27,
+          3.95,
+          1.13
+        ]
+      }
+    },
+    {
+      "key": "tree-oak",
+      "vertices": 1158,
+      "triangles": 386,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.90058,
+          -0.01127,
+          -1.70172
+        ],
+        "max": [
+          1.75723,
+          4.55,
+          1.24302
+        ]
+      }
+    },
+    {
+      "key": "tree-birch",
+      "vertices": 1380,
+      "triangles": 460,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.04324,
+          -0.00556,
+          -0.61388
+        ],
+        "max": [
+          1.03395,
+          4.8,
+          0.61388
+        ]
+      }
+    },
+    {
+      "key": "bush",
+      "vertices": 660,
+      "triangles": 220,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.72769,
+          -0.15,
+          -0.65657
+        ],
+        "max": [
+          0.7725,
+          0.77,
+          0.57525
+        ]
+      }
+    },
+    {
+      "key": "grass",
+      "vertices": 396,
+      "triangles": 132,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.35529,
+          -0.01249,
+          -0.35959
+        ],
+        "max": [
+          0.3608,
+          0.54018,
+          0.34814
+        ]
+      }
+    },
+    {
+      "key": "ruin-wall",
+      "vertices": 1296,
+      "triangles": 432,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.41663,
+          0.015,
+          -0.2076
+        ],
+        "max": [
+          1.47663,
+          2.09,
+          0.3476
+        ]
+      }
+    },
+    {
+      "key": "broken-wall",
+      "vertices": 936,
+      "triangles": 312,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.28688,
+          0,
+          -0.32987
+        ],
+        "max": [
+          1.6303,
+          1.88,
+          0.97781
+        ]
+      }
+    },
+    {
+      "key": "arch",
+      "vertices": 1164,
+      "triangles": 388,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.66,
+          0,
+          -0.34
+        ],
+        "max": [
+          1.66,
+          3.68478,
+          0.34
+        ]
+      }
+    },
+    {
+      "key": "pillar",
+      "vertices": 660,
+      "triangles": 220,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.48966,
+          0,
+          -0.48966
+        ],
+        "max": [
+          0.48966,
+          2.46,
+          0.48966
+        ]
+      }
+    },
+    {
+      "key": "gate",
+      "vertices": 1260,
+      "triangles": 420,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.44021,
+          0,
+          -0.25778
+        ],
+        "max": [
+          1.44021,
+          2.8,
+          0.25778
+        ]
+      }
+    },
+    {
+      "key": "beacon",
+      "vertices": 804,
+      "triangles": 268,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.60052,
+          0,
+          -0.60052
+        ],
+        "max": [
+          0.60052,
+          2.09,
+          0.60052
+        ]
+      }
+    },
+    {
+      "key": "shrine",
+      "vertices": 582,
+      "triangles": 194,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.81317,
+          0,
+          -0.58336
+        ],
+        "max": [
+          0.81317,
+          2.26,
+          0.58336
+        ]
+      }
+    },
+    {
+      "key": "relic",
+      "vertices": 240,
+      "triangles": 80,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.27,
+          0,
+          -0.23383
+        ],
+        "max": [
+          0.27,
+          0.76,
+          0.23383
+        ]
+      }
+    },
+    {
+      "key": "bridge",
+      "vertices": 1488,
+      "triangles": 496,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.92495,
+          -0.015,
+          -2.1
+        ],
+        "max": [
+          0.92495,
+          1.1,
+          2.1
+        ]
+      }
+    },
+    {
+      "key": "wall-panel",
+      "vertices": 384,
+      "triangles": 128,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.335,
+          0,
+          -0.09546
+        ],
+        "max": [
+          1.335,
+          3,
+          0.2625
+        ]
+      }
+    },
+    {
+      "key": "floor-panel",
+      "vertices": 564,
+      "triangles": 188,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.98995,
+          0,
+          -1.1725
+        ],
+        "max": [
+          0.98995,
+          0.166,
+          1.1725
+        ]
+      }
+    },
+    {
+      "key": "door",
+      "vertices": 600,
+      "triangles": 200,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.17899,
+          0,
+          -0.14142
+        ],
+        "max": [
+          1.17899,
+          2.85,
+          0.2425
+        ]
+      }
+    },
+    {
+      "key": "terminal",
+      "vertices": 744,
+      "triangles": 248,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.36955,
+          0,
+          -0.28325
+        ],
+        "max": [
+          0.36955,
+          1.6,
+          0.34314
+        ]
+      }
+    },
+    {
+      "key": "relay-console",
+      "vertices": 1020,
+      "triangles": 340,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.62,
+          0,
+          -0.30052
+        ],
+        "max": [
+          0.62,
+          2.21,
+          0.39
+        ]
+      }
+    },
+    {
+      "key": "generator",
+      "vertices": 1356,
+      "triangles": 452,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.80374,
+          0,
+          -0.53832
+        ],
+        "max": [
+          0.91607,
+          1.69,
+          0.545
+        ]
+      }
+    },
+    {
+      "key": "pipe",
+      "vertices": 864,
+      "triangles": 288,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.20673,
+          0.00304,
+          -1.2
+        ],
+        "max": [
+          0.22,
+          1.2,
+          1.11666
+        ]
+      }
+    },
+    {
+      "key": "crate",
+      "vertices": 636,
+      "triangles": 212,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.42071,
+          -0.01,
+          -0.43
+        ],
+        "max": [
+          0.42071,
+          1.07,
+          0.4475
+        ]
+      }
+    },
+    {
+      "key": "light",
+      "vertices": 252,
+      "triangles": 84,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.29564,
+          0,
+          -0.19829
+        ],
+        "max": [
+          0.29564,
+          0.52,
+          0.19829
+        ]
+      }
+    },
+    {
+      "key": "hazard-panel",
+      "vertices": 126,
+      "triangles": 42,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.65,
+          0,
+          -0.23
+        ],
+        "max": [
+          0.83,
+          0.076,
+          0.23
+        ]
+      }
+    },
+    {
+      "key": "weapon-rifle",
+      "vertices": 720,
+      "triangles": 240,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.06718,
+          -0.325,
+          -0.67435
+        ],
+        "max": [
+          0.1075,
+          0.27,
+          0.94
+        ]
+      }
+    },
+    {
+      "key": "turret",
+      "vertices": 1164,
+      "triangles": 388,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.41046,
+          0,
+          -0.63398
+        ],
+        "max": [
+          0.72546,
+          1.34,
+          0.91
+        ]
+      }
+    },
+    {
+      "key": "projectile",
+      "vertices": 168,
+      "triangles": 56,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.03789,
+          -0.045,
+          -0.22
+        ],
+        "max": [
+          0.036,
+          0.045,
+          0.22
+        ]
+      }
+    },
+    {
+      "key": "impact-star",
+      "vertices": 288,
+      "triangles": 96,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.30032,
+          -0.26038,
+          -0.10095
+        ],
+        "max": [
+          0.30032,
+          0.26038,
+          0.10095
+        ]
+      }
+    },
+    {
+      "key": "ruin-wall-tall",
+      "vertices": 1248,
+      "triangles": 416,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.09224,
+          0.03,
+          -0.22627
+        ],
+        "max": [
+          1.20224,
+          3.33,
+          0.43987
+        ]
+      }
+    },
+    {
+      "key": "ruin-wall-window",
+      "vertices": 1212,
+      "triangles": 404,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.65456,
+          0.03,
+          -0.68
+        ],
+        "max": [
+          1.65456,
+          2.805,
+          0.72
+        ]
+      }
+    },
+    {
+      "key": "arch-pointed",
+      "vertices": 648,
+      "triangles": 216,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.66934,
+          0,
+          -1.3844
+        ],
+        "max": [
+          1.63803,
+          3.8,
+          1.3844
+        ]
+      }
+    },
+    {
+      "key": "arch-broken",
+      "vertices": 972,
+      "triangles": 324,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.44749,
+          -0.09,
+          -0.22627
+        ],
+        "max": [
+          1.72346,
+          3.14,
+          0.96482
+        ]
+      }
+    },
+    {
+      "key": "stairs",
+      "vertices": 660,
+      "triangles": 220,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.36,
+          0,
+          -1.9
+        ],
+        "max": [
+          1.36,
+          1.5,
+          1.9
+        ]
+      }
+    },
+    {
+      "key": "stone-walkway",
+      "vertices": 1176,
+      "triangles": 392,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.1701,
+          0,
+          -2.10885
+        ],
+        "max": [
+          1.1701,
+          1,
+          2.10885
+        ]
+      }
+    },
+    {
+      "key": "sanctuary-grand",
+      "vertices": 1332,
+      "triangles": 444,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -2.19346,
+          0,
+          -1.64346
+        ],
+        "max": [
+          2.19346,
+          3.45,
+          1.64346
+        ]
+      }
+    },
+    {
+      "key": "beacon-brazier",
+      "vertices": 876,
+      "triangles": 292,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.7779,
+          0,
+          -0.79753
+        ],
+        "max": [
+          0.7779,
+          2.35792,
+          0.79753
+        ]
+      }
+    },
+    {
+      "key": "tree-dead",
+      "vertices": 480,
+      "triangles": 160,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.35635,
+          -0.00985,
+          -0.56654
+        ],
+        "max": [
+          1.22148,
+          4.004,
+          0.28831
+        ]
+      }
+    },
+    {
+      "key": "stump",
+      "vertices": 510,
+      "triangles": 170,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.82174,
+          -0.03382,
+          -0.72264
+        ],
+        "max": [
+          0.82174,
+          0.75,
+          0.72264
+        ]
+      }
+    },
+    {
+      "key": "cliff-spire",
+      "vertices": 288,
+      "triangles": 96,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.55064,
+          0,
+          -1.33957
+        ],
+        "max": [
+          1.64301,
+          5.2,
+          1.27959
+        ]
+      }
+    },
+    {
+      "key": "rope-fence",
+      "vertices": 1062,
+      "triangles": 354,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.9298,
+          0,
+          -0.12816
+        ],
+        "max": [
+          2.1291,
+          1.55,
+          0.12492
+        ]
+      }
+    },
+    {
+      "key": "corner-wall",
+      "vertices": 312,
+      "triangles": 104,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.55,
+          0,
+          -0.11314
+        ],
+        "max": [
+          1.3,
+          3,
+          2.65
+        ]
+      }
+    },
+    {
+      "key": "doorway-frame",
+      "vertices": 360,
+      "triangles": 120,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.58435,
+          0,
+          -0.21213
+        ],
+        "max": [
+          1.58435,
+          3.21,
+          0.36
+        ]
+      }
+    },
+    {
+      "key": "ceiling-beam",
+      "vertices": 360,
+      "triangles": 120,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.8163,
+          -0.65,
+          -0.19829
+        ],
+        "max": [
+          1.8163,
+          0.21,
+          0.2975
+        ]
+      }
+    },
+    {
+      "key": "railing",
+      "vertices": 528,
+      "triangles": 176,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -2.15,
+          0,
+          -0.055
+        ],
+        "max": [
+          2.15,
+          1.1085,
+          0.06
+        ]
+      }
+    },
+    {
+      "key": "support-column",
+      "vertices": 600,
+      "triangles": 200,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.51737,
+          0,
+          -0.51737
+        ],
+        "max": [
+          0.51737,
+          3.15,
+          0.51737
+        ]
+      }
+    },
+    {
+      "key": "machine-large",
+      "vertices": 2592,
+      "triangles": 864,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.55813,
+          0,
+          -0.77782
+        ],
+        "max": [
+          1.55813,
+          2.725,
+          0.77782
+        ]
+      }
+    },
+    {
+      "key": "vent",
+      "vertices": 900,
+      "triangles": 300,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.84,
+          0,
+          -0.65894
+        ],
+        "max": [
+          0.84,
+          2,
+          0.97894
+        ]
+      }
+    },
+    {
+      "key": "conduit",
+      "vertices": 1848,
+      "triangles": 616,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.37911,
+          0,
+          -0.10724
+        ],
+        "max": [
+          0.39,
+          2.955,
+          0.10724
+        ]
+      }
+    },
+    {
+      "key": "computer-bank",
+      "vertices": 936,
+      "triangles": 312,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.15203,
+          0,
+          -0.19445
+        ],
+        "max": [
+          1.15203,
+          2.1,
+          0.355
+        ]
+      }
+    },
+    {
+      "key": "storage-rack",
+      "vertices": 972,
+      "triangles": 324,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.275,
+          0,
+          -0.375
+        ],
+        "max": [
+          1.275,
+          2.9,
+          0.375
+        ]
+      }
+    },
+    {
+      "key": "blast-door",
+      "vertices": 696,
+      "triangles": 232,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.65659,
+          0,
+          -0.16971
+        ],
+        "max": [
+          1.65659,
+          3.5,
+          0.85
+        ]
+      }
+    },
+    {
+      "key": "weapon-sidearm",
+      "vertices": 336,
+      "triangles": 112,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.06364,
+          -0.38,
+          -0.19445
+        ],
+        "max": [
+          0.109,
+          0.2025,
+          0.58
+        ]
+      }
+    },
+    {
+      "key": "barricade",
+      "vertices": 660,
+      "triangles": 220,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.47374,
+          0,
+          -0.25456
+        ],
+        "max": [
+          1.47374,
+          1.44,
+          0.2925
+        ]
+      }
+    },
+    {
+      "key": "ammo-crate",
+      "vertices": 660,
+      "triangles": 220,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.48,
+          0,
+          -0.25456
+        ],
+        "max": [
+          0.48,
+          0.86387,
+          0.4
+        ]
+      }
+    },
+    {
+      "key": "hovercraft",
+      "vertices": 1104,
+      "triangles": 368,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.11823,
+          0.18,
+          -1.64491
+        ],
+        "max": [
+          1.11823,
+          1.09,
+          1.64491
+        ]
+      }
+    },
+    {
+      "key": "rock-1",
+      "vertices": 264,
+      "triangles": 88,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.61615,
+          0,
+          -0.89584
+        ],
+        "max": [
+          0.61615,
+          1.41551,
+          0.89584
+        ]
+      }
+    },
+    {
+      "key": "rock-2",
+      "vertices": 156,
+      "triangles": 52,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.68093,
+          0,
+          -0.76528
+        ],
+        "max": [
+          0.63009,
+          1.54249,
+          0.74591
+        ]
+      }
+    },
+    {
+      "key": "rock-3",
+      "vertices": 234,
+      "triangles": 78,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.70134,
+          0,
+          -0.5668
+        ],
+        "max": [
+          0.66636,
+          1.66948,
+          0.6627
+        ]
+      }
+    },
+    {
+      "key": "rock-4",
+      "vertices": 132,
+      "triangles": 44,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.54047,
+          0,
+          -0.40906
+        ],
+        "max": [
+          0.54047,
+          1.79646,
+          0.40906
+        ]
+      }
+    },
+    {
+      "key": "rock-5",
+      "vertices": 294,
+      "triangles": 98,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -0.77447,
+          0,
+          -0.89785
+        ],
+        "max": [
+          0.71664,
+          1.92345,
+          0.87512
+        ]
+      }
+    },
+    {
+      "key": "hero-foglight",
+      "vertices": 1236,
+      "triangles": 412,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.18,
+          0,
+          -1.23898
+        ],
+        "max": [
+          1.22985,
+          3.18,
+          1.18
+        ]
+      }
+    },
+    {
+      "key": "hero-signal-relay",
+      "vertices": 1494,
+      "triangles": 498,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.94866,
+          0,
+          -1.15041
+        ],
+        "max": [
+          2.02562,
+          3.56,
+          1.15041
+        ]
+      }
+    },
+    {
+      "key": "hero-arsenal-run",
+      "vertices": 1782,
+      "triangles": 594,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -2.28642,
+          0,
+          -1.37228
+        ],
+        "max": [
+          2.28497,
+          3.94,
+          1.37228
+        ]
+      }
+    },
+    {
+      "key": "hero-silent-sector",
+      "vertices": 1494,
+      "triangles": 498,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.78792,
+          0,
+          -1.18
+        ],
+        "max": [
+          1.71728,
+          4.32,
+          1.18
+        ]
+      }
+    },
+    {
+      "key": "hero-power-grid",
+      "vertices": 1470,
+      "triangles": 490,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.8549,
+          0,
+          -1.15041
+        ],
+        "max": [
+          2.00635,
+          4.7,
+          1.15041
+        ]
+      }
+    },
+    {
+      "key": "hero-relic-frontier",
+      "vertices": 1446,
+      "triangles": 482,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.65617,
+          0,
+          -1.67171
+        ],
+        "max": [
+          1.65617,
+          3.18,
+          1.67171
+        ]
+      }
+    },
+    {
+      "key": "hero-relic-island",
+      "vertices": 1272,
+      "triangles": 424,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.18,
+          0,
+          -1.23898
+        ],
+        "max": [
+          1.22985,
+          3.56,
+          1.18
+        ]
+      }
+    },
+    {
+      "key": "hero-forest-range",
+      "vertices": 1434,
+      "triangles": 478,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.44301,
+          0,
+          -1.45855
+        ],
+        "max": [
+          1.44301,
+          3.94,
+          1.45855
+        ]
+      }
+    },
+    {
+      "key": "hero-iron-arena",
+      "vertices": 1734,
+      "triangles": 578,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -2.37489,
+          0,
+          -1.37318
+        ],
+        "max": [
+          2.35155,
+          4.32,
+          1.37318
+        ]
+      }
+    },
+    {
+      "key": "hero-dungeon-descent",
+      "vertices": 1350,
+      "triangles": 450,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.22985,
+          0,
+          -1.24539
+        ],
+        "max": [
+          1.22985,
+          4.7,
+          1.24539
+        ]
+      }
+    },
+    {
+      "key": "hero-npc-puzzle-adventure",
+      "vertices": 1320,
+      "triangles": 440,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.18,
+          0,
+          -1.45079
+        ],
+        "max": [
+          1.44301,
+          3.18,
+          1.15041
+        ]
+      }
+    },
+    {
+      "key": "hero-opus-arena",
+      "vertices": 1806,
+      "triangles": 602,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -2.1955,
+          0,
+          -1.37136
+        ],
+        "max": [
+          2.07795,
+          3.56,
+          1.37136
+        ]
+      }
+    },
+    {
+      "key": "hero-power-station",
+      "vertices": 1422,
+      "triangles": 474,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.65044,
+          0,
+          -1.18
+        ],
+        "max": [
+          1.64859,
+          3.94,
+          1.18
+        ]
+      }
+    },
+    {
+      "key": "hero-relic-runner-2",
+      "vertices": 1398,
+      "triangles": 466,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.44301,
+          0,
+          -1.45855
+        ],
+        "max": [
+          1.44301,
+          4.32,
+          1.45855
+        ]
+      }
+    },
+    {
+      "key": "hero-sentinel-maze",
+      "vertices": 1566,
+      "triangles": 522,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -2.37727,
+          0,
+          -1.18
+        ],
+        "max": [
+          2.30392,
+          4.7,
+          1.18
+        ]
+      }
+    },
+    {
+      "key": "hero-signal-zero",
+      "vertices": 1494,
+      "triangles": 498,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.8149,
+          0,
+          -1.18
+        ],
+        "max": [
+          1.69934,
+          3.18,
+          1.18
+        ]
+      }
+    },
+    {
+      "key": "hero-survival-arena-2",
+      "vertices": 1686,
+      "triangles": 562,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -2.17483,
+          0,
+          -1.37136
+        ],
+        "max": [
+          1.96748,
+          3.56,
+          1.37136
+        ]
+      }
+    },
+    {
+      "key": "hero-survival-arena-3",
+      "vertices": 1758,
+      "triangles": 586,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -2.1221,
+          0,
+          -1.37228
+        ],
+        "max": [
+          2.26321,
+          3.94,
+          1.37228
+        ]
+      }
+    },
+    {
+      "key": "hero-textured-adventure",
+      "vertices": 1272,
+      "triangles": 424,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.18,
+          0,
+          -1.23898
+        ],
+        "max": [
+          1.22985,
+          4.32,
+          1.18
+        ]
+      }
+    },
+    {
+      "key": "hero-valley-run",
+      "vertices": 1434,
+      "triangles": 478,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.44301,
+          0,
+          -1.45855
+        ],
+        "max": [
+          1.44301,
+          4.7,
+          1.45855
+        ]
+      }
+    },
+    {
+      "key": "hero-painted-wilds",
+      "vertices": 1332,
+      "triangles": 444,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.25358,
+          0,
+          -1.66261
+        ],
+        "max": [
+          1.65617,
+          3.18,
+          1.29398
+        ]
+      }
+    },
+    {
+      "key": "hero-assembly-line",
+      "vertices": 1446,
+      "triangles": 482,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.84804,
+          0,
+          -1.18
+        ],
+        "max": [
+          1.90011,
+          3.56,
+          1.18
+        ]
+      }
+    },
+    {
+      "key": "hero-blacksite",
+      "vertices": 1518,
+      "triangles": 506,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.95752,
+          0,
+          -1.15041
+        ],
+        "max": [
+          1.9069,
+          3.94,
+          1.15041
+        ]
+      }
+    },
+    {
+      "key": "hero-moving-temple",
+      "vertices": 1482,
+      "triangles": 494,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.65617,
+          0,
+          -1.67171
+        ],
+        "max": [
+          1.65617,
+          4.32,
+          1.67171
+        ]
+      }
+    },
+    {
+      "key": "hero-shifting-facility",
+      "vertices": 1422,
+      "triangles": 474,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.89018,
+          0,
+          -1.18
+        ],
+        "max": [
+          1.92881,
+          4.7,
+          1.18
+        ]
+      }
+    },
+    {
+      "key": "hero-skyway-trial",
+      "vertices": 1494,
+      "triangles": 498,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.93191,
+          0,
+          -1.15041
+        ],
+        "max": [
+          2.02801,
+          3.18,
+          1.15041
+        ]
+      }
+    },
+    {
+      "key": "hero-survival-arena",
+      "vertices": 1782,
+      "triangles": 594,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -2.18775,
+          0,
+          -1.37136
+        ],
+        "max": [
+          2.33988,
+          3.56,
+          1.37136
+        ]
+      }
+    },
+    {
+      "key": "hero-temple-switch-puzzle",
+      "vertices": 1386,
+      "triangles": 462,
+      "joints": 0,
+      "bounds": {
+        "min": [
+          -1.22985,
+          0,
+          -1.24539
+        ],
+        "max": [
+          1.22985,
+          3.94,
+          1.24539
+        ]
+      }
+    }
+  ],
+  "textures": [
+    {
+      "key": "palette",
+      "bytes": 184
+    },
+    {
+      "key": "ground-moss",
+      "bytes": 19950
+    },
+    {
+      "key": "ground-sand",
+      "bytes": 17006
+    },
+    {
+      "key": "stone",
+      "bytes": 15084
+    },
+    {
+      "key": "metal",
+      "bytes": 8666
+    },
+    {
+      "key": "hazard",
+      "bytes": 12249
+    },
+    {
+      "key": "grass",
+      "bytes": 19066
+    },
+    {
+      "key": "dirt-path",
+      "bytes": 14626
+    },
+    {
+      "key": "moss-stone",
+      "bytes": 20459
+    },
+    {
+      "key": "clean-stone",
+      "bytes": 15730
+    },
+    {
+      "key": "worn-stone",
+      "bytes": 15740
+    },
+    {
+      "key": "dark-ruin-stone",
+      "bytes": 15731
+    },
+    {
+      "key": "bark",
+      "bytes": 15559
+    },
+    {
+      "key": "foliage",
+      "bytes": 21250
+    },
+    {
+      "key": "relic-emissive",
+      "bytes": 16531
+    },
+    {
+      "key": "clean-metal",
+      "bytes": 15715
+    },
+    {
+      "key": "worn-metal",
+      "bytes": 15745
+    },
+    {
+      "key": "floor-panel",
+      "bytes": 15748
+    },
+    {
+      "key": "dark-wall",
+      "bytes": 15722
+    },
+    {
+      "key": "machinery",
+      "bytes": 14598
+    },
+    {
+      "key": "terminal-surface",
+      "bytes": 14632
+    },
+    {
+      "key": "grate",
+      "bytes": 15698
+    },
+    {
+      "key": "emissive-strip",
+      "bytes": 16583
+    },
+    {
+      "key": "arena-floor",
+      "bytes": 15691
+    },
+    {
+      "key": "arena-wall",
+      "bytes": 15730
+    },
+    {
+      "key": "arena-cover",
+      "bytes": 14634
+    },
+    {
+      "key": "arena-weapon",
+      "bytes": 14641
+    }
+  ],
+  "audio": [
+    {
+      "key": "ui-select",
+      "seconds": 0.12,
+      "peak": 0.2072,
+      "rms": 0.0621
+    },
+    {
+      "key": "pickup",
+      "seconds": 0.5500226757369614,
+      "peak": 0.3606,
+      "rms": 0.0675
+    },
+    {
+      "key": "interaction",
+      "seconds": 0.34997732426303857,
+      "peak": 0.3103,
+      "rms": 0.0612
+    },
+    {
+      "key": "door",
+      "seconds": 1.1,
+      "peak": 0.3906,
+      "rms": 0.0735
+    },
+    {
+      "key": "beacon",
+      "seconds": 2,
+      "peak": 0.2163,
+      "rms": 0.0587
+    },
+    {
+      "key": "damage",
+      "seconds": 0.3,
+      "peak": 0.4702,
+      "rms": 0.0924
+    },
+    {
+      "key": "fire",
+      "seconds": 0.24,
+      "peak": 0.5868,
+      "rms": 0.076
+    },
+    {
+      "key": "impact",
+      "seconds": 0.22,
+      "peak": 0.332,
+      "rms": 0.045
+    },
+    {
+      "key": "alert",
+      "seconds": 0.8,
+      "peak": 0.2624,
+      "rms": 0.1168
+    },
+    {
+      "key": "attack",
+      "seconds": 0.5,
+      "peak": 0.576,
+      "rms": 0.1709
+    },
+    {
+      "key": "win",
+      "seconds": 2.1,
+      "peak": 0.4338,
+      "rms": 0.0832
+    },
+    {
+      "key": "lose",
+      "seconds": 1.5,
+      "peak": 0.3368,
+      "rms": 0.0932
+    },
+    {
+      "key": "ambient-fantasy",
+      "seconds": 8,
+      "peak": 0.1938,
+      "rms": 0.0414
+    },
+    {
+      "key": "ambient-facility",
+      "seconds": 8,
+      "peak": 0.1059,
+      "rms": 0.0431
+    },
+    {
+      "key": "ambient-arena",
+      "seconds": 8,
+      "peak": 0.1325,
+      "rms": 0.0395
+    },
+    {
+      "key": "footstep",
+      "seconds": 0.2,
+      "peak": 0.2643,
+      "rms": 0.0362
+    },
+    {
+      "key": "guardian-call",
+      "seconds": 1.6,
+      "peak": 0.4278,
+      "rms": 0.1499
+    },
+    {
+      "key": "relay-pulse",
+      "seconds": 1.1499773242630384,
+      "peak": 0.2357,
+      "rms": 0.0851
+    },
+    {
+      "key": "combat-rifle",
+      "seconds": 0.3,
+      "peak": 0.6913,
+      "rms": 0.1049
+    },
+    {
+      "key": "stealth-bed",
+      "seconds": 8,
+      "peak": 0.0786,
+      "rms": 0.029
+    },
+    {
+      "key": "power-offline",
+      "seconds": 8,
+      "peak": 0.1012,
+      "rms": 0.0363
+    },
+    {
+      "key": "power-online",
+      "seconds": 8,
+      "peak": 0.1023,
+      "rms": 0.0479
+    },
+    {
+      "key": "temple-wind",
+      "seconds": 8,
+      "peak": 0.1335,
+      "rms": 0.0283
+    },
+    {
+      "key": "forest-bed",
+      "seconds": 8,
+      "peak": 0.0982,
+      "rms": 0.0186
+    }
+  ],
+  "errors": []
+}

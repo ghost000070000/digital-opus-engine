@@ -1,0 +1,1566 @@
+[
+  {
+    "id": "foglight",
+    "index": 1,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "d",
+        "ms": 520
+      },
+      {
+        "key": "Space",
+        "ms": 100
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:41:14.234Z",
+    "sourceSHA256": "ed9def71ec0354fef1a510dffd7a0cac913a419dfa7416e02a52d3960bb17bdb",
+    "final": {
+      "title": "Foglight",
+      "sim": 4.087899999998512,
+      "ended": false,
+      "paused": false,
+      "controller": "thirdperson",
+      "position": {
+        "x": -2.896592871918091,
+        "y": 0.79,
+        "z": 1.7118869471254854
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "objectives": {
+        "objective1": "active"
+      },
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:41:20.098Z"
+  },
+  {
+    "id": "signal-relay",
+    "index": 2,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "a",
+        "ms": 520
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:41:20.267Z",
+    "sourceSHA256": "cd30a5795c13f16a39f8fc157ad82417e811c1e56a088736601caeb5a53f1703",
+    "final": {
+      "title": "Signal Relay",
+      "sim": 3.987500000000003,
+      "ended": false,
+      "paused": false,
+      "controller": "firstperson",
+      "position": {
+        "x": -20.9,
+        "y": 0.55,
+        "z": -1.024099494586812
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:41:25.324Z"
+  },
+  {
+    "id": "arsenal-run",
+    "index": 3,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "d",
+        "ms": 520
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:41:25.512Z",
+    "sourceSHA256": "0ed910ba9c8438594c46e48edc6f8512e621a4833d2eede5ed37ebc7aed8b2d1",
+    "final": {
+      "title": "Arsenal Run",
+      "sim": 4.037500000000002,
+      "ended": false,
+      "paused": false,
+      "controller": "firstperson",
+      "position": {
+        "x": -4.826444395577031,
+        "y": 0.55,
+        "z": 1.8452941932803724
+      },
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 84
+      },
+      "objectives": {
+        "obj_clear": "active"
+      },
+      "inventory": {
+        "Sidearm": 1,
+        "Rifle": 1
+      },
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:41:30.597Z"
+  },
+  {
+    "id": "silent-sector",
+    "index": 4,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "a",
+        "ms": 520
+      },
+      {
+        "key": "Space",
+        "ms": 100
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:41:30.808Z",
+    "sourceSHA256": "258c05cee450a79d9d58699461611fbbfb762b93d29d48e34100adac6927bf0a",
+    "final": {
+      "title": "Silent Sector",
+      "sim": 4.1043999999985115,
+      "ended": false,
+      "paused": false,
+      "controller": "firstperson",
+      "position": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "state": {},
+      "objectives": {
+        "obj_reach_wing": "active"
+      },
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:41:36.202Z"
+  },
+  {
+    "id": "power-grid",
+    "index": 5,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "d",
+        "ms": 520
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:41:36.375Z",
+    "sourceSHA256": "8a6da71d1788c0062708f97a9ab0b5aecdf7ceaebf82724081d266ad85f757e0",
+    "final": {
+      "title": "Power Grid",
+      "sim": 3.937399999998512,
+      "ended": false,
+      "paused": false,
+      "controller": "firstperson",
+      "position": {
+        "x": -7.080802843486515,
+        "y": 0.55,
+        "z": -4.556703108663604
+      },
+      "state": {},
+      "objectives": {
+        "obj_find_cell": "active"
+      },
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:41:41.341Z"
+  },
+  {
+    "id": "relic-frontier",
+    "index": 6,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "a",
+        "ms": 520
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:41:41.509Z",
+    "sourceSHA256": "7ecf9e80589e38075fa04a7918fa93978499fc588ab6801ea60c9c0dd3d0b77a",
+    "final": {
+      "title": "Relic Frontier",
+      "sim": 3.9209000000059633,
+      "ended": false,
+      "paused": false,
+      "controller": "thirdperson",
+      "position": {
+        "x": -4.982638613323746,
+        "y": 0.4966728234592772,
+        "z": -12.792165641674773
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "objectives": {
+        "obj_find": "active"
+      },
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:41:46.514Z"
+  },
+  {
+    "id": "relic-island",
+    "index": 7,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "d",
+        "ms": 520
+      },
+      {
+        "key": "Space",
+        "ms": 100
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:41:46.705Z",
+    "sourceSHA256": "20ba8b2cdd31f5ee1d8c2f6fb60c300b6a85934d5fb69200b9d627dfdd884898",
+    "final": {
+      "title": "Relic Island",
+      "sim": 4.021000000000005,
+      "ended": false,
+      "paused": false,
+      "controller": "thirdperson",
+      "position": {
+        "x": 3.079515634930119,
+        "y": 0.8831048543675495,
+        "z": -1.3513590132183102
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "objectives": {},
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:41:51.816Z"
+  },
+  {
+    "id": "forest-range",
+    "index": 8,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "a",
+        "ms": 520
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:41:51.981Z",
+    "sourceSHA256": "5840b82bd5c78698797780b91578825cf71ef51e46c0c3abce4b177d567a007d",
+    "final": {
+      "title": "Forest Range",
+      "sim": 3.9542000000029853,
+      "ended": false,
+      "paused": false,
+      "controller": "thirdperson",
+      "position": {
+        "x": -5.440828441840644,
+        "y": -0.5064527127281813,
+        "z": -7.919922492831795
+      },
+      "state": {},
+      "objectives": {
+        "obj_explore": "active"
+      },
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:41:57.087Z"
+  },
+  {
+    "id": "iron-arena",
+    "index": 9,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "d",
+        "ms": 520
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:41:57.262Z",
+    "sourceSHA256": "44d7212ef00b9595723c6897059425a1f790d6541745c705f7120bcee9264bda",
+    "final": {
+      "title": "Iron Arena",
+      "sim": 3.9875000000000034,
+      "ended": false,
+      "paused": false,
+      "controller": "firstperson",
+      "position": {
+        "x": 4.466680324439047,
+        "y": 0.55,
+        "z": 0.15652336577347917
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 84
+      },
+      "objectives": {},
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:42:02.181Z"
+  },
+  {
+    "id": "dungeon-descent",
+    "index": 10,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "a",
+        "ms": 520
+      },
+      {
+        "key": "Space",
+        "ms": 100
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:42:02.355Z",
+    "sourceSHA256": "5fa80bcb148b8c1e6ea179d17a0c8dc403ed12723625f6653a2817477a4fad16",
+    "final": {
+      "title": "Dungeon Descent",
+      "sim": 4.121100000001495,
+      "ended": false,
+      "paused": false,
+      "controller": "topdown",
+      "position": {
+        "x": -14.5,
+        "y": 1.15,
+        "z": -9.733389868941646
+      },
+      "state": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:42:07.533Z"
+  },
+  {
+    "id": "npc-puzzle-adventure",
+    "index": 11,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "d",
+        "ms": 520
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:42:07.738Z",
+    "sourceSHA256": "e06562bdb1db003278e22b4bd3b99bb2356e8ba14005f7bc988158f4df5c5bc3",
+    "final": {
+      "title": "The Sanctum Key",
+      "sim": 3.8708999999985143,
+      "ended": false,
+      "paused": false,
+      "controller": "thirdperson",
+      "position": {
+        "x": -2.7788936994355273,
+        "y": 0.79,
+        "z": -3.5461014636814014
+      },
+      "state": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:42:12.690Z"
+  },
+  {
+    "id": "opus-arena",
+    "index": 12,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "a",
+        "ms": 520
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:42:12.856Z",
+    "sourceSHA256": "5be8d39047e6f75c9972f69b27e67081a9e465a56888ec265605322b6363ea4d",
+    "final": {
+      "title": "Opus Arena",
+      "sim": 4.054100000001495,
+      "ended": false,
+      "paused": false,
+      "controller": "thirdperson",
+      "position": {
+        "x": 2.760754561241527,
+        "y": 0.55,
+        "z": 0.8503018599852035
+      },
+      "state": {
+        "kills": 0,
+        "maxHealth": 180,
+        "health": 169
+      },
+      "objectives": {},
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:42:17.932Z"
+  },
+  {
+    "id": "power-station",
+    "index": 13,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "d",
+        "ms": 520
+      },
+      {
+        "key": "Space",
+        "ms": 100
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:42:18.098Z",
+    "sourceSHA256": "264c4a648d595e09dd245a2836e32bb64e4542783c28b076cd21c722ce12caf6",
+    "final": {
+      "title": "Power Station",
+      "sim": 4.004000000000006,
+      "ended": false,
+      "paused": false,
+      "controller": "thirdperson",
+      "position": {
+        "x": -2.9262700499894345,
+        "y": 0.9500000000000001,
+        "z": 1.337243061517077
+      },
+      "state": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:42:23.093Z"
+  },
+  {
+    "id": "relic-runner-2",
+    "index": 14,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "a",
+        "ms": 520
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:42:23.257Z",
+    "sourceSHA256": "74df57dab31bb4694398bd7b5b3fb4b3c09a3769b69c2c11786ce9cde29992b9",
+    "final": {
+      "title": "Relic Runner 2",
+      "sim": 3.970600000001494,
+      "ended": false,
+      "paused": false,
+      "controller": "thirdperson",
+      "position": {
+        "x": -6.235694008146564,
+        "y": 0.5563041407645866,
+        "z": -7.397532643275388
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "objectives": {},
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:42:28.239Z"
+  },
+  {
+    "id": "sentinel-maze",
+    "index": 15,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "d",
+        "ms": 520
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:42:28.433Z",
+    "sourceSHA256": "2a0dd7e2656a40735ccb9c35f9bcd388c729848762dd51b8ccd078f92f29f6e3",
+    "final": {
+      "title": "Sentinel Maze",
+      "sim": 3.937199999995535,
+      "ended": false,
+      "paused": false,
+      "controller": "thirdperson",
+      "position": {
+        "x": -11,
+        "y": 0.4997908937599469,
+        "z": -6.274247324803382
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "objectives": {},
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:42:33.346Z"
+  },
+  {
+    "id": "signal-zero",
+    "index": 16,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "a",
+        "ms": 520
+      },
+      {
+        "key": "Space",
+        "ms": 100
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:42:33.513Z",
+    "sourceSHA256": "c7fa71314f2f700d4fccdd4b48f8e0cc144aabc161923805c505c306b1aa8923",
+    "final": {
+      "title": "Signal Zero",
+      "sim": 4.321300000004475,
+      "ended": false,
+      "paused": false,
+      "controller": "thirdperson",
+      "position": {
+        "x": 3.7160894221455374,
+        "y": 0.55,
+        "z": -10.094795691104936
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "objectives": {},
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:42:38.822Z"
+  },
+  {
+    "id": "survival-arena-2",
+    "index": 17,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "d",
+        "ms": 520
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:42:39.007Z",
+    "sourceSHA256": "34317d0b9a00652972e8cefe40c4653d62b63306a4a8ef54981be1409a8796b5",
+    "final": {
+      "title": "Survival Arena 2",
+      "sim": 3.887600000001491,
+      "ended": false,
+      "paused": false,
+      "controller": "hovercraft",
+      "position": {
+        "x": -1.116495692023048,
+        "y": -0.880692788306962,
+        "z": 6.88646791999153
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 50
+      },
+      "objectives": {},
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:42:43.877Z"
+  },
+  {
+    "id": "survival-arena-3",
+    "index": 18,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "a",
+        "ms": 520
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:42:44.050Z",
+    "sourceSHA256": "d7986d491a3a6ea879d84c4201d700c21eba52ac579f2edb07f36ce40dfe71dc",
+    "final": {
+      "title": "Survival Arena 3",
+      "sim": 3.8875000000000024,
+      "ended": false,
+      "paused": false,
+      "controller": "hovercraft",
+      "position": {
+        "x": -0.9744315243958979,
+        "y": -1.043198897031606,
+        "z": 8.45
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "objectives": {},
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:42:48.933Z"
+  },
+  {
+    "id": "textured-adventure",
+    "index": 19,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "d",
+        "ms": 520
+      },
+      {
+        "key": "Space",
+        "ms": 100
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:42:49.105Z",
+    "sourceSHA256": "d93b0d421e72179db7d91a229eb2473622c9fbbb23b30c46b069fa2abad7bc9e",
+    "final": {
+      "title": "Textured Adventure",
+      "sim": 4.004600000001493,
+      "ended": false,
+      "paused": false,
+      "controller": "thirdperson",
+      "position": {
+        "x": -5.259408084151612,
+        "y": -0.6091650586899419,
+        "z": 1.0091572624918257
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "objectives": {},
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:42:54.105Z"
+  },
+  {
+    "id": "valley-run",
+    "index": 20,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "a",
+        "ms": 520
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:42:54.270Z",
+    "sourceSHA256": "a7442a2c06d2ee128313ec7efb593177808ea1ed21b0189b820f700b375e4214",
+    "final": {
+      "title": "Valley Run",
+      "sim": 3.837200000002984,
+      "ended": false,
+      "paused": false,
+      "controller": "thirdperson",
+      "position": {
+        "x": 2.772258303613793,
+        "y": -1.9666820808390506,
+        "z": -15.544711368727336
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "objectives": {},
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:42:59.144Z"
+  },
+  {
+    "id": "painted-wilds",
+    "index": 21,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "d",
+        "ms": 520
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:42:59.317Z",
+    "sourceSHA256": "c5bedeedf579414630d43111b54bff30bfe8ebfe23f289a28e57c408d63122e3",
+    "final": {
+      "title": "Painted Wilds",
+      "sim": 4.004300000004476,
+      "ended": false,
+      "paused": false,
+      "controller": "thirdperson",
+      "position": {
+        "x": -15.5,
+        "y": -1.6483757646173114,
+        "z": 0.8907115567936642
+      },
+      "state": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:43:04.316Z"
+  },
+  {
+    "id": "assembly-line",
+    "index": 22,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "a",
+        "ms": 520
+      },
+      {
+        "key": "Space",
+        "ms": 100
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:43:04.482Z",
+    "sourceSHA256": "432d56ed9bbe85709ea3af5eca0164cff4bf2ef026f0152958f766d2de05a298",
+    "final": {
+      "title": "Assembly Line",
+      "sim": 3.9876000000014957,
+      "ended": false,
+      "paused": false,
+      "controller": "firstperson",
+      "position": {
+        "x": -4.518252588448606,
+        "y": 0.55,
+        "z": 3.2217658753758585
+      },
+      "state": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:43:09.471Z"
+  },
+  {
+    "id": "blacksite",
+    "index": 23,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "d",
+        "ms": 520
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:43:09.644Z",
+    "sourceSHA256": "cb34e95a363d62b3d4394e6615df8c57c5b2317b47fe67be3cce5de03e73d356",
+    "final": {
+      "title": "Blacksite",
+      "sim": 3.8873999999985154,
+      "ended": false,
+      "paused": false,
+      "controller": "firstperson",
+      "position": {
+        "x": 4.663072223667629,
+        "y": 0.79,
+        "z": 7.6874983200062585
+      },
+      "state": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:43:14.594Z"
+  },
+  {
+    "id": "moving-temple",
+    "index": 24,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "a",
+        "ms": 520
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:43:14.781Z",
+    "sourceSHA256": "84db498b28a8e500e122e6e4c581b7fb55cd400e0bcbe3185fc43a47c2ee4f66",
+    "final": {
+      "title": "Moving Temple",
+      "sim": 3.9375000000000004,
+      "ended": false,
+      "paused": false,
+      "controller": "thirdperson",
+      "position": {
+        "x": 2.383918619573796,
+        "y": 0.9500000000000001,
+        "z": -4.416377228797712
+      },
+      "state": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:43:19.850Z"
+  },
+  {
+    "id": "shifting-facility",
+    "index": 25,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "d",
+        "ms": 520
+      },
+      {
+        "key": "Space",
+        "ms": 100
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:43:20.023Z",
+    "sourceSHA256": "36706008ce65072a75576962fdf2a6eab567c5aaeb8a016bd7858bd6f5af14ff",
+    "final": {
+      "title": "Shifting Facility",
+      "sim": 4.037600000001494,
+      "ended": false,
+      "paused": false,
+      "controller": "firstperson",
+      "position": {
+        "x": 4.628796986264915,
+        "y": 0.55,
+        "z": -7.4
+      },
+      "state": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:43:25.039Z"
+  },
+  {
+    "id": "skyway-trial",
+    "index": 26,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "a",
+        "ms": 520
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:43:25.205Z",
+    "sourceSHA256": "f606e30da2790dcb362c4d301548a98ce82ebda81039408870f6c672df63c8bc",
+    "final": {
+      "title": "Skyway Trial",
+      "sim": 3.970699999995534,
+      "ended": false,
+      "paused": false,
+      "controller": "thirdperson",
+      "position": {
+        "x": 5.381990358595366,
+        "y": 0.55,
+        "z": 5.005930236554113
+      },
+      "state": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:43:30.178Z"
+  },
+  {
+    "id": "survival-arena",
+    "index": 27,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "d",
+        "ms": 520
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:43:30.347Z",
+    "sourceSHA256": "cfceb4d01f661edd1189a393b471eed4a316e38ad64d24f9953a080059d8931e",
+    "final": {
+      "title": "Survival Arena",
+      "sim": 3.9211000000014944,
+      "ended": false,
+      "paused": false,
+      "controller": "hovercraft",
+      "position": {
+        "x": -1.1323452851441043,
+        "y": -1.3948451870723957,
+        "z": 6.919562405658677
+      },
+      "state": {
+        "health": 3,
+        "collected": 1
+      },
+      "objectives": {},
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:43:35.251Z"
+  },
+  {
+    "id": "temple-switch-puzzle",
+    "index": 28,
+    "inputOnly": true,
+    "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+    "errors": [],
+    "actions": [
+      {
+        "key": "w",
+        "ms": 950
+      },
+      {
+        "key": "a",
+        "ms": 520
+      },
+      {
+        "key": "Space",
+        "ms": 100
+      },
+      {
+        "key": "f",
+        "ms": 0
+      },
+      {
+        "key": "q",
+        "ms": 0
+      },
+      {
+        "key": "w",
+        "ms": 700
+      }
+    ],
+    "startedAt": "2026-09-08T17:43:35.412Z",
+    "sourceSHA256": "d4c8e313beb90b5b68cadc4f097d8816649c358fb7fc8731b1c881c87347070c",
+    "final": {
+      "title": "Temple Switch Puzzle",
+      "sim": 3.9708999999985135,
+      "ended": false,
+      "paused": false,
+      "controller": "thirdperson",
+      "position": {
+        "x": 2.8271840670110624,
+        "y": 0.4999873157683372,
+        "z": -8.676218946493965
+      },
+      "state": {
+        "switches": 0
+      },
+      "objectives": {},
+      "inventory": {},
+      "helpers": [],
+      "webglLost": false
+    },
+    "pauseVisible": true,
+    "restartPassed": true,
+    "passed": true,
+    "finishedAt": "2026-09-08T17:43:40.403Z"
+  }
+]

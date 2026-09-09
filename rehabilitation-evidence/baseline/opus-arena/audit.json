@@ -1,0 +1,146 @@
+{
+  "id": "opus-arena",
+  "phase": "baseline",
+  "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/opus-arena.html",
+  "startedAt": "2026-09-08T00:03:52.987Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Opus Arena",
+      "text": "Kills: 0/8\nPress F to interact",
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 1.1076000000238417,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.2022823670067855,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Opus Arena",
+      "text": "Kills: 0/8\nPress F to interact",
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 92
+      },
+      "playtime": 10.411500000000007,
+      "player": {
+        "position": {
+          "x": -13.787348047914097,
+          "y": 1.23731907851591,
+          "z": 33.05734682492957
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Opus Arena",
+      "text": "Kills: 0/8\nPress F to interact",
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 0
+      },
+      "playtime": 25.05039999997622,
+      "player": {
+        "position": {
+          "x": -24.255933621701256,
+          "y": 1.23731907851591,
+          "z": 25.784800940569195
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Opus Arena",
+    "text": "Opus Arena\n\nDefeat 8 Grunts to win. Q to fire.\n\nStart\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+    "state": {
+      "kills": 0
+    },
+    "playtime": 0,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 1.2022823670067855,
+        "z": 0
+      },
+      "visible": true,
+      "controller": "thirdperson"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nKills: 0/8\nPress F to interact",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:04:25.009Z"
+}

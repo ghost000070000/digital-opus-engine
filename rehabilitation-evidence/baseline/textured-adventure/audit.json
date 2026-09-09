@@ -1,0 +1,141 @@
+{
+  "id": "textured-adventure",
+  "phase": "baseline",
+  "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/textured-adventure.html",
+  "startedAt": "2026-09-08T00:05:57.077Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Textured Adventure",
+      "text": "Relics: 0/3\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 1.1382999999523162,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.40572779484416155,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Textured Adventure",
+      "text": "Relics: 0/3\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 10.255300000190728,
+      "player": {
+        "position": {
+          "x": -15.893897988315228,
+          "y": 0.6617301621448775,
+          "z": 32.23696431671485
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Textured Adventure",
+      "text": "Relics: 0/3\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 25.82189999997616,
+      "player": {
+        "position": {
+          "x": -21.01221513370047,
+          "y": 0.6617301621448775,
+          "z": 17.487881084706242
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Textured Adventure",
+    "text": "Textured Adventure\n\nStart\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+    "state": {},
+    "playtime": 0,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 0.40572779484416155,
+        "z": 0
+      },
+      "visible": true,
+      "controller": "thirdperson"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nRelics: 0/3\nPress F to interact",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:06:28.999Z"
+}

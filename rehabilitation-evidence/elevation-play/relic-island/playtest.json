@@ -1,0 +1,59 @@
+{
+  "id": "relic-island",
+  "index": 7,
+  "inputOnly": true,
+  "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+  "errors": [],
+  "actions": [
+    {
+      "key": "w",
+      "ms": 950
+    },
+    {
+      "key": "d",
+      "ms": 520
+    },
+    {
+      "key": "Space",
+      "ms": 100
+    },
+    {
+      "key": "f",
+      "ms": 0
+    },
+    {
+      "key": "q",
+      "ms": 0
+    },
+    {
+      "key": "w",
+      "ms": 700
+    }
+  ],
+  "startedAt": "2026-09-08T17:41:46.705Z",
+  "sourceSHA256": "20ba8b2cdd31f5ee1d8c2f6fb60c300b6a85934d5fb69200b9d627dfdd884898",
+  "final": {
+    "title": "Relic Island",
+    "sim": 4.021000000000005,
+    "ended": false,
+    "paused": false,
+    "controller": "thirdperson",
+    "position": {
+      "x": 3.079515634930119,
+      "y": 0.8831048543675495,
+      "z": -1.3513590132183102
+    },
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "objectives": {},
+    "inventory": {},
+    "helpers": [],
+    "webglLost": false
+  },
+  "pauseVisible": true,
+  "restartPassed": true,
+  "passed": true,
+  "finishedAt": "2026-09-08T17:41:51.816Z"
+}

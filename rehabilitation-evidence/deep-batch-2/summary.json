@@ -1,0 +1,101 @@
+[
+  {
+    "id": "power-grid",
+    "sourceSHA256": "8a6da71d1788c0062708f97a9ab0b5aecdf7ceaebf82724081d266ad85f757e0",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:16:51.037Z",
+    "sha256": "34cb8d69f6caee9535dc78d61a48b9e0cac2f1fd2d84544de0f6f53b1a294246",
+    "state": {
+      "title": "Power Grid",
+      "sim": 1.4181999999955297,
+      "ended": false,
+      "text": "Restore Emergency Power\nF interact / carry\nPress F to interact\nF carry / interact • Cell → generator → two coolant consoles",
+      "controller": "firstperson",
+      "bodyVisible": false,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 127
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nRestore Emergency Power\nF interact / carry\nPress F to interact\nF carry / interact • Cell → generator → two coolant consoles",
+    "passed": true
+  },
+  {
+    "id": "relic-frontier",
+    "sourceSHA256": "7ecf9e80589e38075fa04a7918fa93978499fc588ab6801ea60c9c0dd3d0b77a",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:16:54.993Z",
+    "sha256": "618e10288f88daf755108ace8f7cb7ca1e441ae2752ecb0f4826266c420c2013",
+    "state": {
+      "title": "Relic Frontier",
+      "sim": 1.9689999999999996,
+      "ended": false,
+      "text": "A relic glows atop the ridge...\nHealth 100 / 100\nFind the weapon\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact\nFind the weapon • Defeat the guardian • Claim the ridge relic",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 58
+    },
+    "pauseText": "A relic glows atop the ridge...\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nFind the weapon\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact\nFind the weapon • Defeat the guardian • Claim the ridge relic",
+    "passed": true
+  },
+  {
+    "id": "relic-island",
+    "sourceSHA256": "20ba8b2cdd31f5ee1d8c2f6fb60c300b6a85934d5fb69200b9d627dfdd884898",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:16:59.167Z",
+    "sha256": "10d51ae13b6a69c782ac222fa97638f3dc2367daa65db8baaaefd4a9bd3e441b",
+    "state": {
+      "title": "Relic Island",
+      "sim": 1.4184999999999997,
+      "ended": false,
+      "text": "Find 3 relics, unlock the gate, reach the shrine\nHealth 100 / 100\nRelics: 0/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 56
+    },
+    "pauseText": "Find 3 relics, unlock the gate, reach the shrine\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nRelics: 0/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+    "passed": true
+  },
+  {
+    "id": "forest-range",
+    "sourceSHA256": "5840b82bd5c78698797780b91578825cf71ef51e46c0c3abce4b177d567a007d",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:17:02.417Z",
+    "sha256": "c81e259b19834d9e06a6716cbe39e0d7f54c959b73c0f65ee151ff30fd9c8ca5",
+    "state": {
+      "title": "Forest Range",
+      "sim": 1.4182000000029795,
+      "ended": false,
+      "text": "Explore the three groves and reach the lookout.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 532
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nExplore the three groves and reach the lookout.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "passed": true
+  }
+]

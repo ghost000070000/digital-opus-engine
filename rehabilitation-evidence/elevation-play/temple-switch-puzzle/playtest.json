@@ -1,0 +1,58 @@
+{
+  "id": "temple-switch-puzzle",
+  "index": 28,
+  "inputOnly": true,
+  "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+  "errors": [],
+  "actions": [
+    {
+      "key": "w",
+      "ms": 950
+    },
+    {
+      "key": "a",
+      "ms": 520
+    },
+    {
+      "key": "Space",
+      "ms": 100
+    },
+    {
+      "key": "f",
+      "ms": 0
+    },
+    {
+      "key": "q",
+      "ms": 0
+    },
+    {
+      "key": "w",
+      "ms": 700
+    }
+  ],
+  "startedAt": "2026-09-08T17:43:35.412Z",
+  "sourceSHA256": "d4c8e313beb90b5b68cadc4f097d8816649c358fb7fc8731b1c881c87347070c",
+  "final": {
+    "title": "Temple Switch Puzzle",
+    "sim": 3.9708999999985135,
+    "ended": false,
+    "paused": false,
+    "controller": "thirdperson",
+    "position": {
+      "x": 2.8271840670110624,
+      "y": 0.4999873157683372,
+      "z": -8.676218946493965
+    },
+    "state": {
+      "switches": 0
+    },
+    "objectives": {},
+    "inventory": {},
+    "helpers": [],
+    "webglLost": false
+  },
+  "pauseVisible": true,
+  "restartPassed": true,
+  "passed": true,
+  "finishedAt": "2026-09-08T17:43:40.403Z"
+}

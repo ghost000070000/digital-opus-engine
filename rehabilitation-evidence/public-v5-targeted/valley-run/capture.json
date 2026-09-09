@@ -1,0 +1,100 @@
+{
+  "id": "valley-run",
+  "inputOnly": true,
+  "events": [
+    {
+      "capture": "opening",
+      "state": {
+        "pos": {
+          "x": 0,
+          "y": -1.9942011014227994,
+          "z": -17
+        },
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.5141379419450851,
+            "z": 0.8577075122980282
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "up": {
+            "x": 0,
+            "y": 0.8577075122980282,
+            "z": 0.5141379419450851
+          }
+        },
+        "ended": false,
+        "sim": 1.9185,
+        "text": "Health 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses."
+      }
+    },
+    {
+      "capture": "first-gate",
+      "state": {
+        "pos": {
+          "x": 0,
+          "y": -1.9944004844296677,
+          "z": -12.108540853495684
+        },
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.3291074965990674,
+            "z": 0.9442924630019529
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "up": {
+            "x": 0,
+            "y": 0.9442924630019529,
+            "z": 0.3291074965990674
+          }
+        },
+        "ended": false,
+        "sim": 2.88609999999404,
+        "text": "Health 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses."
+      }
+    },
+    {
+      "capture": "route-depth",
+      "state": {
+        "pos": {
+          "x": 1.719844084879428,
+          "y": -1.9894885931714499,
+          "z": -7.980352712205043
+        },
+        "basis": {
+          "forward": {
+            "x": 0.814679857049582,
+            "y": -0.36543768361547163,
+            "z": 0.4502799461573113
+          },
+          "right": {
+            "x": -0.4837372421892349,
+            "y": 0,
+            "z": 0.8752132771611463
+          },
+          "up": {
+            "x": 0.31983591267527506,
+            "y": 0.9308358068927938,
+            "z": 0.1767758172641704
+          }
+        },
+        "ended": false,
+        "sim": 3.853699999995531,
+        "text": "Health 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses."
+      }
+    }
+  ],
+  "errors": [],
+  "startedAt": "2026-09-08T20:29:45.653Z",
+  "completed": true,
+  "finishedAt": "2026-09-08T20:29:50.026Z"
+}

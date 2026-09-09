@@ -1,0 +1,140 @@
+{
+  "id": "shifting-facility",
+  "phase": "after-bc-final",
+  "url": "http://localhost:8837/dist/games/shifting-facility.html",
+  "startedAt": "2026-09-08T00:44:04.963Z",
+  "seconds": 4,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 480
+    },
+    {
+      "key": "d",
+      "milliseconds": 400
+    },
+    {
+      "key": "w",
+      "milliseconds": 600
+    },
+    {
+      "key": "a",
+      "milliseconds": 400
+    },
+    {
+      "key": "s",
+      "milliseconds": 320
+    },
+    {
+      "key": "w",
+      "milliseconds": 400
+    },
+    {
+      "key": "d",
+      "milliseconds": 200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Shifting Facility",
+      "text": "Pass the entry scanner, try the swing door, and reach the far console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 0.5,
+      "simulationSeconds": 0.5,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": -16
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Shifting Facility",
+      "text": "Pass the entry scanner, try the swing door, and reach the far console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 1.7348999999761587,
+      "simulationSeconds": 1.7348999999761587,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 1.1901234567901235,
+          "y": 2.35,
+          "z": -12.690077732053041
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Shifting Facility",
+      "text": "Pass the entry scanner, try the swing door, and reach the far console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 3.472600000023844,
+      "simulationSeconds": 3.472600000023844,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 2.1292094594992874,
+          "y": 0.55,
+          "z": -10.821543132268925
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Shifting Facility",
+    "text": "Shifting Facility\n\nWalk the three machinery bays. Test the swing door and follow the amber lane to the far inspection station.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+    "state": {},
+    "playtime": 0,
+    "simulationSeconds": 0,
+    "ended": false,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 1.05,
+        "z": -16
+      },
+      "visible": false,
+      "controller": "firstperson"
+    },
+    "camera": {
+      "mode": "fixed"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPass the entry scanner, try the swing door, and reach the far console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:44:17.493Z"
+}

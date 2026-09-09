@@ -102,6 +102,19 @@
     assert(pauseStates.join(',') === 'true,false', 'pause callbacks were not ordered');
   });
 
+  await test('setEnvironment updates only the given fields and validates colors', () => {
+    const before = app.getEnvironment();
+    app.setEnvironment({ fogDensity: 0.1 });
+    const after = app.getEnvironment();
+    assert(after.fogDensity === 0.1, 'fogDensity was not applied');
+    assert(JSON.stringify(after.sunColor) === JSON.stringify(before.sunColor), 'unrelated field (sunColor) changed');
+    app.setEnvironment({ sunColor: [1, 0, 0] });
+    assert(JSON.stringify(app.getEnvironment().sunColor) === JSON.stringify([1, 0, 0]), 'sunColor was not applied');
+    let threw = false;
+    try { app.setEnvironment({ skyTop: [1, 2] }); } catch (error) { threw = /skyTop/.test(error.message); }
+    assert(threw, 'setEnvironment accepted a malformed color array');
+  });
+
   await test('Scene removal destroys owned entities', () => {
     assert(app.scene.remove(entity), 'scene did not remove entity');
     assert(entity.destroyed && !entity.visible, 'removed entity was not destroyed');

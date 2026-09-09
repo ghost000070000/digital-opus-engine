@@ -1,0 +1,1384 @@
+{
+  "id": "skyway-trial",
+  "method": "Read-only instrumentation and native keyboard input; no player/state mutation.",
+  "events": [
+    {
+      "label": "opening",
+      "level": 0,
+      "state": {},
+      "ended": false,
+      "sim": 0.6340000000000001,
+      "position": {
+        "x": 0,
+        "y": 0.55,
+        "z": 1
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "grounded": true,
+      "basis": {
+        "x": 0,
+        "y": -0.5147562827527299,
+        "z": 0.8573365554824964
+      },
+      "text": "Jump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "solids": [
+        {
+          "id": "obj52",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 10,
+            "y": 1,
+            "z": 10
+          }
+        },
+        {
+          "id": "obj53",
+          "p": {
+            "x": 0,
+            "y": 0.5,
+            "z": 8
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj54",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": 13
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj55",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": 18
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj56",
+          "p": {
+            "x": 0,
+            "y": 3.5,
+            "z": 23
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj57",
+          "p": {
+            "x": 0,
+            "y": 4.5,
+            "z": 28
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        }
+      ]
+    },
+    {
+      "label": "edge-3.2",
+      "level": 0,
+      "state": {},
+      "ended": false,
+      "sim": 1.6851000000238419,
+      "position": {
+        "x": -0.08334849740649947,
+        "y": 0.55,
+        "z": 2.8778838557251425
+      },
+      "velocity": {
+        "x": -0.1352278792236673,
+        "y": 0,
+        "z": -0.3048167759390144
+      },
+      "grounded": true,
+      "basis": {
+        "x": 0.15108736297133363,
+        "y": -0.6427822577522856,
+        "z": -0.7510017162891458
+      },
+      "text": "Jump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "solids": [
+        {
+          "id": "obj52",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 10,
+            "y": 1,
+            "z": 10
+          }
+        },
+        {
+          "id": "obj53",
+          "p": {
+            "x": 0,
+            "y": 0.5,
+            "z": 8
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj54",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": 13
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj55",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": 18
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj56",
+          "p": {
+            "x": 0,
+            "y": 3.5,
+            "z": 23
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj57",
+          "p": {
+            "x": 0,
+            "y": 4.5,
+            "z": 28
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        }
+      ]
+    },
+    {
+      "input": "jump",
+      "position": {
+        "x": -0.11505179622184296,
+        "y": 0.55,
+        "z": 2.806421540505805
+      },
+      "sim": 2.252499999999999
+    },
+    {
+      "label": "land-7.5",
+      "level": 0,
+      "state": {},
+      "ended": false,
+      "sim": 3.8041000000238387,
+      "position": {
+        "x": 0.21256266480448222,
+        "y": 1.55,
+        "z": 7.33354650889122
+      },
+      "velocity": {
+        "x": 0.021958135837168546,
+        "y": 0,
+        "z": 0.020689465467031997
+      },
+      "grounded": true,
+      "basis": {
+        "x": 0.1944658244487589,
+        "y": -0.5369986214906785,
+        "z": -0.8208626703892531
+      },
+      "text": "Jump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "solids": [
+        {
+          "id": "obj52",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 10,
+            "y": 1,
+            "z": 10
+          }
+        },
+        {
+          "id": "obj53",
+          "p": {
+            "x": 0,
+            "y": 0.5,
+            "z": 8
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj54",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": 13
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj55",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": 18
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj56",
+          "p": {
+            "x": 0,
+            "y": 3.5,
+            "z": 23
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj57",
+          "p": {
+            "x": 0,
+            "y": 4.5,
+            "z": 28
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        }
+      ]
+    },
+    {
+      "label": "edge-8.6",
+      "level": 0,
+      "state": {},
+      "ended": false,
+      "sim": 4.621600000023838,
+      "position": {
+        "x": -0.23686106313427063,
+        "y": 1.55,
+        "z": 8.167421781122146
+      },
+      "velocity": {
+        "x": 0.024342614926755057,
+        "y": 0,
+        "z": -0.15742939969607078
+      },
+      "grounded": true,
+      "basis": {
+        "x": 0.7077779973762013,
+        "y": -0.5967493484977585,
+        "z": -0.37807475649352024
+      },
+      "text": "Jump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "solids": [
+        {
+          "id": "obj52",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 10,
+            "y": 1,
+            "z": 10
+          }
+        },
+        {
+          "id": "obj53",
+          "p": {
+            "x": 0,
+            "y": 0.5,
+            "z": 8
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj54",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": 13
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj55",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": 18
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj56",
+          "p": {
+            "x": 0,
+            "y": 3.5,
+            "z": 23
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj57",
+          "p": {
+            "x": 0,
+            "y": 4.5,
+            "z": 28
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        }
+      ]
+    },
+    {
+      "input": "jump",
+      "position": {
+        "x": -0.2329648371108355,
+        "y": 1.55,
+        "z": 8.142223973664107
+      },
+      "sim": 4.871899999976153
+    },
+    {
+      "label": "land-12.5",
+      "level": 0,
+      "state": {},
+      "ended": false,
+      "sim": 6.34089999997615,
+      "position": {
+        "x": -0.4700710221330602,
+        "y": 2.55,
+        "z": 12.477588376382359
+      },
+      "velocity": {
+        "x": -0.22397703456657614,
+        "y": 0,
+        "z": 0.08657111218964268
+      },
+      "grounded": true,
+      "basis": {
+        "x": -0.7822658631109023,
+        "y": -0.5145761842441525,
+        "z": -0.3511003702932867
+      },
+      "text": "Jump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "solids": [
+        {
+          "id": "obj52",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 10,
+            "y": 1,
+            "z": 10
+          }
+        },
+        {
+          "id": "obj53",
+          "p": {
+            "x": 0,
+            "y": 0.5,
+            "z": 8
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj54",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": 13
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj55",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": 18
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj56",
+          "p": {
+            "x": 0,
+            "y": 3.5,
+            "z": 23
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj57",
+          "p": {
+            "x": 0,
+            "y": 4.5,
+            "z": 28
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        }
+      ]
+    },
+    {
+      "label": "edge-13.6",
+      "level": 0,
+      "state": {},
+      "ended": false,
+      "sim": 7.608299999952306,
+      "position": {
+        "x": 0.8080560517859672,
+        "y": 2.55,
+        "z": 13.834148161870013
+      },
+      "velocity": {
+        "x": 0.8193326331804004,
+        "y": 0,
+        "z": 0.508619587920875
+      },
+      "grounded": true,
+      "basis": {
+        "x": 0.6455497069274275,
+        "y": -0.49762574900801754,
+        "z": 0.5793394426500945
+      },
+      "text": "Jump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "solids": [
+        {
+          "id": "obj52",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 10,
+            "y": 1,
+            "z": 10
+          }
+        },
+        {
+          "id": "obj53",
+          "p": {
+            "x": 0,
+            "y": 0.5,
+            "z": 8
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj54",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": 13
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj55",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": 18
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj56",
+          "p": {
+            "x": 0,
+            "y": 3.5,
+            "z": 23
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj57",
+          "p": {
+            "x": 0,
+            "y": 4.5,
+            "z": 28
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        }
+      ]
+    },
+    {
+      "input": "jump",
+      "position": {
+        "x": 0.9215066697098178,
+        "y": 2.55,
+        "z": 13.904575243864551
+      },
+      "sim": 7.808600000023832
+    },
+    {
+      "label": "land-17.5",
+      "level": 0,
+      "state": {},
+      "ended": false,
+      "sim": 9.338900000095352,
+      "position": {
+        "x": -1.7900367113172835,
+        "y": 3.55,
+        "z": 17.171267905421097
+      },
+      "velocity": {
+        "x": -0.5544149674667589,
+        "y": 0,
+        "z": -0.0856957017473016
+      },
+      "grounded": true,
+      "basis": {
+        "x": -0.7771691097378346,
+        "y": -0.4725150113621778,
+        "z": -0.41561729861340263
+      },
+      "text": "Jump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "solids": [
+        {
+          "id": "obj52",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 10,
+            "y": 1,
+            "z": 10
+          }
+        },
+        {
+          "id": "obj53",
+          "p": {
+            "x": 0,
+            "y": 0.5,
+            "z": 8
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj54",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": 13
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj55",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": 18
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj56",
+          "p": {
+            "x": 0,
+            "y": 3.5,
+            "z": 23
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj57",
+          "p": {
+            "x": 0,
+            "y": 4.5,
+            "z": 28
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        }
+      ]
+    },
+    {
+      "label": "edge-18.6",
+      "level": 0,
+      "state": {},
+      "ended": true,
+      "sim": 10.89410000014303,
+      "position": {
+        "x": -0.08878287287627477,
+        "y": -11.885754201813274,
+        "z": 18.435306038969834
+      },
+      "velocity": {
+        "x": 0.03901111916043558,
+        "y": -24.546000001430528,
+        "z": 0.08822836753517035
+      },
+      "grounded": false,
+      "basis": {
+        "x": -0.2882695206516465,
+        "y": -0.7799634524964091,
+        "z": -0.5554796992088473
+      },
+      "text": "Try again\n\nRestart from the menu and try a different route.\n\nRestart\nJump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "solids": [
+        {
+          "id": "obj52",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 10,
+            "y": 1,
+            "z": 10
+          }
+        },
+        {
+          "id": "obj53",
+          "p": {
+            "x": 0,
+            "y": 0.5,
+            "z": 8
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj54",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": 13
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj55",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": 18
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj56",
+          "p": {
+            "x": 0,
+            "y": 3.5,
+            "z": 23
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj57",
+          "p": {
+            "x": 0,
+            "y": 4.5,
+            "z": 28
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        }
+      ]
+    },
+    {
+      "label": "land-22.5",
+      "level": 0,
+      "state": {},
+      "ended": true,
+      "sim": 11.045200000166874,
+      "position": {
+        "x": -0.08437226045628106,
+        "y": -15.848343402695285,
+        "z": 18.445281172778376
+      },
+      "velocity": {
+        "x": 0.022643814227394556,
+        "y": -27.56800000190737,
+        "z": 0.05121172647819982
+      },
+      "grounded": false,
+      "basis": {
+        "x": -0.7408073136324314,
+        "y": -0.6219413625593445,
+        "z": -0.2537586759236544
+      },
+      "text": "Try again\n\nRestart from the menu and try a different route.\n\nRestart\nJump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "solids": [
+        {
+          "id": "obj52",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 10,
+            "y": 1,
+            "z": 10
+          }
+        },
+        {
+          "id": "obj53",
+          "p": {
+            "x": 0,
+            "y": 0.5,
+            "z": 8
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj54",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": 13
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj55",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": 18
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj56",
+          "p": {
+            "x": 0,
+            "y": 3.5,
+            "z": 23
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj57",
+          "p": {
+            "x": 0,
+            "y": 4.5,
+            "z": 28
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        }
+      ]
+    },
+    {
+      "label": "outcome",
+      "level": 0,
+      "state": {},
+      "ended": true,
+      "sim": 11.110900000214558,
+      "position": {
+        "x": -0.08308617558416691,
+        "y": -17.71352260421244,
+        "z": 18.44818980937277
+      },
+      "velocity": {
+        "x": 0.01787434977893486,
+        "y": -28.882000002861044,
+        "z": 0.04042500537506876
+      },
+      "grounded": false,
+      "basis": {
+        "x": -0.7933638617299708,
+        "y": -0.5828273698349894,
+        "z": -0.17574424563022267
+      },
+      "text": "Try again\n\nRestart from the menu and try a different route.\n\nRestart\nJump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "solids": [
+        {
+          "id": "obj52",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 10,
+            "y": 1,
+            "z": 10
+          }
+        },
+        {
+          "id": "obj53",
+          "p": {
+            "x": 0,
+            "y": 0.5,
+            "z": 8
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj54",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": 13
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj55",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": 18
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj56",
+          "p": {
+            "x": 0,
+            "y": 3.5,
+            "z": 23
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj57",
+          "p": {
+            "x": 0,
+            "y": 4.5,
+            "z": 28
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        }
+      ]
+    },
+    {
+      "label": "restart",
+      "level": 0,
+      "state": {},
+      "ended": false,
+      "sim": 0.38370000004768384,
+      "position": {
+        "x": 0,
+        "y": 0.55,
+        "z": 1
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "grounded": true,
+      "basis": {
+        "x": 0,
+        "y": -0.5175856541560365,
+        "z": 0.855631398799663
+      },
+      "text": "Jump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "solids": [
+        {
+          "id": "obj52",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 10,
+            "y": 1,
+            "z": 10
+          }
+        },
+        {
+          "id": "obj53",
+          "p": {
+            "x": 0,
+            "y": 0.5,
+            "z": 8
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj54",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": 13
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj55",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": 18
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj56",
+          "p": {
+            "x": 0,
+            "y": 3.5,
+            "z": 23
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj57",
+          "p": {
+            "x": 0,
+            "y": 4.5,
+            "z": 28
+          },
+          "scale": {
+            "x": 4,
+            "y": 1,
+            "z": 4
+          }
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "final": {
+    "level": 0,
+    "state": {},
+    "ended": true,
+    "sim": 11.110900000214558,
+    "position": {
+      "x": -0.08308617558416691,
+      "y": -17.71352260421244,
+      "z": 18.44818980937277
+    },
+    "velocity": {
+      "x": 0.01787434977893486,
+      "y": -28.882000002861044,
+      "z": 0.04042500537506876
+    },
+    "grounded": false,
+    "basis": {
+      "x": -0.7933638617299708,
+      "y": -0.5828273698349894,
+      "z": -0.17574424563022267
+    },
+    "text": "Try again\n\nRestart from the menu and try a different route.\n\nRestart\nJump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "solids": [
+      {
+        "id": "obj52",
+        "p": {
+          "x": 0,
+          "y": -0.5,
+          "z": 0
+        },
+        "scale": {
+          "x": 10,
+          "y": 1,
+          "z": 10
+        }
+      },
+      {
+        "id": "obj53",
+        "p": {
+          "x": 0,
+          "y": 0.5,
+          "z": 8
+        },
+        "scale": {
+          "x": 4,
+          "y": 1,
+          "z": 4
+        }
+      },
+      {
+        "id": "obj54",
+        "p": {
+          "x": 0,
+          "y": 1.5,
+          "z": 13
+        },
+        "scale": {
+          "x": 4,
+          "y": 1,
+          "z": 4
+        }
+      },
+      {
+        "id": "obj55",
+        "p": {
+          "x": 0,
+          "y": 2.5,
+          "z": 18
+        },
+        "scale": {
+          "x": 4,
+          "y": 1,
+          "z": 4
+        }
+      },
+      {
+        "id": "obj56",
+        "p": {
+          "x": 0,
+          "y": 3.5,
+          "z": 23
+        },
+        "scale": {
+          "x": 4,
+          "y": 1,
+          "z": 4
+        }
+      },
+      {
+        "id": "obj57",
+        "p": {
+          "x": 0,
+          "y": 4.5,
+          "z": 28
+        },
+        "scale": {
+          "x": 4,
+          "y": 1,
+          "z": 4
+        }
+      }
+    ]
+  },
+  "restart": {
+    "level": 0,
+    "state": {},
+    "ended": false,
+    "sim": 0.38370000004768384,
+    "position": {
+      "x": 0,
+      "y": 0.55,
+      "z": 1
+    },
+    "velocity": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "grounded": true,
+    "basis": {
+      "x": 0,
+      "y": -0.5175856541560365,
+      "z": 0.855631398799663
+    },
+    "text": "Jump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "solids": [
+      {
+        "id": "obj52",
+        "p": {
+          "x": 0,
+          "y": -0.5,
+          "z": 0
+        },
+        "scale": {
+          "x": 10,
+          "y": 1,
+          "z": 10
+        }
+      },
+      {
+        "id": "obj53",
+        "p": {
+          "x": 0,
+          "y": 0.5,
+          "z": 8
+        },
+        "scale": {
+          "x": 4,
+          "y": 1,
+          "z": 4
+        }
+      },
+      {
+        "id": "obj54",
+        "p": {
+          "x": 0,
+          "y": 1.5,
+          "z": 13
+        },
+        "scale": {
+          "x": 4,
+          "y": 1,
+          "z": 4
+        }
+      },
+      {
+        "id": "obj55",
+        "p": {
+          "x": 0,
+          "y": 2.5,
+          "z": 18
+        },
+        "scale": {
+          "x": 4,
+          "y": 1,
+          "z": 4
+        }
+      },
+      {
+        "id": "obj56",
+        "p": {
+          "x": 0,
+          "y": 3.5,
+          "z": 23
+        },
+        "scale": {
+          "x": 4,
+          "y": 1,
+          "z": 4
+        }
+      },
+      {
+        "id": "obj57",
+        "p": {
+          "x": 0,
+          "y": 4.5,
+          "z": 28
+        },
+        "scale": {
+          "x": 4,
+          "y": 1,
+          "z": 4
+        }
+      }
+    ]
+  }
+}

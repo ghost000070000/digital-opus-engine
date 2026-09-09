@@ -1,0 +1,25 @@
+{
+  "id": "moving-temple",
+  "sourceSHA256": "f1e572d9f5306f564f22d80c2f505641888aeac2a512fac3097a78a4d1bf3850",
+  "errors": [],
+  "capturedAt": "2026-09-08T16:25:34.658Z",
+  "sha256": "1996c02719081361c8713535a04060f769b655177e7e803abc05765df6ea5cd5",
+  "state": {
+    "title": "Moving Temple",
+    "sim": 1.4184999999999999,
+    "ended": false,
+    "text": "Cross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "controller": "thirdperson",
+    "bodyVisible": false,
+    "visualVisible": true,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 52
+  },
+  "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nCross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+  "passed": true
+}

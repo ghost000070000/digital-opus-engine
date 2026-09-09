@@ -1,0 +1,25 @@
+{
+  "id": "forest-range",
+  "sourceSHA256": "5840b82bd5c78698797780b91578825cf71ef51e46c0c3abce4b177d567a007d",
+  "errors": [],
+  "capturedAt": "2026-09-08T17:44:18.352Z",
+  "sha256": "c81e259b19834d9e06a6716cbe39e0d7f54c959b73c0f65ee151ff30fd9c8ca5",
+  "state": {
+    "title": "Forest Range",
+    "sim": 1.4185000000000003,
+    "ended": false,
+    "text": "Explore the three groves and reach the lookout.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "controller": "thirdperson",
+    "bodyVisible": false,
+    "visualVisible": true,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 532
+  },
+  "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nExplore the three groves and reach the lookout.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+  "passed": true
+}

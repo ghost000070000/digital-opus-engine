@@ -1,0 +1,159 @@
+{
+  "id": "sentinel-maze",
+  "phase": "public-v5-candidates",
+  "url": "http://localhost:8837/dist/games/sentinel-maze.html",
+  "startedAt": "2026-09-08T19:56:27.862Z",
+  "seconds": 8,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 960
+    },
+    {
+      "key": "d",
+      "milliseconds": 800
+    },
+    {
+      "key": "w",
+      "milliseconds": 1200
+    },
+    {
+      "key": "a",
+      "milliseconds": 800
+    },
+    {
+      "key": "s",
+      "milliseconds": 640
+    },
+    {
+      "key": "w",
+      "milliseconds": 800
+    },
+    {
+      "key": "d",
+      "milliseconds": 400
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Sentinel Maze",
+      "text": "Health 100 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 0.4,
+      "simulationSeconds": 0.4,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": -8,
+          "y": 0.5003414976354006,
+          "z": -8
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Sentinel Maze",
+      "text": "Health 100 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 3.2606000000014923,
+      "simulationSeconds": 3.2606000000014923,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": -4.642946763198773,
+          "y": 1.3002924065232615,
+          "z": -10.833891683915136
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Sentinel Maze",
+      "text": "Health 100 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 6.270799999997014,
+      "simulationSeconds": 6.270799999997014,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": -5.776702164278855,
+          "y": 0.4998893773265194,
+          "z": -11
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Sentinel Maze",
+    "text": "Sentinel Maze\n\nA watchful guardian patrols a slate labyrinth. Follow the amber route around the walls to the exit. Visual landmark: Sentinel eye.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "state": {},
+    "playtime": 0,
+    "simulationSeconds": 0,
+    "ended": false,
+    "player": {
+      "position": {
+        "x": -8,
+        "y": 1.05,
+        "z": -8
+      },
+      "visible": false,
+      "controller": "thirdperson"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+  "completed": true,
+  "finishedAt": "2026-09-08T19:57:28.775Z"
+}

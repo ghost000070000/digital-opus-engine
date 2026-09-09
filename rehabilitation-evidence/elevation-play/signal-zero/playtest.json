@@ -1,0 +1,59 @@
+{
+  "id": "signal-zero",
+  "index": 16,
+  "inputOnly": true,
+  "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+  "errors": [],
+  "actions": [
+    {
+      "key": "w",
+      "ms": 950
+    },
+    {
+      "key": "a",
+      "ms": 520
+    },
+    {
+      "key": "Space",
+      "ms": 100
+    },
+    {
+      "key": "f",
+      "ms": 0
+    },
+    {
+      "key": "q",
+      "ms": 0
+    },
+    {
+      "key": "w",
+      "ms": 700
+    }
+  ],
+  "startedAt": "2026-09-08T17:42:33.513Z",
+  "sourceSHA256": "c7fa71314f2f700d4fccdd4b48f8e0cc144aabc161923805c505c306b1aa8923",
+  "final": {
+    "title": "Signal Zero",
+    "sim": 4.321300000004475,
+    "ended": false,
+    "paused": false,
+    "controller": "thirdperson",
+    "position": {
+      "x": 3.7160894221455374,
+      "y": 0.55,
+      "z": -10.094795691104936
+    },
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "objectives": {},
+    "inventory": {},
+    "helpers": [],
+    "webglLost": false
+  },
+  "pauseVisible": true,
+  "restartPassed": true,
+  "passed": true,
+  "finishedAt": "2026-09-08T17:42:38.822Z"
+}

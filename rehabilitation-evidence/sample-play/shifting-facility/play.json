@@ -1,0 +1,314 @@
+{
+  "id": "shifting-facility",
+  "inputs": [
+    {
+      "target": [
+        0,
+        -12
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {
+          "checkpointReached": true
+        },
+        "inventory": {},
+        "ended": false,
+        "playtime": 3.687,
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": -13.025825708198548
+        },
+        "controller": "firstperson",
+        "basis": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "text": "Pass the entry scanner, try the swing door, and reach the far console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        -4,
+        -9
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {
+          "checkpointReached": true
+        },
+        "inventory": {},
+        "ended": false,
+        "playtime": 6.2125,
+        "position": {
+          "x": -4.428873079808231,
+          "y": 0.55,
+          "z": -9.799168971708973
+        },
+        "controller": "firstperson",
+        "basis": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "text": "Pass the entry scanner, try the swing door, and reach the far console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        -4,
+        -3
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {
+          "checkpointReached": true
+        },
+        "inventory": {},
+        "ended": false,
+        "playtime": 8.708000000000002,
+        "position": {
+          "x": -3.669022611508776,
+          "y": 0.55,
+          "z": -2.540433078925269
+        },
+        "controller": "firstperson",
+        "basis": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "text": "Pass the entry scanner, try the swing door, and reach the far console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        -4,
+        3
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {
+          "checkpointReached": true
+        },
+        "inventory": {},
+        "ended": false,
+        "playtime": 11.223000000000008,
+        "position": {
+          "x": -5.509262342622528,
+          "y": 0.55,
+          "z": 2.7021369920884606
+        },
+        "controller": "firstperson",
+        "basis": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "text": "Pass the entry scanner, try the swing door, and reach the far console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        5,
+        2
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {
+          "checkpointReached": true
+        },
+        "inventory": {},
+        "ended": false,
+        "playtime": 14.060100000001498,
+        "position": {
+          "x": 5.634263795824597,
+          "y": 0.55,
+          "z": 1.8864692968430399
+        },
+        "controller": "firstperson",
+        "basis": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "text": "Pass the entry scanner, try the swing door, and reach the far console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        -4,
+        5
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {
+          "checkpointReached": true
+        },
+        "inventory": {},
+        "ended": false,
+        "playtime": 18.298000000000005,
+        "position": {
+          "x": -4.256012875648342,
+          "y": 0.55,
+          "z": 5.4871488682435094
+        },
+        "controller": "firstperson",
+        "basis": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "text": "Pass the entry scanner, try the swing door, and reach the far console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        -4,
+        12
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {
+          "checkpointReached": true
+        },
+        "inventory": {},
+        "ended": false,
+        "playtime": 20.23370000000296,
+        "position": {
+          "x": -2.6752945526178538,
+          "y": 0.55,
+          "z": 12.85962134976767
+        },
+        "controller": "firstperson",
+        "basis": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "text": "Pass the entry scanner, try the swing door, and reach the far console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        0,
+        15
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {
+          "checkpointReached": true
+        },
+        "inventory": {},
+        "ended": false,
+        "playtime": 22.48480000000445,
+        "position": {
+          "x": 0.7815902934589015,
+          "y": 0.55,
+          "z": 15.237560729235158
+        },
+        "controller": "firstperson",
+        "basis": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "text": "Pass the entry scanner, try the swing door, and reach the far console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+        "dialogue": false
+      }
+    }
+  ],
+  "errors": [],
+  "started": "2026-09-08T15:58:59.000Z",
+  "start": {
+    "level": 0,
+    "state": {},
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 2.1422999999970203,
+    "position": {
+      "x": 0,
+      "y": 0.55,
+      "z": -16
+    },
+    "controller": "firstperson",
+    "basis": {
+      "x": 0,
+      "y": 0,
+      "z": 1
+    },
+    "text": "Pass the entry scanner, try the swing door, and reach the far console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+    "dialogue": false
+  },
+  "final": {
+    "level": 0,
+    "state": {},
+    "flags": {
+      "checkpointReached": true
+    },
+    "inventory": {},
+    "ended": true,
+    "playtime": 24.170800000004444,
+    "position": {
+      "x": 1.7832217902134457,
+      "y": 0.55,
+      "z": 15.942922623830272
+    },
+    "controller": "firstperson",
+    "basis": {
+      "x": 0,
+      "y": 0,
+      "z": 1
+    },
+    "text": "Inspection complete\n\nYou crossed the machinery floor.\n\nRestart\nPass the entry scanner, try the swing door, and reach the far console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+    "dialogue": false
+  },
+  "completed": true,
+  "restart": {
+    "level": 0,
+    "state": {},
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 0.5512999999970198,
+    "position": {
+      "x": 0,
+      "y": 0.55,
+      "z": -16
+    },
+    "controller": "firstperson",
+    "basis": {
+      "x": 0,
+      "y": 0,
+      "z": 1
+    },
+    "text": "Pass the entry scanner, try the swing door, and reach the far console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+    "dialogue": false
+  },
+  "finished": "2026-09-08T15:59:26.976Z"
+}

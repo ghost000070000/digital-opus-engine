@@ -1,0 +1,55 @@
+{
+  "id": "survival-arena",
+  "index": 27,
+  "inputOnly": true,
+  "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+  "errors": [],
+  "actions": [
+    {
+      "key": "w",
+      "ms": 950
+    },
+    {
+      "key": "d",
+      "ms": 520
+    },
+    {
+      "key": "f",
+      "ms": 0
+    },
+    {
+      "key": "q",
+      "ms": 0
+    },
+    {
+      "key": "w",
+      "ms": 700
+    }
+  ],
+  "startedAt": "2026-09-08T17:43:30.347Z",
+  "sourceSHA256": "cfceb4d01f661edd1189a393b471eed4a316e38ad64d24f9953a080059d8931e",
+  "final": {
+    "title": "Survival Arena",
+    "sim": 3.9211000000014944,
+    "ended": false,
+    "paused": false,
+    "controller": "hovercraft",
+    "position": {
+      "x": -1.1323452851441043,
+      "y": -1.3948451870723957,
+      "z": 6.919562405658677
+    },
+    "state": {
+      "health": 3,
+      "collected": 1
+    },
+    "objectives": {},
+    "inventory": {},
+    "helpers": [],
+    "webglLost": false
+  },
+  "pauseVisible": true,
+  "restartPassed": true,
+  "passed": true,
+  "finishedAt": "2026-09-08T17:43:35.251Z"
+}

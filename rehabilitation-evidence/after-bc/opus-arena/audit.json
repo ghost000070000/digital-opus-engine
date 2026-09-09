@@ -1,0 +1,154 @@
+{
+  "id": "opus-arena",
+  "phase": "after-bc",
+  "url": "http://localhost:8837/dist/games/opus-arena.html",
+  "startedAt": "2026-09-08T00:20:27.246Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Opus Arena",
+      "text": "Health 100 / 100\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 0.7,
+      "simulationSeconds": 0.7,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.1522823670067854,
+          "z": 0
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Opus Arena",
+      "text": "Health 76 / 100\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 76
+      },
+      "playtime": 6.425200000047678,
+      "simulationSeconds": 6.425200000047678,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": -8.175,
+          "y": -1.9391713400349873,
+          "z": 8.175
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Opus Arena",
+      "text": "Try again\n\nRestart from the menu and try a different route.\n\nRestart\nHealth 0 / 100\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 0
+      },
+      "playtime": 13.728400000095336,
+      "simulationSeconds": 13.728400000095336,
+      "ended": true,
+      "player": {
+        "position": {
+          "x": -1.9854985543789276,
+          "y": -1.8855581836102897,
+          "z": 8.175
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Opus Arena",
+    "text": "Opus Arena\n\nHold the blue courtyard against eight approaching guardians. Face each target before firing.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+    "state": {
+      "kills": 0
+    },
+    "playtime": 0,
+    "simulationSeconds": 0,
+    "ended": false,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 1.2022823670067855,
+        "z": 0
+      },
+      "visible": true,
+      "controller": "thirdperson"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "Try again\n\nRestart from the menu and try a different route.\n\nRestart\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 0 / 100\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:20:59.203Z"
+}

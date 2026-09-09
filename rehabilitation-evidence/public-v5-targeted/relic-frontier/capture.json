@@ -1,0 +1,100 @@
+{
+  "id": "relic-frontier",
+  "inputOnly": true,
+  "events": [
+    {
+      "capture": "opening",
+      "state": {
+        "pos": {
+          "x": -8,
+          "y": 0.55,
+          "z": 0
+        },
+        "basis": {
+          "forward": {
+            "x": 0.4959385052084717,
+            "y": -0.4780675702688969,
+            "z": 0.7249113030631955
+          },
+          "right": {
+            "x": -0.8253356149096783,
+            "y": 0,
+            "z": 0.5646424733950353
+          },
+          "up": {
+            "x": 0.26993725532658475,
+            "y": 0.8783230603013867,
+            "z": 0.3945661920762559
+          }
+        },
+        "ended": false,
+        "sim": 2.0524999999999993,
+        "text": "A relic glows atop the ridge...\nHealth 100 / 100\nFind the weapon\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact\nFind the weapon • Defeat the guardian • Claim the ridge relic"
+      }
+    },
+    {
+      "capture": "combat-court",
+      "state": {
+        "pos": {
+          "x": -3.4867994756125675,
+          "y": 0.55,
+          "z": 2.8271127648194145
+        },
+        "basis": {
+          "forward": {
+            "x": 0.8942148184471679,
+            "y": -0.3733317020150105,
+            "z": 0.24698845871836617
+          },
+          "right": {
+            "x": -0.2662380199746758,
+            "y": 0,
+            "z": 0.9639073174947703
+          },
+          "up": {
+            "x": 0.3598571594250457,
+            "y": 0.9276979251192574,
+            "z": 0.09939509313825207
+          }
+        },
+        "ended": false,
+        "sim": 3.3541999999955303,
+        "text": "A relic glows atop the ridge...\nHealth 92 / 100\nFind the weapon\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact\nFind the weapon • Defeat the guardian • Claim the ridge relic"
+      }
+    },
+    {
+      "capture": "weapon-approach",
+      "state": {
+        "pos": {
+          "x": 2.428343544506981,
+          "y": 0.55,
+          "z": 3.1001743043243586
+        },
+        "basis": {
+          "forward": {
+            "x": 0.8175680117545877,
+            "y": -0.38653564918062444,
+            "z": -0.4268169842779965
+          },
+          "right": {
+            "x": 0.4627873802131503,
+            "y": 0,
+            "z": 0.8864693117730862
+          },
+          "up": {
+            "x": 0.3426519909049112,
+            "y": 0.9222744666922712,
+            "z": -0.17888382044329051
+          }
+        },
+        "ended": false,
+        "sim": 4.555500000000002,
+        "text": "A relic glows atop the ridge...\nHealth 92 / 100\nDefeat the guard\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact\nFind the weapon • Defeat the guardian • Claim the ridge relic"
+      }
+    }
+  ],
+  "errors": [],
+  "startedAt": "2026-09-08T20:29:05.297Z",
+  "completed": true,
+  "finishedAt": "2026-09-08T20:29:11.095Z"
+}

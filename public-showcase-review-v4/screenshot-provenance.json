@@ -1,0 +1,786 @@
+[
+  {
+    "id": "foglight",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/foglight/baseline.png",
+    "destination": "public-showcase-review-v4/foglight/baseline.png",
+    "sha256": "aab6278b636fe9460e7cb86f9bbbf81478f1f5b2b2d4a5337b1c5f97edd03d22"
+  },
+  {
+    "id": "foglight",
+    "role": "previous",
+    "source": "public-showcase-review-v3/foglight/previous.png",
+    "destination": "public-showcase-review-v4/foglight/previous.png",
+    "sha256": "e3cc02f650e2c5589ba5429fd81df75f2ba35c6c2f81678e0091152b06e0a127"
+  },
+  {
+    "id": "foglight",
+    "role": "v3",
+    "source": "public-showcase-review-v3/foglight/current.png",
+    "destination": "public-showcase-review-v4/foglight/v3.png",
+    "sha256": "d9abbda112e01c169a2a46e79f225533bba0d020638dd89b02dd727c70ac8c79"
+  },
+  {
+    "id": "foglight",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/foglight/gameplay.png",
+    "destination": "public-showcase-review-v4/foglight/current.png",
+    "sha256": "4a306d1f82179a62017aaa5563db4ff746fe9c48c7e09e70d78998132391d44a"
+  },
+  {
+    "id": "signal-relay",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/signal-relay/baseline.png",
+    "destination": "public-showcase-review-v4/signal-relay/baseline.png",
+    "sha256": "15ac8b6fba1561db28d856c9564bbd9303c5d5526132eaeb9bd5f0f5ac173625"
+  },
+  {
+    "id": "signal-relay",
+    "role": "previous",
+    "source": "public-showcase-review-v3/signal-relay/previous.png",
+    "destination": "public-showcase-review-v4/signal-relay/previous.png",
+    "sha256": "db4b18dc17b5c549ca4a7badd5b8638c5d0678432398a09b2a83ae9a57853dbe"
+  },
+  {
+    "id": "signal-relay",
+    "role": "v3",
+    "source": "public-showcase-review-v3/signal-relay/current.png",
+    "destination": "public-showcase-review-v4/signal-relay/v3.png",
+    "sha256": "f75d0f210c4e782b005ffc664ebd5a011bb47dd56daeb4d07c760befed4e3675"
+  },
+  {
+    "id": "signal-relay",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/signal-relay/gameplay.png",
+    "destination": "public-showcase-review-v4/signal-relay/current.png",
+    "sha256": "1e64c390e4b7f41514b929e9fecc65299f88413fbdfafd0446944136ff8583dc"
+  },
+  {
+    "id": "arsenal-run",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/arsenal-run/baseline.png",
+    "destination": "public-showcase-review-v4/arsenal-run/baseline.png",
+    "sha256": "90894f5ad6552825d26d91410c5a4b3bb1691430220e8bd94377e45508189319"
+  },
+  {
+    "id": "arsenal-run",
+    "role": "previous",
+    "source": "public-showcase-review-v3/arsenal-run/previous.png",
+    "destination": "public-showcase-review-v4/arsenal-run/previous.png",
+    "sha256": "edee5069215b133f0d1bb26269e5b205057126dfe17fac05041c0bc20e45a62e"
+  },
+  {
+    "id": "arsenal-run",
+    "role": "v3",
+    "source": "public-showcase-review-v3/arsenal-run/current.png",
+    "destination": "public-showcase-review-v4/arsenal-run/v3.png",
+    "sha256": "641f37208b4ab2e3ec3601486cdd602cf3746b4dd128fdb86b4c2f9cca186e80"
+  },
+  {
+    "id": "arsenal-run",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/arsenal-run/gameplay.png",
+    "destination": "public-showcase-review-v4/arsenal-run/current.png",
+    "sha256": "ea34703711143ddf9555c35a72158a93842515a6638dc3f479e8e04a1b3cdef0"
+  },
+  {
+    "id": "silent-sector",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/silent-sector/baseline.png",
+    "destination": "public-showcase-review-v4/silent-sector/baseline.png",
+    "sha256": "eb688c852b52a11e7aabc48b198e144ce70c69ed8d1257e5ccc35b55d997a306"
+  },
+  {
+    "id": "silent-sector",
+    "role": "previous",
+    "source": "public-showcase-review-v3/silent-sector/previous.png",
+    "destination": "public-showcase-review-v4/silent-sector/previous.png",
+    "sha256": "f50269cfb9c6ab8c5a3f5d2fb95e38f55c1d7f1b88ed7471446dbda55911f7dd"
+  },
+  {
+    "id": "silent-sector",
+    "role": "v3",
+    "source": "public-showcase-review-v3/silent-sector/current.png",
+    "destination": "public-showcase-review-v4/silent-sector/v3.png",
+    "sha256": "8090d8b63a7ec4d2f814596a5bd43a22c4fd1e9a0a1a0deb1735691fd52cf02f"
+  },
+  {
+    "id": "silent-sector",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/silent-sector/gameplay.png",
+    "destination": "public-showcase-review-v4/silent-sector/current.png",
+    "sha256": "e500a6ae34544de27fde9d9a1a140c77d4eb408a93820e0a8402d0808baf9597"
+  },
+  {
+    "id": "power-grid",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/power-grid/baseline.png",
+    "destination": "public-showcase-review-v4/power-grid/baseline.png",
+    "sha256": "4c3d77eeeb635e6c06400de32d3b007d692d557e66a0e3ea6e1f1076ddf54c1a"
+  },
+  {
+    "id": "power-grid",
+    "role": "previous",
+    "source": "public-showcase-review-v3/power-grid/previous.png",
+    "destination": "public-showcase-review-v4/power-grid/previous.png",
+    "sha256": "04635270c1e1728b324777ad2dcbba44cca63e5c99ad1a62ce52d1297db6535b"
+  },
+  {
+    "id": "power-grid",
+    "role": "v3",
+    "source": "public-showcase-review-v3/power-grid/current.png",
+    "destination": "public-showcase-review-v4/power-grid/v3.png",
+    "sha256": "a270e4143fc31f0de5305e9e9e01fc82419ed38bb588b55122067a7c1128dd1d"
+  },
+  {
+    "id": "power-grid",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/power-grid/gameplay.png",
+    "destination": "public-showcase-review-v4/power-grid/current.png",
+    "sha256": "102191eb6c2c63f30ea1f1d2ed0c09a8c60f2e808b4d914849594402618bf0ca"
+  },
+  {
+    "id": "relic-frontier",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/relic-frontier/baseline.png",
+    "destination": "public-showcase-review-v4/relic-frontier/baseline.png",
+    "sha256": "42c5fd57877bf9a11da47640f6e34e8f99a0c97f8c4b20d199e8785bd848660e"
+  },
+  {
+    "id": "relic-frontier",
+    "role": "previous",
+    "source": "public-showcase-review-v3/relic-frontier/previous.png",
+    "destination": "public-showcase-review-v4/relic-frontier/previous.png",
+    "sha256": "cd65da7e5b6164ce35ae34abd64f96f0212f5a73f17cfcf128e447a6a6a0b1ec"
+  },
+  {
+    "id": "relic-frontier",
+    "role": "v3",
+    "source": "public-showcase-review-v3/relic-frontier/current.png",
+    "destination": "public-showcase-review-v4/relic-frontier/v3.png",
+    "sha256": "3e5beb359e73cef1ff70c9c2fab3ecf3bc01b1b360f13efc42d53d78c7de2631"
+  },
+  {
+    "id": "relic-frontier",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/relic-frontier/gameplay.png",
+    "destination": "public-showcase-review-v4/relic-frontier/current.png",
+    "sha256": "1339d7d952a81be9d76eb1635baeb76bb0a8e4dcb9eca1b64a67c6c331fb4f10"
+  },
+  {
+    "id": "relic-island",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/relic-island/baseline.png",
+    "destination": "public-showcase-review-v4/relic-island/baseline.png",
+    "sha256": "36cbf1673ab086e34fa3b3fcf52077a2d7c6f4459816dea35e4087ac304af191"
+  },
+  {
+    "id": "relic-island",
+    "role": "previous",
+    "source": "public-showcase-review-v3/relic-island/previous.png",
+    "destination": "public-showcase-review-v4/relic-island/previous.png",
+    "sha256": "35e1cfe99e9ccd45e306a516ececc1bfbbeeaecd3d0851dd6deace0cbbf8e6cf"
+  },
+  {
+    "id": "relic-island",
+    "role": "v3",
+    "source": "public-showcase-review-v3/relic-island/current.png",
+    "destination": "public-showcase-review-v4/relic-island/v3.png",
+    "sha256": "e2a473291e2662585818d5a4f2c67da6c14a51d1ab68eb44b70ebb5ab514b11a"
+  },
+  {
+    "id": "relic-island",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/relic-island/gameplay.png",
+    "destination": "public-showcase-review-v4/relic-island/current.png",
+    "sha256": "b5405bc94bf2e13ba1f08dfa0e551634341e655686ebb77f73539022c00d3ad4"
+  },
+  {
+    "id": "forest-range",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/forest-range/baseline.png",
+    "destination": "public-showcase-review-v4/forest-range/baseline.png",
+    "sha256": "a548be67550480d33a8670c41122c7a967158bf672a249bac4a201591ea8afdb"
+  },
+  {
+    "id": "forest-range",
+    "role": "previous",
+    "source": "public-showcase-review-v3/forest-range/previous.png",
+    "destination": "public-showcase-review-v4/forest-range/previous.png",
+    "sha256": "1c1f6769381debca7db5c5cf9bc5df285609fb8b280db42abb9c385db57ae19d"
+  },
+  {
+    "id": "forest-range",
+    "role": "v3",
+    "source": "public-showcase-review-v3/forest-range/current.png",
+    "destination": "public-showcase-review-v4/forest-range/v3.png",
+    "sha256": "703b4ca5459793845f33541befba47fd3736eb4d24df0a3177facdc6e29011e4"
+  },
+  {
+    "id": "forest-range",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/forest-range/gameplay.png",
+    "destination": "public-showcase-review-v4/forest-range/current.png",
+    "sha256": "5e5bca80e3ed8e48f935bf8ad38b265f8e537ebb63bba17417123fc8a4dca463"
+  },
+  {
+    "id": "iron-arena",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/iron-arena/baseline.png",
+    "destination": "public-showcase-review-v4/iron-arena/baseline.png",
+    "sha256": "a86b19465a60d2fbc5742bdb02d17e802137f8103d7d06658f799a6c5ed01e78"
+  },
+  {
+    "id": "iron-arena",
+    "role": "previous",
+    "source": "public-showcase-review-v3/iron-arena/previous.png",
+    "destination": "public-showcase-review-v4/iron-arena/previous.png",
+    "sha256": "3cfbb2b185cbbee29dc58fb4e1768f211dd030fa505f0332f5ec3ff2580fb2d3"
+  },
+  {
+    "id": "iron-arena",
+    "role": "v3",
+    "source": "public-showcase-review-v3/iron-arena/current.png",
+    "destination": "public-showcase-review-v4/iron-arena/v3.png",
+    "sha256": "92f9779f3a859fae10829aaab780cb3bdb71462137fc1189b7f4d44c795acfba"
+  },
+  {
+    "id": "iron-arena",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/iron-arena/gameplay.png",
+    "destination": "public-showcase-review-v4/iron-arena/current.png",
+    "sha256": "d36d0a497e68f6cfa7cdebd6cd9c9e8026992aed0de963bdf9f310d2ce6af128"
+  },
+  {
+    "id": "dungeon-descent",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/dungeon-descent/baseline.png",
+    "destination": "public-showcase-review-v4/dungeon-descent/baseline.png",
+    "sha256": "1cf4aa5793b08fc81d986b85ef4e3b23732c68dc59cf879ed39f4e9dcbd3ce5e"
+  },
+  {
+    "id": "dungeon-descent",
+    "role": "previous",
+    "source": "public-showcase-review-v3/dungeon-descent/previous.png",
+    "destination": "public-showcase-review-v4/dungeon-descent/previous.png",
+    "sha256": "cbfcb8f664976b7c7469f68102f120d4b25f0bf04556daf4f19ae97d79630449"
+  },
+  {
+    "id": "dungeon-descent",
+    "role": "v3",
+    "source": "public-showcase-review-v3/dungeon-descent/current.png",
+    "destination": "public-showcase-review-v4/dungeon-descent/v3.png",
+    "sha256": "5e61b476ee7aab1ab6ebe76bb1be3897f8ced167c98a7d7520097eface538dcd"
+  },
+  {
+    "id": "dungeon-descent",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/dungeon-descent/gameplay.png",
+    "destination": "public-showcase-review-v4/dungeon-descent/current.png",
+    "sha256": "85b308ec2708b62726bc1463eda5fd01fc8c090ef4f7fa2ef042d5c73708d84c"
+  },
+  {
+    "id": "npc-puzzle-adventure",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/npc-puzzle-adventure/baseline.png",
+    "destination": "public-showcase-review-v4/npc-puzzle-adventure/baseline.png",
+    "sha256": "f43f2c948c80db64a9518ccec5f32a065d27b43e7fec70701509031e1684a497"
+  },
+  {
+    "id": "npc-puzzle-adventure",
+    "role": "previous",
+    "source": "public-showcase-review-v3/npc-puzzle-adventure/previous.png",
+    "destination": "public-showcase-review-v4/npc-puzzle-adventure/previous.png",
+    "sha256": "f183397457861d8c34dcd01bb964eeab8c9b0c9d485f8a3f4f7c7a22ce30ac0e"
+  },
+  {
+    "id": "npc-puzzle-adventure",
+    "role": "v3",
+    "source": "public-showcase-review-v3/npc-puzzle-adventure/current.png",
+    "destination": "public-showcase-review-v4/npc-puzzle-adventure/v3.png",
+    "sha256": "0343d546b4a5e0ab5382c5c0bfd294c7b7b44d3070a5438822df123360e871f9"
+  },
+  {
+    "id": "npc-puzzle-adventure",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/npc-puzzle-adventure/gameplay.png",
+    "destination": "public-showcase-review-v4/npc-puzzle-adventure/current.png",
+    "sha256": "6b813aa10409479b596fc410b6d596ae727119c7ffd855a85de0af4ef127f0c5"
+  },
+  {
+    "id": "opus-arena",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/opus-arena/baseline.png",
+    "destination": "public-showcase-review-v4/opus-arena/baseline.png",
+    "sha256": "132240652a1673d0261268b454e88e39b2da0b44a94c2aa27437f0eb499671ef"
+  },
+  {
+    "id": "opus-arena",
+    "role": "previous",
+    "source": "public-showcase-review-v3/opus-arena/previous.png",
+    "destination": "public-showcase-review-v4/opus-arena/previous.png",
+    "sha256": "883d6b3847ebdcc61ff1fb1402753b66508590cf13ddd6e905d64a705eb194ca"
+  },
+  {
+    "id": "opus-arena",
+    "role": "v3",
+    "source": "public-showcase-review-v3/opus-arena/current.png",
+    "destination": "public-showcase-review-v4/opus-arena/v3.png",
+    "sha256": "6088408b9da9e30e6ae522373b4fe29cee54ade80122f0c48fc25a13bd2264ff"
+  },
+  {
+    "id": "opus-arena",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/opus-arena/gameplay.png",
+    "destination": "public-showcase-review-v4/opus-arena/current.png",
+    "sha256": "539224d167c169087f89f722f6b3747cc453a60679bec0aa9cf319c8344985f9"
+  },
+  {
+    "id": "power-station",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/power-station/baseline.png",
+    "destination": "public-showcase-review-v4/power-station/baseline.png",
+    "sha256": "7916864380c8ea466fa6fe3c0dfb92876ea0d45394a7a5d311f42ea6463d4675"
+  },
+  {
+    "id": "power-station",
+    "role": "previous",
+    "source": "public-showcase-review-v3/power-station/previous.png",
+    "destination": "public-showcase-review-v4/power-station/previous.png",
+    "sha256": "e44f42bf2daa9d2b67db03f5b0928dc5c45aa45fd94dee1d46e5160f770d53dd"
+  },
+  {
+    "id": "power-station",
+    "role": "v3",
+    "source": "public-showcase-review-v3/power-station/current.png",
+    "destination": "public-showcase-review-v4/power-station/v3.png",
+    "sha256": "0d542c4cb8844e31a6d7146fe1ab09427176c3bd2cc56ff5a22b725a42dd2e6c"
+  },
+  {
+    "id": "power-station",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/power-station/gameplay.png",
+    "destination": "public-showcase-review-v4/power-station/current.png",
+    "sha256": "623c7afdd3dd0c6ca130fdf401ffb9824c558377da3bea5544cd7e81241ffa94"
+  },
+  {
+    "id": "relic-runner-2",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/relic-runner-2/baseline.png",
+    "destination": "public-showcase-review-v4/relic-runner-2/baseline.png",
+    "sha256": "6ef37e83fef31feceef3a6e3cd6005a15c1f4afc364f36e7f1d3a85ffad3e0c5"
+  },
+  {
+    "id": "relic-runner-2",
+    "role": "previous",
+    "source": "public-showcase-review-v3/relic-runner-2/previous.png",
+    "destination": "public-showcase-review-v4/relic-runner-2/previous.png",
+    "sha256": "66c5990f6a383023bc1e84cbfa1709e66ad5ffbbbebc6d0a0b9fc2917d4b0953"
+  },
+  {
+    "id": "relic-runner-2",
+    "role": "v3",
+    "source": "public-showcase-review-v3/relic-runner-2/current.png",
+    "destination": "public-showcase-review-v4/relic-runner-2/v3.png",
+    "sha256": "650d4fe20e3727948187475e218c5bcbe7491a33592f32590d2b96240c77691b"
+  },
+  {
+    "id": "relic-runner-2",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/relic-runner-2/gameplay.png",
+    "destination": "public-showcase-review-v4/relic-runner-2/current.png",
+    "sha256": "1cab19c2ab52c94339d530d6bfc24ca4413c07580bdc05e13f0798604963ddca"
+  },
+  {
+    "id": "sentinel-maze",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/sentinel-maze/baseline.png",
+    "destination": "public-showcase-review-v4/sentinel-maze/baseline.png",
+    "sha256": "4492d29f7d9620378fb993666df11a09ab5cc9104cc39433aa017c62c87c6705"
+  },
+  {
+    "id": "sentinel-maze",
+    "role": "previous",
+    "source": "public-showcase-review-v3/sentinel-maze/previous.png",
+    "destination": "public-showcase-review-v4/sentinel-maze/previous.png",
+    "sha256": "ab060c06e10d34a2f26b1a26d0c831a0dcec6fac81318cd6194d0bbf289324a7"
+  },
+  {
+    "id": "sentinel-maze",
+    "role": "v3",
+    "source": "public-showcase-review-v3/sentinel-maze/current.png",
+    "destination": "public-showcase-review-v4/sentinel-maze/v3.png",
+    "sha256": "b203336d6995ab335f95c752090b39101a82451098e89a38148bcba80a5662a5"
+  },
+  {
+    "id": "sentinel-maze",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/sentinel-maze/gameplay.png",
+    "destination": "public-showcase-review-v4/sentinel-maze/current.png",
+    "sha256": "28400246a7f9d751113cfe8a552f3695942ffb4b6a687a417dcb69f9cc37e8e8"
+  },
+  {
+    "id": "signal-zero",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/signal-zero/baseline.png",
+    "destination": "public-showcase-review-v4/signal-zero/baseline.png",
+    "sha256": "05291325d2c04111558f615bc53078ef274fa428ac580c30bdcd1c85f539c035"
+  },
+  {
+    "id": "signal-zero",
+    "role": "previous",
+    "source": "public-showcase-review-v3/signal-zero/previous.png",
+    "destination": "public-showcase-review-v4/signal-zero/previous.png",
+    "sha256": "97574d085b0003a80c0c2e44363b190b4cd5d82578904ef8b615c6306ff880f6"
+  },
+  {
+    "id": "signal-zero",
+    "role": "v3",
+    "source": "public-showcase-review-v3/signal-zero/current.png",
+    "destination": "public-showcase-review-v4/signal-zero/v3.png",
+    "sha256": "02959cab2f9a0fec3d84578942433e3919a0f57c2a13770e0f9c8915165e322d"
+  },
+  {
+    "id": "signal-zero",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/signal-zero/gameplay.png",
+    "destination": "public-showcase-review-v4/signal-zero/current.png",
+    "sha256": "4c5aa536e58049b5ec332c9107ac3b4291e959d5cedee7138a03c648b8646980"
+  },
+  {
+    "id": "survival-arena-2",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/survival-arena-2/baseline.png",
+    "destination": "public-showcase-review-v4/survival-arena-2/baseline.png",
+    "sha256": "61272d425ed66177675e3ff63af734f24c2c75449a03315e5383dc967e2ec79e"
+  },
+  {
+    "id": "survival-arena-2",
+    "role": "previous",
+    "source": "public-showcase-review-v3/survival-arena-2/previous.png",
+    "destination": "public-showcase-review-v4/survival-arena-2/previous.png",
+    "sha256": "3a63ecd3dfbc1c1687bc96f3e65d74d5c4d0da649553fae59ef726a664fbbbf3"
+  },
+  {
+    "id": "survival-arena-2",
+    "role": "v3",
+    "source": "public-showcase-review-v3/survival-arena-2/current.png",
+    "destination": "public-showcase-review-v4/survival-arena-2/v3.png",
+    "sha256": "cb35a85e3122019e234eee0977839aafdd8f3478f600894de81f025b41818f4c"
+  },
+  {
+    "id": "survival-arena-2",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/survival-arena-2/gameplay.png",
+    "destination": "public-showcase-review-v4/survival-arena-2/current.png",
+    "sha256": "f7ecef4f24cd35a0894e1704061451a87a3614a4097f6cef6069d5b4923db106"
+  },
+  {
+    "id": "survival-arena-3",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/survival-arena-3/baseline.png",
+    "destination": "public-showcase-review-v4/survival-arena-3/baseline.png",
+    "sha256": "9f848b93facdc880d1d3cb8746d0207d9507a6de6a9f3c4d7831ffa97945a625"
+  },
+  {
+    "id": "survival-arena-3",
+    "role": "previous",
+    "source": "public-showcase-review-v3/survival-arena-3/previous.png",
+    "destination": "public-showcase-review-v4/survival-arena-3/previous.png",
+    "sha256": "ab73c4b14fcdf79edaa79ad3b4f7753af7cd0a7cca99518ebbb68716480374ea"
+  },
+  {
+    "id": "survival-arena-3",
+    "role": "v3",
+    "source": "public-showcase-review-v3/survival-arena-3/current.png",
+    "destination": "public-showcase-review-v4/survival-arena-3/v3.png",
+    "sha256": "7ce4273231d8d0746d314e840cf7e1289d0cdf0bf18cc9138bde5490571c30dd"
+  },
+  {
+    "id": "survival-arena-3",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/survival-arena-3/gameplay.png",
+    "destination": "public-showcase-review-v4/survival-arena-3/current.png",
+    "sha256": "a185a76508e54caa2449fe95e27be3928c7c3e50904b273f3dca81178a1c446a"
+  },
+  {
+    "id": "textured-adventure",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/textured-adventure/baseline.png",
+    "destination": "public-showcase-review-v4/textured-adventure/baseline.png",
+    "sha256": "ef2e56202ce5a556815a26e63edf155ce60a4bbacc890b93c21cb537b8da92ea"
+  },
+  {
+    "id": "textured-adventure",
+    "role": "previous",
+    "source": "public-showcase-review-v3/textured-adventure/previous.png",
+    "destination": "public-showcase-review-v4/textured-adventure/previous.png",
+    "sha256": "87622bb14a0beeaca41d48563c3a529f5b15854c67d8e51114351cf9cd49358f"
+  },
+  {
+    "id": "textured-adventure",
+    "role": "v3",
+    "source": "public-showcase-review-v3/textured-adventure/current.png",
+    "destination": "public-showcase-review-v4/textured-adventure/v3.png",
+    "sha256": "41a2194eecc26a45990980e71a1214b6107591998a9c8e06dd24d1777172b434"
+  },
+  {
+    "id": "textured-adventure",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/textured-adventure/gameplay.png",
+    "destination": "public-showcase-review-v4/textured-adventure/current.png",
+    "sha256": "71ac1cfd321d242274aae352d57bff3b123627b3dbc14fcdcca5a9e4a83b6a93"
+  },
+  {
+    "id": "valley-run",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/valley-run/baseline.png",
+    "destination": "public-showcase-review-v4/valley-run/baseline.png",
+    "sha256": "a56f39fcd5a682a727db3cc66b175c2895e2111e790616a6aff8deae144f8303"
+  },
+  {
+    "id": "valley-run",
+    "role": "previous",
+    "source": "public-showcase-review-v3/valley-run/previous.png",
+    "destination": "public-showcase-review-v4/valley-run/previous.png",
+    "sha256": "0bd927889e014049cc54de1f30005f22d33335f065abb4f05e929adfca54c397"
+  },
+  {
+    "id": "valley-run",
+    "role": "v3",
+    "source": "public-showcase-review-v3/valley-run/current.png",
+    "destination": "public-showcase-review-v4/valley-run/v3.png",
+    "sha256": "87d8b4365a2b3861e7a325239eccb880fce6a19402ae08a1904a6af0ae2256de"
+  },
+  {
+    "id": "valley-run",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/valley-run/gameplay.png",
+    "destination": "public-showcase-review-v4/valley-run/current.png",
+    "sha256": "e4635384f70e550e9cc79b5035e06cf75e851cf0b4f925aba171d39a58c8ee0d"
+  },
+  {
+    "id": "painted-wilds",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/painted-wilds/baseline.png",
+    "destination": "public-showcase-review-v4/painted-wilds/baseline.png",
+    "sha256": "1896f256b89312d5da127e946c3e393dbb3ead0f9771b61b8d6d783e6251e3a8"
+  },
+  {
+    "id": "painted-wilds",
+    "role": "previous",
+    "source": "public-showcase-review-v3/painted-wilds/previous.png",
+    "destination": "public-showcase-review-v4/painted-wilds/previous.png",
+    "sha256": "c67e3c0a0653682d546acd7e93c4acd6c771fcb8bf61dfacb534c65bfb27d48f"
+  },
+  {
+    "id": "painted-wilds",
+    "role": "v3",
+    "source": "public-showcase-review-v3/painted-wilds/current.png",
+    "destination": "public-showcase-review-v4/painted-wilds/v3.png",
+    "sha256": "f27201382fdfd7f3af2a127150e20c8da78b57c5c424f46333f8755afaa64ee5"
+  },
+  {
+    "id": "painted-wilds",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/painted-wilds/gameplay.png",
+    "destination": "public-showcase-review-v4/painted-wilds/current.png",
+    "sha256": "924e230d58de55bd7cfac365047b128a80fb0acbc19ebc20d3fb22f5f5a93ad7"
+  },
+  {
+    "id": "assembly-line",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/assembly-line/baseline.png",
+    "destination": "public-showcase-review-v4/assembly-line/baseline.png",
+    "sha256": "17e1a2ae03b8bd9f78221ca5d186e32cc622b16bb6dbe1e18fb4fcd129d681e4"
+  },
+  {
+    "id": "assembly-line",
+    "role": "previous",
+    "source": "public-showcase-review-v3/assembly-line/previous.png",
+    "destination": "public-showcase-review-v4/assembly-line/previous.png",
+    "sha256": "d219c9e3854f64252a7ce3ce96ce383704a463cc2e6fd2871be023108587ddfd"
+  },
+  {
+    "id": "assembly-line",
+    "role": "v3",
+    "source": "public-showcase-review-v3/assembly-line/current.png",
+    "destination": "public-showcase-review-v4/assembly-line/v3.png",
+    "sha256": "af83f924980ca9718a450e364111a5b88f6ab0d3a41058a99dd78ce978f27ed7"
+  },
+  {
+    "id": "assembly-line",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/assembly-line/gameplay.png",
+    "destination": "public-showcase-review-v4/assembly-line/current.png",
+    "sha256": "8ab18065dc9f5395e0097377dab1131fb66e1104bb6fdde31154b79175d96a46"
+  },
+  {
+    "id": "blacksite",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/blacksite/baseline.png",
+    "destination": "public-showcase-review-v4/blacksite/baseline.png",
+    "sha256": "9eb81a2cc786511a7c9f9519e03e33fcad6f725d16332450f9d48c92e3388de5"
+  },
+  {
+    "id": "blacksite",
+    "role": "previous",
+    "source": "public-showcase-review-v3/blacksite/previous.png",
+    "destination": "public-showcase-review-v4/blacksite/previous.png",
+    "sha256": "1cb1539c7932be288179733a13421f0d7e011b8d2def4279dab4a995c72ba2af"
+  },
+  {
+    "id": "blacksite",
+    "role": "v3",
+    "source": "public-showcase-review-v3/blacksite/current.png",
+    "destination": "public-showcase-review-v4/blacksite/v3.png",
+    "sha256": "05841c6de0924c0b8671353a6d62658bed2a1bcbdb3bb10f3506e441f482a5f1"
+  },
+  {
+    "id": "blacksite",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/blacksite/gameplay.png",
+    "destination": "public-showcase-review-v4/blacksite/current.png",
+    "sha256": "01963d92c1ce85a7f1ee61e8e1d0d94aff6e25c61374f580be3c797ba8b37889"
+  },
+  {
+    "id": "moving-temple",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/moving-temple/baseline.png",
+    "destination": "public-showcase-review-v4/moving-temple/baseline.png",
+    "sha256": "37b35c2d2652090af97fbd04b5b0e9e9c7e3eb4a2e021b2e1f86d4036b81c8aa"
+  },
+  {
+    "id": "moving-temple",
+    "role": "previous",
+    "source": "public-showcase-review-v3/moving-temple/previous.png",
+    "destination": "public-showcase-review-v4/moving-temple/previous.png",
+    "sha256": "1d68cee290f2d88ceb8591084c61a1e41954e6444143ca43e6c2df5dc8107f84"
+  },
+  {
+    "id": "moving-temple",
+    "role": "v3",
+    "source": "public-showcase-review-v3/moving-temple/current.png",
+    "destination": "public-showcase-review-v4/moving-temple/v3.png",
+    "sha256": "1ffcfd8f80e709ee5484681d68965ab0cd64ffd4739759a0c8a575ab48079442"
+  },
+  {
+    "id": "moving-temple",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/moving-temple/gameplay.png",
+    "destination": "public-showcase-review-v4/moving-temple/current.png",
+    "sha256": "dc3654d7ec7a9d87f63911538ad73db1da6322beef660ebb05d1686eab37d31b"
+  },
+  {
+    "id": "shifting-facility",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/shifting-facility/baseline.png",
+    "destination": "public-showcase-review-v4/shifting-facility/baseline.png",
+    "sha256": "8268e70e8fd6cbdeaa9c76b46df89ce5b5b3d6165e9d996ee2d712d7a838bb54"
+  },
+  {
+    "id": "shifting-facility",
+    "role": "previous",
+    "source": "public-showcase-review-v3/shifting-facility/previous.png",
+    "destination": "public-showcase-review-v4/shifting-facility/previous.png",
+    "sha256": "d24b10a19410d2fc72fa98c543268f99a1b965e7030ce87c2f5992c7ea274dad"
+  },
+  {
+    "id": "shifting-facility",
+    "role": "v3",
+    "source": "public-showcase-review-v3/shifting-facility/current.png",
+    "destination": "public-showcase-review-v4/shifting-facility/v3.png",
+    "sha256": "324665a224c5663bceea91b55247842fbb5adcff655e1dd7cccd4c4d8727e6a5"
+  },
+  {
+    "id": "shifting-facility",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/shifting-facility/gameplay.png",
+    "destination": "public-showcase-review-v4/shifting-facility/current.png",
+    "sha256": "c5810bf86b2418d3f2d985854e5514f3e715011cadc461a0e8055c06ad0498c2"
+  },
+  {
+    "id": "skyway-trial",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/skyway-trial/baseline.png",
+    "destination": "public-showcase-review-v4/skyway-trial/baseline.png",
+    "sha256": "aee1592aff512775af7721fabe40d426d954d1f6f9df143d653d21d8201331f3"
+  },
+  {
+    "id": "skyway-trial",
+    "role": "previous",
+    "source": "public-showcase-review-v3/skyway-trial/previous.png",
+    "destination": "public-showcase-review-v4/skyway-trial/previous.png",
+    "sha256": "201dfd9a767caef8f964e9d48fe4d227ee93afca8aa7baabecda303f3ef3730f"
+  },
+  {
+    "id": "skyway-trial",
+    "role": "v3",
+    "source": "public-showcase-review-v3/skyway-trial/current.png",
+    "destination": "public-showcase-review-v4/skyway-trial/v3.png",
+    "sha256": "cfb2785a76859b6cec97abc43ca000b5e7127738d25e2f0e3872bcddfb808f3e"
+  },
+  {
+    "id": "skyway-trial",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/skyway-trial/gameplay.png",
+    "destination": "public-showcase-review-v4/skyway-trial/current.png",
+    "sha256": "319f51c332dbd708d58c942cb3a8fc2be404dd182733f9642b82c486907ea830"
+  },
+  {
+    "id": "survival-arena",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/survival-arena/baseline.png",
+    "destination": "public-showcase-review-v4/survival-arena/baseline.png",
+    "sha256": "829280318150b3e2eb9277c9fb641a27f4f7d1b28327e063a146d79336db7873"
+  },
+  {
+    "id": "survival-arena",
+    "role": "previous",
+    "source": "public-showcase-review-v3/survival-arena/previous.png",
+    "destination": "public-showcase-review-v4/survival-arena/previous.png",
+    "sha256": "908bcc4cd4a38cc0c82e4c3feda35e2332b1a4d1f11946dfb3177f794884d72a"
+  },
+  {
+    "id": "survival-arena",
+    "role": "v3",
+    "source": "public-showcase-review-v3/survival-arena/current.png",
+    "destination": "public-showcase-review-v4/survival-arena/v3.png",
+    "sha256": "85a1816df3b93f0e07c9568ae0e6d2ec58d50dc7d3265313ca0f9e7739b50326"
+  },
+  {
+    "id": "survival-arena",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/survival-arena/gameplay.png",
+    "destination": "public-showcase-review-v4/survival-arena/current.png",
+    "sha256": "91324e5b2bd30c0d77eba8fd3dbf4b0222991ea6ea4b5f1f891aaf2b47af6899"
+  },
+  {
+    "id": "temple-switch-puzzle",
+    "role": "baseline",
+    "source": "public-showcase-review-v3/temple-switch-puzzle/baseline.png",
+    "destination": "public-showcase-review-v4/temple-switch-puzzle/baseline.png",
+    "sha256": "4cb585f1cfe75745ff04fcda2145ede2f5627f85e1e6d419afa3c3da9b1fc65c"
+  },
+  {
+    "id": "temple-switch-puzzle",
+    "role": "previous",
+    "source": "public-showcase-review-v3/temple-switch-puzzle/previous.png",
+    "destination": "public-showcase-review-v4/temple-switch-puzzle/previous.png",
+    "sha256": "52a4101d8ab09fb6f280875164d69d87c931b0bd60e8d1f3d4ab5d2cfc2cedd0"
+  },
+  {
+    "id": "temple-switch-puzzle",
+    "role": "v3",
+    "source": "public-showcase-review-v3/temple-switch-puzzle/current.png",
+    "destination": "public-showcase-review-v4/temple-switch-puzzle/v3.png",
+    "sha256": "edcc770a784dd562ca163557eebdc2d26033234889646fc27673eb6da5b49352"
+  },
+  {
+    "id": "temple-switch-puzzle",
+    "role": "v4",
+    "source": "rehabilitation-evidence/deep-final/temple-switch-puzzle/gameplay.png",
+    "destination": "public-showcase-review-v4/temple-switch-puzzle/current.png",
+    "sha256": "18d47bc29ad039eb398f50e86066953a90d8507ba62b772d573a6d4a30aac320"
+  }
+]

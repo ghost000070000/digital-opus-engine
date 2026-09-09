@@ -1,0 +1,694 @@
+[
+  {
+    "id": "foglight",
+    "sourceSHA256": "d662795f5f69994de4063c803971f4c06f948e6dd82fee11ae338ad8366751f3",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:08:53.030Z",
+    "sha256": "42f9cb7ede461fc22806b383fe17e727ac66328db0b1fcd025d1f2b81799ff38",
+    "state": {
+      "title": "Foglight",
+      "sim": 1.4015,
+      "ended": false,
+      "text": "Health 100 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 199
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+    "passed": true
+  },
+  {
+    "id": "signal-relay",
+    "sourceSHA256": "246192f07f6059c20ee877c55a318da06cc4dc46aa6ff2d8cae3642338fdc8b4",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:08:57.454Z",
+    "sha256": "b73cd4806f062eadeb9e131fab77dcd81af0c11b9d517e57f35ecd71f20af7b5",
+    "state": {
+      "title": "Signal Relay",
+      "sim": 1.4014999999999995,
+      "ended": false,
+      "text": "Health 100 / 100\nRestore power at all three relay consoles\nWeapon 8/24\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "controller": "firstperson",
+      "bodyVisible": false,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 165
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nRestore power at all three relay consoles\nWeapon 8/24\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+    "passed": true
+  },
+  {
+    "id": "arsenal-run",
+    "sourceSHA256": "3cfac646fd887094b5ae40a447eebad09395a3477b120d5ffecf4311938be255",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:09:00.895Z",
+    "sha256": "0cef69e1fac59e1b0bf6db040d71f6985254888f884977e6292ca8277a07e786",
+    "state": {
+      "title": "Arsenal Run",
+      "sim": 1.4016000000014899,
+      "ended": false,
+      "text": "Sidearm 10/30\nHealth 92 / 100\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+      "controller": "firstperson",
+      "bodyVisible": false,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 111
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nSidearm 10/30\nHealth 84 / 100\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+    "passed": true
+  },
+  {
+    "id": "silent-sector",
+    "sourceSHA256": "7270dc57a0c57bc4e3445d5d38c2aa2d97276ba63dffbbd91e08c13bf9c482e0",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:09:04.166Z",
+    "sha256": "aca343a851de7dc11f9e3f8d98cc8078a5dd14e05745413be4ade8acfd3c9c97",
+    "state": {
+      "title": "Silent Sector",
+      "sim": 6.407100000001489,
+      "ended": false,
+      "text": "Reach the Security Wing\nPress F to interact\nC crouch • Use cover • Secure the Data Core",
+      "controller": "firstperson",
+      "bodyVisible": false,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 149
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nReach the Security Wing\nPress F to interact\nC crouch • Use cover • Secure the Data Core",
+    "passed": true
+  },
+  {
+    "id": "power-grid",
+    "sourceSHA256": "ec6def571bbfff3afcbce4f13841e2197c5d0d2273dabf604a6a69ec2b4242e5",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:09:12.602Z",
+    "sha256": "bd959d52a8519c829e972e671bcddf21705bd5397b5b6837ccad675135802ee9",
+    "state": {
+      "title": "Power Grid",
+      "sim": 1.4333999999985099,
+      "ended": false,
+      "text": "Restore Emergency Power\nF interact / carry\nPress F to interact\nF carry / interact • Cell → generator → two coolant consoles",
+      "controller": "firstperson",
+      "bodyVisible": false,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 109
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nRestore Emergency Power\nF interact / carry\nPress F to interact\nF carry / interact • Cell → generator → two coolant consoles",
+    "passed": true
+  },
+  {
+    "id": "relic-frontier",
+    "sourceSHA256": "be6149f0da4653f6c11d65b83355333a4464ab09c87727ee2fffc2f2ada57ccd",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:09:16.259Z",
+    "sha256": "d4b83a040fd73658fe1b94662c78ac0b8ebb98fdacbbad755e13923cf7c8a591",
+    "state": {
+      "title": "Relic Frontier",
+      "sim": 1.9690000000000003,
+      "ended": false,
+      "text": "A relic glows atop the ridge...\nHealth 100 / 100\nFind the weapon\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact\nFind the weapon • Defeat the guardian • Claim the ridge relic",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 47
+    },
+    "pauseText": "A relic glows atop the ridge...\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nFind the weapon\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact\nFind the weapon • Defeat the guardian • Claim the ridge relic",
+    "passed": true
+  },
+  {
+    "id": "relic-island",
+    "sourceSHA256": "ec53681e5666803128157e74a9c5f457dde727413a267621b91ddf1a95259bdf",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:09:20.497Z",
+    "sha256": "93f1aef8da029e14dc4a9714846297d361738af080f09c02c4eeabe586d1abc4",
+    "state": {
+      "title": "Relic Island",
+      "sim": 1.4183000000044703,
+      "ended": false,
+      "text": "Find 3 relics, unlock the gate, reach the shrine\nHealth 100 / 100\nRelics: 0/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 41
+    },
+    "pauseText": "Find 3 relics, unlock the gate, reach the shrine\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nRelics: 0/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+    "passed": true
+  },
+  {
+    "id": "forest-range",
+    "sourceSHA256": "bebb4f1ae8db0fd07813ff3a1d425d43c5978a276d88e71342f48ab9005681d7",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:09:23.793Z",
+    "sha256": "fb9d9b3374d782e850b13c1b6f3b64275a1a744e8532799c8c8aac6e458d9514",
+    "state": {
+      "title": "Forest Range",
+      "sim": 1.4183999999985095,
+      "ended": false,
+      "text": "Explore the three groves and reach the lookout.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 521
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nExplore the three groves and reach the lookout.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "iron-arena",
+    "sourceSHA256": "e6a81fa23d20a4df8af6a37ce0539187fe1ac7d7e723b1e543acaca65a42345d",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:09:27.568Z",
+    "sha256": "93886753a58a7ed40a08cc45837b9320f0102bc230839fd9d9563a8a5d1f4e1f",
+    "state": {
+      "title": "Iron Arena",
+      "sim": 1.4181999999955297,
+      "ended": false,
+      "text": "Kills: 0\nDefeat all three sentries.\nHealth 100 / 100\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; Escape pauses.",
+      "controller": "firstperson",
+      "bodyVisible": false,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 37
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nKills: 0\nDefeat all three sentries.\nHealth 100 / 100\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "dungeon-descent",
+    "sourceSHA256": "2cac596d378c65d8b783bf749346609a69e6d75121301ea0154cc8f74286c38c",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:09:30.907Z",
+    "sha256": "e1b2e88be73a7716fb83e3b766dac43191c90a9c8530c0bfbe1837ccf73a8f71",
+    "state": {
+      "title": "Dungeon Descent",
+      "sim": 1.4016000000014897,
+      "ended": false,
+      "text": "Find both switches to open the gate, then reach the exit.\nTime: 1.4s\nActivate the two seals, then reach the eastern exit.\nPress F to interact\nWASD / arrows move; Escape pauses.",
+      "controller": "topdown",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 40
+    },
+    "pauseText": "Find both switches to open the gate, then reach the exit.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nTime: 2.2s\nActivate the two seals, then reach the eastern exit.\nPress F to interact\nWASD / arrows move; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "npc-puzzle-adventure",
+    "sourceSHA256": "273e1aa68e5a5d289584e6e2b2361a76a808d6d1146293fdcc79a5c55c0b71ad",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:09:34.244Z",
+    "sha256": "8f1236a3bd1932522f2a98454fe04e5149a103595cc44ff5b01db8c060eee7e4",
+    "state": {
+      "title": "The Sanctum Key",
+      "sim": 1.4179999999999995,
+      "ended": false,
+      "text": "Speak to the sailor, use the door console, and enter the sanctum.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 23
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nSpeak to the sailor, use the door console, and enter the sanctum.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "opus-arena",
+    "sourceSHA256": "50da33f5b0b27a4a572b82d42450dbcbfe67a5ff01243b90c54f7ad13f651024",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:09:37.374Z",
+    "sha256": "dcd6da748669029da464088e4950c00f6721253d3478348a9167f6e34cf682b7",
+    "state": {
+      "title": "Opus Arena",
+      "sim": 1.4182999999970196,
+      "ended": false,
+      "text": "Health 100 / 100\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 33
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 92 / 100\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "power-station",
+    "sourceSHA256": "c13487bbcfa0a0493e282c9a220f2b6dd834978811d335a1a5bc3b1f626baaa3",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:09:40.735Z",
+    "sha256": "00093807fe004c30891a0319e88dcbb67f124e6ca4b913e687a4427fb9a67f67",
+    "state": {
+      "title": "Power Station",
+      "sim": 1.4184999999999994,
+      "ended": false,
+      "text": "Fuel Cells: 0/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 29
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nFuel Cells: 0/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "relic-runner-2",
+    "sourceSHA256": "22ddf6dc5c70e323998cf6a62d15eb405ed6ab5de83b2ea0b689eb3e27cf350a",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:09:44.101Z",
+    "sha256": "f0d3ec9445dc567a6bb8075ce9b14db04dd2b74ecb5a24c71bd4b326f7b57f6c",
+    "state": {
+      "title": "Relic Runner 2",
+      "sim": 1.4183999999985097,
+      "ended": false,
+      "text": "A relic glows atop the ridge...\nHealth 100 / 100\nReach the relic on the ridge!\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 31
+    },
+    "pauseText": "A relic glows atop the ridge...\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nReach the relic on the ridge!\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "sentinel-maze",
+    "sourceSHA256": "b7a6d1a312de2cc0e81e8f6c79863c91aef725729d89c847e220089274a21a25",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:09:47.637Z",
+    "sha256": "bb94b7e6702da64f2d52aa98fa5438cde2b0f8da83e3c33c33470156d1d96ad3",
+    "state": {
+      "title": "Sentinel Maze",
+      "sim": 1.4017000000029802,
+      "ended": false,
+      "text": "Health 100 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 40
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "signal-zero",
+    "sourceSHA256": "92b5af9be7ed603da312f69082d1551a294dda501ddc2d7c95c5466a8993dcdd",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:09:50.982Z",
+    "sha256": "0dc82703c54afc14930815d3485b19d20f145aea3800fab4ec9f773a5e6c68be",
+    "state": {
+      "title": "Signal Zero",
+      "sim": 1.969,
+      "ended": false,
+      "text": "Signal Zero: the relay has gone dark. Reach the console.\nHealth 100 / 100\nReach the outpost console, then restore the deep relay.\nPress F to interact\nWASD / arrows move; Space jumps; Left Click attacks; Escape pauses.",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 36
+    },
+    "pauseText": "Signal Zero: the relay has gone dark. Reach the console.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nReach the outpost console, then restore the deep relay.\nPress F to interact\nWASD / arrows move; Space jumps; Left Click attacks; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "survival-arena-2",
+    "sourceSHA256": "355e33e89a990d56884a6e8880d933d7c98f24b3b169a91ef04d10bbd7f6a267",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:09:54.953Z",
+    "sha256": "f77d3c9ec603e075ebdba6e24f409f0cfb8dbaa7249fc6e23754b6771b37d803",
+    "state": {
+      "title": "Survival Arena 2",
+      "sim": 1.4183999999985095,
+      "ended": false,
+      "text": "Wave 1 incoming!\nSurvive the waves! Avoid the hunter drones.\nHealth 100 / 100\nSurvived: 1.4s\nSurvive both waves for 32 seconds.\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "controller": "hovercraft",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 34
+    },
+    "pauseText": "Wave 1 incoming!\nSurvive the waves! Avoid the hunter drones.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nSurvived: 2.0s\nSurvive both waves for 32 seconds.\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "survival-arena-3",
+    "sourceSHA256": "5f5f1f3df7d0bd6713b109dfedc77ea2406ddedb35dbf720d59b39a40162c2cd",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:09:58.060Z",
+    "sha256": "de87762853eca80a861c8f661e00ba4a7066f087c6a4bb56ffe499c314afe223",
+    "state": {
+      "title": "Survival Arena 3",
+      "sim": 1.4013999999985094,
+      "ended": false,
+      "text": "Evade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 1.4s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "controller": "hovercraft",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 32
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nEvade the hunter drones for 20 seconds.\nHealth 92 / 100\nSurvived: 2.1s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "textured-adventure",
+    "sourceSHA256": "859b27004acf2902352dd4c8dd21d51af3efd2d5dcbec99bf76330c96478875b",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:10:01.301Z",
+    "sha256": "ab31bad1ac7354ecc0ea90cc648fe5bd4c87acac4c48f46af6c53b1c523bfcbf",
+    "state": {
+      "title": "Textured Adventure",
+      "sim": 1.40160000000149,
+      "ended": false,
+      "text": "Relics: 0/3\nHealth 100 / 100\nCollect three relics and enter the shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 26
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nRelics: 0/3\nHealth 100 / 100\nCollect three relics and enter the shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "valley-run",
+    "sourceSHA256": "a14ee891708ae4e51caf7822684852a443eb9350c9777251794bbbced3618776",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:10:04.498Z",
+    "sha256": "6662f9fa6a741ee978474c9231645711144bf9c8b8da0ac8120fc6c291542083",
+    "state": {
+      "title": "Valley Run",
+      "sim": 1.4014999999999995,
+      "ended": false,
+      "text": "Health 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 51
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "painted-wilds",
+    "sourceSHA256": "4d983410b9d4e5893feeebf009da521c5609f7bf5332ca61f384f5cf3d6f5870",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:10:07.788Z",
+    "sha256": "3ec0f1f0da920eee5f95a9ee9b52dc20240317a2f7a1b70e46e4184011e9ff06",
+    "state": {
+      "title": "Painted Wilds",
+      "sim": 1.4185,
+      "ended": false,
+      "text": "Visit all three survey stones.\nStudies: 0 / 3\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 31
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nVisit all three survey stones.\nStudies: 0 / 3\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "assembly-line",
+    "sourceSHA256": "bd44e3f4dfc351d248cdf35384711a45c5e40f780bfce80e27ad1849e2489168",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:10:11.074Z",
+    "sha256": "493038e0016793d6d2aead0c27bcebff04b20fe97f7c9ce32179a037b2306c7c",
+    "state": {
+      "title": "Assembly Line",
+      "sim": 1.4181000000014898,
+      "ended": false,
+      "text": "Observe the three active bays, then use the inspection console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "controller": "firstperson",
+      "bodyVisible": false,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 62
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nObserve the three active bays, then use the inspection console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "blacksite",
+    "sourceSHA256": "9240dde4920e2d11af5a76c0d33693bfa6ddba3e3dee84d655398d32294aea36",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:10:14.319Z",
+    "sha256": "47051f6a3f3e2d8ada08f838e97b566cad2b6273007dc21d65474138cd4f669c",
+    "state": {
+      "title": "Blacksite",
+      "sim": 1.4183000000044703,
+      "ended": false,
+      "text": "Recover the card, enter the core, and reach extraction.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "controller": "firstperson",
+      "bodyVisible": false,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 42
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nRecover the card, enter the core, and reach extraction.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "moving-temple",
+    "sourceSHA256": "f1e572d9f5306f564f22d80c2f505641888aeac2a512fac3097a78a4d1bf3850",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:10:17.596Z",
+    "sha256": "1996c02719081361c8713535a04060f769b655177e7e803abc05765df6ea5cd5",
+    "state": {
+      "title": "Moving Temple",
+      "sim": 1.4177000000029798,
+      "ended": false,
+      "text": "Cross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 52
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nCross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "shifting-facility",
+    "sourceSHA256": "83c9e0148e3fae20a90e9b3b8d9aa91d1efcb4a50309b0fe0d189e244491cb44",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:10:20.965Z",
+    "sha256": "f39a730f9b6923e095fc2ccf1f673c1c1104e565a5ed9fa165747597d75d48e4",
+    "state": {
+      "title": "Shifting Facility",
+      "sim": 1.40189999999851,
+      "ended": false,
+      "text": "Pass the entry scanner, try the swing door, and reach the far console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+      "controller": "firstperson",
+      "bodyVisible": false,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 39
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPass the entry scanner, try the swing door, and reach the far console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "skyway-trial",
+    "sourceSHA256": "0041c17b672d60ef05c3d729c60f47a499beb87f96f9cdeb6df0810d2ae64b38",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:10:24.080Z",
+    "sha256": "27e1a396b29d56845d536e71b5e18fbe64fcc8516747b7337f83640ad6ef7b0f",
+    "state": {
+      "title": "Skyway Trial",
+      "sim": 1.4183999999985097,
+      "ended": false,
+      "text": "Jump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; C careful steps; Escape pauses.",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 24
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nJump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; C careful steps; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "survival-arena",
+    "sourceSHA256": "fdd6f0e88297e96d9aaab06fddbcf4700eab0bcd0ce16601f297da0d199125f3",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:10:27.329Z",
+    "sha256": "31a397b7d18dc8bfc5c34f5477ddc73248ad06139fe642112c6c9c71b9e3ecf1",
+    "state": {
+      "title": "Survival Arena",
+      "sim": 1.4183000000044703,
+      "ended": false,
+      "text": "Survive! Collect 4 orbs, avoid the red hunters.\nLives: 3\nOrbs: 0 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "controller": "hovercraft",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 37
+    },
+    "pauseText": "Survive! Collect 4 orbs, avoid the red hunters.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nLives: 3\nOrbs: 0 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "temple-switch-puzzle",
+    "sourceSHA256": "8eeaa0aae4eb0ac3ef8eb1d400427a37b3d2d690af01eca25c65d6bf63e9537d",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:10:30.589Z",
+    "sha256": "10b3cdfde099693881a157b11d82261d9c1f8b0bb331f5b7ceded6f11bd7b152",
+    "state": {
+      "title": "Temple Switch Puzzle",
+      "sim": 1.4181000000014894,
+      "ended": false,
+      "text": "Find both switches to open the gate, then reach the goal.\nActivate both seals, then enter the northern shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 29
+    },
+    "pauseText": "Find both switches to open the gate, then reach the goal.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nActivate both seals, then enter the northern shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "passed": true
+  }
+]

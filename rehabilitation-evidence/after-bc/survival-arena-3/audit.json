@@ -1,0 +1,202 @@
+{
+  "id": "survival-arena-3",
+  "phase": "after-bc",
+  "url": "http://localhost:8837/dist/games/survival-arena-3.html",
+  "startedAt": "2026-09-08T00:25:36.591Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Survival Arena 3",
+      "text": "Evade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 0.6s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 0.6425,
+      "simulationSeconds": 0.6425,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.8237375604350862,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Survival Arena 3",
+      "text": "Evade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 6.5s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 6.487499999880784,
+      "simulationSeconds": 6.487499999880784,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": -8.125,
+          "y": -0.9979857298219067,
+          "z": 8.125
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": [
+        "obj49",
+        "obj50"
+      ]
+    },
+    {
+      "title": "Survival Arena 3",
+      "text": "Transmission complete\n\nYou held out until the transmitter completed its call.\n\nRestart\nEvade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 20.3s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 20.28749999988081,
+      "simulationSeconds": 20.28749999988081,
+      "ended": true,
+      "player": {
+        "position": {
+          "x": -8.125,
+          "y": -1.105263684233241,
+          "z": 8.125
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": [
+        "obj49",
+        "obj50",
+        "obj51",
+        "obj52"
+      ]
+    }
+  ],
+  "start": {
+    "title": "Survival Arena 3",
+    "text": "Survival Arena 3\n\nTwenty seconds on the copper island. Hunter drones enter from the central transmitter.\n\nLaunch\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "state": {},
+    "playtime": 0,
+    "simulationSeconds": 0,
+    "ended": false,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 0.8061405585484482,
+        "z": 0
+      },
+      "visible": true,
+      "controller": "hovercraft"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "Transmission complete\n\nYou held out until the transmitter completed its call.\n\nRestart\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nEvade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 20.7s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:26:16.313Z"
+}

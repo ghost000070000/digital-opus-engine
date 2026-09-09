@@ -1,0 +1,132 @@
+{
+  "id": "blacksite",
+  "phase": "baseline",
+  "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/blacksite.html",
+  "startedAt": "2026-09-08T00:07:02.500Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Blacksite",
+      "text": "BLACKSITE\nPress F to interact",
+      "state": {},
+      "playtime": 1.4283000000715258,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": -2
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Blacksite",
+      "text": "BLACKSITE\nPress F to interact",
+      "state": {},
+      "playtime": 9.781600000023838,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 12.569643481821684
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Blacksite",
+      "text": "BLACKSITE\nPress F to interact",
+      "state": {},
+      "playtime": 18.945300000071544,
+      "player": {
+        "position": {
+          "x": 1.417233996887403,
+          "y": 0.55,
+          "z": 14.486106169993086
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Blacksite",
+    "text": "BLACKSITE\nPress F to interact",
+    "state": {},
+    "playtime": 0.4107000000476837,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 0.55,
+        "z": -2
+      },
+      "visible": false,
+      "controller": "firstperson"
+    },
+    "camera": {
+      "mode": "fixed"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nBLACKSITE\nPress F to interact",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:07:36.085Z"
+}

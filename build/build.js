@@ -160,6 +160,9 @@ fs.writeFileSync(engineOutFile, engineBundle, 'utf8');
 const engineBytes = Buffer.byteLength(engineBundle);
 const engineGzipBytes = zlib.gzipSync(engineBundle).length;
 console.log(`Engine bundle  -> ${path.relative(ROOT, engineOutFile)} (${engineBytes} bytes, ${engineGzipBytes} gzip bytes, ${engine.files.length} files)`);
+// No hard size ceiling: an editor UI layer (panels, palettes, visual
+// scripting chrome) needs room to grow. Minification (compact + mangle,
+// above) stays on regardless, so size grows from real features, not waste.
 
 // --- Artifact 2: delivery-run.html ---
 const demo = readSourceDir(DEMO_SRC_DIR, 'demo');

@@ -1,0 +1,2254 @@
+{
+  "version": 1,
+  "source": "tools/showcase-assets.js",
+  "license": "MIT; see repository LICENSE",
+  "original": true,
+  "coordinateSystem": "Y up; +Z forward; metres. Most props have ground origin Y=0. Drone and rifle are centered.",
+  "meshes": [
+    {
+      "key": "ranger",
+      "id": "showcase-ranger",
+      "file": "characters/ranger.mesh.json",
+      "vertices": 2868,
+      "triangles": 956,
+      "type": "skinnedMesh",
+      "bounds": {
+        "min": [
+          -0.48309,
+          0,
+          -0.2395
+        ],
+        "max": [
+          0.48309,
+          1.855,
+          0.23
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "guardian",
+      "id": "showcase-guardian",
+      "file": "characters/guardian.mesh.json",
+      "vertices": 4164,
+      "triangles": 1388,
+      "type": "skinnedMesh",
+      "bounds": {
+        "min": [
+          -0.65083,
+          0,
+          -1.56338
+        ],
+        "max": [
+          0.65091,
+          2.46128,
+          1.35124
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "drone",
+      "id": "showcase-drone",
+      "file": "characters/drone.mesh.json",
+      "vertices": 2646,
+      "triangles": 882,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.9,
+          -0.25,
+          -0.67874
+        ],
+        "max": [
+          0.9,
+          0.565,
+          0.67874
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "tree-pine",
+      "id": "showcase-tree-pine",
+      "file": "fantasy/tree-pine.mesh.json",
+      "vertices": 612,
+      "triangles": 204,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.27,
+          -0.0032,
+          -1.13
+        ],
+        "max": [
+          1.27,
+          3.95,
+          1.13
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "tree-oak",
+      "id": "showcase-tree-oak",
+      "file": "fantasy/tree-oak.mesh.json",
+      "vertices": 1158,
+      "triangles": 386,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.90058,
+          -0.01127,
+          -1.70172
+        ],
+        "max": [
+          1.75723,
+          4.55,
+          1.24302
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "tree-birch",
+      "id": "showcase-tree-birch",
+      "file": "fantasy/tree-birch.mesh.json",
+      "vertices": 1380,
+      "triangles": 460,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.04324,
+          -0.00556,
+          -0.61388
+        ],
+        "max": [
+          1.03395,
+          4.8,
+          0.61388
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "bush",
+      "id": "showcase-bush",
+      "file": "fantasy/bush.mesh.json",
+      "vertices": 660,
+      "triangles": 220,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.72769,
+          -0.15,
+          -0.65657
+        ],
+        "max": [
+          0.7725,
+          0.77,
+          0.57525
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "grass",
+      "id": "showcase-grass",
+      "file": "fantasy/grass.mesh.json",
+      "vertices": 396,
+      "triangles": 132,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.35529,
+          -0.01249,
+          -0.35959
+        ],
+        "max": [
+          0.3608,
+          0.54018,
+          0.34814
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "ruin-wall",
+      "id": "showcase-ruin-wall",
+      "file": "fantasy/ruin-wall.mesh.json",
+      "vertices": 1296,
+      "triangles": 432,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.41663,
+          0.015,
+          -0.2076
+        ],
+        "max": [
+          1.47663,
+          2.09,
+          0.3476
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "broken-wall",
+      "id": "showcase-broken-wall",
+      "file": "fantasy/broken-wall.mesh.json",
+      "vertices": 936,
+      "triangles": 312,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.28688,
+          0,
+          -0.32987
+        ],
+        "max": [
+          1.6303,
+          1.88,
+          0.97781
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "arch",
+      "id": "showcase-arch",
+      "file": "fantasy/arch.mesh.json",
+      "vertices": 1164,
+      "triangles": 388,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.66,
+          0,
+          -0.34
+        ],
+        "max": [
+          1.66,
+          3.68478,
+          0.34
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "pillar",
+      "id": "showcase-pillar",
+      "file": "fantasy/pillar.mesh.json",
+      "vertices": 660,
+      "triangles": 220,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.48966,
+          0,
+          -0.48966
+        ],
+        "max": [
+          0.48966,
+          2.46,
+          0.48966
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "gate",
+      "id": "showcase-gate",
+      "file": "fantasy/gate.mesh.json",
+      "vertices": 1260,
+      "triangles": 420,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.44021,
+          0,
+          -0.25778
+        ],
+        "max": [
+          1.44021,
+          2.8,
+          0.25778
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "beacon",
+      "id": "showcase-beacon",
+      "file": "fantasy/beacon.mesh.json",
+      "vertices": 804,
+      "triangles": 268,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.60052,
+          0,
+          -0.60052
+        ],
+        "max": [
+          0.60052,
+          2.09,
+          0.60052
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "shrine",
+      "id": "showcase-shrine",
+      "file": "fantasy/shrine.mesh.json",
+      "vertices": 582,
+      "triangles": 194,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.81317,
+          0,
+          -0.58336
+        ],
+        "max": [
+          0.81317,
+          2.26,
+          0.58336
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "relic",
+      "id": "showcase-relic",
+      "file": "fantasy/relic.mesh.json",
+      "vertices": 240,
+      "triangles": 80,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.27,
+          0,
+          -0.23383
+        ],
+        "max": [
+          0.27,
+          0.76,
+          0.23383
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "bridge",
+      "id": "showcase-bridge",
+      "file": "fantasy/bridge.mesh.json",
+      "vertices": 1488,
+      "triangles": 496,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.92495,
+          -0.015,
+          -2.1
+        ],
+        "max": [
+          0.92495,
+          1.1,
+          2.1
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "wall-panel",
+      "id": "showcase-wall-panel",
+      "file": "scifi/wall-panel.mesh.json",
+      "vertices": 384,
+      "triangles": 128,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.335,
+          0,
+          -0.09546
+        ],
+        "max": [
+          1.335,
+          3,
+          0.2625
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "floor-panel",
+      "id": "showcase-floor-panel",
+      "file": "scifi/floor-panel.mesh.json",
+      "vertices": 564,
+      "triangles": 188,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.98995,
+          0,
+          -1.1725
+        ],
+        "max": [
+          0.98995,
+          0.166,
+          1.1725
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "door",
+      "id": "showcase-door",
+      "file": "scifi/door.mesh.json",
+      "vertices": 600,
+      "triangles": 200,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.17899,
+          0,
+          -0.14142
+        ],
+        "max": [
+          1.17899,
+          2.85,
+          0.2425
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "terminal",
+      "id": "showcase-terminal",
+      "file": "scifi/terminal.mesh.json",
+      "vertices": 744,
+      "triangles": 248,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.36955,
+          0,
+          -0.28325
+        ],
+        "max": [
+          0.36955,
+          1.6,
+          0.34314
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "relay-console",
+      "id": "showcase-relay-console",
+      "file": "scifi/relay-console.mesh.json",
+      "vertices": 1020,
+      "triangles": 340,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.62,
+          0,
+          -0.30052
+        ],
+        "max": [
+          0.62,
+          2.21,
+          0.39
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "generator",
+      "id": "showcase-generator",
+      "file": "scifi/generator.mesh.json",
+      "vertices": 1356,
+      "triangles": 452,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.80374,
+          0,
+          -0.53832
+        ],
+        "max": [
+          0.91607,
+          1.69,
+          0.545
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "pipe",
+      "id": "showcase-pipe",
+      "file": "scifi/pipe.mesh.json",
+      "vertices": 864,
+      "triangles": 288,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.20673,
+          0.00304,
+          -1.2
+        ],
+        "max": [
+          0.22,
+          1.2,
+          1.11666
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "crate",
+      "id": "showcase-crate",
+      "file": "scifi/crate.mesh.json",
+      "vertices": 636,
+      "triangles": 212,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.42071,
+          -0.01,
+          -0.43
+        ],
+        "max": [
+          0.42071,
+          1.07,
+          0.4475
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "light",
+      "id": "showcase-light",
+      "file": "scifi/light.mesh.json",
+      "vertices": 252,
+      "triangles": 84,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.29564,
+          0,
+          -0.19829
+        ],
+        "max": [
+          0.29564,
+          0.52,
+          0.19829
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hazard-panel",
+      "id": "showcase-hazard-panel",
+      "file": "scifi/hazard-panel.mesh.json",
+      "vertices": 126,
+      "triangles": 42,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.65,
+          0,
+          -0.23
+        ],
+        "max": [
+          0.83,
+          0.076,
+          0.23
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "weapon-rifle",
+      "id": "showcase-weapon-rifle",
+      "file": "combat/weapon-rifle.mesh.json",
+      "vertices": 720,
+      "triangles": 240,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.06718,
+          -0.325,
+          -0.67435
+        ],
+        "max": [
+          0.1075,
+          0.27,
+          0.94
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "turret",
+      "id": "showcase-turret",
+      "file": "combat/turret.mesh.json",
+      "vertices": 1164,
+      "triangles": 388,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.41046,
+          0,
+          -0.63398
+        ],
+        "max": [
+          0.72546,
+          1.34,
+          0.91
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "projectile",
+      "id": "showcase-projectile",
+      "file": "combat/projectile.mesh.json",
+      "vertices": 168,
+      "triangles": 56,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.03789,
+          -0.045,
+          -0.22
+        ],
+        "max": [
+          0.036,
+          0.045,
+          0.22
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "impact-star",
+      "id": "showcase-impact-star",
+      "file": "combat/impact-star.mesh.json",
+      "vertices": 288,
+      "triangles": 96,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.30032,
+          -0.26038,
+          -0.10095
+        ],
+        "max": [
+          0.30032,
+          0.26038,
+          0.10095
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "ruin-wall-tall",
+      "id": "showcase-ruin-wall-tall",
+      "file": "fantasy/ruin-wall-tall.mesh.json",
+      "vertices": 1248,
+      "triangles": 416,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.09224,
+          0.03,
+          -0.22627
+        ],
+        "max": [
+          1.20224,
+          3.33,
+          0.43987
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "ruin-wall-window",
+      "id": "showcase-ruin-wall-window",
+      "file": "fantasy/ruin-wall-window.mesh.json",
+      "vertices": 1212,
+      "triangles": 404,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.65456,
+          0.03,
+          -0.68
+        ],
+        "max": [
+          1.65456,
+          2.805,
+          0.72
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "arch-pointed",
+      "id": "showcase-arch-pointed",
+      "file": "fantasy/arch-pointed.mesh.json",
+      "vertices": 648,
+      "triangles": 216,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.66934,
+          0,
+          -1.3844
+        ],
+        "max": [
+          1.63803,
+          3.8,
+          1.3844
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "arch-broken",
+      "id": "showcase-arch-broken",
+      "file": "fantasy/arch-broken.mesh.json",
+      "vertices": 972,
+      "triangles": 324,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.44749,
+          -0.09,
+          -0.22627
+        ],
+        "max": [
+          1.72346,
+          3.14,
+          0.96482
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "stairs",
+      "id": "showcase-stairs",
+      "file": "fantasy/stairs.mesh.json",
+      "vertices": 660,
+      "triangles": 220,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.36,
+          0,
+          -1.9
+        ],
+        "max": [
+          1.36,
+          1.5,
+          1.9
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "stone-walkway",
+      "id": "showcase-stone-walkway",
+      "file": "fantasy/stone-walkway.mesh.json",
+      "vertices": 1176,
+      "triangles": 392,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.1701,
+          0,
+          -2.10885
+        ],
+        "max": [
+          1.1701,
+          1,
+          2.10885
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "sanctuary-grand",
+      "id": "showcase-sanctuary-grand",
+      "file": "fantasy/sanctuary-grand.mesh.json",
+      "vertices": 1332,
+      "triangles": 444,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -2.19346,
+          0,
+          -1.64346
+        ],
+        "max": [
+          2.19346,
+          3.45,
+          1.64346
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "beacon-brazier",
+      "id": "showcase-beacon-brazier",
+      "file": "fantasy/beacon-brazier.mesh.json",
+      "vertices": 876,
+      "triangles": 292,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.7779,
+          0,
+          -0.79753
+        ],
+        "max": [
+          0.7779,
+          2.35792,
+          0.79753
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "tree-dead",
+      "id": "showcase-tree-dead",
+      "file": "fantasy/tree-dead.mesh.json",
+      "vertices": 480,
+      "triangles": 160,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.35635,
+          -0.00985,
+          -0.56654
+        ],
+        "max": [
+          1.22148,
+          4.004,
+          0.28831
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "stump",
+      "id": "showcase-stump",
+      "file": "fantasy/stump.mesh.json",
+      "vertices": 510,
+      "triangles": 170,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.82174,
+          -0.03382,
+          -0.72264
+        ],
+        "max": [
+          0.82174,
+          0.75,
+          0.72264
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "cliff-spire",
+      "id": "showcase-cliff-spire",
+      "file": "fantasy/cliff-spire.mesh.json",
+      "vertices": 288,
+      "triangles": 96,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.55064,
+          0,
+          -1.33957
+        ],
+        "max": [
+          1.64301,
+          5.2,
+          1.27959
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "rope-fence",
+      "id": "showcase-rope-fence",
+      "file": "fantasy/rope-fence.mesh.json",
+      "vertices": 1062,
+      "triangles": 354,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.9298,
+          0,
+          -0.12816
+        ],
+        "max": [
+          2.1291,
+          1.55,
+          0.12492
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "corner-wall",
+      "id": "showcase-corner-wall",
+      "file": "scifi/corner-wall.mesh.json",
+      "vertices": 312,
+      "triangles": 104,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.55,
+          0,
+          -0.11314
+        ],
+        "max": [
+          1.3,
+          3,
+          2.65
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "doorway-frame",
+      "id": "showcase-doorway-frame",
+      "file": "scifi/doorway-frame.mesh.json",
+      "vertices": 360,
+      "triangles": 120,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.58435,
+          0,
+          -0.21213
+        ],
+        "max": [
+          1.58435,
+          3.21,
+          0.36
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "ceiling-beam",
+      "id": "showcase-ceiling-beam",
+      "file": "scifi/ceiling-beam.mesh.json",
+      "vertices": 360,
+      "triangles": 120,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.8163,
+          -0.65,
+          -0.19829
+        ],
+        "max": [
+          1.8163,
+          0.21,
+          0.2975
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "railing",
+      "id": "showcase-railing",
+      "file": "scifi/railing.mesh.json",
+      "vertices": 528,
+      "triangles": 176,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -2.15,
+          0,
+          -0.055
+        ],
+        "max": [
+          2.15,
+          1.1085,
+          0.06
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "support-column",
+      "id": "showcase-support-column",
+      "file": "scifi/support-column.mesh.json",
+      "vertices": 600,
+      "triangles": 200,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.51737,
+          0,
+          -0.51737
+        ],
+        "max": [
+          0.51737,
+          3.15,
+          0.51737
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "machine-large",
+      "id": "showcase-machine-large",
+      "file": "scifi/machine-large.mesh.json",
+      "vertices": 2592,
+      "triangles": 864,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.55813,
+          0,
+          -0.77782
+        ],
+        "max": [
+          1.55813,
+          2.725,
+          0.77782
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "vent",
+      "id": "showcase-vent",
+      "file": "scifi/vent.mesh.json",
+      "vertices": 900,
+      "triangles": 300,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.84,
+          0,
+          -0.65894
+        ],
+        "max": [
+          0.84,
+          2,
+          0.97894
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "conduit",
+      "id": "showcase-conduit",
+      "file": "scifi/conduit.mesh.json",
+      "vertices": 1848,
+      "triangles": 616,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.37911,
+          0,
+          -0.10724
+        ],
+        "max": [
+          0.39,
+          2.955,
+          0.10724
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "computer-bank",
+      "id": "showcase-computer-bank",
+      "file": "scifi/computer-bank.mesh.json",
+      "vertices": 936,
+      "triangles": 312,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.15203,
+          0,
+          -0.19445
+        ],
+        "max": [
+          1.15203,
+          2.1,
+          0.355
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "storage-rack",
+      "id": "showcase-storage-rack",
+      "file": "scifi/storage-rack.mesh.json",
+      "vertices": 972,
+      "triangles": 324,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.275,
+          0,
+          -0.375
+        ],
+        "max": [
+          1.275,
+          2.9,
+          0.375
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "blast-door",
+      "id": "showcase-blast-door",
+      "file": "scifi/blast-door.mesh.json",
+      "vertices": 696,
+      "triangles": 232,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.65659,
+          0,
+          -0.16971
+        ],
+        "max": [
+          1.65659,
+          3.5,
+          0.85
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "weapon-sidearm",
+      "id": "showcase-weapon-sidearm",
+      "file": "combat/weapon-sidearm.mesh.json",
+      "vertices": 336,
+      "triangles": 112,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.06364,
+          -0.38,
+          -0.19445
+        ],
+        "max": [
+          0.109,
+          0.2025,
+          0.58
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "barricade",
+      "id": "showcase-barricade",
+      "file": "combat/barricade.mesh.json",
+      "vertices": 660,
+      "triangles": 220,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.47374,
+          0,
+          -0.25456
+        ],
+        "max": [
+          1.47374,
+          1.44,
+          0.2925
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "ammo-crate",
+      "id": "showcase-ammo-crate",
+      "file": "combat/ammo-crate.mesh.json",
+      "vertices": 660,
+      "triangles": 220,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.48,
+          0,
+          -0.25456
+        ],
+        "max": [
+          0.48,
+          0.86387,
+          0.4
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hovercraft",
+      "id": "showcase-hovercraft",
+      "file": "vehicles/hovercraft.mesh.json",
+      "vertices": 1104,
+      "triangles": 368,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.11823,
+          0.18,
+          -1.64491
+        ],
+        "max": [
+          1.11823,
+          1.09,
+          1.64491
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "rock-1",
+      "id": "showcase-rock-1",
+      "file": "fantasy/rock-1.mesh.json",
+      "vertices": 264,
+      "triangles": 88,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.61615,
+          0,
+          -0.89584
+        ],
+        "max": [
+          0.61615,
+          1.41551,
+          0.89584
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "rock-2",
+      "id": "showcase-rock-2",
+      "file": "fantasy/rock-2.mesh.json",
+      "vertices": 156,
+      "triangles": 52,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.68093,
+          0,
+          -0.76528
+        ],
+        "max": [
+          0.63009,
+          1.54249,
+          0.74591
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "rock-3",
+      "id": "showcase-rock-3",
+      "file": "fantasy/rock-3.mesh.json",
+      "vertices": 234,
+      "triangles": 78,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.70134,
+          0,
+          -0.5668
+        ],
+        "max": [
+          0.66636,
+          1.66948,
+          0.6627
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "rock-4",
+      "id": "showcase-rock-4",
+      "file": "fantasy/rock-4.mesh.json",
+      "vertices": 132,
+      "triangles": 44,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.54047,
+          0,
+          -0.40906
+        ],
+        "max": [
+          0.54047,
+          1.79646,
+          0.40906
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "rock-5",
+      "id": "showcase-rock-5",
+      "file": "fantasy/rock-5.mesh.json",
+      "vertices": 294,
+      "triangles": 98,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -0.77447,
+          0,
+          -0.89785
+        ],
+        "max": [
+          0.71664,
+          1.92345,
+          0.87512
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-foglight",
+      "id": "showcase-hero-foglight",
+      "file": "fantasy/hero-foglight.mesh.json",
+      "vertices": 1236,
+      "triangles": 412,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.18,
+          0,
+          -1.23898
+        ],
+        "max": [
+          1.22985,
+          3.18,
+          1.18
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-signal-relay",
+      "id": "showcase-hero-signal-relay",
+      "file": "scifi/hero-signal-relay.mesh.json",
+      "vertices": 1494,
+      "triangles": 498,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.94866,
+          0,
+          -1.15041
+        ],
+        "max": [
+          2.02562,
+          3.56,
+          1.15041
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-arsenal-run",
+      "id": "showcase-hero-arsenal-run",
+      "file": "combat/hero-arsenal-run.mesh.json",
+      "vertices": 1782,
+      "triangles": 594,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -2.28642,
+          0,
+          -1.37228
+        ],
+        "max": [
+          2.28497,
+          3.94,
+          1.37228
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-silent-sector",
+      "id": "showcase-hero-silent-sector",
+      "file": "scifi/hero-silent-sector.mesh.json",
+      "vertices": 1494,
+      "triangles": 498,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.78792,
+          0,
+          -1.18
+        ],
+        "max": [
+          1.71728,
+          4.32,
+          1.18
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-power-grid",
+      "id": "showcase-hero-power-grid",
+      "file": "scifi/hero-power-grid.mesh.json",
+      "vertices": 1470,
+      "triangles": 490,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.8549,
+          0,
+          -1.15041
+        ],
+        "max": [
+          2.00635,
+          4.7,
+          1.15041
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-relic-frontier",
+      "id": "showcase-hero-relic-frontier",
+      "file": "fantasy/hero-relic-frontier.mesh.json",
+      "vertices": 1446,
+      "triangles": 482,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.65617,
+          0,
+          -1.67171
+        ],
+        "max": [
+          1.65617,
+          3.18,
+          1.67171
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-relic-island",
+      "id": "showcase-hero-relic-island",
+      "file": "fantasy/hero-relic-island.mesh.json",
+      "vertices": 1272,
+      "triangles": 424,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.18,
+          0,
+          -1.23898
+        ],
+        "max": [
+          1.22985,
+          3.56,
+          1.18
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-forest-range",
+      "id": "showcase-hero-forest-range",
+      "file": "fantasy/hero-forest-range.mesh.json",
+      "vertices": 1434,
+      "triangles": 478,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.44301,
+          0,
+          -1.45855
+        ],
+        "max": [
+          1.44301,
+          3.94,
+          1.45855
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-iron-arena",
+      "id": "showcase-hero-iron-arena",
+      "file": "combat/hero-iron-arena.mesh.json",
+      "vertices": 1734,
+      "triangles": 578,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -2.37489,
+          0,
+          -1.37318
+        ],
+        "max": [
+          2.35155,
+          4.32,
+          1.37318
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-dungeon-descent",
+      "id": "showcase-hero-dungeon-descent",
+      "file": "fantasy/hero-dungeon-descent.mesh.json",
+      "vertices": 1350,
+      "triangles": 450,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.22985,
+          0,
+          -1.24539
+        ],
+        "max": [
+          1.22985,
+          4.7,
+          1.24539
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-npc-puzzle-adventure",
+      "id": "showcase-hero-npc-puzzle-adventure",
+      "file": "fantasy/hero-npc-puzzle-adventure.mesh.json",
+      "vertices": 1320,
+      "triangles": 440,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.18,
+          0,
+          -1.45079
+        ],
+        "max": [
+          1.44301,
+          3.18,
+          1.15041
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-opus-arena",
+      "id": "showcase-hero-opus-arena",
+      "file": "combat/hero-opus-arena.mesh.json",
+      "vertices": 1806,
+      "triangles": 602,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -2.1955,
+          0,
+          -1.37136
+        ],
+        "max": [
+          2.07795,
+          3.56,
+          1.37136
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-power-station",
+      "id": "showcase-hero-power-station",
+      "file": "scifi/hero-power-station.mesh.json",
+      "vertices": 1422,
+      "triangles": 474,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.65044,
+          0,
+          -1.18
+        ],
+        "max": [
+          1.64859,
+          3.94,
+          1.18
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-relic-runner-2",
+      "id": "showcase-hero-relic-runner-2",
+      "file": "fantasy/hero-relic-runner-2.mesh.json",
+      "vertices": 1398,
+      "triangles": 466,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.44301,
+          0,
+          -1.45855
+        ],
+        "max": [
+          1.44301,
+          4.32,
+          1.45855
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-sentinel-maze",
+      "id": "showcase-hero-sentinel-maze",
+      "file": "scifi/hero-sentinel-maze.mesh.json",
+      "vertices": 1566,
+      "triangles": 522,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -2.37727,
+          0,
+          -1.18
+        ],
+        "max": [
+          2.30392,
+          4.7,
+          1.18
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-signal-zero",
+      "id": "showcase-hero-signal-zero",
+      "file": "scifi/hero-signal-zero.mesh.json",
+      "vertices": 1494,
+      "triangles": 498,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.8149,
+          0,
+          -1.18
+        ],
+        "max": [
+          1.69934,
+          3.18,
+          1.18
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-survival-arena-2",
+      "id": "showcase-hero-survival-arena-2",
+      "file": "combat/hero-survival-arena-2.mesh.json",
+      "vertices": 1686,
+      "triangles": 562,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -2.17483,
+          0,
+          -1.37136
+        ],
+        "max": [
+          1.96748,
+          3.56,
+          1.37136
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-survival-arena-3",
+      "id": "showcase-hero-survival-arena-3",
+      "file": "combat/hero-survival-arena-3.mesh.json",
+      "vertices": 1758,
+      "triangles": 586,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -2.1221,
+          0,
+          -1.37228
+        ],
+        "max": [
+          2.26321,
+          3.94,
+          1.37228
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-textured-adventure",
+      "id": "showcase-hero-textured-adventure",
+      "file": "fantasy/hero-textured-adventure.mesh.json",
+      "vertices": 1272,
+      "triangles": 424,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.18,
+          0,
+          -1.23898
+        ],
+        "max": [
+          1.22985,
+          4.32,
+          1.18
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-valley-run",
+      "id": "showcase-hero-valley-run",
+      "file": "fantasy/hero-valley-run.mesh.json",
+      "vertices": 1434,
+      "triangles": 478,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.44301,
+          0,
+          -1.45855
+        ],
+        "max": [
+          1.44301,
+          4.7,
+          1.45855
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-painted-wilds",
+      "id": "showcase-hero-painted-wilds",
+      "file": "fantasy/hero-painted-wilds.mesh.json",
+      "vertices": 1332,
+      "triangles": 444,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.25358,
+          0,
+          -1.66261
+        ],
+        "max": [
+          1.65617,
+          3.18,
+          1.29398
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-assembly-line",
+      "id": "showcase-hero-assembly-line",
+      "file": "scifi/hero-assembly-line.mesh.json",
+      "vertices": 1446,
+      "triangles": 482,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.84804,
+          0,
+          -1.18
+        ],
+        "max": [
+          1.90011,
+          3.56,
+          1.18
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-blacksite",
+      "id": "showcase-hero-blacksite",
+      "file": "scifi/hero-blacksite.mesh.json",
+      "vertices": 1518,
+      "triangles": 506,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.95752,
+          0,
+          -1.15041
+        ],
+        "max": [
+          1.9069,
+          3.94,
+          1.15041
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-moving-temple",
+      "id": "showcase-hero-moving-temple",
+      "file": "fantasy/hero-moving-temple.mesh.json",
+      "vertices": 1482,
+      "triangles": 494,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.65617,
+          0,
+          -1.67171
+        ],
+        "max": [
+          1.65617,
+          4.32,
+          1.67171
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-shifting-facility",
+      "id": "showcase-hero-shifting-facility",
+      "file": "scifi/hero-shifting-facility.mesh.json",
+      "vertices": 1422,
+      "triangles": 474,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.89018,
+          0,
+          -1.18
+        ],
+        "max": [
+          1.92881,
+          4.7,
+          1.18
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-skyway-trial",
+      "id": "showcase-hero-skyway-trial",
+      "file": "scifi/hero-skyway-trial.mesh.json",
+      "vertices": 1494,
+      "triangles": 498,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.93191,
+          0,
+          -1.15041
+        ],
+        "max": [
+          2.02801,
+          3.18,
+          1.15041
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-survival-arena",
+      "id": "showcase-hero-survival-arena",
+      "file": "combat/hero-survival-arena.mesh.json",
+      "vertices": 1782,
+      "triangles": 594,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -2.18775,
+          0,
+          -1.37136
+        ],
+        "max": [
+          2.33988,
+          3.56,
+          1.37136
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    },
+    {
+      "key": "hero-temple-switch-puzzle",
+      "id": "showcase-hero-temple-switch-puzzle",
+      "file": "fantasy/hero-temple-switch-puzzle.mesh.json",
+      "vertices": 1386,
+      "triangles": 462,
+      "type": "mesh",
+      "bounds": {
+        "min": [
+          -1.22985,
+          0,
+          -1.24539
+        ],
+        "max": [
+          1.22985,
+          3.94,
+          1.24539
+        ]
+      },
+      "textureAssetId": "showcase-palette"
+    }
+  ],
+  "textures": [
+    {
+      "key": "palette",
+      "id": "showcase-palette",
+      "file": "textures/palette.png",
+      "bytes": 184
+    },
+    {
+      "key": "ground-moss",
+      "id": "showcase-ground-moss",
+      "file": "textures/ground-moss.png",
+      "bytes": 19950
+    },
+    {
+      "key": "ground-sand",
+      "id": "showcase-ground-sand",
+      "file": "textures/ground-sand.png",
+      "bytes": 17006
+    },
+    {
+      "key": "stone",
+      "id": "showcase-stone",
+      "file": "textures/stone.png",
+      "bytes": 15084
+    },
+    {
+      "key": "metal",
+      "id": "showcase-metal",
+      "file": "textures/metal.png",
+      "bytes": 8666
+    },
+    {
+      "key": "hazard",
+      "id": "showcase-hazard",
+      "file": "textures/hazard.png",
+      "bytes": 12249
+    },
+    {
+      "key": "grass",
+      "id": "showcase-grass",
+      "file": "textures/grass.png",
+      "bytes": 19066
+    },
+    {
+      "key": "dirt-path",
+      "id": "showcase-dirt-path",
+      "file": "textures/dirt-path.png",
+      "bytes": 14626
+    },
+    {
+      "key": "moss-stone",
+      "id": "showcase-moss-stone",
+      "file": "textures/moss-stone.png",
+      "bytes": 20459
+    },
+    {
+      "key": "clean-stone",
+      "id": "showcase-clean-stone",
+      "file": "textures/clean-stone.png",
+      "bytes": 15730
+    },
+    {
+      "key": "worn-stone",
+      "id": "showcase-worn-stone",
+      "file": "textures/worn-stone.png",
+      "bytes": 15740
+    },
+    {
+      "key": "dark-ruin-stone",
+      "id": "showcase-dark-ruin-stone",
+      "file": "textures/dark-ruin-stone.png",
+      "bytes": 15731
+    },
+    {
+      "key": "bark",
+      "id": "showcase-bark",
+      "file": "textures/bark.png",
+      "bytes": 15559
+    },
+    {
+      "key": "foliage",
+      "id": "showcase-foliage",
+      "file": "textures/foliage.png",
+      "bytes": 21250
+    },
+    {
+      "key": "relic-emissive",
+      "id": "showcase-relic-emissive",
+      "file": "textures/relic-emissive.png",
+      "bytes": 16531
+    },
+    {
+      "key": "clean-metal",
+      "id": "showcase-clean-metal",
+      "file": "textures/clean-metal.png",
+      "bytes": 15715
+    },
+    {
+      "key": "worn-metal",
+      "id": "showcase-worn-metal",
+      "file": "textures/worn-metal.png",
+      "bytes": 15745
+    },
+    {
+      "key": "floor-panel",
+      "id": "showcase-floor-panel",
+      "file": "textures/floor-panel.png",
+      "bytes": 15748
+    },
+    {
+      "key": "dark-wall",
+      "id": "showcase-dark-wall",
+      "file": "textures/dark-wall.png",
+      "bytes": 15722
+    },
+    {
+      "key": "machinery",
+      "id": "showcase-machinery",
+      "file": "textures/machinery.png",
+      "bytes": 14598
+    },
+    {
+      "key": "terminal-surface",
+      "id": "showcase-terminal-surface",
+      "file": "textures/terminal-surface.png",
+      "bytes": 14632
+    },
+    {
+      "key": "grate",
+      "id": "showcase-grate",
+      "file": "textures/grate.png",
+      "bytes": 15698
+    },
+    {
+      "key": "emissive-strip",
+      "id": "showcase-emissive-strip",
+      "file": "textures/emissive-strip.png",
+      "bytes": 16583
+    },
+    {
+      "key": "arena-floor",
+      "id": "showcase-arena-floor",
+      "file": "textures/arena-floor.png",
+      "bytes": 15691
+    },
+    {
+      "key": "arena-wall",
+      "id": "showcase-arena-wall",
+      "file": "textures/arena-wall.png",
+      "bytes": 15730
+    },
+    {
+      "key": "arena-cover",
+      "id": "showcase-arena-cover",
+      "file": "textures/arena-cover.png",
+      "bytes": 14634
+    },
+    {
+      "key": "arena-weapon",
+      "id": "showcase-arena-weapon",
+      "file": "textures/arena-weapon.png",
+      "bytes": 14641
+    }
+  ],
+  "audio": [
+    {
+      "key": "ui-select",
+      "id": "showcase-ui-select",
+      "file": "audio/ui-select.wav",
+      "bytes": 5336,
+      "seconds": 0.12
+    },
+    {
+      "key": "pickup",
+      "id": "showcase-pickup",
+      "file": "audio/pickup.wav",
+      "bytes": 24300,
+      "seconds": 0.5500226757369614
+    },
+    {
+      "key": "interaction",
+      "id": "showcase-interaction",
+      "file": "audio/interaction.wav",
+      "bytes": 15478,
+      "seconds": 0.34997732426303857
+    },
+    {
+      "key": "door",
+      "id": "showcase-door",
+      "file": "audio/door.wav",
+      "bytes": 48554,
+      "seconds": 1.1
+    },
+    {
+      "key": "beacon",
+      "id": "showcase-beacon",
+      "file": "audio/beacon.wav",
+      "bytes": 88244,
+      "seconds": 2
+    },
+    {
+      "key": "damage",
+      "id": "showcase-damage",
+      "file": "audio/damage.wav",
+      "bytes": 13274,
+      "seconds": 0.3
+    },
+    {
+      "key": "fire",
+      "id": "showcase-fire",
+      "file": "audio/fire.wav",
+      "bytes": 10628,
+      "seconds": 0.24
+    },
+    {
+      "key": "impact",
+      "id": "showcase-impact",
+      "file": "audio/impact.wav",
+      "bytes": 9746,
+      "seconds": 0.22
+    },
+    {
+      "key": "alert",
+      "id": "showcase-alert",
+      "file": "audio/alert.wav",
+      "bytes": 35324,
+      "seconds": 0.8
+    },
+    {
+      "key": "attack",
+      "id": "showcase-attack",
+      "file": "audio/attack.wav",
+      "bytes": 22094,
+      "seconds": 0.5
+    },
+    {
+      "key": "win",
+      "id": "showcase-win",
+      "file": "audio/win.wav",
+      "bytes": 92654,
+      "seconds": 2.1
+    },
+    {
+      "key": "lose",
+      "id": "showcase-lose",
+      "file": "audio/lose.wav",
+      "bytes": 66194,
+      "seconds": 1.5
+    },
+    {
+      "key": "ambient-fantasy",
+      "id": "showcase-ambient-fantasy",
+      "file": "audio/ambient-fantasy.wav",
+      "bytes": 352844,
+      "seconds": 8
+    },
+    {
+      "key": "ambient-facility",
+      "id": "showcase-ambient-facility",
+      "file": "audio/ambient-facility.wav",
+      "bytes": 352844,
+      "seconds": 8
+    },
+    {
+      "key": "ambient-arena",
+      "id": "showcase-ambient-arena",
+      "file": "audio/ambient-arena.wav",
+      "bytes": 352844,
+      "seconds": 8
+    },
+    {
+      "key": "footstep",
+      "id": "showcase-footstep",
+      "file": "audio/footstep.wav",
+      "bytes": 8864,
+      "seconds": 0.2
+    },
+    {
+      "key": "guardian-call",
+      "id": "showcase-guardian-call",
+      "file": "audio/guardian-call.wav",
+      "bytes": 70604,
+      "seconds": 1.6
+    },
+    {
+      "key": "relay-pulse",
+      "id": "showcase-relay-pulse",
+      "file": "audio/relay-pulse.wav",
+      "bytes": 50758,
+      "seconds": 1.1499773242630384
+    },
+    {
+      "key": "combat-rifle",
+      "id": "showcase-combat-rifle",
+      "file": "audio/combat-rifle.wav",
+      "bytes": 13274,
+      "seconds": 0.3
+    },
+    {
+      "key": "stealth-bed",
+      "id": "showcase-stealth-bed",
+      "file": "audio/stealth-bed.wav",
+      "bytes": 352844,
+      "seconds": 8
+    },
+    {
+      "key": "power-offline",
+      "id": "showcase-power-offline",
+      "file": "audio/power-offline.wav",
+      "bytes": 352844,
+      "seconds": 8
+    },
+    {
+      "key": "power-online",
+      "id": "showcase-power-online",
+      "file": "audio/power-online.wav",
+      "bytes": 352844,
+      "seconds": 8
+    },
+    {
+      "key": "temple-wind",
+      "id": "showcase-temple-wind",
+      "file": "audio/temple-wind.wav",
+      "bytes": 352844,
+      "seconds": 8
+    },
+    {
+      "key": "forest-bed",
+      "id": "showcase-forest-bed",
+      "file": "audio/forest-bed.wav",
+      "bytes": 352844,
+      "seconds": 8
+    }
+  ]
+}

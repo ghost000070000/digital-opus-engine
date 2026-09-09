@@ -1,0 +1,55 @@
+{
+  "id": "survival-arena-3",
+  "index": 18,
+  "inputOnly": true,
+  "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+  "errors": [],
+  "actions": [
+    {
+      "key": "w",
+      "ms": 950
+    },
+    {
+      "key": "a",
+      "ms": 520
+    },
+    {
+      "key": "f",
+      "ms": 0
+    },
+    {
+      "key": "q",
+      "ms": 0
+    },
+    {
+      "key": "w",
+      "ms": 700
+    }
+  ],
+  "startedAt": "2026-09-08T17:42:44.050Z",
+  "sourceSHA256": "d7986d491a3a6ea879d84c4201d700c21eba52ac579f2edb07f36ce40dfe71dc",
+  "final": {
+    "title": "Survival Arena 3",
+    "sim": 3.8875000000000024,
+    "ended": false,
+    "paused": false,
+    "controller": "hovercraft",
+    "position": {
+      "x": -0.9744315243958979,
+      "y": -1.043198897031606,
+      "z": 8.45
+    },
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "objectives": {},
+    "inventory": {},
+    "helpers": [],
+    "webglLost": false
+  },
+  "pauseVisible": true,
+  "restartPassed": true,
+  "passed": true,
+  "finishedAt": "2026-09-08T17:42:48.933Z"
+}

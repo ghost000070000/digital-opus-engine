@@ -1,0 +1,143 @@
+{
+  "id": "signal-zero",
+  "inputs": [
+    {
+      "target": [
+        0,
+        8
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 5.219700000002978,
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 9.599511395704525
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": 0,
+          "y": -0.35903386962725786,
+          "z": 0.933324531157559
+        },
+        "text": "Game saved\nHealth 100 / 100\nReach the outpost console, then restore the deep relay.\nPress F to interact\nWASD / arrows move; Space jumps; Left Click attacks; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        0,
+        6
+      ],
+      "result": "ended",
+      "state": {
+        "level": 1,
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": true,
+        "playtime": 7.709999999999992,
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 4.478278340190539
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": 0,
+          "y": -0.33323552539179396,
+          "z": 0.9428436162041165
+        },
+        "text": "Game saved\nSignal restored\n\nBoth relays are online.\n\nRestart\nHealth 100 / 100\nReach the outpost console, then restore the deep relay.\nPress F to interact\nWASD / arrows move; Space jumps; Left Click attacks; Escape pauses.",
+        "dialogue": false
+      }
+    }
+  ],
+  "errors": [],
+  "started": "2026-09-08T15:59:47.399Z",
+  "start": {
+    "level": 0,
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 2.03410000000149,
+    "position": {
+      "x": 0,
+      "y": 0.55,
+      "z": -8
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": 0,
+      "y": -0.48705336462077126,
+      "z": 0.8733722116094524
+    },
+    "text": "Signal Zero: the relay has gone dark. Reach the console.\nHealth 100 / 100\nReach the outpost console, then restore the deep relay.\nPress F to interact\nWASD / arrows move; Space jumps; Left Click attacks; Escape pauses.",
+    "dialogue": false
+  },
+  "final": {
+    "level": 1,
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "flags": {},
+    "inventory": {},
+    "ended": true,
+    "playtime": 9.034399999998506,
+    "position": {
+      "x": 0,
+      "y": 0.55,
+      "z": 10.137249729639953
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": 0,
+      "y": -0.4316039412427176,
+      "z": 0.9020632117006839
+    },
+    "text": "Game saved\nSignal restored\n\nBoth relays are online.\n\nRestart\nHealth 100 / 100\nReach the outpost console, then restore the deep relay.\nPress F to interact\nWASD / arrows move; Space jumps; Left Click attacks; Escape pauses.",
+    "dialogue": false
+  },
+  "completed": true,
+  "restart": {
+    "level": 0,
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 0.5703999999985099,
+    "position": {
+      "x": 0,
+      "y": 1.05,
+      "z": -8
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": 0,
+      "y": -0.8087360843031886,
+      "z": 0.5881716976750462
+    },
+    "text": "Signal Zero: the relay has gone dark. Reach the console.\nHealth 100 / 100\nReach the outpost console, then restore the deep relay.\nPress F to interact\nWASD / arrows move; Space jumps; Left Click attacks; Escape pauses.",
+    "dialogue": false
+  },
+  "finished": "2026-09-08T16:00:02.861Z"
+}

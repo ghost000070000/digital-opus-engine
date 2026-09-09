@@ -1,0 +1,100 @@
+{
+  "id": "power-station",
+  "inputOnly": true,
+  "events": [
+    {
+      "capture": "opening",
+      "state": {
+        "pos": {
+          "x": 0,
+          "y": 0.9500000000000001,
+          "z": 0
+        },
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.5141379528051022,
+            "z": 0.8577075057881787
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "up": {
+            "x": 0,
+            "y": 0.8577075057881787,
+            "z": 0.5141379528051022
+          }
+        },
+        "ended": false,
+        "sim": 1.9016999999955304,
+        "text": "Fuel Cells: 0/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses."
+      }
+    },
+    {
+      "capture": "approach",
+      "state": {
+        "pos": {
+          "x": 0,
+          "y": 0.55,
+          "z": 5.347310516624451
+        },
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.4051943228608504,
+            "z": 0.9142305840001945
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "up": {
+            "x": 0,
+            "y": 0.9142305840001945,
+            "z": 0.4051943228608504
+          }
+        },
+        "ended": false,
+        "sim": 3.1697999999970228,
+        "text": "Fuel Cells: 0/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses."
+      }
+    },
+    {
+      "capture": "detail",
+      "state": {
+        "pos": {
+          "x": 4.617470980440103,
+          "y": 0.9500000000000001,
+          "z": 2.0232531911002427
+        },
+        "basis": {
+          "forward": {
+            "x": 0.7064017222439228,
+            "y": -0.4051890620387201,
+            "z": -0.5803606041204054
+          },
+          "right": {
+            "x": 0.6348060698803775,
+            "y": 0,
+            "z": 0.7726715043555246
+          },
+          "up": {
+            "x": 0.31307804211386187,
+            "y": 0.9142329156206215,
+            "z": -0.25721647603131637
+          }
+        },
+        "ended": false,
+        "sim": 4.604699999995532,
+        "text": "Fuel Cells: 0/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses."
+      }
+    }
+  ],
+  "errors": [],
+  "startedAt": "2026-09-08T20:29:16.586Z",
+  "completed": true,
+  "finishedAt": "2026-09-08T20:29:21.713Z"
+}

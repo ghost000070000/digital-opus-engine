@@ -66,25 +66,70 @@ function rayAABB(origin, dir, box) {
 }
 
 class TriggerVolume {
-  constructor({ center, radius, onEnter, onExit }) {
+  // Wave 6 (Priority A/Section 8): `shape` is optional and defaults to
+  // 'sphere' -- every pre-Wave-6 caller (which never passed `shape`/`half`/
+  // `quat` at all) gets EXACTLY its old sphere-only behavior, unchanged.
+  // 'box' is the fix for the long-standing "a Trigger Volume always LOOKED
+  // like a box but always BEHAVED like a giant sphere" mismatch: a wide
+  // flat Box Trigger now actually has a wide flat hit-test, not a sphere
+  // sized off its longest horizontal edge.
+  constructor({ center, radius, shape, half, quat, onEnter, onExit, onStay }) {
     vector(center, 'options.center', 'Physics.TriggerVolume');
-    positive(radius, 'options.radius', 'Physics.TriggerVolume');
+    this.shape = shape === 'box' ? 'box' : 'sphere';
+    if (this.shape === 'sphere') {
+      positive(radius, 'options.radius', 'Physics.TriggerVolume');
+    } else {
+      vector(half, 'options.half', 'Physics.TriggerVolume');
+    }
     callback(onEnter, 'options.onEnter', 'Physics.TriggerVolume', true);
     callback(onExit, 'options.onExit', 'Physics.TriggerVolume', true);
+    callback(onStay, 'options.onStay', 'Physics.TriggerVolume', true);
     this.center = center;
     this.radius = radius;
+    this.half = half;
+    this.quat = quat || null;
     this.onEnter = onEnter;
     this.onExit = onExit;
+    this.onStay = onStay;
     this.inside = false;
+  }
+
+  // Local-space helpers shared by containment and the swept ray check below
+  // -- the exact same "rotate into the box's own unrotated frame" technique
+  // resolveOrientedBoxCollision already established, so a rotated Box
+  // Trigger is just as accurate as a rotated Box Collider.
+  _toLocal(point) {
+    const rel = point.sub(this.center);
+    return this.quat ? this.quat.conjugate().rotateVec3(rel) : rel;
+  }
+
+  containsPoint(point) {
+    if (this.shape === 'sphere') return point.sub(this.center).length() <= this.radius;
+    const local = this._toLocal(point);
+    return Math.abs(local.x) <= this.half.x && Math.abs(local.y) <= this.half.y && Math.abs(local.z) <= this.half.z;
   }
 
   update(point, previousPoint = point) {
     vector(point, 'point', 'TriggerVolume.update');
     vector(previousPoint, 'previousPoint', 'TriggerVolume.update');
-    const nowInside = point.sub(this.center).length() <= this.radius;
+    const nowInside = this.containsPoint(point);
     const delta = point.sub(previousPoint);
     const distance = delta.length();
-    const hit = distance > 0 ? raySphere(previousPoint, delta.scale(1 / distance), this.center, this.radius) : null;
+    let hit = null;
+    if (distance > 0) {
+      const dir = delta.scale(1 / distance);
+      if (this.shape === 'sphere') {
+        hit = raySphere(previousPoint, dir, this.center, this.radius);
+      } else {
+        const localOrigin = this._toLocal(previousPoint);
+        const localDir = this.quat ? this.quat.conjugate().rotateVec3(dir) : dir;
+        const localBox = new AABB(
+          new Vec3(-this.half.x, -this.half.y, -this.half.z),
+          new Vec3(this.half.x, this.half.y, this.half.z),
+        );
+        hit = rayAABB(localOrigin, localDir, localBox);
+      }
+    }
     if ((nowInside || hit !== null && hit <= distance) && !this.inside) {
       this.inside = true;
       if (this.onEnter) this.onEnter();
@@ -93,6 +138,11 @@ class TriggerVolume {
       this.inside = false;
       if (this.onExit) this.onExit();
     }
+    // Fires every update() call the point is inside, including the frame it
+    // just entered on -- callers wanting a slower cadence (e.g. damage every
+    // N seconds while standing in lava) own their own cooldown timing on top
+    // of this, the same way the editor's repeat-on-stay Damage Zone does.
+    if (this.inside && this.onStay) this.onStay();
   }
 }
 
@@ -108,11 +158,19 @@ function sampleTerrainNormal(x, z, opts, delta = 0.2) {
 }
 
 function resolveTerrainCollision(position, velocity, radius = 0.5, terrainOpts = {}) {
-  const x = position.x;
-  const z = position.z;
+  // position/velocity/the returned corrections are all world-space; height
+  // sampling below is local to the terrain, so world coords must be offset
+  // by the terrain's own position first (same convention as the per-instance
+  // .sampleHeight()/.sampleNormal() handles) — this was previously missing,
+  // so collision only ever worked correctly for terrain placed at world origin.
+  const originX = terrainOpts.position ? terrainOpts.position.x : 0;
+  const originY = terrainOpts.position ? terrainOpts.position.y : 0;
+  const originZ = terrainOpts.position ? terrainOpts.position.z : 0;
+  const x = position.x - originX;
+  const z = position.z - originZ;
   const halfSize = (terrainOpts.size ?? 22) * 0.5;
   const inBounds = Math.abs(x) <= halfSize && Math.abs(z) <= halfSize;
-  const terrainHeight = inBounds ? islandHeight(x, z, terrainOpts) : (terrainOpts.oceanFloor ?? -2.4);
+  const terrainHeight = (inBounds ? islandHeight(x, z, terrainOpts) : (terrainOpts.oceanFloor ?? -2.4)) + originY;
   const normal = sampleTerrainNormal(x, z, terrainOpts);
 
   const slopeRadians = Math.acos(Math.max(-1.0, Math.min(1.0, normal.y)));
@@ -220,6 +278,249 @@ function applyMapBoundary(position, velocity, radius = 0.5, boundaryRadius = 18.
     correctedPosition,
     correctedVelocity,
   };
+}
+
+// Circle-vs-AABB collision, resolved in the XZ plane only -- deliberately
+// not full 3D sphere-vs-box, since every mover this engine has (a hovering
+// craft) is already height-managed separately by terrain/water sampling;
+// a horizontal-only push is the correct fix for "an object physically
+// blocks the craft," the actual gap this closes (see AABB above, which
+// already existed for picking/queries but had no collision RESOLUTION).
+// box: { min: {x,z}, max: {x,z} } in world space (Y ignored).
+function resolveBoxCollision(position, velocity, radius, box) {
+  const closestX = Math.max(box.min.x, Math.min(position.x, box.max.x));
+  const closestZ = Math.max(box.min.z, Math.min(position.z, box.max.z));
+  const dx = position.x - closestX;
+  const dz = position.z - closestZ;
+  const distSq = dx * dx + dz * dz;
+
+  const correctedPosition = position.clone();
+  const correctedVelocity = velocity.clone();
+  let collided = false;
+
+  if (distSq < radius * radius) {
+    collided = true;
+    const dist = Math.sqrt(distSq);
+    let nx; let nz;
+    if (dist > 1e-6) {
+      // Outside the box but within radius of its nearest edge/corner: push
+      // out along the vector from that nearest point to the mover.
+      nx = dx / dist;
+      nz = dz / dist;
+    } else {
+      // Mover's center is exactly on or inside the box edge (dist ~0, e.g.
+      // clipped through a thin wall in one frame) -- push out along
+      // whichever axis has the least penetration, a standard AABB
+      // resolution fallback for the degenerate "already inside" case.
+      const penLeft = position.x - box.min.x;
+      const penRight = box.max.x - position.x;
+      const penDown = position.z - box.min.z;
+      const penUp = box.max.z - position.z;
+      const minPen = Math.min(penLeft, penRight, penDown, penUp);
+      if (minPen === penLeft) { nx = -1; nz = 0; }
+      else if (minPen === penRight) { nx = 1; nz = 0; }
+      else if (minPen === penDown) { nx = 0; nz = -1; }
+      else { nx = 0; nz = 1; }
+    }
+    const penetration = radius - dist;
+    correctedPosition.x += nx * penetration;
+    correctedPosition.z += nz * penetration;
+    const outward = correctedVelocity.x * nx + correctedVelocity.z * nz;
+    if (outward < 0) {
+      correctedVelocity.x -= nx * outward;
+      correctedVelocity.z -= nz * outward;
+    }
+  }
+
+  return { collided, correctedPosition, correctedVelocity };
+}
+
+// Wave 6 (Priority A/Section 5): the oriented generalization of
+// resolveBoxCollision above -- a rotated wall/door/box collider should
+// physically block a mover along its ACTUAL rotated edges, not its
+// axis-aligned world bounding footprint. Deliberately built by REUSING
+// resolveBoxCollision's own exact math rather than a second XZ-circle-vs-box
+// implementation: transform the mover into the box's own local (unrotated)
+// frame via the box's world quaternion, run the identical logic there
+// against a plain axis-aligned local box, then rotate the correction back
+// out to world space. `obb` is `{ center: Vec3, half: Vec3, quat: Opus.Quat
+// | null }` -- an absent/identity quat degenerates to EXACTLY
+// resolveBoxCollision's own axis-aligned answer (proven bit-exact by the
+// dedicated regression test), so every pre-Wave-6 unrotated solid is
+// completely unaffected by routing through this function instead.
+// Y is passed through the rotation too (harmless -- resolveBoxCollision
+// never reads or writes position.y/velocity.y) rather than special-cased
+// out, since a plain 3D quaternion rotation is simpler than reconstructing
+// a yaw-only 2D rotation separately.
+function resolveOrientedBoxCollision(position, velocity, radius, obb) {
+  const quat = obb.quat;
+  const rel = position.sub(obb.center);
+  const localPos = quat ? quat.conjugate().rotateVec3(rel) : rel;
+  const localVel = quat ? quat.conjugate().rotateVec3(velocity) : velocity.clone();
+  const localBox = new AABB(
+    new Vec3(-obb.half.x, -obb.half.y, -obb.half.z),
+    new Vec3(obb.half.x, obb.half.y, obb.half.z),
+  );
+  const local = resolveBoxCollision(localPos, localVel, radius, localBox);
+  if (!local.collided) return { collided: false, correctedPosition: position.clone(), correctedVelocity: velocity.clone() };
+  const correctedPosition = (quat ? quat.rotateVec3(local.correctedPosition) : local.correctedPosition).add(obb.center);
+  const correctedVelocity = quat ? quat.rotateVec3(local.correctedVelocity) : local.correctedVelocity;
+  return { collided: true, correctedPosition, correctedVelocity };
+}
+
+// Wave 6 (Priority A/Section 7): circle-vs-circle collision in the XZ
+// plane, the Sphere Collider's own resolution -- same "walls push
+// horizontally, Y is left to terrain/water/vertical-box height handling"
+// scoping every other solid-push function here already commits to, and the
+// exact same structure as resolveBoxCollision (degenerate exactly-centered
+// case pushes along a fixed deterministic direction rather than leaving the
+// mover stuck with an undefined normal).
+function resolveSphereCollision(position, velocity, radius, center, colliderRadius) {
+  const dx = position.x - center.x;
+  const dz = position.z - center.z;
+  const distSq = dx * dx + dz * dz;
+  const minDist = radius + colliderRadius;
+
+  const correctedPosition = position.clone();
+  const correctedVelocity = velocity.clone();
+  let collided = false;
+
+  if (distSq < minDist * minDist) {
+    collided = true;
+    const dist = Math.sqrt(distSq);
+    let nx; let nz;
+    if (dist > 1e-6) {
+      nx = dx / dist;
+      nz = dz / dist;
+    } else {
+      nx = 1;
+      nz = 0;
+    }
+    const penetration = minDist - dist;
+    correctedPosition.x += nx * penetration;
+    correctedPosition.z += nz * penetration;
+    const outward = correctedVelocity.x * nx + correctedVelocity.z * nz;
+    if (outward < 0) {
+      correctedVelocity.x -= nx * outward;
+      correctedVelocity.z -= nz * outward;
+    }
+  }
+
+  return { collided, correctedPosition, correctedVelocity };
+}
+
+// The vertical (Y-aware) half of "a solid object can be a platform" --
+// resolveBoxCollision above deliberately stays XZ-only (every existing
+// mover is height-managed by terrain/water instead), so a mover that wants
+// to actually LAND on top of a box, or bonk its head on the underside while
+// jumping into one, needs this instead. Bounded on purpose: only resolves
+// the mover's own vertical extent against the box's top/bottom faces while
+// the mover's XZ footprint overlaps the box -- no side faces
+// (resolveBoxCollision already owns those).
+//
+// Wave 5, Priority E/section 29 re-investigated this for real tunneling
+// risk at high dt, not assumed fixed or assumed broken: `landTolerance`
+// below scales by `|velocity.y| * dt`, which is EXACTLY the distance the
+// mover traveled this frame. Since `position` is always the caller's
+// POST-this-frame position, comparing `feetY >= box.max.y - landTolerance`
+// is algebraically the SAME comparison as "did the mover's feet START this
+// frame at or above the top face" (`feetY + distanceTraveled >= box.max.y`)
+// -- this formula was already an effective swept check, just expressed as
+// a tolerance band instead of an explicit previous-position reconstruction.
+// A first attempt at rewriting it as an explicit swept check (`prevFeetY =
+// feetY - velocity.y*dt`) proved exactly that: it was mathematically
+// near-equivalent, and only differed by accidentally dropping the
+// `Math.max(0.4, ...)` FLOOR this formula also needs for the low-speed
+// case (an already-resting or slowly-descending mover, where
+// `|velocity.y|*dt` alone is too small a band to reliably catch floating-
+// point/frame-timing slop) -- caught by a regression test built for
+// exactly that case failing. Kept the original, proven formula; added a
+// dedicated high-dt/high-speed regression test (see public-api.test.js)
+// confirming it already does NOT tunnel at a lag-spike-sized dt, rather
+// than rewriting working math into a differently-shaped version of itself.
+function resolveVerticalBoxCollision(position, velocity, radius, halfHeight, box, dt = 1 / 60) {
+  const withinX = position.x + radius > box.min.x && position.x - radius < box.max.x;
+  const withinZ = position.z + radius > box.min.z && position.z - radius < box.max.z;
+
+  const correctedPosition = position.clone();
+  const correctedVelocity = velocity.clone();
+  let collided = false;
+  let grounded = false;
+
+  if (withinX && withinZ) {
+    const feetY = position.y - halfHeight;
+    const headY = position.y + halfHeight;
+    // Falling onto the top face: only snaps up when the feet are already
+    // within a small, fall-speed-scaled tolerance band just above the top,
+    // so a mover walking past a TALL box at head height doesn't get yanked
+    // up onto its roof. The band scales with this frame's actual travel
+    // distance (see the function comment above for why that's equivalent
+    // to a swept "started above the top face" check), with a 0.4-unit
+    // floor for the low-speed/already-resting case.
+    const landTolerance = Math.max(0.4, Math.abs(velocity.y) * dt + 0.1);
+    if (velocity.y <= 0 && feetY <= box.max.y && feetY >= box.max.y - landTolerance) {
+      correctedPosition.y = box.max.y + halfHeight;
+      if (correctedVelocity.y < 0) correctedVelocity.y = 0;
+      collided = true;
+      grounded = true;
+    } else if (velocity.y > 0 && feetY < box.min.y && headY >= box.min.y && headY <= box.min.y + 0.3) {
+      // Rising into the underside -- stop the ascent, don't push back down.
+      correctedPosition.y = box.min.y - halfHeight;
+      correctedVelocity.y = 0;
+      collided = true;
+    }
+  }
+
+  return { collided, grounded, correctedPosition, correctedVelocity };
+}
+
+// Wave 6 (Priority B/Section 14-15): the walkable-surface half of a Ramp --
+// resolveVerticalBoxCollision's landing-on-top logic generalized from a flat
+// top face to a sloped one. `ramp` is `{ center, half, quat }`, the exact
+// same oriented-box shape resolveOrientedBoxCollision/TriggerVolume box
+// already use -- a ramp is authored as a solid whose LOCAL +X axis is its
+// rise direction: at local x=-half.x the walkable surface sits at local
+// y=-half.y (the ramp's low/open end), rising LINEARLY to local y=+half.y
+// at local x=+half.x (the ramp's high end, matching Opus.Mesh.wedge()'s own
+// geometry so the collision surface and the rendered slope are the same
+// plane). Deliberately walkable-surface-only, the same bounded scope as the
+// box's own landing check -- it does not wall off the ramp's sides or its
+// vertical back face (in every dogfooded case a ramp is built leading up to
+// a platform, whose OWN solid box already blocks that back face; adding a
+// redundant side-blocking box here would also incorrectly block the ramp's
+// low, meant-to-be-walkable-onto end, so it's deliberately left out rather
+// than half-solved -- see the Wave 6 changelog entry for this priority).
+function resolveRampCollision(position, velocity, radius, halfHeight, ramp, dt = 1 / 60) {
+  const quat = ramp.quat;
+  const rel = position.sub(ramp.center);
+  const local = quat ? quat.conjugate().rotateVec3(rel) : rel;
+  const half = ramp.half;
+
+  const correctedPosition = position.clone();
+  const correctedVelocity = velocity.clone();
+  let collided = false;
+  let grounded = false;
+
+  const withinX = local.x + radius > -half.x && local.x - radius < half.x;
+  const withinZ = local.z + radius > -half.z && local.z - radius < half.z;
+  if (withinX && withinZ && half.x > 0) {
+    const clampedX = Math.max(-half.x, Math.min(half.x, local.x));
+    const surfaceLocalY = -half.y + ((clampedX + half.x) / (2 * half.x)) * (2 * half.y);
+    const feetLocalY = local.y - halfHeight;
+    const landTolerance = Math.max(0.4, Math.abs(velocity.y) * dt + 0.1);
+    if (velocity.y <= 0 && feetLocalY <= surfaceLocalY && feetLocalY >= surfaceLocalY - landTolerance) {
+      const newLocal = new Vec3(local.x, surfaceLocalY + halfHeight, local.z);
+      const worldPos = (quat ? quat.rotateVec3(newLocal) : newLocal).add(ramp.center);
+      correctedPosition.x = worldPos.x;
+      correctedPosition.y = worldPos.y;
+      correctedPosition.z = worldPos.z;
+      if (correctedVelocity.y < 0) correctedVelocity.y = 0;
+      collided = true;
+      grounded = true;
+    }
+  }
+
+  return { collided, grounded, correctedPosition, correctedVelocity };
 }
 
 function sampleWaveHeight(waves, x, z, time) {

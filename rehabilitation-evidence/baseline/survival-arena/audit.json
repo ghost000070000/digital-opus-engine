@@ -1,0 +1,144 @@
+{
+  "id": "survival-arena",
+  "phase": "baseline",
+  "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/survival-arena.html",
+  "startedAt": "2026-09-08T00:08:09.834Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Survival Arena",
+      "text": "Survive! Collect 4 orbs, avoid the red hunters.\nPress F to interact",
+      "state": {
+        "health": 3,
+        "collected": 0
+      },
+      "playtime": 1.7816000000238423,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": -0.2505871526561789,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Survival Arena",
+      "text": "MAP EDGE — TURN INWARD\nSurvive! Collect 4 orbs, avoid the red hunters.\nPress F to interact",
+      "state": {
+        "health": 3,
+        "collected": 0
+      },
+      "playtime": 10.503699999928475,
+      "player": {
+        "position": {
+          "x": -29.697013344410614,
+          "y": -1.8499999999999999,
+          "z": 25.96901804885773
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Survival Arena",
+      "text": "MAP EDGE — TURN INWARD\nSurvive! Collect 4 orbs, avoid the red hunters.\nPress F to interact",
+      "state": {
+        "health": 3,
+        "collected": 0
+      },
+      "playtime": 25.42839999997617,
+      "player": {
+        "position": {
+          "x": -23.514201936534086,
+          "y": -1.8499999999999999,
+          "z": 28.745775026635684
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Survival Arena",
+    "text": "Survive! Collect 4 orbs, avoid the red hunters.\nPress F to interact",
+    "state": {
+      "health": 3,
+      "collected": 0
+    },
+    "playtime": 0.4621000000238419,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": -0.2505871526561789,
+        "z": 0
+      },
+      "visible": true,
+      "controller": "hovercraft"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "MAP EDGE — TURN INWARD\nSurvive! Collect 4 orbs, avoid the red hunters.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:08:42.545Z"
+}

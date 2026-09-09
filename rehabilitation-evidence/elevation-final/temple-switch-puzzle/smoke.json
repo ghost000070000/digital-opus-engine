@@ -1,0 +1,25 @@
+{
+  "id": "temple-switch-puzzle",
+  "sourceSHA256": "8eeaa0aae4eb0ac3ef8eb1d400427a37b3d2d690af01eca25c65d6bf63e9537d",
+  "errors": [],
+  "capturedAt": "2026-09-08T16:19:53.458Z",
+  "sha256": "10b3cdfde099693881a157b11d82261d9c1f8b0bb331f5b7ceded6f11bd7b152",
+  "state": {
+    "title": "Temple Switch Puzzle",
+    "sim": 1.4016000000014899,
+    "ended": false,
+    "text": "Find both switches to open the gate, then reach the goal.\nActivate both seals, then enter the northern shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "controller": "thirdperson",
+    "bodyVisible": false,
+    "visualVisible": true,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 29
+  },
+  "pauseText": "Find both switches to open the gate, then reach the goal.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nActivate both seals, then enter the northern shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+  "passed": true
+}

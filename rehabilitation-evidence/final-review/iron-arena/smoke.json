@@ -1,0 +1,24 @@
+{
+  "id": "iron-arena",
+  "sourceSHA256": "e6a81fa23d20a4df8af6a37ce0539187fe1ac7d7e723b1e543acaca65a42345d",
+  "errors": [],
+  "capturedAt": "2026-09-08T16:24:18.261Z",
+  "sha256": "93886753a58a7ed40a08cc45837b9320f0102bc230839fd9d9563a8a5d1f4e1f",
+  "state": {
+    "title": "Iron Arena",
+    "sim": 1.5436000000014902,
+    "ended": false,
+    "text": "Kills: 0\nDefeat all three sentries.\nHealth 100 / 100\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; Escape pauses.",
+    "controller": "firstperson",
+    "bodyVisible": false,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 37
+  },
+  "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nKills: 0\nDefeat all three sentries.\nHealth 100 / 100\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; Escape pauses.",
+  "passed": true
+}

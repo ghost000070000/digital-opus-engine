@@ -1,0 +1,25 @@
+{
+  "id": "power-station",
+  "sourceSHA256": "c13487bbcfa0a0493e282c9a220f2b6dd834978811d335a1a5bc3b1f626baaa3",
+  "errors": [],
+  "capturedAt": "2026-09-08T16:24:38.874Z",
+  "sha256": "00093807fe004c30891a0319e88dcbb67f124e6ca4b913e687a4427fb9a67f67",
+  "state": {
+    "title": "Power Station",
+    "sim": 1.4517999999970195,
+    "ended": false,
+    "text": "Fuel Cells: 0/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "controller": "thirdperson",
+    "bodyVisible": false,
+    "visualVisible": true,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 29
+  },
+  "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nFuel Cells: 0/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+  "passed": true
+}

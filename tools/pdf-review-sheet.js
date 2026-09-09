@@ -1,0 +1,5 @@
+'use strict';
+const fs=require('fs'),path=require('path');
+const sharp=require('C:/Users/THINKPAD/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp');
+const ROOT=path.resolve(__dirname,'..'),dir=path.join(ROOT,'tmp','pdfs','deep-v4-render'),out=path.join(ROOT,'rehabilitation-evidence','deep-review-v4','pdf-pages-contact.png');
+(async()=>{const files=fs.readdirSync(dir).filter(f=>/^page-\d+\.png$/.test(f)).sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));const tw=300,th=232,gap=8,cols=4,rows=Math.ceil(files.length/cols),layers=[];for(let i=0;i<files.length;i++){layers.push({input:await sharp(path.join(dir,files[i])).resize(tw,th,{fit:'contain',background:'#071018'}).png().toBuffer(),left:(i%cols)*(tw+gap),top:Math.floor(i/cols)*(th+gap)});}fs.mkdirSync(path.dirname(out),{recursive:true});await sharp({create:{width:cols*tw+(cols-1)*gap,height:rows*th+(rows-1)*gap,channels:3,background:'#17232b'}}).composite(layers).png().toFile(out);console.log(out,files.length);if(files.length!==28)process.exitCode=1;})().catch(e=>{console.error(e);process.exitCode=1;});

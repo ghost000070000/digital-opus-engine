@@ -1,0 +1,24 @@
+{
+  "id": "signal-relay",
+  "sourceSHA256": "cd30a5795c13f16a39f8fc157ad82417e811c1e56a088736601caeb5a53f1703",
+  "errors": [],
+  "capturedAt": "2026-09-08T17:43:53.148Z",
+  "sha256": "4e6c2c7ba2ee0e6393eb96375805df276017e3de50290adaf8fdd37bc0bf2320",
+  "state": {
+    "title": "Signal Relay",
+    "sim": 1.41830000000447,
+    "ended": false,
+    "text": "Health 100 / 100\nRestore power at all three relay consoles\nWeapon 8/24\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+    "controller": "firstperson",
+    "bodyVisible": false,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 182
+  },
+  "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nRestore power at all three relay consoles\nWeapon 8/24\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+  "passed": true
+}

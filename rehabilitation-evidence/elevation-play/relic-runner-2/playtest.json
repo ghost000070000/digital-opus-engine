@@ -1,0 +1,55 @@
+{
+  "id": "relic-runner-2",
+  "index": 14,
+  "inputOnly": true,
+  "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+  "errors": [],
+  "actions": [
+    {
+      "key": "w",
+      "ms": 950
+    },
+    {
+      "key": "a",
+      "ms": 520
+    },
+    {
+      "key": "f",
+      "ms": 0
+    },
+    {
+      "key": "q",
+      "ms": 0
+    },
+    {
+      "key": "w",
+      "ms": 700
+    }
+  ],
+  "startedAt": "2026-09-08T17:42:23.257Z",
+  "sourceSHA256": "74df57dab31bb4694398bd7b5b3fb4b3c09a3769b69c2c11786ce9cde29992b9",
+  "final": {
+    "title": "Relic Runner 2",
+    "sim": 3.970600000001494,
+    "ended": false,
+    "paused": false,
+    "controller": "thirdperson",
+    "position": {
+      "x": -6.235694008146564,
+      "y": 0.5563041407645866,
+      "z": -7.397532643275388
+    },
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "objectives": {},
+    "inventory": {},
+    "helpers": [],
+    "webglLost": false
+  },
+  "pauseVisible": true,
+  "restartPassed": true,
+  "passed": true,
+  "finishedAt": "2026-09-08T17:42:28.239Z"
+}

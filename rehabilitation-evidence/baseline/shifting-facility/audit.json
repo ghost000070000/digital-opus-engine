@@ -1,0 +1,132 @@
+{
+  "id": "shifting-facility",
+  "phase": "baseline",
+  "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/shifting-facility.html",
+  "startedAt": "2026-09-08T00:07:36.801Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Shifting Facility",
+      "text": "SHIFTING FACILITY\nPress F to interact",
+      "state": {},
+      "playtime": 1.4316000001430516,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": -16
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Shifting Facility",
+      "text": "SHIFTING FACILITY\nPress F to interact",
+      "state": {},
+      "playtime": 8.890500000119204,
+      "player": {
+        "position": {
+          "x": 13.573085442980654,
+          "y": 0.55,
+          "z": 7.9942576355693795
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Shifting Facility",
+      "text": "SHIFTING FACILITY\nPress F to interact",
+      "state": {},
+      "playtime": 23.298600000023864,
+      "player": {
+        "position": {
+          "x": 12.204108254244272,
+          "y": 0.55,
+          "z": 16.032643792248752
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Shifting Facility",
+    "text": "SHIFTING FACILITY\nPress F to interact",
+    "state": {},
+    "playtime": 0.3038000000715256,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 0.55,
+        "z": -16
+      },
+      "visible": false,
+      "controller": "firstperson"
+    },
+    "camera": {
+      "mode": "fixed"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nSHIFTING FACILITY\nPress F to interact",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:08:09.453Z"
+}

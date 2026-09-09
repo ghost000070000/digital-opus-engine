@@ -1,0 +1,25 @@
+{
+  "id": "relic-runner-2",
+  "sourceSHA256": "74df57dab31bb4694398bd7b5b3fb4b3c09a3769b69c2c11786ce9cde29992b9",
+  "errors": [],
+  "capturedAt": "2026-09-08T17:58:53.306Z",
+  "sha256": "e1d35248e28f51b7fe95af1601caff840912c3e1ce2bd53f1c6ae4580b3c7953",
+  "state": {
+    "title": "Relic Runner 2",
+    "sim": 1.4183999999985102,
+    "ended": false,
+    "text": "A relic glows atop the ridge...\nHealth 100 / 100\nReach the relic on the ridge!\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+    "controller": "thirdperson",
+    "bodyVisible": false,
+    "visualVisible": true,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 41
+  },
+  "pauseText": "A relic glows atop the ridge...\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nReach the relic on the ridge!\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+  "passed": true
+}

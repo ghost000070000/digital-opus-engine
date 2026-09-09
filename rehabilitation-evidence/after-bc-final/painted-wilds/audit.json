@@ -1,0 +1,140 @@
+{
+  "id": "painted-wilds",
+  "phase": "after-bc-final",
+  "url": "http://localhost:8837/dist/games/painted-wilds.html",
+  "startedAt": "2026-09-08T00:43:04.622Z",
+  "seconds": 4,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 480
+    },
+    {
+      "key": "d",
+      "milliseconds": 400
+    },
+    {
+      "key": "w",
+      "milliseconds": 600
+    },
+    {
+      "key": "a",
+      "milliseconds": 400
+    },
+    {
+      "key": "s",
+      "milliseconds": 320
+    },
+    {
+      "key": "w",
+      "milliseconds": 400
+    },
+    {
+      "key": "d",
+      "milliseconds": 200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Painted Wilds",
+      "text": "Visit all three survey stones.\nStudies: 0 / 3\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 0.8999999999999999,
+      "simulationSeconds": 0.8999999999999999,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": -13,
+          "y": -1.5942933068196634,
+          "z": 0
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Painted Wilds",
+      "text": "Visit all three survey stones.\nStudies: 0 / 3\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 2.6693000000715266,
+      "simulationSeconds": 2.6693000000715266,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": -11.816437346279066,
+          "y": 0.5986882269357225,
+          "z": -2.1973011039185986
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Painted Wilds",
+      "text": "Visit all three survey stones.\nStudies: 0 / 3\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 5.666699999928474,
+      "simulationSeconds": 5.666699999928474,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": -14.422415927538554,
+          "y": -1.7790336107916307,
+          "z": -5.536676428408322
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Painted Wilds",
+    "text": "Painted Wilds\n\nA short landscape walk through moss, ochre and slate. Follow the three survey stones.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "state": {},
+    "playtime": 0,
+    "simulationSeconds": 0,
+    "ended": false,
+    "player": {
+      "position": {
+        "x": -13,
+        "y": 1.05,
+        "z": 0
+      },
+      "visible": false,
+      "controller": "thirdperson"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nVisit all three survey stones.\nStudies: 0 / 3\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:43:16.885Z"
+}

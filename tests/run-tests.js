@@ -16,3 +16,5 @@ function run(script) {
 
 run(path.join('build', 'build.js'));
 run(path.join('tests', 'public-api.test.js'));
+run(path.join('tests', 'showcase-quality.test.js'));
+run(path.join('tests', 'public-site-build.test.js'));

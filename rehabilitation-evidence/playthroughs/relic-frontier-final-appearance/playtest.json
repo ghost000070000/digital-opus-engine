@@ -1,0 +1,944 @@
+{
+  "id": "relic-frontier",
+  "inputOnly": true,
+  "startedAt": "2026-09-08T00:59:58.331Z",
+  "standaloneSHA256": "ce3e60730d31a7c61c795195773cd3c41c89b748cda80cb42330a1d847de7411",
+  "events": [
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.18,
+      "sim": 3.1000000000000014,
+      "pos": {
+        "x": -8,
+        "y": 0.5142425713085076,
+        "z": -8
+      }
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.18,
+      "sim": 3.3000000000000016,
+      "pos": {
+        "x": -7.570003039491473,
+        "y": 0.4710715777758793,
+        "z": -7.371475185568784
+      }
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.18,
+      "sim": 3.5000000000000018,
+      "pos": {
+        "x": -6.924120927571098,
+        "y": 0.5204609281878612,
+        "z": -6.427391920284526
+      }
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.18,
+      "sim": 3.700000000000002,
+      "pos": {
+        "x": -6.215644896010602,
+        "y": 0.46662903470460476,
+        "z": -5.391815376350571
+      }
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.18,
+      "sim": 3.900000000000002,
+      "pos": {
+        "x": -5.489020331536697,
+        "y": 0.49445113923608697,
+        "z": -4.329711195411674
+      }
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.18,
+      "sim": 4.100000000000001,
+      "pos": {
+        "x": -4.757133766395591,
+        "y": 0.4527968523615209,
+        "z": -3.259915569424007
+      }
+    },
+    {
+      "input": [
+        "w",
+        "d"
+      ],
+      "seconds": 0.18,
+      "sim": 4.300000000000001,
+      "pos": {
+        "x": -4.023721532421984,
+        "y": 0.5309265334344373,
+        "z": -2.1878898794872876
+      }
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.14261107032503562,
+      "sim": 4.5,
+      "pos": {
+        "x": -2.9694023464057917,
+        "y": 0.5327473366318572,
+        "z": -1.702142801180053
+      }
+    },
+    {
+      "input": [
+        "w",
+        "a"
+      ],
+      "seconds": 0.09370682129157513,
+      "sim": 4.699999999999999,
+      "pos": {
+        "x": -1.7676236152456433,
+        "y": 0.44582952972823814,
+        "z": -1.3904475999515167
+      }
+    },
+    {
+      "input": [
+        "w",
+        "a"
+      ],
+      "seconds": 0.06909637299684163,
+      "sim": 4.799999999999999,
+      "pos": {
+        "x": -1.2830823989629354,
+        "y": 0.5365578405059641,
+        "z": -1.0505719413686383
+      }
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.04658198507415346,
+      "sim": 4.899999999999999,
+      "pos": {
+        "x": -0.9592168549715925,
+        "y": 0.5154443200033473,
+        "z": -0.5742426953865698
+      }
+    },
+    {
+      "walk": "road",
+      "reached": true,
+      "sim": 4.999999999999998,
+      "pos": {
+        "x": -0.6094309013899406,
+        "y": 0.45683750708642284,
+        "z": -0.0743733346607906
+      }
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.18,
+      "sim": 4.999999999999998,
+      "pos": {
+        "x": -0.6094309013899406,
+        "y": 0.45683750708642284,
+        "z": -0.0743733346607906
+      }
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.14725969977020756,
+      "sim": 5.1999999999999975,
+      "pos": {
+        "x": 0.10617268531335716,
+        "y": 0.46167652461859754,
+        "z": 0.9710680350522805
+      }
+    },
+    {
+      "input": [
+        "w",
+        "d"
+      ],
+      "seconds": 0.0988917626225329,
+      "sim": 5.399999999999997,
+      "pos": {
+        "x": 0.8295843719731879,
+        "y": 0.5323731286843421,
+        "z": 2.0396175276372333
+      }
+    },
+    {
+      "input": [
+        "w",
+        "d"
+      ],
+      "seconds": 0.07457337254298721,
+      "sim": 5.4999999999999964,
+      "pos": {
+        "x": 1.3191280611749927,
+        "y": 0.4851746572208925,
+        "z": 2.385253099793653
+      }
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.05062290556163839,
+      "sim": 5.599999999999996,
+      "pos": {
+        "x": 1.8798077495045047,
+        "y": 0.4155264176226866,
+        "z": 2.5296042338505673
+      }
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.045,
+      "sim": 5.699999999999996,
+      "pos": {
+        "x": 2.4704066631506274,
+        "y": 0.5123998154167443,
+        "z": 2.688913047610239
+      }
+    },
+    {
+      "walk": "rifle",
+      "reached": true,
+      "sim": 5.799999999999995,
+      "pos": {
+        "x": 3.0794627248776325,
+        "y": 0.5293157672377202,
+        "z": 2.8474613556988224
+      }
+    }
+  ],
+  "frames": [
+    {
+      "label": "start",
+      "sim": 0,
+      "ended": false,
+      "frozen": true,
+      "paused": true,
+      "pos": {
+        "x": -8,
+        "y": 1.2642425713085075,
+        "z": -8
+      },
+      "forward": {
+        "x": 0.5646424733950353,
+        "y": 0,
+        "z": 0.8253356149096783
+      },
+      "basis": {
+        "forward": {
+          "x": 0.5242573752310905,
+          "y": -0.3713906763541038,
+          "z": 0.7663048806010887
+        },
+        "right": {
+          "x": -0.8253356149096783,
+          "y": 0,
+          "z": 0.5646424733950355
+        },
+        "up": {
+          "x": 0.20970295009243628,
+          "y": 0.9284766908852593,
+          "z": 0.30652195224043555
+        }
+      },
+      "state": {},
+      "inventory": {},
+      "objectives": {
+        "obj_find": "active"
+      },
+      "text": "Relic Frontier\n\nExplore an overgrown frontier outpost. Recover a weapon, defeat the stone guardian, claim the ridge relic and cross the sealed border gate.\n\nBegin journey\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nFind the weapon • Defeat the guardian • Claim the ridge relic",
+      "overlay": "",
+      "equipment": [],
+      "enemies": [
+        {
+          "id": "enemy1",
+          "p": {
+            "x": 11,
+            "y": -0.02183472209859283,
+            "z": 3
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 0.8400000000000001,
+              "z": 0
+            },
+            "radius": 0.8800000000000001
+          }
+        },
+        {
+          "id": "obj1002",
+          "p": {
+            "x": -6,
+            "y": 0.009727437138319583,
+            "z": 10
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 0.8400000000000001,
+              "z": 0
+            },
+            "radius": 0.8800000000000001
+          }
+        }
+      ],
+      "objects": [
+        {
+          "id": "platform1",
+          "p": {
+            "x": 10,
+            "y": 2,
+            "z": 0
+          },
+          "visible": true,
+          "destroyed": false,
+          "solid": true,
+          "scale": {
+            "x": 6,
+            "y": 0.5,
+            "z": 6
+          }
+        },
+        {
+          "id": "ramp1",
+          "p": {
+            "x": 4.5,
+            "y": 1.3,
+            "z": 0
+          },
+          "visible": true,
+          "destroyed": false,
+          "solid": true,
+          "scale": {
+            "x": 5,
+            "y": 2.6,
+            "z": 3
+          }
+        },
+        {
+          "id": "relic1",
+          "p": {
+            "x": 10,
+            "y": 2.55,
+            "z": 0
+          },
+          "visible": true,
+          "destroyed": false,
+          "scale": {
+            "x": 0.6,
+            "y": 0.6,
+            "z": 0.6
+          }
+        },
+        {
+          "id": "obj1001",
+          "p": {
+            "x": 3,
+            "y": 0.48594230479542433,
+            "z": 3
+          },
+          "visible": true,
+          "destroyed": false,
+          "scale": {
+            "x": 0.6,
+            "y": 0.6,
+            "z": 0.6
+          }
+        },
+        {
+          "id": "obj1003",
+          "p": {
+            "x": 0,
+            "y": 8.984960642166584e-8,
+            "z": 15
+          },
+          "visible": true,
+          "destroyed": false,
+          "solid": true,
+          "scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        },
+        {
+          "id": "obj1004",
+          "p": {
+            "x": 0,
+            "y": -1.3587627824523634,
+            "z": 20
+          },
+          "visible": false,
+          "destroyed": false,
+          "scale": {
+            "x": 3,
+            "y": 3,
+            "z": 3
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "opening",
+      "sim": 2.3000000000000007,
+      "ended": false,
+      "frozen": false,
+      "paused": false,
+      "pos": {
+        "x": -8,
+        "y": 0.5142425713085076,
+        "z": -8
+      },
+      "forward": {
+        "x": 0.5646424733950353,
+        "y": 0,
+        "z": 0.8253356149096783
+      },
+      "basis": {
+        "forward": {
+          "x": 0.5019491516601414,
+          "y": -0.4579691056520819,
+          "z": 0.7336970406209203
+        },
+        "right": {
+          "x": -0.8253356149096783,
+          "y": 0,
+          "z": 0.5646424733950354
+        },
+        "up": {
+          "x": 0.25858880855390376,
+          "y": 0.8889681086902006,
+          "z": 0.3779782134229964
+        }
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "inventory": {},
+      "objectives": {
+        "obj_find": "active"
+      },
+      "text": "A relic glows atop the ridge...\nHealth 100 / 100\nFind the weapon\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact\nFind the weapon • Defeat the guardian • Claim the ridge relic",
+      "overlay": "",
+      "equipment": [],
+      "enemies": [
+        {
+          "id": "enemy1",
+          "p": {
+            "x": 11.118315209233648,
+            "y": -0.02183472209859283,
+            "z": 3.2973239164009485
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 0.8400000000000001,
+              "z": 0
+            },
+            "radius": 0.8800000000000001
+          }
+        },
+        {
+          "id": "obj1002",
+          "p": {
+            "x": -6.053354205244874,
+            "y": 0.009727437138319583,
+            "z": 9.849157934306483
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 0.8400000000000001,
+              "z": 0
+            },
+            "radius": 0.8800000000000001
+          }
+        }
+      ],
+      "objects": [
+        {
+          "id": "platform1",
+          "p": {
+            "x": 10,
+            "y": 2,
+            "z": 0
+          },
+          "visible": true,
+          "destroyed": false,
+          "solid": true,
+          "scale": {
+            "x": 6,
+            "y": 0.5,
+            "z": 6
+          }
+        },
+        {
+          "id": "ramp1",
+          "p": {
+            "x": 4.5,
+            "y": 1.3,
+            "z": 0
+          },
+          "visible": true,
+          "destroyed": false,
+          "solid": true,
+          "scale": {
+            "x": 5,
+            "y": 2.6,
+            "z": 3
+          }
+        },
+        {
+          "id": "relic1",
+          "p": {
+            "x": 10,
+            "y": 2.55,
+            "z": 0
+          },
+          "visible": true,
+          "destroyed": false,
+          "scale": {
+            "x": 0.6,
+            "y": 0.6,
+            "z": 0.6
+          }
+        },
+        {
+          "id": "obj1001",
+          "p": {
+            "x": 3,
+            "y": 0.48594230479542433,
+            "z": 3
+          },
+          "visible": true,
+          "destroyed": false,
+          "scale": {
+            "x": 0.6,
+            "y": 0.6,
+            "z": 0.6
+          }
+        },
+        {
+          "id": "obj1003",
+          "p": {
+            "x": 0,
+            "y": 8.984960642166584e-8,
+            "z": 15
+          },
+          "visible": true,
+          "destroyed": false,
+          "solid": true,
+          "scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        },
+        {
+          "id": "obj1004",
+          "p": {
+            "x": 0,
+            "y": -1.3587627824523634,
+            "z": 20
+          },
+          "visible": false,
+          "destroyed": false,
+          "scale": {
+            "x": 3,
+            "y": 3,
+            "z": 3
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "weapon-pickup",
+      "sim": 5.799999999999995,
+      "ended": false,
+      "frozen": false,
+      "paused": false,
+      "pos": {
+        "x": 3.0794627248776325,
+        "y": 0.5293157672377202,
+        "z": 2.8474613556988224
+      },
+      "forward": {
+        "x": 0.9701375402380017,
+        "y": 0,
+        "z": 0.2425554638035592
+      },
+      "basis": {
+        "forward": {
+          "x": 0.906575425902383,
+          "y": -0.35601212108803554,
+          "z": 0.22666355416853098
+        },
+        "right": {
+          "x": -0.24255546380355913,
+          "y": 0,
+          "z": 0.9701375402380016
+        },
+        "up": {
+          "x": 0.3453807234472604,
+          "y": 0.9344813372338677,
+          "z": 0.08635268515019731
+        }
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "inventory": {
+        "Rifle": 1
+      },
+      "objectives": {
+        "obj_find": "complete",
+        "obj_defeat": "active"
+      },
+      "text": "A relic glows atop the ridge...\nHealth 100 / 100\nDefeat the guard\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact\nFind the weapon • Defeat the guardian • Claim the ridge relic",
+      "overlay": "",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Rifle",
+          "visible": true,
+          "pos": {
+            "x": 3.306935449926338,
+            "y": 0.7387612545650943,
+            "z": 2.5579918361456904
+          }
+        }
+      ],
+      "enemies": [
+        {
+          "id": "enemy1",
+          "p": {
+            "x": 10.955260259315656,
+            "y": -0.02183472209859283,
+            "z": 3.032143752005297
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 0.8400000000000001,
+              "z": 0
+            },
+            "radius": 0.8800000000000001
+          }
+        },
+        {
+          "id": "obj1002",
+          "p": {
+            "x": -5.421719632150991,
+            "y": 0.009727437138319583,
+            "z": 9.055823729915192
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 0.8400000000000001,
+              "z": 0
+            },
+            "radius": 0.8800000000000001
+          }
+        }
+      ],
+      "objects": [
+        {
+          "id": "platform1",
+          "p": {
+            "x": 10,
+            "y": 2,
+            "z": 0
+          },
+          "visible": true,
+          "destroyed": false,
+          "solid": true,
+          "scale": {
+            "x": 6,
+            "y": 0.5,
+            "z": 6
+          }
+        },
+        {
+          "id": "ramp1",
+          "p": {
+            "x": 4.5,
+            "y": 1.3,
+            "z": 0
+          },
+          "visible": true,
+          "destroyed": false,
+          "solid": true,
+          "scale": {
+            "x": 5,
+            "y": 2.6,
+            "z": 3
+          }
+        },
+        {
+          "id": "relic1",
+          "p": {
+            "x": 10,
+            "y": 2.55,
+            "z": 0
+          },
+          "visible": true,
+          "destroyed": false,
+          "scale": {
+            "x": 0.6,
+            "y": 0.6,
+            "z": 0.6
+          }
+        },
+        {
+          "id": "obj1003",
+          "p": {
+            "x": 0,
+            "y": 8.984960642166584e-8,
+            "z": 15
+          },
+          "visible": true,
+          "destroyed": false,
+          "solid": true,
+          "scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        },
+        {
+          "id": "obj1004",
+          "p": {
+            "x": 0,
+            "y": -1.3587627824523634,
+            "z": 20
+          },
+          "visible": false,
+          "destroyed": false,
+          "scale": {
+            "x": 3,
+            "y": 3,
+            "z": 3
+          }
+        }
+      ],
+      "helpers": []
+    }
+  ],
+  "errors": [],
+  "final": {
+    "sim": 6.413799999952309,
+    "ended": false,
+    "frozen": false,
+    "paused": false,
+    "pos": {
+      "x": 5.149881293669102,
+      "y": 0.5630497589207293,
+      "z": 3.386428754178158
+    },
+    "forward": {
+      "x": 0.9701375402380017,
+      "y": 0,
+      "z": 0.2425554638035592
+    },
+    "basis": {
+      "forward": {
+        "x": 0.8894583226225288,
+        "y": -0.398535147255101,
+        "z": 0.22368198121411678
+      },
+      "right": {
+        "x": -0.24388729738283965,
+        "y": 0,
+        "z": 0.9698035812345169
+      },
+      "up": {
+        "x": 0.3865008130558225,
+        "y": 0.9171530605097249,
+        "z": 0.09719765997611861
+      }
+    },
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "inventory": {
+      "Rifle": 1
+    },
+    "objectives": {
+      "obj_find": "complete",
+      "obj_defeat": "active"
+    },
+    "text": "A relic glows atop the ridge...\nHealth 100 / 100\nDefeat the guard\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact\nFind the weapon • Defeat the guardian • Claim the ridge relic",
+    "overlay": "",
+    "equipment": [
+      {
+        "slot": "primaryHand",
+        "name": "Rifle",
+        "visible": true,
+        "pos": {
+          "x": 5.282268110189896,
+          "y": 0.7458953782154387,
+          "z": 3.073185691506065
+        }
+      }
+    ],
+    "enemies": [
+      {
+        "id": "enemy1",
+        "p": {
+          "x": 10.479559494966368,
+          "y": -0.02183472209859283,
+          "z": 2.9024062427643886
+        },
+        "collider": {
+          "shape": "sphere",
+          "offset": {
+            "x": 0,
+            "y": 0.8400000000000001,
+            "z": 0
+          },
+          "radius": 0.8800000000000001
+        }
+      },
+      {
+        "id": "obj1002",
+        "p": {
+          "x": -3.9612938210163176,
+          "y": 0.009727437138319583,
+          "z": 8.153196024466338
+        },
+        "collider": {
+          "shape": "sphere",
+          "offset": {
+            "x": 0,
+            "y": 0.8400000000000001,
+            "z": 0
+          },
+          "radius": 0.8800000000000001
+        }
+      }
+    ],
+    "objects": [
+      {
+        "id": "platform1",
+        "p": {
+          "x": 10,
+          "y": 2,
+          "z": 0
+        },
+        "visible": true,
+        "destroyed": false,
+        "solid": true,
+        "scale": {
+          "x": 6,
+          "y": 0.5,
+          "z": 6
+        }
+      },
+      {
+        "id": "ramp1",
+        "p": {
+          "x": 4.5,
+          "y": 1.3,
+          "z": 0
+        },
+        "visible": true,
+        "destroyed": false,
+        "solid": true,
+        "scale": {
+          "x": 5,
+          "y": 2.6,
+          "z": 3
+        }
+      },
+      {
+        "id": "relic1",
+        "p": {
+          "x": 10,
+          "y": 2.55,
+          "z": 0
+        },
+        "visible": true,
+        "destroyed": false,
+        "scale": {
+          "x": 0.6,
+          "y": 0.6,
+          "z": 0.6
+        }
+      },
+      {
+        "id": "obj1003",
+        "p": {
+          "x": 0,
+          "y": 8.984960642166584e-8,
+          "z": 15
+        },
+        "visible": true,
+        "destroyed": false,
+        "solid": true,
+        "scale": {
+          "x": 1.1,
+          "y": 1.1,
+          "z": 1.1
+        }
+      },
+      {
+        "id": "obj1004",
+        "p": {
+          "x": 0,
+          "y": -1.3587627824523634,
+          "z": 20
+        },
+        "visible": false,
+        "destroyed": false,
+        "scale": {
+          "x": 3,
+          "y": 3,
+          "z": 3
+        }
+      }
+    ],
+    "helpers": []
+  },
+  "captureOnly": true,
+  "finishedAt": "2026-09-08T01:00:36.765Z"
+}

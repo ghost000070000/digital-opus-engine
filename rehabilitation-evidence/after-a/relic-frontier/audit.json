@@ -1,0 +1,149 @@
+{
+  "id": "relic-frontier",
+  "phase": "after-a",
+  "url": "http://localhost:8837/dist/games/relic-frontier.html",
+  "startedAt": "2026-09-08T00:10:01.312Z",
+  "seconds": 26,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 3120
+    },
+    {
+      "key": "d",
+      "milliseconds": 2600
+    },
+    {
+      "key": "w",
+      "milliseconds": 3900
+    },
+    {
+      "key": "a",
+      "milliseconds": 2600
+    },
+    {
+      "key": "s",
+      "milliseconds": 2080
+    },
+    {
+      "key": "w",
+      "milliseconds": 2600
+    },
+    {
+      "key": "d",
+      "milliseconds": 1300
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Relic Frontier",
+      "text": "A relic glows atop the ridge...\nReach the relic on the ridge!\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact\nFind the weapon • Defeat the guardian • Claim the ridge relic",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 0.30000000000000004,
+      "player": {
+        "position": {
+          "x": -8,
+          "y": 0.5588811713085078,
+          "z": -8
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_find": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Relic Frontier",
+      "text": "A relic glows atop the ridge...\nReach the relic on the ridge!\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact\nFind the weapon • Defeat the guardian • Claim the ridge relic",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 3.5166999999284765,
+      "player": {
+        "position": {
+          "x": -6.478286002601662,
+          "y": 0.21061518342660834,
+          "z": -2.29949861143567
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_find": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Relic Frontier",
+      "text": "A relic glows atop the ridge...\nReach the relic on the ridge!\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact\nFind the weapon • Defeat the guardian • Claim the ridge relic",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 8.09659999990462,
+      "player": {
+        "position": {
+          "x": -8.146435813896307,
+          "y": 0.47979626606912484,
+          "z": -1.0340835736272567
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_find": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Relic Frontier",
+    "text": "Relic Frontier\n\nExplore an overgrown frontier outpost. Recover a weapon, defeat the stone guardian, claim the ridge relic and cross the sealed border gate.\n\nBegin journey\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nFind the weapon • Defeat the guardian • Claim the ridge relic",
+    "state": {},
+    "playtime": 0,
+    "player": {
+      "position": {
+        "x": -8,
+        "y": 0.5588811713085078,
+        "z": -8
+      },
+      "visible": true,
+      "controller": "thirdperson"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {
+      "obj_find": "active"
+    },
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "A relic glows atop the ridge...\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nReach the relic on the ridge!\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact\nFind the weapon • Defeat the guardian • Claim the ridge relic",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:10:54.617Z"
+}

@@ -1,0 +1,943 @@
+{
+  "id": "sentinel-maze",
+  "inputOnly": true,
+  "startedAt": "2026-09-08T01:11:50.061Z",
+  "standaloneSHA256": "f97cadc650211c66bd6b6d4f91704e2ff5f2e9ca2ff9e3dbff08b9206f4db73b",
+  "events": [
+    {
+      "capture": "opening",
+      "sim": 0.43390000009536744,
+      "ended": false,
+      "health": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "inventory": {},
+      "pos": {
+        "x": -8,
+        "y": 0.5003414976354006,
+        "z": -8
+      },
+      "basis": {
+        "forward": {
+          "x": 0,
+          "y": -0.5165836230654292,
+          "z": 0.8562367431853148
+        },
+        "right": {
+          "x": -1,
+          "y": 0,
+          "z": 0
+        },
+        "up": {
+          "x": 0,
+          "y": 0.8562367431853148,
+          "z": 0.5165836230654292
+        }
+      },
+      "overlay": "",
+      "text": "Health 100 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "enemies": [
+        {
+          "id": "obj59",
+          "p": {
+            "x": 10,
+            "y": 0,
+            "z": 6.54119999974966
+          }
+        }
+      ],
+      "visibleHelpers": []
+    },
+    {
+      "input": [
+        "d"
+      ],
+      "seconds": 0.16,
+      "sim": 0.6008000000715255
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 0.8346000000238415
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 1.0514999999999992
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 1.2683000000715245
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 1.4853000000715244
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 1.7029000000953662
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 1.9191000000238407
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 2.1363000000715244
+    },
+    {
+      "input": [
+        "d"
+      ],
+      "seconds": 0.16,
+      "sim": 2.353300000071524
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 2.5697000000476824
+    },
+    {
+      "input": [
+        "a"
+      ],
+      "seconds": 0.16,
+      "sim": 2.7869000000953656
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 3.0038000000715233
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 3.2371000000238404
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 3.471200000047682
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 3.687700000047681
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 3.8653000000715227
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 4.082300000071522
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 4.248900000095364
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 4.433900000095363
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 4.650800000071521
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 4.8679000000953625
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 5.101200000166887
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 5.3185000001192035
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 5.552200000166888
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 5.768700000166888
+    },
+    {
+      "input": [
+        "a"
+      ],
+      "seconds": 0.16,
+      "sim": 5.98580000007152
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 6.202600000143045
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 6.419500000119203
+    },
+    {
+      "input": [
+        "d"
+      ],
+      "seconds": 0.16,
+      "sim": 6.636300000071518
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 6.853200000166885
+    },
+    {
+      "input": [
+        "a"
+      ],
+      "seconds": 0.16,
+      "sim": 7.070100000143043
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 7.287100000143043
+    },
+    {
+      "input": [
+        "d"
+      ],
+      "seconds": 0.16,
+      "sim": 7.503900000095359
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 7.72090000009536
+    },
+    {
+      "input": [
+        "a"
+      ],
+      "seconds": 0.16,
+      "sim": 7.9385000001192
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 8.155000000119196
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 8.37160000014304
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 8.588600000143037
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 8.772400000095352
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 8.979100000143038
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 9.195500000119196
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 9.412600000143037
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 9.646700000047671
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 9.863900000095354
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 10.080300000071512
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 10.296800000071512
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 10.513700000047669
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 10.730900000095351
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 10.947500000119192
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 11.165000000119193
+    },
+    {
+      "input": [
+        "a"
+      ],
+      "seconds": 0.16,
+      "sim": 11.381800000071507
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 11.599000000119194
+    },
+    {
+      "input": [
+        "d"
+      ],
+      "seconds": 0.16,
+      "sim": 11.815500000119192
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 12.032100000143034
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 12.249300000071509
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 12.466000000119193
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 12.683200000047666
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 12.899700000047668
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 13.11670000004767
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 13.333800000071511
+    },
+    {
+      "input": [
+        "a"
+      ],
+      "seconds": 0.16,
+      "sim": 13.550600000143037
+    },
+    {
+      "input": [
+        "w"
+      ],
+      "seconds": 0.16,
+      "sim": 13.767300000071511
+    },
+    {
+      "input": [
+        "d"
+      ],
+      "seconds": 0.16,
+      "sim": 13.984500000119194
+    },
+    {
+      "capture": "normal-walking-goal",
+      "sim": 14.08420000004767,
+      "ended": true,
+      "health": {
+        "maxHealth": 100,
+        "health": 92
+      },
+      "inventory": {},
+      "pos": {
+        "x": 9.18884390796654,
+        "y": 0.49990640635405414,
+        "z": 8.11740684244585
+      },
+      "basis": {
+        "forward": {
+          "x": -0.777934053267548,
+          "y": -0.447098894671753,
+          "z": 0.44149879631774785
+        },
+        "right": {
+          "x": -0.4935790172037101,
+          "y": 0,
+          "z": -0.8697009565225392
+        },
+        "up": {
+          "x": -0.3888423363561936,
+          "y": 0.8944845322213775,
+          "z": 0.22067863302494894
+        }
+      },
+      "overlay": "win visible",
+      "text": "Maze escaped\n\nYou passed the sentinel and reached the exit.\n\nRestart\nHealth 92 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "enemies": [
+        {
+          "id": "obj59",
+          "p": {
+            "x": 9.91332776865758,
+            "y": 0,
+            "z": -2.8797513578193703
+          }
+        }
+      ],
+      "visibleHelpers": []
+    },
+    {
+      "capture": "win-restart",
+      "sim": 0.43389999997615825,
+      "ended": false,
+      "health": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "inventory": {},
+      "pos": {
+        "x": -8,
+        "y": 0.5003414976354006,
+        "z": -8
+      },
+      "basis": {
+        "forward": {
+          "x": 0,
+          "y": -0.5165836075584171,
+          "z": 0.8562367525409846
+        },
+        "right": {
+          "x": -1,
+          "y": 0,
+          "z": 0
+        },
+        "up": {
+          "x": 0,
+          "y": 0.8562367525409846,
+          "z": 0.5165836075584171
+        }
+      },
+      "overlay": "",
+      "text": "Health 100 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "enemies": [
+        {
+          "id": "obj59",
+          "p": {
+            "x": 10,
+            "y": 0,
+            "z": 6.5405
+          }
+        }
+      ],
+      "visibleHelpers": []
+    },
+    {
+      "capture": "waiting-for-guardian",
+      "sim": 10.611899999976156,
+      "ended": false,
+      "health": {
+        "maxHealth": 100,
+        "health": 92
+      },
+      "inventory": {},
+      "pos": {
+        "x": -8,
+        "y": 0.5003414976354006,
+        "z": -8
+      },
+      "basis": {
+        "forward": {
+          "x": 0,
+          "y": -0.5141378520968589,
+          "z": 0.8577075661559879
+        },
+        "right": {
+          "x": -0.9999999999999999,
+          "y": 0,
+          "z": 0
+        },
+        "up": {
+          "x": 0,
+          "y": 0.8577075661559878,
+          "z": 0.5141378520968588
+        }
+      },
+      "overlay": "",
+      "text": "Health 92 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "enemies": [
+        {
+          "id": "obj59",
+          "p": {
+            "x": -7.908558588970723,
+            "y": 0,
+            "z": -8.038919584263978
+          }
+        }
+      ],
+      "visibleHelpers": []
+    },
+    {
+      "capture": "taking-damage",
+      "sim": 10.778699999928472,
+      "ended": false,
+      "health": {
+        "maxHealth": 100,
+        "health": 92
+      },
+      "inventory": {},
+      "pos": {
+        "x": -8,
+        "y": 0.5003414976354006,
+        "z": -8
+      },
+      "basis": {
+        "forward": {
+          "x": 0,
+          "y": -0.5141378520968589,
+          "z": 0.8577075661559879
+        },
+        "right": {
+          "x": -0.9999999999999999,
+          "y": 0,
+          "z": 0
+        },
+        "up": {
+          "x": 0,
+          "y": 0.8577075661559878,
+          "z": 0.5141378520968588
+        }
+      },
+      "overlay": "",
+      "text": "Health 92 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "enemies": [
+        {
+          "id": "obj59",
+          "p": {
+            "x": -7.908558588970723,
+            "y": 0,
+            "z": -8.038919584263978
+          }
+        }
+      ],
+      "visibleHelpers": []
+    },
+    {
+      "capture": "outcome",
+      "sim": 22.35829999995231,
+      "ended": true,
+      "health": {
+        "maxHealth": 100,
+        "health": 0
+      },
+      "inventory": {},
+      "pos": {
+        "x": -8,
+        "y": 0.5003414976354006,
+        "z": -8
+      },
+      "basis": {
+        "forward": {
+          "x": 0,
+          "y": -0.5141378520968589,
+          "z": 0.8577075661559879
+        },
+        "right": {
+          "x": -0.9999999999999999,
+          "y": 0,
+          "z": 0
+        },
+        "up": {
+          "x": 0,
+          "y": 0.8577075661559878,
+          "z": 0.5141378520968588
+        }
+      },
+      "overlay": "lose visible",
+      "text": "Caught by the sentinel\n\nYou ran out of health. Restart and keep clear of the patrolling guardian.\n\nRestart\nHealth 0 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "enemies": [
+        {
+          "id": "obj59",
+          "p": {
+            "x": -7.908558588970723,
+            "y": 0,
+            "z": -8.038919584263978
+          }
+        }
+      ],
+      "visibleHelpers": []
+    },
+    {
+      "capture": "restart",
+      "sim": 0.45039999997615826,
+      "ended": false,
+      "health": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "inventory": {},
+      "pos": {
+        "x": -8,
+        "y": 0.5003414976354006,
+        "z": -8
+      },
+      "basis": {
+        "forward": {
+          "x": 0,
+          "y": -0.5163200722925435,
+          "z": 0.8563956929759878
+        },
+        "right": {
+          "x": -1,
+          "y": 0,
+          "z": 0
+        },
+        "up": {
+          "x": 0,
+          "y": 0.8563956929759878,
+          "z": 0.5163200722925435
+        }
+      },
+      "overlay": "",
+      "text": "Health 100 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "enemies": [
+        {
+          "id": "obj59",
+          "p": {
+            "x": 10,
+            "y": 0,
+            "z": 6.483799999833105
+          }
+        }
+      ],
+      "visibleHelpers": []
+    }
+  ],
+  "errors": [],
+  "win": {
+    "sim": 14.08420000004767,
+    "ended": true,
+    "health": {
+      "maxHealth": 100,
+      "health": 92
+    },
+    "inventory": {},
+    "pos": {
+      "x": 9.18884390796654,
+      "y": 0.49990640635405414,
+      "z": 8.11740684244585
+    },
+    "basis": {
+      "forward": {
+        "x": -0.777934053267548,
+        "y": -0.447098894671753,
+        "z": 0.44149879631774785
+      },
+      "right": {
+        "x": -0.4935790172037101,
+        "y": 0,
+        "z": -0.8697009565225392
+      },
+      "up": {
+        "x": -0.3888423363561936,
+        "y": 0.8944845322213775,
+        "z": 0.22067863302494894
+      }
+    },
+    "overlay": "win visible",
+    "text": "Maze escaped\n\nYou passed the sentinel and reached the exit.\n\nRestart\nHealth 92 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "enemies": [
+      {
+        "id": "obj59",
+        "p": {
+          "x": 9.91332776865758,
+          "y": 0,
+          "z": -2.8797513578193703
+        }
+      }
+    ],
+    "visibleHelpers": []
+  },
+  "winRestart": {
+    "sim": 0.43389999997615825,
+    "ended": false,
+    "health": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "inventory": {},
+    "pos": {
+      "x": -8,
+      "y": 0.5003414976354006,
+      "z": -8
+    },
+    "basis": {
+      "forward": {
+        "x": 0,
+        "y": -0.5165836075584171,
+        "z": 0.8562367525409846
+      },
+      "right": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "up": {
+        "x": 0,
+        "y": 0.8562367525409846,
+        "z": 0.5165836075584171
+      }
+    },
+    "overlay": "",
+    "text": "Health 100 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "enemies": [
+      {
+        "id": "obj59",
+        "p": {
+          "x": 10,
+          "y": 0,
+          "z": 6.5405
+        }
+      }
+    ],
+    "visibleHelpers": []
+  },
+  "final": {
+    "sim": 22.35829999995231,
+    "ended": true,
+    "health": {
+      "maxHealth": 100,
+      "health": 0
+    },
+    "inventory": {},
+    "pos": {
+      "x": -8,
+      "y": 0.5003414976354006,
+      "z": -8
+    },
+    "basis": {
+      "forward": {
+        "x": 0,
+        "y": -0.5141378520968589,
+        "z": 0.8577075661559879
+      },
+      "right": {
+        "x": -0.9999999999999999,
+        "y": 0,
+        "z": 0
+      },
+      "up": {
+        "x": 0,
+        "y": 0.8577075661559878,
+        "z": 0.5141378520968588
+      }
+    },
+    "overlay": "lose visible",
+    "text": "Caught by the sentinel\n\nYou ran out of health. Restart and keep clear of the patrolling guardian.\n\nRestart\nHealth 0 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "enemies": [
+      {
+        "id": "obj59",
+        "p": {
+          "x": -7.908558588970723,
+          "y": 0,
+          "z": -8.038919584263978
+        }
+      }
+    ],
+    "visibleHelpers": []
+  },
+  "restart": {
+    "sim": 0.45039999997615826,
+    "ended": false,
+    "health": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "inventory": {},
+    "pos": {
+      "x": -8,
+      "y": 0.5003414976354006,
+      "z": -8
+    },
+    "basis": {
+      "forward": {
+        "x": 0,
+        "y": -0.5163200722925435,
+        "z": 0.8563956929759878
+      },
+      "right": {
+        "x": -1,
+        "y": 0,
+        "z": 0
+      },
+      "up": {
+        "x": 0,
+        "y": 0.8563956929759878,
+        "z": 0.5163200722925435
+      }
+    },
+    "overlay": "",
+    "text": "Health 100 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "enemies": [
+      {
+        "id": "obj59",
+        "p": {
+          "x": 10,
+          "y": 0,
+          "z": 6.483799999833105
+        }
+      }
+    ],
+    "visibleHelpers": []
+  },
+  "pass": true,
+  "finishedAt": "2026-09-08T01:12:29.471Z"
+}

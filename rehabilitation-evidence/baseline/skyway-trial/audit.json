@@ -1,0 +1,132 @@
+{
+  "id": "skyway-trial",
+  "phase": "baseline",
+  "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/skyway-trial.html",
+  "startedAt": "2026-09-08T00:07:44.641Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Skyway Trial",
+      "text": "Press F to interact",
+      "state": {},
+      "playtime": 1.5820000001192096,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Skyway Trial",
+      "text": "Press F to interact",
+      "state": {},
+      "playtime": 9.909400000333779,
+      "player": {
+        "position": {
+          "x": -3.176217222183875,
+          "y": 0.55,
+          "z": -0.5367838680810745
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Skyway Trial",
+      "text": "Press F to interact",
+      "state": {},
+      "playtime": 24.443600000500698,
+      "player": {
+        "position": {
+          "x": 1.7721991358013671,
+          "y": 0.55,
+          "z": 1.6079410531020712
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Skyway Trial",
+    "text": "Press F to interact",
+    "state": {},
+    "playtime": 0.3677000000476838,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 0.55,
+        "z": 0
+      },
+      "visible": true,
+      "controller": "thirdperson"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:08:18.391Z"
+}

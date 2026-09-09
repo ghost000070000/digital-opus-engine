@@ -1,0 +1,198 @@
+{
+  "id": "temple-switch-puzzle",
+  "inputs": [
+    {
+      "target": [
+        -10,
+        -6
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "switches": 1
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 6.944099999994035,
+        "position": {
+          "x": -10.907541293052876,
+          "y": 0.5001443172459195,
+          "z": -6.734569046256908
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": -0.5430846236578171,
+          "y": -0.4309167265557472,
+          "z": -0.7206732035540983
+        },
+        "text": "Switch activated!\nFind both switches to open the gate, then reach the goal.\nActivate both seals, then enter the northern shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        10,
+        -6
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "switches": 2
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 11.319699999995546,
+        "position": {
+          "x": 11.588948689156606,
+          "y": 0.5001010180370282,
+          "z": -5.662214262521876
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": 0.9373610100220316,
+          "y": -0.34297802275816425,
+          "z": 0.06099518665744786
+        },
+        "text": "Switch activated!\nFind both switches to open the gate, then reach the goal.\nActivate both seals, then enter the northern shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        0,
+        5
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "switches": 2
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 15.155899999998535,
+        "position": {
+          "x": -0.780338357822337,
+          "y": 0.49991821471162234,
+          "z": 5.076042971253564
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": -0.9233666422114731,
+          "y": -0.35994194723221845,
+          "z": 0.1335508842119293
+        },
+        "text": "Switch activated!\nFind both switches to open the gate, then reach the goal.\nActivate both seals, then enter the northern shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        0,
+        11
+      ],
+      "result": "ended",
+      "state": {
+        "level": 0,
+        "state": {
+          "switches": 2
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": true,
+        "playtime": 16.67259999999407,
+        "position": {
+          "x": -0.6786897737776665,
+          "y": 0.5000681143667296,
+          "z": 10.154321108431295
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": 0.0486806620974566,
+          "y": -0.356886096692805,
+          "z": 0.9328786132853122
+        },
+        "text": "You made it!\nFind both switches to open the gate, then reach the goal.\nGateway opened\n\nThe two seals have opened the shrine.\n\nRestart\nActivate both seals, then enter the northern shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "dialogue": false
+      }
+    }
+  ],
+  "errors": [],
+  "started": "2026-09-08T16:00:29.355Z",
+  "start": {
+    "level": 0,
+    "state": {
+      "switches": 0
+    },
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 2.255199999995529,
+    "position": {
+      "x": 0,
+      "y": 0.4999050655186603,
+      "z": -10
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": 0,
+      "y": -0.5141378581539574,
+      "z": 0.8577075625251658
+    },
+    "text": "Find both switches to open the gate, then reach the goal.\nActivate both seals, then enter the northern shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "dialogue": false
+  },
+  "final": {
+    "level": 0,
+    "state": {
+      "switches": 2
+    },
+    "flags": {},
+    "inventory": {},
+    "ended": true,
+    "playtime": 17.690299999997045,
+    "position": {
+      "x": 1.6926944163672288,
+      "y": 0.500199514321463,
+      "z": 12.389648166897356
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": 0.8625394558553539,
+      "y": -0.44953719404158193,
+      "z": 0.2322541673812791
+    },
+    "text": "You made it!\nFind both switches to open the gate, then reach the goal.\nGateway opened\n\nThe two seals have opened the shrine.\n\nRestart\nActivate both seals, then enter the northern shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "dialogue": false
+  },
+  "completed": true,
+  "restart": {
+    "level": 0,
+    "state": {
+      "switches": 0
+    },
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 0.5173999999985099,
+    "position": {
+      "x": 0,
+      "y": 0.4999050655186603,
+      "z": -10
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": 0,
+      "y": -0.5154651394620495,
+      "z": 0.8569105495904282
+    },
+    "text": "Find both switches to open the gate, then reach the goal.\nActivate both seals, then enter the northern shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "dialogue": false
+  },
+  "finished": "2026-09-08T16:00:50.180Z"
+}

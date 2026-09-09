@@ -1,0 +1,141 @@
+{
+  "id": "survival-arena-3",
+  "phase": "baseline",
+  "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/survival-arena-3.html",
+  "startedAt": "2026-09-08T00:05:31.961Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Survival Arena 3",
+      "text": "Press F to interact",
+      "state": {},
+      "playtime": 0.9961000000238418,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.785131610498411,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Survival Arena 3",
+      "text": "MAP EDGE — TURN INWARD\nPress F to interact",
+      "state": {},
+      "playtime": 10.364700000047687,
+      "player": {
+        "position": {
+          "x": -35.50513491747421,
+          "y": -1.1836065678125196,
+          "z": 17.195577759760027
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": [
+        "obj49",
+        "obj50",
+        "obj51"
+      ]
+    },
+    {
+      "title": "Survival Arena 3",
+      "text": "MAP EDGE — TURN INWARD\nSurvived!\n\nBack to Editor\nPress F to interact",
+      "state": {},
+      "playtime": 25.428000000119226,
+      "player": {
+        "position": {
+          "x": -30.314661893765308,
+          "y": -1.1386818587632332,
+          "z": 20.65067897029497
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": [
+        "obj49",
+        "obj50",
+        "obj51",
+        "obj52"
+      ]
+    }
+  ],
+  "start": {
+    "title": "Survival Arena 3",
+    "text": "Survival Arena 3\n\nStart\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+    "state": {},
+    "playtime": 0,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 0.8061405585484482,
+        "z": 0
+      },
+      "visible": true,
+      "controller": "hovercraft"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "MAP EDGE — TURN INWARD\nSurvived!\n\nBack to Editor\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:06:02.704Z"
+}

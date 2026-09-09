@@ -1,0 +1,140 @@
+{
+  "id": "skyway-trial",
+  "phase": "after-bc-final",
+  "url": "http://localhost:8837/dist/games/skyway-trial.html",
+  "startedAt": "2026-09-08T00:44:18.058Z",
+  "seconds": 4,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 480
+    },
+    {
+      "key": "d",
+      "milliseconds": 400
+    },
+    {
+      "key": "w",
+      "milliseconds": 600
+    },
+    {
+      "key": "a",
+      "milliseconds": 400
+    },
+    {
+      "key": "s",
+      "milliseconds": 320
+    },
+    {
+      "key": "w",
+      "milliseconds": 400
+    },
+    {
+      "key": "d",
+      "milliseconds": 200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Skyway Trial",
+      "text": "Jump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 0.6722000000476837,
+      "simulationSeconds": 0.6722000000476837,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 1
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Skyway Trial",
+      "text": "Jump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 2.311299999952317,
+      "simulationSeconds": 2.311299999952317,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 2.4173516703877853,
+          "y": 2.5500000000000003,
+          "z": -0.17738189454295494
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Skyway Trial",
+      "text": "Jump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 4.442099999904633,
+      "simulationSeconds": 4.442099999904633,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 1.3999090242762915,
+          "y": 0.55,
+          "z": -0.021447571734392976
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Skyway Trial",
+    "text": "Skyway Trial\n\nFive suspended platforms rise above a quiet blue void. Commit to each jump and reach the amber summit.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "state": {},
+    "playtime": 0,
+    "simulationSeconds": 0,
+    "ended": false,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 1.75,
+        "z": 1
+      },
+      "visible": false,
+      "controller": "thirdperson"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nJump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:44:30.874Z"
+}

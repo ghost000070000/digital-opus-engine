@@ -1,0 +1,184 @@
+{
+  "id": "forest-range",
+  "inputs": [
+    {
+      "target": [
+        -8,
+        -3
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 7.599499999999998,
+        "position": {
+          "x": -8.913655147769902,
+          "y": -0.47044089394619837,
+          "z": -3.272463185505844
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": -0.9012087384951221,
+          "y": -0.38520272362153046,
+          "z": 0.19859927334858396
+        },
+        "text": "Explore the three groves and reach the lookout.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        0,
+        1
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 15.197199999995526,
+        "position": {
+          "x": -0.15693475091597514,
+          "y": 0.6962374633723202,
+          "z": 1.863735210654879
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": 0.2573915475659453,
+          "y": -0.4528336522238209,
+          "z": 0.8536341573854944
+        },
+        "text": "Explore the three groves and reach the lookout.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        8,
+        4
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 24.5594999999851,
+        "position": {
+          "x": 8.102428296450286,
+          "y": -0.7164427488730705,
+          "z": 4.189988910698364
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": -0.10196013249640383,
+          "y": -0.5115331728136764,
+          "z": 0.8531927944447781
+        },
+        "text": "Explore the three groves and reach the lookout.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        10,
+        7
+      ],
+      "result": "ended",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {},
+        "inventory": {},
+        "ended": true,
+        "playtime": 25.952899999983604,
+        "position": {
+          "x": 10.459095783953208,
+          "y": -1.7861652973898217,
+          "z": 6.948542741299539
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": 0.426927631195007,
+          "y": -0.3787687124198037,
+          "z": 0.8211376621578529
+        },
+        "text": "The range is yours\n\nYou reached the lookout above the three groves.\n\nRestart\nExplore the three groves and reach the lookout.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "dialogue": false
+      }
+    }
+  ],
+  "errors": [],
+  "started": "2026-09-08T15:57:15.146Z",
+  "start": {
+    "level": 0,
+    "state": {},
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 1.9036000000014908,
+    "position": {
+      "x": -8,
+      "y": -0.5127378217005152,
+      "z": -6
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": 0.7427965381097983,
+      "y": -0.5141378582599537,
+      "z": 0.4288537812308142
+    },
+    "text": "Explore the three groves and reach the lookout.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "dialogue": false
+  },
+  "final": {
+    "level": 0,
+    "state": {},
+    "flags": {},
+    "inventory": {},
+    "ended": true,
+    "playtime": 27.145899999983616,
+    "position": {
+      "x": 8.13494510638581,
+      "y": -1.8424342840456176,
+      "z": 10.090144126732225
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": -0.8263494065862474,
+      "y": -0.4862421853995018,
+      "z": -0.2841041980901954
+    },
+    "text": "The range is yours\n\nYou reached the lookout above the three groves.\n\nRestart\nExplore the three groves and reach the lookout.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "dialogue": false
+  },
+  "completed": true,
+  "restart": {
+    "level": 0,
+    "state": {},
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 0.6157000000029803,
+    "position": {
+      "x": -8,
+      "y": -0.5127378217005152,
+      "z": -6
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": 0.7425393420908071,
+      "y": -0.5146329765925116,
+      "z": 0.4287052890400151
+    },
+    "text": "Explore the three groves and reach the lookout.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "dialogue": false
+  },
+  "finished": "2026-09-08T15:57:50.665Z"
+}

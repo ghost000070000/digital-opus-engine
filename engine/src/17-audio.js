@@ -184,6 +184,98 @@ class AudioEngine {
     this._later(() => this.playBlip({ frequency: 640, duration: 0.25, type: 'triangle' }), 50);
   }
 
+  /**
+   * Decodes raw audio file bytes (an ArrayBuffer -- e.g. from a File's
+   * .arrayBuffer()) into an AudioBuffer using the browser's own native
+   * decoder (mp3/wav/ogg/whatever the browser itself supports -- no bundled
+   * codec, no format allowlist to maintain). `.slice(0)` guards against
+   * some browsers detaching/transferring the input buffer during decode,
+   * which would otherwise leave the CALLER's original ArrayBuffer unusable
+   * after this call as an unexpected side effect.
+   */
+  async decodeAudio(arrayBuffer) {
+    if (!(arrayBuffer instanceof ArrayBuffer)) fail('AudioEngine.decodeAudio', 'arrayBuffer', 'an ArrayBuffer', arrayBuffer);
+    this._ensureContext();
+    return this.ctx.decodeAudioData(arrayBuffer.slice(0));
+  }
+
+  /**
+   * Plays a decoded AudioBuffer (from decodeAudio) through the same
+   * gain/panning routing playBlip already uses -- one-shot or looping,
+   * optionally 3D-positioned. Returns a handle with .stop() for looping
+   * playback (e.g. per-level ambient audio); a one-shot's handle is still
+   * valid to call .stop() on early, but otherwise ends on its own.
+   */
+  playBuffer(buffer, { volume = 1, loop = false, position = null, category = 'sfx' } = {}) {
+    if (!(buffer instanceof AudioBuffer)) fail('AudioEngine.playBuffer', 'buffer', 'an AudioBuffer (from AudioEngine.decodeAudio)', buffer);
+    positive(volume, 'options.volume', 'AudioEngine.playBuffer', true);
+    if (typeof loop !== 'boolean') fail('AudioEngine.playBuffer', 'options.loop', 'a boolean', loop);
+    if (position !== null) vector(position, 'options.position', 'AudioEngine.playBuffer');
+    if (!['music', 'sfx', 'ambient'].includes(category)) fail('AudioEngine.playBuffer', 'options.category', '"music", "sfx", or "ambient"', category);
+    this._ensureContext();
+    const now = this.ctx.currentTime;
+
+    const source = this.ctx.createBufferSource();
+    source.buffer = buffer;
+    source.loop = loop;
+
+    const gain = this.ctx.createGain();
+    gain.gain.value = volume;
+    source.connect(gain);
+
+    let out = gain;
+    if (position) {
+      const panner = this.ctx.createPanner();
+      panner.panningModel = 'HRTF';
+      panner.distanceModel = 'inverse';
+      panner.positionX.value = position.x;
+      panner.positionY.value = position.y;
+      panner.positionZ.value = position.z;
+      gain.connect(panner);
+      out = panner;
+    }
+    out.connect({ music: this.musicGain, sfx: this.sfxGain, ambient: this.ambientGain }[category]);
+
+    source.start(now);
+    let stopped = false;
+    const self = this;
+    return {
+      stop: () => {
+        if (stopped) return;
+        stopped = true;
+        try { source.stop(); } catch (e) {}
+      },
+      // Wave 9 (Priority G/Sections 67-69): the reusable engine-level gap
+      // Wave 8's Audio Zones hit head-on -- a playBuffer() handle had no way
+      // to change its own live volume, so Audio Zone transitions could only
+      // hard-cut (stop the old loop, start the new one) rather than
+      // crossfade. `setVolume(value, rampSeconds)` is real Web Audio gain
+      // automation (cancelScheduledValues + linearRampToValueAtTime), not a
+      // manual setInterval timer -- so it survives tab-throttling and
+      // doesn't drift. Calling it again before a prior ramp finishes
+      // correctly replaces (not stacks with) the in-flight ramp, since
+      // cancelScheduledValues clears any pending automation first and
+      // setValueAtTime(currentValue, now) pins the true current value as
+      // the new ramp's start point (reading `.value` directly after a
+      // cancel is exactly what the current, already-interpolated gain is).
+      setVolume: (value, rampSeconds = 0) => {
+        if (stopped || !self.ctx) return;
+        const g = gain.gain;
+        const nowT = self.ctx.currentTime;
+        const target = Math.max(0, value);
+        if (!rampSeconds || rampSeconds <= 0) {
+          g.cancelScheduledValues(nowT);
+          g.setValueAtTime(target, nowT);
+          return;
+        }
+        const current = g.value;
+        g.cancelScheduledValues(nowT);
+        g.setValueAtTime(current, nowT);
+        g.linearRampToValueAtTime(target, nowT + rampSeconds);
+      },
+    };
+  }
+
   startAmbientDrone() {
     this._ensureContext();
     if (this._ambientSource) return;

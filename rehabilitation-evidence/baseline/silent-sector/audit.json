@@ -1,0 +1,140 @@
+{
+  "id": "silent-sector",
+  "phase": "baseline",
+  "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/silent-sector.html",
+  "startedAt": "2026-09-08T00:01:32.402Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Silent Sector",
+      "text": "Reach the Security Wing\nPress F to interact",
+      "state": {},
+      "playtime": 0.5,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 0
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_reach_wing": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Silent Sector",
+      "text": "Reach the Security Wing\nPress F to interact",
+      "state": {},
+      "playtime": 5.226999999880789,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 0
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_reach_wing": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Silent Sector",
+      "text": "Caught\n\nA guard sounded the alarm.\n\nBack to Editor\nReach the Security Wing\nPress F to interact",
+      "state": {},
+      "playtime": 13.73050000011918,
+      "player": {
+        "position": {
+          "x": 2.020697580435532,
+          "y": 0.55,
+          "z": 1.100749524795596
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_reach_wing": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Silent Sector",
+    "text": "Silent Sector\n\nGet in, get the data, get out. Stay unseen.\n\nInfiltrate\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+    "state": {},
+    "playtime": 0,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 0.55,
+        "z": 0
+      },
+      "visible": false,
+      "controller": "firstperson"
+    },
+    "camera": {
+      "mode": "fixed"
+    },
+    "audio": {},
+    "objectives": {
+      "obj_reach_wing": "active"
+    },
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "Caught\n\nA guard sounded the alarm.\n\nBack to Editor\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nReach the Security Wing\nPress F to interact",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:02:06.094Z"
+}

@@ -1,0 +1,140 @@
+{
+  "id": "temple-switch-puzzle",
+  "phase": "baseline",
+  "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/temple-switch-puzzle.html",
+  "startedAt": "2026-09-08T00:08:18.885Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Temple Switch Puzzle",
+      "text": "Find both switches to open the gate, then reach the goal.\nPress F to interact",
+      "state": {
+        "switches": 0
+      },
+      "playtime": 1.8572000000476836,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.0936093914972231,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Temple Switch Puzzle",
+      "text": "MAP EDGE — TURN INWARD\nFind both switches to open the gate, then reach the goal.\nPress F to interact",
+      "state": {
+        "switches": 0
+      },
+      "playtime": 10.806799999952311,
+      "player": {
+        "position": {
+          "x": -35.830385954911286,
+          "y": -1.8499999999999934,
+          "z": 12.464340765091201
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Temple Switch Puzzle",
+      "text": "MAP EDGE — TURN INWARD\nFind both switches to open the gate, then reach the goal.\nPress F to interact",
+      "state": {
+        "switches": 0
+      },
+      "playtime": 26.252800000190746,
+      "player": {
+        "position": {
+          "x": -30.32762113835546,
+          "y": -1.8499999999999999,
+          "z": 20.67103992366934
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Temple Switch Puzzle",
+    "text": "Find both switches to open the gate, then reach the goal.\nPress F to interact",
+    "state": {
+      "switches": 0
+    },
+    "playtime": 0.49889999997615814,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 1.0936093914972231,
+        "z": 0
+      },
+      "visible": true,
+      "controller": "hovercraft"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "MAP EDGE — TURN INWARD\nFind both switches to open the gate, then reach the goal.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:08:50.710Z"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "foglight",
+  "index": 1,
+  "inputOnly": true,
+  "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+  "errors": [],
+  "actions": [
+    {
+      "key": "w",
+      "ms": 950
+    },
+    {
+      "key": "d",
+      "ms": 520
+    },
+    {
+      "key": "Space",
+      "ms": 100
+    },
+    {
+      "key": "f",
+      "ms": 0
+    },
+    {
+      "key": "q",
+      "ms": 0
+    },
+    {
+      "key": "w",
+      "ms": 700
+    }
+  ],
+  "startedAt": "2026-09-08T17:41:14.234Z",
+  "sourceSHA256": "ed9def71ec0354fef1a510dffd7a0cac913a419dfa7416e02a52d3960bb17bdb",
+  "final": {
+    "title": "Foglight",
+    "sim": 4.087899999998512,
+    "ended": false,
+    "paused": false,
+    "controller": "thirdperson",
+    "position": {
+      "x": -2.896592871918091,
+      "y": 0.79,
+      "z": 1.7118869471254854
+    },
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "objectives": {
+      "objective1": "active"
+    },
+    "inventory": {},
+    "helpers": [],
+    "webglLost": false
+  },
+  "pauseVisible": true,
+  "restartPassed": true,
+  "passed": true,
+  "finishedAt": "2026-09-08T17:41:20.098Z"
+}

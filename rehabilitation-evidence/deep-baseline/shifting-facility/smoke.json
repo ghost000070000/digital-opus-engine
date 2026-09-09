@@ -1,0 +1,24 @@
+{
+  "id": "shifting-facility",
+  "sourceSHA256": "83c9e0148e3fae20a90e9b3b8d9aa91d1efcb4a50309b0fe0d189e244491cb44",
+  "errors": [],
+  "capturedAt": "2026-09-08T17:10:20.965Z",
+  "sha256": "f39a730f9b6923e095fc2ccf1f673c1c1104e565a5ed9fa165747597d75d48e4",
+  "state": {
+    "title": "Shifting Facility",
+    "sim": 1.40189999999851,
+    "ended": false,
+    "text": "Pass the entry scanner, try the swing door, and reach the far console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+    "controller": "firstperson",
+    "bodyVisible": false,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 39
+  },
+  "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPass the entry scanner, try the swing door, and reach the far console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+  "passed": true
+}

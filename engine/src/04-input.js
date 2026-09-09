@@ -15,12 +15,33 @@ class Input {
       this.keys.add(e.code);
     };
     this._onKeyUp = (e) => this.keys.delete(e.code);
+    // Wave 6 (Priority D): mouse BUTTONS join the exact same `keys` Set
+    // keyboard codes already live in, under synthetic codes 'Mouse0'/
+    // 'Mouse1'/'Mouse2' (matching MouseEvent.button's own 0=left/1=middle/
+    // 2=right numbering) -- isDown/wasPressed/simulateKeyDown all already
+    // work identically for any code string, so a mouse button becomes a
+    // fully first-class Input Action with ZERO new API surface, the same
+    // way Wave 4's touch buttons already reused this Set instead of
+    // inventing a second "touch button state" mechanism. Gated on
+    // `e.pointerType === 'mouse'` specifically so an ordinary touch drag
+    // (camera look, on-screen joystick) can never be misread as a
+    // mouse-button press -- touch's own buttons are simulateKeyDown/Up'd
+    // explicitly by HUD.addTouchButton instead, never inferred from a
+    // touch pointer's `.button` value.
     this._onPointerDown = (e) => {
       this.dragging = true;
       this._lastX = e.clientX;
       this._lastY = e.clientY;
+      if (e.pointerType === 'mouse') {
+        const code = `Mouse${e.button}`;
+        if (!this.keys.has(code)) this.pressed.add(code);
+        this.keys.add(code);
+      }
     };
-    this._onPointerUp = () => (this.dragging = false);
+    this._onPointerUp = (e) => {
+      this.dragging = false;
+      if (e && e.pointerType === 'mouse') this.keys.delete(`Mouse${e.button}`);
+    };
     this._onPointerMove = (e) => {
       if (!this.dragging) return;
       this.dragDX += e.clientX - this._lastX;
@@ -48,6 +69,19 @@ class Input {
 
   isDown(code) {
     return this.keys.has(code);
+  }
+
+  // Touch devices have no physical keyboard, so game logic gated on
+  // isDown/wasPressed('KeyW') etc. has nothing to read on touch -- this
+  // lets an on-screen control (see HUD.addTouchButton) drive the exact
+  // same key-state Sets, with zero changes needed to existing driving code.
+  simulateKeyDown(code) {
+    if (!this.keys.has(code)) this.pressed.add(code);
+    this.keys.add(code);
+  }
+
+  simulateKeyUp(code) {
+    this.keys.delete(code);
   }
 
   wasPressed(code) {

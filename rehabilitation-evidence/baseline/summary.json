@@ -1,0 +1,3909 @@
+[
+  {
+    "id": "foglight",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/foglight.html",
+    "startedAt": "2026-09-08T00:00:58.535Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Foglight",
+        "text": "Light the Three Foglights\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 70
+        },
+        "playtime": 0.8899999998807907,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 1.05,
+            "z": 0
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {
+          "objective1": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Foglight",
+        "text": "Light the Three Foglights\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 40
+        },
+        "playtime": 6.274099999904627,
+        "player": {
+          "position": {
+            "x": 2.137463261862072,
+            "y": -2.762421289403585,
+            "z": -8.520072378310164
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {
+          "objective1": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Foglight",
+        "text": "Light the Three Foglights\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 40
+        },
+        "playtime": 17.574099999904615,
+        "player": {
+          "position": {
+            "x": -6.227977019061674,
+            "y": -2.813513546503356,
+            "z": -11.490187086895997
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {
+          "objective1": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Foglight",
+      "text": "Foglight\n\nThe vale has gone dark. Light the three ancient Foglights and reach the Sanctuary before the mist finds you.\n\nEnter the Vale\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+      "state": {},
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.05,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {
+        "objective1": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nLight the Three Foglights\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:01:29.266Z"
+  },
+  {
+    "id": "signal-relay",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/signal-relay.html",
+    "startedAt": "2026-09-08T00:00:58.578Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Signal Relay",
+        "text": "Restore power at all three relay consoles\nWeapon 8/24\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 0.6,
+        "player": {
+          "position": {
+            "x": -30,
+            "y": 0.55,
+            "z": 0
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_restore_power": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Signal Relay",
+        "text": "Restore power at all three relay consoles\nWeapon 7/24\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 6.534499999999993,
+        "player": {
+          "position": {
+            "x": -22.20000000000012,
+            "y": 0.55,
+            "z": 9.1
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_restore_power": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Signal Relay",
+        "text": "Restore power at all three relay consoles\nWeapon 8/22\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 18.06550000011919,
+        "player": {
+          "position": {
+            "x": -24.88160026885182,
+            "y": 0.55,
+            "z": 9.1
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_restore_power": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Signal Relay",
+      "text": "Signal Relay\n\nThe facility has gone dark. Restore power at three relay consoles, avoid the security drones, and get out before they catch you.\n\nDeploy\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+      "state": {},
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": -30,
+          "y": 0.65,
+          "z": 0
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nRestore power at all three relay consoles\nWeapon 8/22\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:01:32.096Z"
+  },
+  {
+    "id": "arsenal-run",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/arsenal-run.html",
+    "startedAt": "2026-09-08T00:01:29.724Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Arsenal Run",
+        "text": "Sidearm 10/30\nClear the compound\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 1.0777000000476837,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 0.55,
+            "z": 0
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_clear": "active"
+        },
+        "inventory": {
+          "Sidearm": 1,
+          "Rifle": 1
+        },
+        "helpers": []
+      },
+      {
+        "title": "Arsenal Run",
+        "text": "Sidearm 9/30\nClear the compound\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 84
+        },
+        "playtime": 6.158600000143045,
+        "player": {
+          "position": {
+            "x": 8.44999999730814,
+            "y": 0.55,
+            "z": 16.260000000000026
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_clear": "active"
+        },
+        "inventory": {
+          "Sidearm": 1,
+          "Rifle": 1
+        },
+        "helpers": []
+      },
+      {
+        "title": "Arsenal Run",
+        "text": "Sidearm 10/28\nClear the compound\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 60
+        },
+        "playtime": 13.670300000071494,
+        "player": {
+          "position": {
+            "x": 5.801013063397599,
+            "y": 0.55,
+            "z": 16.1
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_clear": "active"
+        },
+        "inventory": {
+          "Sidearm": 1,
+          "Rifle": 1
+        },
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Arsenal Run",
+      "text": "Arsenal Run\n\nTwo weapons. Three guards. One way out.\n\nDeploy\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+      "state": {},
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 0
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_clear": "active"
+      },
+      "inventory": {
+        "Sidearm": 1,
+        "Rifle": 1
+      },
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nSidearm 10/28\nClear the compound\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:02:02.240Z"
+  },
+  {
+    "id": "silent-sector",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/silent-sector.html",
+    "startedAt": "2026-09-08T00:01:32.402Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Silent Sector",
+        "text": "Reach the Security Wing\nPress F to interact",
+        "state": {},
+        "playtime": 0.5,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 0.55,
+            "z": 0
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_reach_wing": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Silent Sector",
+        "text": "Reach the Security Wing\nPress F to interact",
+        "state": {},
+        "playtime": 5.226999999880789,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 0.55,
+            "z": 0
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_reach_wing": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Silent Sector",
+        "text": "Caught\n\nA guard sounded the alarm.\n\nBack to Editor\nReach the Security Wing\nPress F to interact",
+        "state": {},
+        "playtime": 13.73050000011918,
+        "player": {
+          "position": {
+            "x": 2.020697580435532,
+            "y": 0.55,
+            "z": 1.100749524795596
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_reach_wing": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Silent Sector",
+      "text": "Silent Sector\n\nGet in, get the data, get out. Stay unseen.\n\nInfiltrate\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+      "state": {},
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 0
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_reach_wing": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "Caught\n\nA guard sounded the alarm.\n\nBack to Editor\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nReach the Security Wing\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:02:06.094Z"
+  },
+  {
+    "id": "power-grid",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/power-grid.html",
+    "startedAt": "2026-09-08T00:02:02.937Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Power Grid",
+        "text": "POWER GRID\nPress F to interact",
+        "state": {},
+        "playtime": 1.0545999999046327,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 5.55,
+            "z": 0
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_find_cell": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Power Grid",
+        "text": "POWER GRID\nPress F to interact",
+        "state": {},
+        "playtime": 7.876300000071516,
+        "player": {
+          "position": {
+            "x": 5.639808754913915,
+            "y": 0.55,
+            "z": 9.1
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_find_cell": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Power Grid",
+        "text": "POWER GRID\nPress F to interact",
+        "state": {},
+        "playtime": 16.51389999997613,
+        "player": {
+          "position": {
+            "x": 7.010996449150169,
+            "y": 0.55,
+            "z": 9.1
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_find_cell": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Power Grid",
+      "text": "Power Grid\n\nRestore power to the facility.\n\nStart\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+      "state": {},
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 5.55,
+          "z": 0
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_find_cell": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPOWER GRID\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:02:36.674Z"
+  },
+  {
+    "id": "relic-frontier",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/relic-frontier.html",
+    "startedAt": "2026-09-08T00:02:06.361Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Relic Frontier",
+        "text": "A relic glows atop the ridge...\nReach the relic on the ridge!\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 1.0381999999284746,
+        "player": {
+          "position": {
+            "x": -8,
+            "y": 0.55,
+            "z": -8
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_find": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Relic Frontier",
+        "text": "A relic glows atop the ridge...\nReach the relic on the ridge!\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 6.341599999904627,
+        "player": {
+          "position": {
+            "x": -8.187852041041038,
+            "y": -1.2706371377236785,
+            "z": -12.077049674161703
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_find": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Relic Frontier",
+        "text": "A relic glows atop the ridge...\nReach the relic on the ridge!\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 16.480499999880763,
+        "player": {
+          "position": {
+            "x": -16.335492667686346,
+            "y": -1.7625133943467062,
+            "z": -8.977891148839813
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_find": "active",
+          "obj_defeat": "complete"
+        },
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Relic Frontier",
+      "text": "Relic Frontier\n\nClimb the ridge, dodge the Sentry, claim the relic.\n\nStart\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+      "state": {},
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": -8,
+          "y": 0.55,
+          "z": -8
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_find": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "A relic glows atop the ridge...\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nReach the relic on the ridge!\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:02:41.463Z"
+  },
+  {
+    "id": "relic-island",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/relic-island.html",
+    "startedAt": "2026-09-08T00:02:37.254Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Relic Island",
+        "text": "Find 3 relics, unlock the gate, reach the shrine\nRelics: 0/3\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 1.089399999976158,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 1.2244689090810892,
+            "z": 0
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Relic Island",
+        "text": "The gate is locked. Find the key.\nFind 3 relics, unlock the gate, reach the shrine\nRelics: 0/3\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 6.798300000071518,
+        "player": {
+          "position": {
+            "x": -1.3825283019907693,
+            "y": 1.5904049320722797,
+            "z": -4.665222327857554
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Relic Island",
+        "text": "The gate is locked. Find the key.\nFind 3 relics, unlock the gate, reach the shrine\nRelics: 0/3\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 21.393700000166895,
+        "player": {
+          "position": {
+            "x": -5.568405567859065,
+            "y": 1.5904049320722797,
+            "z": 6.085699594165406
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Relic Island",
+      "text": "Find 3 relics, unlock the gate, reach the shrine\nRelic Island\n\nFind 3 relics, unlock the gate, and reach the shrine. Avoid the lava.\n\nBegin\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+      "state": {},
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.2244689090810892,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "The gate is locked. Find the key.\nFind 3 relics, unlock the gate, reach the shrine\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nRelics: 0/3\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:03:11.030Z"
+  },
+  {
+    "id": "forest-range",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/forest-range.html",
+    "startedAt": "2026-09-08T00:02:42.357Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Forest Range",
+        "text": "PAINTED WILDS\nPress F to interact",
+        "state": {},
+        "playtime": 1.2475999999046328,
+        "player": {
+          "position": {
+            "x": -13,
+            "y": -1.5942933068196634,
+            "z": 0
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_explore": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Forest Range",
+        "text": "PAINTED WILDS\nPress F to interact",
+        "state": {},
+        "playtime": 7.848699999809264,
+        "player": {
+          "position": {
+            "x": -25.35437981736972,
+            "y": -1.9,
+            "z": 25.172845981261318
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_explore": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Forest Range",
+        "text": "PAINTED WILDS\nPress F to interact",
+        "state": {},
+        "playtime": 23.002099999904637,
+        "player": {
+          "position": {
+            "x": -30.532052982711075,
+            "y": -1.9,
+            "z": 19.040649251128382
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_explore": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Forest Range",
+      "text": "PAINTED WILDS\nPress F to interact",
+      "state": {},
+      "playtime": 0.40639999997615817,
+      "player": {
+        "position": {
+          "x": -13,
+          "y": -0.9584593997891905,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_explore": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPAINTED WILDS\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:03:16.110Z"
+  },
+  {
+    "id": "iron-arena",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/iron-arena.html",
+    "startedAt": "2026-09-08T00:03:11.606Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Iron Arena",
+        "text": "IRON ARENA\nKills: 0\nPress F to interact",
+        "state": {},
+        "playtime": 1.139799999952316,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 0.55,
+            "z": 10
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Iron Arena",
+        "text": "IRON ARENA\nKills: 0\nPress F to interact",
+        "state": {},
+        "playtime": 7.555899999856938,
+        "player": {
+          "position": {
+            "x": 9.599999999971319,
+            "y": 0.55,
+            "z": 14.1
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Iron Arena",
+        "text": "IRON ARENA\nKills: 0\nPress F to interact",
+        "state": {},
+        "playtime": 16.984599999904606,
+        "player": {
+          "position": {
+            "x": 7.911604389619895,
+            "y": 0.55,
+            "z": 14.1
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Iron Arena",
+      "text": "Iron Arena\n\nAnimated combat stress test -- fight the Sentries.\n\nEnter Arena\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+      "state": {},
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.05,
+          "z": 10
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nIRON ARENA\nKills: 0\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:03:44.948Z"
+  },
+  {
+    "id": "dungeon-descent",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/dungeon-descent.html",
+    "startedAt": "2026-09-08T00:03:16.773Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Dungeon Descent",
+        "text": "Find both switches to open the gate, then reach the exit.\nTime: 0.6s\nPress F to interact",
+        "state": {},
+        "playtime": 0.6,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 0.9314622447795105,
+            "z": 0
+          },
+          "visible": true,
+          "controller": "topdown"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Dungeon Descent",
+        "text": "Find both switches to open the gate, then reach the exit.\nTime: 6.3s\nPress F to interact",
+        "state": {},
+        "playtime": 6.315499999999994,
+        "player": {
+          "position": {
+            "x": 7.4092295295265815,
+            "y": 0.9638094933342436,
+            "z": -15.16185444296692
+          },
+          "visible": true,
+          "controller": "topdown"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Dungeon Descent",
+        "text": "Find both switches to open the gate, then reach the exit.\nTime: 17.6s\nPress F to interact",
+        "state": {},
+        "playtime": 17.596100000143032,
+        "player": {
+          "position": {
+            "x": 5.565679285815219,
+            "y": 0.9638094933342436,
+            "z": -17.830151594299195
+          },
+          "visible": true,
+          "controller": "topdown"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Dungeon Descent",
+      "text": "Find both switches to open the gate, then reach the exit.\nDungeon Descent\n\nActivate both switches to open the gate and find the exit.\n\nEnter\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+      "state": {},
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.9314622447795105,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "topdown"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "Find both switches to open the gate, then reach the exit.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nTime: 18.0s\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:03:52.461Z"
+  },
+  {
+    "id": "npc-puzzle-adventure",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/npc-puzzle-adventure.html",
+    "startedAt": "2026-09-08T00:03:45.445Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "The Sanctum Key",
+        "text": "Press F to interact",
+        "state": {},
+        "playtime": 1.0801000000238417,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 1.0661459014014973,
+            "z": 0
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "The Sanctum Key",
+        "text": "Press F to interact",
+        "state": {},
+        "playtime": 9.632199999809265,
+        "player": {
+          "position": {
+            "x": -19.602347234667533,
+            "y": 1.322619119871201,
+            "z": 8.718570226893227
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "The Sanctum Key",
+        "text": "Press F to interact",
+        "state": {},
+        "playtime": 25.09889999985694,
+        "player": {
+          "position": {
+            "x": -6.624151290904221,
+            "y": 1.322619119871201,
+            "z": 12.119159430692623
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "The Sanctum Key",
+      "text": "The Sanctum Key\n\nStart\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+      "state": {},
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.0661459014014973,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:04:16.762Z"
+  },
+  {
+    "id": "opus-arena",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/opus-arena.html",
+    "startedAt": "2026-09-08T00:03:52.987Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Opus Arena",
+        "text": "Kills: 0/8\nPress F to interact",
+        "state": {
+          "kills": 0,
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 1.1076000000238417,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 1.2022823670067855,
+            "z": 0
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Opus Arena",
+        "text": "Kills: 0/8\nPress F to interact",
+        "state": {
+          "kills": 0,
+          "maxHealth": 100,
+          "health": 92
+        },
+        "playtime": 10.411500000000007,
+        "player": {
+          "position": {
+            "x": -13.787348047914097,
+            "y": 1.23731907851591,
+            "z": 33.05734682492957
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Opus Arena",
+        "text": "Kills: 0/8\nPress F to interact",
+        "state": {
+          "kills": 0,
+          "maxHealth": 100,
+          "health": 0
+        },
+        "playtime": 25.05039999997622,
+        "player": {
+          "position": {
+            "x": -24.255933621701256,
+            "y": 1.23731907851591,
+            "z": 25.784800940569195
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Opus Arena",
+      "text": "Opus Arena\n\nDefeat 8 Grunts to win. Q to fire.\n\nStart\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+      "state": {
+        "kills": 0
+      },
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.2022823670067855,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nKills: 0/8\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:04:25.009Z"
+  },
+  {
+    "id": "power-station",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/power-station.html",
+    "startedAt": "2026-09-08T00:04:17.212Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Power Station",
+        "text": "Fuel Cells: 0/3\nPower the Turbine\nPress F to interact",
+        "state": {},
+        "playtime": 0.9886000000238417,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 1.4056229273300438,
+            "z": 0
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Power Station",
+        "text": "Fuel Cells: 0/3\nPower the Turbine\nPress F to interact",
+        "state": {},
+        "playtime": 9.415700000047677,
+        "player": {
+          "position": {
+            "x": 14.62741108517601,
+            "y": 1.5770301097390877,
+            "z": 2.5041702179150382
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Power Station",
+        "text": "Fuel Cells: 0/3\nPower the Turbine\nPress F to interact",
+        "state": {},
+        "playtime": 24.6970999999046,
+        "player": {
+          "position": {
+            "x": 27.934610401390913,
+            "y": 1.5770301097390877,
+            "z": -4.61684370912939
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Power Station",
+      "text": "Power Station\n\nFind 3 Fuel Cells and power the Turbine.\n\nStart\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+      "state": {},
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.4056229273300438,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nFuel Cells: 0/3\nPower the Turbine\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:04:49.412Z"
+  },
+  {
+    "id": "relic-runner-2",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/relic-runner-2.html",
+    "startedAt": "2026-09-08T00:04:25.458Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Relic Runner 2",
+        "text": "A relic glows atop the ridge...\nReach the relic on the ridge!\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 1.1049999998807907,
+        "player": {
+          "position": {
+            "x": -8,
+            "y": 0.55,
+            "z": -8
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Relic Runner 2",
+        "text": "A relic glows atop the ridge...\nReach the relic on the ridge!\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 9.905699999928466,
+        "player": {
+          "position": {
+            "x": -24.590255168198382,
+            "y": -1.9,
+            "z": 23.493773836406124
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Relic Runner 2",
+        "text": "A relic glows atop the ridge...\nReach the relic on the ridge!\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 24.601700000047693,
+        "player": {
+          "position": {
+            "x": -29.379392775003975,
+            "y": -1.9,
+            "z": 11.376173550916986
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Relic Runner 2",
+      "text": "Relic Runner 2\n\nClimb the ridge, dodge the Sentry, claim the relic.\n\nStart\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+      "state": {},
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": -8,
+          "y": 0.55,
+          "z": -8
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "A relic glows atop the ridge...\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nReach the relic on the ridge!\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:04:57.937Z"
+  },
+  {
+    "id": "sentinel-maze",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/sentinel-maze.html",
+    "startedAt": "2026-09-08T00:04:49.864Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Sentinel Maze",
+        "text": "Press F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 1.0131999999284744,
+        "player": {
+          "position": {
+            "x": -8,
+            "y": 1.05,
+            "z": -8
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Sentinel Maze",
+        "text": "Press F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 9.366199999809261,
+        "player": {
+          "position": {
+            "x": -7.785646964043768,
+            "y": 1.05,
+            "z": 27.081509461233686
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Sentinel Maze",
+        "text": "Press F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 28
+        },
+        "playtime": 23.183699999809313,
+        "player": {
+          "position": {
+            "x": 1.6104172811628785,
+            "y": 1.05,
+            "z": 23.32346559035883
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Sentinel Maze",
+      "text": "Sentinel Maze\n\nReach the exit before the Sentinel catches you.\n\nStart\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+      "state": {},
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": -8,
+          "y": 1.05,
+          "z": -8
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:05:22.080Z"
+  },
+  {
+    "id": "signal-zero",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/signal-zero.html",
+    "startedAt": "2026-09-08T00:04:58.644Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Signal Zero",
+        "text": "Signal Zero: the relay has gone dark. Reach the console.\n[Left Click] Attack -- [F] Save\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 0.9795,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 1.05,
+            "z": 8
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Signal Zero",
+        "text": "Signal Zero: the relay has gone dark. Reach the console.\n[Left Click] Attack -- [F] Save\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 9.502699999928458,
+        "player": {
+          "position": {
+            "x": 16.016011273446708,
+            "y": 0.04621999999999998,
+            "z": -1.957225741142714
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Signal Zero",
+        "text": "Signal Zero: the relay has gone dark. Reach the console.\n[Left Click] Attack -- [F] Save\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 23.138400000214574,
+        "player": {
+          "position": {
+            "x": -8.76260249831662,
+            "y": 0.55,
+            "z": 12.664392267646203
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Signal Zero",
+      "text": "Signal Zero\n\nThe outpost has gone silent. Investigate.\n\nStart\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+      "state": {},
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.05,
+          "z": 8
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "Signal Zero: the relay has gone dark. Reach the console.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\n[Left Click] Attack -- [F] Save\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:05:31.401Z"
+  },
+  {
+    "id": "survival-arena-2",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/survival-arena-2.html",
+    "startedAt": "2026-09-08T00:05:22.645Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Survival Arena 2.0",
+        "text": "Wave 1 incoming!\nSurvive the waves! Avoid the red Hunters.\nSurvived: 0.6s\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 0.6,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 1.7280580431016654,
+            "z": 0
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Survival Arena 2.0",
+        "text": "MAP EDGE — TURN INWARD\nSurvive the waves! Avoid the red Hunters.\nSurvived: 9.5s\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 90
+        },
+        "playtime": 9.529100000023838,
+        "player": {
+          "position": {
+            "x": -30.263005253595093,
+            "y": -1.00019582738083,
+            "z": 25.30717315349298
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Survival Arena 2.0",
+        "text": "MAP EDGE — TURN INWARD\nSurvive the waves! Avoid the red Hunters.\nSurvived: 25.0s\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 90
+        },
+        "playtime": 24.953200000047666,
+        "player": {
+          "position": {
+            "x": -23.630449359859785,
+            "y": -1.0121009301503563,
+            "z": 28.094945428893745
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Survival Arena 2.0",
+      "text": "Wave 1 incoming!\nSurvive the waves! Avoid the red Hunters.\nSurvival Arena 2.0\n\nWaves of Hunters will chase you. Survive to win.\n\nBrace Yourself\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+      "state": {},
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.705555202293345,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "MAP EDGE — TURN INWARD\nSurvive the waves! Avoid the red Hunters.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nSurvived: 25.2s\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:05:56.577Z"
+  },
+  {
+    "id": "survival-arena-3",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/survival-arena-3.html",
+    "startedAt": "2026-09-08T00:05:31.961Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Survival Arena 3",
+        "text": "Press F to interact",
+        "state": {},
+        "playtime": 0.9961000000238418,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 0.785131610498411,
+            "z": 0
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Survival Arena 3",
+        "text": "MAP EDGE — TURN INWARD\nPress F to interact",
+        "state": {},
+        "playtime": 10.364700000047687,
+        "player": {
+          "position": {
+            "x": -35.50513491747421,
+            "y": -1.1836065678125196,
+            "z": 17.195577759760027
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": [
+          "obj49",
+          "obj50",
+          "obj51"
+        ]
+      },
+      {
+        "title": "Survival Arena 3",
+        "text": "MAP EDGE — TURN INWARD\nSurvived!\n\nBack to Editor\nPress F to interact",
+        "state": {},
+        "playtime": 25.428000000119226,
+        "player": {
+          "position": {
+            "x": -30.314661893765308,
+            "y": -1.1386818587632332,
+            "z": 20.65067897029497
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": [
+          "obj49",
+          "obj50",
+          "obj51",
+          "obj52"
+        ]
+      }
+    ],
+    "start": {
+      "title": "Survival Arena 3",
+      "text": "Survival Arena 3\n\nStart\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+      "state": {},
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.8061405585484482,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "MAP EDGE — TURN INWARD\nSurvived!\n\nBack to Editor\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:06:02.704Z"
+  },
+  {
+    "id": "textured-adventure",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/textured-adventure.html",
+    "startedAt": "2026-09-08T00:05:57.077Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Textured Adventure",
+        "text": "Relics: 0/3\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 1.1382999999523162,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 0.40572779484416155,
+            "z": 0
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Textured Adventure",
+        "text": "Relics: 0/3\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 10.255300000190728,
+        "player": {
+          "position": {
+            "x": -15.893897988315228,
+            "y": 0.6617301621448775,
+            "z": 32.23696431671485
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Textured Adventure",
+        "text": "Relics: 0/3\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 25.82189999997616,
+        "player": {
+          "position": {
+            "x": -21.01221513370047,
+            "y": 0.6617301621448775,
+            "z": 17.487881084706242
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Textured Adventure",
+      "text": "Textured Adventure\n\nStart\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+      "state": {},
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.40572779484416155,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nRelics: 0/3\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:06:28.999Z"
+  },
+  {
+    "id": "valley-run",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/valley-run.html",
+    "startedAt": "2026-09-08T00:06:03.589Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Valley Run",
+        "text": "Press F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 1.0556999999284744,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": -1.9942011014227994,
+            "z": -17
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Valley Run",
+        "text": "Checkpoint reached.\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 95
+        },
+        "playtime": 10.465199999809261,
+        "player": {
+          "position": {
+            "x": 5.228838554548171,
+            "y": -1.9703116864909642,
+            "z": -21.719493530138198
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Valley Run",
+        "text": "Checkpoint reached.\nPress F to interact",
+        "state": {
+          "maxHealth": 100,
+          "health": 95
+        },
+        "playtime": 25.48609999978544,
+        "player": {
+          "position": {
+            "x": -5.6793291567312405,
+            "y": -1.944601133056378,
+            "z": -20.903686742366848
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Valley Run",
+      "text": "Valley Run\n\nCross the valley and reach the far ridge.\n\nStart\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+      "state": {},
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": -1.4442011014227993,
+          "z": -17
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "Checkpoint reached.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:06:35.257Z"
+  },
+  {
+    "id": "painted-wilds",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/painted-wilds.html",
+    "startedAt": "2026-09-08T00:06:29.539Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Painted Wilds",
+        "text": "PAINTED WILDS\nPress F to interact",
+        "state": {},
+        "playtime": 1.9591000001430516,
+        "player": {
+          "position": {
+            "x": -13,
+            "y": -1.5942933068196634,
+            "z": 0
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Painted Wilds",
+        "text": "PAINTED WILDS\nPress F to interact",
+        "state": {},
+        "playtime": 11.245000000119203,
+        "player": {
+          "position": {
+            "x": -23.220657186190707,
+            "y": -1.9,
+            "z": 31.173517264521323
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Painted Wilds",
+        "text": "PAINTED WILDS\nPress F to interact",
+        "state": {},
+        "playtime": 26.708400000095374,
+        "player": {
+          "position": {
+            "x": -17.410596055657834,
+            "y": -1.9,
+            "z": 32.36918179789143
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Painted Wilds",
+      "text": "PAINTED WILDS\nPress F to interact",
+      "state": {},
+      "playtime": 0.48689999997615807,
+      "player": {
+        "position": {
+          "x": -13,
+          "y": -1.5942933068196634,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPAINTED WILDS\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:07:01.901Z"
+  },
+  {
+    "id": "assembly-line",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/assembly-line.html",
+    "startedAt": "2026-09-08T00:06:35.833Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Assembly Line",
+        "text": "Press F to interact",
+        "state": {},
+        "playtime": 1.8641999998092655,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 1.1717251097558128,
+            "z": 0
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Assembly Line",
+        "text": "Press F to interact",
+        "state": {},
+        "playtime": 11.209899999737738,
+        "player": {
+          "position": {
+            "x": 13.046928465745411,
+            "y": -2,
+            "z": 36.373354933789116
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Assembly Line",
+        "text": "Press F to interact",
+        "state": {},
+        "playtime": 25.951299999713903,
+        "player": {
+          "position": {
+            "x": 6.8350929955669635,
+            "y": -2,
+            "z": 35.73419711382981
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Assembly Line",
+      "text": "Press F to interact",
+      "state": {},
+      "playtime": 0.5526999999284745,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.1717251097558128,
+          "z": 0
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:07:08.175Z"
+  },
+  {
+    "id": "blacksite",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/blacksite.html",
+    "startedAt": "2026-09-08T00:07:02.500Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Blacksite",
+        "text": "BLACKSITE\nPress F to interact",
+        "state": {},
+        "playtime": 1.4283000000715258,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 0.55,
+            "z": -2
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Blacksite",
+        "text": "BLACKSITE\nPress F to interact",
+        "state": {},
+        "playtime": 9.781600000023838,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 0.55,
+            "z": 12.569643481821684
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Blacksite",
+        "text": "BLACKSITE\nPress F to interact",
+        "state": {},
+        "playtime": 18.945300000071544,
+        "player": {
+          "position": {
+            "x": 1.417233996887403,
+            "y": 0.55,
+            "z": 14.486106169993086
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Blacksite",
+      "text": "BLACKSITE\nPress F to interact",
+      "state": {},
+      "playtime": 0.4107000000476837,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": -2
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nBLACKSITE\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:07:36.085Z"
+  },
+  {
+    "id": "moving-temple",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/moving-temple.html",
+    "startedAt": "2026-09-08T00:07:09.043Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Moving Temple",
+        "text": "Press F to interact",
+        "state": {},
+        "playtime": 1.8467999999523164,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 1.8,
+            "z": 0
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Moving Temple",
+        "text": "Press F to interact",
+        "state": {},
+        "playtime": 8.328399999856936,
+        "player": {
+          "position": {
+            "x": 1.5052766822402945,
+            "y": 0.03186011766444041,
+            "z": -3.6178312881851626
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Moving Temple",
+        "text": "Press F to interact",
+        "state": {},
+        "playtime": 18.321999999761555,
+        "player": {
+          "position": {
+            "x": 8.311156220348922,
+            "y": 0.6139332929727561,
+            "z": -7.809562180511085
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Moving Temple",
+      "text": "Press F to interact",
+      "state": {},
+      "playtime": 0.3552999999523163,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.8,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:07:43.996Z"
+  },
+  {
+    "id": "shifting-facility",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/shifting-facility.html",
+    "startedAt": "2026-09-08T00:07:36.801Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Shifting Facility",
+        "text": "SHIFTING FACILITY\nPress F to interact",
+        "state": {},
+        "playtime": 1.4316000001430516,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 0.55,
+            "z": -16
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Shifting Facility",
+        "text": "SHIFTING FACILITY\nPress F to interact",
+        "state": {},
+        "playtime": 8.890500000119204,
+        "player": {
+          "position": {
+            "x": 13.573085442980654,
+            "y": 0.55,
+            "z": 7.9942576355693795
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Shifting Facility",
+        "text": "SHIFTING FACILITY\nPress F to interact",
+        "state": {},
+        "playtime": 23.298600000023864,
+        "player": {
+          "position": {
+            "x": 12.204108254244272,
+            "y": 0.55,
+            "z": 16.032643792248752
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Shifting Facility",
+      "text": "SHIFTING FACILITY\nPress F to interact",
+      "state": {},
+      "playtime": 0.3038000000715256,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": -16
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nSHIFTING FACILITY\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:08:09.453Z"
+  },
+  {
+    "id": "skyway-trial",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/skyway-trial.html",
+    "startedAt": "2026-09-08T00:07:44.641Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Skyway Trial",
+        "text": "Press F to interact",
+        "state": {},
+        "playtime": 1.5820000001192096,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 0.55,
+            "z": 0
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Skyway Trial",
+        "text": "Press F to interact",
+        "state": {},
+        "playtime": 9.909400000333779,
+        "player": {
+          "position": {
+            "x": -3.176217222183875,
+            "y": 0.55,
+            "z": -0.5367838680810745
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Skyway Trial",
+        "text": "Press F to interact",
+        "state": {},
+        "playtime": 24.443600000500698,
+        "player": {
+          "position": {
+            "x": 1.7721991358013671,
+            "y": 0.55,
+            "z": 1.6079410531020712
+          },
+          "visible": true,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Skyway Trial",
+      "text": "Press F to interact",
+      "state": {},
+      "playtime": 0.3677000000476838,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:08:18.391Z"
+  },
+  {
+    "id": "survival-arena",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/survival-arena.html",
+    "startedAt": "2026-09-08T00:08:09.834Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Survival Arena",
+        "text": "Survive! Collect 4 orbs, avoid the red hunters.\nPress F to interact",
+        "state": {
+          "health": 3,
+          "collected": 0
+        },
+        "playtime": 1.7816000000238423,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": -0.2505871526561789,
+            "z": 0
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Survival Arena",
+        "text": "MAP EDGE — TURN INWARD\nSurvive! Collect 4 orbs, avoid the red hunters.\nPress F to interact",
+        "state": {
+          "health": 3,
+          "collected": 0
+        },
+        "playtime": 10.503699999928475,
+        "player": {
+          "position": {
+            "x": -29.697013344410614,
+            "y": -1.8499999999999999,
+            "z": 25.96901804885773
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Survival Arena",
+        "text": "MAP EDGE — TURN INWARD\nSurvive! Collect 4 orbs, avoid the red hunters.\nPress F to interact",
+        "state": {
+          "health": 3,
+          "collected": 0
+        },
+        "playtime": 25.42839999997617,
+        "player": {
+          "position": {
+            "x": -23.514201936534086,
+            "y": -1.8499999999999999,
+            "z": 28.745775026635684
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Survival Arena",
+      "text": "Survive! Collect 4 orbs, avoid the red hunters.\nPress F to interact",
+      "state": {
+        "health": 3,
+        "collected": 0
+      },
+      "playtime": 0.4621000000238419,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": -0.2505871526561789,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "MAP EDGE — TURN INWARD\nSurvive! Collect 4 orbs, avoid the red hunters.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:08:42.545Z"
+  },
+  {
+    "id": "temple-switch-puzzle",
+    "phase": "baseline",
+    "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/temple-switch-puzzle.html",
+    "startedAt": "2026-09-08T00:08:18.885Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Temple Switch Puzzle",
+        "text": "Find both switches to open the gate, then reach the goal.\nPress F to interact",
+        "state": {
+          "switches": 0
+        },
+        "playtime": 1.8572000000476836,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 1.0936093914972231,
+            "z": 0
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Temple Switch Puzzle",
+        "text": "MAP EDGE — TURN INWARD\nFind both switches to open the gate, then reach the goal.\nPress F to interact",
+        "state": {
+          "switches": 0
+        },
+        "playtime": 10.806799999952311,
+        "player": {
+          "position": {
+            "x": -35.830385954911286,
+            "y": -1.8499999999999934,
+            "z": 12.464340765091201
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Temple Switch Puzzle",
+        "text": "MAP EDGE — TURN INWARD\nFind both switches to open the gate, then reach the goal.\nPress F to interact",
+        "state": {
+          "switches": 0
+        },
+        "playtime": 26.252800000190746,
+        "player": {
+          "position": {
+            "x": -30.32762113835546,
+            "y": -1.8499999999999999,
+            "z": 20.67103992366934
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Temple Switch Puzzle",
+      "text": "Find both switches to open the gate, then reach the goal.\nPress F to interact",
+      "state": {
+        "switches": 0
+      },
+      "playtime": 0.49889999997615814,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.0936093914972231,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "MAP EDGE — TURN INWARD\nFind both switches to open the gate, then reach the goal.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:08:50.710Z"
+  }
+]

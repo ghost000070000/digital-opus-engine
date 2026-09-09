@@ -1,0 +1,4853 @@
+{
+  "id": "signal-relay",
+  "method": "Native Playwright keyboard and mouse input; evaluate is read-only instrumentation.",
+  "startedAt": "2026-09-08T00:36:45.661Z",
+  "standaloneSHA256": "ec3df1c44da3ad013984938c57d417062d0a29e71901044dcd2404b42942ac2e",
+  "errors": [],
+  "actions": [
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -25,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 0.9323999999761583,
+      "yawError": -0.0018780401843034866,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 0.9323999999761583
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -25,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 1.4658999999761586,
+      "yawError": -0.002917383877807378,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 1.4658999999761586
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -25,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 2.072100000023843,
+      "yawError": 0.0003691370532070692,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.15984869405300367,
+      "sim": 2.072100000023843
+    },
+    {
+      "kind": "key",
+      "key": "f",
+      "seconds": 0.08,
+      "sim": 2.2665000001192106
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -25,
+        1.2,
+        -6
+      ],
+      "from": "camera-eye",
+      "sim": 3.008100000023843,
+      "yawError": 0.002592820616001102,
+      "pitchError": -0.0012588941889609614,
+      "pointerLocked": true
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -14,
+        0.55,
+        -6.8
+      ],
+      "from": "camera-eye",
+      "sim": 3.508700000047685,
+      "yawError": 0.0008555294308545631,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 3.508700000047685
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -14,
+        0.55,
+        -6.8
+      ],
+      "from": "camera-eye",
+      "sim": 4.2047000000476835,
+      "yawError": -0.0012586798511519998,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 4.2047000000476835
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -14,
+        0.55,
+        -6.8
+      ],
+      "from": "camera-eye",
+      "sim": 4.80960000002384,
+      "yawError": -0.005559627054302328,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.38072123885065423,
+      "sim": 4.8279999999999985
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -11,
+        0.55,
+        6.7
+      ],
+      "from": "camera-eye",
+      "sim": 5.527000000119208,
+      "yawError": 0.00021736572487476358,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 5.540000000119208
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -11,
+        0.55,
+        6.7
+      ],
+      "from": "camera-eye",
+      "sim": 6.168300000190733,
+      "yawError": -0.00004870733792092728,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 6.168300000190733
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -11,
+        0.55,
+        6.7
+      ],
+      "from": "camera-eye",
+      "sim": 6.7611000002622585,
+      "yawError": 0.0004508820707161083,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 6.7611000002622585
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -11,
+        0.55,
+        6.7
+      ],
+      "from": "camera-eye",
+      "sim": 7.280000000238415,
+      "yawError": -0.0009996637980324902,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 7.280000000238415
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -11,
+        0.55,
+        6.7
+      ],
+      "from": "camera-eye",
+      "sim": 7.863400000214573,
+      "yawError": -0.005309771555878062,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.08,
+      "sim": 7.878100000262257
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0.5,
+        0.55,
+        6.7
+      ],
+      "from": "camera-eye",
+      "sim": 8.278500000238417,
+      "yawError": 0.0006471239821615134,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 8.278500000238417
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0.5,
+        0.55,
+        6.7
+      ],
+      "from": "camera-eye",
+      "sim": 9.01270000016689,
+      "yawError": -0.000016295473359772426,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 9.030100000262257
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0.5,
+        0.55,
+        6.7
+      ],
+      "from": "camera-eye",
+      "sim": 9.613200000166886,
+      "yawError": -0.0012156157843647756,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 9.613200000166886
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0.5,
+        0.55,
+        6.7
+      ],
+      "from": "camera-eye",
+      "sim": 10.3275000001192,
+      "yawError": 0.0014560332721081043,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.16525307111538387,
+      "sim": 10.34710000014304
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        1.749233752165782,
+        0.75,
+        0.8410990916835708
+      ],
+      "from": "camera-eye",
+      "sim": 10.645000000119197,
+      "yawError": -0.00040561278898441005,
+      "pitchError": 0.0008984871506533126,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 10.645000000119197
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        1.8939558606345546,
+        0.75,
+        -1.1536579138989018
+      ],
+      "from": "camera-eye",
+      "sim": 11.821400000095355,
+      "yawError": 0.000011697267865919099,
+      "pitchError": -0.0017643388777292893,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 11.837900000095356
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        1.7055264316021659,
+        0.75,
+        -3.144761715882748
+      ],
+      "from": "camera-eye",
+      "sim": 12.671400000095353,
+      "yawError": -0.00004718771322971135,
+      "pitchError": 0.0005153254655797523,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 12.671400000095353
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        1.7165612387513922,
+        0.75,
+        -3.0490695567810095
+      ],
+      "from": "camera-eye",
+      "sim": 13.377399999976143,
+      "yawError": 0.0015286026240617825,
+      "pitchError": 0.0009583719860448078,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 13.377399999976143
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        1.7475249402841575,
+        0.75,
+        -2.7546934386195727
+      ],
+      "from": "camera-eye",
+      "sim": 14.093899999976147,
+      "yawError": 0.0017389336187201743,
+      "pitchError": 0.002355698835571976,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 14.093899999976147
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        2,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 14.894999999999989,
+      "yawError": -0.001413069983928715,
+      "pitchError": 6.938893903907228e-18,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 14.894999999999989
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        2,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 15.38749999999999,
+      "yawError": -0.001024146178000017,
+      "pitchError": 6.938893903907228e-18,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 15.38749999999999
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        2,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 15.837999999999989,
+      "yawError": -0.0014353243062070295,
+      "pitchError": 6.938893903907228e-18,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 15.837999999999989
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        2,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 16.366399999976153,
+      "yawError": -0.0026295480746116413,
+      "pitchError": 6.938893903907228e-18,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 16.366399999976153
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        2,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 16.99530000007152,
+      "yawError": 0.0000882420945740772,
+      "pitchError": 6.938893903907228e-18,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.08,
+      "sim": 16.99530000007152
+    },
+    {
+      "kind": "key",
+      "key": "f",
+      "seconds": 0.08,
+      "sim": 17.128000000119204
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        2,
+        1.2,
+        -6
+      ],
+      "from": "camera-eye",
+      "sim": 17.812100000143055,
+      "yawError": 0.00028168894624627306,
+      "pitchError": -0.0004317193431550813,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "r",
+      "seconds": 0.08,
+      "sim": 18.079000000119215
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        20,
+        0.55,
+        -6.7
+      ],
+      "from": "camera-eye",
+      "sim": 20.14800000011924,
+      "yawError": 0.0007930761322463515,
+      "pitchError": 6.938893903907228e-18,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 20.164600000143082
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        20,
+        0.55,
+        -6.7
+      ],
+      "from": "camera-eye",
+      "sim": 20.65970000004772,
+      "yawError": 0.0008469354231517519,
+      "pitchError": 6.938893903907228e-18,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 20.65970000004772
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        20,
+        0.55,
+        -6.7
+      ],
+      "from": "camera-eye",
+      "sim": 21.31570000004773,
+      "yawError": 0.0011207295362478894,
+      "pitchError": 6.938893903907228e-18,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 21.31570000004773
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        20,
+        0.55,
+        -6.7
+      ],
+      "from": "camera-eye",
+      "sim": 21.894100000023894,
+      "yawError": 0.0015862000767355119,
+      "pitchError": 6.938893903907228e-18,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 21.894100000023894
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        23.40955103946192,
+        0.75,
+        2.9680889721620134
+      ],
+      "from": "camera-eye",
+      "sim": 22.668400000095428,
+      "yawError": -0.00017203147783792993,
+      "pitchError": -0.000009233197690167172,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 22.68350000011927
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        23.725239983385464,
+        0.75,
+        3.707252038287943
+      ],
+      "from": "camera-eye",
+      "sim": 23.738700000166958,
+      "yawError": 0.0007279887121616431,
+      "pitchError": 0.0014896132798007666,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 23.738700000166958
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        24.217304687970103,
+        0.75,
+        4.746261358263013
+      ],
+      "from": "camera-eye",
+      "sim": 24.57260000026233,
+      "yawError": -0.0013807719898737186,
+      "pitchError": -0.0010867460326721042,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 24.57260000026233
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        20,
+        0.55,
+        -6.7
+      ],
+      "from": "camera-eye",
+      "sim": 25.470800000190806,
+      "yawError": 0.0010487729842945334,
+      "pitchError": 6.938893903907228e-18,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 25.470800000190806
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        24.721945807401443,
+        0.75,
+        4.922324237279815
+      ],
+      "from": "camera-eye",
+      "sim": 26.12560000014313,
+      "yawError": -0.0011771070282813095,
+      "pitchError": 0.0005365612587181073,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 26.12560000014313
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        24.414609650163662,
+        0.75,
+        3.7681630395193877
+      ],
+      "from": "camera-eye",
+      "sim": 27.151800000071614,
+      "yawError": 0.0008609248547702071,
+      "pitchError": 0.00010300378958820466,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 27.168500000119298
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        24.074406327175492,
+        0.75,
+        5.366194156509439
+      ],
+      "from": "camera-eye",
+      "sim": 27.952200000166993,
+      "yawError": -0.0008580065305865184,
+      "pitchError": 0.00004146068447244411,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 27.952200000166993
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        23.249912867189206,
+        0.75,
+        5.055161041574616
+      ],
+      "from": "camera-eye",
+      "sim": 28.753300000190844,
+      "yawError": 0.0011794201598010151,
+      "pitchError": -0.000921326911431028,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 28.753300000190844
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        22,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 29.63970000028622,
+      "yawError": -0.0010226692941645902,
+      "pitchError": 6.938893903907228e-18,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.08,
+      "sim": 29.65920000028622
+    },
+    {
+      "kind": "key",
+      "key": "f",
+      "seconds": 0.08,
+      "sim": 29.834600000262377
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        22,
+        1.2,
+        -6
+      ],
+      "from": "camera-eye",
+      "sim": 30.458800000310063,
+      "yawError": 0.001049720522397869,
+      "pitchError": 0.0017731707977185623,
+      "pointerLocked": true
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        27,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 31.138900000333905,
+      "yawError": -0.0009966169274091322,
+      "pitchError": 6.938893903907228e-18,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 31.138900000333905
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        27,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 31.77310000026239,
+      "yawError": -0.0005043459579414427,
+      "pitchError": 6.938893903907228e-18,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.28186524571681304,
+      "sim": 31.787900000333913
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        33,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 32.271700000286245,
+      "yawError": 0.0015438855084098043,
+      "pitchError": 6.938893903907228e-18,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 32.271700000286245
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        33,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 32.86990000033393,
+      "yawError": -0.0012904340353789615,
+      "pitchError": 6.938893903907228e-18,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.24522142199829633,
+      "sim": 32.86990000033393
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        38,
+        0.55,
+        0
+      ],
+      "from": "camera-eye",
+      "sim": 33.269900000333934,
+      "yawError": -0.00040212536046955116,
+      "pitchError": 6.938893903907228e-18,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 33.269900000333934
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        38,
+        0.55,
+        0
+      ],
+      "from": "camera-eye",
+      "sim": 33.96840000033394,
+      "yawError": 0.00015040262356815837,
+      "pitchError": 6.938893903907228e-18,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 33.98810000038163
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        38,
+        0.55,
+        0
+      ],
+      "from": "camera-eye",
+      "sim": 34.568700000286285,
+      "yawError": 0.0001302766733479961,
+      "pitchError": 6.938893903907228e-18,
+      "pointerLocked": false
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.17456352485565174,
+      "sim": 34.568700000286285
+    }
+  ],
+  "frames": [
+    {
+      "label": "start",
+      "title": "Signal Relay",
+      "text": "Signal Relay\n\nRestore three relay consoles in a silent communications station. Slip past patrol drones or use your sidearm, then reach the green extraction bay.\n\nBegin mission\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 0,
+      "playtime": 0,
+      "ended": false,
+      "paused": true,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {},
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": -30,
+          "y": 1.25,
+          "z": 0
+        },
+        "forward": {
+          "x": 0.8632093666488738,
+          "y": 0,
+          "z": -0.5048461045998578
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": -30,
+          "y": 1.85,
+          "z": 0
+        },
+        "target": {
+          "x": -29.136790633351126,
+          "y": 1.85,
+          "z": -0.5048461045998578
+        },
+        "yaw": 2.1,
+        "pitch": 0,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ],
+      "weaponRuntime": {},
+      "enemies": [
+        {
+          "id": "obj58",
+          "name": "DroneA",
+          "p": {
+            "x": 5.223195999925002,
+            "y": 0.75,
+            "z": -0.7968622505996049
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj59",
+          "name": "DroneB",
+          "p": {
+            "x": 21.08921743284909,
+            "y": 0.75,
+            "z": 5.200339393601992
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "opening",
+      "title": "Signal Relay",
+      "text": "Health 100 / 100\nRestore power at all three relay consoles\nWeapon 8/24\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 0.5775000000000001,
+      "playtime": 0.5775000000000001,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": -30,
+          "y": 0.55,
+          "z": 0
+        },
+        "forward": {
+          "x": 0.8775085326763493,
+          "y": 0.046183566565907,
+          "z": 0.4773320157494705
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": -30,
+          "y": 1.15,
+          "z": 0
+        },
+        "target": {
+          "x": -29.122491467323652,
+          "y": 1.1961835665659069,
+          "z": 0.4773320157494705
+        },
+        "yaw": 1.0726,
+        "pitch": -0.046200000000000005,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": -29.57400818337601,
+            "y": 0.9089219094213749,
+            "z": 0.5390847117219671
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "fixed": {
+          "magazine": 8,
+          "reserve": 24,
+          "reloading": false,
+          "reloadEnd": 0
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj58",
+          "name": "DroneA",
+          "p": {
+            "x": 5.180540922398466,
+            "y": 0.75,
+            "z": -0.16304594687966653
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj59",
+          "name": "DroneB",
+          "p": {
+            "x": 21.603391389060988,
+            "y": 0.75,
+            "z": 4.827287513492273
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "alpha-console",
+      "title": "Signal Relay",
+      "text": "Health 100 / 100\nRestore power at all three relay consoles\nWeapon 8/24\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 3.0276000000238428,
+      "playtime": 3.0276000000238428,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100,
+        "consolesPowered": 1
+      },
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": -23.769103981412595,
+          "y": 0.55,
+          "z": -7.096090727271302
+        },
+        "forward": {
+          "x": -0.758202340578744,
+          "y": 0.03299401082611982,
+          "z": 0.6511840031746174
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": -23.769103981412595,
+          "y": 1.15,
+          "z": -7.096090727271302
+        },
+        "target": {
+          "x": -24.52730632199134,
+          "y": 1.1829940108261197,
+          "z": -6.444906724096684
+        },
+        "yaw": 5.422000000000001,
+        "pitch": -0.033,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": -24.42186292690307,
+            "y": 0.9006032883710671,
+            "z": -6.89137863844693
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "fixed": {
+          "magazine": 8,
+          "reserve": 24,
+          "reloading": false,
+          "reloadEnd": 0
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj58",
+          "name": "DroneA",
+          "p": {
+            "x": 4.485777623204546,
+            "y": 0.75,
+            "z": 0.34170172322234776
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj59",
+          "name": "DroneB",
+          "p": {
+            "x": 22.743922710112848,
+            "y": 0.75,
+            "z": 3.9997906157943546
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "entry-divider-cleared",
+      "title": "Signal Relay",
+      "text": "Health 100 / 100\nRestore power at all three relay consoles\nWeapon 8/24\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 8.028100000262256,
+      "playtime": 8.028100000262256,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100,
+        "consolesPowered": 1
+      },
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": -10.9737243612554,
+          "y": 0.55,
+          "z": 6.946322604673239
+        },
+        "forward": {
+          "x": 0.0890963927322592,
+          "y": 0,
+          "z": 0.9960230081690378
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": -10.9737243612554,
+          "y": 1.15,
+          "z": 6.946322604673239
+        },
+        "target": {
+          "x": -10.88462796852314,
+          "y": 1.15,
+          "z": 7.942345612842277
+        },
+        "yaw": 6.372400000000001,
+        "pitch": 0,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": -11.187410809967039,
+            "y": 0.8799999999999999,
+            "z": 7.587912895775752
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "fixed": {
+          "magazine": 8,
+          "reserve": 24,
+          "reloading": false,
+          "reloadEnd": 0
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj58",
+          "name": "DroneA",
+          "p": {
+            "x": 4.160704065985789,
+            "y": 0.75,
+            "z": -1.83796098347145
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj59",
+          "name": "DroneB",
+          "p": {
+            "x": 23.089004310897934,
+            "y": 0.75,
+            "z": 2.4137588547011966
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "encounter-obj58",
+      "title": "Signal Relay",
+      "text": "Health 100 / 100\nRestore power at all three relay consoles\nWeapon 7/24\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 11.337500000119196,
+      "playtime": 11.337500000119196,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100,
+        "consolesPowered": 1
+      },
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": 2.364111946609326,
+          "y": 0.55,
+          "z": 6.3179356661663
+        },
+        "forward": {
+          "x": 0.1950848247500667,
+          "y": -0.0659520944350225,
+          "z": -0.9785664169548585
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 2.364111946609326,
+          "y": 1.15,
+          "z": 6.3179356661663
+        },
+        "target": {
+          "x": 2.5591967713593924,
+          "y": 1.0840479055649774,
+          "z": 5.339369249211442
+        },
+        "yaw": 9.228000000000003,
+        "pitch": 0.066,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": 2.7463725044676193,
+            "y": 0.8396975480154988,
+            "z": 5.781475738307496
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "fixed": {
+          "magazine": 7,
+          "reserve": 24,
+          "reloading": false,
+          "reloadEnd": 0
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj58",
+          "name": "DroneA",
+          "p": {
+            "x": 1.8939558606345546,
+            "y": 0.75,
+            "z": -1.1536579138989018
+          },
+          "health": {
+            "current": 78,
+            "max": 100
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj59",
+          "name": "DroneB",
+          "p": {
+            "x": 22.634504117572313,
+            "y": 0.75,
+            "z": 3.592638748259097
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "beta-console",
+      "title": "Signal Relay",
+      "text": "Health 79 / 100\nRestore power at all three relay consoles\nWeapon 3/24\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 17.829400000095372,
+      "playtime": 17.829400000095372,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 79,
+        "consolesPowered": 2,
+        "kills": 1
+      },
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": 1.8740375583021176,
+          "y": 0.55,
+          "z": -8.031776090557726
+        },
+        "forward": {
+          "x": 0.06275151912897478,
+          "y": 0.026396933482863944,
+          "z": 0.9976800332519976
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 1.8740375583021176,
+          "y": 1.15,
+          "z": -8.031776090557726
+        },
+        "target": {
+          "x": 1.9367890774310923,
+          "y": 1.176396933482864,
+          "z": -7.034096057305728
+        },
+        "yaw": 6.346000000000004,
+        "pitch": -0.026400000000000007,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": 1.6439233893732266,
+            "y": 0.8964601828947785,
+            "z": -7.3891525379233585
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "fixed": {
+          "magazine": 3,
+          "reserve": 24,
+          "reloading": false,
+          "reloadEnd": 0
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj59",
+          "name": "DroneB",
+          "p": {
+            "x": 23.30802263088242,
+            "y": 0.75,
+            "z": 3.8842106294906125
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "reloaded",
+      "title": "Signal Relay",
+      "text": "Health 79 / 100\nRestore power at all three relay consoles\nWeapon 8/19\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 19.647500000119237,
+      "playtime": 19.647500000119237,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 79,
+        "consolesPowered": 2,
+        "kills": 1
+      },
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": 1.8548135638325012,
+          "y": 0.55,
+          "z": -8.422258214883914
+        },
+        "forward": {
+          "x": 0.06275151912897478,
+          "y": 0.026396933482863944,
+          "z": 0.9976800332519976
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 1.8548135638325012,
+          "y": 1.15,
+          "z": -8.422258214883914
+        },
+        "target": {
+          "x": 1.9175650829614759,
+          "y": 1.176396933482864,
+          "z": -7.424578181631917
+        },
+        "yaw": 6.346000000000004,
+        "pitch": -0.026400000000000007,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": 1.6246993949036104,
+            "y": 0.8964601828947785,
+            "z": -7.779634662249547
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "fixed": {
+          "magazine": 8,
+          "reserve": 19,
+          "reloading": false,
+          "reloadEnd": 19.312400000095376
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj59",
+          "name": "DroneB",
+          "p": {
+            "x": 24.38802384385861,
+            "y": 0.75,
+            "z": 3.9087374308912217
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "encounter-obj59",
+      "title": "Signal Relay",
+      "text": "Health 79 / 100\nRestore power at all three relay consoles\nWeapon 7/19\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 23.4048000001908,
+      "playtime": 23.4048000001908,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 79,
+        "consolesPowered": 2,
+        "kills": 1
+      },
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": 17.269887621374863,
+          "y": 0.55,
+          "z": -6.948209769519978
+        },
+        "forward": {
+          "x": 0.6275731318032883,
+          "y": -0.030795130545640356,
+          "z": 0.7779483428694283
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 17.269887621374863,
+          "y": 1.15,
+          "z": -6.948209769519978
+        },
+        "target": {
+          "x": 17.89746075317815,
+          "y": 1.1192048694543595,
+          "z": -6.1702614266505496
+        },
+        "yaw": 6.962000000000003,
+        "pitch": 0.030799999999999994,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": 17.44361669300355,
+            "y": 0.8610350753379472,
+            "z": -6.30282811345429
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "fixed": {
+          "magazine": 7,
+          "reserve": 19,
+          "reloading": false,
+          "reloadEnd": 19.312400000095376
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj59",
+          "name": "DroneB",
+          "p": {
+            "x": 23.89656252029465,
+            "y": 0.75,
+            "z": 3.8987645181958563
+          },
+          "health": {
+            "current": 78,
+            "max": 100
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "encounter-obj59",
+      "title": "Signal Relay",
+      "text": "Health 79 / 100\nRestore power at all three relay consoles\nWeapon 4/19\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 26.753300000071608,
+      "playtime": 26.753300000071608,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 79,
+        "consolesPowered": 2,
+        "kills": 1
+      },
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": 21.549589898962587,
+          "y": 0.55,
+          "z": -6.555702438558508
+        },
+        "forward": {
+          "x": 0.4068502185958405,
+          "y": -0.030795130545640356,
+          "z": 0.9129756620869988
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 21.549589898962587,
+          "y": 1.15,
+          "z": -6.555702438558508
+        },
+        "target": {
+          "x": 21.95644011755843,
+          "y": 1.1192048694543595,
+          "z": -5.642726776471509
+        },
+        "yaw": 6.702400000000003,
+        "pitch": 0.030799999999999994,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": 21.55183220129964,
+            "y": 0.8610350753379471,
+            "z": -5.887350551903519
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "fixed": {
+          "magazine": 4,
+          "reserve": 19,
+          "reloading": false,
+          "reloadEnd": 19.312400000095376
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj59",
+          "name": "DroneB",
+          "p": {
+            "x": 24.48551378296887,
+            "y": 0.75,
+            "z": 4.034434341861833
+          },
+          "health": {
+            "current": 34,
+            "max": 100
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "gamma-console",
+      "title": "Signal Relay",
+      "text": "Health 79 / 100\nReach extraction\nWeapon 1/19\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 30.458800000310063,
+      "playtime": 30.458800000310063,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 79,
+        "consolesPowered": 3,
+        "kills": 2
+      },
+      "objectives": {
+        "obj_restore_power": "complete",
+        "obj_extract": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": 22.116048791213032,
+          "y": 0.55,
+          "z": -4.98674412839601
+        },
+        "forward": {
+          "x": -0.10864167053135343,
+          "y": 0.054972275027067745,
+          "z": -0.9925598402124203
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 22.116048791213032,
+          "y": 1.15,
+          "z": -4.98674412839601
+        },
+        "target": {
+          "x": 22.00740712068168,
+          "y": 1.2049722750270677,
+          "z": -5.979303968608431
+        },
+        "yaw": 9.533800000000003,
+        "pitch": -0.05500000000000001,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": 22.31547300293657,
+            "y": 0.9144910825826305,
+            "z": -5.646263296878127
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "fixed": {
+          "magazine": 1,
+          "reserve": 19,
+          "reloading": false,
+          "reloadEnd": 19.312400000095376
+        }
+      },
+      "enemies": [],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 8,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "extraction-attempt",
+      "title": "Signal Relay",
+      "text": "Mission complete\n\nThe station is ready. Your route is complete.\n\nRestart\nHealth 79 / 100\nReach extraction\nWeapon 1/19\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 34.568700000286285,
+      "playtime": 34.568700000286285,
+      "ended": true,
+      "paused": false,
+      "overlay": {
+        "classes": "win visible",
+        "title": "Mission complete"
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 79,
+        "consolesPowered": 3,
+        "kills": 2
+      },
+      "objectives": {
+        "obj_restore_power": "complete",
+        "obj_extract": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": 36.53098810645444,
+          "y": 0.55,
+          "z": -0.3518917557903152
+        },
+        "forward": {
+          "x": 0.9170484066921757,
+          "y": 6.938893903907228e-18,
+          "z": 0.39877590170839317
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 36.53098810645444,
+          "y": 1.15,
+          "z": -0.3518917557903152
+        },
+        "target": {
+          "x": 37.44803651314661,
+          "y": 1.15,
+          "z": 0.04688414591807799
+        },
+        "yaw": 7.443800000000003,
+        "pitch": -6.938893903907228e-18,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": 36.99188862514232,
+            "y": 0.8799999999999999,
+            "z": 0.14295237307577627
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "fixed": {
+          "magazine": 1,
+          "reserve": 19,
+          "reloading": false,
+          "reloadEnd": 19.312400000095376
+        }
+      },
+      "enemies": [],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 8,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "restart",
+      "title": "Signal Relay",
+      "text": "Health 100 / 100\nRestore power at all three relay consoles\nWeapon 8/24\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 0.36239999997615824,
+      "playtime": 0.36239999997615824,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": -30,
+          "y": 0.55,
+          "z": 0
+        },
+        "forward": {
+          "x": 0.8717876579210048,
+          "y": 0.12288857657561734,
+          "z": 0.4742200725863761
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": -30,
+          "y": 1.15,
+          "z": 0
+        },
+        "target": {
+          "x": -29.128212342078996,
+          "y": 1.2728885765756173,
+          "z": 0.4742200725863761
+        },
+        "yaw": 1.0726,
+        "pitch": -0.1232,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": -29.55936220211435,
+            "y": 0.9582373894244007,
+            "z": 0.5470515809863983
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "fixed": {
+          "magazine": 8,
+          "reserve": 24,
+          "reloading": false,
+          "reloadEnd": 0
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj58",
+          "name": "DroneA",
+          "p": {
+            "x": 5.279186854569868,
+            "y": 0.75,
+            "z": -0.40217392574665467
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj59",
+          "name": "DroneB",
+          "p": {
+            "x": 21.395355163709905,
+            "y": 0.75,
+            "z": 4.94500913820229
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        }
+      ],
+      "helpers": []
+    }
+  ],
+  "observations": [
+    {
+      "type": "combat-attempt",
+      "enemy": "obj58",
+      "endHealth": 0,
+      "sim": 14.794799999952305
+    },
+    {
+      "type": "combat-attempt",
+      "enemy": "obj59",
+      "endHealth": 34,
+      "sim": 25.320400000214647
+    },
+    {
+      "type": "combat-attempt",
+      "enemy": "obj59",
+      "startHealth": 34,
+      "endHealth": 0,
+      "sim": 29.43070000028622
+    }
+  ],
+  "finishedAt": "2026-09-08T00:38:12.610Z",
+  "outcome": "win visible"
+}

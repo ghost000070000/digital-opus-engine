@@ -1,0 +1,166 @@
+{
+  "id": "arsenal-run",
+  "phase": "after-a",
+  "url": "http://localhost:8837/dist/games/arsenal-run.html",
+  "startedAt": "2026-09-08T00:09:15.816Z",
+  "seconds": 26,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 3120
+    },
+    {
+      "key": "d",
+      "milliseconds": 2600
+    },
+    {
+      "key": "w",
+      "milliseconds": 3900
+    },
+    {
+      "key": "a",
+      "milliseconds": 2600
+    },
+    {
+      "key": "s",
+      "milliseconds": 2080
+    },
+    {
+      "key": "w",
+      "milliseconds": 2600
+    },
+    {
+      "key": "d",
+      "milliseconds": 1300
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Arsenal Run",
+      "text": "Sidearm 10/30\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 92
+      },
+      "playtime": 0.6038999999761582,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 13
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_clear": "active"
+      },
+      "inventory": {
+        "Sidearm": 1,
+        "Rifle": 1
+      },
+      "helpers": []
+    },
+    {
+      "title": "Arsenal Run",
+      "text": "Sidearm 9/30\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 84
+      },
+      "playtime": 4.017199999928477,
+      "player": {
+        "position": {
+          "x": -3.249989107667782,
+          "y": 0.55,
+          "z": -2.244058511379866
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_clear": "active"
+      },
+      "inventory": {
+        "Sidearm": 1,
+        "Rifle": 1
+      },
+      "helpers": []
+    },
+    {
+      "title": "Arsenal Run",
+      "text": "Sidearm 10/28\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 76
+      },
+      "playtime": 8.017199999928463,
+      "player": {
+        "position": {
+          "x": -3.0889259783524583,
+          "y": 0.55,
+          "z": -4.8224722867777885
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_clear": "active"
+      },
+      "inventory": {
+        "Sidearm": 1,
+        "Rifle": 1
+      },
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Arsenal Run",
+    "text": "Arsenal Run\n\nA compact arena assault. Use cover, switch between sidearm and rifle, defeat three sentries and reach extraction.\n\nBegin mission\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+    "state": {
+      "kills": 0
+    },
+    "playtime": 0,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 1.25,
+        "z": 13
+      },
+      "visible": false,
+      "controller": "firstperson"
+    },
+    "camera": {
+      "mode": "fixed"
+    },
+    "audio": {},
+    "objectives": {
+      "obj_clear": "active"
+    },
+    "inventory": {
+      "Sidearm": 1,
+      "Rifle": 1
+    },
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nSidearm 10/28\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:09:57.054Z"
+}

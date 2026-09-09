@@ -1,0 +1,297 @@
+{
+  "generatedAt": "2026-09-08T01:09:24.773Z",
+  "changes": [
+    {
+      "id": "relic-frontier",
+      "edits": [
+        {
+          "level": 0,
+          "field": "howToPlay",
+          "before": "WASD move · Space jump · Shift sprint · C crouch · Q attack · F interact · Esc pause. Find the weapon near the old road. Defeat the guardian, collect the ridge relic and reach the arch beyond the gate.",
+          "after": "WASD move · Space jump · Shift sprint · C crouch · Q attack · Esc pause. Find the weapon near the old road. Defeat the guardian, collect the ridge relic and reach the arch beyond the gate.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        }
+      ]
+    },
+    {
+      "id": "forest-range",
+      "edits": [
+        {
+          "level": 0,
+          "field": "howToPlay",
+          "before": "Explore the three groves and reach the lookout.\n\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+          "after": "Explore the three groves and reach the lookout.\n\nWASD / arrows move; Space jumps; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        },
+        {
+          "level": 0,
+          "field": "controlsHint",
+          "before": "WASD / arrows move; Space jumps; F interacts; Escape pauses.",
+          "after": "WASD / arrows move; Space jumps; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        }
+      ]
+    },
+    {
+      "id": "iron-arena",
+      "edits": [
+        {
+          "level": 0,
+          "field": "howToPlay",
+          "before": "Defeat all three sentries.\n\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+          "after": "Defeat all three sentries.\n\nWASD / arrows move; mouse looks; Space jumps; Q attacks; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        },
+        {
+          "level": 0,
+          "field": "controlsHint",
+          "before": "WASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+          "after": "WASD / arrows move; mouse looks; Space jumps; Q attacks; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        }
+      ]
+    },
+    {
+      "id": "dungeon-descent",
+      "edits": [
+        {
+          "level": 0,
+          "field": "howToPlay",
+          "before": "Activate the two seals, then reach the eastern exit.\n\nWASD / arrows move; F interacts; Escape pauses.",
+          "after": "Activate the two seals, then reach the eastern exit.\n\nWASD / arrows move; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        },
+        {
+          "level": 0,
+          "field": "controlsHint",
+          "before": "WASD / arrows move; F interacts; Escape pauses.",
+          "after": "WASD / arrows move; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        }
+      ]
+    },
+    {
+      "id": "npc-puzzle-adventure",
+      "edits": [
+        {
+          "level": 1,
+          "field": "howToPlay",
+          "before": "Speak to the sailor, use the door console, and enter the sanctum.\n\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+          "after": "Speak to the sailor, use the door console, and enter the sanctum.\n\nWASD / arrows move; Space jumps; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        },
+        {
+          "level": 1,
+          "field": "controlsHint",
+          "before": "WASD / arrows move; Space jumps; F interacts; Escape pauses.",
+          "after": "WASD / arrows move; Space jumps; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        }
+      ]
+    },
+    {
+      "id": "opus-arena",
+      "edits": [
+        {
+          "level": 0,
+          "field": "howToPlay",
+          "before": "Defeat eight guardians.\n\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+          "after": "Defeat eight guardians.\n\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        },
+        {
+          "level": 0,
+          "field": "controlsHint",
+          "before": "WASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+          "after": "WASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        }
+      ]
+    },
+    {
+      "id": "relic-runner-2",
+      "edits": [
+        {
+          "level": 0,
+          "field": "howToPlay",
+          "before": "Climb the ramp and claim the ridge relic.\n\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+          "after": "Climb the ramp and claim the ridge relic.\n\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        },
+        {
+          "level": 0,
+          "field": "controlsHint",
+          "before": "WASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+          "after": "WASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        }
+      ]
+    },
+    {
+      "id": "sentinel-maze",
+      "edits": [
+        {
+          "level": 0,
+          "field": "howToPlay",
+          "before": "Reach the amber arch beyond the maze.\n\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+          "after": "Reach the amber arch beyond the maze.\n\nWASD / arrows move; Space jumps; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        },
+        {
+          "level": 0,
+          "field": "controlsHint",
+          "before": "WASD / arrows move; Space jumps; F interacts; Escape pauses.",
+          "after": "WASD / arrows move; Space jumps; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        }
+      ]
+    },
+    {
+      "id": "signal-zero",
+      "edits": [
+        {
+          "level": 0,
+          "field": "howToPlay",
+          "before": "Reach the outpost console, then restore the deep relay.\n\nWASD / arrows move; Space jumps; Left Click attacks; F interacts; Escape pauses.",
+          "after": "Reach the outpost console, then restore the deep relay.\n\nWASD / arrows move; Space jumps; Left Click attacks; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        },
+        {
+          "level": 0,
+          "field": "controlsHint",
+          "before": "WASD / arrows move; Space jumps; Left Click attacks; F interacts; Escape pauses.",
+          "after": "WASD / arrows move; Space jumps; Left Click attacks; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        },
+        {
+          "level": 1,
+          "field": "howToPlay",
+          "before": "Reach the outpost console, then restore the deep relay.\n\nWASD / arrows move; Space jumps; Left Click attacks; F interacts; Escape pauses.",
+          "after": "Reach the outpost console, then restore the deep relay.\n\nWASD / arrows move; Space jumps; Left Click attacks; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        },
+        {
+          "level": 1,
+          "field": "controlsHint",
+          "before": "WASD / arrows move; Space jumps; Left Click attacks; F interacts; Escape pauses.",
+          "after": "WASD / arrows move; Space jumps; Left Click attacks; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        }
+      ]
+    },
+    {
+      "id": "textured-adventure",
+      "edits": [
+        {
+          "level": 0,
+          "field": "howToPlay",
+          "before": "Collect three relics and enter the shrine.\n\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+          "after": "Collect three relics and enter the shrine.\n\nWASD / arrows move; Space jumps; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        },
+        {
+          "level": 0,
+          "field": "controlsHint",
+          "before": "WASD / arrows move; Space jumps; F interacts; Escape pauses.",
+          "after": "WASD / arrows move; Space jumps; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        }
+      ]
+    },
+    {
+      "id": "valley-run",
+      "edits": [
+        {
+          "level": 0,
+          "field": "howToPlay",
+          "before": "Reach the far ridge using the raised stepping stones.\n\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+          "after": "Reach the far ridge using the raised stepping stones.\n\nWASD / arrows move; Space jumps; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        },
+        {
+          "level": 0,
+          "field": "controlsHint",
+          "before": "WASD / arrows move; Space jumps; F interacts; Escape pauses.",
+          "after": "WASD / arrows move; Space jumps; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        }
+      ]
+    },
+    {
+      "id": "painted-wilds",
+      "edits": [
+        {
+          "level": 0,
+          "field": "howToPlay",
+          "before": "Visit all three survey stones.\n\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+          "after": "Visit all three survey stones.\n\nWASD / arrows move; Space jumps; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        },
+        {
+          "level": 0,
+          "field": "controlsHint",
+          "before": "WASD / arrows move; Space jumps; F interacts; Escape pauses.",
+          "after": "WASD / arrows move; Space jumps; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        }
+      ]
+    },
+    {
+      "id": "blacksite",
+      "edits": [
+        {
+          "level": 1,
+          "field": "howToPlay",
+          "before": "Recover the card, enter the core, and reach extraction.\n\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+          "after": "Recover the card, enter the core, and reach extraction.\n\nWASD / arrows move; mouse looks; Space jumps; Q attacks; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        },
+        {
+          "level": 1,
+          "field": "controlsHint",
+          "before": "WASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+          "after": "WASD / arrows move; mouse looks; Space jumps; Q attacks; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        }
+      ]
+    },
+    {
+      "id": "skyway-trial",
+      "edits": [
+        {
+          "level": 0,
+          "field": "howToPlay",
+          "before": "Jump across five platforms to the summit.\n\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+          "after": "Jump across five platforms to the summit.\n\nWASD / arrows move; Space jumps; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        },
+        {
+          "level": 0,
+          "field": "controlsHint",
+          "before": "WASD / arrows move; Space jumps; F interacts; Escape pauses.",
+          "after": "WASD / arrows move; Space jumps; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        }
+      ]
+    },
+    {
+      "id": "temple-switch-puzzle",
+      "edits": [
+        {
+          "level": 0,
+          "field": "howToPlay",
+          "before": "Activate both seals, then enter the northern shrine.\n\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+          "after": "Activate both seals, then enter the northern shrine.\n\nWASD / arrows move; Space jumps; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        },
+        {
+          "level": 0,
+          "field": "controlsHint",
+          "before": "WASD / arrows move; Space jumps; F interacts; Escape pauses.",
+          "after": "WASD / arrows move; Space jumps; Escape pauses.",
+          "reason": "No authored interact behavior exists in this level or any project prefab."
+        }
+      ]
+    }
+  ]
+}

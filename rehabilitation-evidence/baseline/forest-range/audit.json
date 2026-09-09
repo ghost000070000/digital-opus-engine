@@ -1,0 +1,140 @@
+{
+  "id": "forest-range",
+  "phase": "baseline",
+  "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/forest-range.html",
+  "startedAt": "2026-09-08T00:02:42.357Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Forest Range",
+      "text": "PAINTED WILDS\nPress F to interact",
+      "state": {},
+      "playtime": 1.2475999999046328,
+      "player": {
+        "position": {
+          "x": -13,
+          "y": -1.5942933068196634,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_explore": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Forest Range",
+      "text": "PAINTED WILDS\nPress F to interact",
+      "state": {},
+      "playtime": 7.848699999809264,
+      "player": {
+        "position": {
+          "x": -25.35437981736972,
+          "y": -1.9,
+          "z": 25.172845981261318
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_explore": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Forest Range",
+      "text": "PAINTED WILDS\nPress F to interact",
+      "state": {},
+      "playtime": 23.002099999904637,
+      "player": {
+        "position": {
+          "x": -30.532052982711075,
+          "y": -1.9,
+          "z": 19.040649251128382
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_explore": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Forest Range",
+    "text": "PAINTED WILDS\nPress F to interact",
+    "state": {},
+    "playtime": 0.40639999997615817,
+    "player": {
+      "position": {
+        "x": -13,
+        "y": -0.9584593997891905,
+        "z": 0
+      },
+      "visible": true,
+      "controller": "thirdperson"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {
+      "obj_explore": "active"
+    },
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPAINTED WILDS\nPress F to interact",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:03:16.110Z"
+}

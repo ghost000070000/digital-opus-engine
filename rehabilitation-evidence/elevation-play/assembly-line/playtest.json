@@ -1,0 +1,56 @@
+{
+  "id": "assembly-line",
+  "index": 22,
+  "inputOnly": true,
+  "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+  "errors": [],
+  "actions": [
+    {
+      "key": "w",
+      "ms": 950
+    },
+    {
+      "key": "a",
+      "ms": 520
+    },
+    {
+      "key": "Space",
+      "ms": 100
+    },
+    {
+      "key": "f",
+      "ms": 0
+    },
+    {
+      "key": "q",
+      "ms": 0
+    },
+    {
+      "key": "w",
+      "ms": 700
+    }
+  ],
+  "startedAt": "2026-09-08T17:43:04.482Z",
+  "sourceSHA256": "432d56ed9bbe85709ea3af5eca0164cff4bf2ef026f0152958f766d2de05a298",
+  "final": {
+    "title": "Assembly Line",
+    "sim": 3.9876000000014957,
+    "ended": false,
+    "paused": false,
+    "controller": "firstperson",
+    "position": {
+      "x": -4.518252588448606,
+      "y": 0.55,
+      "z": 3.2217658753758585
+    },
+    "state": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": [],
+    "webglLost": false
+  },
+  "pauseVisible": true,
+  "restartPassed": true,
+  "passed": true,
+  "finishedAt": "2026-09-08T17:43:09.471Z"
+}

@@ -1,0 +1,130 @@
+{
+  "id": "signal-zero",
+  "inputOnly": true,
+  "events": [
+    {
+      "capture": "opening",
+      "state": {
+        "pos": {
+          "x": 0,
+          "y": 0.55,
+          "z": -8
+        },
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.47582723280814226,
+            "z": 0.8795387680586603
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "up": {
+            "x": 0,
+            "y": 0.8795387680586603,
+            "z": 0.47582723280814226
+          }
+        },
+        "ended": false,
+        "sim": 2.1023000000044707,
+        "text": "Signal Zero: the relay has gone dark. Reach the console.\nHealth 100 / 100\nReach the outpost console, then restore the deep relay.\nPress F to interact\nWASD / arrows move; Space jumps; Left Click attacks; Escape pauses."
+      }
+    },
+    {
+      "capture": "level-1-relay",
+      "state": {
+        "pos": {
+          "x": 0,
+          "y": 0.55,
+          "z": 8.44076364037905
+        },
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.359075791769267,
+            "z": 0.9333084033508292
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "up": {
+            "x": 0,
+            "y": 0.9333084033508292,
+            "z": 0.359075791769267
+          }
+        },
+        "ended": false,
+        "sim": 5.088700000002981,
+        "text": "Game saved\nHealth 100 / 100\nReach the outpost console, then restore the deep relay.\nPress F to interact\nWASD / arrows move; Space jumps; Left Click attacks; Escape pauses."
+      }
+    },
+    {
+      "capture": "level-2-opening",
+      "state": {
+        "pos": {
+          "x": 0,
+          "y": 0.55,
+          "z": -6
+        },
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.5141379026079075,
+            "z": 0.857707535878018
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "up": {
+            "x": 0,
+            "y": 0.857707535878018,
+            "z": 0.5141379026079075
+          }
+        },
+        "ended": false,
+        "sim": 7.34120000000298,
+        "text": "Game saved\nHealth 100 / 100\nReach the outpost console, then restore the deep relay.\nPress F to interact\nWASD / arrows move; Space jumps; Left Click attacks; Escape pauses."
+      }
+    },
+    {
+      "capture": "level-2-reactor",
+      "state": {
+        "pos": {
+          "x": 0,
+          "y": 0.55,
+          "z": -5.5
+        },
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.5141378520968582,
+            "z": 0.8577075661559881
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "up": {
+            "x": 0,
+            "y": 0.8577075661559881,
+            "z": 0.5141378520968582
+          }
+        },
+        "ended": false,
+        "sim": 16.61820000000305,
+        "text": "Game saved\nHealth 100 / 100\nReach the outpost console, then restore the deep relay.\nPress F to interact\nWASD / arrows move; Space jumps; Left Click attacks; Escape pauses."
+      }
+    }
+  ],
+  "errors": [],
+  "startedAt": "2026-09-08T20:29:21.875Z",
+  "completed": true,
+  "finishedAt": "2026-09-08T20:29:38.926Z"
+}

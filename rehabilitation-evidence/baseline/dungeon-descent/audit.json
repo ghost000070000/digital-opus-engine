@@ -1,0 +1,132 @@
+{
+  "id": "dungeon-descent",
+  "phase": "baseline",
+  "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/dungeon-descent.html",
+  "startedAt": "2026-09-08T00:03:16.773Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Dungeon Descent",
+      "text": "Find both switches to open the gate, then reach the exit.\nTime: 0.6s\nPress F to interact",
+      "state": {},
+      "playtime": 0.6,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.9314622447795105,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "topdown"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Dungeon Descent",
+      "text": "Find both switches to open the gate, then reach the exit.\nTime: 6.3s\nPress F to interact",
+      "state": {},
+      "playtime": 6.315499999999994,
+      "player": {
+        "position": {
+          "x": 7.4092295295265815,
+          "y": 0.9638094933342436,
+          "z": -15.16185444296692
+        },
+        "visible": true,
+        "controller": "topdown"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Dungeon Descent",
+      "text": "Find both switches to open the gate, then reach the exit.\nTime: 17.6s\nPress F to interact",
+      "state": {},
+      "playtime": 17.596100000143032,
+      "player": {
+        "position": {
+          "x": 5.565679285815219,
+          "y": 0.9638094933342436,
+          "z": -17.830151594299195
+        },
+        "visible": true,
+        "controller": "topdown"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Dungeon Descent",
+    "text": "Find both switches to open the gate, then reach the exit.\nDungeon Descent\n\nActivate both switches to open the gate and find the exit.\n\nEnter\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+    "state": {},
+    "playtime": 0,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 0.9314622447795105,
+        "z": 0
+      },
+      "visible": true,
+      "controller": "topdown"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "Find both switches to open the gate, then reach the exit.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nTime: 18.0s\nPress F to interact",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:03:52.461Z"
+}

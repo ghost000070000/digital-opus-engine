@@ -1,0 +1,154 @@
+{
+  "id": "relic-island",
+  "phase": "public-v5-candidates",
+  "url": "http://localhost:8837/dist/games/relic-island.html",
+  "startedAt": "2026-09-08T19:48:24.214Z",
+  "seconds": 8,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 960
+    },
+    {
+      "key": "d",
+      "milliseconds": 800
+    },
+    {
+      "key": "w",
+      "milliseconds": 1200
+    },
+    {
+      "key": "a",
+      "milliseconds": 800
+    },
+    {
+      "key": "s",
+      "milliseconds": 640
+    },
+    {
+      "key": "w",
+      "milliseconds": 800
+    },
+    {
+      "key": "d",
+      "milliseconds": 400
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Relic Island",
+      "text": "Find 3 relics, unlock the gate, reach the shrine\nHealth 100 / 100\nRelics: 0/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 0.2,
+      "simulationSeconds": 0.2,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.324468909081089,
+          "z": 0
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Relic Island",
+      "text": "Find 3 relics, unlock the gate, reach the shrine\nHealth 100 / 100\nRelics: 0/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 2.778700000002982,
+      "simulationSeconds": 2.778700000002982,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 1.6379737099432186,
+          "y": 3.632723079663955,
+          "z": -0.6194007027191342
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Relic Island",
+      "text": "Find 3 relics, unlock the gate, reach the shrine\nHealth 100 / 100\nRelics: 0/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 6.033100000001486,
+      "simulationSeconds": 6.033100000001486,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 4.890012447368334,
+          "y": 0.5687827242304433,
+          "z": 6.07757297022146
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Relic Island",
+    "text": "Find 3 relics, unlock the gate, reach the shrine\nRelic Island\n\nA small island treasure hunt. Recover three golden relics and the gate key, then awaken the hilltop shrine. Visual landmark: Tidal relic.\n\nBegin journey\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nThree relics • One key • F use the gate lever",
+    "state": {},
+    "playtime": 0,
+    "simulationSeconds": 0,
+    "ended": false,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 1.9244689090810891,
+        "z": 0
+      },
+      "visible": false,
+      "controller": "thirdperson"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "Find 3 relics, unlock the gate, reach the shrine\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nRelics: 0/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+  "completed": true,
+  "finishedAt": "2026-09-08T19:49:41.879Z"
+}

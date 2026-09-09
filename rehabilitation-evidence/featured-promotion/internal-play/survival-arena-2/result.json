@@ -1,0 +1,271 @@
+{
+  "id": "survival-arena-2",
+  "method": "Native keyboard input with read-only telemetry; no state mutation.",
+  "events": [
+    {
+      "name": "opening",
+      "ended": false,
+      "sim": 0.9182000000029796,
+      "pos": {
+        "x": 0,
+        "y": 1.7024900742797322,
+        "z": 0
+      },
+      "forward": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "text": "Wave 1 incoming!\nSurvive the waves! Avoid the hunter drones.\nHealth 100 / 100\nSurvived: 0.9s\nSurvive both waves for 32 seconds.\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "visual": true,
+      "body": false,
+      "craftParts": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "checkpoint": null,
+      "errors": []
+    },
+    {
+      "name": "survival-outcome",
+      "ended": true,
+      "sim": 32.30260000000153,
+      "pos": {
+        "x": 6.126144089512816,
+        "y": -1.0790776678181833,
+        "z": -3.8035863786319437
+      },
+      "forward": {
+        "x": -0.9748992407987439,
+        "y": 0,
+        "z": -0.2226465142103795
+      },
+      "velocity": {
+        "x": -8.77971981466853,
+        "y": 0,
+        "z": -7.316797306218924
+      },
+      "text": "MAP EDGE — TURN INWARD\nSurvive the waves! Avoid the hunter drones.\nWaves survived\n\nThe hunters have lost your trail.\n\nRestart\nHealth 80 / 100\nSurvived: 32.3s\nSurvive both waves for 32 seconds.\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 80
+      },
+      "visual": true,
+      "body": false,
+      "craftParts": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "checkpoint": null,
+      "errors": []
+    },
+    {
+      "name": "outcome",
+      "ended": true,
+      "sim": 32.36910000000153,
+      "pos": {
+        "x": 5.5479422755237024,
+        "y": -1.0040432781560868,
+        "z": -4.2401436941716835
+      },
+      "forward": {
+        "x": -0.9872279337310246,
+        "y": 0,
+        "z": -0.15931417658567537
+      },
+      "velocity": {
+        "x": -8.634919378817468,
+        "y": 0,
+        "z": -6.130325822417532
+      },
+      "text": "MAP EDGE — TURN INWARD\nSurvive the waves! Avoid the hunter drones.\nWaves survived\n\nThe hunters have lost your trail.\n\nRestart\nHealth 80 / 100\nSurvived: 32.4s\nSurvive both waves for 32 seconds.\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 80
+      },
+      "visual": true,
+      "body": false,
+      "craftParts": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "checkpoint": null,
+      "errors": []
+    },
+    {
+      "name": "restart",
+      "ended": false,
+      "sim": 0.5006000000014901,
+      "pos": {
+        "x": 0,
+        "y": 1.736983529603784,
+        "z": 0
+      },
+      "forward": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "text": "Wave 1 incoming!\nSurvive the waves! Avoid the hunter drones.\nHealth 100 / 100\nSurvived: 0.5s\nSurvive both waves for 32 seconds.\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "visual": true,
+      "body": false,
+      "craftParts": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "checkpoint": null,
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "opening": {
+    "ended": false,
+    "sim": 0.9182000000029796,
+    "pos": {
+      "x": 0,
+      "y": 1.7024900742797322,
+      "z": 0
+    },
+    "forward": {
+      "x": 0,
+      "y": 0,
+      "z": 1
+    },
+    "velocity": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "text": "Wave 1 incoming!\nSurvive the waves! Avoid the hunter drones.\nHealth 100 / 100\nSurvived: 0.9s\nSurvive both waves for 32 seconds.\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "visual": true,
+    "body": false,
+    "craftParts": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "checkpoint": null,
+    "errors": []
+  },
+  "final": {
+    "ended": true,
+    "sim": 32.36910000000153,
+    "pos": {
+      "x": 5.5479422755237024,
+      "y": -1.0040432781560868,
+      "z": -4.2401436941716835
+    },
+    "forward": {
+      "x": -0.9872279337310246,
+      "y": 0,
+      "z": -0.15931417658567537
+    },
+    "velocity": {
+      "x": -8.634919378817468,
+      "y": 0,
+      "z": -6.130325822417532
+    },
+    "text": "MAP EDGE — TURN INWARD\nSurvive the waves! Avoid the hunter drones.\nWaves survived\n\nThe hunters have lost your trail.\n\nRestart\nHealth 80 / 100\nSurvived: 32.4s\nSurvive both waves for 32 seconds.\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "state": {
+      "maxHealth": 100,
+      "health": 80
+    },
+    "visual": true,
+    "body": false,
+    "craftParts": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "checkpoint": null,
+    "errors": []
+  },
+  "completed": true,
+  "restart": {
+    "ended": false,
+    "sim": 0.5006000000014901,
+    "pos": {
+      "x": 0,
+      "y": 1.736983529603784,
+      "z": 0
+    },
+    "forward": {
+      "x": 0,
+      "y": 0,
+      "z": 1
+    },
+    "velocity": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "text": "Wave 1 incoming!\nSurvive the waves! Avoid the hunter drones.\nHealth 100 / 100\nSurvived: 0.5s\nSurvive both waves for 32 seconds.\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "visual": true,
+    "body": false,
+    "craftParts": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "checkpoint": null,
+    "errors": []
+  }
+}

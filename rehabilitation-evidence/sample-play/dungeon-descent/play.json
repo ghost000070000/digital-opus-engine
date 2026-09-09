@@ -1,0 +1,317 @@
+{
+  "id": "dungeon-descent",
+  "inputs": [
+    {
+      "target": [
+        -10,
+        6
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 3.6661999999955284,
+        "position": {
+          "x": -10,
+          "y": 1.15,
+          "z": 7.196752629234378
+        },
+        "controller": "topdown",
+        "basis": {
+          "x": 0.00008190960181191536,
+          "y": -0.921034815248881,
+          "z": -0.38948024646992907
+        },
+        "text": "Find both switches to open the gate, then reach the exit.\nTime: 3.7s\nActivate the two seals, then reach the eastern exit.\nPress F to interact\nWASD / arrows move; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        -4,
+        8
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {
+          "switchA": true
+        },
+        "inventory": {},
+        "ended": false,
+        "playtime": 9.259499999985104,
+        "position": {
+          "x": -3.504678655121577,
+          "y": 1.15,
+          "z": 6.754959761016191
+        },
+        "controller": "topdown",
+        "basis": {
+          "x": 0.3655967823096773,
+          "y": -0.9272349167301179,
+          "z": 0.08108268595268643
+        },
+        "text": "Switch A activated.\nFind both switches to open the gate, then reach the exit.\nTime: 9.3s\nActivate the two seals, then reach the eastern exit.\nPress F to interact\nWASD / arrows move; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        -9,
+        6
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {
+          "switchA": true
+        },
+        "inventory": {},
+        "ended": false,
+        "playtime": 11.711199999988091,
+        "position": {
+          "x": -9.874273013932196,
+          "y": 1.15,
+          "z": 5.996181365767914
+        },
+        "controller": "topdown",
+        "basis": {
+          "x": -0.32144190584793586,
+          "y": -0.9246028002029619,
+          "z": -0.2044132163576725
+        },
+        "text": "Switch A activated.\nFind both switches to open the gate, then reach the exit.\nTime: 11.7s\nActivate the two seals, then reach the eastern exit.\nPress F to interact\nWASD / arrows move; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        -9,
+        -7
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {
+          "switchA": true
+        },
+        "inventory": {},
+        "ended": false,
+        "playtime": 16.975699999995555,
+        "position": {
+          "x": -9.392766624405501,
+          "y": 1.15,
+          "z": -6.270602058871252
+        },
+        "controller": "topdown",
+        "basis": {
+          "x": -0.03741750305809682,
+          "y": -0.9244342161117461,
+          "z": -0.37950139729223503
+        },
+        "text": "Switch A activated.\nFind both switches to open the gate, then reach the exit.\nTime: 17.0s\nActivate the two seals, then reach the eastern exit.\nPress F to interact\nWASD / arrows move; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        4,
+        -8
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {
+          "switchA": true,
+          "switchB": true
+        },
+        "inventory": {},
+        "ended": false,
+        "playtime": 21.066399999991084,
+        "position": {
+          "x": 5.476991491179166,
+          "y": 1.15,
+          "z": -8.232754236873859
+        },
+        "controller": "topdown",
+        "basis": {
+          "x": 0.3892854020953845,
+          "y": -0.921115324942484,
+          "z": 0.0018530708397015844
+        },
+        "text": "The gate rises!\nFind both switches to open the gate, then reach the exit.\nTime: 21.1s\nActivate the two seals, then reach the eastern exit.\nPress F to interact\nWASD / arrows move; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        10,
+        -7
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {
+          "switchA": true,
+          "switchB": true
+        },
+        "inventory": {},
+        "ended": false,
+        "playtime": 22.73649999999257,
+        "position": {
+          "x": 11.246619585184796,
+          "y": 1.15,
+          "z": -6.663086385503632
+        },
+        "controller": "topdown",
+        "basis": {
+          "x": 0.38867574900051355,
+          "y": -0.9213531983660507,
+          "z": -0.006280605029688214
+        },
+        "text": "The gate rises!\nFind both switches to open the gate, then reach the exit.\nTime: 22.7s\nActivate the two seals, then reach the eastern exit.\nPress F to interact\nWASD / arrows move; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        11,
+        0
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {
+          "switchA": true,
+          "switchB": true
+        },
+        "inventory": {},
+        "ended": false,
+        "playtime": 27.97549999999256,
+        "position": {
+          "x": 10.71823701658094,
+          "y": 1.15,
+          "z": -0.9441314605853187
+        },
+        "controller": "topdown",
+        "basis": {
+          "x": -0.24383937122716673,
+          "y": -0.9259895180011956,
+          "z": 0.2882460296195829
+        },
+        "text": "The gate rises!\nFind both switches to open the gate, then reach the exit.\nTime: 28.0s\nActivate the two seals, then reach the eastern exit.\nPress F to interact\nWASD / arrows move; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        13,
+        0
+      ],
+      "result": "ended",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {
+          "switchA": true,
+          "switchB": true
+        },
+        "inventory": {},
+        "ended": true,
+        "playtime": 29.45339999999108,
+        "position": {
+          "x": 12.723303932346559,
+          "y": 1.15,
+          "z": 0.7264546673890363
+        },
+        "controller": "topdown",
+        "basis": {
+          "x": 0.2764339462569563,
+          "y": -0.9213906358508352,
+          "z": -0.27317314934524517
+        },
+        "text": "The gate rises!\nFind both switches to open the gate, then reach the exit.\nDungeon escaped\n\nBoth seals are lit and the passage is open.\n\nRestart\nTime: 29.5s\nActivate the two seals, then reach the eastern exit.\nPress F to interact\nWASD / arrows move; Escape pauses.",
+        "dialogue": false
+      }
+    }
+  ],
+  "errors": [],
+  "started": "2026-09-08T15:58:09.657Z",
+  "start": {
+    "level": 0,
+    "state": {},
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 2.1972999999970195,
+    "position": {
+      "x": -10,
+      "y": 1.15,
+      "z": 0
+    },
+    "controller": "topdown",
+    "basis": {
+      "x": 0,
+      "y": -0.9210249491046378,
+      "z": 0.3895035855121225
+    },
+    "text": "Find both switches to open the gate, then reach the exit.\nTime: 2.2s\nActivate the two seals, then reach the eastern exit.\nPress F to interact\nWASD / arrows move; Escape pauses.",
+    "dialogue": false
+  },
+  "final": {
+    "level": 0,
+    "state": {},
+    "flags": {
+      "switchA": true,
+      "switchB": true
+    },
+    "inventory": {},
+    "ended": true,
+    "playtime": 30.636899999998548,
+    "position": {
+      "x": 15.5,
+      "y": 1.15,
+      "z": 4.131847643395977
+    },
+    "controller": "topdown",
+    "basis": {
+      "x": 0.2754207001064545,
+      "y": -0.9210249666744276,
+      "z": -0.27542049436314703
+    },
+    "text": "The gate rises!\nFind both switches to open the gate, then reach the exit.\nDungeon escaped\n\nBoth seals are lit and the passage is open.\n\nRestart\nTime: 30.6s\nActivate the two seals, then reach the eastern exit.\nPress F to interact\nWASD / arrows move; Escape pauses.",
+    "dialogue": false
+  },
+  "completed": true,
+  "restart": {
+    "level": 0,
+    "state": {},
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 0.5477999999970198,
+    "position": {
+      "x": -10,
+      "y": 1.15,
+      "z": 0
+    },
+    "controller": "topdown",
+    "basis": {
+      "x": 0,
+      "y": -0.9210712474532884,
+      "z": 0.3893940897276732
+    },
+    "text": "Find both switches to open the gate, then reach the exit.\nTime: 0.5s\nActivate the two seals, then reach the eastern exit.\nPress F to interact\nWASD / arrows move; Escape pauses.",
+    "dialogue": false
+  },
+  "finished": "2026-09-08T15:58:46.973Z"
+}

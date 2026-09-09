@@ -1,0 +1,141 @@
+{
+  "id": "relic-island",
+  "phase": "baseline",
+  "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/relic-island.html",
+  "startedAt": "2026-09-08T00:02:37.254Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Relic Island",
+      "text": "Find 3 relics, unlock the gate, reach the shrine\nRelics: 0/3\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 1.089399999976158,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.2244689090810892,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Relic Island",
+      "text": "The gate is locked. Find the key.\nFind 3 relics, unlock the gate, reach the shrine\nRelics: 0/3\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 6.798300000071518,
+      "player": {
+        "position": {
+          "x": -1.3825283019907693,
+          "y": 1.5904049320722797,
+          "z": -4.665222327857554
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Relic Island",
+      "text": "The gate is locked. Find the key.\nFind 3 relics, unlock the gate, reach the shrine\nRelics: 0/3\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 21.393700000166895,
+      "player": {
+        "position": {
+          "x": -5.568405567859065,
+          "y": 1.5904049320722797,
+          "z": 6.085699594165406
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Relic Island",
+    "text": "Find 3 relics, unlock the gate, reach the shrine\nRelic Island\n\nFind 3 relics, unlock the gate, and reach the shrine. Avoid the lava.\n\nBegin\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+    "state": {},
+    "playtime": 0,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 1.2244689090810892,
+        "z": 0
+      },
+      "visible": true,
+      "controller": "thirdperson"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "The gate is locked. Find the key.\nFind 3 relics, unlock the gate, reach the shrine\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nRelics: 0/3\nPress F to interact",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:03:11.030Z"
+}

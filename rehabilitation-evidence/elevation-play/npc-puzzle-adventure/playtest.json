@@ -1,0 +1,52 @@
+{
+  "id": "npc-puzzle-adventure",
+  "index": 11,
+  "inputOnly": true,
+  "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+  "errors": [],
+  "actions": [
+    {
+      "key": "w",
+      "ms": 950
+    },
+    {
+      "key": "d",
+      "ms": 520
+    },
+    {
+      "key": "f",
+      "ms": 0
+    },
+    {
+      "key": "q",
+      "ms": 0
+    },
+    {
+      "key": "w",
+      "ms": 700
+    }
+  ],
+  "startedAt": "2026-09-08T17:42:07.738Z",
+  "sourceSHA256": "e06562bdb1db003278e22b4bd3b99bb2356e8ba14005f7bc988158f4df5c5bc3",
+  "final": {
+    "title": "The Sanctum Key",
+    "sim": 3.8708999999985143,
+    "ended": false,
+    "paused": false,
+    "controller": "thirdperson",
+    "position": {
+      "x": -2.7788936994355273,
+      "y": 0.79,
+      "z": -3.5461014636814014
+    },
+    "state": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": [],
+    "webglLost": false
+  },
+  "pauseVisible": true,
+  "restartPassed": true,
+  "passed": true,
+  "finishedAt": "2026-09-08T17:42:12.690Z"
+}

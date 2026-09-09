@@ -1,0 +1,86 @@
+{
+  "games": [
+    {
+      "id": "sentinel-maze",
+      "before": {
+        "visual": 1,
+        "gameplayClarity": 2,
+        "levelComposition": 1,
+        "audio": 1,
+        "presentation": 2,
+        "uniqueness": 3
+      },
+      "after": {
+        "visual": 3,
+        "gameplayClarity": 3,
+        "levelComposition": 3,
+        "audio": 3,
+        "presentation": 3,
+        "uniqueness": 3
+      },
+      "finalRole": "SAMPLE",
+      "purpose": "Waypoint navigation around solid obstacles",
+      "notes": "A guardian follows an authored waypoint route through a slate maze with amber waystones. Corrected the sealed starting passage, matched invisible waypoint heights to the grounded guardian and routed it through the open right corridor and lower passage. Existing health damage now ends the game at zero through a supported hidden graph monitor. A normal walking route won at14.08 simulated seconds with92HP; zero jump inputs were required. After native Restart, the guardian traversed its route to the motionless player and produced a normal loss at22.36sim/0HP. Native Restart after both endings restored100HP and the guardian. No runtime state was mutated for proof.",
+      "remainingGaps": [
+        "Tall walls can obscure the chase view, and the green floor and repeated slate walls remain visually modest. The four-node authored route demonstrates bounded pathfinding; arbitrary dynamic obstacle navigation is outside this sample."
+      ],
+      "screenshots": [
+        "rehabilitation-evidence/health-outcomes/sentinel-maze/opening.png"
+      ],
+      "playEvidence": [
+        "rehabilitation-evidence/after-bc/sentinel-maze/audit.json",
+        "rehabilitation-evidence/after-bc-final/sentinel-maze/audit.json",
+        "rehabilitation-evidence/sample-play/sentinel-maze/play.json",
+        "rehabilitation-evidence/health-outcomes/sentinel-maze/proof.json"
+      ],
+      "outcomeVerified": true,
+      "normalInputProof": {
+        "winSim": 14.08420000004767,
+        "winHealth": 92,
+        "loseSim": 22.35829999995231,
+        "loseHealth": 0,
+        "restartVerified": true,
+        "zeroJumpInputs": true,
+        "errors": [],
+        "standaloneSHA256": "f97cadc650211c66bd6b6d4f91704e2ff5f2e9ca2ff9e3dbff08b9206f4db73b"
+      },
+      "reviewedAt": "2026-09-08T01:13:29.890Z",
+      "sourceGenerator": "tools/refine-health-outcomes.js"
+    },
+    {
+      "id": "valley-run",
+      "before": {
+        "visual": 1,
+        "gameplayClarity": 2,
+        "levelComposition": 1,
+        "audio": 1,
+        "presentation": 2,
+        "uniqueness": 3
+      },
+      "after": {
+        "visual": 3,
+        "gameplayClarity": 3,
+        "levelComposition": 2,
+        "audio": 3,
+        "presentation": 3,
+        "uniqueness": 3
+      },
+      "finalRole": "INTERNAL",
+      "purpose": "Terrain traversal, jumping and checkpoint recovery",
+      "notes": "A proper guardian, checkpoint beacon, vegetation and distant ridge arch improve the original terrain traversal fixture while retaining its stepping stones. Added a hidden healthAtMost(0) → Lose graph and health-specific loss copy, so the existing ordinary guardian damage has a defined failure outcome. This authoring correction is not a claim of a completed traversal playthrough.",
+      "remainingGaps": [
+        "The long route remains visually sparse, and the far goal is not visible from the opening frame. Jump/checkpoint/final-ridge completion remains unproven."
+      ],
+      "screenshots": [
+        "rehabilitation-evidence/after-bc-final/valley-run/opening.png"
+      ],
+      "playEvidence": [
+        "rehabilitation-evidence/after-bc/valley-run/audit.json",
+        "rehabilitation-evidence/after-bc-final/valley-run/audit.json"
+      ],
+      "outcomeVerified": false,
+      "reviewedAt": "2026-09-08T01:13:29.891Z",
+      "sourceGenerator": "tools/refine-health-outcomes.js"
+    }
+  ]
+}

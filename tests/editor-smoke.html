@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital Opus Editor - Browser Smoke Test</title>
+<style>
+  :root { color-scheme: dark; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+  body { margin: 0; padding: 24px; background: #0a0e1a; color: #e8edf7; }
+  iframe { width: 640px; height: 360px; display: block; border: 1px solid #3d4b68; }
+  #status { margin: 16px 0 8px; font-weight: 700; }
+  #status.pass { color: #63d69b; }
+  #status.fail { color: #ff7b86; }
+  ol { padding-left: 24px; line-height: 1.7; }
+  li.pass { color: #9ce6bd; }
+  li.fail { color: #ff9da5; }
+</style>
+</head>
+<body>
+<h1>Editor Browser Smoke Test</h1>
+<p>Loads the real <code>editor/index.html</code> in an iframe and injects a
+script that runs <em>inside</em> its own realm (so it can see the editor's
+top-level <code>let</code>/<code>const</code> module state directly, the
+same way DevTools console evaluation can but <code>iframe.contentWindow.x</code>
+cannot) -- regression tests for two of AUDIT.md's High findings (#1 Custom
+Script trust gate, #3 Node Graph ID collision), not synthetic unit tests.</p>
+<iframe id="editor-frame"></iframe>
+<div id="status">Running...</div>
+<ol id="results"></ol>
+<script>
+window.__opusEditorTestResults = null;
+
+function waitForFrameReady(frame, timeoutMs = 8000) {
+  return new Promise((resolve, reject) => {
+    const start = Date.now();
+    (function poll() {
+      let ready = false;
+      try { ready = !!(frame.contentDocument && frame.contentDocument.getElementById('play-btn')); } catch (e) { /* not same-origin yet */ }
+      if (ready) { resolve(); return; }
+      if (Date.now() - start > timeoutMs) { reject(new Error('editor iframe did not finish booting in time')); return; }
+      setTimeout(poll, 100);
+    })();
+  });
+}
+
+(async () => {
+  const status = document.getElementById('status');
+  const results = document.getElementById('results');
+  window.__OPUS_EDITOR_SMOKE__ = { state: 'running', report: [] };
+
+  const frame = document.getElementById('editor-frame');
+  // A cache-busting query param, generated fresh every run, not a fixed
+  // string -- editor/index.html has been served stale from browser HTTP
+  // cache more than once this batch (real symptom: the iframe silently
+  // boots with elements/behavior from a previous version, producing
+  // confusing "worked in the real editor, fails here" results). A static
+  // suffix would only relocate the same staleness risk to one more
+  // cacheable URL; a fresh one every load actually prevents it.
+  frame.src = `../editor/index.html?smoke=${Date.now()}`;
+  await waitForFrameReady(frame);
+  // Give the editor's own boot sequence (buildStarterGame + setEditorVisible)
+  // a moment to finish running after the DOM is ready.
+  await new Promise((r) => setTimeout(r, 500));
+
+  // The actual test body, injected as a <script> into the iframe's own
+  // document so it executes in that realm and can reference the editor's
+  // module-scope `let`/`const` bindings (placed, scriptsTrusted,
+  // graphNodeIdCounter, ...) as bare identifiers, exactly like the
+  // editor's own inline scripts do.
+  const testSource = `
+    (function() {
+      const report = [];
+      function assert(condition, message) { if (!condition) throw new Error(message); }
+      function test(name, fn) {
+        try { fn(); report.push({ name, passed: true }); }
+        catch (error) { report.push({ name, passed: false, error: error.message }); }
+      }
+
+      test('starter game booted with placed items', () => {
+        assert(Array.isArray(placed) && placed.length > 0, 'starter scene did not build any placed items');
+      });
+
+      test('Custom Script trust gate blocks an untrusted loaded script, then allows it once enabled', () => {
+        setEditorVisible(true);
+        const fakeProjectData = [
+          { kind: 'cube', position: [0, 0.5, 0], scale: [1, 1, 1], color: [1, 1, 1], rotationY: 0, behaviors: [{ trigger: 'enter', action: 'script', param: 'window.__opusSmokeMarker = true;' }], mesh: 'cube' },
+        ];
+        window.__opusSmokeMarker = false;
+        loadProjectData(fakeProjectData, 'Smoke test');
+        assert(scriptsTrusted === false, 'loading a project with a script behavior should set scriptsTrusted to false');
+        assert(scriptTrustBanner.classList.contains('visible'), 'trust banner should be visible after loading an untrusted script');
+
+        const loadedItem = placed.find((p) => p.kind === 'cube' && p.behaviors.some((b) => b.action === 'script'));
+        gameEnded = false;
+        runBehaviors(loadedItem, 'enter');
+        assert(window.__opusSmokeMarker === false, 'untrusted script executed despite the trust gate');
+
+        document.getElementById('script-trust-enable-btn').click();
+        assert(scriptsTrusted === true, 'Enable Scripts button did not set scriptsTrusted');
+        runBehaviors(loadedItem, 'enter');
+        assert(window.__opusSmokeMarker === true, 'script did not run after explicitly enabling it');
+      });
+
+      test('Node Graph new-node ids never collide with an existing saved graph, even after a counter reset', () => {
+        graphNodeIdCounter = 1; // simulate the exact bug precondition: a fresh page load
+        const testItem = { kind: 'cube', entity: app.addEntity({ mesh: cubeMesh, color: [1, 1, 1], position: new Opus.Vec3(0, 0.5, 0), scale: new Opus.Vec3(1, 1, 1) }), behaviors: [] };
+        const testGraph = {
+          nodes: [{ id: 'n1', type: 'message', text: 'hi' }, { id: 'n2', type: 'win' }],
+          edges: [{ from: 'start', to: 'n1', kind: 'next' }, { from: 'n1', to: 'n2', kind: 'next' }],
+        };
+        testItem.behaviors.push({ trigger: 'enter', action: 'graph', graph: testGraph });
+        placed.push(testItem);
+
+        openGraphEditor(testItem, testItem.behaviors[0]);
+        assert(graphNodeIdCounter === 3, 'expected counter reconciled to 3, got ' + graphNodeIdCounter);
+
+        document.querySelector('[data-node-type="message"]').click();
+        const ids = graphEditorState.graph.nodes.map((n) => n.id);
+        assert(new Set(ids).size === ids.length, 'duplicate node ids after adding a node: ' + ids.join(','));
+        assert(ids.includes('n3'), 'expected a new n3 node, got ' + ids.join(','));
+
+        document.getElementById('graph-cancel-btn').click();
+        app.scene.remove(testItem.entity);
+        placed.splice(placed.indexOf(testItem), 1);
+      });
+
+      window.parent.__opusEditorTestResults = report;
+    })();
+  `;
+  const script = frame.contentDocument.createElement('script');
+  script.textContent = testSource;
+  frame.contentDocument.body.appendChild(script);
+
+  const report = window.__opusEditorTestResults || [{ name: 'test injection', passed: false, error: 'injected script did not run or did not report results' }];
+  for (const item of report) {
+    const row = document.createElement('li');
+    row.className = item.passed ? 'pass' : 'fail';
+    row.textContent = item.passed ? `PASS - ${item.name}` : `FAIL - ${item.name}: ${item.error}`;
+    results.appendChild(row);
+  }
+  const failed = report.filter((item) => !item.passed).length;
+  const passed = report.length - failed;
+  status.className = failed ? 'fail' : 'pass';
+  status.textContent = `${passed} passed, ${failed} failed`;
+  window.__OPUS_EDITOR_SMOKE__ = { state: failed ? 'failed' : 'passed', report };
+  document.title = `Opus editor smoke: ${passed} passed, ${failed} failed`;
+})().catch((error) => {
+  document.getElementById('status').className = 'fail';
+  document.getElementById('status').textContent = `Harness failed: ${error.message}`;
+  window.__OPUS_EDITOR_SMOKE__ = { state: 'failed', report: [], error: error.message };
+});
+</script>
+</body>
+</html>

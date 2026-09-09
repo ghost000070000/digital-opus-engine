@@ -1,0 +1,148 @@
+{
+  "id": "forest-range",
+  "phase": "after-bc-final",
+  "url": "http://localhost:8837/dist/games/forest-range.html",
+  "startedAt": "2026-09-08T00:39:48.301Z",
+  "seconds": 4,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 480
+    },
+    {
+      "key": "d",
+      "milliseconds": 400
+    },
+    {
+      "key": "w",
+      "milliseconds": 600
+    },
+    {
+      "key": "a",
+      "milliseconds": 400
+    },
+    {
+      "key": "s",
+      "milliseconds": 320
+    },
+    {
+      "key": "w",
+      "milliseconds": 400
+    },
+    {
+      "key": "d",
+      "milliseconds": 200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Forest Range",
+      "text": "Explore the three groves and reach the lookout.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 0.1,
+      "simulationSeconds": 0.1,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": -8,
+          "y": -0.012737821700770036,
+          "z": -6
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_explore": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Forest Range",
+      "text": "Explore the three groves and reach the lookout.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 0.7111000000238418,
+      "simulationSeconds": 0.7111000000238418,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": -7.013476487933268,
+          "y": 0.43383292107096283,
+          "z": -6.231252414883748
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_explore": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Forest Range",
+      "text": "Explore the three groves and reach the lookout.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 1.5251000000238422,
+      "simulationSeconds": 1.5251000000238422,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": -4.742751953437194,
+          "y": 0.16119628217153514,
+          "z": -6.521403659393609
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_explore": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Forest Range",
+    "text": "Forest Range\n\nA woodland trail through three groves. Follow the amber waystones to the old lookout.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "state": {},
+    "playtime": 0,
+    "simulationSeconds": 0,
+    "ended": false,
+    "player": {
+      "position": {
+        "x": -8,
+        "y": 0.18726217829922998,
+        "z": -6
+      },
+      "visible": false,
+      "controller": "thirdperson"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {
+      "obj_explore": "active"
+    },
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nExplore the three groves and reach the lookout.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:40:15.595Z"
+}

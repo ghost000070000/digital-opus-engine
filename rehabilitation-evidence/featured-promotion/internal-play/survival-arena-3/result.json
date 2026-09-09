@@ -1,0 +1,271 @@
+{
+  "id": "survival-arena-3",
+  "method": "Native keyboard input with read-only telemetry; no state mutation.",
+  "events": [
+    {
+      "name": "opening",
+      "ended": false,
+      "sim": 1.0027999999970196,
+      "pos": {
+        "x": 0,
+        "y": 0.8016453715298801,
+        "z": 0
+      },
+      "forward": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "text": "Evade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 1.0s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "visual": true,
+      "body": false,
+      "craftParts": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "checkpoint": null,
+      "errors": []
+    },
+    {
+      "name": "survival-outcome",
+      "ended": true,
+      "sim": 20.28129999999704,
+      "pos": {
+        "x": -6.836743962930434,
+        "y": -1.0279655494523592,
+        "z": -1.769026521198651
+      },
+      "forward": {
+        "x": 0.2648807023171083,
+        "y": 0,
+        "z": 0.9642811900789082
+      },
+      "velocity": {
+        "x": -2.2371388131872743,
+        "y": 0.10055435243227065,
+        "z": 10.40363286858877
+      },
+      "text": "MAP EDGE — TURN INWARD\nTransmission complete\n\nYou held out until the transmitter completed its call.\n\nRestart\nEvade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 20.3s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "visual": true,
+      "body": false,
+      "craftParts": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "checkpoint": null,
+      "errors": []
+    },
+    {
+      "name": "outcome",
+      "ended": true,
+      "sim": 20.48139999999108,
+      "pos": {
+        "x": -7.055045762243319,
+        "y": -1.0567708734993544,
+        "z": -0.8795235214616319
+      },
+      "forward": {
+        "x": 0.35001334939566336,
+        "y": 0,
+        "z": 0.9367447118851695
+      },
+      "velocity": {
+        "x": -0.671042260660831,
+        "y": 0.09007506709682947,
+        "z": -0.06968382116449737
+      },
+      "text": "MAP EDGE — TURN INWARD\nTransmission complete\n\nYou held out until the transmitter completed its call.\n\nRestart\nEvade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 20.5s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "visual": true,
+      "body": false,
+      "craftParts": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "checkpoint": null,
+      "errors": []
+    },
+    {
+      "name": "restart",
+      "ended": false,
+      "sim": 0.5837999999970197,
+      "pos": {
+        "x": 0,
+        "y": 0.8344071736625647,
+        "z": 0
+      },
+      "forward": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "text": "Evade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 0.6s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "visual": true,
+      "body": false,
+      "craftParts": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "checkpoint": null,
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "opening": {
+    "ended": false,
+    "sim": 1.0027999999970196,
+    "pos": {
+      "x": 0,
+      "y": 0.8016453715298801,
+      "z": 0
+    },
+    "forward": {
+      "x": 0,
+      "y": 0,
+      "z": 1
+    },
+    "velocity": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "text": "Evade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 1.0s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "visual": true,
+    "body": false,
+    "craftParts": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "checkpoint": null,
+    "errors": []
+  },
+  "final": {
+    "ended": true,
+    "sim": 20.48139999999108,
+    "pos": {
+      "x": -7.055045762243319,
+      "y": -1.0567708734993544,
+      "z": -0.8795235214616319
+    },
+    "forward": {
+      "x": 0.35001334939566336,
+      "y": 0,
+      "z": 0.9367447118851695
+    },
+    "velocity": {
+      "x": -0.671042260660831,
+      "y": 0.09007506709682947,
+      "z": -0.06968382116449737
+    },
+    "text": "MAP EDGE — TURN INWARD\nTransmission complete\n\nYou held out until the transmitter completed its call.\n\nRestart\nEvade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 20.5s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "visual": true,
+    "body": false,
+    "craftParts": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "checkpoint": null,
+    "errors": []
+  },
+  "completed": true,
+  "restart": {
+    "ended": false,
+    "sim": 0.5670999999940395,
+    "pos": {
+      "x": 0,
+      "y": 0.8353320315740186,
+      "z": 0
+    },
+    "forward": {
+      "x": 0,
+      "y": 0,
+      "z": 1
+    },
+    "velocity": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "text": "Evade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 0.6s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "visual": true,
+    "body": false,
+    "craftParts": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "checkpoint": null,
+    "errors": []
+  }
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="g-survival-arena-3-title">
+<title id="g-survival-arena-3-title">Survival Arena 3 -- Hovercraft Survival</title>
+<defs><linearGradient id="g-survival-arena-3" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="hsl(318, 38%, 14%)"/><stop offset="100%" stop-color="hsl(358, 45%, 30%)"/>
+</linearGradient></defs>
+<rect width="640" height="400" fill="url(#g-survival-arena-3)"/>
+<text x="50%" y="47%" text-anchor="middle" font-family="system-ui,sans-serif" font-size="40" font-weight="700" fill="#f2f5fa">Survival Arena 3</text>
+<text x="50%" y="58%" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" letter-spacing="2" fill="#c7d3ea" opacity="0.85">HOVERCRAFT SURVIVAL</text>
+</svg>

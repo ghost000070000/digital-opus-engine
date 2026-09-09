@@ -244,6 +244,41 @@ class HUD {
     return this._handle(key, button);
   }
 
+  // A "held" button, not a click -- addButton's onClick only fires once a
+  // press completes, which doesn't fit continuous input like a throttle or
+  // a boost hold. Built for touch (Input.simulateKeyDown/Up covers the
+  // common case of driving a keyboard-gated control from an on-screen
+  // button), but works from mouse/pen input on the same element too, since
+  // it's wired through Pointer Events rather than touch-specific ones.
+  addTouchButton({ id, label = '', onStart, onEnd, style = {} } = {}) {
+    callback(onStart, 'options.onStart', 'HUD.addTouchButton', true);
+    callback(onEnd, 'options.onEnd', 'HUD.addTouchButton', true);
+    const key = id ?? `touch-btn-${this._nextId++}`;
+    this.removePrimitive(key);
+    const press = (e) => { e.preventDefault(); if (onStart) onStart(); };
+    const release = (e) => { e.preventDefault(); if (onEnd) onEnd(); };
+    const button = el('button', {
+      id: key,
+      text: label,
+      style: {
+        ...hudButtonStyle(),
+        position: 'absolute',
+        fontSize: '22px',
+        userSelect: 'none',
+        touchAction: 'none',
+        ...style,
+      },
+      onpointerdown: press,
+      onpointerup: release,
+      onpointerleave: release,
+      onpointercancel: release,
+      oncontextmenu: (e) => e.preventDefault(),
+    });
+    this.root.appendChild(button);
+    this._primitives.set(key, button);
+    return this._handle(key, button);
+  }
+
   showTitleCard({ title = 'HOVERCRAFT DELIVERY RUN', subtitle = 'Deliver 5 crates before timer expires', buttonText = 'CLICK TO START', onStart }) {
     this.removePrimitive('title-card');
     const overlay = el('div', {

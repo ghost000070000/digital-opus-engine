@@ -1,0 +1,2 @@
+const fs=require('fs');const p='tools/playtest-adventures.js';let s=fs.readFileSync(p,'utf8');for(const [target,label] of [['[-14,-4.4]','Power cell'],['[-14,4.2]','Generator'],['[12.5,-6]','Coolant A'],['[12.5,6]','Coolant B']])s=s.replace(`walk(${target},'${label}')`,`walk(${target},'${label}',35,.3)`);fs.writeFileSync(p,s);
+const cat='games/catalog.json',c=JSON.parse(fs.readFileSync(cat));c.games.find(g=>g.id==='survival-arena-2').title='Survival Arena 2';fs.writeFileSync(cat,JSON.stringify(c,null,2)+'\n');

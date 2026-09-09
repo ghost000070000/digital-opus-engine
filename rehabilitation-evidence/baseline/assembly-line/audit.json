@@ -1,0 +1,132 @@
+{
+  "id": "assembly-line",
+  "phase": "baseline",
+  "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/assembly-line.html",
+  "startedAt": "2026-09-08T00:06:35.833Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Assembly Line",
+      "text": "Press F to interact",
+      "state": {},
+      "playtime": 1.8641999998092655,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.1717251097558128,
+          "z": 0
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Assembly Line",
+      "text": "Press F to interact",
+      "state": {},
+      "playtime": 11.209899999737738,
+      "player": {
+        "position": {
+          "x": 13.046928465745411,
+          "y": -2,
+          "z": 36.373354933789116
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Assembly Line",
+      "text": "Press F to interact",
+      "state": {},
+      "playtime": 25.951299999713903,
+      "player": {
+        "position": {
+          "x": 6.8350929955669635,
+          "y": -2,
+          "z": 35.73419711382981
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Assembly Line",
+    "text": "Press F to interact",
+    "state": {},
+    "playtime": 0.5526999999284745,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 1.1717251097558128,
+        "z": 0
+      },
+      "visible": false,
+      "controller": "firstperson"
+    },
+    "camera": {
+      "mode": "fixed"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:07:08.175Z"
+}

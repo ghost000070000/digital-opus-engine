@@ -1,0 +1,101 @@
+[
+  {
+    "id": "shifting-facility",
+    "sourceSHA256": "36706008ce65072a75576962fdf2a6eab567c5aaeb8a016bd7858bd6f5af14ff",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:35:02.161Z",
+    "sha256": "af311b727b298539033016cc75aa45f6e21d00a4d3f5ab33055b723f75990ba3",
+    "state": {
+      "title": "Shifting Facility",
+      "sim": 1.41810000000149,
+      "ended": false,
+      "text": "Pass the entry scanner, try the swing door, and reach the far console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+      "controller": "firstperson",
+      "bodyVisible": false,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 47
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPass the entry scanner, try the swing door, and reach the far console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "skyway-trial",
+    "sourceSHA256": "f606e30da2790dcb362c4d301548a98ce82ebda81039408870f6c672df63c8bc",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:35:05.768Z",
+    "sha256": "4a2c2ceb3416e27ba97ad32af30a828bc77fc3bf26fbd8c9e55310e7beec925b",
+    "state": {
+      "title": "Skyway Trial",
+      "sim": 1.4014999999999997,
+      "ended": false,
+      "text": "Jump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; C careful steps; Escape pauses.",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 31
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nJump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; C careful steps; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "survival-arena",
+    "sourceSHA256": "0f45e57a224f747a3485523a02bc6baedee2bf3361240ff0211d33a41ac0cb93",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:35:09.040Z",
+    "sha256": "543ac305a86739012f5916c6e2c8518b76aa6a17f544b09944f95aeb78f137af",
+    "state": {
+      "title": "Survival Arena",
+      "sim": 1.40160000000149,
+      "ended": false,
+      "text": "Survive! Collect 4 orbs, avoid the red hunters.\nLives: 3\nOrbs: 0 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "controller": "hovercraft",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 47
+    },
+    "pauseText": "Survive! Collect 4 orbs, avoid the red hunters.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nLives: 3\nOrbs: 0 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "temple-switch-puzzle",
+    "sourceSHA256": "d4c8e313beb90b5b68cadc4f097d8816649c358fb7fc8731b1c881c87347070c",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:35:12.249Z",
+    "sha256": "029569c0446072cdee5ab33ff4a213c118562c59e728d67f9caaf764418c8a8b",
+    "state": {
+      "title": "Temple Switch Puzzle",
+      "sim": 1.4181999999955295,
+      "ended": false,
+      "text": "Find both switches to open the gate, then reach the goal.\nActivate both seals, then enter the northern shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 40
+    },
+    "pauseText": "Find both switches to open the gate, then reach the goal.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nActivate both seals, then enter the northern shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "passed": true
+  }
+]

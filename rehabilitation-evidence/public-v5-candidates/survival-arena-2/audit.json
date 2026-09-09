@@ -1,0 +1,154 @@
+{
+  "id": "survival-arena-2",
+  "phase": "public-v5-candidates",
+  "url": "http://localhost:8837/dist/games/survival-arena-2.html",
+  "startedAt": "2026-09-08T19:57:36.106Z",
+  "seconds": 8,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 960
+    },
+    {
+      "key": "d",
+      "milliseconds": 800
+    },
+    {
+      "key": "w",
+      "milliseconds": 1200
+    },
+    {
+      "key": "a",
+      "milliseconds": 800
+    },
+    {
+      "key": "s",
+      "milliseconds": 640
+    },
+    {
+      "key": "w",
+      "milliseconds": 800
+    },
+    {
+      "key": "d",
+      "milliseconds": 400
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Survival Arena 2",
+      "text": "Wave 1 incoming!\nSurvive the waves! Avoid the hunter drones.\nHealth 100 / 100\nSurvived: 0.2s\nSurvive both waves for 32 seconds.\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 0.2,
+      "simulationSeconds": 0.2,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.7286886681896627,
+          "z": 0
+        },
+        "visible": false,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Survival Arena 2",
+      "text": "Wave 1 incoming!\nSurvive the waves! Avoid the hunter drones.\nHealth 90 / 100\nSurvived: 2.2s\nSurvive both waves for 32 seconds.\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 90
+      },
+      "playtime": 2.2442999999970206,
+      "simulationSeconds": 2.2442999999970206,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": -0.8749999999999994,
+          "y": -0.8211365677073641,
+          "z": 6.944832421873782
+        },
+        "visible": false,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Survival Arena 2",
+      "text": "MAP EDGE — TURN INWARD\nSurvive the waves! Avoid the hunter drones.\nHealth 90 / 100\nSurvived: 7.5s\nSurvive both waves for 32 seconds.\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 90
+      },
+      "playtime": 7.4658999999985,
+      "simulationSeconds": 7.4658999999985,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": -1.8499555898914017,
+          "y": -1.0579471412526427,
+          "z": 9.45
+        },
+        "visible": false,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Survival Arena 2",
+    "text": "Wave 1 incoming!\nSurvive the waves! Avoid the hunter drones.\nSurvival Arena 2\n\nA hovercraft endurance run on a tidal ring. Two waves arrive; keep moving for thirty-two seconds. Visual landmark: Storm survival shard.\n\nLaunch\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "state": {},
+    "playtime": 0,
+    "simulationSeconds": 0,
+    "ended": false,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 1.705555202293345,
+        "z": 0
+      },
+      "visible": false,
+      "controller": "hovercraft"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "MAP EDGE — TURN INWARD\nSurvive the waves! Avoid the hunter drones.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 90 / 100\nSurvived: 8.2s\nSurvive both waves for 32 seconds.\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+  "completed": true,
+  "finishedAt": "2026-09-08T19:58:49.644Z"
+}

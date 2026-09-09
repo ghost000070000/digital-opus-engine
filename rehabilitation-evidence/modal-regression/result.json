@@ -1,0 +1,23 @@
+{
+  "method": "Synthetic ending UI fixture only; real Start/canvas/Restart clicks, no force clicks, no gameplay verdict, no public screenshots.",
+  "buildSHA256": "493cc5e1100a36759e825184065f08b72098f1750a39ff4a74dc0967d747dd08",
+  "cases": [
+    {
+      "syntheticEnding": "win",
+      "title": "Extraction Successful",
+      "pointerReleased": true,
+      "ordinaryRestartClick": true,
+      "freshStartScreen": "Arsenal Run"
+    },
+    {
+      "syntheticEnding": "lose",
+      "title": "You Went Down",
+      "pointerReleased": true,
+      "ordinaryRestartClick": true,
+      "freshStartScreen": "Arsenal Run"
+    }
+  ],
+  "errors": [],
+  "ok": true,
+  "finishedAt": "2026-09-08T00:37:17.191Z"
+}

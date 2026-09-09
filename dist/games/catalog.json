@@ -1,0 +1,696 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-08T20:42:41.000Z",
+  "games": [
+    {
+      "id": "forest-range",
+      "title": "Forest Range",
+      "category": "featured",
+      "featured": true,
+      "genre": "Third-Person Exploration",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "A woodland trail through three groves. Follow the amber waystones to the old lookout.",
+      "tags": [
+        "exploration",
+        "scatter",
+        "third-person"
+      ],
+      "file": "forest-range.html",
+      "purpose": "Woodland exploration and reusable vegetation",
+      "visibility": "public",
+      "qualityTier": "featured",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/forest-range/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/forest-range/opening.png",
+        "gameplay": "public-showcase-review/forest-range/gameplay.png",
+        "highlight": "public-showcase-review/forest-range/highlight.png"
+      }
+    },
+    {
+      "id": "arsenal-run",
+      "title": "Arsenal Run",
+      "category": "featured",
+      "featured": true,
+      "genre": "First-Person Action",
+      "controller": "First-Person",
+      "estimatedMinutes": 2,
+      "description": "A compact arena assault. Use cover, switch between sidearm and rifle, defeat three sentries and reach extraction.",
+      "tags": [
+        "action",
+        "shooter",
+        "first-person"
+      ],
+      "file": "arsenal-run.html",
+      "purpose": "Weapon switching, reload and compact arena combat",
+      "visibility": "public",
+      "qualityTier": "featured",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/arsenal-run/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/arsenal-run/opening.png",
+        "gameplay": "public-showcase-review/arsenal-run/gameplay.png",
+        "highlight": "public-showcase-review/arsenal-run/highlight.png"
+      }
+    },
+    {
+      "id": "power-grid",
+      "title": "Power Grid",
+      "category": "featured",
+      "featured": true,
+      "genre": "First-Person Puzzle/Objective",
+      "controller": "First-Person",
+      "estimatedMinutes": 2,
+      "description": "Bring an abandoned generator hall back online. Carry the power cell to its socket, activate two coolant consoles and open the emergency exit.",
+      "tags": [
+        "puzzle",
+        "objective",
+        "first-person"
+      ],
+      "file": "power-grid.html",
+      "purpose": "Carry interactions and a multi-stage machinery puzzle",
+      "visibility": "public",
+      "qualityTier": "featured",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/power-grid/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/power-grid/opening.png",
+        "gameplay": "public-showcase-review/power-grid/gameplay.png",
+        "highlight": "public-showcase-review/power-grid/highlight.png"
+      }
+    },
+    {
+      "id": "moving-temple",
+      "title": "Moving Temple",
+      "category": "featured",
+      "featured": true,
+      "genre": "Third-Person Experiment",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "Ride the crossing slab, activate the amber lift, and jump to the high shrine.",
+      "tags": [
+        "technical"
+      ],
+      "file": "moving-temple.html",
+      "purpose": "Moving platforms, elevators and player carry",
+      "visibility": "public",
+      "qualityTier": "featured",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/moving-temple/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/moving-temple/opening.png",
+        "gameplay": "public-showcase-review/moving-temple/gameplay.png",
+        "highlight": "public-showcase-review/moving-temple/highlight.png"
+      }
+    },
+    {
+      "id": "foglight",
+      "title": "Foglight",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Adventure",
+      "controller": "Third-Person",
+      "estimatedMinutes": 2,
+      "description": "Carry light through a mist-filled vale. Awaken three ancient beacons, evade the antlered guardian, and open the sanctuary.",
+      "tags": [
+        "exploration",
+        "platforming",
+        "third-person"
+      ],
+      "file": "foglight.html",
+      "purpose": "Third-person beacon, key and checkpoint adventure",
+      "visibility": "public",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/foglight/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/foglight/opening.png",
+        "gameplay": "public-showcase-review/foglight/gameplay.png"
+      }
+    },
+    {
+      "id": "relic-frontier",
+      "title": "Relic Frontier",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Adventure",
+      "controller": "Third-Person",
+      "estimatedMinutes": 2,
+      "description": "Explore an overgrown frontier outpost. Recover a weapon, defeat the stone guardian, claim the ridge relic and cross the sealed border gate.",
+      "tags": [
+        "adventure",
+        "exploration",
+        "third-person"
+      ],
+      "file": "relic-frontier.html",
+      "purpose": "Third-person equipment, state-machine guardian combat and a raised relic route",
+      "visibility": "public",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/relic-frontier/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/relic-frontier/opening.png",
+        "gameplay": "public-showcase-review/relic-frontier/gameplay.png"
+      }
+    },
+    {
+      "id": "relic-island",
+      "title": "Relic Island",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Adventure",
+      "controller": "Third-Person",
+      "estimatedMinutes": 2,
+      "description": "A small island treasure hunt. Recover three golden relics and the gate key, then awaken the hilltop shrine.",
+      "tags": [
+        "adventure",
+        "exploration",
+        "third-person"
+      ],
+      "file": "relic-island.html",
+      "purpose": "Terrain exploration, relic collection and a keyed shrine",
+      "visibility": "public",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/relic-island/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/relic-island/opening.png",
+        "gameplay": "public-showcase-review/relic-island/gameplay.png"
+      }
+    },
+    {
+      "id": "npc-puzzle-adventure",
+      "title": "The Sanctum Key",
+      "category": "sample",
+      "featured": false,
+      "genre": "Dialogue / Inventory Puzzle",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "An old sailor carries the key to a forgotten sanctuary. Speak with him, then unlock the northern door.",
+      "tags": [
+        "puzzle",
+        "dialogue",
+        "third-person"
+      ],
+      "file": "npc-puzzle-adventure.html",
+      "purpose": "Branching dialogue, inventory and level transitions",
+      "visibility": "public",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/npc-puzzle-adventure/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/npc-puzzle-adventure/opening.png",
+        "gameplay": "public-showcase-review/npc-puzzle-adventure/gameplay.png"
+      }
+    },
+    {
+      "id": "relic-runner-2",
+      "title": "Relic Runner 2",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Adventure",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "Reach the amber ridge relic. Use the low ramp, keep clear of the guardian, and claim the high ground.",
+      "tags": [
+        "adventure",
+        "third-person"
+      ],
+      "file": "relic-runner-2.html",
+      "purpose": "Animated traversal, ramps and checkpoint recovery",
+      "visibility": "public",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/relic-runner-2/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/relic-runner-2/opening.png",
+        "gameplay": "public-showcase-review/relic-runner-2/gameplay.png"
+      }
+    },
+    {
+      "id": "valley-run",
+      "title": "Valley Run",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Platforming",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "Cross a narrow valley and climb the stepping stones to the far ridge. The amber camp marks your checkpoint.",
+      "tags": [
+        "platforming",
+        "third-person"
+      ],
+      "file": "valley-run.html",
+      "purpose": "Terrain traversal, jumping and checkpoint recovery",
+      "visibility": "public",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/valley-run/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/valley-run/opening.png",
+        "gameplay": "public-showcase-review/valley-run/gameplay.png"
+      }
+    },
+    {
+      "id": "painted-wilds",
+      "title": "Painted Wilds",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Exploration",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "A short landscape walk through moss, ochre and slate. Follow the three survey stones.",
+      "tags": [
+        "exploration",
+        "terrain",
+        "third-person"
+      ],
+      "file": "painted-wilds.html",
+      "purpose": "Terrain painting and blended ground materials",
+      "visibility": "public",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/painted-wilds/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/painted-wilds/opening.png",
+        "gameplay": "public-showcase-review/painted-wilds/gameplay.png"
+      }
+    },
+    {
+      "id": "textured-adventure",
+      "title": "Textured Adventure",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Adventure",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "Three amber relics rest among violet ruins. Collect them, avoid the red fissure, and restore the shrine.",
+      "tags": [
+        "adventure",
+        "textures",
+        "third-person"
+      ],
+      "file": "textured-adventure.html",
+      "purpose": "Textured objects, pickups and an objective gate",
+      "visibility": "public",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/textured-adventure/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/textured-adventure/opening.png",
+        "gameplay": "public-showcase-review/textured-adventure/gameplay.png"
+      }
+    },
+    {
+      "id": "temple-switch-puzzle",
+      "title": "Temple Switch Puzzle",
+      "category": "sample",
+      "featured": false,
+      "genre": "Puzzle Experiment",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "Two amber seals power an ancient gateway. Step onto each seal and cross the open gate.",
+      "tags": [
+        "technical",
+        "puzzle",
+        "legacy-format"
+      ],
+      "file": "temple-switch-puzzle.html",
+      "purpose": "Two-switch logic and a gated goal",
+      "visibility": "public",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/temple-switch-puzzle/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/temple-switch-puzzle/opening.png",
+        "gameplay": "public-showcase-review/temple-switch-puzzle/gameplay.png"
+      }
+    },
+    {
+      "id": "signal-relay",
+      "title": "Signal Relay",
+      "category": "sample",
+      "featured": false,
+      "genre": "Stealth / Objective",
+      "controller": "First-Person",
+      "estimatedMinutes": 2,
+      "description": "Restore three relay consoles in a silent communications station. Slip past patrol drones or use your sidearm, then reach the green extraction bay.",
+      "tags": [
+        "stealth",
+        "first-person",
+        "objective"
+      ],
+      "file": "signal-relay.html",
+      "purpose": "Relay objectives with first-person drone combat",
+      "visibility": "public",
+      "qualityTier": "sample",
+      "playtime": "2–4 minutes",
+      "screenshot": "public-showcase-review/signal-relay/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/signal-relay/opening.png",
+        "gameplay": "public-showcase-review/signal-relay/gameplay.png"
+      }
+    },
+    {
+      "id": "silent-sector",
+      "title": "Silent Sector",
+      "category": "sample",
+      "featured": false,
+      "genre": "Stealth / Objective",
+      "controller": "First-Person",
+      "estimatedMinutes": 2,
+      "description": "A short stealth infiltration through a listening security station. Break sightlines, secure the Data Core and escape unseen.",
+      "tags": [
+        "stealth",
+        "first-person",
+        "objective"
+      ],
+      "file": "silent-sector.html",
+      "purpose": "Stealth perception, hearing and cover-based infiltration",
+      "visibility": "public",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/silent-sector/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/silent-sector/opening.png",
+        "gameplay": "public-showcase-review/silent-sector/gameplay.png"
+      }
+    },
+    {
+      "id": "iron-arena",
+      "title": "Iron Arena",
+      "category": "sample",
+      "featured": false,
+      "genre": "First-Person Combat",
+      "controller": "First-Person",
+      "estimatedMinutes": 3,
+      "description": "Three armored sentries hold the forge courtyard. Keep moving and use the pillars for cover.",
+      "tags": [
+        "combat",
+        "first-person",
+        "arena"
+      ],
+      "file": "iron-arena.html",
+      "purpose": "Skeletal combat animation and hitscan combat",
+      "visibility": "public",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/iron-arena/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/iron-arena/opening.png",
+        "gameplay": "public-showcase-review/iron-arena/gameplay.png"
+      }
+    },
+    {
+      "id": "opus-arena",
+      "title": "Opus Arena",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Arena Shooter",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "Hold the blue courtyard against eight approaching guardians. Face each target before firing.",
+      "tags": [
+        "action",
+        "arena",
+        "third-person"
+      ],
+      "file": "opus-arena.html",
+      "purpose": "Projectile weapons and bounded enemy spawning",
+      "visibility": "public",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/opus-arena/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/opus-arena/opening.png",
+        "gameplay": "public-showcase-review/opus-arena/gameplay.png"
+      }
+    },
+    {
+      "id": "power-station",
+      "title": "Power Station",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Puzzle",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "The turbine is silent. Collect three fuel cells, speak to the engineer, and restart the machine.",
+      "tags": [
+        "puzzle",
+        "third-person"
+      ],
+      "file": "power-station.html",
+      "purpose": "Inventory, dialogue and animated machinery",
+      "visibility": "public",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/power-station/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/power-station/opening.png",
+        "gameplay": "public-showcase-review/power-station/gameplay.png"
+      }
+    },
+    {
+      "id": "assembly-line",
+      "title": "Assembly Line",
+      "category": "sample",
+      "featured": false,
+      "genre": "First-Person Experiment",
+      "controller": "First-Person",
+      "estimatedMinutes": 3,
+      "description": "Three fabrication bays assemble drones in real time. Clear space with your blaster, then inspect the control desk.",
+      "tags": [
+        "technical"
+      ],
+      "file": "assembly-line.html",
+      "purpose": "Runtime prefab assemblies and reusable spawners",
+      "visibility": "public",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/assembly-line/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/assembly-line/opening.png",
+        "gameplay": "public-showcase-review/assembly-line/gameplay.png"
+      }
+    },
+    {
+      "id": "blacksite",
+      "title": "Blacksite",
+      "category": "sample",
+      "featured": false,
+      "genre": "First-Person Experiment",
+      "controller": "First-Person",
+      "estimatedMinutes": 3,
+      "description": "Take the access card, open the security door, and cross the checkpoint into the core.",
+      "tags": [
+        "technical"
+      ],
+      "file": "blacksite.html",
+      "purpose": "Access gates, checkpoints and two-level facility play",
+      "visibility": "public",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/blacksite/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/blacksite/opening.png",
+        "gameplay": "public-showcase-review/blacksite/gameplay.png"
+      }
+    },
+    {
+      "id": "shifting-facility",
+      "title": "Shifting Facility",
+      "category": "sample",
+      "featured": false,
+      "genre": "First-Person Experiment",
+      "controller": "First-Person",
+      "estimatedMinutes": 3,
+      "description": "Walk the three machinery bays. Test the swing door and follow the amber lane to the far inspection station.",
+      "tags": [
+        "technical"
+      ],
+      "file": "shifting-facility.html",
+      "purpose": "Hierarchy transforms and shaped collision",
+      "visibility": "public",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/shifting-facility/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/shifting-facility/opening.png",
+        "gameplay": "public-showcase-review/shifting-facility/gameplay.png"
+      }
+    },
+    {
+      "id": "signal-zero",
+      "title": "Signal Zero",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Objective",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "Trace a silent outpost to its deep relay. Reach the cyan console to save your progress and descend.",
+      "tags": [
+        "objective",
+        "third-person"
+      ],
+      "file": "signal-zero.html",
+      "purpose": "Menus, saving and a two-level sequence",
+      "visibility": "public",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/signal-zero/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/signal-zero/opening.png",
+        "gameplay": "public-showcase-review/signal-zero/gameplay.png"
+      }
+    },
+    {
+      "id": "dungeon-descent",
+      "title": "Dungeon Descent",
+      "category": "sample",
+      "featured": false,
+      "genre": "Top-Down Dungeon Puzzle",
+      "controller": "Top-Down",
+      "estimatedMinutes": 3,
+      "description": "Two distant seals hold the stone gate shut. Light both seals and pass through the eastern arch.",
+      "tags": [
+        "puzzle",
+        "top-down",
+        "dungeon"
+      ],
+      "file": "dungeon-descent.html",
+      "purpose": "Flags, switches and a gated objective",
+      "visibility": "public",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/dungeon-descent/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/dungeon-descent/opening.png",
+        "gameplay": "public-showcase-review/dungeon-descent/gameplay.png"
+      }
+    },
+    {
+      "id": "sentinel-maze",
+      "title": "Sentinel Maze",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Maze",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "A watchful guardian patrols a slate labyrinth. Follow the amber route around the walls to the exit.",
+      "tags": [
+        "maze",
+        "stealth",
+        "third-person"
+      ],
+      "file": "sentinel-maze.html",
+      "purpose": "Waypoint navigation around solid obstacles",
+      "visibility": "public",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/sentinel-maze/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/sentinel-maze/opening.png",
+        "gameplay": "public-showcase-review/sentinel-maze/gameplay.png"
+      }
+    },
+    {
+      "id": "survival-arena",
+      "title": "Survival Arena",
+      "category": "sample",
+      "featured": false,
+      "genre": "Survival Experiment",
+      "controller": "Hovercraft",
+      "estimatedMinutes": 3,
+      "description": "Four amber orbs, three lives, and three hunters. Sweep the courtyard before they surround you.",
+      "tags": [
+        "technical",
+        "legacy-format"
+      ],
+      "file": "survival-arena.html",
+      "purpose": "Counter-driven pickups and contact hazards",
+      "visibility": "public",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/survival-arena/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/survival-arena/opening.png",
+        "gameplay": "public-showcase-review/survival-arena/gameplay.png"
+      }
+    },
+    {
+      "id": "survival-arena-2",
+      "title": "Survival Arena 2",
+      "category": "sample",
+      "featured": false,
+      "genre": "Hovercraft Survival",
+      "controller": "Hovercraft",
+      "estimatedMinutes": 3,
+      "description": "A hovercraft endurance run on a tidal ring. Two waves arrive; keep moving for thirty-two seconds.",
+      "tags": [
+        "survival",
+        "hovercraft",
+        "arena"
+      ],
+      "file": "survival-arena-2.html",
+      "purpose": "Timed wave sequencing and hovercraft survival",
+      "visibility": "public",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/survival-arena-2/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/survival-arena-2/opening.png",
+        "gameplay": "public-showcase-review/survival-arena-2/gameplay.png"
+      }
+    },
+    {
+      "id": "survival-arena-3",
+      "title": "Survival Arena 3",
+      "category": "sample",
+      "featured": false,
+      "genre": "Hovercraft Survival",
+      "controller": "Hovercraft",
+      "estimatedMinutes": 3,
+      "description": "Twenty seconds on the copper island. Hunter drones enter from the central transmitter.",
+      "tags": [
+        "survival",
+        "hovercraft",
+        "arena"
+      ],
+      "file": "survival-arena-3.html",
+      "purpose": "Capped runtime spawning and timed survival",
+      "visibility": "public",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/survival-arena-3/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/survival-arena-3/opening.png",
+        "gameplay": "public-showcase-review/survival-arena-3/gameplay.png"
+      }
+    },
+    {
+      "id": "skyway-trial",
+      "title": "Skyway Trial",
+      "category": "sample",
+      "featured": false,
+      "genre": "Platforming Experiment",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "Five suspended platforms rise above a quiet blue void. Commit to each jump and reach the amber summit.",
+      "tags": [
+        "technical",
+        "platforming"
+      ],
+      "file": "skyway-trial.html",
+      "purpose": "Platform jumps and a fall condition",
+      "visibility": "public",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "screenshot": "public-showcase-review/skyway-trial/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/skyway-trial/opening.png",
+        "gameplay": "public-showcase-review/skyway-trial/gameplay.png"
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "relic-frontier",
+  "index": 6,
+  "inputOnly": true,
+  "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+  "errors": [],
+  "actions": [
+    {
+      "key": "w",
+      "ms": 950
+    },
+    {
+      "key": "a",
+      "ms": 520
+    },
+    {
+      "key": "f",
+      "ms": 0
+    },
+    {
+      "key": "q",
+      "ms": 0
+    },
+    {
+      "key": "w",
+      "ms": 700
+    }
+  ],
+  "startedAt": "2026-09-08T17:41:41.509Z",
+  "sourceSHA256": "7ecf9e80589e38075fa04a7918fa93978499fc588ab6801ea60c9c0dd3d0b77a",
+  "final": {
+    "title": "Relic Frontier",
+    "sim": 3.9209000000059633,
+    "ended": false,
+    "paused": false,
+    "controller": "thirdperson",
+    "position": {
+      "x": -4.982638613323746,
+      "y": 0.4966728234592772,
+      "z": -12.792165641674773
+    },
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "objectives": {
+      "obj_find": "active"
+    },
+    "inventory": {},
+    "helpers": [],
+    "webglLost": false
+  },
+  "pauseVisible": true,
+  "restartPassed": true,
+  "passed": true,
+  "finishedAt": "2026-09-08T17:41:46.514Z"
+}

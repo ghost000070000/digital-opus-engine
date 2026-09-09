@@ -1,0 +1,198 @@
+{
+  "games": [
+    {
+      "id": "foglight",
+      "before": {
+        "visual": 1,
+        "gameplayClarity": 2,
+        "levelComposition": 1,
+        "audio": 1,
+        "presentation": 2,
+        "uniqueness": 3
+      },
+      "after": {
+        "visual": 3,
+        "gameplayClarity": 4,
+        "levelComposition": 3,
+        "audio": 3,
+        "presentation": 4,
+        "uniqueness": 3
+      },
+      "purpose": "Third-person beacon, key and checkpoint adventure",
+      "playtime": "1–3 minutes",
+      "estimatedMinutes": 2,
+      "notes": "Replaced ribbon and primitive scenery with ranger, guardian, three beacon courts, connected stone causeway, woods, ruins and sanctuary. Fixed floor lips, authored long-level bounds, fall-to-checkpoint recovery and key-dependent win. Normal play lit all three  beacons, collected Vale Key, won at29.61 simulated seconds with 94 HP, and restarted.",
+      "remainingGaps": "Compact sample depth; repeated arches and flat open expanses keep it below Featured. The 5–10 minute fantasy flagship ambition still needs richer pacing and bespoke art.",
+      "screenshots": [
+        "rehabilitation-evidence/playthroughs/foglight/grove.png"
+      ],
+      "playEvidence": [
+        "rehabilitation-evidence/playthroughs/foglight/playtest.json"
+      ],
+      "outcomeVerified": true,
+      "finalRole": "SAMPLE"
+    },
+    {
+      "id": "signal-relay",
+      "before": {
+        "visual": 1,
+        "gameplayClarity": 3,
+        "levelComposition": 2,
+        "audio": 1,
+        "presentation": 2,
+        "uniqueness": 3
+      },
+      "after": {
+        "visual": 3,
+        "gameplayClarity": 4,
+        "levelComposition": 3,
+        "audio": 3,
+        "presentation": 4,
+        "uniqueness": 3
+      },
+      "purpose": "Relay objectives with first-person drone combat",
+      "playtime": "2–4 minutes",
+      "estimatedMinutes": 2,
+      "notes": "Built a readable panelled communications facility with original terminals, drones, weapon, warning accents and ambient/effect audio. Camera-aligned shooting, restore three relays, extraction and native Restart verified. Final normal win34.57 sim/79 HP; actual wall collision retains invisible body and visible gun.",
+      "remainingGaps": "Sparse industrial rooms and near-black surfaces limit visual depth. Drone combat and relay feedback are suitable for a focused sample.",
+      "screenshots": [
+        "rehabilitation-evidence/combat-playtest/signal-relay-final-efficient/encounter-obj58.png"
+      ],
+      "playEvidence": [
+        "rehabilitation-evidence/combat-playtest/signal-relay-final-efficient/playtest.json"
+      ],
+      "outcomeVerified": true,
+      "finalRole": "SAMPLE"
+    },
+    {
+      "id": "arsenal-run",
+      "before": {
+        "visual": 1,
+        "gameplayClarity": 2,
+        "levelComposition": 1,
+        "audio": 1,
+        "presentation": 2,
+        "uniqueness": 2
+      },
+      "after": {
+        "visual": 3,
+        "gameplayClarity": 4,
+        "levelComposition": 3,
+        "audio": 3,
+        "presentation": 4,
+        "uniqueness": 3
+      },
+      "purpose": "Weapon switching, reload and compact arena combat",
+      "playtime": "1–3 minutes",
+      "estimatedMinutes": 2,
+      "notes": "Added deliberate cover lanes, original rifle/sidearm visuals, drone silhouettes, projectile/impact feedback and combat audio. Extraction now requires three defeats. Normal win40.51 sim/60 HP, reload/switch, Pause, intentional loss and native Restarts verified.",
+      "remainingGaps": "Arena remains small and visually repetitive. Finer recoil, animation, surface detail and encounter pacing would be needed for Featured.",
+      "screenshots": [
+        "rehabilitation-evidence/combat-playtest/arsenal-run-final-efficient/encounter-obj2010.png"
+      ],
+      "playEvidence": [
+        "rehabilitation-evidence/combat-playtest/arsenal-run-final-efficient/playtest.json"
+      ],
+      "outcomeVerified": true,
+      "finalRole": "SAMPLE"
+    },
+    {
+      "id": "silent-sector",
+      "before": {
+        "visual": 1,
+        "gameplayClarity": 3,
+        "levelComposition": 2,
+        "audio": 1,
+        "presentation": 2,
+        "uniqueness": 3
+      },
+      "after": {
+        "visual": 3,
+        "gameplayClarity": 4,
+        "levelComposition": 3,
+        "audio": 3,
+        "presentation": 3,
+        "uniqueness": 3
+      },
+      "purpose": "Stealth perception, hearing and cover-based infiltration",
+      "playtime": "1–3 minutes",
+      "estimatedMinutes": 2,
+      "notes": "Retained intro camera, patrol/perception/hearing/Investigate and objective chain; authored machinery cover, readable Data Core, extraction lighting and alert/ambient sound. Crouched north-cover route, Data pickup, all three objectives and extraction won30.72 sim with native Restart. A later screenshot route lost normally after lingering near guards, and also restarted.",
+      "remainingGaps": "Facility is sparse and some surfaces remain dark. More explicit patrol feedback and varied cover encounters would improve the stealth experience.",
+      "screenshots": [
+        "rehabilitation-evidence/playthroughs/silent-sector/core-approach.png"
+      ],
+      "playEvidence": [
+        "rehabilitation-evidence/playthroughs/silent-sector-verified-before-framing/playtest.json",
+        "rehabilitation-evidence/playthroughs/silent-sector/playtest.json"
+      ],
+      "outcomeVerified": true,
+      "finalRole": "SAMPLE"
+    },
+    {
+      "id": "power-grid",
+      "before": {
+        "visual": 1,
+        "gameplayClarity": 2,
+        "levelComposition": 1,
+        "audio": 1,
+        "presentation": 2,
+        "uniqueness": 3
+      },
+      "after": {
+        "visual": 3,
+        "gameplayClarity": 4,
+        "levelComposition": 3,
+        "audio": 3,
+        "presentation": 3,
+        "uniqueness": 3
+      },
+      "purpose": "Carry interactions and a multi-stage machinery puzzle",
+      "playtime": "1–3 minutes",
+      "estimatedMinutes": 2,
+      "notes": "Added generator machinery, cell, coolant consoles, pipes, route strips and ambient zones. Opened the formerly blocked coolant passage and fixed held-cell interaction priority; power plus both coolant switches control the exit. Full normal-input win recorded, with cell carried/consumed and gate/extraction progression. Latest framed replay won at 23.30 simulation seconds and native Restart passed.",
+      "remainingGaps": "A coherent compact puzzle sample; broad bare surfaces, basic console feedback and limited puzzle complexity keep it below Featured.",
+      "screenshots": [
+        "rehabilitation-evidence/playthroughs/power-grid/generator.png"
+      ],
+      "playEvidence": [
+        "rehabilitation-evidence/playthroughs/power-grid-verified-before-framing/playtest.json",
+        "rehabilitation-evidence/playthroughs/power-grid/playtest.json"
+      ],
+      "outcomeVerified": true,
+      "finalRole": "SAMPLE"
+    },
+    {
+      "id": "relic-island",
+      "before": {
+        "visual": 2,
+        "gameplayClarity": 3,
+        "levelComposition": 2,
+        "audio": 1,
+        "presentation": 2,
+        "uniqueness": 2
+      },
+      "after": {
+        "visual": 3,
+        "gameplayClarity": 4,
+        "levelComposition": 3,
+        "audio": 3,
+        "presentation": 3,
+        "uniqueness": 3
+      },
+      "purpose": "Terrain exploration, relic collection and a keyed shrine",
+      "playtime": "1–3 minutes",
+      "estimatedMinutes": 2,
+      "notes": "Added ranger, relic landmarks, trees/rocks/ruins/shrine, deliberate lighting, lava material and meaningful pickup/ending sound. Kept the three-relic/key/lever loop, grounded the player and moved health away from the objective. Normal route collectedthree relics and key, used lever, won at the shrine and restarted. One-shot pickup destruction prevents hidden relics from incrementing the counter again.",
+      "remainingGaps": "Small collection loop with sparse terrain and repeated kit motifs; correctly scoped as a sample, not a flagship.",
+      "screenshots": [
+        "rehabilitation-evidence/playthroughs/relic-island/gate.png"
+      ],
+      "playEvidence": [
+        "rehabilitation-evidence/playthroughs/relic-island/playtest.json"
+      ],
+      "outcomeVerified": true,
+      "finalRole": "SAMPLE"
+    }
+  ]
+}

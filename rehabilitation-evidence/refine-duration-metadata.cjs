@@ -1,0 +1,2 @@
+const fs=require('fs');const p='rehabilitation-evidence/root-quality-reviews.json';const j=JSON.parse(fs.readFileSync(p));for(const r of j.games){r.playtime=r.id==='signal-relay'?'2–4 minutes':'1–3 minutes';r.estimatedMinutes=2;}fs.writeFileSync(p,JSON.stringify(j,null,2)+'\n');
+const hp='tools/finalize-showcase.js';let h=fs.readFileSync(hp,'utf8');h=h.replace("playtime:r.playtime||'2–5 minutes'","playtime:r.playtime||(publicReady?'1–3 minutes':'Duration unverified')");fs.writeFileSync(hp,h);

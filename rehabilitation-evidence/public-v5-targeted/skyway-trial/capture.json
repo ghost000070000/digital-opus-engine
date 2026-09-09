@@ -1,0 +1,100 @@
+{
+  "id": "skyway-trial",
+  "inputOnly": true,
+  "events": [
+    {
+      "capture": "opening",
+      "state": {
+        "pos": {
+          "x": 0,
+          "y": 0.55,
+          "z": 1
+        },
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.5141378969508219,
+            "z": 0.85770753926906
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "up": {
+            "x": 0,
+            "y": 0.85770753926906,
+            "z": 0.5141378969508219
+          }
+        },
+        "ended": false,
+        "sim": 2.0194000000059606,
+        "text": "Jump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; C careful steps; Escape pauses."
+      }
+    },
+    {
+      "capture": "approach",
+      "state": {
+        "pos": {
+          "x": 0,
+          "y": 0.55,
+          "z": 5.3
+        },
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.5077967171265774,
+            "z": 0.8614769260261537
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "up": {
+            "x": 0,
+            "y": 0.8614769260261537,
+            "z": 0.5077967171265774
+          }
+        },
+        "ended": false,
+        "sim": 3.3537000000029824,
+        "text": "Jump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; C careful steps; Escape pauses."
+      }
+    },
+    {
+      "capture": "detail",
+      "state": {
+        "pos": {
+          "x": 2.8419598293681227,
+          "y": 0.55,
+          "z": 0.2675100769320969
+        },
+        "basis": {
+          "forward": {
+            "x": 0.3996954676542337,
+            "y": -0.4634581938707429,
+            "z": -0.7908539913730804
+          },
+          "right": {
+            "x": 0.8924920722292716,
+            "y": 0,
+            "z": 0.4510630787460893
+          },
+          "up": {
+            "x": 0.20904887979743922,
+            "y": 0.8861187857923277,
+            "z": -0.41363276383933484
+          }
+        },
+        "ended": false,
+        "sim": 4.838900000005963,
+        "text": "Jump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; C careful steps; Escape pauses."
+      }
+    }
+  ],
+  "errors": [],
+  "startedAt": "2026-09-08T20:29:55.436Z",
+  "completed": true,
+  "finishedAt": "2026-09-08T20:30:00.709Z"
+}

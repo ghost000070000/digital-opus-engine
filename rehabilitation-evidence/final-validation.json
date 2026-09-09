@@ -1,0 +1,15 @@
+{
+  "verifiedAt": "2026-09-08T16:29:08.020Z",
+  "build": "PASS",
+  "tests": "31 API + 12 showcase + 1 public-package integration tests passed; 0 failed",
+  "gameBuild": "PASS — 28/28 standalone files",
+  "engineSiteBuild": "PASS — public quality, provenance, path safety and link checks",
+  "gamesSiteBuild": "PASS — rebuilt with matching public filter and real screenshots",
+  "smokePassed": 28,
+  "smokeTotal": 28,
+  "staleSmoke": 0,
+  "engineSiteBytes": 184160457,
+  "gamesSiteBytes": 113072506,
+  "publicCount": 26,
+  "screenshots": 26
+}

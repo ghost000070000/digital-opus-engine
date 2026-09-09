@@ -1,0 +1,149 @@
+{
+  "id": "foglight",
+  "phase": "baseline",
+  "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/foglight.html",
+  "startedAt": "2026-09-08T00:00:58.535Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Foglight",
+      "text": "Light the Three Foglights\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 70
+      },
+      "playtime": 0.8899999998807907,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.05,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {
+        "objective1": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Foglight",
+      "text": "Light the Three Foglights\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 40
+      },
+      "playtime": 6.274099999904627,
+      "player": {
+        "position": {
+          "x": 2.137463261862072,
+          "y": -2.762421289403585,
+          "z": -8.520072378310164
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {
+        "objective1": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Foglight",
+      "text": "Light the Three Foglights\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 40
+      },
+      "playtime": 17.574099999904615,
+      "player": {
+        "position": {
+          "x": -6.227977019061674,
+          "y": -2.813513546503356,
+          "z": -11.490187086895997
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {
+        "objective1": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Foglight",
+    "text": "Foglight\n\nThe vale has gone dark. Light the three ancient Foglights and reach the Sanctuary before the mist finds you.\n\nEnter the Vale\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+    "state": {},
+    "playtime": 0,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 1.05,
+        "z": 0
+      },
+      "visible": true,
+      "controller": "thirdperson"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {
+      "objective1": "active"
+    },
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nLight the Three Foglights\nPress F to interact",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:01:29.266Z"
+}

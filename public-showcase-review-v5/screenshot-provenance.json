@@ -1,0 +1,842 @@
+[
+  {
+    "id": "forest-range",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/forest-range.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/forest-range/opening.png",
+    "capturedAt": "2026-09-08T19:50:00.240Z",
+    "sha256": "fd8da76de2ab8845345871d79d8298eadcd8a75681194d1af0a8ea1c9cddeeeb",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/forest-range/opening.png"
+  },
+  {
+    "id": "forest-range",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/forest-range.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/forest-range/gameplay.png",
+    "capturedAt": "2026-09-08T19:50:24.213Z",
+    "sha256": "f29ecf84dfc99ec278f9b3c8e588ebc691c93cc6d45f3e43081bf3827b86a9a2",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/forest-range/gameplay.png"
+  },
+  {
+    "id": "forest-range",
+    "role": "highlight",
+    "purpose": "Featured public highlight",
+    "sourceStandalone": "dist/games/forest-range.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/forest-range/highlight.png",
+    "capturedAt": "2026-09-08T19:52:17.711Z",
+    "sha256": "13a5063c283dd6c2142a8df8dffc2d7193ff60d632650b4097e647c9e2d96ca5",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/forest-range/highlight.png"
+  },
+  {
+    "id": "arsenal-run",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/arsenal-run.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/arsenal-run/opening.png",
+    "capturedAt": "2026-09-08T19:44:38.036Z",
+    "sha256": "88638728a936c5b440f65b5a61e517974297bfcca43f7761243f0bf0ada7a454",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/arsenal-run/opening.png"
+  },
+  {
+    "id": "arsenal-run",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/arsenal-run.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/arsenal-run/gameplay.png",
+    "capturedAt": "2026-09-08T19:44:52.107Z",
+    "sha256": "8fe052b79a97db70b29bc88206fe494d0c46e142f8eb36a7d8a83bb2e538cf2d",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/arsenal-run/gameplay.png"
+  },
+  {
+    "id": "arsenal-run",
+    "role": "highlight",
+    "purpose": "Featured public highlight",
+    "sourceStandalone": "dist/games/arsenal-run.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/arsenal-run/highlight.png",
+    "capturedAt": "2026-09-08T19:46:09.414Z",
+    "sha256": "8280b658afee621225c608c09d90129410d5187d8d9d75f7f232c4d86e27efef",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/arsenal-run/highlight.png"
+  },
+  {
+    "id": "power-grid",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/power-grid.html",
+    "sourceCapture": "rehabilitation-evidence/playthroughs/power-grid/opening.png",
+    "capturedAt": "2026-09-08T20:16:02.312Z",
+    "sha256": "36300ff0a5a880098934e4f5805a7821a46a79a7256b299ea20126331f14c20e",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/power-grid/opening.png"
+  },
+  {
+    "id": "power-grid",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/power-grid.html",
+    "sourceCapture": "rehabilitation-evidence/playthroughs/power-grid/generator.png",
+    "capturedAt": "2026-09-08T20:16:08.236Z",
+    "sha256": "004068168c9e061ee24195ce5bbeb3562eba1301d8a74c01a114f0e61483f09b",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/power-grid/gameplay.png"
+  },
+  {
+    "id": "power-grid",
+    "role": "highlight",
+    "purpose": "Featured public highlight",
+    "sourceStandalone": "dist/games/power-grid.html",
+    "sourceCapture": "rehabilitation-evidence/playthroughs/power-grid/gate.png",
+    "capturedAt": "2026-09-08T20:16:23.005Z",
+    "sha256": "de584eb99adac8af4ffc12a0101826b373cf66aa29a03998a18274b852f83035",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/power-grid/highlight.png"
+  },
+  {
+    "id": "moving-temple",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/moving-temple.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/moving-temple/opening.png",
+    "capturedAt": "2026-09-08T20:03:55.646Z",
+    "sha256": "458988882b8ab486471c953708b32146a4954a368383e4d5e720fd1611b2c149",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/moving-temple/opening.png"
+  },
+  {
+    "id": "moving-temple",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/moving-temple.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/moving-temple/gameplay.png",
+    "capturedAt": "2026-09-08T20:04:06.486Z",
+    "sha256": "2f27f33fff79e7ea4b3e521c11412a9d3a39bc9ac323488c753431a8a413bb63",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/moving-temple/gameplay.png"
+  },
+  {
+    "id": "moving-temple",
+    "role": "highlight",
+    "purpose": "Featured public highlight",
+    "sourceStandalone": "dist/games/moving-temple.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/moving-temple/highlight.png",
+    "capturedAt": "2026-09-08T20:04:55.035Z",
+    "sha256": "87d50a358eddb245ec2cd0c4daec9324bca16e657f81056572c909bc6aa47620",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/moving-temple/highlight.png"
+  },
+  {
+    "id": "foglight",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/foglight.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/foglight/opening.png",
+    "capturedAt": "2026-09-08T19:41:50.794Z",
+    "sha256": "4ad86803d7e04adce3050a939b2245808184441d8b4bf0e31a7ceb17f062034e",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/foglight/opening.png"
+  },
+  {
+    "id": "foglight",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/foglight.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/foglight/gameplay.png",
+    "capturedAt": "2026-09-08T19:42:06.821Z",
+    "sha256": "45252616d0daf8452cbc044da27fe93249d839db156bd645939e8ebfba05825e",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/foglight/gameplay.png"
+  },
+  {
+    "id": "relic-frontier",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/relic-frontier.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-targeted/relic-frontier/combat-court.png",
+    "capturedAt": "2026-09-08T20:29:09.892Z",
+    "sha256": "07e4986789b09c890c144fa85db41d81bedee381b5e0166708b7a96a713ac5ff",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/relic-frontier/opening.png"
+  },
+  {
+    "id": "relic-frontier",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/relic-frontier.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-targeted/relic-frontier/weapon-approach.png",
+    "capturedAt": "2026-09-08T20:29:11.093Z",
+    "sha256": "851d94c211bc0ec007a05f9791459154c1bcfe833fb715b1344242cdcda61e8e",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/relic-frontier/gameplay.png"
+  },
+  {
+    "id": "relic-island",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/relic-island.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/relic-island/opening.png",
+    "capturedAt": "2026-09-08T19:49:07.141Z",
+    "sha256": "7e480c876c8c5e916347db5e5e37acaf8c99cf419a5fd72aa8475d9b2a9889e0",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/relic-island/opening.png"
+  },
+  {
+    "id": "relic-island",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/relic-island.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/relic-island/highlight.png",
+    "capturedAt": "2026-09-08T19:49:34.305Z",
+    "sha256": "53f88a000c117c2db5d61ee0e71fcbe1fc77853dc1b1b78559a5170a423d9024",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/relic-island/gameplay.png"
+  },
+  {
+    "id": "npc-puzzle-adventure",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/npc-puzzle-adventure.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-targeted/npc-puzzle-adventure/opening.png",
+    "capturedAt": "2026-09-08T20:29:13.756Z",
+    "sha256": "c4dcdc6d7d1a4521bb52da82634f3eebdd735d6cb3730a2d573828ec9966921e",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/npc-puzzle-adventure/opening.png"
+  },
+  {
+    "id": "npc-puzzle-adventure",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/npc-puzzle-adventure.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-targeted/npc-puzzle-adventure/approach.png",
+    "capturedAt": "2026-09-08T20:29:15.032Z",
+    "sha256": "206b7a07690e96ff0839c254b7f049fdc047afebfed9b3d8eb3d2d5e242a7439",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/npc-puzzle-adventure/gameplay.png"
+  },
+  {
+    "id": "relic-runner-2",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/relic-runner-2.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/relic-runner-2/opening.png",
+    "capturedAt": "2026-09-08T19:54:59.167Z",
+    "sha256": "92aa0bb1179f17cd72a9cb688a2323f1003424f892482d4245f81db88e1b1ada",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/relic-runner-2/opening.png"
+  },
+  {
+    "id": "relic-runner-2",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/relic-runner-2.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/relic-runner-2/gameplay.png",
+    "capturedAt": "2026-09-08T19:55:13.332Z",
+    "sha256": "72bd4bbfd21b87acdea9db35bea6a426bcd62f0ba83269c3155e3f77a6fc7165",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/relic-runner-2/gameplay.png"
+  },
+  {
+    "id": "valley-run",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/valley-run.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-fixed-2/valley-run/opening.png",
+    "capturedAt": "2026-09-08T20:24:53.506Z",
+    "sha256": "a565b2c4b1b1808c1a564231f711782fc658b80e0cd6363209fcc4ca8c336e21",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/valley-run/opening.png"
+  },
+  {
+    "id": "valley-run",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/valley-run.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-targeted/valley-run/route-depth.png",
+    "capturedAt": "2026-09-08T20:29:50.024Z",
+    "sha256": "983cb7fd79c74a63db43fd5d286a50f1fcfd72a00e3de959ce8bcc048c4f0798",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/valley-run/gameplay.png"
+  },
+  {
+    "id": "painted-wilds",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/painted-wilds.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/painted-wilds/opening.png",
+    "capturedAt": "2026-09-08T20:01:13.213Z",
+    "sha256": "6db36043b8c94f43307546d073a49c2c2637fd20a7158625ae08c227238a43ce",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/painted-wilds/opening.png"
+  },
+  {
+    "id": "painted-wilds",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/painted-wilds.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/painted-wilds/gameplay.png",
+    "capturedAt": "2026-09-08T20:01:23.887Z",
+    "sha256": "1e7530dbf3f59e79d773d95e0468e00d349795cdbbc589a9dfccb9a03b99e5ec",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/painted-wilds/gameplay.png"
+  },
+  {
+    "id": "textured-adventure",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/textured-adventure.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/textured-adventure/opening.png",
+    "capturedAt": "2026-09-08T19:59:55.628Z",
+    "sha256": "61ae35457139063d762d946c87ab984ba919dfc7232948d26bb4147e37de5846",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/textured-adventure/opening.png"
+  },
+  {
+    "id": "textured-adventure",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/textured-adventure.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/textured-adventure/highlight.png",
+    "capturedAt": "2026-09-08T20:00:11.614Z",
+    "sha256": "59babcbc573ad5c1e2438bfac0bdc11c4013f83ba583162fec68b608749eab41",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/textured-adventure/gameplay.png"
+  },
+  {
+    "id": "temple-switch-puzzle",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/temple-switch-puzzle.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/temple-switch-puzzle/opening.png",
+    "capturedAt": "2026-09-08T20:06:01.213Z",
+    "sha256": "518fd580403020f89aebeb15f177d57aa5bca872980d1bf39f11e903839efa8e",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/temple-switch-puzzle/opening.png"
+  },
+  {
+    "id": "temple-switch-puzzle",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/temple-switch-puzzle.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/temple-switch-puzzle/gameplay.png",
+    "capturedAt": "2026-09-08T20:06:05.664Z",
+    "sha256": "0013af824c5e1342f2287b517ae02fd624a57c4da9f39c3f8476314754a974a3",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/temple-switch-puzzle/gameplay.png"
+  },
+  {
+    "id": "signal-relay",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/signal-relay.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/signal-relay/opening.png",
+    "capturedAt": "2026-09-08T19:41:50.794Z",
+    "sha256": "6f2f98c9b0eefd16005116f94a27723cb19c53269a6b18d25d59967ee852c1a3",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/signal-relay/opening.png"
+  },
+  {
+    "id": "signal-relay",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/signal-relay.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/signal-relay/gameplay.png",
+    "capturedAt": "2026-09-08T19:42:06.746Z",
+    "sha256": "b002e619969d4a089020e1ccdec9f04e79e227e1db893a25d3f248209fd6fa0b",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/signal-relay/gameplay.png"
+  },
+  {
+    "id": "silent-sector",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/silent-sector.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/silent-sector/opening.png",
+    "capturedAt": "2026-09-08T19:44:52.110Z",
+    "sha256": "41d37a1fe4ddcf64cbcc1475b720c0181905d4236f280cdd240613004d30d63b",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/silent-sector/opening.png"
+  },
+  {
+    "id": "silent-sector",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/silent-sector.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/silent-sector/highlight.png",
+    "capturedAt": "2026-09-08T19:46:09.414Z",
+    "sha256": "c59c2b288e9bc6a4ab7df69275db11d868f4ef9ebe2130608e0091e189ddaa4d",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/silent-sector/gameplay.png"
+  },
+  {
+    "id": "iron-arena",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/iron-arena.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/iron-arena/opening.png",
+    "capturedAt": "2026-09-08T20:06:55.123Z",
+    "sha256": "d5b97cd023136fe4b8ece184c3bb3f1d2c4930e4fa1f2f807e603bdeaddec79a",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/iron-arena/opening.png"
+  },
+  {
+    "id": "iron-arena",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/iron-arena.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/iron-arena/gameplay.png",
+    "capturedAt": "2026-09-08T20:06:59.242Z",
+    "sha256": "6f3db40bc136252c146e75ac1a8c7c01e4cbee52a95da255588e03f96f07a2b0",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/iron-arena/gameplay.png"
+  },
+  {
+    "id": "opus-arena",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/opus-arena.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/opus-arena/opening.png",
+    "capturedAt": "2026-09-08T19:53:40.428Z",
+    "sha256": "ee4ba8ab39b5951507a711f6c0c49d5cd03a62c6c26a7fe1ec0b94952486bc38",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/opus-arena/opening.png"
+  },
+  {
+    "id": "opus-arena",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/opus-arena.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/opus-arena/gameplay.png",
+    "capturedAt": "2026-09-08T19:53:54.245Z",
+    "sha256": "095dd991f1bddd8ec53017e8fedab5e21c8a5795bf2f5e55f8550d91c55870cb",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/opus-arena/gameplay.png"
+  },
+  {
+    "id": "power-station",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/power-station.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-targeted/power-station/detail.png",
+    "capturedAt": "2026-09-08T20:29:21.712Z",
+    "sha256": "071bd5cdb0a86aba8e31142a7dcfa155ba950873de14c4056e24476feb236307",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/power-station/opening.png"
+  },
+  {
+    "id": "power-station",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/power-station.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-targeted/power-station/opening.png",
+    "capturedAt": "2026-09-08T20:29:19.008Z",
+    "sha256": "5de8fffaab8a3923c8790b0fbe93a3a7ce7b125a7e6b61055776e09d42b2a664",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/power-station/gameplay.png"
+  },
+  {
+    "id": "assembly-line",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/assembly-line.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-targeted/assembly-line/opening.png",
+    "capturedAt": "2026-09-08T20:29:52.577Z",
+    "sha256": "6d1c4e0a499ebf21a38097a9dc75d7b65623dce90516feae53cf6bebb07a61ef",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/assembly-line/opening.png"
+  },
+  {
+    "id": "assembly-line",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/assembly-line.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-targeted/assembly-line/detail.png",
+    "capturedAt": "2026-09-08T20:29:55.278Z",
+    "sha256": "32b839590d8963e77daa30affa9c1ff5887a0d87bdb8eedbc148bd898ca7e0c3",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/assembly-line/gameplay.png"
+  },
+  {
+    "id": "blacksite",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/blacksite.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/blacksite/opening.png",
+    "capturedAt": "2026-09-08T20:02:42.777Z",
+    "sha256": "2b9c04019797c327880b79dc263839a5a86ebf8e4a2f45ac9dbb7fa1a1da647d",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/blacksite/opening.png"
+  },
+  {
+    "id": "blacksite",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/blacksite.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/blacksite/gameplay.png",
+    "capturedAt": "2026-09-08T20:02:53.294Z",
+    "sha256": "6845ea7d6db32fd7870674f7918079de57f5a9df768da9ffc600391f229f4a06",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/blacksite/gameplay.png"
+  },
+  {
+    "id": "shifting-facility",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/shifting-facility.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/shifting-facility/opening.png",
+    "capturedAt": "2026-09-08T20:05:07.915Z",
+    "sha256": "73b5ffe59e99ab63ed8b3a6db9a15ba7fc0549b3f9ec539d42d0e021ba97cf6c",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/shifting-facility/opening.png"
+  },
+  {
+    "id": "shifting-facility",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/shifting-facility.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/shifting-facility/highlight.png",
+    "capturedAt": "2026-09-08T20:05:33.255Z",
+    "sha256": "cf2fc7d58941328078e3b547fe954f0d4c6c214b617b685ab06bd88591c714fd",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/shifting-facility/gameplay.png"
+  },
+  {
+    "id": "signal-zero",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/signal-zero.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-targeted/signal-zero/level-1-relay.png",
+    "capturedAt": "2026-09-08T20:29:27.393Z",
+    "sha256": "6500e7a50788eb9b54a5fc5dff9bbffa2c5a033d4b0e60aab54c9f642842f3e0",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/signal-zero/opening.png"
+  },
+  {
+    "id": "signal-zero",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/signal-zero.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-targeted/signal-zero/level-2-opening.png",
+    "capturedAt": "2026-09-08T20:29:29.652Z",
+    "sha256": "11ff187ee0b8e094787f2ea17713b6b384c75ef1ac744684164c1489106239a6",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/signal-zero/gameplay.png"
+  },
+  {
+    "id": "dungeon-descent",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/dungeon-descent.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/dungeon-descent/opening.png",
+    "capturedAt": "2026-09-08T20:07:19.023Z",
+    "sha256": "04fee2ac7859ada879d3fb2c9495f4612047fef1eadabdb946b115ffe5b29aa2",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/dungeon-descent/opening.png"
+  },
+  {
+    "id": "dungeon-descent",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/dungeon-descent.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/dungeon-descent/gameplay.png",
+    "capturedAt": "2026-09-08T20:07:23.500Z",
+    "sha256": "d461ae0d3d7091753b82a98910d51bddadad71ccdede16fb54b91d6b90d4af7e",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/dungeon-descent/gameplay.png"
+  },
+  {
+    "id": "sentinel-maze",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/sentinel-maze.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/sentinel-maze/opening.png",
+    "capturedAt": "2026-09-08T19:56:53.880Z",
+    "sha256": "c40cee8944a681c522bd3e891892916f8f59cd34372e7af57241cbab0753988d",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/sentinel-maze/opening.png"
+  },
+  {
+    "id": "sentinel-maze",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/sentinel-maze.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/sentinel-maze/highlight.png",
+    "capturedAt": "2026-09-08T19:57:21.356Z",
+    "sha256": "ed01efd586cc2b54b7ce8397af7eeb4db04a5e02afe482fbab799ec6e60502be",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/sentinel-maze/gameplay.png"
+  },
+  {
+    "id": "survival-arena",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/survival-arena.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/survival-arena/opening.png",
+    "capturedAt": "2026-09-08T20:05:50.403Z",
+    "sha256": "eeed52a9c5ee6d219fb59459a18f08acacbc455aee4e1ef3b2708121ece5d347",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/survival-arena/opening.png"
+  },
+  {
+    "id": "survival-arena",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/survival-arena.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/survival-arena/highlight.png",
+    "capturedAt": "2026-09-08T20:06:08.613Z",
+    "sha256": "6801749d0a8cdde9f59e50e06a0523ce292e878ca45d4563b5c40c38a434ac7c",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/survival-arena/gameplay.png"
+  },
+  {
+    "id": "survival-arena-2",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/survival-arena-2.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-survival2-final/survival-arena-2/opening.png",
+    "capturedAt": "2026-09-08T20:36:09.899Z",
+    "sha256": "7eddd3a784917b28179ea9bea18f43827af3c8d3415ed9ef7878977c3c52387b",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/survival-arena-2/opening.png"
+  },
+  {
+    "id": "survival-arena-2",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/survival-arena-2.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-targeted/survival-arena-2/storm-circuit.png",
+    "capturedAt": "2026-09-08T20:36:56.966Z",
+    "sha256": "1f05b058587d4248d8a9998e832bb3de8ce1a7243d28b32e2a2c1ea502fd529c",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/survival-arena-2/gameplay.png"
+  },
+  {
+    "id": "survival-arena-3",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/survival-arena-3.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/survival-arena-3/opening.png",
+    "capturedAt": "2026-09-08T19:58:57.308Z",
+    "sha256": "dc54be51a6e76d32b0f46e62b8b9b7ad4539d8fc9cc2f58422defda8f6c3e1c7",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/survival-arena-3/opening.png"
+  },
+  {
+    "id": "survival-arena-3",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/survival-arena-3.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-candidates/survival-arena-3/gameplay.png",
+    "capturedAt": "2026-09-08T19:59:02.748Z",
+    "sha256": "9f7a9b48d861d8f8bbc8e78c2fd761b2108e5d2d45a0424a42acc677501b4328",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/survival-arena-3/gameplay.png"
+  },
+  {
+    "id": "skyway-trial",
+    "role": "opening",
+    "purpose": "Public opening composition",
+    "sourceStandalone": "dist/games/skyway-trial.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-targeted/skyway-trial/opening.png",
+    "capturedAt": "2026-09-08T20:29:57.877Z",
+    "sha256": "854a2f1e798939a36fc33a93bee6598180dbd6a31abed646c741bff1c78d3376",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/skyway-trial/opening.png"
+  },
+  {
+    "id": "skyway-trial",
+    "role": "gameplay",
+    "purpose": "Public gameplay evidence",
+    "sourceStandalone": "dist/games/skyway-trial.html",
+    "sourceCapture": "rehabilitation-evidence/public-v5-targeted/skyway-trial/detail.png",
+    "capturedAt": "2026-09-08T20:30:00.707Z",
+    "sha256": "3a9f2eb8ec8fc90077f70af9727718c0bca8653fbff214ea7ba8721e8c7e1285",
+    "dimensions": {
+      "width": 1280,
+      "height": 720
+    },
+    "destination": "public-showcase-review/skyway-trial/gameplay.png"
+  }
+]

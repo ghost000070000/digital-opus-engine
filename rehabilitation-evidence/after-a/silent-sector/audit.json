@@ -1,0 +1,140 @@
+{
+  "id": "silent-sector",
+  "phase": "after-a",
+  "url": "http://localhost:8837/dist/games/silent-sector.html",
+  "startedAt": "2026-09-08T00:09:17.756Z",
+  "seconds": 26,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 3120
+    },
+    {
+      "key": "d",
+      "milliseconds": 2600
+    },
+    {
+      "key": "w",
+      "milliseconds": 3900
+    },
+    {
+      "key": "a",
+      "milliseconds": 2600
+    },
+    {
+      "key": "s",
+      "milliseconds": 2080
+    },
+    {
+      "key": "w",
+      "milliseconds": 2600
+    },
+    {
+      "key": "d",
+      "milliseconds": 1300
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Silent Sector",
+      "text": "Reach the Security Wing\nPress F to interact\nC crouch • Use cover • Secure the Data Core",
+      "state": {},
+      "playtime": 0.2,
+      "player": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_reach_wing": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Silent Sector",
+      "text": "Reach the Security Wing\nPress F to interact\nC crouch • Use cover • Secure the Data Core",
+      "state": {},
+      "playtime": 2.8172999999523176,
+      "player": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_reach_wing": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Silent Sector",
+      "text": "Reach the Security Wing\nPress F to interact\nC crouch • Use cover • Secure the Data Core",
+      "state": {},
+      "playtime": 6.6586999999284675,
+      "player": {
+        "position": {
+          "x": -29,
+          "y": 0.55,
+          "z": -5.5
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_reach_wing": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Silent Sector",
+    "text": "Silent Sector\n\nA short stealth infiltration through a listening security station. Break sightlines, secure the Data Core and escape unseen.\n\nBegin mission\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nC crouch • Use cover • Secure the Data Core",
+    "state": {},
+    "playtime": 0,
+    "player": {
+      "position": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "visible": false,
+      "controller": "firstperson"
+    },
+    "camera": {
+      "mode": "fixed"
+    },
+    "audio": {},
+    "objectives": {
+      "obj_reach_wing": "active"
+    },
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nReach the Security Wing\nPress F to interact\nC crouch • Use cover • Secure the Data Core",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:10:00.784Z"
+}

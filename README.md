@@ -1,92 +1,145 @@
 # Digital Opus Engine
 
-Version 0.1.0 — **developer preview**
+A zero-dependency, vanilla-JavaScript WebGL2 game engine — and, built entirely on top of its own public API, **Crate Run**: a no-code drag-and-drop game editor shipped as a real, playable game/editor hybrid.
 
-Digital Opus Engine is a zero-runtime-dependency, vanilla-JavaScript WebGL2 game engine distributed as one browser script. Engine users need no npm install, framework, or bundler.
+```bash
+python -m http.server 8199
+```
+then open `http://localhost:8199/editor/index.html` — it opens straight into a playable game (drive a hovercraft across a 7-island archipelago collecting crates), with the full editor one click away ("Edit This Game"), editing the exact same live scene the game just ran.
+
+`file://` won't reliably work for the editor (module loading and some browser APIs need a real origin) — serve it over HTTP.
+
+---
+
+## What this actually is
+
+Two things, deliberately built as one:
+
+1. **The engine** (`engine/src/`) — a from-scratch WebGL2 engine: renderer, procedural terrain/water, physics, particles, procedural audio, save/settings, a DOM-based HUD, and a glTF importer. Zero runtime dependencies, one `<script>` tag, nothing else to install.
+2. **The editor** (`editor/`) — a drag-and-drop, no-code-as-far-as-feasible game builder, built *using only* the engine's own public `window.Opus` API. It is not a special-cased tool with private engine access; every editor capability had to earn its way into the public API first (see [`API-FRICTION.md`](API-FRICTION.md)).
+
+The editor is the actual product. The engine is the proven runtime underneath it, kept fully public and documented so it's useful standalone too — but "no-code as far as feasible" is the real goal, not "ship a JS library."
+
+**"As far as feasible" is a real constraint, not a slogan.** Unity hasn't achieved fully code-free game creation with orders of magnitude more resources than this project has. The honest target: push placement, configuration, and common game logic as far into visual, drag-and-drop territory as is actually achievable — and give logic that doesn't fit a clearly-labeled scripting escape hatch, rather than pretending everything is reachable without code.
+
+---
+
+## Architecture
+
+```
++-------------------------------------------------------------------+
+|  editor/  — Crate Run (game + no-code editor hybrid)              |
+|  Built entirely through window.Opus, same as any external user.   |
+|  Owns: placement, drag-to-move, multi-select, marquee-select,     |
+|  behaviors (fixed dropdown + node-graph + Custom Script escape    |
+|  hatch), undo/redo, save/load, export, touch controls.            |
++-------------------------------------------------------------------+
+                                  |
+               Consumes exclusively via window.Opus
+                                  v
++-------------------------------------------------------------------+
+|                       Public API Surface                          |
+|                       (engine/src/22-api.js)                      |
+|   Opus.create(), App, Mesh, Terrain, Water, Physics, Camera, HUD  |
++-------------------------------------------------------------------+
+                                  |
+              Encapsulates & orchestrates engine subsystems
+                                  v
++-----------------------+-----------------------+-------------------+
+|   WebGL2 Renderer     |   Procedural Systems   |  Audio & Physics  |
+| (shaders, VAOs, loop)  | (terrain, water, noise,|  (buoyancy, slope,|
+|                        |  glTF import, particles)|  procedural hum) |
++-----------------------+-----------------------+-------------------+
+```
+
+**Source layout & build.** `engine/src/01-vec3.js` through `22-api.js` (22 files, strict contiguous numbering enforced by the build — `node build/build.js` refuses to build otherwise), concatenated into one IIFE closure at `dist/opus-engine.js`. Only `window.Opus` escapes the closure; internal renderer state, shader source, and GPU handles are unreachable from outside, verified (`typeof Renderer === 'undefined'` outside the bundle). No hard bundle-size cap — an editor UI needs room to grow; minification (whitespace/comment stripping + private-identifier mangling) runs regardless, so size grows from real features, not waste. Current bundle: ~92 KB (~24.6 KB gzip).
+
+**`editor/` has no special access.** `editor/index.html` loads the built `dist/opus-engine.js` bundle plus `editor/src/01-editor.js` — the same two-script-tag setup any external Opus user would use. Every editor feature that needed something the engine didn't expose became a public API addition first (glTF import, touch input simulation, mesh geometry round-tripping, etc.) — never a private workaround. That discipline is the whole point of [`API-FRICTION.md`](API-FRICTION.md): every friction point recorded, the smallest reusable public capability built, proven by using it, documented.
+
+**Engine subsystems**, briefly:
+- **Renderer** — lit WebGL2 meshes, gradient sky, terrain height/slope vertex coloring, sum-of-sines animated water with fresnel tint, instanced particle billboards.
+- **Terrain/Water** (`19-terrain.js`, procedural + `08-mesh.js`) — seeded island heightfields with CPU sampling that exactly matches the GPU mesh (`Terrain.sampleHeight`/`sampleNormal`), animated water with matching world-space sampling.
+- **Physics** (`20-physics.js`) — raycasts (sphere/AABB), swept trigger volumes, terrain collision (slope sliding vs. cliff blocking), buoyancy, soft map-boundary pushback.
+- **glTF import** (`21-gltf.js`) — a from-scratch glTF 2.0 parser (`.gltf` JSON with embedded base64 buffers, or `.glb` binary containers), geometry only (no materials/textures/animation/skinning — the renderer has no texture-sampling path). Bakes node-hierarchy transforms into flat vertex arrays, the same shape `Opus.Mesh.fromArrays` already accepted, so no renderer change was needed at all.
+- **Input** (`04-input.js`) — keyboard + Pointer Events (unifies mouse/touch/pen), plus `simulateKeyDown/Up` so an on-screen touch control can drive the exact same key-state a real keyboard would.
+- **HUD** (`14-ui.js`) — a DOM overlay with a small primitives registry (labels, panels, buttons, modals, `addTouchButton` for press-and-hold touch/mouse controls) for games that want a built-in HUD; `editor/` opts out (`hud: false`) and builds its own chrome directly, same underlying pattern.
+- **Audio, Save, Settings, Particles, Camera** — procedural Web Audio (node-recycled engine hum, positional blips), localStorage-backed save slots, orbit/chase camera modes, capped particle emitters.
+
+**Editor-side systems** (all built on the public API above, no engine access):
+- **Placement & selection** — drag from palette (Pointer-Events-based, not HTML5 Drag-and-Drop, so it works on touch), click/shift-click/marquee-select, multi-select-aware drag-to-move, duplicate, delete.
+- **Behaviors** — a fixed On Click/On Enter → Message/Sound/Win/Lose/Boost/Objective dropdown (the no-code common case) with two escape hatches for anything that doesn't fit: **Custom Script** (`new Function(entity, app, Opus, game, code)`) and **Node Graph** (a visual editor — click-to-connect ports, sequencing, gated conditions, AND/OR, named counters — wiring together the same fixed actions rather than being a general-purpose language).
+- **Undo/redo, Save/Load, Export** — all reuse one `serializeScene()`/`loadScene()` pair as the snapshot format; a scene (including imported mesh geometry, via `Opus.Mesh.toArrays`) round-trips through all three the same way.
+
+---
+
+## Current state
+
+**The engine** exports a documented, tested public API (`node tests/run-tests.js` — 18 passing regression tests covering math, procedural sampling, physics, scene/entity ownership, particles, input, settings, save slots) plus everything added this session: glTF import/export-of-arrays, touch input primitives, and the HUD's touch button.
+
+**Crate Run** (`editor/index.html`) is a 7-island archipelago: 21 crates (disappear on collection, no double-counting on re-entry), 7 hazards (3 patrol on a moving path, the rest static — all a spiky mine shape, not a plain cube), 5 boost pads (a pyramid shape, force-configurable), one bonus crate authored entirely via the node-graph editor, and one landmark imported via `Opus.Mesh.fromGLTF` from a genuinely multi-node model. Playable start to finish on desktop (mouse + keyboard) and touch (on-screen D-pad + boost button, touch-capable editor).
+
+**What shipped, roughly in order** (full detail in [`ROADMAP.md`](ROADMAP.md)): the core no-code placement loop → widened palette (terrain/water/mine/boost pad) → visual behaviors (fixed dropdown + Custom Script) → the game/editor hybrid shell → hovercraft gameplay consolidated from an earlier standalone demo → multi-island world (surfacing and fixing a real terrain-collision bug, friction #15) → gameplay variety (patrol hazards, boost pads) → a real editor-usability pass (drag-to-move, keyboard shortcuts, duplicate, cursor feedback, multi-select, marquee-select — surfacing and fixing a real camera/pointer-event conflict bug, friction #18) → the four originally-deferred items: **touch support in exported games**, **mobile/touch editing**, **glTF asset import**, and **node-graph visual scripting** — each landing as a genuine reusable engine capability, proven by using it in Crate Run itself, not a demo-only shortcut.
+
+---
+
+## Roadmap — what's next
+
+No fixed timeline; work is picked by what's actually needed next, proven by building something real with it, and documented (see "How roadmap work is selected" in [`ROADMAP.md`](ROADMAP.md)).
+
+**Open, low-risk, whenever it's worth doing:**
+- More Crate Run content toward a longer single-playthrough target — the island/crate/hazard pattern is proven and cheap to repeat.
+- Marquee-select and drag-to-move currently cover cubes and terrain; water stays number-field-only by design (it's one giant backdrop plane — raycast-picking it would break "click empty space to deselect" almost everywhere). Revisit only if that tradeoff stops being right.
+- Minor UI polish as it's noticed (e.g., the node-graph canvas has no zoom/pan yet — fine at the current graph sizes, would matter for much larger graphs).
+
+**Deliberately not started without a direction-setting conversation first:**
+- **Multiplayer/networking** — the one item from the original deferred list still untouched. A fundamentally different kind of work: a hosting-model decision (peer-to-peer vs. authoritative server), netcode, and likely client prediction/reconciliation for a physics-simulated game. Not something to default into via the same incremental "build it, prove it, document it" loop everything else here used.
+
+---
+
+## Repository map
+
+| Path | What it is |
+|---|---|
+| `engine/src/` | Engine source, 22 files, numbered in strict dependency order |
+| `dist/` | Built artifacts (`opus-engine.js`, `delivery-run.html`) — run `node build/build.js` to regenerate |
+| `editor/` | Crate Run — the no-code editor + shipped game |
+| `demo/` | Standalone unbundled dev loader + the original Delivery Run demo source (superseded by the editor as the primary product, kept for engine-only dogfooding) |
+| `template/`, `examples/` | Copyable starter template and five tutorial examples for using the engine standalone, outside the editor |
+| `tests/` | Public API regression suite (`run-tests.js`) + a browser WebGL2 smoke test |
+| `docs/` | `getting-started.md`, `api-reference.md` — reference material for using the engine's public API directly |
+| `ROADMAP.md` | Full phase-by-phase build history, in detail |
+| `API-FRICTION.md` | Every gap found while building the editor/demo against the engine's public API, and how each was resolved |
+| `CHANGELOG.md` | Version-tagged change log |
+
+## Build & test
+
+```bash
+node build/build.js --verbose   # builds dist/opus-engine.js + dist/delivery-run.html
+node tests/run-tests.js         # builds, then runs the public-API regression suite against the built bundle
+```
+
+For a real WebGL2 + DOM lifecycle smoke test, serve the repo root and open `tests/browser-smoke.html`.
+
+## Using the engine standalone (without the editor)
 
 ```html
 <canvas id="game"></canvas>
-<script src="opus-engine.js"></script>
+<script src="dist/opus-engine.js"></script>
 <script>
 const app = Opus.create(document.getElementById('game'));
 const cube = app.addEntity({
   mesh: Opus.Mesh.cube(),
   color: [0.25, 0.7, 1],
-  position: new Opus.Vec3(0, 0, 0)
+  position: new Opus.Vec3(0, 0, 0),
 });
 app.start((dt) => { cube.rotationY += dt; });
 </script>
 ```
 
-The release engine is **81,404 bytes** (**21,281 gzip bytes**); the standalone Delivery Run is **99,298 bytes**. WebGL2 is required.
-
-## Features
-
-- Lit WebGL2 meshes, gradient sky, hemisphere light, and distance fog
-- Seeded island terrain with matching public height/normal sampling
-- Animated water with exact public height/surface sampling
-- Orbit and smoothed chase cameras
-- Raycasts, triggers, buoyancy, terrain response, and soft map boundaries
-- Capped particle emitters
-- User-activated procedural audio and reusable vehicle hum
-- Managed HUD primitives, overlays, settings, save slots, and screenshots
-- Explicit lifecycle with resize, pause/resume, and comprehensive cleanup
-
-## Made with Digital Opus Engine
-
-[Play Hovercraft Delivery Run](dist/delivery-run.html), a 90-second playable technical demo built through the same documented public API available to engine users.
-
-## Start here
-
-- [Copyable starter template](template/)
-- [01 — Hello scene](examples/01-hello-scene.html)
-- [02 — Terrain and water](examples/02-terrain-water.html)
-- [03 — Physics](examples/03-physics.html)
-- [04 — Particles and audio](examples/04-particles-audio.html)
-- [05 — Mini-game](examples/05-mini-game.html)
-- [Getting started](docs/getting-started.md)
-- [API reference](docs/api-reference.md)
-- [Architecture](docs/architecture.md)
-- [Roadmap](ROADMAP.md)
-- [API friction log](API-FRICTION.md)
-
-Serve the repository root over HTTP:
-
-```bash
-python -m http.server 8180
-```
-
-Then visit `http://localhost:8180/dist/delivery-run.html`. `file://` execution is not promised.
-
-## Build
-
-The dependency-free build command is:
-
-```bash
-node build/build.js --verbose
-```
-
-It produces `dist/opus-engine.js` and `dist/delivery-run.html` and reports their resulting sizes. Bundle size is monitored but is not a build failure condition.
-
-## Test
-
-Build the release artifacts and run the dependency-free public API regression suite:
-
-```bash
-node tests/run-tests.js
-```
-
-The tests execute against `dist/opus-engine.js`, so they cover the same compacted public bundle shipped to engine users.
-
-For a real WebGL2 and DOM lifecycle smoke test, serve the repository and open
-`http://localhost:8180/tests/browser-smoke.html`. The page reports App creation,
-rendering, pause/resume, scene ownership, and destruction results in place.
+See [`template/`](template/) for a copyable starting point, [`examples/`](examples/) for five focused tutorials (scene basics → terrain/water → physics → particles/audio → a mini-game), and [`docs/api-reference.md`](docs/api-reference.md) for the full documented API surface.
 
 ## Maturity
 
-- Engine: Developer preview / alpha
-- API: Provisional documented public API
-- Demo: Playable technical demo
-- Template and examples: Starter quality
-
-This release is not production-ready. See the changelog and architecture notes for intentional limitations.
+- **Editor / Crate Run**: the primary product surface, actively developed, dogfooded end to end.
+- **Engine public API**: stable in shape, still provisional (pre-1.0) — expect additive changes, not breaking ones, as the pattern from `API-FRICTION.md` has been so far.
+- **WebGL2 only**, no fallback renderer. Not production-hardened; this is a working developer preview, not a shipped commercial engine.

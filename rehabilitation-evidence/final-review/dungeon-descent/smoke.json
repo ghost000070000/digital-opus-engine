@@ -1,0 +1,25 @@
+{
+  "id": "dungeon-descent",
+  "sourceSHA256": "2cac596d378c65d8b783bf749346609a69e6d75121301ea0154cc8f74286c38c",
+  "errors": [],
+  "capturedAt": "2026-09-08T16:24:23.229Z",
+  "sha256": "e1b2e88be73a7716fb83e3b766dac43191c90a9c8530c0bfbe1837ccf73a8f71",
+  "state": {
+    "title": "Dungeon Descent",
+    "sim": 1.501599999994039,
+    "ended": false,
+    "text": "Find both switches to open the gate, then reach the exit.\nTime: 1.5s\nActivate the two seals, then reach the eastern exit.\nPress F to interact\nWASD / arrows move; Escape pauses.",
+    "controller": "topdown",
+    "bodyVisible": false,
+    "visualVisible": true,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 40
+  },
+  "pauseText": "Find both switches to open the gate, then reach the exit.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nTime: 2.7s\nActivate the two seals, then reach the eastern exit.\nPress F to interact\nWASD / arrows move; Escape pauses.",
+  "passed": true
+}

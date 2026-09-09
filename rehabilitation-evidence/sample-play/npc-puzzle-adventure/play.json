@@ -1,0 +1,204 @@
+{
+  "id": "npc-puzzle-adventure",
+  "inputs": [
+    {
+      "target": [
+        3,
+        1
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 6.948100000001492,
+        "position": {
+          "x": 3.639762016353325,
+          "y": 0.4367553227716554,
+          "z": 1.0269892666465703
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": 0.8477180735808796,
+          "y": -0.44989812832029025,
+          "z": 0.2810084373434754
+        },
+        "text": "Speak to the sailor, use the door console, and enter the sanctum.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        0,
+        6
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {
+          "hasKey": true,
+          "talkedToSailor": true
+        },
+        "inventory": {
+          "key": 1
+        },
+        "ended": false,
+        "playtime": 10.624200000002995,
+        "position": {
+          "x": -0.17676471423923856,
+          "y": 0.5063820959536778,
+          "z": 6.478280720823848
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": -0.6292361703340005,
+          "y": -0.36262299147735616,
+          "z": 0.6874346572550836
+        },
+        "text": "Speak to the sailor, use the door console, and enter the sanctum.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        0,
+        11
+      ],
+      "result": "level-transition",
+      "state": {
+        "level": 1,
+        "state": {},
+        "flags": {
+          "hasKey": true,
+          "talkedToSailor": true
+        },
+        "inventory": {
+          "key": 1
+        },
+        "ended": false,
+        "playtime": 12.176700000002999,
+        "position": {
+          "x": -0.06720341180532058,
+          "y": 1.1345905999973658,
+          "z": -4.934155984240852
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": -0.05776666363456873,
+          "y": -0.5278013857843038,
+          "z": 0.8474011504221004
+        },
+        "text": "The sanctum door grinds open.\nSpeak to the sailor, use the door console, and enter the sanctum.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        0,
+        6
+      ],
+      "result": "ended",
+      "state": {
+        "level": 1,
+        "state": {},
+        "flags": {
+          "hasKey": true,
+          "talkedToSailor": true
+        },
+        "inventory": {
+          "key": 1
+        },
+        "ended": true,
+        "playtime": 14.677100000001518,
+        "position": {
+          "x": -0.21151180636704117,
+          "y": 0.6339916838310069,
+          "z": 5.950144986160649
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": -0.09705817983473615,
+          "y": -0.3207059635307045,
+          "z": 0.9421928649077166
+        },
+        "text": "The sanctum door grinds open.\nThe sanctum opens\n\nThe sailor's key has revealed the inner shrine.\n\nRestart\nSpeak to the sailor, use the door console, and enter the sanctum.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "dialogue": false
+      }
+    }
+  ],
+  "errors": [],
+  "started": "2026-09-08T16:02:05.129Z",
+  "start": {
+    "level": 0,
+    "state": {},
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 2.0364999999999998,
+    "position": {
+      "x": 0,
+      "y": 0.613072693557267,
+      "z": -5
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": 0,
+      "y": -0.5141378868228473,
+      "z": 0.8577075453400984
+    },
+    "text": "Speak to the sailor, use the door console, and enter the sanctum.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "dialogue": false
+  },
+  "final": {
+    "level": 1,
+    "state": {},
+    "flags": {
+      "hasKey": true,
+      "talkedToSailor": true
+    },
+    "inventory": {
+      "key": 1
+    },
+    "ended": true,
+    "playtime": 15.644500000000027,
+    "position": {
+      "x": -0.5935861702917854,
+      "y": 0.5354964359881276,
+      "z": 9.669768315984662
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": -0.09241308635136099,
+      "y": -0.43065836417599324,
+      "z": 0.8977712374743767
+    },
+    "text": "The sanctum door grinds open.\nThe sanctum opens\n\nThe sailor's key has revealed the inner shrine.\n\nRestart\nSpeak to the sailor, use the door console, and enter the sanctum.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "dialogue": false
+  },
+  "completed": true,
+  "restart": {
+    "level": 0,
+    "state": {},
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 0.5508000000044704,
+    "position": {
+      "x": 0,
+      "y": 0.613072693557267,
+      "z": -5
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": 0,
+      "y": -0.5151515355678986,
+      "z": 0.8570991164398876
+    },
+    "text": "Speak to the sailor, use the door console, and enter the sanctum.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "dialogue": false
+  },
+  "finished": "2026-09-08T16:02:24.864Z"
+}

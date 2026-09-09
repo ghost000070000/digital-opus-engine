@@ -1,0 +1,132 @@
+{
+  "id": "moving-temple",
+  "phase": "baseline",
+  "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/moving-temple.html",
+  "startedAt": "2026-09-08T00:07:09.043Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Moving Temple",
+      "text": "Press F to interact",
+      "state": {},
+      "playtime": 1.8467999999523164,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.8,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Moving Temple",
+      "text": "Press F to interact",
+      "state": {},
+      "playtime": 8.328399999856936,
+      "player": {
+        "position": {
+          "x": 1.5052766822402945,
+          "y": 0.03186011766444041,
+          "z": -3.6178312881851626
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Moving Temple",
+      "text": "Press F to interact",
+      "state": {},
+      "playtime": 18.321999999761555,
+      "player": {
+        "position": {
+          "x": 8.311156220348922,
+          "y": 0.6139332929727561,
+          "z": -7.809562180511085
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Moving Temple",
+    "text": "Press F to interact",
+    "state": {},
+    "playtime": 0.3552999999523163,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 1.8,
+        "z": 0
+      },
+      "visible": true,
+      "controller": "thirdperson"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:07:43.996Z"
+}

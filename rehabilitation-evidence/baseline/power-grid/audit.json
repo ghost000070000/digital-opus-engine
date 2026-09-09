@@ -1,0 +1,140 @@
+{
+  "id": "power-grid",
+  "phase": "baseline",
+  "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/power-grid.html",
+  "startedAt": "2026-09-08T00:02:02.937Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Power Grid",
+      "text": "POWER GRID\nPress F to interact",
+      "state": {},
+      "playtime": 1.0545999999046327,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 5.55,
+          "z": 0
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_find_cell": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Power Grid",
+      "text": "POWER GRID\nPress F to interact",
+      "state": {},
+      "playtime": 7.876300000071516,
+      "player": {
+        "position": {
+          "x": 5.639808754913915,
+          "y": 0.55,
+          "z": 9.1
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_find_cell": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Power Grid",
+      "text": "POWER GRID\nPress F to interact",
+      "state": {},
+      "playtime": 16.51389999997613,
+      "player": {
+        "position": {
+          "x": 7.010996449150169,
+          "y": 0.55,
+          "z": 9.1
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_find_cell": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Power Grid",
+    "text": "Power Grid\n\nRestore power to the facility.\n\nStart\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+    "state": {},
+    "playtime": 0,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 5.55,
+        "z": 0
+      },
+      "visible": false,
+      "controller": "firstperson"
+    },
+    "camera": {
+      "mode": "fixed"
+    },
+    "audio": {},
+    "objectives": {
+      "obj_find_cell": "active"
+    },
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPOWER GRID\nPress F to interact",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:02:36.674Z"
+}

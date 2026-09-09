@@ -1,0 +1,24 @@
+{
+  "id": "arsenal-run",
+  "sourceSHA256": "0ed910ba9c8438594c46e48edc6f8512e621a4833d2eede5ed37ebc7aed8b2d1",
+  "errors": [],
+  "capturedAt": "2026-09-08T17:14:41.207Z",
+  "sha256": "082a185df0c5e2c58e5b2525385bd3e83fb5b8a3e95d3d039d0b57220c21bc8d",
+  "state": {
+    "title": "Arsenal Run",
+    "sim": 1.4016000000014899,
+    "ended": false,
+    "text": "Sidearm 10/30\nHealth 92 / 100\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+    "controller": "firstperson",
+    "bodyVisible": false,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 127
+  },
+  "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nSidearm 10/30\nHealth 84 / 100\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+  "passed": true
+}

@@ -1,0 +1,25 @@
+{
+  "id": "relic-island",
+  "sourceSHA256": "20ba8b2cdd31f5ee1d8c2f6fb60c300b6a85934d5fb69200b9d627dfdd884898",
+  "errors": [],
+  "capturedAt": "2026-09-08T17:58:31.253Z",
+  "sha256": "10d51ae13b6a69c782ac222fa97638f3dc2367daa65db8baaaefd4a9bd3e441b",
+  "state": {
+    "title": "Relic Island",
+    "sim": 1.4184999999999997,
+    "ended": false,
+    "text": "Find 3 relics, unlock the gate, reach the shrine\nHealth 100 / 100\nRelics: 0/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+    "controller": "thirdperson",
+    "bodyVisible": false,
+    "visualVisible": true,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 56
+  },
+  "pauseText": "Find 3 relics, unlock the gate, reach the shrine\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nRelics: 0/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+  "passed": true
+}

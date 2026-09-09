@@ -1,0 +1,149 @@
+{
+  "id": "signal-relay",
+  "phase": "baseline",
+  "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/signal-relay.html",
+  "startedAt": "2026-09-08T00:00:58.578Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Signal Relay",
+      "text": "Restore power at all three relay consoles\nWeapon 8/24\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 0.6,
+      "player": {
+        "position": {
+          "x": -30,
+          "y": 0.55,
+          "z": 0
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Signal Relay",
+      "text": "Restore power at all three relay consoles\nWeapon 7/24\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 6.534499999999993,
+      "player": {
+        "position": {
+          "x": -22.20000000000012,
+          "y": 0.55,
+          "z": 9.1
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Signal Relay",
+      "text": "Restore power at all three relay consoles\nWeapon 8/22\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 18.06550000011919,
+      "player": {
+        "position": {
+          "x": -24.88160026885182,
+          "y": 0.55,
+          "z": 9.1
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Signal Relay",
+    "text": "Signal Relay\n\nThe facility has gone dark. Restore power at three relay consoles, avoid the security drones, and get out before they catch you.\n\nDeploy\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+    "state": {},
+    "playtime": 0,
+    "player": {
+      "position": {
+        "x": -30,
+        "y": 0.65,
+        "z": 0
+      },
+      "visible": false,
+      "controller": "firstperson"
+    },
+    "camera": {
+      "mode": "fixed"
+    },
+    "audio": {},
+    "objectives": {
+      "obj_restore_power": "active"
+    },
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nRestore power at all three relay consoles\nWeapon 8/22\nPress F to interact",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:01:32.096Z"
+}

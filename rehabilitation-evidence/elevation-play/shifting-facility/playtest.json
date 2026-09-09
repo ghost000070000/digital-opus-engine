@@ -1,0 +1,56 @@
+{
+  "id": "shifting-facility",
+  "index": 25,
+  "inputOnly": true,
+  "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+  "errors": [],
+  "actions": [
+    {
+      "key": "w",
+      "ms": 950
+    },
+    {
+      "key": "d",
+      "ms": 520
+    },
+    {
+      "key": "Space",
+      "ms": 100
+    },
+    {
+      "key": "f",
+      "ms": 0
+    },
+    {
+      "key": "q",
+      "ms": 0
+    },
+    {
+      "key": "w",
+      "ms": 700
+    }
+  ],
+  "startedAt": "2026-09-08T17:43:20.023Z",
+  "sourceSHA256": "36706008ce65072a75576962fdf2a6eab567c5aaeb8a016bd7858bd6f5af14ff",
+  "final": {
+    "title": "Shifting Facility",
+    "sim": 4.037600000001494,
+    "ended": false,
+    "paused": false,
+    "controller": "firstperson",
+    "position": {
+      "x": 4.628796986264915,
+      "y": 0.55,
+      "z": -7.4
+    },
+    "state": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": [],
+    "webglLost": false
+  },
+  "pauseVisible": true,
+  "restartPassed": true,
+  "passed": true,
+  "finishedAt": "2026-09-08T17:43:25.039Z"
+}

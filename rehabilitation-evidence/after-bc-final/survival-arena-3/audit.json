@@ -1,0 +1,154 @@
+{
+  "id": "survival-arena-3",
+  "phase": "after-bc-final",
+  "url": "http://localhost:8837/dist/games/survival-arena-3.html",
+  "startedAt": "2026-09-08T00:54:16.088Z",
+  "seconds": 4,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 480
+    },
+    {
+      "key": "d",
+      "milliseconds": 400
+    },
+    {
+      "key": "w",
+      "milliseconds": 600
+    },
+    {
+      "key": "a",
+      "milliseconds": 400
+    },
+    {
+      "key": "s",
+      "milliseconds": 320
+    },
+    {
+      "key": "w",
+      "milliseconds": 400
+    },
+    {
+      "key": "d",
+      "milliseconds": 200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Survival Arena 3",
+      "text": "Evade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 1.0s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 0.9715,
+      "simulationSeconds": 0.9715,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.7835502975876614,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Survival Arena 3",
+      "text": "MAP EDGE — TURN INWARD\nEvade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 3.0s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 3.03550000011921,
+      "simulationSeconds": 3.03550000011921,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": -4.8968236851846205,
+          "y": -1.0377330451602216,
+          "z": 8.45
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": [
+        "obj49"
+      ]
+    },
+    {
+      "title": "Survival Arena 3",
+      "text": "MAP EDGE — TURN INWARD\nEvade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 6.1s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 6.088900000095366,
+      "simulationSeconds": 6.088900000095366,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": -7.259252919177831,
+          "y": -1.0279802662662159,
+          "z": 8.45
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": [
+        "obj49",
+        "obj50"
+      ]
+    }
+  ],
+  "start": {
+    "title": "Survival Arena 3",
+    "text": "Survival Arena 3\n\nTwenty seconds on the copper island. Hunter drones enter from the central transmitter.\n\nLaunch\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "state": {},
+    "playtime": 0,
+    "simulationSeconds": 0,
+    "ended": false,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 0.8061405585484482,
+        "z": 0
+      },
+      "visible": true,
+      "controller": "hovercraft"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "MAP EDGE — TURN INWARD\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nEvade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 6.4s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:54:26.726Z"
+}

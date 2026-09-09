@@ -1,0 +1,2195 @@
+{
+  "id": "iron-arena",
+  "method": "Native Playwright keyboard and mouse input; evaluate is read-only instrumentation.",
+  "startedAt": "2026-09-08T01:05:03.934Z",
+  "standaloneSHA256": "87f88ddd1e0cb09dc325ef259c8f87624d93d193171362e040dbbfc1c20be816",
+  "errors": [],
+  "actions": [
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0,
+        1.11,
+        4.197699999928473
+      ],
+      "from": "camera-eye",
+      "sim": 1.051,
+      "yawError": 0,
+      "pitchError": -0.0015826497131711382,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 1.051
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0,
+        1.11,
+        0.891999999999999
+      ],
+      "from": "camera-eye",
+      "sim": 2.052400000095367,
+      "yawError": 0,
+      "pitchError": -0.0007275963845763925,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 2.052400000095367
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0,
+        1.11,
+        -1.5089000002145776
+      ],
+      "from": "camera-eye",
+      "sim": 2.8363000000715255,
+      "yawError": 0,
+      "pitchError": 0.0003107800066653246,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 2.8529000000953673
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -2.351825561386646,
+        1.11,
+        -3.336494242737816
+      ],
+      "from": "camera-eye",
+      "sim": 3.770800000071526,
+      "yawError": -0.0004926144540436939,
+      "pitchError": 0.0012605654509586697,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 3.7875
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -1.3856154776611878,
+        1.11,
+        -6.0740894799599525
+      ],
+      "from": "camera-eye",
+      "sim": 4.638400000095367,
+      "yawError": -0.0004926144540433608,
+      "pitchError": 0.0052075681219449395,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 4.638400000095367
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -0.5858487347436562,
+        1.11,
+        -8.34009525155963
+      ],
+      "from": "camera-eye",
+      "sim": 5.539300000071523,
+      "yawError": -0.0004926144540425281,
+      "pitchError": -0.0014799476250404418,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 5.539300000071523
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0.019422176298815454,
+        1.11,
+        -9.944970500486688
+      ],
+      "from": "camera-eye",
+      "sim": 6.340300000071521,
+      "yawError": 0.000492614454036866,
+      "pitchError": 0.00028955617630055386,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 6.357100000023837
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0.019422176298815454,
+        1.11,
+        -9.944970500486688
+      ],
+      "from": "camera-eye",
+      "sim": 7.224200000047676,
+      "yawError": 0.000492614454036866,
+      "pitchError": 0.00028955617630055386,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 7.224200000047676
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0.019422176298815454,
+        1.11,
+        -9.944970500486688
+      ],
+      "from": "camera-eye",
+      "sim": 8.009200000047676,
+      "yawError": 0.000492614454036866,
+      "pitchError": 0.00028955617630055386,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 8.009200000047676
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0.019422176298815454,
+        1.11,
+        -9.944970500486688
+      ],
+      "from": "camera-eye",
+      "sim": 8.67610000002383,
+      "yawError": 0.000492614454036866,
+      "pitchError": 0.00028955617630055386,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 8.67610000002383
+    }
+  ],
+  "frames": [
+    {
+      "label": "start",
+      "title": "Iron Arena",
+      "text": "Iron Arena\n\nThree armored sentries hold the forge courtyard. Keep moving and use the pillars for cover.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "sim": 0,
+      "playtime": 0,
+      "ended": false,
+      "paused": true,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {},
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.15,
+          "z": -10
+        },
+        "forward": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "controller": "firstperson",
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 0,
+          "y": 1.75,
+          "z": -10
+        },
+        "target": {
+          "x": 0,
+          "y": 1.75,
+          "z": -9
+        },
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "up": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          }
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [
+        {
+          "id": "obj415",
+          "p": {
+            "x": -6,
+            "y": 0.03,
+            "z": 7
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 1.08,
+              "z": 0
+            },
+            "radius": 1.02
+          },
+          "visible": true,
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "obj416",
+          "p": {
+            "x": 0,
+            "y": 0.03,
+            "z": 7
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 1.08,
+              "z": 0
+            },
+            "radius": 1.02
+          },
+          "visible": true,
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "obj417",
+          "p": {
+            "x": 6,
+            "y": 0.03,
+            "z": 7
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 1.08,
+              "z": 0
+            },
+            "radius": 1.02
+          },
+          "visible": true,
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "obj409",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 30,
+            "y": 1,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj410",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": 15
+          },
+          "scale": {
+            "x": 30,
+            "y": 3,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj411",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": -15
+          },
+          "scale": {
+            "x": 30,
+            "y": 3,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj412",
+          "p": {
+            "x": 15,
+            "y": 1.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 3,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj413",
+          "p": {
+            "x": -15,
+            "y": 1.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 3,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj414",
+          "p": {
+            "x": 6,
+            "y": 1.5,
+            "z": 4
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 3,
+            "z": 1.5
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "opening",
+      "title": "Iron Arena",
+      "text": "Kills: 0\nDefeat all three sentries.\nHealth 100 / 100\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "sim": 0.734,
+      "playtime": 0.734,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": -10
+        },
+        "forward": {
+          "x": -0.8836860800277139,
+          "y": 0.07473026801185537,
+          "z": 0.4620760749142174
+        },
+        "controller": "firstperson",
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 0,
+          "y": 1.15,
+          "z": -10
+        },
+        "target": {
+          "x": -0.8836860800277139,
+          "y": 1.2247302680118552,
+          "z": -9.537923925085783
+        },
+        "basis": {
+          "forward": {
+            "x": -0.8836860800277141,
+            "y": 0.07473026801185535,
+            "z": 0.46207607491421687
+          },
+          "right": {
+            "x": -0.4633717623993143,
+            "y": 0,
+            "z": -0.8861639858462729
+          },
+          "up": {
+            "x": 0.06622327216474597,
+            "y": 0.9972037841097858,
+            "z": -0.03462789599322652
+          }
+        },
+        "yaw": -1.089,
+        "pitch": -0.0748,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [
+        {
+          "id": "obj415",
+          "p": {
+            "x": -5.2671301007472255,
+            "y": 0.03,
+            "z": 4.923535285450484
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 1.08,
+              "z": 0
+            },
+            "radius": 1.02
+          },
+          "visible": true,
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "obj416",
+          "p": {
+            "x": 0,
+            "y": 0.03,
+            "z": 4.797999999999999
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 1.08,
+              "z": 0
+            },
+            "radius": 1.02
+          },
+          "visible": true,
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "obj417",
+          "p": {
+            "x": 5.2671301007472255,
+            "y": 0.03,
+            "z": 4.923535285450484
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 1.08,
+              "z": 0
+            },
+            "radius": 1.02
+          },
+          "visible": true,
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "obj409",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 30,
+            "y": 1,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj410",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": 15
+          },
+          "scale": {
+            "x": 30,
+            "y": 3,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj411",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": -15
+          },
+          "scale": {
+            "x": 30,
+            "y": 3,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj412",
+          "p": {
+            "x": 15,
+            "y": 1.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 3,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj413",
+          "p": {
+            "x": -15,
+            "y": 1.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 3,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj414",
+          "p": {
+            "x": 6,
+            "y": 1.5,
+            "z": 4
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 3,
+            "z": 1.5
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "encounter-obj416",
+      "title": "Iron Arena",
+      "text": "Kills: 0\nDefeat all three sentries.\nHealth 100 / 100\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "sim": 1.851900000095367,
+      "playtime": 1.851900000095367,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": -10
+        },
+        "forward": {
+          "x": 0,
+          "y": -0.00439998580268041,
+          "z": 0.999990320015617
+        },
+        "controller": "firstperson",
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 0,
+          "y": 1.15,
+          "z": -10
+        },
+        "target": {
+          "x": 0,
+          "y": 1.1456000141973195,
+          "z": -9.000009679984384
+        },
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.0043999858026804225,
+            "z": 0.9999903200156173
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "up": {
+            "x": 0,
+            "y": 0.9999903200156173,
+            "z": 0.0043999858026804225
+          }
+        },
+        "yaw": 0,
+        "pitch": 0.004400000000000001,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [
+        {
+          "id": "obj415",
+          "p": {
+            "x": -4.150951271803671,
+            "y": 0.03,
+            "z": 1.7610286034437617
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 1.08,
+              "z": 0
+            },
+            "radius": 1.02
+          },
+          "visible": true,
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "obj416",
+          "p": {
+            "x": 0,
+            "y": 0.03,
+            "z": 1.444299999713897
+          },
+          "health": {
+            "current": 60,
+            "max": 100
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 1.08,
+              "z": 0
+            },
+            "radius": 1.02
+          },
+          "visible": true,
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "obj417",
+          "p": {
+            "x": 4.150951271803671,
+            "y": 0.03,
+            "z": 1.7610286034437617
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 1.08,
+              "z": 0
+            },
+            "radius": 1.02
+          },
+          "visible": true,
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "obj409",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 30,
+            "y": 1,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj410",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": 15
+          },
+          "scale": {
+            "x": 30,
+            "y": 3,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj411",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": -15
+          },
+          "scale": {
+            "x": 30,
+            "y": 3,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj412",
+          "p": {
+            "x": 15,
+            "y": 1.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 3,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj413",
+          "p": {
+            "x": -15,
+            "y": 1.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 3,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj414",
+          "p": {
+            "x": 6,
+            "y": 1.5,
+            "z": 4
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 3,
+            "z": 1.5
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "encounter-obj415",
+      "title": "Iron Arena",
+      "text": "Kills: 1\nDefeat all three sentries.\nHealth 100 / 100\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "sim": 4.438100000023842,
+      "playtime": 4.438100000023842,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100,
+        "kills": 1
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": -10
+        },
+        "forward": {
+          "x": -0.33235232950651455,
+          "y": -0.00439998580268041,
+          "z": 0.9431450414419457
+        },
+        "controller": "firstperson",
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 0,
+          "y": 1.15,
+          "z": -10
+        },
+        "target": {
+          "x": -0.33235232950651455,
+          "y": 1.1456000141973195,
+          "z": -9.056854958558054
+        },
+        "basis": {
+          "forward": {
+            "x": -0.3323523295065144,
+            "y": -0.0043999858026804155,
+            "z": 0.9431450414419458
+          },
+          "right": {
+            "x": -0.9431541711595931,
+            "y": 0,
+            "z": -0.332355546703016
+          },
+          "up": {
+            "x": -0.001462359686935358,
+            "y": 0.999990320015617,
+            "z": 0.004149864962841024
+          }
+        },
+        "yaw": -0.33880000000000005,
+        "pitch": 0.004400000000000001,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [
+        {
+          "id": "obj415",
+          "p": {
+            "x": -1.5687331064152543,
+            "y": 0.03,
+            "z": -5.555256198490096
+          },
+          "health": {
+            "current": 60,
+            "max": 100
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 1.08,
+              "z": 0
+            },
+            "radius": 1.02
+          },
+          "visible": true,
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "obj417",
+          "p": {
+            "x": 1.5687331064152543,
+            "y": 0.03,
+            "z": -5.555256198490096
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 1.08,
+              "z": 0
+            },
+            "radius": 1.02
+          },
+          "visible": true,
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "obj409",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 30,
+            "y": 1,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj410",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": 15
+          },
+          "scale": {
+            "x": 30,
+            "y": 3,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj411",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": -15
+          },
+          "scale": {
+            "x": 30,
+            "y": 3,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj412",
+          "p": {
+            "x": 15,
+            "y": 1.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 3,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj413",
+          "p": {
+            "x": -15,
+            "y": 1.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 3,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj414",
+          "p": {
+            "x": 6,
+            "y": 1.5,
+            "z": 4
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 3,
+            "z": 1.5
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "encounter-obj417",
+      "title": "Iron Arena",
+      "text": "Kills: 2\nDefeat all three sentries.\nHealth 76 / 100\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "sim": 7.14090000009536,
+      "playtime": 7.14090000009536,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 76,
+        "kills": 2
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": -10
+        },
+        "forward": {
+          "x": 0.27419222290389483,
+          "y": -0.565137573098627,
+          "z": 0.7780990607700378
+        },
+        "controller": "firstperson",
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 0,
+          "y": 1.15,
+          "z": -10
+        },
+        "target": {
+          "x": 0.27419222290389483,
+          "y": 0.5848624269013729,
+          "z": -9.221900939229963
+        },
+        "basis": {
+          "forward": {
+            "x": 0.27419222290389494,
+            "y": -0.5651375730986272,
+            "z": 0.7780990607700374
+          },
+          "right": {
+            "x": -0.943154171159593,
+            "y": 0,
+            "z": 0.3323555467030164
+          },
+          "up": {
+            "x": 0.18782660706961016,
+            "y": 0.8249966808855618,
+            "z": 0.5330118593469797
+          }
+        },
+        "yaw": 0.33880000000000005,
+        "pitch": 0.6006,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [
+        {
+          "id": "obj417",
+          "p": {
+            "x": 0.019422176298815454,
+            "y": 0.03,
+            "z": -9.944970500486688
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 1.08,
+              "z": 0
+            },
+            "radius": 1.02
+          },
+          "visible": true,
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "obj409",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 30,
+            "y": 1,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj410",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": 15
+          },
+          "scale": {
+            "x": 30,
+            "y": 3,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj411",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": -15
+          },
+          "scale": {
+            "x": 30,
+            "y": 3,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj412",
+          "p": {
+            "x": 15,
+            "y": 1.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 3,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj413",
+          "p": {
+            "x": -15,
+            "y": 1.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 3,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj414",
+          "p": {
+            "x": 6,
+            "y": 1.5,
+            "z": 4
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 3,
+            "z": 1.5
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "combat-outcome",
+      "title": "Iron Arena",
+      "text": "Forge secured\n\nAll three sentries have been disabled.\n\nRestart\nKills: 3\nDefeat all three sentries.\nHealth 68 / 100\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "sim": 8.959700000047672,
+      "playtime": 8.959700000047672,
+      "ended": true,
+      "paused": false,
+      "overlay": {
+        "classes": "win visible",
+        "title": "Forge secured"
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 68,
+        "kills": 3
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": -10
+        },
+        "forward": {
+          "x": 0.27419222290389483,
+          "y": -0.565137573098627,
+          "z": 0.7780990607700378
+        },
+        "controller": "firstperson",
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 0,
+          "y": 1.15,
+          "z": -10
+        },
+        "target": {
+          "x": 0.27419222290389483,
+          "y": 0.5848624269013729,
+          "z": -9.221900939229963
+        },
+        "basis": {
+          "forward": {
+            "x": 0.27419222290389494,
+            "y": -0.5651375730986272,
+            "z": 0.7780990607700374
+          },
+          "right": {
+            "x": -0.943154171159593,
+            "y": 0,
+            "z": 0.3323555467030164
+          },
+          "up": {
+            "x": 0.18782660706961016,
+            "y": 0.8249966808855618,
+            "z": 0.5330118593469797
+          }
+        },
+        "yaw": 0.33880000000000005,
+        "pitch": 0.6006,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [
+        {
+          "id": "obj417",
+          "p": {
+            "x": 0.019422176298815454,
+            "y": 0.03,
+            "z": -9.944970500486688
+          },
+          "health": {
+            "current": 0,
+            "max": 100
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 1.08,
+              "z": 0
+            },
+            "radius": 1.02
+          },
+          "visible": true,
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "obj409",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 30,
+            "y": 1,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj410",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": 15
+          },
+          "scale": {
+            "x": 30,
+            "y": 3,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj411",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": -15
+          },
+          "scale": {
+            "x": 30,
+            "y": 3,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj412",
+          "p": {
+            "x": 15,
+            "y": 1.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 3,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj413",
+          "p": {
+            "x": -15,
+            "y": 1.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 3,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj414",
+          "p": {
+            "x": 6,
+            "y": 1.5,
+            "z": 4
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 3,
+            "z": 1.5
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "restart",
+      "title": "Iron Arena",
+      "text": "Kills: 0\nDefeat all three sentries.\nHealth 100 / 100\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "sim": 0.4003999999761582,
+      "playtime": 0.4003999999761582,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": -10
+        },
+        "forward": {
+          "x": -0.8836860800277139,
+          "y": 0.07473026801185537,
+          "z": 0.4620760749142174
+        },
+        "controller": "firstperson",
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 0,
+          "y": 1.15,
+          "z": -10
+        },
+        "target": {
+          "x": -0.8836860800277139,
+          "y": 1.2247302680118552,
+          "z": -9.537923925085783
+        },
+        "basis": {
+          "forward": {
+            "x": -0.8836860800277141,
+            "y": 0.07473026801185535,
+            "z": 0.46207607491421687
+          },
+          "right": {
+            "x": -0.4633717623993143,
+            "y": 0,
+            "z": -0.8861639858462729
+          },
+          "up": {
+            "x": 0.06622327216474597,
+            "y": 0.9972037841097858,
+            "z": -0.03462789599322652
+          }
+        },
+        "yaw": -1.089,
+        "pitch": -0.0748,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [
+        {
+          "id": "obj415",
+          "p": {
+            "x": -5.600216474600358,
+            "y": 0.03,
+            "z": 5.867280011367685
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 1.08,
+              "z": 0
+            },
+            "radius": 1.02
+          },
+          "visible": true,
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "obj416",
+          "p": {
+            "x": 0,
+            "y": 0.03,
+            "z": 5.798800000071524
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 1.08,
+              "z": 0
+            },
+            "radius": 1.02
+          },
+          "visible": true,
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "obj417",
+          "p": {
+            "x": 5.600216474600358,
+            "y": 0.03,
+            "z": 5.867280011367685
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 1.08,
+              "z": 0
+            },
+            "radius": 1.02
+          },
+          "visible": true,
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "obj409",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 30,
+            "y": 1,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj410",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": 15
+          },
+          "scale": {
+            "x": 30,
+            "y": 3,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj411",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": -15
+          },
+          "scale": {
+            "x": 30,
+            "y": 3,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj412",
+          "p": {
+            "x": 15,
+            "y": 1.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 3,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj413",
+          "p": {
+            "x": -15,
+            "y": 1.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 3,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj414",
+          "p": {
+            "x": 6,
+            "y": 1.5,
+            "z": 4
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 3,
+            "z": 1.5
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "no-defense-loss",
+      "title": "Iron Arena",
+      "text": "Try again\n\nRestart from the menu and try a different route.\n\nRestart\nKills: 0\nDefeat all three sentries.\nHealth 0 / 100\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "sim": 10.728799999952304,
+      "playtime": 10.728799999952304,
+      "ended": true,
+      "paused": false,
+      "overlay": {
+        "classes": "lose visible",
+        "title": "Try again"
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 0
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": -10
+        },
+        "forward": {
+          "x": -0.8836860800277139,
+          "y": 0.07473026801185537,
+          "z": 0.4620760749142174
+        },
+        "controller": "firstperson",
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 0,
+          "y": 1.15,
+          "z": -10
+        },
+        "target": {
+          "x": -0.8836860800277139,
+          "y": 1.2247302680118552,
+          "z": -9.537923925085783
+        },
+        "basis": {
+          "forward": {
+            "x": -0.8836860800277141,
+            "y": 0.07473026801185535,
+            "z": 0.46207607491421687
+          },
+          "right": {
+            "x": -0.4633717623993143,
+            "y": 0,
+            "z": -0.8861639858462729
+          },
+          "up": {
+            "x": 0.06622327216474597,
+            "y": 0.9972037841097858,
+            "z": -0.03462789599322652
+          }
+        },
+        "yaw": -1.089,
+        "pitch": -0.0748,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [
+        {
+          "id": "obj415",
+          "p": {
+            "x": -0.019322330358716108,
+            "y": 0.03,
+            "z": -9.94525339731697
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 1.08,
+              "z": 0
+            },
+            "radius": 1.02
+          },
+          "visible": true,
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "obj416",
+          "p": {
+            "x": 0,
+            "y": 0.03,
+            "z": -9.918800000071524
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 1.08,
+              "z": 0
+            },
+            "radius": 1.02
+          },
+          "visible": true,
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "obj417",
+          "p": {
+            "x": 0.019322330358716108,
+            "y": 0.03,
+            "z": -9.94525339731697
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 1.08,
+              "z": 0
+            },
+            "radius": 1.02
+          },
+          "visible": true,
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "obj409",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 30,
+            "y": 1,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj410",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": 15
+          },
+          "scale": {
+            "x": 30,
+            "y": 3,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj411",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": -15
+          },
+          "scale": {
+            "x": 30,
+            "y": 3,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj412",
+          "p": {
+            "x": 15,
+            "y": 1.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 3,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj413",
+          "p": {
+            "x": -15,
+            "y": 1.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 3,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj414",
+          "p": {
+            "x": 6,
+            "y": 1.5,
+            "z": 4
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 3,
+            "z": 1.5
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "restart",
+      "title": "Iron Arena",
+      "text": "Kills: 0\nDefeat all three sentries.\nHealth 100 / 100\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "sim": 0.3002999999523163,
+      "playtime": 0.3002999999523163,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": -10
+        },
+        "forward": {
+          "x": -0.8836860800277139,
+          "y": 0.07473026801185537,
+          "z": 0.4620760749142174
+        },
+        "controller": "firstperson",
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 0,
+          "y": 1.15,
+          "z": -10
+        },
+        "target": {
+          "x": -0.8836860800277139,
+          "y": 1.2247302680118552,
+          "z": -9.537923925085783
+        },
+        "basis": {
+          "forward": {
+            "x": -0.8836860800277141,
+            "y": 0.07473026801185535,
+            "z": 0.46207607491421687
+          },
+          "right": {
+            "x": -0.4633717623993143,
+            "y": 0,
+            "z": -0.8861639858462729
+          },
+          "up": {
+            "x": 0.06622327216474597,
+            "y": 0.9972037841097858,
+            "z": -0.03462789599322652
+          }
+        },
+        "yaw": -1.089,
+        "pitch": -0.0748,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [
+        {
+          "id": "obj415",
+          "p": {
+            "x": -5.700162355980026,
+            "y": 0.03,
+            "z": 6.150460008610072
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 1.08,
+              "z": 0
+            },
+            "radius": 1.02
+          },
+          "visible": true,
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "obj416",
+          "p": {
+            "x": 0,
+            "y": 0.03,
+            "z": 6.099100000143051
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 1.08,
+              "z": 0
+            },
+            "radius": 1.02
+          },
+          "visible": true,
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "obj417",
+          "p": {
+            "x": 5.700162355980026,
+            "y": 0.03,
+            "z": 6.150460008610072
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 1.08,
+              "z": 0
+            },
+            "radius": 1.02
+          },
+          "visible": true,
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "obj409",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 30,
+            "y": 1,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj410",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": 15
+          },
+          "scale": {
+            "x": 30,
+            "y": 3,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj411",
+          "p": {
+            "x": 0,
+            "y": 1.5,
+            "z": -15
+          },
+          "scale": {
+            "x": 30,
+            "y": 3,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj412",
+          "p": {
+            "x": 15,
+            "y": 1.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 3,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj413",
+          "p": {
+            "x": -15,
+            "y": 1.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 3,
+            "z": 30
+          }
+        },
+        {
+          "id": "obj414",
+          "p": {
+            "x": 6,
+            "y": 1.5,
+            "z": 4
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 3,
+            "z": 1.5
+          }
+        }
+      ],
+      "helpers": []
+    }
+  ],
+  "observations": [
+    {
+      "type": "combat-attempt",
+      "enemy": "obj416",
+      "endHealth": 0,
+      "sim": 3.637300000071525
+    },
+    {
+      "type": "combat-attempt",
+      "enemy": "obj415",
+      "endHealth": 0,
+      "sim": 6.206600000023837
+    },
+    {
+      "type": "combat-attempt",
+      "enemy": "obj417",
+      "endHealth": 0,
+      "sim": 8.959700000047672
+    }
+  ],
+  "finishedAt": "2026-09-08T01:05:26.983Z",
+  "outcome": "win visible",
+  "restartVerified": true,
+  "lossTrial": "lose visible"
+}

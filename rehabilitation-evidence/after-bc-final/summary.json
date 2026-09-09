@@ -1,0 +1,611 @@
+[
+  {
+    "id": "opus-arena",
+    "phase": "after-bc-final",
+    "url": "http://localhost:8837/dist/games/opus-arena.html",
+    "startedAt": "2026-09-08T00:53:47.671Z",
+    "seconds": 4,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 480
+      },
+      {
+        "key": "d",
+        "milliseconds": 400
+      },
+      {
+        "key": "w",
+        "milliseconds": 600
+      },
+      {
+        "key": "a",
+        "milliseconds": 400
+      },
+      {
+        "key": "s",
+        "milliseconds": 320
+      },
+      {
+        "key": "w",
+        "milliseconds": 400
+      },
+      {
+        "key": "d",
+        "milliseconds": 200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Opus Arena",
+        "text": "Health 100 / 100\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+        "state": {
+          "kills": 0,
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 0.5,
+        "simulationSeconds": 0.5,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 0.55,
+            "z": 0
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Opus Arena",
+        "text": "Health 92 / 100\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+        "state": {
+          "kills": 0,
+          "maxHealth": 100,
+          "health": 92
+        },
+        "playtime": 1.921799999952317,
+        "simulationSeconds": 1.921799999952317,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 2.9877832309507126,
+            "y": 2.35,
+            "z": 1.3406199062860904
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Opus Arena",
+        "text": "Health 79 / 100\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+        "state": {
+          "kills": 0,
+          "maxHealth": 100,
+          "health": 74
+        },
+        "playtime": 4.153800000071527,
+        "simulationSeconds": 4.153800000071527,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 2.9797101190207624,
+            "y": 0.55,
+            "z": 0.33048076008966215
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Opus Arena",
+      "text": "Opus Arena\n\nHold the blue courtyard against eight approaching guardians. Face each target before firing.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "state": {
+        "kills": 0
+      },
+      "playtime": 0,
+      "simulationSeconds": 0,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 0
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 58 / 100\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:54:03.935Z"
+  },
+  {
+    "id": "survival-arena-2",
+    "phase": "after-bc-final",
+    "url": "http://localhost:8837/dist/games/survival-arena-2.html",
+    "startedAt": "2026-09-08T00:54:04.296Z",
+    "seconds": 4,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 480
+      },
+      {
+        "key": "d",
+        "milliseconds": 400
+      },
+      {
+        "key": "w",
+        "milliseconds": 600
+      },
+      {
+        "key": "a",
+        "milliseconds": 400
+      },
+      {
+        "key": "s",
+        "milliseconds": 320
+      },
+      {
+        "key": "w",
+        "milliseconds": 400
+      },
+      {
+        "key": "d",
+        "milliseconds": 200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Survival Arena 2",
+        "text": "Wave 1 incoming!\nSurvive the waves! Avoid the hunter drones.\nHealth 100 / 100\nSurvived: 0.9s\nSurvive both waves for 32 seconds.\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 0.8991000000238417,
+        "simulationSeconds": 0.8991000000238417,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 1.688954633402196,
+            "z": 0
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Survival Arena 2",
+        "text": "MAP EDGE — TURN INWARD\nSurvive the waves! Avoid the hunter drones.\nHealth 70 / 100\nSurvived: 2.9s\nSurvive both waves for 32 seconds.\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 70
+        },
+        "playtime": 2.8715999999046335,
+        "simulationSeconds": 2.8715999999046335,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -3.865978224969203,
+            "y": -1.0504248233798321,
+            "z": 9.45
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Survival Arena 2",
+        "text": "MAP EDGE — TURN INWARD\nSurvive the waves! Avoid the hunter drones.\nHealth 70 / 100\nSurvived: 6.0s\nSurvive both waves for 32 seconds.\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 70
+        },
+        "playtime": 6.027899999976156,
+        "simulationSeconds": 6.027899999976156,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -6.165004118788282,
+            "y": -1.0358250806369875,
+            "z": 9.45
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Survival Arena 2",
+      "text": "Wave 1 incoming!\nSurvive the waves! Avoid the hunter drones.\nSurvival Arena 2\n\nA hovercraft endurance run on a tidal ring. Two waves arrive; keep moving for thirty-two seconds.\n\nLaunch\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {},
+      "playtime": 0,
+      "simulationSeconds": 0,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.705555202293345,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "MAP EDGE — TURN INWARD\nSurvive the waves! Avoid the hunter drones.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 70 / 100\nSurvived: 6.4s\nSurvive both waves for 32 seconds.\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:54:15.486Z"
+  },
+  {
+    "id": "survival-arena-3",
+    "phase": "after-bc-final",
+    "url": "http://localhost:8837/dist/games/survival-arena-3.html",
+    "startedAt": "2026-09-08T00:54:16.088Z",
+    "seconds": 4,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 480
+      },
+      {
+        "key": "d",
+        "milliseconds": 400
+      },
+      {
+        "key": "w",
+        "milliseconds": 600
+      },
+      {
+        "key": "a",
+        "milliseconds": 400
+      },
+      {
+        "key": "s",
+        "milliseconds": 320
+      },
+      {
+        "key": "w",
+        "milliseconds": 400
+      },
+      {
+        "key": "d",
+        "milliseconds": 200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Survival Arena 3",
+        "text": "Evade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 1.0s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 0.9715,
+        "simulationSeconds": 0.9715,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 0.7835502975876614,
+            "z": 0
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Survival Arena 3",
+        "text": "MAP EDGE — TURN INWARD\nEvade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 3.0s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 3.03550000011921,
+        "simulationSeconds": 3.03550000011921,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -4.8968236851846205,
+            "y": -1.0377330451602216,
+            "z": 8.45
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": [
+          "obj49"
+        ]
+      },
+      {
+        "title": "Survival Arena 3",
+        "text": "MAP EDGE — TURN INWARD\nEvade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 6.1s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 6.088900000095366,
+        "simulationSeconds": 6.088900000095366,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -7.259252919177831,
+            "y": -1.0279802662662159,
+            "z": 8.45
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": [
+          "obj49",
+          "obj50"
+        ]
+      }
+    ],
+    "start": {
+      "title": "Survival Arena 3",
+      "text": "Survival Arena 3\n\nTwenty seconds on the copper island. Hunter drones enter from the central transmitter.\n\nLaunch\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {},
+      "playtime": 0,
+      "simulationSeconds": 0,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.8061405585484482,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "MAP EDGE — TURN INWARD\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nEvade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 6.4s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:54:26.726Z"
+  },
+  {
+    "id": "survival-arena",
+    "phase": "after-bc-final",
+    "url": "http://localhost:8837/dist/games/survival-arena.html",
+    "startedAt": "2026-09-08T00:54:27.162Z",
+    "seconds": 4,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 480
+      },
+      {
+        "key": "d",
+        "milliseconds": 400
+      },
+      {
+        "key": "w",
+        "milliseconds": 600
+      },
+      {
+        "key": "a",
+        "milliseconds": 400
+      },
+      {
+        "key": "s",
+        "milliseconds": 320
+      },
+      {
+        "key": "w",
+        "milliseconds": 400
+      },
+      {
+        "key": "d",
+        "milliseconds": 200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Survival Arena",
+        "text": "Survive! Collect 4 orbs, avoid the red hunters.\nLives: 3\nOrbs: 0 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+        "state": {
+          "health": 3,
+          "collected": 0
+        },
+        "playtime": 0.5470000001192094,
+        "simulationSeconds": 0.5470000001192094,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": -0.2505871526561789,
+            "z": 0
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Survival Arena",
+        "text": "MAP EDGE — TURN INWARD\nSurvive! Collect 4 orbs, avoid the red hunters.\nLives: 3\nOrbs: 0 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+        "state": {
+          "health": 3,
+          "collected": 0
+        },
+        "playtime": 2.614600000023842,
+        "simulationSeconds": 2.614600000023842,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -4.94056033134979,
+            "y": -1.8127212532888421,
+            "z": 8.45
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Survival Arena",
+        "text": "MAP EDGE — TURN INWARD\nSurvive! Collect 4 orbs, avoid the red hunters.\nLives: 3\nOrbs: 0 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+        "state": {
+          "health": 3,
+          "collected": 0
+        },
+        "playtime": 5.655500000238417,
+        "simulationSeconds": 5.655500000238417,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -7.233456889686308,
+            "y": -1.8229271608983946,
+            "z": 8.45
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Survival Arena",
+      "text": "Survive! Collect 4 orbs, avoid the red hunters.\nSurvival Arena\n\nFour amber orbs, three lives, and three hunters. Sweep the courtyard before they surround you.\n\nLaunch\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "health": 3,
+        "collected": 0
+      },
+      "playtime": 0,
+      "simulationSeconds": 0,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": -0.2505871526561789,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "MAP EDGE — TURN INWARD\nSurvive! Collect 4 orbs, avoid the red hunters.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nLives: 3\nOrbs: 0 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:54:37.646Z"
+  }
+]

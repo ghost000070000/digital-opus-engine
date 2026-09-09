@@ -1,0 +1,132 @@
+{
+  "id": "power-station",
+  "phase": "baseline",
+  "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/power-station.html",
+  "startedAt": "2026-09-08T00:04:17.212Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Power Station",
+      "text": "Fuel Cells: 0/3\nPower the Turbine\nPress F to interact",
+      "state": {},
+      "playtime": 0.9886000000238417,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.4056229273300438,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Power Station",
+      "text": "Fuel Cells: 0/3\nPower the Turbine\nPress F to interact",
+      "state": {},
+      "playtime": 9.415700000047677,
+      "player": {
+        "position": {
+          "x": 14.62741108517601,
+          "y": 1.5770301097390877,
+          "z": 2.5041702179150382
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Power Station",
+      "text": "Fuel Cells: 0/3\nPower the Turbine\nPress F to interact",
+      "state": {},
+      "playtime": 24.6970999999046,
+      "player": {
+        "position": {
+          "x": 27.934610401390913,
+          "y": 1.5770301097390877,
+          "z": -4.61684370912939
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Power Station",
+    "text": "Power Station\n\nFind 3 Fuel Cells and power the Turbine.\n\nStart\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+    "state": {},
+    "playtime": 0,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 1.4056229273300438,
+        "z": 0
+      },
+      "visible": true,
+      "controller": "thirdperson"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nFuel Cells: 0/3\nPower the Turbine\nPress F to interact",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:04:49.412Z"
+}

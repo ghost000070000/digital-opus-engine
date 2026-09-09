@@ -1,0 +1,3 @@
+const fs=require('fs');const f='games/relic-island.json',p=JSON.parse(fs.readFileSync(f));p.levels[0].ui.hudElements.find(h=>h.kind==='health').anchor='bottom-left';fs.writeFileSync(f,JSON.stringify(p,null,2)+'\n');
+const file='tools/rehabilitate-flagships.js';let s=fs.readFileSync(file,'utf8');s=s.replace("if(id==='relic-island')level.ui.startScreen.howToPlay", "if(id==='relic-island')level.ui.hudElements.find(h=>h.kind==='health').anchor='bottom-left';\n    if(id==='relic-island')level.ui.startScreen.howToPlay");fs.writeFileSync(file,s);
+const inv=require('./inventory.json');console.log(Object.keys(inv));console.log(JSON.stringify(inv.games?.[0]||inv[0]||inv,null,2).slice(0,1600));

@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Digital Opus — Crate Run</title>
+<link data-opus-app-icon rel="icon" type="image/png" href="../assets/branding/digital-opus-icon.png">
+<link data-opus-app-icon rel="apple-touch-icon" href="../assets/branding/digital-opus-icon.png">
+<style>
+  html, body { margin: 0; height: 100%; background: #0a0e1a; overflow: hidden; font: 13px/1.4 system-ui, sans-serif; color: #dce6f5; }
+  /* App shell: a fixed-height top bar over a flexible three-pane body
+     (left workspace / viewport / right workspace), each pane scrolling
+     independently -- the editor behaves like an application, not a long
+     document. See EDITOR-UI-REARCHITECTURE-REPORT.md for the redesign
+     rationale (the old layout stacked Project/Assets/Environment/Player/
+     HUD/Scene/Inspector into one endless right-side column). */
+  #app { display: flex; flex-direction: column; height: 100%; }
+  #app-body { display: flex; flex: 1; min-height: 0; }
+  #viewport-wrap { flex: 1; min-width: 0; position: relative; }
+  #game { width: 100%; height: 100%; display: block; touch-action: none; }
+  #hint {
+    position: absolute; left: 12px; bottom: 10px; color: #9fb3d9; opacity: 0.8;
+    pointer-events: none; max-width: 60%;
+  }
+  #gizmo-toolbar {
+    position: absolute; top: 10px; left: 12px; display: flex; gap: 6px; align-items: center;
+    background: rgba(14,21,38,0.85); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; padding: 5px 6px;
+  }
+  .editor-hidden #gizmo-toolbar { display: none; }
+  .gizmo-mode-btn {
+    background: #182338; color: #9fb3d9; border: 1px solid rgba(255,255,255,0.12); border-radius: 4px;
+    padding: 5px 9px; font: 11px inherit; cursor: pointer;
+  }
+  .gizmo-mode-btn:hover { background: #223050; }
+  .gizmo-mode-btn.active { background: #1f8f79; color: #fff; border-color: #1f8f79; }
+  .toolbar-btn.active { background: #1f8f79; color: #fff; border-color: #1f8f79; }
+  #gizmo-snap-label, #show-colliders-label { display: flex; align-items: center; gap: 4px; font-size: 11px; color: #9fb3d9; padding: 0 4px; }
+
+  /* --- Top bar: project/level context + the highest-frequency actions
+     (Play/Pause, Undo/Redo, Save, Export) -- answers "what am I in, can I
+     play/save/undo right now" without opening any panel. --- */
+  #top-bar {
+    flex: none; display: flex; align-items: center; gap: 8px; padding: 6px 12px;
+    background: #0e1526; border-bottom: 1px solid rgba(255,255,255,0.08);
+    overflow-x: auto; overflow-y: hidden; white-space: nowrap;
+  }
+  #top-bar-title { font-size: 13px; font-weight: 700; color: #dce6f5; letter-spacing: 0.02em; flex: none; }
+  .tb-group { display: flex; align-items: center; gap: 6px; flex: none; }
+  .tb-sep { width: 1px; align-self: stretch; background: rgba(255,255,255,0.1); flex: none; margin: 4px 2px; }
+  .tb-spacer { flex: 1 1 auto; min-width: 8px; }
+  #top-bar button {
+    background: #182338; color: #dce6f5; border: 1px solid rgba(255,255,255,0.12); border-radius: 4px;
+    padding: 6px 10px; font: 12px inherit; cursor: pointer; white-space: nowrap; flex: none;
+  }
+  #top-bar button:hover { background: #223050; }
+  #top-bar button:disabled { opacity: 0.4; cursor: default; }
+  #top-bar button:disabled:hover { background: #182338; }
+  #top-bar select#level-select {
+    background: #182338; color: #dce6f5; border: 1px solid rgba(255,255,255,0.12); border-radius: 4px;
+    padding: 6px 8px; font: 12px inherit; max-width: 220px;
+  }
+  #top-bar #play-btn { background: #6fd6bd; color: #0a0e1a; border: none; font-weight: 600; }
+  #top-bar #play-btn:hover { background: #86e4cc; }
+  #top-bar #play-btn.playing { background: #e08a63; }
+  #top-bar #play-btn.playing:hover { background: #e69c7c; }
+  #top-bar #export-standalone-btn { background: #1f8f79; color: #fff; border: none; }
+  #top-bar #export-standalone-btn:hover { background: #23a68c; }
+  .editor-hidden #top-bar { display: none; }
+
+  /* --- Shared left/right workspace chrome: a tab strip over a stack of
+     panels, exactly one visible at a time, each scrolling on its own. --- */
+  #left-panel, #right-panel { flex: none; background: #0e1526; display: flex; flex-direction: column; min-height: 0; }
+  #left-panel { width: 240px; border-right: 1px solid rgba(255,255,255,0.08); }
+  #right-panel { width: 340px; border-left: 1px solid rgba(255,255,255,0.08); }
+  .tab-strip { display: flex; flex: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .tab-btn {
+    flex: 1; padding: 9px 4px; background: #0e1526; color: #8592a8; border: none; border-bottom: 2px solid transparent;
+    cursor: pointer; font: 10.5px inherit; text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .tab-btn:hover { color: #dce6f5; background: #121b30; }
+  .tab-btn.active { color: #6fd6bd; border-bottom-color: #6fd6bd; background: #121b30; }
+  .tab-panel { flex: 1; overflow-y: auto; overflow-x: hidden; padding: 12px; box-sizing: border-box; display: none; min-height: 0; }
+  .tab-panel.active { display: block; }
+  .panel-pinned { flex: none; padding: 10px 12px 0; box-sizing: border-box; }
+  #right-panel h2, #left-panel h2 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #8592a8; margin: 0 0 10px; }
+
+  /* --- Objects tab: categorized, searchable palette. --- */
+  #palette-search {
+    width: 100%; box-sizing: border-box; background: #182338; border: 1px solid rgba(255,255,255,0.12);
+    color: #dce6f5; padding: 6px 8px; border-radius: 3px; font: inherit; margin-bottom: 10px;
+  }
+  .palette-category { font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: #66759a; margin: 14px 0 6px; }
+  .palette-category:first-of-type { margin-top: 0; }
+  .palette-item {
+    padding: 9px 10px; margin-bottom: 6px; background: #182338; border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 4px; cursor: grab; user-select: none; font-size: 12.5px;
+  }
+  .palette-item:hover { border-color: rgba(111,214,189,0.4); }
+  .palette-item:active { cursor: grabbing; }
+  .palette-item.palette-hidden { display: none; }
+  #palette-empty { color: #66759a; font-size: 11.5px; margin: 4px 0; }
+
+  /* --- Games / Samples catalog card --- */
+  .game-card {
+    padding: 10px 12px; margin-bottom: 8px; background: #182338; border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 6px;
+  }
+  .game-card-title-row { display: flex; align-items: center; gap: 6px; justify-content: space-between; }
+  .game-card-title { font-size: 13px; font-weight: 600; color: #e6ecf7; }
+  .game-card-badge {
+    font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.04em; color: #0c1420;
+    background: #6fd6bd; padding: 2px 6px; border-radius: 3px; flex-shrink: 0;
+  }
+  .game-card-genre { font-size: 11px; color: #8fa3c9; margin-top: 2px; }
+  .game-card-desc { font-size: 11.5px; color: #aab6cc; margin-top: 6px; line-height: 1.4; }
+  .game-card-meta { font-size: 10.5px; color: #66759a; margin-top: 6px; }
+  .game-card-actions { display: flex; gap: 6px; margin-top: 8px; }
+  .game-card-actions button { margin-bottom: 0; flex: 1; }
+
+  /* --- Inspector header: name/type/id + quick actions, ABOVE the
+     scrollable property sections (sticky-feeling without real position:sticky
+     fuss, since it lives in its own flex:none block above .tab-panel). --- */
+  #inspector-header { flex: none; padding: 10px 12px 0; box-sizing: border-box; }
+  #inspector-empty { color: #66759a; }
+
+  .toolbar-btn {
+    width: 100%; padding: 8px; margin-bottom: 8px; background: #182338; color: #dce6f5;
+    border: 1px solid rgba(255,255,255,0.12); border-radius: 4px; cursor: pointer; font: inherit;
+  }
+  .toolbar-btn:hover { background: #223050; }
+  #export-btn { background: #1f8f79; color: #fff; border: none; }
+  #export-btn:hover { background: #23a68c; }
+  #status-msg { font-size: 11px; color: #6fd6bd; min-height: 14px; }
+  #script-trust-banner {
+    display: none; background: rgba(224, 138, 99, 0.15); border: 1px solid rgba(224, 138, 99, 0.5);
+    border-radius: 4px; padding: 8px; margin-bottom: 10px; font-size: 11px; color: #e08a63; line-height: 1.5;
+  }
+  #script-trust-banner.visible { display: block; }
+  #script-trust-enable-btn {
+    display: block; width: 100%; margin-top: 6px; padding: 5px; background: #e08a63; color: #1a0f08;
+    border: none; border-radius: 3px; font: 11px inherit; font-weight: 600; cursor: pointer;
+  }
+  #asset-library-list, #texture-library-list, #audio-library-list { margin-bottom: 6px; max-height: 220px; overflow-y: auto; }
+  .asset-row {
+    background: #182338; border: 1px solid rgba(255,255,255,0.1); border-radius: 4px;
+    padding: 6px; margin-bottom: 6px; font-size: 11px;
+  }
+  .asset-row-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px; gap: 4px; }
+  .asset-row-name { font-weight: 600; color: #dce6f5; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; }
+  .asset-row-meta { color: #66759a; font-size: 10px; margin-bottom: 4px; }
+  .asset-row-actions { display: flex; gap: 4px; }
+  .asset-row-actions button { flex: 1; padding: 3px 4px; font-size: 10px; background: #0e1526; border: 1px solid rgba(255,255,255,0.1); color: #c7d3ea; border-radius: 3px; cursor: pointer; }
+  .asset-row-actions button:hover { background: #223050; }
+  .asset-filter-row { display: flex; gap: 4px; margin: 4px 0; }
+  .asset-filter-row input[type="text"] { flex: 1; min-width: 0; }
+  .asset-filter-row select { width: auto; max-width: 100px; font-size: 10px; }
+  .asset-row-tags { display: flex; flex-wrap: wrap; gap: 3px; margin: 3px 0; }
+  .asset-tag-chip { background: #223050; color: #9fb3d9; border-radius: 3px; padding: 1px 5px; font-size: 9.5px; }
+  .asset-row-folder-tags-edit { width: 100%; box-sizing: border-box; font-size: 10px; margin-top: 3px; background: #0e1526; border: 1px solid rgba(255,255,255,0.1); color: #c7d3ea; border-radius: 3px; padding: 3px 5px; }
+  #hud-element-list { margin-bottom: 6px; max-height: 220px; overflow-y: auto; }
+  .hud-element-row {
+    background: #182338; border: 1px solid rgba(255,255,255,0.1); border-radius: 4px;
+    padding: 6px; margin-bottom: 6px; font-size: 11px;
+  }
+  .hud-element-row-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; color: #9fb3d9; }
+  .hud-element-row input, .hud-element-row select { width: 100%; box-sizing: border-box; background: #0e1526; border: 1px solid rgba(255,255,255,0.1); color: #dce6f5; padding: 4px; border-radius: 3px; font: 11px inherit; margin-bottom: 4px; }
+  .hud-element-row button.hud-remove-btn { background: transparent; border: none; color: #e08a63; cursor: pointer; font: 12px inherit; padding: 0; }
+
+  /* --- Scene tab: full-height hierarchy instead of a ~140px scroll box. --- */
+  #scene-tab-panel { display: flex; flex-direction: column; }
+  #scene-search {
+    width: 100%; box-sizing: border-box; background: #182338; border: 1px solid rgba(255,255,255,0.12);
+    color: #dce6f5; padding: 6px; border-radius: 3px; font: inherit; margin-bottom: 8px; flex: none;
+  }
+  #scene-list { flex: 1; min-height: 0; overflow-y: auto; border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; }
+  #scene-list-empty { color: #66759a; padding: 8px; margin: 0; }
+  .scene-list-item {
+    padding: 7px 8px; cursor: pointer; font-size: 12px; border-bottom: 1px solid rgba(255,255,255,0.06);
+    display: flex; align-items: center; gap: 6px;
+  }
+  .scene-list-item:hover { background: #182338; }
+  .scene-list-item.selected { background: #1f3a2f; color: #6fd6bd; }
+  .scene-list-item.scene-list-drop-target { outline: 2px solid #3ecf8e; outline-offset: -2px; background: #1a2f42; }
+  .scene-list-item-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; min-width: 0; }
+  .scene-list-visibility-btn { background: none; border: none; color: #8592a8; cursor: pointer; font: 12px inherit; padding: 0 2px; flex: none; margin-left: auto; }
+  .scene-list-visibility-btn.hidden-item { color: #4a5570; }
+  .scene-list-caret-btn { background: none; border: none; color: #8592a8; cursor: pointer; font: 10px inherit; padding: 0 2px; flex: none; width: 14px; }
+  .scene-list-caret-spacer { display: inline-block; width: 14px; flex: none; }
+
+  .field-row { margin-bottom: 10px; }
+  .field-row label { display: block; font-size: 11px; color: #8592a8; margin-bottom: 3px; }
+  .field-row input[type="number"] { width: 100%; box-sizing: border-box; background: #182338; border: 1px solid rgba(255,255,255,0.12); color: #dce6f5; padding: 5px; border-radius: 3px; font: inherit; }
+  .field-row input[type="color"] { width: 100%; height: 28px; border: 1px solid rgba(255,255,255,0.12); border-radius: 3px; background: none; padding: 0; }
+  .field-triple { display: flex; gap: 6px; }
+  /* Every direct child (input/select/button) shares the row equally and can
+     shrink below its own content width -- selects in particular default to
+     their longest <option> text as intrinsic width, which alone is enough
+     to blow out a narrow panel; min-width:0 is what actually lets flex:1
+     override that. box-sizing:border-box keeps padding/border from adding
+     back on top of the shared width once it's constrained. */
+  .field-triple > * { flex: 1; min-width: 0; box-sizing: border-box; max-width: 100%; }
+  .field-triple select { text-overflow: ellipsis; }
+  /* Destructive actions share one restrained danger treatment everywhere
+     (Delete Object/Level/Project/Prefab/Asset) -- a filled red rectangle
+     the same visual weight as a primary button reads as "the important
+     button", not "the dangerous one"; an outline treatment reads as
+     secondary-but-risky instead. */
+  .danger-btn, #delete-btn, #delete-project-btn {
+    padding: 8px; margin-top: 0; background: transparent; color: #e08a63; border: 1px solid rgba(224,138,99,0.5);
+    border-radius: 4px; cursor: pointer; font: inherit;
+  }
+  .danger-btn:hover, #delete-btn:hover, #delete-project-btn:hover { background: rgba(224,138,99,0.12); border-color: #e08a63; }
+
+  .field-row select {
+    width: 100%; box-sizing: border-box; background: #182338; border: 1px solid rgba(255,255,255,0.12);
+    color: #dce6f5; padding: 5px; border-radius: 3px; font: inherit;
+  }
+  .field-row input[type="text"] {
+    width: 100%; box-sizing: border-box; background: #182338; border: 1px solid rgba(255,255,255,0.12);
+    color: #dce6f5; padding: 5px; border-radius: 3px; font: inherit; margin-top: 6px;
+  }
+  .field-row textarea {
+    width: 100%; box-sizing: border-box; background: #182338; border: 1px solid rgba(255,255,255,0.12);
+    color: #dce6f5; padding: 5px; border-radius: 3px; font: 12px/1.4 ui-monospace, "SF Mono", "Cascadia Code", monospace;
+    margin-top: 6px; resize: vertical; min-height: 50px;
+  }
+  .section-header {
+    display: flex; align-items: center; justify-content: space-between; cursor: pointer; user-select: none;
+    padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.08); margin-top: 4px;
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: #9fb3d9;
+  }
+  .section-header:first-child { border-top: none; margin-top: 0; }
+  .section-header .section-caret { color: #66759a; font-size: 10px; transition: transform 0.15s; }
+  .section-header.collapsed .section-caret { transform: rotate(-90deg); }
+  .section-body { padding-bottom: 4px; }
+  .section-body.collapsed { display: none; }
+  .behavior-item.script-behavior span:first-child { font-family: ui-monospace, "SF Mono", "Cascadia Code", monospace; }
+  .behavior-item {
+    display: flex; justify-content: space-between; align-items: center; gap: 6px;
+    padding: 5px 7px; margin-bottom: 4px; background: #182338; border-radius: 3px; font-size: 11.5px;
+  }
+  /* The label span (behavior summary, incl. inlined Custom Script source for
+     script-behavior rows) can be arbitrarily long -- truncate with an
+     ellipsis and a native tooltip instead of forcing the panel wider than
+     its fixed width, which just clipped the text off-screen with no
+     indication anything was cut off. */
+  .behavior-item > span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+  .behavior-item > span:last-child { flex: none; }
+  .behavior-item button {
+    background: none; border: none; color: #b04f2c; cursor: pointer; font: inherit; padding: 0 2px;
+  }
+  #game-toast {
+    position: absolute; left: 50%; top: 16px; transform: translateX(-50%);
+    background: rgba(15, 20, 35, 0.9); color: #dce6f5; padding: 8px 16px; border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.15); pointer-events: none; opacity: 0; transition: opacity 0.2s;
+    font-size: 13px;
+  }
+  #game-toast.visible { opacity: 1; }
+
+  #game-objective {
+    position: absolute; left: 14px; top: 14px;
+    background: rgba(15, 20, 35, 0.75); color: #fbbf24; padding: 6px 14px; border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.12); font-size: 13px; font-weight: 600;
+    display: none;
+  }
+  #game-objective.visible { display: block; }
+
+  #end-overlay {
+    position: absolute; inset: 0; display: none; flex-direction: column; align-items: center; justify-content: center;
+    background: rgba(6, 9, 18, 0.82); gap: 20px; text-align: center; z-index: 7; padding: 24px; box-sizing: border-box;
+  }
+  #end-overlay.visible { display: flex; }
+  #end-overlay h1 { font-size: clamp(32px, 4vw, 54px); margin: 0; letter-spacing: -0.025em; }
+  #end-overlay.win h1 { color: #6fd6bd; }
+  #end-overlay.lose h1 { color: #e08a63; }
+  #end-overlay button {
+    padding: 10px 20px; background: #182338; color: #dce6f5; border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 4px; cursor: pointer; font: 14px inherit;
+  }
+  #end-overlay button:hover { background: #223050; }
+  #end-overlay-message { margin: -8px 0 0; color: #d5dfeb; font-size: 17px; line-height: 1.6; max-width: 520px; }
+
+  #start-overlay {
+    position: absolute; inset: 0; display: none; align-items: center; justify-content: flex-start;
+    background: linear-gradient(90deg, rgba(5,12,22,.78), rgba(5,12,22,.25) 62%, rgba(5,12,22,.08));
+    text-align: left; z-index: 6; padding: clamp(20px,5vw,72px); box-sizing: border-box; overflow-y: auto;
+  }
+  #start-overlay.visible { display: flex; }
+  .start-menu-card { width: min(490px,100%); box-sizing: border-box; padding: clamp(24px,3vw,40px); display: flex; flex-direction: column; align-items: flex-start; gap: 22px; background: rgba(9,21,32,.90); border: 1px solid rgba(183,226,228,.24); border-top: 3px solid #80d6c0; border-radius: 18px; box-shadow: 0 24px 90px rgba(0,0,0,.30); }
+  #start-overlay h1 { font-size: clamp(34px,4vw,56px); line-height: 1.05; margin: 0; letter-spacing: -0.035em; color: #f2f7fa; text-wrap: balance; }
+  #start-overlay p { margin: 0; color: #c2d3dd; font-size: 16px; line-height: 1.6; max-width: 100%; }
+  #start-overlay button {
+    padding: 13px 22px; background: #88ddc4; color: #09251e; border: 1px solid transparent;
+    border-radius: 8px; cursor: pointer; font: 600 15px system-ui, sans-serif;
+  }
+  #start-overlay button:hover { background: #abead8; }
+  #start-overlay button:focus-visible, #pause-overlay button:focus-visible, #end-overlay button:focus-visible { outline: 3px solid #d2f7ed; outline-offset: 3px; }
+  #mainmenu-menu-buttons { flex-wrap: wrap; }
+  #start-overlay .settings-row { flex-wrap: wrap; row-gap: 12px; width: 100%; border-top: 1px solid rgba(255,255,255,.12); padding-top: 18px; }
+  #start-overlay .settings-row input[type="range"] { width: 92px; accent-color: #88ddc4; }
+  @media (max-width: 680px) { #start-overlay { justify-content: center; padding: 18px; } .start-menu-card { gap: 18px; } }
+
+  #dialogue-overlay {
+    position: absolute; inset: 0; display: none; align-items: flex-end; justify-content: center;
+    background: rgba(0,0,0,0.25); z-index: 7; padding-bottom: 24px; box-sizing: border-box;
+  }
+  #dialogue-overlay.visible { display: flex; }
+  #dialogue-box {
+    background: rgba(14, 21, 38, 0.95); border: 1px solid rgba(255,255,255,0.18); border-radius: 6px;
+    padding: 14px 18px; max-width: 480px; width: 88%; color: #dce6f5;
+  }
+  #dialogue-speaker { font-weight: 700; color: #6fd6bd; font-size: 13px; margin-bottom: 4px; }
+  #dialogue-text { font-size: 14px; line-height: 1.5; margin-bottom: 10px; }
+  #dialogue-choices { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+  #dialogue-choices button {
+    padding: 7px 14px; background: #182338; color: #dce6f5; border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 4px; cursor: pointer; font: 13px inherit;
+  }
+  #dialogue-choices button:hover { background: #223050; }
+
+  #level-fade-overlay {
+    position: absolute; inset: 0; background: #05070d; opacity: 0; pointer-events: none;
+    z-index: 8; transition-property: opacity; transition-duration: 0.4s;
+  }
+  #level-fade-overlay.visible { opacity: 1; }
+  #hud-elements-layer { position: absolute; inset: 0; pointer-events: none; z-index: 3; }
+  .hud-element {
+    position: absolute; color: #f1f6fa; font: 600 15px/1.4 system-ui, sans-serif;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.7); pointer-events: none;
+  }
+  .hud-element:not([data-kind]) { padding: 9px 13px; background: rgba(9,21,32,.76); border: 1px solid rgba(214,240,235,.2); border-radius: 7px; max-width: min(440px,42vw); box-sizing: border-box; }
+  .hud-element[data-kind="button"] { pointer-events: auto; cursor: pointer; }
+  .hud-element[data-kind="button"] button {
+    padding: 8px 16px; background: rgba(24, 35, 56, 0.9); color: #dce6f5;
+    border: 1px solid rgba(255,255,255,0.2); border-radius: 4px; cursor: pointer; font: 13px inherit;
+  }
+  .hud-element[data-kind="button"] button:hover { background: rgba(34, 48, 80, 0.95); }
+  .hud-element[data-kind="panel"] { background: rgba(14, 21, 38, 0.75); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; }
+  .hud-element[data-kind="healthBar"] { width: 164px; height: 28px; background: rgba(5,17,16,.82); border: 1px solid rgba(197,241,220,.45); border-radius: 6px; overflow: hidden; }
+  .hud-element[data-kind="healthBar"] .hud-health-fill { height: 100%; background: #268951; transition: width 0.15s; }
+  .hud-health-label { position: absolute; inset: 0; display: grid; place-items: center; font-size: 13px; letter-spacing: .025em; }
+  .hud-anchor-top-left { top: 12px; left: 12px; }
+  .hud-anchor-top-center { top: 12px; left: 50%; transform: translateX(-50%); }
+  .hud-anchor-top-right { top: 12px; right: 12px; }
+  .hud-anchor-middle-left { top: 50%; left: 12px; transform: translateY(-50%); }
+  .hud-anchor-middle-center { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+  .hud-anchor-middle-right { top: 50%; right: 12px; transform: translateY(-50%); }
+  .hud-anchor-bottom-left { bottom: 12px; left: 12px; }
+  .hud-anchor-bottom-center { bottom: 12px; left: 50%; transform: translateX(-50%); }
+  .hud-anchor-bottom-right { bottom: 12px; right: 12px; }
+
+  #pause-overlay {
+    position: absolute; inset: 0; display: none; flex-direction: column; align-items: center; justify-content: center;
+    background: rgba(6, 9, 18, 0.72); gap: 14px; text-align: center; z-index: 4;
+  }
+  #pause-menu-buttons { display: flex; gap: 10px; margin-top: 6px; }
+  #pause-menu-buttons button {
+    padding: 10px 18px; background: #1f8f79; color: #fff; border: none;
+    border-radius: 4px; cursor: pointer; font: 13px inherit; font-weight: 600;
+  }
+  #pause-menu-buttons button:hover { background: #23a68c; }
+  #pause-restart-btn, #pause-mainmenu-btn, #pause-controls-btn { background: #223050 !important; }
+  #pause-restart-btn:hover, #pause-mainmenu-btn:hover, #pause-controls-btn:hover { background: #2c3d68 !important; }
+  /* Wave 6 (Priority E): Controls/How To Play/Credits are all top-level
+     overlays (siblings of Start/Pause, not nested in either) so the SAME
+     panel instance is reachable from BOTH the Main Menu (Start Screen) and
+     the Pause Menu -- one implementation, two entry points, rather than
+     duplicating the panel per caller. Sits above both (z-index 9) so
+     closing it simply reveals whichever screen was already showing
+     underneath, with no need to track which one opened it. */
+  #controls-panel, #howtoplay-overlay, #credits-overlay {
+    position: absolute; inset: 0; display: none; flex-direction: column; align-items: center; justify-content: center;
+    background: rgba(4, 6, 12, 0.94); gap: 12px; text-align: center; z-index: 9; padding: 20px; box-sizing: border-box;
+  }
+  #controls-panel.visible, #howtoplay-overlay.visible, #credits-overlay.visible { display: flex; }
+  #controls-panel h2, #howtoplay-overlay h2, #credits-overlay h2 { font-size: 22px; margin: 0; color: #dce6f5; }
+  #controls-panel-list { max-width: 340px; width: 100%; }
+  #howtoplay-text, #credits-text { max-width: 420px; color: #c7d3ea; font-size: 13px; line-height: 1.6; white-space: pre-wrap; }
+  .controls-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-size: 12px; color: #9fb3d9; padding: 5px 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .controls-row button { padding: 5px 10px; background: #182338; color: #dce6f5; border: 1px solid rgba(255,255,255,0.14); border-radius: 4px; cursor: pointer; font: 12px inherit; min-width: 96px; }
+  .controls-row button:hover { background: #223050; }
+  .controls-row-custom { color: #3ecf8e; }
+  #controls-panel-buttons { display: flex; gap: 10px; margin-top: 10px; }
+  #controls-panel-buttons button { padding: 6px 12px; background: #182338; color: #dce6f5; border: 1px solid rgba(255,255,255,0.14); border-radius: 4px; cursor: pointer; font: 12px inherit; }
+  #controls-panel-buttons button:hover { background: #223050; }
+  /* Wave 8 (Priority E): Inventory -- same top-level-overlay pattern as
+     Controls above, its own z-index (9, same tier as Controls -- the two
+     are never open at once in this bounded design). */
+  #inventory-overlay {
+    position: absolute; inset: 0; display: none; flex-direction: column; align-items: center; justify-content: center;
+    background: rgba(4, 6, 12, 0.94); gap: 12px; text-align: center; z-index: 9; padding: 20px; box-sizing: border-box;
+  }
+  #inventory-overlay.visible { display: flex; }
+  #inventory-overlay h2 { font-size: 22px; margin: 0; color: #dce6f5; }
+  #inventory-list { max-width: 420px; width: 100%; max-height: 340px; overflow-y: auto; }
+  .inventory-row { display: flex; align-items: center; gap: 10px; font-size: 12px; color: #dce6f5; padding: 7px 4px; border-bottom: 1px solid rgba(255,255,255,0.08); text-align: left; }
+  .inventory-row img { width: 28px; height: 28px; object-fit: cover; border-radius: 3px; background: #182338; }
+  .inventory-row .inv-name { flex: 1; }
+  .inventory-row button { padding: 4px 10px; background: #182338; color: #dce6f5; border: 1px solid rgba(255,255,255,0.14); border-radius: 4px; cursor: pointer; font: 11.5px inherit; }
+  .inventory-row button:hover { background: #223050; }
+  .inventory-row .inv-equipped { color: #3ecf8e; font-size: 10.5px; }
+  #pause-settings, .settings-row { display: flex; align-items: center; gap: 12px; margin-top: 10px; font-size: 12px; color: #9fb3d9; }
+  #pause-settings label, .settings-row label { display: flex; align-items: center; gap: 6px; }
+  #pause-settings button, .settings-row button { padding: 6px 12px; background: #182338; color: #dce6f5; border: 1px solid rgba(255,255,255,0.14); border-radius: 4px; cursor: pointer; font: 12px inherit; }
+  #pause-settings button:hover, .settings-row button:hover { background: #223050; }
+  #mainmenu-menu-buttons button { padding: 10px 18px; background: #223050; color: #dce6f5; border: none; border-radius: 4px; cursor: pointer; font: 13px inherit; font-weight: 600; }
+  #mainmenu-menu-buttons button:hover { background: #2c3d68; }
+  #pause-overlay.visible { display: flex; }
+  #pause-overlay h1 { font-size: 30px; margin: 0; letter-spacing: 0.06em; color: #dce6f5; }
+  #pause-overlay p { margin: 0; color: #9fb3d9; font-size: 13px; }
+
+  .editor-hidden #left-panel, .editor-hidden #right-panel { display: none; }
+  .editor-hidden #hint { display: none; }
+
+  #chrome-toggle-btn {
+    position: absolute; right: 14px; bottom: 14px; z-index: 5;
+    padding: 8px 14px; background: rgba(15, 20, 35, 0.85); color: #dce6f5;
+    border: 1px solid rgba(255,255,255,0.18); border-radius: 4px; cursor: pointer;
+    font: 12px system-ui, sans-serif;
+  }
+  #chrome-toggle-btn:hover { background: rgba(24, 35, 56, 0.95); }
+
+  #controls-hint {
+    position: absolute; left: 50%; bottom: 20px; transform: translateX(-50%);
+    background: rgba(15, 20, 35, 0.8); color: #9fb3d9; padding: 8px 16px; border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.12); font-size: 12px; opacity: 0; pointer-events: none;
+    transition: opacity 0.4s;
+  }
+  #controls-hint.visible { opacity: 1; }
+  #controls-hint { font-size: 14px; color: #dceae8; padding: 11px 18px; border-radius: 8px; text-align: center; max-width: min(700px,78%); width: max-content; }
+  #game-objective { font-size: 15px; line-height: 1.45; padding: 10px 15px; max-width: min(440px,42%); box-sizing: border-box; border-radius: 7px; z-index: 3; }
+  #game-toast { top: 76px; z-index: 4; font-size: 15px; padding: 12px 18px; max-width: min(600px,70%); text-align: center; }
+
+  #marquee-box {
+    position: absolute; border: 1px solid rgba(111, 214, 189, 0.9); background: rgba(111, 214, 189, 0.15);
+    pointer-events: none; display: none;
+  }
+
+  /* Wave 9 (Priority C/Section 43): Player Damage Feedback -- a short,
+     subtle red screen flash on the game view, layered above the canvas but
+     below the HUD/touch controls, never intercepting input. */
+  #damage-flash { position: absolute; inset: 0; background: rgba(200, 20, 20, 0.001); pointer-events: none; z-index: 5; transition: background 0.08s ease-out; }
+  /* Wave 9 (Priority A/Section 26): a bounded, CSS-only crosshair -- two
+     lines, no graphic editor. `--crosshair-spread` (set from JS on fire/
+     spread) is the one variable knob for the optional spread-reactive gap. */
+  #crosshair { position: absolute; left: 50%; top: 50%; width: 0; height: 0; pointer-events: none; display: none; z-index: 4; --crosshair-spread: 0px; }
+  #crosshair.visible { display: block; }
+  #crosshair::before, #crosshair::after { content: ''; position: absolute; background: rgba(230, 240, 255, 0.85); }
+  #crosshair::before { left: calc(-1px); top: calc(-8px - var(--crosshair-spread)); width: 2px; height: 6px; box-shadow: 0 calc(16px + 2 * var(--crosshair-spread)) 0 rgba(230,240,255,0.85); }
+  #crosshair::after { top: calc(-1px); left: calc(-8px - var(--crosshair-spread)); height: 2px; width: 6px; box-shadow: calc(16px + 2 * var(--crosshair-spread)) 0 0 rgba(230,240,255,0.85); }
+  #touch-controls { position: absolute; inset: 0; pointer-events: none; display: none; }
+  #touch-controls.visible { display: block; }
+  /* First-Person touch look (Wave 5): the right half of the viewport, drag
+     to look -- left half stays free for the D-pad move buttons that
+     already sit there. touch-action:none so the browser doesn't try to
+     scroll/zoom the page on this drag. */
+  #touch-look-zone { position: absolute; top: 0; right: 0; bottom: 0; left: 50%; display: none; touch-action: none; }
+  #touch-look-zone.visible { display: block; }
+  .touch-btn {
+    position: absolute; width: 60px; height: 60px; border-radius: 50%;
+    background: rgba(20, 26, 40, 0.55); border: 1px solid rgba(255,255,255,0.25);
+    color: #dce6f5; font-size: 24px; display: flex; align-items: center; justify-content: center;
+    pointer-events: auto; touch-action: none; user-select: none; -webkit-user-select: none;
+  }
+  .touch-btn:active { background: rgba(111, 214, 189, 0.35); }
+  #touch-up    { left: 74px;  bottom: 138px; }
+  #touch-down  { left: 74px;  bottom: 14px;  }
+  #touch-left  { left: 10px;  bottom: 76px;  }
+  #touch-right { left: 138px; bottom: 76px;  }
+  #touch-boost {
+    right: 20px; bottom: 34px; width: 80px; height: 80px;
+    background: rgba(224, 138, 99, 0.35); font-size: 13px; font-weight: 700;
+  }
+  #touch-interact {
+    right: 20px; bottom: 130px; width: 54px; height: 54px;
+    background: rgba(111, 214, 189, 0.35); opacity: 0; pointer-events: none; transition: opacity 0.15s;
+  }
+  #touch-interact.interactable-visible { opacity: 1; pointer-events: auto; }
+  #interact-prompt {
+    position: absolute; left: 50%; bottom: 90px; transform: translateX(-50%);
+    background: rgba(15, 20, 35, 0.85); color: #dce6f5; padding: 6px 14px; border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.15); font-size: 12px; opacity: 0; pointer-events: none;
+    transition: opacity 0.15s; z-index: 3;
+  }
+  #interact-prompt.visible { opacity: 1; }
+  #interact-prompt { font-size: 16px; font-weight: 600; padding: 12px 20px; border-radius: 8px; border-color: rgba(136,221,196,.65); max-width: 75%; text-align: center; }
+  #howtoplay-text, #credits-text { font-size: 17px; line-height: 1.75; width: min(620px,85%); max-width: 620px; color: #dce6f5; }
+
+  #graph-modal {
+    position: fixed; inset: 0; background: rgba(6, 9, 18, 0.92); z-index: 500;
+    display: none; flex-direction: column;
+  }
+  #graph-modal.visible { display: flex; }
+  #graph-toolbar {
+    flex: none; padding: 10px 14px; background: #0e1526; border-bottom: 1px solid rgba(255,255,255,0.1);
+    display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+  }
+  #graph-toolbar .graph-toolbar-label { color: #8592a8; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; margin-right: 4px; }
+  #graph-toolbar button {
+    background: #182338; color: #dce6f5; border: 1px solid rgba(255,255,255,0.14); border-radius: 4px;
+    padding: 6px 10px; font: 12px system-ui, sans-serif; cursor: pointer;
+  }
+  #graph-toolbar button:hover { background: #223050; }
+  #graph-toolbar .graph-cond-btn { border-color: rgba(224, 138, 99, 0.5); }
+  #graph-node-search {
+    background: #182338; color: #dce6f5; border: 1px solid rgba(255,255,255,0.14); border-radius: 4px;
+    padding: 6px 8px; font: 12px system-ui, sans-serif; width: 110px;
+  }
+  #graph-toolbar button.graph-node-hidden { display: none; }
+  #graph-save-btn { background: #1f8f79 !important; color: #fff !important; border: none !important; margin-left: auto; }
+  #graph-cancel-btn { background: #402626 !important; }
+  /* overflow:hidden, not auto -- pan is a CSS transform on the two layers
+     below, not native scrolling, so a scrollbar here would just be a second,
+     conflicting way to move around the same canvas. cursor:grab signals the
+     background itself is draggable (see the wrap's own pointerdown handler),
+     :active flips to grabbing while a pan is in progress. */
+  #graph-canvas-wrap { flex: 1; position: relative; overflow: hidden; background: #0a0e1a; background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px); background-size: 22px 22px; cursor: grab; touch-action: none; }
+  #graph-canvas-wrap:active { cursor: grabbing; }
+  #graph-canvas-svg { position: absolute; top: 0; left: 0; width: 3000px; height: 2000px; pointer-events: none; transform-origin: 0 0; }
+  #graph-canvas-nodes { position: absolute; top: 0; left: 0; width: 3000px; height: 2000px; transform-origin: 0 0; }
+  .graph-node {
+    position: absolute; width: 148px; background: #182338; border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 6px; padding: 6px 8px 8px; font: 12px system-ui, sans-serif; color: #dce6f5; user-select: none;
+  }
+  .graph-node.graph-node-condition { border-color: rgba(224, 138, 99, 0.55); }
+  .graph-node.graph-node-start { background: #1f3a2f; border-color: #6fd6bd; text-align: center; font-weight: 600; }
+  .graph-node-header { display: flex; justify-content: space-between; align-items: center; cursor: grab; margin-bottom: 4px; }
+  .graph-node-header:active { cursor: grabbing; }
+  .graph-node-title { font-weight: 600; }
+  .graph-node-delete { background: none; border: none; color: #b04f2c; cursor: pointer; font: 13px inherit; padding: 0 2px; }
+  .graph-node input {
+    width: 100%; box-sizing: border-box; background: #0e1526; border: 1px solid rgba(255,255,255,0.12);
+    color: #dce6f5; padding: 3px 5px; border-radius: 3px; font: 11px inherit; margin-top: 3px;
+  }
+  .graph-port {
+    position: absolute; width: 14px; height: 14px; border-radius: 50%; background: #0e1526;
+    border: 2px solid #6fd6bd; cursor: pointer; z-index: 2;
+  }
+  .graph-port.graph-port-gate { border-color: #e08a63; }
+  .graph-port.graph-port-cond { border-color: #e08a63; }
+  .graph-port.graph-port-armed { background: #6fd6bd; }
+  .graph-port-next-in, .graph-port-cond-in { top: -8px; left: 50%; transform: translateX(-50%); }
+  .graph-port-next-out { bottom: -8px; left: 50%; transform: translateX(-50%); }
+  .graph-port-gate-in { top: 50%; right: -8px; transform: translateY(-50%); }
+  .graph-port-cond-out { bottom: -8px; left: 50%; transform: translateX(-50%); }
+  #graph-hint { position: absolute; left: 14px; bottom: 10px; color: #9fb3d9; font-size: 11px; opacity: 0.85; pointer-events: none; }
+
+  /* --- Branching Dialogue editor: a simple scrollable list of entry cards,
+     not a node canvas -- a dialogue tree is small and mostly linear, so the
+     Node Graph's ports/drag/SVG machinery would be far more UI than the
+     data shape actually needs. Reuses graph-modal's overlay/toolbar look. --- */
+  #dialogue-editor-modal {
+    position: fixed; inset: 0; background: rgba(6, 9, 18, 0.92); z-index: 500;
+    display: none; flex-direction: column;
+  }
+  #dialogue-editor-modal.visible { display: flex; }
+  #animation-editor-modal {
+    position: fixed; inset: 0; background: rgba(6, 9, 18, 0.92); z-index: 500;
+    display: none; flex-direction: column;
+  }
+  #animation-editor-modal.visible { display: flex; }
+
+  /* --- Command Palette (Ctrl+K): a fuzzy-filtered list of the editor's own
+     already-existing actions (nothing new is implemented per action -- each
+     entry just calls the same function a toolbar button or menu item
+     already calls), so this is purely a faster way to REACH functionality
+     that already exists, not a second implementation of any of it. --- */
+  #command-palette-overlay {
+    position: fixed; inset: 0; background: rgba(6, 9, 18, 0.55); z-index: 600;
+    display: none; align-items: flex-start; justify-content: center; padding-top: 12vh;
+  }
+  #command-palette-overlay.visible { display: flex; }
+  #command-palette-box {
+    width: min(520px, 90vw); max-height: 60vh; background: #131c30;
+    border: 1px solid rgba(255,255,255,0.14); border-radius: 8px; box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+    display: flex; flex-direction: column; overflow: hidden;
+  }
+  #command-palette-input {
+    width: 100%; box-sizing: border-box; background: #0e1526; border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.12); color: #dce6f5; padding: 14px 16px;
+    font: 15px system-ui, sans-serif; outline: none;
+  }
+  #command-palette-list { overflow-y: auto; padding: 6px; }
+  .cmd-item {
+    padding: 9px 12px; border-radius: 5px; cursor: pointer; font-size: 13px; color: #dce6f5;
+    display: flex; justify-content: space-between; align-items: center; gap: 10px;
+  }
+  .cmd-item .cmd-item-hint { color: #66759a; font-size: 11px; white-space: nowrap; }
+  .cmd-item.active, .cmd-item:hover { background: #223050; }
+  #command-palette-empty { padding: 14px 16px; color: #66759a; font-size: 12.5px; }
+  .anim-track-card {
+    background: #131c30; border: 1px solid rgba(255,255,255,0.12); border-radius: 6px;
+    padding: 12px; margin-bottom: 14px;
+  }
+  .anim-keyframe-row {
+    display: flex; align-items: center; gap: 8px; padding: 4px 0; font-size: 12px; color: #c7d3ea;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .anim-keyframe-row input[type="number"] { width: 56px; }
+  .anim-keyframe-row select { width: auto; }
+  #dialogue-editor-toolbar, #animation-editor-toolbar {
+    flex: none; padding: 10px 14px; background: #0e1526; border-bottom: 1px solid rgba(255,255,255,0.1);
+    display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+  }
+  #dialogue-editor-toolbar select, #animation-editor-toolbar select {
+    background: #182338; color: #dce6f5; border: 1px solid rgba(255,255,255,0.14); border-radius: 4px;
+    padding: 5px 8px; font: 12px system-ui, sans-serif;
+  }
+  #dialogue-editor-toolbar button, #animation-editor-toolbar button {
+    background: #182338; color: #dce6f5; border: 1px solid rgba(255,255,255,0.14); border-radius: 4px;
+    padding: 6px 10px; font: 12px system-ui, sans-serif; cursor: pointer;
+  }
+  #dialogue-editor-toolbar button:hover, #animation-editor-toolbar button:hover { background: #223050; }
+  #dialogue-editor-save-btn, #animation-editor-save-btn { background: #1f8f79 !important; color: #fff !important; border: none !important; }
+  #dialogue-editor-cancel-btn, #animation-editor-cancel-btn { background: #402626 !important; }
+  #dialogue-editor-body, #animation-editor-body { flex: 1; overflow-y: auto; padding: 16px; box-sizing: border-box; max-width: 640px; margin: 0 auto; width: 100%; }
+  .dialogue-entry-card {
+    background: #131c30; border: 1px solid rgba(255,255,255,0.12); border-radius: 6px;
+    padding: 12px; margin-bottom: 14px;
+  }
+  .dialogue-entry-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+  .dialogue-entry-card-header .dialogue-entry-id { font-size: 11px; color: #66759a; font-family: ui-monospace, monospace; }
+  .dialogue-entry-card input[type="text"], .dialogue-entry-card textarea, .dialogue-entry-card select {
+    width: 100%; box-sizing: border-box; background: #0e1526; border: 1px solid rgba(255,255,255,0.12);
+    color: #dce6f5; padding: 6px; border-radius: 3px; font: inherit; margin-top: 4px;
+  }
+  .dialogue-entry-card textarea { resize: vertical; min-height: 40px; }
+  .dialogue-choice-row {
+    background: #182338; border: 1px solid rgba(255,255,255,0.08); border-radius: 4px;
+    padding: 8px; margin-top: 8px;
+  }
+  .dialogue-choice-row-header { display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: #9fb3d9; margin-bottom: 2px; }
+  .dialogue-choice-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+  .dialogue-choice-grid > * { min-width: 0; }
+  .dialogue-remove-btn { background: none; border: none; color: #b04f2c; cursor: pointer; font: 12px inherit; padding: 0 2px; }
+  .dialogue-add-choice-btn {
+    margin-top: 8px; background: #0e1526; border: 1px dashed rgba(255,255,255,0.2); color: #9fb3d9;
+    border-radius: 4px; padding: 5px; width: 100%; cursor: pointer; font: 11.5px inherit;
+  }
+  .dialogue-add-choice-btn:hover { background: #182338; }
+
+  /* Narrow-screen drawers: #left-panel/#right-panel become off-canvas
+     panels toggled by the two top-bar buttons below, one at a time (opening
+     one closes the other so neither ever doubly covers the viewport). Both
+     buttons and the scrim are display:none on desktop -- pure no-op there. */
+  #narrow-left-toggle, #narrow-right-toggle { display: none; }
+  #narrow-scrim { display: none; }
+  @media (max-width: 860px) {
+    #left-panel, #right-panel { position: absolute; top: 0; bottom: 0; z-index: 9; width: 78vw; max-width: 320px; box-shadow: 0 0 24px rgba(0,0,0,0.5); }
+    #left-panel { left: 0; }
+    #right-panel { right: 0; }
+    #left-panel:not(.narrow-visible), #right-panel:not(.narrow-visible) { display: none; }
+    #app-body { position: relative; }
+    #top-bar { flex-wrap: nowrap; }
+    #narrow-left-toggle, #narrow-right-toggle {
+      display: inline-block; background: #182338; color: #dce6f5; border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 4px; padding: 6px 10px; font: 12px inherit; cursor: pointer; flex: none;
+    }
+    #narrow-scrim.visible {
+      display: block; position: absolute; inset: 0; background: rgba(0,0,0,0.45); z-index: 8;
+    }
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="top-bar">
+    <button id="narrow-left-toggle" title="Create panel">☰ Create</button>
+    <span id="top-bar-title">Digital Opus</span>
+    <div class="tb-sep"></div>
+    <div class="tb-group">
+      <select id="level-select" title="Current level"></select>
+    </div>
+    <div class="tb-sep"></div>
+    <div class="tb-group">
+      <button id="play-btn" title="Play (P)">▶ Play</button>
+      <button id="pause-btn" title="Pause" disabled>⏸ Pause</button>
+    </div>
+    <div class="tb-sep"></div>
+    <div class="tb-group">
+      <button id="undo-btn" title="Undo (Ctrl+Z)">↶ Undo</button>
+      <button id="redo-btn" title="Redo (Ctrl+Y)">↷ Redo</button>
+    </div>
+    <div class="tb-spacer"></div>
+    <div class="tb-group">
+      <button id="save-btn" title="Save Project">💾 Save</button>
+      <button id="export-standalone-btn" title="Export a single-file editable game (.html) -- see the Project tab for other Export Tiers">⇩ Export Game</button>
+    </div>
+    <button id="narrow-right-toggle" title="Inspector / Scene / Level / UI / Project panel">⚙ Panels</button>
+  </div>
+  <div id="app-body">
+  <div id="left-panel">
+    <div class="tab-strip" id="left-tabs">
+      <button class="tab-btn" data-left-tab="games">Games</button>
+      <button class="tab-btn active" data-left-tab="objects">Objects</button>
+      <button class="tab-btn" data-left-tab="assets">Assets</button>
+      <button class="tab-btn" data-left-tab="prefabs">Prefabs</button>
+    </div>
+    <!-- Game catalog & one-click samples pass: a built-in "Games" surface so
+         trying any of the games/*.json sample projects is Games -> card ->
+         Play/Open in Editor, never a file picker. Renders from the ONE
+         shared catalog source (games/catalog.json) that also drives the
+         static launcher (dist/games/index.html) and the build-time
+         playable-HTML generator (build/build-games.js) -- see that
+         script's own header comment for why there's only one metadata
+         source, not three hand-maintained lists. -->
+    <div class="tab-panel" id="left-tab-games" data-tab-panel="games">
+      <div class="field-row"><label>Show</label>
+        <select id="games-category-filter">
+          <option value="all">All</option>
+          <option value="featured">Featured</option>
+          <option value="sample">Sample</option>
+          <option value="technical">Technical</option>
+        </select>
+      </div>
+      <div id="games-status" style="font-size:11px;color:#66759a;margin:4px 0"></div>
+      <div id="games-card-list"></div>
+    </div>
+    <div class="tab-panel active" id="left-tab-objects" data-tab-panel="objects">
+      <input type="text" id="palette-search" placeholder="Search objects...">
+      <p class="palette-category">World</p>
+      <div class="palette-item" id="palette-terrain">⛰ Terrain</div>
+      <div class="palette-item" id="palette-water">〜 Water</div>
+      <p class="palette-category">Gameplay</p>
+      <div class="palette-item" id="palette-cube">▢ Cube</div>
+      <div class="palette-item" id="palette-ramp">◺ Ramp</div>
+      <div class="palette-item" id="palette-billboard">🌿 Billboard</div>
+      <div class="palette-item" id="palette-mine">✹ Mine</div>
+      <div class="palette-item" id="palette-boost">▲ Boost Pad</div>
+      <div class="palette-item" id="palette-trigger">◈ Trigger Volume</div>
+      <div class="palette-item" id="palette-spawner">💠 Spawner</div>
+      <div class="palette-item" id="palette-waypoint">📍 Waypoint</div>
+      <div class="palette-item" id="palette-path">🛤 Path</div>
+      <div class="palette-item" id="palette-spawnPoint">🚩 Spawn Point</div>
+      <p class="palette-category">Presets</p>
+      <div class="palette-item" id="palette-collectible">⭐ Collectible</div>
+      <div class="palette-item" id="palette-healthPickup">➕ Health Pickup</div>
+      <div class="palette-item" id="palette-damageHazard">☠ Damage Hazard</div>
+      <div class="palette-item" id="palette-checkpointPreset">🏁 Checkpoint</div>
+      <div class="palette-item" id="palette-door">🚪 Door</div>
+      <div class="palette-item" id="palette-enemy">👾 Enemy</div>
+      <div class="palette-item" id="palette-movingPlatform">🟫 Moving Platform</div>
+      <div class="palette-item" id="palette-projectilePreset">● Projectile</div>
+      <p class="palette-category">Effects</p>
+      <div class="palette-item" id="palette-emitter">✨ Particle Emitter</div>
+      <div class="palette-item" id="palette-camera">🎥 Camera</div>
+      <p class="palette-category">Lighting</p>
+      <div class="palette-item" id="palette-pointLight">💡 Point Light</div>
+      <div class="palette-item" id="palette-spotLight">🔦 Spot Light</div>
+      <p id="palette-empty" style="display:none">No objects match this filter.</p>
+    </div>
+    <div class="tab-panel" id="left-tab-assets" data-tab-panel="assets">
+      <button id="import-model-btn" class="toolbar-btn">Import Model (.gltf/.glb)</button>
+      <input type="file" id="import-model-input" accept=".gltf,.glb" style="display:none">
+      <div class="field-row"><label>Model Assets</label>
+        <div class="asset-filter-row">
+          <input type="text" id="asset-library-search" placeholder="Search name or tag…">
+          <select id="asset-library-folder-filter"><option value="">All folders</option></select>
+        </div>
+        <div id="asset-library-list"></div>
+      </div>
+      <button id="import-texture-btn" class="toolbar-btn">Import Texture (image)</button>
+      <input type="file" id="import-texture-input" accept="image/*" style="display:none">
+      <div class="field-row"><label>Texture Assets</label>
+        <div class="asset-filter-row">
+          <input type="text" id="texture-library-search" placeholder="Search name or tag…">
+          <select id="texture-library-folder-filter"><option value="">All folders</option></select>
+        </div>
+        <div id="texture-library-list"></div>
+      </div>
+      <button id="import-audio-btn" class="toolbar-btn">Import Audio (sound file)</button>
+      <input type="file" id="import-audio-input" accept="audio/*" style="display:none">
+      <div class="field-row"><label>Audio Assets</label>
+        <div class="asset-filter-row">
+          <input type="text" id="audio-library-search" placeholder="Search name or tag…">
+          <select id="audio-library-folder-filter"><option value="">All folders</option></select>
+        </div>
+        <div id="audio-library-list"></div>
+      </div>
+    </div>
+    <div class="tab-panel" id="left-tab-prefabs" data-tab-panel="prefabs">
+      <div id="palette-prefabs"></div>
+    </div>
+  </div>
+  <div id="viewport-wrap">
+    <canvas id="game"></canvas>
+    <div id="marquee-box"></div>
+    <div id="hint">Drag an object onto the scene to place it. Click a Cube (or use the Scene list) to select and edit it.</div>
+    <div id="gizmo-toolbar">
+      <button class="gizmo-mode-btn" id="gizmo-mode-move" title="Move (W)">⇔ Move</button>
+      <button class="gizmo-mode-btn" id="gizmo-mode-rotate" title="Rotate (E)">↻ Rotate</button>
+      <button class="gizmo-mode-btn" id="gizmo-mode-scale" title="Scale (R)">⤢ Scale</button>
+      <label id="gizmo-snap-label"><input type="checkbox" id="gizmo-snap-toggle"> Snap</label>
+      <label id="show-colliders-label"><input type="checkbox" id="show-colliders-toggle"> Show Colliders</label>
+      <button class="toolbar-btn" id="gizmo-space-toggle" title="Toggle the Move gizmo between World and Local (the selected object's own rotated) axes" style="margin-bottom:0">🌐 World</button>
+    </div>
+    <div id="game-toast"></div>
+    <div id="game-objective"></div>
+    <div id="end-overlay">
+      <h1 id="end-overlay-title"></h1>
+      <p id="end-overlay-message"></p>
+      <button id="end-overlay-btn">Back to Editor</button>
+    </div>
+    <div id="start-overlay">
+      <div class="start-menu-card">
+      <h1 id="start-overlay-title"></h1>
+      <p id="start-overlay-subtitle"></p>
+      <button id="start-overlay-btn"></button>
+      <!-- Wave 6B (Priority G): Continue -- shown ONLY when a valid save
+           already exists (SaveSystem.has, the exact same slot Save Game/
+           Load Game already read/write -- no second save-slot system),
+           toggled by updateMainMenuExtras alongside How To Play/Credits. -->
+      <button id="mainmenu-continue-btn" style="display:none">▶ Continue</button>
+      <!-- Wave 6 (Priority E): the Main Menu / Game Shell -- How To Play
+           and Credits buttons only shown when the author actually filled
+           in that text (see updateMainMenuExtras), so an untouched project
+           still shows exactly the bare Start button it always did. Controls
+           and Settings are always offered, sharing the SAME panels/logic
+           the Pause Menu itself uses -- one Controls panel, one volume/
+           quality/fullscreen implementation, two entry points into each. -->
+      <div id="mainmenu-menu-buttons" style="display:flex;gap:10px">
+        <button id="mainmenu-howtoplay-btn" style="display:none">📖 How To Play</button>
+        <button id="mainmenu-controls-btn">🎮 Controls</button>
+        <button id="mainmenu-credits-btn" style="display:none">🎬 Credits</button>
+      </div>
+      <div class="settings-row" style="margin-top:6px">
+        <label>Volume <input type="range" id="mainmenu-volume" min="0" max="1" step="0.05"></label>
+        <button id="mainmenu-quality-btn"></button>
+        <button id="mainmenu-fullscreen-btn">⛶ Fullscreen</button>
+      </div>
+      </div>
+    </div>
+    <div id="pause-overlay">
+      <h1>⏸ Paused</h1>
+      <p>Press Escape or Resume to continue</p>
+      <div id="pause-menu-buttons">
+        <button id="pause-resume-btn">▶ Resume</button>
+        <button id="pause-restart-btn">↻ Restart Level</button>
+        <button id="pause-mainmenu-btn">⌂ Main Menu</button>
+        <button id="pause-controls-btn">🎮 Controls</button>
+      </div>
+      <div id="pause-settings">
+        <label>Volume <input type="range" id="pause-volume" min="0" max="1" step="0.05"></label>
+        <button id="pause-quality-btn"></button>
+        <button id="pause-fullscreen-btn">⛶ Fullscreen</button>
+      </div>
+    </div>
+    <!-- Wave 8 (Priority E): Inventory -- a player-facing panel over the
+         existing runtime Inventory state, built by renderInventoryOverlay(). -->
+    <div id="inventory-overlay">
+      <h2>🎒 Inventory</h2>
+      <div id="inventory-list"></div>
+      <!-- Wave 8 (Priority G/Section 46): "Inventory/Objectives may share
+           one Journal screen" -- chosen as the cleaner UX over a second
+           top-level overlay/input action pair. -->
+      <h2 style="margin-top:14px">📜 Objectives</h2>
+      <div id="objective-log-list"></div>
+      <div id="inventory-panel-buttons">
+        <button id="inventory-close-btn">Close</button>
+      </div>
+    </div>
+    <!-- Wave 6 (Priority D/E): player-facing rebinding -- a top-level
+         overlay (not nested in Pause or the Main Menu) so the SAME panel
+         instance is reachable from both. Rows are built by
+         renderControlsPanel(). -->
+    <div id="controls-panel">
+      <h2>🎮 Controls</h2>
+      <div id="controls-panel-list"></div>
+      <div id="controls-panel-buttons">
+        <button id="controls-reset-btn">↺ Reset to Defaults</button>
+        <button id="controls-close-btn">Close</button>
+      </div>
+    </div>
+    <div id="howtoplay-overlay">
+      <h2>How To Play</h2>
+      <p id="howtoplay-text"></p>
+      <button id="howtoplay-close-btn">Close</button>
+    </div>
+    <div id="credits-overlay">
+      <h2>Credits</h2>
+      <p id="credits-text"></p>
+      <button id="credits-close-btn">Close</button>
+    </div>
+    <div id="level-fade-overlay"></div>
+    <div id="hud-elements-layer"></div>
+    <div id="interact-prompt">Press F to interact</div>
+    <div id="dialogue-overlay">
+      <div id="dialogue-box">
+        <div id="dialogue-speaker"></div>
+        <div id="dialogue-text"></div>
+        <div id="dialogue-choices"></div>
+      </div>
+    </div>
+    <button id="chrome-toggle-btn">🛠 Edit This Game</button>
+    <div id="controls-hint"></div>
+    <div id="damage-flash"></div>
+    <div id="crosshair"></div>
+    <div id="touch-look-zone"></div>
+    <div id="touch-controls">
+      <button class="touch-btn" id="touch-up">▲</button>
+      <button class="touch-btn" id="touch-down">▼</button>
+      <button class="touch-btn" id="touch-left">◀</button>
+      <button class="touch-btn" id="touch-right">▶</button>
+      <button class="touch-btn" id="touch-boost">BOOST</button>
+      <button class="touch-btn" id="touch-interact">✋</button>
+      <button class="touch-btn" id="touch-attack">⚔</button>
+      <button class="touch-btn" id="touch-reload">↻</button>
+      <button class="touch-btn" id="touch-switch">⇄</button>
+      <button class="touch-btn" id="touch-inventory">🎒</button>
+    </div>
+  </div>
+  <div id="right-panel">
+    <div class="tab-strip" id="right-tabs">
+      <button class="tab-btn active" data-right-tab="inspector">Inspector</button>
+      <button class="tab-btn" data-right-tab="scene">Scene</button>
+      <button class="tab-btn" data-right-tab="level">Level</button>
+      <button class="tab-btn" data-right-tab="ui">UI</button>
+      <button class="tab-btn" data-right-tab="project">Project</button>
+    </div>
+    <div class="panel-pinned">
+      <div id="script-trust-banner">
+        ⚠ Loaded project has Custom Script. Disabled until enabled below.
+        <button id="script-trust-enable-btn">Enable Scripts</button>
+      </div>
+      <div id="status-msg"></div>
+    </div>
+
+    <!-- Inspector: selected-object concerns ONLY. -->
+    <div class="tab-panel active" id="right-tab-inspector" data-tab-panel="inspector">
+      <div id="inspector-body">
+        <p id="inspector-empty">Nothing selected. Select an object in the viewport or the Scene list.</p>
+      </div>
+    </div>
+
+    <!-- Scene: full-height hierarchy. -->
+    <div class="tab-panel" id="right-tab-scene" data-tab-panel="scene">
+      <div id="scene-tab-panel">
+        <input type="text" id="scene-search" placeholder="Filter scene list...">
+        <div id="scene-list">
+          <p id="scene-list-empty">Nothing placed yet.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Level: everything scoped to the current level. -->
+    <div class="tab-panel" id="right-tab-level" data-tab-panel="level">
+      <div class="field-row"><label>Level Name</label>
+        <input type="text" id="level-name-input" placeholder="Level name">
+      </div>
+      <div class="field-triple">
+        <button id="add-level-btn" class="toolbar-btn" style="margin-bottom:0">Add</button>
+        <button id="rename-level-btn" class="toolbar-btn" style="margin-bottom:0">Rename</button>
+      </div>
+      <div class="field-triple" style="margin-top:6px">
+        <button id="switch-level-btn" class="toolbar-btn" style="margin-bottom:0">Switch To</button>
+        <button id="delete-level-btn" class="danger-btn" style="margin-bottom:0">Delete</button>
+      </div>
+      <div class="field-triple" style="margin-top:6px">
+        <button id="duplicate-level-btn" class="toolbar-btn" style="margin-bottom:0">Duplicate</button>
+        <button id="set-start-level-btn" class="toolbar-btn" style="margin-bottom:0">★ Set as Start</button>
+      </div>
+      <div class="field-triple" style="margin-top:6px">
+        <button id="move-level-up-btn" class="toolbar-btn" style="margin-bottom:0">↑ Move Up</button>
+        <button id="move-level-down-btn" class="toolbar-btn" style="margin-bottom:0">↓ Move Down</button>
+      </div>
+      <div class="field-row" style="margin-top:10px"><label>Description</label>
+        <textarea id="level-description-input" placeholder="Level description (optional)" rows="2"></textarea>
+      </div>
+      <div class="field-row"><label>Level Transition</label>
+        <div class="field-triple">
+          <select id="level-transition-mode">
+            <option value="instant">Instant</option>
+            <option value="fade">Fade</option>
+          </select>
+          <input type="number" id="level-transition-duration" step="0.1" min="0.1" value="0.4" placeholder="Duration">
+        </div>
+      </div>
+
+      <div class="section-header" data-section="environment"><span>Environment</span><span class="section-caret">▾</span></div>
+      <div class="section-body" data-section-body="environment">
+        <div class="field-row"><label>Sky Color</label>
+          <div class="field-triple">
+            <div><label style="font-size:10px;color:#66759a">Sky / Fog</label><input type="color" id="env-sky-horizon"></div>
+            <div><label style="font-size:10px;color:#66759a">Sun Color</label><input type="color" id="env-sun-color"></div>
+            <div><label style="font-size:10px;color:#66759a">Fog Density</label><input type="number" id="env-fog-density" step="0.005" min="0" max="0.2"></div>
+          </div>
+        </div>
+        <!-- Wave 6 (Priority H): an optional equirectangular panorama,
+             reusing the SAME Texture Library every object's own texture
+             picker already draws from -- import a panorama the same way
+             any other texture is imported, then pick it here. -->
+        <div class="field-row"><label>Sky Panorama</label>
+          <select id="env-sky-texture"></select>
+        </div>
+        <div class="field-row"><label style="display:flex;align-items:center;gap:6px;font-size:12px;color:#c7d3ea"><input type="checkbox" id="env-shadows-enabled"> Sun Shadows (bounded box around the player)</label>
+          <div class="field-triple">
+            <div><label style="font-size:10px;color:#66759a">Resolution</label><input type="number" id="env-shadows-resolution" step="256" min="256" max="4096"></div>
+            <div><label style="font-size:10px;color:#66759a">Distance</label><input type="number" id="env-shadows-distance" step="5" min="5"></div>
+            <div><label style="font-size:10px;color:#66759a">Bias</label><input type="number" id="env-shadows-bias" step="0.0005" min="0"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-header" data-section="player"><span>Player Controller</span><span class="section-caret">▾</span></div>
+      <div class="section-body" data-section-body="player">
+        <!-- Wave 6B (Priority H): "Create Animated Player" preset helper --
+             one click: switches to Third-Person, picks the first skinned
+             asset (or keeps the current one), and auto-detects clips --
+             the same steps an author would otherwise click through by hand,
+             see renderPlayerSettingsPanel's wiring in 01-editor.js. -->
+        <button id="create-animated-player-btn" class="toolbar-btn" style="margin-bottom:8px;background:#2a4a6a">✨ Create Animated Player</button>
+        <div class="field-row"><label>Controller Type</label>
+          <select id="player-controller-type">
+            <option value="hovercraft">Hovercraft</option>
+            <option value="topdown">Top-Down</option>
+            <option value="thirdperson">Third-Person</option>
+            <option value="firstperson">First-Person</option>
+          </select>
+        </div>
+        <div id="player-tunables" class="field-triple" style="display:none">
+          <div><label style="font-size:10px;color:#66759a">Move Speed</label><input type="number" id="player-move-speed" step="0.5" min="0.5"></div>
+          <div><label style="font-size:10px;color:#66759a">Acceleration</label><input type="number" id="player-acceleration" step="1" min="1"></div>
+        </div>
+        <div id="player-jump-row" class="field-row" style="display:none">
+          <label><input type="checkbox" id="player-jump-enabled" style="width:auto;margin-right:6px"> Jump (vertical physics)</label>
+        </div>
+        <div id="player-opening-camera" class="field-triple">
+          <div><label style="font-size:10px;color:#66759a">Opening Yaw (degrees)</label><input type="number" id="player-initial-yaw" step="5"></div>
+          <div><label style="font-size:10px;color:#66759a">Opening Pitch (degrees)</label><input type="number" id="player-initial-pitch" step="2" min="-85" max="85"></div>
+        </div>
+        <div id="player-jump-tunables" class="field-triple" style="display:none">
+          <div><label style="font-size:10px;color:#66759a">Gravity</label><input type="number" id="player-gravity" step="1" min="1"></div>
+          <div><label style="font-size:10px;color:#66759a">Jump Speed</label><input type="number" id="player-jump-speed" step="0.5" min="0.5"></div>
+        </div>
+        <div id="player-fp-tunables" class="field-triple" style="display:none">
+          <div><label style="font-size:10px;color:#66759a">FOV (degrees)</label><input type="number" id="player-fp-fov" step="1" min="30" max="120"></div>
+          <div><label style="font-size:10px;color:#66759a">Eye Height</label><input type="number" id="player-fp-eye-height" step="0.05" min="0"></div>
+          <div><label style="font-size:10px;color:#66759a">Look Sensitivity</label><input type="number" id="player-fp-sensitivity" step="0.0002" min="0.0001"></div>
+        </div>
+        <!-- Wave 6B (Priority J): Footstep audio -- Third-Person/First-Person
+             only (toggled in JS, see renderPlayerSettingsPanel), plays only
+             while grounded and actually moving. -->
+        <div id="player-footstep-row" style="display:none">
+          <div class="field-row"><label>Footstep Sound</label>
+            <select id="player-footstep-asset"><option value="">None</option></select>
+          </div>
+          <div class="field-triple">
+            <div><label style="font-size:10px;color:#66759a">Interval (sec)</label><input type="number" id="player-footstep-interval" step="0.05" min="0.05"></div>
+            <div><label style="font-size:10px;color:#66759a">Walk Volume</label><input type="number" id="player-footstep-walk-vol" step="0.05" min="0" max="1"></div>
+            <div><label style="font-size:10px;color:#66759a">Run Volume</label><input type="number" id="player-footstep-run-vol" step="0.05" min="0" max="1"></div>
+          </div>
+        </div>
+        <!-- Wave 6B (Priority A): Skinned Player Character -- only shown for
+             Third-Person/Top-Down (toggled in JS, see renderPlayerSettingsPanel).
+             Most of this section's content is built dynamically
+             (renderPlayerVisualPanel) since the clip-mapping dropdowns need
+             to be populated from whichever skinned asset is currently
+             selected. -->
+        <div id="player-visual-section" style="display:none">
+          <div class="field-row"><label>Player Visual</label>
+            <select id="player-visual-mode">
+              <option value="primitive">Default / Primitive</option>
+              <option value="skinned">Skinned Asset</option>
+            </select>
+          </div>
+          <div id="player-visual-body"></div>
+        </div>
+        <div class="field-row"><label>Max Health</label>
+          <input type="number" id="player-max-health" step="5" min="1">
+        </div>
+        <div class="field-row">
+          <label><input type="checkbox" id="player-weapon-enabled" style="width:auto;margin-right:6px"> Weapon (Attack fires a projectile)</label>
+        </div>
+        <div id="player-weapon-tunables" style="display:none">
+          <div class="field-row"><label>Weapon Source (Wave 7 Priority C)</label>
+            <select id="player-weapon-source">
+              <option value="fixed">Fixed Weapon (below, always available)</option>
+              <option value="equipment">Equipment Weapon (whatever's in Primary Hand)</option>
+            </select>
+          </div>
+          <div id="player-weapon-mode-row" class="field-row"><label>Weapon Mode</label>
+            <select id="player-weapon-mode">
+              <option value="projectile">Projectile</option>
+              <option value="hitscan">Hitscan (instant ray)</option>
+              <option value="melee">Melee (radius/cone)</option>
+            </select>
+          </div>
+          <div id="player-weapon-prefab-row" class="field-row"><label>Projectile Prefab</label><div id="player-weapon-prefab-wrap"></div></div>
+          <div class="field-triple">
+            <div><label style="font-size:10px;color:#66759a">Cooldown (s)</label><input type="number" id="player-weapon-cooldown" step="0.05" min="0.05"></div>
+            <div><label style="font-size:10px;color:#66759a">Damage</label><input type="number" id="player-weapon-damage" step="1" min="0"></div>
+            <div id="player-weapon-speed-wrap"><label style="font-size:10px;color:#66759a">Speed</label><input type="number" id="player-weapon-speed" step="1" min="1"></div>
+            <div id="player-weapon-range-wrap" style="display:none"><label style="font-size:10px;color:#66759a">Range</label><input type="number" id="player-weapon-range" step="5" min="1"></div>
+          </div>
+          <div class="field-row" style="margin-top:4px"><label style="font-size:10px;color:#66759a">Knockback (Wave 7 Priority K, 0 = off)</label><input type="number" id="player-weapon-knockback" step="0.5" min="0" value="0"></div>
+          <div class="field-row" style="margin-top:4px"><label style="font-size:10px;color:#66759a">Muzzle Socket (Wave 7 Priority L, blank = player root)</label><input type="text" id="player-weapon-muzzle-socket" placeholder="e.g. Muzzle"></div>
+          <div class="field-row" style="margin-top:6px">
+            <label><input type="checkbox" id="player-weapon-fire-on-event" style="width:auto;margin-right:6px"> Fire on Animation Event (Wave 7 Priority B)</label>
+            <div style="font-size:10.5px;color:#66759a;margin-top:3px">Off (default): fires the instant Attack is pressed. On: hold fire until a "Fire Player Weapon" Animation Event on the Player Visual's own Attack clip actually crosses -- author one in that asset's Inspector, or nothing will ever fire.</div>
+          </div>
+          <div class="field-row" style="margin-top:8px;border-top:1px solid #232c42;padding-top:6px"><label>Ammo (Wave 9 Priority A)</label>
+            <select id="player-weapon-ammomode">
+              <option value="infinite">Infinite</option>
+              <option value="magazine">Magazine</option>
+            </select>
+          </div>
+          <div id="player-weapon-ammo-fields" style="display:none">
+            <div class="field-triple">
+              <div><label style="font-size:10px;color:#66759a">Magazine Size</label><input type="number" id="player-weapon-magsize" step="1" min="1"></div>
+              <div><label style="font-size:10px;color:#66759a">Starting Magazine</label><input type="number" id="player-weapon-startmag" step="1" min="0"></div>
+              <div><label style="font-size:10px;color:#66759a">Reserve Ammo</label><input type="number" id="player-weapon-reserve" step="1" min="0"></div>
+            </div>
+            <div class="field-row" style="margin-top:4px"><label style="font-size:10px;color:#66759a">Reload Duration (s)</label><input type="number" id="player-weapon-reload-duration" step="0.1" min="0.1"></div>
+          </div>
+          <div class="field-row" style="margin-top:6px"><label style="font-size:10px;color:#66759a">Fire Mode</label>
+            <select id="player-weapon-firemode"><option value="semi">Semi</option><option value="auto">Automatic</option></select>
+          </div>
+          <div class="field-triple" style="margin-top:4px">
+            <div><label style="font-size:10px;color:#66759a">Spread (degrees)</label><input type="number" id="player-weapon-spread" step="0.5" min="0" value="0"></div>
+            <div><label style="font-size:10px;color:#66759a">Recoil Vertical</label><input type="number" id="player-weapon-recoil-v" step="0.1" min="0" value="0"></div>
+            <div><label style="font-size:10px;color:#66759a">Recoil Horizontal</label><input type="number" id="player-weapon-recoil-h" step="0.1" min="0" value="0"></div>
+          </div>
+          <label style="display:flex;align-items:center;gap:6px;font-size:11px;color:#c7d3ea;margin-top:6px"><input type="checkbox" id="player-weapon-emit-noise"> Emit Noise on Fire (Wave 9 Priority B)</label>
+          <div class="field-row" style="margin-top:2px"><label style="font-size:10px;color:#66759a">Noise Radius</label><input type="number" id="player-weapon-noise-radius" step="1" min="0" value="18"></div>
+          <label style="display:flex;align-items:center;gap:6px;font-size:11px;color:#c7d3ea;margin-top:6px"><input type="checkbox" id="player-weapon-crosshair" checked> Show Crosshair</label>
+          <div class="field-row" style="margin-top:8px;border-top:1px solid #232c42;padding-top:6px"><label>Weapon Effects (Wave 9D)</label></div>
+          <div class="field-row"><label style="font-size:10px;color:#66759a">Fire Audio</label><div id="player-weapon-fire-audio-wrap"></div></div>
+          <label style="display:flex;align-items:center;gap:6px;font-size:11px;color:#c7d3ea;margin-top:4px"><input type="checkbox" id="player-weapon-muzzle-fx"> Muzzle Particle Burst</label>
+          <div class="field-row" style="margin-top:2px"><label style="font-size:10px;color:#66759a">Muzzle Color</label><input type="color" id="player-weapon-muzzle-color" value="#ffcc55"></div>
+          <div class="field-row" style="margin-top:6px"><label style="font-size:10px;color:#66759a">Impact Audio</label><div id="player-weapon-impact-audio-wrap"></div></div>
+          <label style="display:flex;align-items:center;gap:6px;font-size:11px;color:#c7d3ea;margin-top:4px"><input type="checkbox" id="player-weapon-impact-fx"> Impact Particle Burst</label>
+          <div class="field-row" style="margin-top:2px"><label style="font-size:10px;color:#66759a">Impact Color</label><input type="color" id="player-weapon-impact-color" value="#e6e6dd"></div>
+          <label style="display:flex;align-items:center;gap:6px;font-size:11px;color:#c7d3ea;margin-top:4px"><input type="checkbox" id="player-weapon-tracer"> Hitscan Tracer</label>
+        </div>
+        <div class="field-row" style="margin-top:10px"><label>Equipment Items (Wave 7 Priority C)</label>
+          <div id="equipment-def-list"></div>
+          <button id="equipment-def-add-btn" class="toolbar-btn" style="margin-top:4px">+ Add Equipment Item</button>
+          <div style="font-size:10.5px;color:#66759a;margin-top:3px">Maps an Inventory item name to a visual (Asset), a Socket on the Player Visual's own rig, and an optional weapon config. Equip Item/Unequip Slot actions (reusing Inventory, no separate item database) turn this into a held object.</div>
+        </div>
+      </div>
+
+      <div class="section-header" data-section="ambient"><span>Ambient Audio</span><span class="section-caret">▾</span></div>
+      <div class="section-body" data-section-body="ambient">
+        <div class="field-row"><label>Track / Volume</label>
+          <div class="field-triple">
+            <select id="ambient-audio-select"><option value="">None</option></select>
+            <input type="number" id="ambient-audio-volume" step="0.05" min="0" max="1" value="0.4">
+          </div>
+        </div>
+      </div>
+
+      <!-- Wave 6B (Priority E): Sequence authoring -- an ordered list of
+           existing actions (+ optional Delay), NOT a cinematic timeline. See
+           01-editor.js's own currentSequences/renderSequencePanel comments. -->
+      <div class="section-header" data-section="sequences"><span>Sequences</span><span class="section-caret">▾</span></div>
+      <div class="section-body" data-section-body="sequences">
+        <div class="field-row"><label>Sequence</label>
+          <select id="sequence-select"></select>
+        </div>
+        <div class="field-triple">
+          <button id="sequence-add-btn" class="toolbar-btn" style="margin-bottom:0">+ New</button>
+          <button id="sequence-rename-btn" class="toolbar-btn" style="margin-bottom:0">Rename</button>
+        </div>
+        <div class="field-triple" style="margin-top:6px">
+          <button id="sequence-duplicate-btn" class="toolbar-btn" style="margin-bottom:0">Duplicate</button>
+          <button id="sequence-delete-btn" class="danger-btn" style="margin-bottom:0">Delete</button>
+        </div>
+        <div id="sequence-step-list" style="margin-top:10px"></div>
+        <div class="field-triple" style="margin-top:6px">
+          <select id="sequence-add-step-type"></select>
+          <button id="sequence-add-step-btn" class="toolbar-btn" style="margin-bottom:0">+ Add Step</button>
+        </div>
+      </div>
+
+      <!-- Wave 7 (Priority F): Objectives -- a small structured Objective
+           system, not an RPG quest database. See currentObjectiveDefs/
+           renderObjectiveDefPanel in 01-editor.js. -->
+      <div class="section-header" data-section="objectives"><span>Objectives</span><span class="section-caret">▾</span></div>
+      <div class="section-body" data-section-body="objectives">
+        <div id="objective-def-list"></div>
+        <button id="objective-def-add-btn" class="toolbar-btn" style="margin-top:4px">+ Add Objective</button>
+        <div style="font-size:10.5px;color:#66759a;margin-top:3px">Activate/Complete/Fail Objective actions and Objective Is Active/Complete conditions reference these by id. An HUD Objective Text element with no text auto-shows the current active one.</div>
+      </div>
+
+      <!-- Wave 7 (Priority G): Scatter Placement -- rapid foliage/prop
+           authoring, output = ordinary placed objects. See performScatter
+           in 01-editor.js. -->
+      <div class="section-header" data-section="scatter"><span>Scatter (Wave 7)</span><span class="section-caret">▾</span></div>
+      <div class="section-body" data-section-body="scatter">
+        <div class="field-triple"><label style="font-size:10px;color:#66759a">Source</label>
+          <select id="scatter-prefab"><option value="">(none)</option></select>
+          <select id="scatter-asset"><option value="">(none)</option></select>
+        </div>
+        <div style="font-size:10px;color:#66759a;margin-top:2px">Prefab takes priority over Asset if both are set.</div>
+        <div class="field-triple" style="margin-top:6px">
+          <select id="scatter-region"><option value="circle">Circle</option><option value="box">Box</option></select>
+          <input type="number" id="scatter-center-x" placeholder="Center X" value="0">
+          <input type="number" id="scatter-center-z" placeholder="Center Z" value="0">
+        </div>
+        <div class="field-triple" style="margin-top:4px">
+          <input type="number" id="scatter-radius" placeholder="Radius (Circle)" value="10">
+          <input type="number" id="scatter-width" placeholder="Width (Box)" value="20">
+          <input type="number" id="scatter-depth" placeholder="Depth (Box)" value="20">
+        </div>
+        <div class="field-triple" style="margin-top:4px">
+          <input type="number" id="scatter-count" placeholder="Count" value="50">
+          <input type="number" id="scatter-spacing" placeholder="Min Spacing" value="1.5">
+          <input type="number" id="scatter-seed" placeholder="Seed" value="1">
+        </div>
+        <div class="field-triple" style="margin-top:4px">
+          <input type="number" id="scatter-scale-min" placeholder="Scale Min" value="0.8">
+          <input type="number" id="scatter-scale-max" placeholder="Scale Max" value="1.3">
+          <input type="number" id="scatter-max-slope" placeholder="Max Slope (deg, blank=off)">
+        </div>
+        <label style="display:flex;align-items:center;gap:6px;font-size:11px;color:#c7d3ea;margin-top:4px"><input type="checkbox" id="scatter-random-yrot" checked> Random Y Rotation</label>
+        <label style="display:flex;align-items:center;gap:6px;font-size:11px;color:#c7d3ea"><input type="checkbox" id="scatter-terrain-conform" checked> Terrain-Conform (place on terrain, first Terrain found)</label>
+        <button id="scatter-btn" class="toolbar-btn" style="margin-top:6px">Scatter</button>
+      </div>
+
+      <!-- Wave 9C: Scatter LAYERS -- a persisted, level-scoped authoring
+           definition (not a one-shot call like the tool above), plus a
+           real Paint/Erase brush over it. Configures the SAME
+           performScatter/scatterPlaceOne machinery; no second Scatter
+           implementation. -->
+      <div class="section-header" data-section="scatterlayers"><span>Scatter Layers (Wave 9C)</span><span class="section-caret">▾</span></div>
+      <div class="section-body" data-section-body="scatterlayers">
+        <div class="field-triple">
+          <select id="scatter-layer-select"></select>
+          <button id="scatter-layer-add-btn" class="toolbar-btn" style="margin-bottom:0">+ Add</button>
+          <button id="scatter-layer-delete-btn" class="toolbar-btn" style="margin-bottom:0">Delete</button>
+        </div>
+        <div id="scatter-layer-fields" style="margin-top:6px"></div>
+      </div>
+
+      <!-- Wave 7 (Priority H): Array/Duplicate Pattern Tool -- acts on the
+           currently-selected single object. See performArrayDuplicate. -->
+      <div class="section-header" data-section="array"><span>Array / Duplicate (Wave 7)</span><span class="section-caret">▾</span></div>
+      <div class="section-body" data-section-body="array">
+        <select id="array-mode"><option value="linear">Linear</option><option value="grid">Grid</option></select>
+        <div id="array-linear-fields" class="field-triple" style="margin-top:6px">
+          <select id="array-axis"><option value="x">X axis</option><option value="z">Z axis</option></select>
+          <input type="number" id="array-count" placeholder="Count" value="5">
+          <input type="number" id="array-spacing" placeholder="Spacing" value="2">
+        </div>
+        <div id="array-grid-fields" class="field-triple" style="margin-top:6px;display:none">
+          <input type="number" id="array-count-x" placeholder="Count X" value="3">
+          <input type="number" id="array-count-z" placeholder="Count Z" value="3">
+        </div>
+        <div id="array-grid-fields2" class="field-triple" style="margin-top:4px;display:none">
+          <input type="number" id="array-spacing-x" placeholder="Spacing X" value="2">
+          <input type="number" id="array-spacing-z" placeholder="Spacing Z" value="2">
+        </div>
+        <button id="array-btn" class="toolbar-btn" style="margin-top:6px">Duplicate Array (uses selected object)</button>
+      </div>
+    </div>
+
+    <!-- UI: game-interface authoring. -->
+    <div class="tab-panel" id="right-tab-ui" data-tab-panel="ui">
+      <div class="section-header" data-section="hud"><span>HUD Elements</span><span class="section-caret">▾</span></div>
+      <div class="section-body" data-section-body="hud">
+        <div id="hud-element-list"></div>
+        <select id="hud-add-kind">
+          <option value="label">Text Label</option>
+          <option value="counter">Counter Display</option>
+          <option value="timer">Timer Display</option>
+          <option value="health">Health Bar</option>
+          <option value="objective">Objective Text</option>
+          <option value="button">Button</option>
+          <option value="panel">Panel</option>
+        </select>
+        <button id="hud-add-btn" class="toolbar-btn">+ Add HUD Element</button>
+      </div>
+
+      <div class="section-header" data-section="startscreen"><span>Start Screen / Main Menu</span><span class="section-caret">▾</span></div>
+      <div class="section-body" data-section-body="startscreen">
+        <label style="display:flex;align-items:center;gap:6px;font-size:12px;color:#c7d3ea;margin-bottom:6px"><input type="checkbox" id="start-screen-enabled"> Show before Play begins</label>
+        <div class="field-row"><label>Title</label><input type="text" id="start-screen-title" placeholder="e.g. Relic Island"></div>
+        <div class="field-row"><label>Subtitle</label><input type="text" id="start-screen-subtitle" placeholder="e.g. Collect 3 relics and escape"></div>
+        <div class="field-row"><label>Button Text</label><input type="text" id="start-screen-button" placeholder="Start"></div>
+        <!-- Wave 6 (Priority E): the Start Screen doubles as the Main Menu
+             (Pause Menu's own "Main Menu" button already returns here) --
+             How To Play/Credits are optional sub-panels reachable from it,
+             alongside the same Controls panel Priority D already built. -->
+        <div class="field-row"><label>How To Play</label><textarea id="start-screen-howtoplay" rows="3" placeholder="Optional -- shown in a How To Play panel from the Main Menu"></textarea></div>
+        <div class="field-row"><label>Credits</label><textarea id="start-screen-credits" rows="3" placeholder="Optional -- shown in a Credits panel from the Main Menu"></textarea></div>
+        <div class="field-row"><label>Controls Hint</label><textarea id="start-screen-controls-hint" rows="2" placeholder="Optional -- shown briefly on-screen when Play starts. Blank shows nothing."></textarea></div>
+      </div>
+
+      <div class="section-header" data-section="winlose"><span>Win / Lose Screen</span><span class="section-caret">▾</span></div>
+      <div class="section-body" data-section-body="winlose">
+        <div class="field-row"><label>Win Title</label><input type="text" id="win-title" placeholder="🏆 You Win!"></div>
+        <div class="field-row"><label>Win Message</label><input type="text" id="win-message" placeholder="Optional"></div>
+        <div class="field-row"><label>Win Sound</label><select id="win-audio-asset"></select></div>
+        <div class="field-row"><label>Lose Title</label><input type="text" id="lose-title" placeholder="💀 Game Over"></div>
+        <div class="field-row"><label>Lose Message</label><input type="text" id="lose-message" placeholder="Optional"></div>
+        <div class="field-row"><label>Lose Sound</label><select id="lose-audio-asset"></select></div>
+      </div>
+    </div>
+
+    <!-- Project: project-wide operations only. -->
+    <div class="tab-panel" id="right-tab-project" data-tab-panel="project">
+      <div class="section-header" data-section="save"><span>Save</span><span class="section-caret">▾</span></div>
+      <div class="section-body" data-section-body="save">
+        <div class="field-row"><label>Project Name</label>
+          <input type="text" id="project-name-input" placeholder="Project name" value="editor-project">
+        </div>
+        <button id="save-alt-btn" class="toolbar-btn" style="background:#1f8f79;color:#fff;border:none" title="Same as the top bar's Save">Save Project</button>
+        <div class="field-row" style="margin-top:8px"><label>Saved Projects</label>
+          <select id="project-list-select"></select>
+        </div>
+        <div class="field-triple">
+          <button id="load-btn" class="toolbar-btn" style="margin-bottom:0">Load Selected</button>
+          <button id="delete-project-btn" style="margin-bottom:0">Delete Selected</button>
+        </div>
+      </div>
+
+      <!-- Wave 8 (Priority D): Item Definitions -- a bounded project-level
+           registry, not a full RPG database. See currentItemDefs in
+           01-editor.js. -->
+      <div class="section-header" data-section="items"><span>Items</span><span class="section-caret">▾</span></div>
+      <div class="section-body" data-section-body="items">
+        <div id="item-def-list"></div>
+        <button id="item-def-add-btn" class="toolbar-btn" style="margin-top:4px">+ Add Item</button>
+        <div style="font-size:10.5px;color:#66759a;margin-top:3px">Give/Remove/Use Item and the Inventory UI all reference these by stable id. Equip Slot works if a matching Equipment Item (Player tab) also exists for the visual/weapon.</div>
+      </div>
+
+      <div class="section-header" data-section="metadata"><span>Metadata</span><span class="section-caret">▾</span></div>
+      <div class="section-body" data-section-body="metadata">
+        <div class="field-row"><label>Title</label><input type="text" id="meta-title-input" placeholder="e.g. Relic Island"></div>
+        <div class="field-row"><label>Author</label><input type="text" id="meta-author-input" placeholder="Your name"></div>
+        <div class="field-row"><label>Version</label><input type="text" id="meta-version-input" placeholder="1.0.0"></div>
+        <div class="field-row"><label>Description</label><textarea id="meta-description-input" placeholder="Optional, for your own record-keeping" rows="2"></textarea></div>
+      </div>
+
+      <div class="section-header" data-section="inputactions"><span>Input Actions</span><span class="section-caret">▾</span></div>
+      <div class="section-body" data-section-body="inputactions">
+        <p style="font-size:11px;color:#66759a;margin:0 0 8px">Rebind Interact/Attack for this project. Movement and Jump/Boost stay fixed.</p>
+        <div id="input-action-list"></div>
+      </div>
+
+      <div class="section-header" data-section="importexport"><span>Import / Export</span><span class="section-caret">▾</span></div>
+      <div class="section-body" data-section-body="importexport">
+        <button id="import-project-btn" class="toolbar-btn">Import Project JSON</button>
+        <input type="file" id="import-project-input" accept=".json" style="display:none">
+        <p style="font-size:10px;color:#66759a;margin:10px 0 4px;text-transform:uppercase;letter-spacing:0.06em">Export Tiers</p>
+        <button id="export-btn" class="toolbar-btn" title="The raw project data -- re-importable, not playable on its own">Export Project (.json)</button>
+        <button id="export-standalone-alt-btn" class="toolbar-btn" style="background:#1f8f79;color:#fff;border:none" title="Same as the top bar's Export Editable Game -- a single .html anyone can open and play, with the full editor one click away via 'Edit This Game'">Export Editable Game (.html)</button>
+        <button id="export-playable-btn" class="toolbar-btn" title="A single .html that plays exactly the same, but with no way back into the editor -- for sharing the finished game, not the tool it was built with">Export Playable Game (.html)</button>
+        <p id="export-size-warning" style="display:none;font-size:11px;color:#e08a63;margin:6px 0 0"></p>
+      </div>
+    </div>
+  </div>
+  <div id="narrow-scrim"></div>
+  </div>
+</div>
+<div id="graph-modal">
+  <div id="graph-toolbar">
+    <span class="graph-toolbar-label">Add:</span>
+    <input type="text" id="graph-node-search" placeholder="Filter...">
+    <span id="graph-toolbar-buttons"></span>
+    <span class="graph-toolbar-label" style="margin-left:10px">View:</span>
+    <button id="graph-fit-btn" title="Fit every node into view">⊡ Fit</button>
+    <button id="graph-reset-view-btn" title="Reset pan/zoom to default">⟲ Reset View</button>
+    <span id="graph-zoom-label" style="color:#8592a8;font-size:11px;min-width:38px;text-align:center">100%</span>
+    <button id="graph-cancel-btn">Cancel</button>
+    <button id="graph-save-btn">Save Graph</button>
+  </div>
+  <div id="graph-canvas-wrap">
+    <svg id="graph-canvas-svg"></svg>
+    <div id="graph-canvas-nodes"></div>
+    <div id="graph-hint">Click a port, then click another port to connect them (green = sequence, orange = condition). Drag a node's header to move it. Drag empty canvas to pan, scroll to zoom.</div>
+  </div>
+</div>
+<div id="dialogue-editor-modal">
+  <div id="dialogue-editor-toolbar">
+    <span class="graph-toolbar-label">Branching Dialogue</span>
+    <div class="tb-spacer"></div>
+    <label style="display:flex;align-items:center;gap:6px;font-size:12px;color:#c7d3ea">Start at
+      <select id="dialogue-start-entry" style="width:auto"></select>
+    </label>
+    <button id="dialogue-editor-cancel-btn">Cancel</button>
+    <button id="dialogue-editor-save-btn">Save Dialogue</button>
+  </div>
+  <div id="dialogue-editor-body">
+    <div id="dialogue-entry-list"></div>
+    <button id="dialogue-add-entry-btn" class="toolbar-btn">+ Add Entry</button>
+  </div>
+</div>
+<div id="animation-editor-modal">
+  <div id="animation-editor-toolbar">
+    <span class="graph-toolbar-label">Animation Clip</span>
+    <input type="text" id="anim-clip-name" placeholder="Clip name" style="width:140px">
+    <label style="display:flex;align-items:center;gap:6px;font-size:12px;color:#c7d3ea">Duration (s)
+      <input type="number" id="anim-clip-duration" step="0.1" min="0.1" style="width:70px">
+    </label>
+    <label style="display:flex;align-items:center;gap:6px;font-size:12px;color:#c7d3ea">Playback
+      <select id="anim-clip-loop" style="width:auto">
+        <option value="once">Once</option>
+        <option value="loop">Loop</option>
+        <option value="pingpong">Ping-Pong</option>
+      </select>
+    </label>
+    <div class="tb-spacer"></div>
+    <button id="anim-preview-btn">▶ Preview</button>
+    <button id="animation-editor-cancel-btn">Cancel</button>
+    <button id="animation-editor-save-btn">Save Clip</button>
+  </div>
+  <div id="animation-editor-body">
+    <div id="anim-track-list"></div>
+  </div>
+</div>
+<div id="command-palette-overlay">
+  <div id="command-palette-box">
+    <input type="text" id="command-palette-input" placeholder="Type a command… (Esc to close)" autocomplete="off">
+    <div id="command-palette-list"></div>
+  </div>
+</div>
+<script>
+// Dev-time cache-busting -- editor/index.html is the developer's own
+// live-editing preview (every shipped export, standalone or Crate Run's
+// own delivery-run.html, inlines its JS directly and never hits this file
+// at all), so there's no downstream cost to always fetching the current
+// disk content here. Plain http.server (used for local preview) sets long
+// enough implicit freshness that repeated edits during one session can
+// otherwise silently keep serving an old cached copy of a script with no
+// visible error -- same root cause already fixed for src/01-editor.js
+// below, applied here too (Wave 6, Priority C) after it was caught live:
+// dist/opus-engine.js itself was found silently stale mid-session,
+// serving a build from before several engine-side edits despite `node
+// build/build.js` having already rebuilt it on disk -- the editor script
+// was cache-busted, the ENGINE bundle it depends on wasn't.
+document.write(`<script src="../dist/opus-engine.js?bust=${Date.now()}"><\/script>`);
+document.write(`<script src="../build/export-template.js?bust=${Date.now()}"><\/script>`);
+document.write(`<script src="src/01-editor.js?bust=${Date.now()}"><\/script>`);
+</script>
+</body>
+</html>

@@ -1,0 +1,1044 @@
+[
+  {
+    "id": "foglight",
+    "phase": "after-a",
+    "url": "http://localhost:8837/dist/games/foglight.html",
+    "startedAt": "2026-09-08T00:08:25.038Z",
+    "seconds": 26,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 3120
+      },
+      {
+        "key": "d",
+        "milliseconds": 2600
+      },
+      {
+        "key": "w",
+        "milliseconds": 3900
+      },
+      {
+        "key": "a",
+        "milliseconds": 2600
+      },
+      {
+        "key": "s",
+        "milliseconds": 2080
+      },
+      {
+        "key": "w",
+        "milliseconds": 2600
+      },
+      {
+        "key": "d",
+        "milliseconds": 1300
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Foglight",
+        "text": "Light the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 0.1,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 1.6500000000000001,
+            "z": 0
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {
+          "objective1": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Foglight",
+        "text": "Light the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 1.6000000000000003,
+        "player": {
+          "position": {
+            "x": 3.6939354744395505,
+            "y": 3.0500000000000003,
+            "z": 0.5242983246727618
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {
+          "objective1": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Foglight",
+        "text": "Light the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 4.717499999999999,
+        "player": {
+          "position": {
+            "x": 1.435338107800049,
+            "y": -2.937529090384965,
+            "z": 3.5266638710781626
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {
+          "objective1": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Foglight",
+      "text": "Foglight\n\nCarry light through a mist-filled vale. Awaken three ancient beacons, evade the antlered guardian, and open the sanctuary.\n\nBegin journey\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+      "state": {},
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.85,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {
+        "objective1": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:09:14.314Z"
+  },
+  {
+    "id": "signal-relay",
+    "phase": "after-a",
+    "url": "http://localhost:8837/dist/games/signal-relay.html",
+    "startedAt": "2026-09-08T00:08:25.284Z",
+    "seconds": 26,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 3120
+      },
+      {
+        "key": "d",
+        "milliseconds": 2600
+      },
+      {
+        "key": "w",
+        "milliseconds": 3900
+      },
+      {
+        "key": "a",
+        "milliseconds": 2600
+      },
+      {
+        "key": "s",
+        "milliseconds": 2080
+      },
+      {
+        "key": "w",
+        "milliseconds": 2600
+      },
+      {
+        "key": "d",
+        "milliseconds": 1300
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Signal Relay",
+        "text": "Restore power at all three relay consoles\nWeapon 8/24\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 0.1,
+        "player": {
+          "position": {
+            "x": -30,
+            "y": 1.05,
+            "z": 0
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_restore_power": "active"
+        },
+        "inventory": {
+          "Relay sidearm": 1
+        },
+        "helpers": []
+      },
+      {
+        "title": "Signal Relay",
+        "text": "Restore power at all three relay consoles\nWeapon 7/24\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 1.7162999999523167,
+        "player": {
+          "position": {
+            "x": -24.29986771814745,
+            "y": 1.9500000000000002,
+            "z": -1.799867906315094
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_restore_power": "active"
+        },
+        "inventory": {
+          "Relay sidearm": 1
+        },
+        "helpers": []
+      },
+      {
+        "title": "Signal Relay",
+        "text": "Restore power at all three relay consoles\nWeapon 8/22\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 4.733599999904632,
+        "player": {
+          "position": {
+            "x": -22.176692014304002,
+            "y": 0.55,
+            "z": -2.1896146035924193
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_restore_power": "active"
+        },
+        "inventory": {
+          "Relay sidearm": 1
+        },
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Signal Relay",
+      "text": "Signal Relay\n\nRestore three relay consoles in a silent communications station. Slip past patrol drones or use your sidearm, then reach the green extraction bay.\n\nBegin mission\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "state": {},
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": -30,
+          "y": 1.25,
+          "z": 0
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nRestore power at all three relay consoles\nWeapon 8/22\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:09:17.311Z"
+  },
+  {
+    "id": "arsenal-run",
+    "phase": "after-a",
+    "url": "http://localhost:8837/dist/games/arsenal-run.html",
+    "startedAt": "2026-09-08T00:09:15.816Z",
+    "seconds": 26,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 3120
+      },
+      {
+        "key": "d",
+        "milliseconds": 2600
+      },
+      {
+        "key": "w",
+        "milliseconds": 3900
+      },
+      {
+        "key": "a",
+        "milliseconds": 2600
+      },
+      {
+        "key": "s",
+        "milliseconds": 2080
+      },
+      {
+        "key": "w",
+        "milliseconds": 2600
+      },
+      {
+        "key": "d",
+        "milliseconds": 1300
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Arsenal Run",
+        "text": "Sidearm 10/30\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+        "state": {
+          "kills": 0,
+          "maxHealth": 100,
+          "health": 92
+        },
+        "playtime": 0.6038999999761582,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 0.55,
+            "z": 13
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_clear": "active"
+        },
+        "inventory": {
+          "Sidearm": 1,
+          "Rifle": 1
+        },
+        "helpers": []
+      },
+      {
+        "title": "Arsenal Run",
+        "text": "Sidearm 9/30\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+        "state": {
+          "kills": 0,
+          "maxHealth": 100,
+          "health": 84
+        },
+        "playtime": 4.017199999928477,
+        "player": {
+          "position": {
+            "x": -3.249989107667782,
+            "y": 0.55,
+            "z": -2.244058511379866
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_clear": "active"
+        },
+        "inventory": {
+          "Sidearm": 1,
+          "Rifle": 1
+        },
+        "helpers": []
+      },
+      {
+        "title": "Arsenal Run",
+        "text": "Sidearm 10/28\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+        "state": {
+          "kills": 0,
+          "maxHealth": 100,
+          "health": 76
+        },
+        "playtime": 8.017199999928463,
+        "player": {
+          "position": {
+            "x": -3.0889259783524583,
+            "y": 0.55,
+            "z": -4.8224722867777885
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_clear": "active"
+        },
+        "inventory": {
+          "Sidearm": 1,
+          "Rifle": 1
+        },
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Arsenal Run",
+      "text": "Arsenal Run\n\nA compact arena assault. Use cover, switch between sidearm and rifle, defeat three sentries and reach extraction.\n\nBegin mission\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+      "state": {
+        "kills": 0
+      },
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.25,
+          "z": 13
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_clear": "active"
+      },
+      "inventory": {
+        "Sidearm": 1,
+        "Rifle": 1
+      },
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nSidearm 10/28\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:09:57.054Z"
+  },
+  {
+    "id": "silent-sector",
+    "phase": "after-a",
+    "url": "http://localhost:8837/dist/games/silent-sector.html",
+    "startedAt": "2026-09-08T00:09:17.756Z",
+    "seconds": 26,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 3120
+      },
+      {
+        "key": "d",
+        "milliseconds": 2600
+      },
+      {
+        "key": "w",
+        "milliseconds": 3900
+      },
+      {
+        "key": "a",
+        "milliseconds": 2600
+      },
+      {
+        "key": "s",
+        "milliseconds": 2080
+      },
+      {
+        "key": "w",
+        "milliseconds": 2600
+      },
+      {
+        "key": "d",
+        "milliseconds": 1300
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Silent Sector",
+        "text": "Reach the Security Wing\nPress F to interact\nC crouch • Use cover • Secure the Data Core",
+        "state": {},
+        "playtime": 0.2,
+        "player": {
+          "position": {
+            "x": -29,
+            "y": 1.25,
+            "z": -5.5
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_reach_wing": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Silent Sector",
+        "text": "Reach the Security Wing\nPress F to interact\nC crouch • Use cover • Secure the Data Core",
+        "state": {},
+        "playtime": 2.8172999999523176,
+        "player": {
+          "position": {
+            "x": -29,
+            "y": 1.25,
+            "z": -5.5
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_reach_wing": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Silent Sector",
+        "text": "Reach the Security Wing\nPress F to interact\nC crouch • Use cover • Secure the Data Core",
+        "state": {},
+        "playtime": 6.6586999999284675,
+        "player": {
+          "position": {
+            "x": -29,
+            "y": 0.55,
+            "z": -5.5
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_reach_wing": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Silent Sector",
+      "text": "Silent Sector\n\nA short stealth infiltration through a listening security station. Break sightlines, secure the Data Core and escape unseen.\n\nBegin mission\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nC crouch • Use cover • Secure the Data Core",
+      "state": {},
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_reach_wing": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nReach the Security Wing\nPress F to interact\nC crouch • Use cover • Secure the Data Core",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:10:00.784Z"
+  },
+  {
+    "id": "power-grid",
+    "phase": "after-a",
+    "url": "http://localhost:8837/dist/games/power-grid.html",
+    "startedAt": "2026-09-08T00:09:58.229Z",
+    "seconds": 26,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 3120
+      },
+      {
+        "key": "d",
+        "milliseconds": 2600
+      },
+      {
+        "key": "w",
+        "milliseconds": 3900
+      },
+      {
+        "key": "a",
+        "milliseconds": 2600
+      },
+      {
+        "key": "s",
+        "milliseconds": 2080
+      },
+      {
+        "key": "w",
+        "milliseconds": 2600
+      },
+      {
+        "key": "d",
+        "milliseconds": 1300
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Power Grid",
+        "text": "Restore Emergency Power\nF interact / carry · G drop\nPress F to interact\nF carry / interact • Cell → generator → two coolant consoles",
+        "state": {},
+        "playtime": 0.5,
+        "player": {
+          "position": {
+            "x": -17,
+            "y": 0.55,
+            "z": 0
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_find_cell": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Power Grid",
+        "text": "Restore Emergency Power\nF interact / carry · G drop\nPress F to interact\nF carry / interact • Cell → generator → two coolant consoles",
+        "state": {},
+        "playtime": 4.100000000000001,
+        "player": {
+          "position": {
+            "x": -2.4920299316364996,
+            "y": 0.55,
+            "z": -4.199994921796715
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_find_cell": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Power Grid",
+        "text": "Restore Emergency Power\nF interact / carry · G drop\nPress F to interact\nF carry / interact • Cell → generator → two coolant consoles",
+        "state": {},
+        "playtime": 9.212200000047668,
+        "player": {
+          "position": {
+            "x": 0.0922128691527605,
+            "y": 0.55,
+            "z": -2.430344056388495
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_find_cell": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Power Grid",
+      "text": "Power Grid\n\nBring an abandoned generator hall back online. Carry the power cell to its socket, activate two coolant consoles and open the emergency exit.\n\nBegin mission\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nF carry / interact • Cell → generator → two coolant consoles",
+      "state": {},
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": -17,
+          "y": 1.25,
+          "z": 0
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_find_cell": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nRestore Emergency Power\nF interact / carry · G drop\nPress F to interact\nF carry / interact • Cell → generator → two coolant consoles",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:10:37.841Z"
+  },
+  {
+    "id": "relic-frontier",
+    "phase": "after-a",
+    "url": "http://localhost:8837/dist/games/relic-frontier.html",
+    "startedAt": "2026-09-08T00:10:01.312Z",
+    "seconds": 26,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 3120
+      },
+      {
+        "key": "d",
+        "milliseconds": 2600
+      },
+      {
+        "key": "w",
+        "milliseconds": 3900
+      },
+      {
+        "key": "a",
+        "milliseconds": 2600
+      },
+      {
+        "key": "s",
+        "milliseconds": 2080
+      },
+      {
+        "key": "w",
+        "milliseconds": 2600
+      },
+      {
+        "key": "d",
+        "milliseconds": 1300
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Relic Frontier",
+        "text": "A relic glows atop the ridge...\nReach the relic on the ridge!\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact\nFind the weapon • Defeat the guardian • Claim the ridge relic",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 0.30000000000000004,
+        "player": {
+          "position": {
+            "x": -8,
+            "y": 0.5588811713085078,
+            "z": -8
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_find": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Relic Frontier",
+        "text": "A relic glows atop the ridge...\nReach the relic on the ridge!\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact\nFind the weapon • Defeat the guardian • Claim the ridge relic",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 3.5166999999284765,
+        "player": {
+          "position": {
+            "x": -6.478286002601662,
+            "y": 0.21061518342660834,
+            "z": -2.29949861143567
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_find": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Relic Frontier",
+        "text": "A relic glows atop the ridge...\nReach the relic on the ridge!\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact\nFind the weapon • Defeat the guardian • Claim the ridge relic",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 8.09659999990462,
+        "player": {
+          "position": {
+            "x": -8.146435813896307,
+            "y": 0.47979626606912484,
+            "z": -1.0340835736272567
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_find": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Relic Frontier",
+      "text": "Relic Frontier\n\nExplore an overgrown frontier outpost. Recover a weapon, defeat the stone guardian, claim the ridge relic and cross the sealed border gate.\n\nBegin journey\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nFind the weapon • Defeat the guardian • Claim the ridge relic",
+      "state": {},
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": -8,
+          "y": 0.5588811713085078,
+          "z": -8
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_find": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "A relic glows atop the ridge...\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nReach the relic on the ridge!\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact\nFind the weapon • Defeat the guardian • Claim the ridge relic",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:10:54.617Z"
+  },
+  {
+    "id": "relic-island",
+    "phase": "after-a",
+    "url": "http://localhost:8837/dist/games/relic-island.html",
+    "startedAt": "2026-09-08T00:10:55.090Z",
+    "seconds": 26,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 3120
+      },
+      {
+        "key": "d",
+        "milliseconds": 2600
+      },
+      {
+        "key": "w",
+        "milliseconds": 3900
+      },
+      {
+        "key": "a",
+        "milliseconds": 2600
+      },
+      {
+        "key": "s",
+        "milliseconds": 2080
+      },
+      {
+        "key": "w",
+        "milliseconds": 2600
+      },
+      {
+        "key": "d",
+        "milliseconds": 1300
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Relic Island",
+        "text": "Find 3 relics, unlock the gate, reach the shrine\nRelics: 0/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 0.6,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 1.9244689090810891,
+            "z": 0
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Relic Island",
+        "text": "Find 3 relics, unlock the gate, reach the shrine\nRelics: 0/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 5.851599999904629,
+        "player": {
+          "position": {
+            "x": -1.078499614364373,
+            "y": 1.9244689090810891,
+            "z": 0.24148904771155155
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Relic Island",
+        "text": "Find 3 relics, unlock the gate, reach the shrine\nRelics: 0/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 11.870700000047659,
+        "player": {
+          "position": {
+            "x": -8.3978592692027,
+            "y": 1.9244689090810891,
+            "z": 3.2233755909367
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Relic Island",
+      "text": "Find 3 relics, unlock the gate, reach the shrine\nRelic Island\n\nA small island treasure hunt. Recover three golden relics and the gate key, then awaken the hilltop shrine.\n\nBegin journey\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nThree relics • One key • F use the gate lever",
+      "state": {},
+      "playtime": 0,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.9244689090810891,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "Find 3 relics, unlock the gate, reach the shrine\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nRelics: 0/3\nPress F to interact\nThree relics • One key • F use the gate lever",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:11:39.913Z"
+  }
+]

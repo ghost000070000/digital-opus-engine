@@ -1,0 +1,95 @@
+{
+  "games": [
+    {
+      "id": "forest-range",
+      "screenshots": [
+        "rehabilitation-evidence/final-review/forest-range/opening.png"
+      ],
+      "screenshotSelectionReason": "Fresh standalone gameplay opening after authored controls-HUD copy correction; no image editing."
+    },
+    {
+      "id": "iron-arena",
+      "screenshots": [
+        "rehabilitation-evidence/final-review/iron-arena/opening.png"
+      ],
+      "screenshotSelectionReason": "Fresh standalone gameplay opening after authored controls-HUD copy correction; no image editing."
+    },
+    {
+      "id": "dungeon-descent",
+      "screenshots": [
+        "rehabilitation-evidence/final-review/dungeon-descent/opening.png"
+      ],
+      "screenshotSelectionReason": "Fresh standalone gameplay opening after authored controls-HUD copy correction; no image editing."
+    },
+    {
+      "id": "npc-puzzle-adventure",
+      "screenshots": [
+        "rehabilitation-evidence/final-review/npc-puzzle-adventure/opening.png"
+      ],
+      "screenshotSelectionReason": "Fresh standalone gameplay opening after authored controls-HUD copy correction; no image editing."
+    },
+    {
+      "id": "opus-arena",
+      "screenshots": [
+        "rehabilitation-evidence/final-review/opus-arena/opening.png"
+      ],
+      "screenshotSelectionReason": "Fresh standalone gameplay opening after authored controls-HUD copy correction; no image editing."
+    },
+    {
+      "id": "relic-runner-2",
+      "screenshots": [
+        "rehabilitation-evidence/final-review/relic-runner-2/opening.png"
+      ],
+      "screenshotSelectionReason": "Fresh standalone gameplay opening after authored controls-HUD copy correction; no image editing."
+    },
+    {
+      "id": "signal-zero",
+      "screenshots": [
+        "rehabilitation-evidence/final-review/signal-zero/opening.png"
+      ],
+      "screenshotSelectionReason": "Fresh standalone gameplay opening after authored controls-HUD copy correction; no image editing."
+    },
+    {
+      "id": "textured-adventure",
+      "screenshots": [
+        "rehabilitation-evidence/final-review/textured-adventure/opening.png"
+      ],
+      "screenshotSelectionReason": "Fresh standalone gameplay opening after authored controls-HUD copy correction; no image editing."
+    },
+    {
+      "id": "valley-run",
+      "screenshots": [
+        "rehabilitation-evidence/final-review/valley-run/opening.png"
+      ],
+      "screenshotSelectionReason": "Fresh standalone gameplay opening after authored controls-HUD copy correction; no image editing."
+    },
+    {
+      "id": "painted-wilds",
+      "screenshots": [
+        "rehabilitation-evidence/final-review/painted-wilds/opening.png"
+      ],
+      "screenshotSelectionReason": "Fresh standalone gameplay opening after authored controls-HUD copy correction; no image editing."
+    },
+    {
+      "id": "blacksite",
+      "screenshots": [
+        "rehabilitation-evidence/final-review/blacksite/opening.png"
+      ],
+      "screenshotSelectionReason": "Fresh standalone gameplay opening after authored controls-HUD copy correction; no image editing."
+    },
+    {
+      "id": "skyway-trial",
+      "screenshots": [
+        "rehabilitation-evidence/final-review/skyway-trial/opening.png"
+      ],
+      "screenshotSelectionReason": "Fresh standalone gameplay opening after authored controls-HUD copy correction; no image editing."
+    },
+    {
+      "id": "temple-switch-puzzle",
+      "screenshots": [
+        "rehabilitation-evidence/final-review/temple-switch-puzzle/opening.png"
+      ],
+      "screenshotSelectionReason": "Fresh standalone gameplay opening after authored controls-HUD copy correction; no image editing."
+    }
+  ]
+}

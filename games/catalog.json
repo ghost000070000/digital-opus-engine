@@ -1,0 +1,1121 @@
+{
+  "version": 1,
+  "games": [
+    {
+      "id": "forest-range",
+      "title": "Forest Range",
+      "file": "forest-range.json",
+      "category": "featured",
+      "featured": true,
+      "genre": "Third-Person Exploration",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "A woodland trail through three groves. Follow the amber waystones to the old lookout.",
+      "tags": [
+        "exploration",
+        "scatter",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Woodland exploration and reusable vegetation",
+      "qualityTier": "featured",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 4,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 3,
+        "presentation": 4,
+        "uniqueness": 4,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.210Z",
+        "notes": "Deep redesign: Opened view corridors, added a memorable grove and staged lookout deck. Camera: Cleared the main camera corridor while retaining side density. Gameplay: Route now alternates enclosure and reveal.",
+        "remainingGaps": "Canopy still occludes optional side views"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/forest-range/opening.png",
+        "gameplay": "public-showcase-review/forest-range/gameplay.png",
+        "highlight": "public-showcase-review/forest-range/highlight.png"
+      },
+      "screenshot": "public-showcase-review/forest-range/gameplay.png"
+    },
+    {
+      "id": "arsenal-run",
+      "title": "Arsenal Run",
+      "file": "arsenal-run.json",
+      "category": "featured",
+      "featured": true,
+      "genre": "First-Person Action",
+      "controller": "First-Person",
+      "estimatedMinutes": 2,
+      "description": "A compact arena assault. Use cover, switch between sidearm and rifle, defeat three sentries and reach extraction.",
+      "tags": [
+        "action",
+        "shooter",
+        "first-person"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Weapon switching, reload and compact arena combat",
+      "qualityTier": "featured",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 4,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 4,
+        "presentation": 4,
+        "uniqueness": 3,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.209Z",
+        "notes": "Deep redesign: Kept the compact footprint but added raised side lanes, stairs, layered cover, arrival portals and extraction wall. Camera: Lowered the central obstruction and opened the forward combat lane. Gameplay: Enemy arrival and extraction now have explicit destinations.",
+        "remainingGaps": "Arcade-sized encounter remains brief"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/arsenal-run/opening.png",
+        "gameplay": "public-showcase-review/arsenal-run/gameplay.png",
+        "highlight": "public-showcase-review/arsenal-run/highlight.png"
+      },
+      "screenshot": "public-showcase-review/arsenal-run/gameplay.png"
+    },
+    {
+      "id": "power-grid",
+      "title": "Power Grid",
+      "file": "power-grid.json",
+      "category": "featured",
+      "featured": true,
+      "genre": "First-Person Puzzle/Objective",
+      "controller": "First-Person",
+      "estimatedMinutes": 2,
+      "description": "Bring an abandoned generator hall back online. Carry the power cell to its socket, activate two coolant consoles and open the emergency exit.",
+      "tags": [
+        "puzzle",
+        "objective",
+        "first-person"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Carry interactions and a multi-stage machinery puzzle",
+      "qualityTier": "featured",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 4,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 4,
+        "presentation": 4,
+        "uniqueness": 4,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.210Z",
+        "notes": "Deep redesign: Recentered a generator court, split coolant A/B into separate wings and cleared the power-cell route. Camera: Moved the blocking machinery off-axis and framed the generator. Gameplay: OFFLINE to ONLINE progression is centered on the generator.",
+        "remainingGaps": "Compact puzzle footprint limits long-form exploration"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/power-grid/opening.png",
+        "gameplay": "public-showcase-review/power-grid/gameplay.png",
+        "highlight": "public-showcase-review/power-grid/highlight.png"
+      },
+      "screenshot": "public-showcase-review/power-grid/gameplay.png"
+    },
+    {
+      "id": "moving-temple",
+      "title": "Moving Temple",
+      "file": "moving-temple.json",
+      "category": "featured",
+      "featured": true,
+      "genre": "Third-Person Experiment",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "Ride the crossing slab, activate the amber lift, and jump to the high shrine.",
+      "tags": [
+        "technical"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Moving platforms, elevators and player carry",
+      "qualityTier": "featured",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 4,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 3,
+        "presentation": 4,
+        "uniqueness": 4,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.210Z",
+        "notes": "Deep redesign: Replaced dominant forms with lower and upper courts, temple piers and a summit shrine. Camera: Pulled major masses away from spawn and opened the ascent vista. Gameplay: Moving slab and lift now connect distinct architectural stages.",
+        "remainingGaps": "Distant scenery remains low-poly"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/moving-temple/opening.png",
+        "gameplay": "public-showcase-review/moving-temple/gameplay.png",
+        "highlight": "public-showcase-review/moving-temple/highlight.png"
+      },
+      "screenshot": "public-showcase-review/moving-temple/gameplay.png"
+    },
+    {
+      "id": "foglight",
+      "title": "Foglight",
+      "file": "foglight.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Adventure",
+      "controller": "Third-Person",
+      "estimatedMinutes": 2,
+      "description": "Carry light through a mist-filled vale. Awaken three ancient beacons, evade the antlered guardian, and open the sanctuary.",
+      "tags": [
+        "exploration",
+        "platforming",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Third-person beacon, key and checkpoint adventure",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 4,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 4,
+        "presentation": 4,
+        "uniqueness": 4,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.209Z",
+        "notes": "Deep redesign: Bent and widened the causeway into three distinct courts, a guardian clearing and sanctuary vista. Camera: Pulled the arch away from spawn and opened the sanctuary sightline. Gameplay: Guardian encounter now occurs in its own readable clearing.",
+        "remainingGaps": "Low-poly forest edges remain visible"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/foglight/opening.png",
+        "gameplay": "public-showcase-review/foglight/gameplay.png"
+      },
+      "screenshot": "public-showcase-review/foglight/gameplay.png"
+    },
+    {
+      "id": "relic-frontier",
+      "title": "Relic Frontier",
+      "file": "relic-frontier.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Adventure",
+      "controller": "Third-Person",
+      "estimatedMinutes": 2,
+      "description": "Explore an overgrown frontier outpost. Recover a weapon, defeat the stone guardian, claim the ridge relic and cross the sealed border gate.",
+      "tags": [
+        "adventure",
+        "exploration",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Third-person equipment, state-machine guardian combat and a raised relic route",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 4,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 3,
+        "presentation": 4,
+        "uniqueness": 3,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.210Z",
+        "notes": "Deep redesign: Cut a sunken combat court, layered cover, ascent terraces and a gate destination. Camera: Added foreground cover and a clearer elevated relic sightline. Gameplay: Combat resolves before a staged ascent and extraction.",
+        "remainingGaps": "Combat enemy variety is still limited"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/relic-frontier/opening.png",
+        "gameplay": "public-showcase-review/relic-frontier/gameplay.png"
+      },
+      "screenshot": "public-showcase-review/relic-frontier/gameplay.png"
+    },
+    {
+      "id": "relic-island",
+      "title": "Relic Island",
+      "file": "relic-island.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Adventure",
+      "controller": "Third-Person",
+      "estimatedMinutes": 2,
+      "description": "A small island treasure hunt. Recover three golden relics and the gate key, then awaken the hilltop shrine.",
+      "tags": [
+        "adventure",
+        "exploration",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Terrain exploration, relic collection and a keyed shrine",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 3,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 3,
+        "presentation": 3,
+        "uniqueness": 3,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.210Z",
+        "notes": "Deep redesign: Raised three distinct relic terraces, cut a lava channel and strengthened the shrine plateau. Camera: Used terrain ridges to frame successive relic destinations. Gameplay: Hazard crossing now separates collection from finale.",
+        "remainingGaps": "Terrain remains intentionally low-poly"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/relic-island/opening.png",
+        "gameplay": "public-showcase-review/relic-island/gameplay.png"
+      },
+      "screenshot": "public-showcase-review/relic-island/gameplay.png"
+    },
+    {
+      "id": "npc-puzzle-adventure",
+      "title": "The Sanctum Key",
+      "file": "npc-puzzle-adventure.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Dialogue / Inventory Puzzle",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "An old sailor carries the key to a forgotten sanctuary. Speak with him, then unlock the northern door.",
+      "tags": [
+        "puzzle",
+        "dialogue",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Branching dialogue, inventory and level transitions",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 3,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 3,
+        "presentation": 3,
+        "uniqueness": 3,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.210Z",
+        "notes": "Deep redesign: Built a village lane, corner buildings, staged NPC space, sanctum arch and reveal. Camera: Aligned the approach camera down the village route. Gameplay: Dialogue, key and gate beats now occupy distinct spaces.",
+        "remainingGaps": "NPC animation remains minimal"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/npc-puzzle-adventure/opening.png",
+        "gameplay": "public-showcase-review/npc-puzzle-adventure/gameplay.png"
+      },
+      "screenshot": "public-showcase-review/npc-puzzle-adventure/gameplay.png"
+    },
+    {
+      "id": "relic-runner-2",
+      "title": "Relic Runner 2",
+      "file": "relic-runner-2.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Adventure",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "Reach the amber ridge relic. Use the low ramp, keep clear of the guardian, and claim the high ground.",
+      "tags": [
+        "adventure",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Animated traversal, ramps and checkpoint recovery",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 3,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 3,
+        "presentation": 3,
+        "uniqueness": 3,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.210Z",
+        "notes": "Deep redesign: Built checkpoint platforms, gates, stairs and a stronger ridge finale. Camera: Framed early gates toward the visible final ridge. Gameplay: Checkpoint-to-ridge pacing now escalates.",
+        "remainingGaps": "Route remains a concise sprint"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/relic-runner-2/opening.png",
+        "gameplay": "public-showcase-review/relic-runner-2/gameplay.png"
+      },
+      "screenshot": "public-showcase-review/relic-runner-2/gameplay.png"
+    },
+    {
+      "id": "valley-run",
+      "title": "Valley Run",
+      "file": "valley-run.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Platforming",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "Cross a narrow valley and climb the stepping stones to the far ridge. The amber camp marks your checkpoint.",
+      "tags": [
+        "platforming",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Terrain traversal, jumping and checkpoint recovery",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 3,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 3,
+        "presentation": 4,
+        "uniqueness": 3,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.210Z",
+        "notes": "Deep redesign: Bent the valley path through gated checkpoints, cliff walls and a final ridge. Camera: Added a distant destination and intervening framing gates. Gameplay: Checkpoint-to-ridge progression now reads before movement.",
+        "remainingGaps": "Core route remains linear"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/valley-run/opening.png",
+        "gameplay": "public-showcase-review/valley-run/gameplay.png"
+      },
+      "screenshot": "public-showcase-review/valley-run/gameplay.png"
+    },
+    {
+      "id": "painted-wilds",
+      "title": "Painted Wilds",
+      "file": "painted-wilds.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Exploration",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "A short landscape walk through moss, ochre and slate. Follow the three survey stones.",
+      "tags": [
+        "exploration",
+        "terrain",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Terrain painting and blended ground materials",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 3,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 3,
+        "presentation": 3,
+        "uniqueness": 4,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.210Z",
+        "notes": "Deep redesign: Created three painted terrain biomes with distinct boundaries and silhouette families. Camera: Aligned the route across visible color transitions. Gameplay: Survey sequence now crosses each authored biome.",
+        "remainingGaps": "Peripheral silhouette density remains restrained"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/painted-wilds/opening.png",
+        "gameplay": "public-showcase-review/painted-wilds/gameplay.png"
+      },
+      "screenshot": "public-showcase-review/painted-wilds/gameplay.png"
+    },
+    {
+      "id": "textured-adventure",
+      "title": "Textured Adventure",
+      "file": "textured-adventure.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Adventure",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "Three amber relics rest among violet ruins. Collect them, avoid the red fissure, and restore the shrine.",
+      "tags": [
+        "adventure",
+        "textures",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Textured objects, pickups and an objective gate",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 3,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 3,
+        "presentation": 3,
+        "uniqueness": 4,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.210Z",
+        "notes": "Deep redesign: Divided the route into four terrain/material biomes with distinct transitions. Camera: Framed each transition as a new midground destination. Gameplay: Relic collection explicitly traverses the material sequence.",
+        "remainingGaps": "Some platform edges remain geometrically plain"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/textured-adventure/opening.png",
+        "gameplay": "public-showcase-review/textured-adventure/gameplay.png"
+      },
+      "screenshot": "public-showcase-review/textured-adventure/gameplay.png"
+    },
+    {
+      "id": "temple-switch-puzzle",
+      "title": "Temple Switch Puzzle",
+      "file": "temple-switch-puzzle.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Puzzle Experiment",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "Two amber seals power an ancient gateway. Step onto each seal and cross the open gate.",
+      "tags": [
+        "technical",
+        "puzzle",
+        "legacy-format"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Two-switch logic and a gated goal",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 3,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 3,
+        "presentation": 3,
+        "uniqueness": 3,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.210Z",
+        "notes": "Deep redesign: Built unique west/east switch rooms, thresholds, a central sealed gate and shrine beyond. Camera: Framed both side rooms from the central approach. Gameplay: Two activations now unlock a visibly central destination.",
+        "remainingGaps": "Puzzle has limited replay depth"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/temple-switch-puzzle/opening.png",
+        "gameplay": "public-showcase-review/temple-switch-puzzle/gameplay.png"
+      },
+      "screenshot": "public-showcase-review/temple-switch-puzzle/gameplay.png"
+    },
+    {
+      "id": "signal-relay",
+      "title": "Signal Relay",
+      "file": "signal-relay.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Stealth / Objective",
+      "controller": "First-Person",
+      "estimatedMinutes": 2,
+      "description": "Restore three relay consoles in a silent communications station. Slip past patrol drones or use your sidearm, then reach the green extraction bay.",
+      "tags": [
+        "stealth",
+        "first-person",
+        "objective"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Relay objectives with first-person drone combat",
+      "qualityTier": "sample",
+      "playtime": "2–4 minutes",
+      "qualityReview": {
+        "visual": 4,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 4,
+        "presentation": 4,
+        "uniqueness": 3,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.209Z",
+        "notes": "Deep redesign: Partitioned Alpha, Beta and Gamma into distinct chambers with thresholds and light pools. Camera: Raised ambient readability and framed the weapon below the route. Gameplay: Each restore step now advances through a visibly different chamber.",
+        "remainingGaps": "Close-range wall vocabulary remains compact"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/signal-relay/opening.png",
+        "gameplay": "public-showcase-review/signal-relay/gameplay.png"
+      },
+      "screenshot": "public-showcase-review/signal-relay/gameplay.png"
+    },
+    {
+      "id": "silent-sector",
+      "title": "Silent Sector",
+      "file": "silent-sector.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Stealth / Objective",
+      "controller": "First-Person",
+      "estimatedMinutes": 2,
+      "description": "A short stealth infiltration through a listening security station. Break sightlines, secure the Data Core and escape unseen.",
+      "tags": [
+        "stealth",
+        "first-person",
+        "objective"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Stealth perception, hearing and cover-based infiltration",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 4,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 4,
+        "presentation": 4,
+        "uniqueness": 3,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.210Z",
+        "notes": "Deep redesign: Built alternating shadow dividers, cover lanes, patrol pools, a dedicated Core room and bright extraction. Camera: Used controlled pools of blue light to preserve mood without losing route. Gameplay: Stealth pacing now alternates exposed and protected lanes.",
+        "remainingGaps": "Distant detail remains deliberately low-key"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/silent-sector/opening.png",
+        "gameplay": "public-showcase-review/silent-sector/gameplay.png"
+      },
+      "screenshot": "public-showcase-review/silent-sector/gameplay.png"
+    },
+    {
+      "id": "iron-arena",
+      "title": "Iron Arena",
+      "file": "iron-arena.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "First-Person Combat",
+      "controller": "First-Person",
+      "estimatedMinutes": 3,
+      "description": "Three armored sentries hold the forge courtyard. Keep moving and use the pillars for cover.",
+      "tags": [
+        "combat",
+        "first-person",
+        "arena"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Skeletal combat animation and hitscan combat",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 4,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 3,
+        "presentation": 4,
+        "uniqueness": 3,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.210Z",
+        "notes": "Deep redesign: Removed the giant foreground form, created a central focal structure, north deck and varied combat lanes. Camera: Lowered foreground mass and aligned the first sightline to the sentries. Gameplay: Sentry approach angles are now easier to read.",
+        "remainingGaps": "Enemy encounter variety remains limited"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/iron-arena/opening.png",
+        "gameplay": "public-showcase-review/iron-arena/gameplay.png"
+      },
+      "screenshot": "public-showcase-review/iron-arena/gameplay.png"
+    },
+    {
+      "id": "opus-arena",
+      "title": "Opus Arena",
+      "file": "opus-arena.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Arena Shooter",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "Hold the blue courtyard against eight approaching guardians. Face each target before firing.",
+      "tags": [
+        "action",
+        "arena",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Projectile weapons and bounded enemy spawning",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 4,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 3,
+        "presentation": 4,
+        "uniqueness": 3,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.210Z",
+        "notes": "Deep redesign: Added protective side decks and cover lanes; tuned health, weapon damage, spawn interval and enemy pressure. Camera: Opened central aim lanes and kept threats visible beyond cover. Gameplay: Three native-input runs achieved 8/8 kills, win and Restart near 30 seconds.",
+        "remainingGaps": "Enemy archetype variety remains limited"
+      },
+      "screenshot": "public-showcase-review/opus-arena/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/opus-arena/opening.png",
+        "gameplay": "public-showcase-review/opus-arena/gameplay.png"
+      }
+    },
+    {
+      "id": "power-station",
+      "title": "Power Station",
+      "file": "power-station.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Puzzle",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "The turbine is silent. Collect three fuel cells, speak to the engineer, and restart the machine.",
+      "tags": [
+        "puzzle",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Inventory, dialogue and animated machinery",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 3,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 3,
+        "presentation": 3,
+        "uniqueness": 3,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.210Z",
+        "notes": "Deep redesign: Built a dominant turbine deck, fuel alcoves and engineer staging around a machinery route. Camera: Offset the spawn view to read turbine, NPC and first cell together. Gameplay: Fuel collection now loops through machinery before restoration.",
+        "remainingGaps": "NPC interaction remains mechanically direct"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/power-station/opening.png",
+        "gameplay": "public-showcase-review/power-station/gameplay.png"
+      },
+      "screenshot": "public-showcase-review/power-station/gameplay.png"
+    },
+    {
+      "id": "assembly-line",
+      "title": "Assembly Line",
+      "file": "assembly-line.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "First-Person Experiment",
+      "controller": "First-Person",
+      "estimatedMinutes": 3,
+      "description": "Three fabrication bays assemble drones in real time. Clear space with your blaster, then inspect the control desk.",
+      "tags": [
+        "technical"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Runtime prefab assemblies and reusable spawners",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 3,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 3,
+        "presentation": 3,
+        "uniqueness": 4,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.210Z",
+        "notes": "Deep redesign: Built fabrication, transfer and inspection bays with thresholds and lanes. Camera: Framed the first bay toward the active transfer route. Gameplay: Objective now advances through a visible production sequence.",
+        "remainingGaps": "Factory shell remains open above"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/assembly-line/opening.png",
+        "gameplay": "public-showcase-review/assembly-line/gameplay.png"
+      },
+      "screenshot": "public-showcase-review/assembly-line/gameplay.png"
+    },
+    {
+      "id": "blacksite",
+      "title": "Blacksite",
+      "file": "blacksite.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "First-Person Experiment",
+      "controller": "First-Person",
+      "estimatedMinutes": 3,
+      "description": "Take the access card, open the security door, and cross the checkpoint into the core.",
+      "tags": [
+        "technical"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Access gates, checkpoints and two-level facility play",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 3,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 3,
+        "presentation": 3,
+        "uniqueness": 3,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.210Z",
+        "notes": "Deep redesign: Separated exterior, secure entry and Core with different widths, thresholds and focal props. Camera: Used long entry sightline followed by compressed Core framing. Gameplay: Access-card route now visibly escalates toward extraction.",
+        "remainingGaps": "Some corridor modules still repeat"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/blacksite/opening.png",
+        "gameplay": "public-showcase-review/blacksite/gameplay.png"
+      },
+      "screenshot": "public-showcase-review/blacksite/gameplay.png"
+    },
+    {
+      "id": "shifting-facility",
+      "title": "Shifting Facility",
+      "file": "shifting-facility.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "First-Person Experiment",
+      "controller": "First-Person",
+      "estimatedMinutes": 3,
+      "description": "Walk the three machinery bays. Test the swing door and follow the amber lane to the far inspection station.",
+      "tags": [
+        "technical"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Hierarchy transforms and shaped collision",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 4,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 3,
+        "presentation": 3,
+        "uniqueness": 4,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.210Z",
+        "notes": "Deep redesign: Built fixed and shifted wings with distinct architecture, thresholds and state focal objects. Camera: Centered the seam so both state identities are visible. Gameplay: Scanner, shifting door and final console occupy separate zones.",
+        "remainingGaps": "Prop vocabulary is still compact"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/shifting-facility/opening.png",
+        "gameplay": "public-showcase-review/shifting-facility/gameplay.png"
+      },
+      "screenshot": "public-showcase-review/shifting-facility/gameplay.png"
+    },
+    {
+      "id": "signal-zero",
+      "title": "Signal Zero",
+      "file": "signal-zero.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Objective",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "Trace a silent outpost to its deep relay. Reach the cyan console to save your progress and descend.",
+      "tags": [
+        "objective",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Menus, saving and a two-level sequence",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 3,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 3,
+        "presentation": 3,
+        "uniqueness": 4,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.210Z",
+        "notes": "Deep redesign: Gave Level 1 blue relay wings and Level 2 a hot reactor dais with distinct combat lanes. Camera: Changed focal depth and color hierarchy between levels. Gameplay: Multi-level transition now carries a clear escalation.",
+        "remainingGaps": "Both levels remain compact"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/signal-zero/opening.png",
+        "gameplay": "public-showcase-review/signal-zero/gameplay.png"
+      },
+      "screenshot": "public-showcase-review/signal-zero/gameplay.png"
+    },
+    {
+      "id": "dungeon-descent",
+      "title": "Dungeon Descent",
+      "file": "dungeon-descent.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Top-Down Dungeon Puzzle",
+      "controller": "Top-Down",
+      "estimatedMinutes": 3,
+      "description": "Two distant seals hold the stone gate shut. Light both seals and pass through the eastern arch.",
+      "tags": [
+        "puzzle",
+        "top-down",
+        "dungeon"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Flags, switches and a gated objective",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 3,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 3,
+        "presentation": 3,
+        "uniqueness": 3,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.210Z",
+        "notes": "Deep redesign: Rebuilt the map as distinct chambers, corridors, cross walls, switch rooms and gate chamber. Camera: Composed landmarks for the fixed overhead camera. Gameplay: Switch order now reads spatially from above.",
+        "remainingGaps": "Small character scale limits fine prop detail"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/dungeon-descent/opening.png",
+        "gameplay": "public-showcase-review/dungeon-descent/gameplay.png"
+      },
+      "screenshot": "public-showcase-review/dungeon-descent/gameplay.png"
+    },
+    {
+      "id": "sentinel-maze",
+      "title": "Sentinel Maze",
+      "file": "sentinel-maze.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Third-Person Maze",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "A watchful guardian patrols a slate labyrinth. Follow the amber route around the walls to the exit.",
+      "tags": [
+        "maze",
+        "stealth",
+        "third-person"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Waypoint navigation around solid obstacles",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 3,
+        "gameplayClarity": 3,
+        "levelComposition": 4,
+        "audio": 3,
+        "presentation": 3,
+        "uniqueness": 3,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.210Z",
+        "notes": "Deep redesign: Varied wall rhythm, added district markers and exposed the amber exit as a destination. Camera: Opened longer chase sightlines at turns. Gameplay: Navigation cues better support the existing pursuit loop.",
+        "remainingGaps": "Maze materials remain simple"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/sentinel-maze/opening.png",
+        "gameplay": "public-showcase-review/sentinel-maze/gameplay.png"
+      },
+      "screenshot": "public-showcase-review/sentinel-maze/gameplay.png"
+    },
+    {
+      "id": "survival-arena",
+      "title": "Survival Arena",
+      "file": "survival-arena.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Survival Experiment",
+      "controller": "Hovercraft",
+      "estimatedMinutes": 3,
+      "description": "Four amber orbs, three lives, and three hunters. Sweep the courtyard before they surround you.",
+      "tags": [
+        "technical",
+        "legacy-format"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Counter-driven pickups and contact hazards",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 4,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 3,
+        "presentation": 4,
+        "uniqueness": 4,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.210Z",
+        "notes": "Deep redesign: Moved relics to four cardinal sites, built cross routes and distinct landmarks, and corrected hunter loss gating. Camera: Centered a beacon so every destination can be reoriented from mid-field. Gameplay: Three normal native-input runs achieved 4/4, win and Restart; hunter speed/collider were fairly tuned.",
+        "remainingGaps": "Route is compact once landmarks are learned"
+      },
+      "screenshot": "public-showcase-review/survival-arena/gameplay.png",
+      "screenshots": {
+        "opening": "public-showcase-review/survival-arena/opening.png",
+        "gameplay": "public-showcase-review/survival-arena/gameplay.png"
+      }
+    },
+    {
+      "id": "survival-arena-2",
+      "title": "Survival Arena 2",
+      "file": "survival-arena-2.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Hovercraft Survival",
+      "controller": "Hovercraft",
+      "estimatedMinutes": 3,
+      "description": "A hovercraft endurance run on a tidal ring. Two waves arrive; keep moving for thirty-two seconds.",
+      "tags": [
+        "survival",
+        "hovercraft",
+        "arena"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Timed wave sequencing and hovercraft survival",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 3,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 3,
+        "presentation": 4,
+        "uniqueness": 4,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.210Z",
+        "notes": "Deep redesign: Authored an outer storm circuit, inner escape field and timed route markers. Camera: Kept major silhouettes outside the immediate driving cone. Gameplay: Vehicle can alternate inner and outer loops through both waves.",
+        "remainingGaps": "Survival remains a single-mode timer challenge"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/survival-arena-2/opening.png",
+        "gameplay": "public-showcase-review/survival-arena-2/gameplay.png"
+      },
+      "screenshot": "public-showcase-review/survival-arena-2/gameplay.png"
+    },
+    {
+      "id": "survival-arena-3",
+      "title": "Survival Arena 3",
+      "file": "survival-arena-3.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Hovercraft Survival",
+      "controller": "Hovercraft",
+      "estimatedMinutes": 3,
+      "description": "Twenty seconds on the copper island. Hunter drones enter from the central transmitter.",
+      "tags": [
+        "survival",
+        "hovercraft",
+        "arena"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Capped runtime spawning and timed survival",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 4,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 3,
+        "presentation": 4,
+        "uniqueness": 4,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.210Z",
+        "notes": "Deep redesign: Built a central transmitter, perimeter stations and radial defense lanes. Camera: Centered the transmitter as a persistent camera anchor. Gameplay: Vehicle route now reads as defending a perimeter.",
+        "remainingGaps": "Enemy variety remains modest"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/survival-arena-3/opening.png",
+        "gameplay": "public-showcase-review/survival-arena-3/gameplay.png"
+      },
+      "screenshot": "public-showcase-review/survival-arena-3/gameplay.png"
+    },
+    {
+      "id": "skyway-trial",
+      "title": "Skyway Trial",
+      "file": "skyway-trial.json",
+      "category": "sample",
+      "featured": false,
+      "genre": "Platforming Experiment",
+      "controller": "Third-Person",
+      "estimatedMinutes": 3,
+      "description": "Five suspended platforms rise above a quiet blue void. Commit to each jump and reach the amber summit.",
+      "tags": [
+        "technical",
+        "platforming"
+      ],
+      "playable": true,
+      "visibility": "public",
+      "purpose": "Platform jumps and a fall condition",
+      "qualityTier": "sample",
+      "playtime": "1–3 minutes",
+      "qualityReview": {
+        "visual": 3,
+        "gameplayClarity": 4,
+        "levelComposition": 4,
+        "audio": 3,
+        "presentation": 3,
+        "uniqueness": 3,
+        "standaloneVerified": true,
+        "noPlaceholders": true,
+        "licenseVerified": true,
+        "reviewedAt": "2026-09-08T17:51:32.210Z",
+        "notes": "Deep redesign: Varied platform footprints, added side silhouettes and exposed the summit gate. Camera: Placed summit high in the opening sightline. Gameplay: Jump sequence now has readable escalation.",
+        "remainingGaps": "Five-platform route remains short"
+      },
+      "screenshots": {
+        "opening": "public-showcase-review/skyway-trial/opening.png",
+        "gameplay": "public-showcase-review/skyway-trial/gameplay.png"
+      },
+      "screenshot": "public-showcase-review/skyway-trial/gameplay.png"
+    }
+  ],
+  "excluded": [
+    {
+      "file": "crate-run-expanded.patch.js",
+      "reason": "Not a project JSON -- a small patch script applied on top of the shipped Crate Run starter game's own mechanics, not a standalone loadable project. Kept in games/ as a technical/patch-style sample, excluded from the catalog and launcher v1."
+    }
+  ]
+}

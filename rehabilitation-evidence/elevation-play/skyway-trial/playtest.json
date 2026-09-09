@@ -1,0 +1,52 @@
+{
+  "id": "skyway-trial",
+  "index": 26,
+  "inputOnly": true,
+  "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+  "errors": [],
+  "actions": [
+    {
+      "key": "w",
+      "ms": 950
+    },
+    {
+      "key": "a",
+      "ms": 520
+    },
+    {
+      "key": "f",
+      "ms": 0
+    },
+    {
+      "key": "q",
+      "ms": 0
+    },
+    {
+      "key": "w",
+      "ms": 700
+    }
+  ],
+  "startedAt": "2026-09-08T17:43:25.205Z",
+  "sourceSHA256": "f606e30da2790dcb362c4d301548a98ce82ebda81039408870f6c672df63c8bc",
+  "final": {
+    "title": "Skyway Trial",
+    "sim": 3.970699999995534,
+    "ended": false,
+    "paused": false,
+    "controller": "thirdperson",
+    "position": {
+      "x": 5.381990358595366,
+      "y": 0.55,
+      "z": 5.005930236554113
+    },
+    "state": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": [],
+    "webglLost": false
+  },
+  "pauseVisible": true,
+  "restartPassed": true,
+  "passed": true,
+  "finishedAt": "2026-09-08T17:43:30.178Z"
+}

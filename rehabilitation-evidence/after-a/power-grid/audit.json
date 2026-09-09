@@ -1,0 +1,140 @@
+{
+  "id": "power-grid",
+  "phase": "after-a",
+  "url": "http://localhost:8837/dist/games/power-grid.html",
+  "startedAt": "2026-09-08T00:09:58.229Z",
+  "seconds": 26,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 3120
+    },
+    {
+      "key": "d",
+      "milliseconds": 2600
+    },
+    {
+      "key": "w",
+      "milliseconds": 3900
+    },
+    {
+      "key": "a",
+      "milliseconds": 2600
+    },
+    {
+      "key": "s",
+      "milliseconds": 2080
+    },
+    {
+      "key": "w",
+      "milliseconds": 2600
+    },
+    {
+      "key": "d",
+      "milliseconds": 1300
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Power Grid",
+      "text": "Restore Emergency Power\nF interact / carry · G drop\nPress F to interact\nF carry / interact • Cell → generator → two coolant consoles",
+      "state": {},
+      "playtime": 0.5,
+      "player": {
+        "position": {
+          "x": -17,
+          "y": 0.55,
+          "z": 0
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_find_cell": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Power Grid",
+      "text": "Restore Emergency Power\nF interact / carry · G drop\nPress F to interact\nF carry / interact • Cell → generator → two coolant consoles",
+      "state": {},
+      "playtime": 4.100000000000001,
+      "player": {
+        "position": {
+          "x": -2.4920299316364996,
+          "y": 0.55,
+          "z": -4.199994921796715
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_find_cell": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Power Grid",
+      "text": "Restore Emergency Power\nF interact / carry · G drop\nPress F to interact\nF carry / interact • Cell → generator → two coolant consoles",
+      "state": {},
+      "playtime": 9.212200000047668,
+      "player": {
+        "position": {
+          "x": 0.0922128691527605,
+          "y": 0.55,
+          "z": -2.430344056388495
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_find_cell": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Power Grid",
+    "text": "Power Grid\n\nBring an abandoned generator hall back online. Carry the power cell to its socket, activate two coolant consoles and open the emergency exit.\n\nBegin mission\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nF carry / interact • Cell → generator → two coolant consoles",
+    "state": {},
+    "playtime": 0,
+    "player": {
+      "position": {
+        "x": -17,
+        "y": 1.25,
+        "z": 0
+      },
+      "visible": false,
+      "controller": "firstperson"
+    },
+    "camera": {
+      "mode": "fixed"
+    },
+    "audio": {},
+    "objectives": {
+      "obj_find_cell": "active"
+    },
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nRestore Emergency Power\nF interact / carry · G drop\nPress F to interact\nF carry / interact • Cell → generator → two coolant consoles",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:10:37.841Z"
+}

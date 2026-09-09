@@ -1,0 +1,1081 @@
+{
+  "id": "moving-temple",
+  "method": "Read-only instrumentation and native keyboard input; no player/state mutation.",
+  "events": [
+    {
+      "label": "opening",
+      "level": 0,
+      "state": {},
+      "ended": false,
+      "sim": 0.8949000000059604,
+      "position": {
+        "x": 0,
+        "y": 1.8,
+        "z": -0.4
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "grounded": true,
+      "basis": {
+        "x": 0.85767496055887,
+        "y": -0.514192242289147,
+        "z": 5.127287247691165e-17
+      },
+      "text": "Cross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "solids": [
+        {
+          "id": "obj55",
+          "p": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "scale": {
+            "x": 4,
+            "y": 0.5,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj57",
+          "p": {
+            "x": 5.1932000000079475,
+            "y": 1,
+            "z": 0
+          },
+          "scale": {
+            "x": 2.5,
+            "y": 0.4,
+            "z": 2.5
+          }
+        },
+        {
+          "id": "obj58",
+          "p": {
+            "x": 12,
+            "y": 1,
+            "z": 0
+          },
+          "scale": {
+            "x": 4,
+            "y": 0.5,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj59",
+          "p": {
+            "x": 16,
+            "y": 0.25,
+            "z": 0
+          },
+          "scale": {
+            "x": 3,
+            "y": 0.5,
+            "z": 3
+          }
+        },
+        {
+          "id": "obj61",
+          "p": {
+            "x": 20,
+            "y": 6.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 4,
+            "y": 0.5,
+            "z": 4
+          }
+        },
+        {
+          "id": "promo-17",
+          "p": {
+            "x": 17,
+            "y": 0.35,
+            "z": 0
+          },
+          "scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        }
+      ]
+    },
+    {
+      "input": "jump",
+      "position": {
+        "x": 1.1599997455760116,
+        "y": 1.8,
+        "z": -0.23812691423589358
+      },
+      "sim": 5.1327000000029805
+    },
+    {
+      "label": "crossing-slab",
+      "level": 0,
+      "state": {},
+      "ended": false,
+      "sim": 7.050100000001498,
+      "position": {
+        "x": 6.214506232835465,
+        "y": 1.75,
+        "z": -0.1717633412385385
+      },
+      "velocity": {
+        "x": -0.7015434397746312,
+        "y": 0,
+        "z": -0.18834597506631645
+      },
+      "grounded": true,
+      "basis": {
+        "x": -0.8329079551444625,
+        "y": -0.542350950408027,
+        "z": 0.1100898943980769
+      },
+      "text": "Cross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "solids": [
+        {
+          "id": "obj55",
+          "p": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "scale": {
+            "x": 4,
+            "y": 0.5,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj57",
+          "p": {
+            "x": 5.40013333333533,
+            "y": 1,
+            "z": 0
+          },
+          "scale": {
+            "x": 2.5,
+            "y": 0.4,
+            "z": 2.5
+          }
+        },
+        {
+          "id": "obj58",
+          "p": {
+            "x": 12,
+            "y": 1,
+            "z": 0
+          },
+          "scale": {
+            "x": 4,
+            "y": 0.5,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj59",
+          "p": {
+            "x": 16,
+            "y": 0.25,
+            "z": 0
+          },
+          "scale": {
+            "x": 3,
+            "y": 0.5,
+            "z": 3
+          }
+        },
+        {
+          "id": "obj61",
+          "p": {
+            "x": 20,
+            "y": 6.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 4,
+            "y": 0.5,
+            "z": 4
+          }
+        },
+        {
+          "id": "promo-17",
+          "p": {
+            "x": 17,
+            "y": 0.35,
+            "z": 0
+          },
+          "scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        }
+      ]
+    },
+    {
+      "input": "jump",
+      "position": {
+        "x": 8.13806795470251,
+        "y": 1.75,
+        "z": -0.2701423878999183
+      },
+      "sim": 8.767600000001499
+    },
+    {
+      "label": "far-platform",
+      "level": 0,
+      "state": {},
+      "ended": false,
+      "sim": 10.322300000004489,
+      "position": {
+        "x": 10.71637636254755,
+        "y": 1.8,
+        "z": 0.7566008134506264
+      },
+      "velocity": {
+        "x": -0.3352273854228595,
+        "y": 0,
+        "z": 0.48821734294353186
+      },
+      "grounded": true,
+      "basis": {
+        "x": -0.8083588126738305,
+        "y": -0.49419729105346116,
+        "z": 0.31988289652304924
+      },
+      "text": "Cross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "solids": [
+        {
+          "id": "obj55",
+          "p": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "scale": {
+            "x": 4,
+            "y": 0.5,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj57",
+          "p": {
+            "x": 6.2369333333273484,
+            "y": 1,
+            "z": 0
+          },
+          "scale": {
+            "x": 2.5,
+            "y": 0.4,
+            "z": 2.5
+          }
+        },
+        {
+          "id": "obj58",
+          "p": {
+            "x": 12,
+            "y": 1,
+            "z": 0
+          },
+          "scale": {
+            "x": 4,
+            "y": 0.5,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj59",
+          "p": {
+            "x": 16,
+            "y": 0.25,
+            "z": 0
+          },
+          "scale": {
+            "x": 3,
+            "y": 0.5,
+            "z": 3
+          }
+        },
+        {
+          "id": "obj61",
+          "p": {
+            "x": 20,
+            "y": 6.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 4,
+            "y": 0.5,
+            "z": 4
+          }
+        },
+        {
+          "id": "promo-17",
+          "p": {
+            "x": 17,
+            "y": 0.35,
+            "z": 0
+          },
+          "scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        }
+      ]
+    },
+    {
+      "input": "jump",
+      "position": {
+        "x": 10.608440460513945,
+        "y": 1.8,
+        "z": 0.9137961429210703
+      },
+      "sim": 10.819400000005984
+    },
+    {
+      "label": "lift-boarded",
+      "level": 0,
+      "state": {},
+      "ended": false,
+      "sim": 12.841300000004503,
+      "position": {
+        "x": 14.668732195366205,
+        "y": 1.05,
+        "z": 0.3258634517792267
+      },
+      "velocity": {
+        "x": -0.6400605858350424,
+        "y": 0,
+        "z": 0.6269401771879064
+      },
+      "grounded": true,
+      "basis": {
+        "x": -0.07486397853239507,
+        "y": -0.48555993015270005,
+        "z": 0.8709919281763787
+      },
+      "text": "Cross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "solids": [
+        {
+          "id": "obj55",
+          "p": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "scale": {
+            "x": 4,
+            "y": 0.5,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj57",
+          "p": {
+            "x": 5.121733333339338,
+            "y": 1,
+            "z": 0
+          },
+          "scale": {
+            "x": 2.5,
+            "y": 0.4,
+            "z": 2.5
+          }
+        },
+        {
+          "id": "obj58",
+          "p": {
+            "x": 12,
+            "y": 1,
+            "z": 0
+          },
+          "scale": {
+            "x": 4,
+            "y": 0.5,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj59",
+          "p": {
+            "x": 16,
+            "y": 0.25,
+            "z": 0
+          },
+          "scale": {
+            "x": 3,
+            "y": 0.5,
+            "z": 3
+          }
+        },
+        {
+          "id": "obj61",
+          "p": {
+            "x": 20,
+            "y": 6.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 4,
+            "y": 0.5,
+            "z": 4
+          }
+        },
+        {
+          "id": "promo-17",
+          "p": {
+            "x": 17,
+            "y": 0.35,
+            "z": 0
+          },
+          "scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        }
+      ]
+    },
+    {
+      "label": "lift-raised",
+      "level": 0,
+      "state": {},
+      "ended": false,
+      "sim": 21.932200000002986,
+      "position": {
+        "x": 14.5,
+        "y": 7.3,
+        "z": 0.668332856336111
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 4.904516865859504e-8
+      },
+      "grounded": true,
+      "basis": {
+        "x": 0.04838914706460777,
+        "y": -0.514137848966938,
+        "z": 0.8563414988811471
+      },
+      "text": "Cross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "solids": [
+        {
+          "id": "obj55",
+          "p": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "scale": {
+            "x": 4,
+            "y": 0.5,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj57",
+          "p": {
+            "x": 6.757066666662686,
+            "y": 1,
+            "z": 0
+          },
+          "scale": {
+            "x": 2.5,
+            "y": 0.4,
+            "z": 2.5
+          }
+        },
+        {
+          "id": "obj58",
+          "p": {
+            "x": 12,
+            "y": 1,
+            "z": 0
+          },
+          "scale": {
+            "x": 4,
+            "y": 0.5,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj59",
+          "p": {
+            "x": 16,
+            "y": 6.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 3,
+            "y": 0.5,
+            "z": 3
+          }
+        },
+        {
+          "id": "obj61",
+          "p": {
+            "x": 20,
+            "y": 6.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 4,
+            "y": 0.5,
+            "z": 4
+          }
+        },
+        {
+          "id": "promo-17",
+          "p": {
+            "x": 17,
+            "y": 0.35,
+            "z": 0
+          },
+          "scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        }
+      ]
+    },
+    {
+      "input": "jump",
+      "position": {
+        "x": 14.5,
+        "y": 7.3,
+        "z": 0.6683328687340468
+      },
+      "sim": 22.282100000001495
+    },
+    {
+      "label": "summit-attempt",
+      "level": 0,
+      "state": {},
+      "ended": true,
+      "sim": 23.38370000000298,
+      "position": {
+        "x": 19.851525750135625,
+        "y": 7.3,
+        "z": 0.11643567800106243
+      },
+      "velocity": {
+        "x": 6.255391655130863,
+        "y": 0,
+        "z": 1.0018165018422167
+      },
+      "grounded": true,
+      "basis": {
+        "x": 0.9335546547024359,
+        "y": -0.32546484531461073,
+        "z": 0.15016105070141247
+      },
+      "text": "Temple ascended\n\nYou reached the shrine above the moving stonework.\n\nRestart\nCross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "solids": [
+        {
+          "id": "obj55",
+          "p": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "scale": {
+            "x": 4,
+            "y": 0.5,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj57",
+          "p": {
+            "x": 4.821733333329358,
+            "y": 1,
+            "z": 0
+          },
+          "scale": {
+            "x": 2.5,
+            "y": 0.4,
+            "z": 2.5
+          }
+        },
+        {
+          "id": "obj58",
+          "p": {
+            "x": 12,
+            "y": 1,
+            "z": 0
+          },
+          "scale": {
+            "x": 4,
+            "y": 0.5,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj59",
+          "p": {
+            "x": 16,
+            "y": 6.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 3,
+            "y": 0.5,
+            "z": 3
+          }
+        },
+        {
+          "id": "obj61",
+          "p": {
+            "x": 20,
+            "y": 6.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 4,
+            "y": 0.5,
+            "z": 4
+          }
+        },
+        {
+          "id": "promo-17",
+          "p": {
+            "x": 17,
+            "y": 0.35,
+            "z": 0
+          },
+          "scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        }
+      ]
+    },
+    {
+      "label": "outcome",
+      "level": 0,
+      "state": {},
+      "ended": true,
+      "sim": 23.56830000000447,
+      "position": {
+        "x": 21.01712483519788,
+        "y": 7.3,
+        "z": 0.30355014942556124
+      },
+      "velocity": {
+        "x": 6.350503755145824,
+        "y": 0,
+        "z": 1.0211364801321807
+      },
+      "grounded": true,
+      "basis": {
+        "x": 0.9353395922139713,
+        "y": -0.31996717083366044,
+        "z": 0.15086701702395017
+      },
+      "text": "Temple ascended\n\nYou reached the shrine above the moving stonework.\n\nRestart\nCross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "solids": [
+        {
+          "id": "obj55",
+          "p": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "scale": {
+            "x": 4,
+            "y": 0.5,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj57",
+          "p": {
+            "x": 4.57559999999404,
+            "y": 1,
+            "z": 0
+          },
+          "scale": {
+            "x": 2.5,
+            "y": 0.4,
+            "z": 2.5
+          }
+        },
+        {
+          "id": "obj58",
+          "p": {
+            "x": 12,
+            "y": 1,
+            "z": 0
+          },
+          "scale": {
+            "x": 4,
+            "y": 0.5,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj59",
+          "p": {
+            "x": 16,
+            "y": 6.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 3,
+            "y": 0.5,
+            "z": 3
+          }
+        },
+        {
+          "id": "obj61",
+          "p": {
+            "x": 20,
+            "y": 6.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 4,
+            "y": 0.5,
+            "z": 4
+          }
+        },
+        {
+          "id": "promo-17",
+          "p": {
+            "x": 17,
+            "y": 0.35,
+            "z": 0
+          },
+          "scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        }
+      ]
+    },
+    {
+      "label": "restart",
+      "level": 0,
+      "state": {},
+      "ended": false,
+      "sim": 0.4497000000029803,
+      "position": {
+        "x": 0,
+        "y": 1.8,
+        "z": -0.4
+      },
+      "velocity": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "grounded": true,
+      "basis": {
+        "x": 0.8563908434883665,
+        "y": -0.5163281158229563,
+        "z": 5.119610636640463e-17
+      },
+      "text": "Cross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "solids": [
+        {
+          "id": "obj55",
+          "p": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "scale": {
+            "x": 4,
+            "y": 0.5,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj57",
+          "p": {
+            "x": 4.599600000003973,
+            "y": 1,
+            "z": 0
+          },
+          "scale": {
+            "x": 2.5,
+            "y": 0.4,
+            "z": 2.5
+          }
+        },
+        {
+          "id": "obj58",
+          "p": {
+            "x": 12,
+            "y": 1,
+            "z": 0
+          },
+          "scale": {
+            "x": 4,
+            "y": 0.5,
+            "z": 4
+          }
+        },
+        {
+          "id": "obj59",
+          "p": {
+            "x": 16,
+            "y": 0.25,
+            "z": 0
+          },
+          "scale": {
+            "x": 3,
+            "y": 0.5,
+            "z": 3
+          }
+        },
+        {
+          "id": "obj61",
+          "p": {
+            "x": 20,
+            "y": 6.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 4,
+            "y": 0.5,
+            "z": 4
+          }
+        },
+        {
+          "id": "promo-17",
+          "p": {
+            "x": 17,
+            "y": 0.35,
+            "z": 0
+          },
+          "scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "final": {
+    "level": 0,
+    "state": {},
+    "ended": true,
+    "sim": 23.56830000000447,
+    "position": {
+      "x": 21.01712483519788,
+      "y": 7.3,
+      "z": 0.30355014942556124
+    },
+    "velocity": {
+      "x": 6.350503755145824,
+      "y": 0,
+      "z": 1.0211364801321807
+    },
+    "grounded": true,
+    "basis": {
+      "x": 0.9353395922139713,
+      "y": -0.31996717083366044,
+      "z": 0.15086701702395017
+    },
+    "text": "Temple ascended\n\nYou reached the shrine above the moving stonework.\n\nRestart\nCross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "solids": [
+      {
+        "id": "obj55",
+        "p": {
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "scale": {
+          "x": 4,
+          "y": 0.5,
+          "z": 4
+        }
+      },
+      {
+        "id": "obj57",
+        "p": {
+          "x": 4.57559999999404,
+          "y": 1,
+          "z": 0
+        },
+        "scale": {
+          "x": 2.5,
+          "y": 0.4,
+          "z": 2.5
+        }
+      },
+      {
+        "id": "obj58",
+        "p": {
+          "x": 12,
+          "y": 1,
+          "z": 0
+        },
+        "scale": {
+          "x": 4,
+          "y": 0.5,
+          "z": 4
+        }
+      },
+      {
+        "id": "obj59",
+        "p": {
+          "x": 16,
+          "y": 6.5,
+          "z": 0
+        },
+        "scale": {
+          "x": 3,
+          "y": 0.5,
+          "z": 3
+        }
+      },
+      {
+        "id": "obj61",
+        "p": {
+          "x": 20,
+          "y": 6.5,
+          "z": 0
+        },
+        "scale": {
+          "x": 4,
+          "y": 0.5,
+          "z": 4
+        }
+      },
+      {
+        "id": "promo-17",
+        "p": {
+          "x": 17,
+          "y": 0.35,
+          "z": 0
+        },
+        "scale": {
+          "x": 1.1,
+          "y": 1.1,
+          "z": 1.1
+        }
+      }
+    ]
+  },
+  "restart": {
+    "level": 0,
+    "state": {},
+    "ended": false,
+    "sim": 0.4497000000029803,
+    "position": {
+      "x": 0,
+      "y": 1.8,
+      "z": -0.4
+    },
+    "velocity": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "grounded": true,
+    "basis": {
+      "x": 0.8563908434883665,
+      "y": -0.5163281158229563,
+      "z": 5.119610636640463e-17
+    },
+    "text": "Cross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "solids": [
+      {
+        "id": "obj55",
+        "p": {
+          "x": 0,
+          "y": 1,
+          "z": 0
+        },
+        "scale": {
+          "x": 4,
+          "y": 0.5,
+          "z": 4
+        }
+      },
+      {
+        "id": "obj57",
+        "p": {
+          "x": 4.599600000003973,
+          "y": 1,
+          "z": 0
+        },
+        "scale": {
+          "x": 2.5,
+          "y": 0.4,
+          "z": 2.5
+        }
+      },
+      {
+        "id": "obj58",
+        "p": {
+          "x": 12,
+          "y": 1,
+          "z": 0
+        },
+        "scale": {
+          "x": 4,
+          "y": 0.5,
+          "z": 4
+        }
+      },
+      {
+        "id": "obj59",
+        "p": {
+          "x": 16,
+          "y": 0.25,
+          "z": 0
+        },
+        "scale": {
+          "x": 3,
+          "y": 0.5,
+          "z": 3
+        }
+      },
+      {
+        "id": "obj61",
+        "p": {
+          "x": 20,
+          "y": 6.5,
+          "z": 0
+        },
+        "scale": {
+          "x": 4,
+          "y": 0.5,
+          "z": 4
+        }
+      },
+      {
+        "id": "promo-17",
+        "p": {
+          "x": 17,
+          "y": 0.35,
+          "z": 0
+        },
+        "scale": {
+          "x": 1.1,
+          "y": 1.1,
+          "z": 1.1
+        }
+      }
+    ]
+  }
+}

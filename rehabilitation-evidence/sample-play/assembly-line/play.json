@@ -1,0 +1,100 @@
+{
+  "id": "assembly-line",
+  "inputs": [
+    {
+      "target": [
+        0,
+        12
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 5.239100000001488,
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 13.106191562315486
+        },
+        "controller": "firstperson",
+        "basis": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "text": "Observe the three active bays, then use the inspection console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+        "dialogue": false
+      }
+    }
+  ],
+  "errors": [],
+  "started": "2026-09-08T15:58:47.876Z",
+  "start": {
+    "level": 0,
+    "state": {},
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 2.0523999999985096,
+    "position": {
+      "x": 0,
+      "y": 0.55,
+      "z": -5
+    },
+    "controller": "firstperson",
+    "basis": {
+      "x": 0,
+      "y": 0,
+      "z": 1
+    },
+    "text": "Observe the three active bays, then use the inspection console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+    "dialogue": false
+  },
+  "final": {
+    "level": 0,
+    "state": {},
+    "flags": {},
+    "inventory": {},
+    "ended": true,
+    "playtime": 6.741299999997023,
+    "position": {
+      "x": 0,
+      "y": 0.55,
+      "z": 14.636947388701552
+    },
+    "controller": "firstperson",
+    "basis": {
+      "x": 0,
+      "y": 0,
+      "z": 1
+    },
+    "text": "Inspection complete\n\nAll three fabrication bays are operational.\n\nRestart\nObserve the three active bays, then use the inspection console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+    "dialogue": false
+  },
+  "completed": true,
+  "restart": {
+    "level": 0,
+    "state": {},
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 0.63510000000149,
+    "position": {
+      "x": 0,
+      "y": 0.55,
+      "z": -5
+    },
+    "controller": "firstperson",
+    "basis": {
+      "x": 0,
+      "y": 0,
+      "z": 1
+    },
+    "text": "Observe the three active bays, then use the inspection console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+    "dialogue": false
+  },
+  "finished": "2026-09-08T15:58:58.340Z"
+}

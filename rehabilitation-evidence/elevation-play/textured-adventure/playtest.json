@@ -1,0 +1,59 @@
+{
+  "id": "textured-adventure",
+  "index": 19,
+  "inputOnly": true,
+  "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+  "errors": [],
+  "actions": [
+    {
+      "key": "w",
+      "ms": 950
+    },
+    {
+      "key": "d",
+      "ms": 520
+    },
+    {
+      "key": "Space",
+      "ms": 100
+    },
+    {
+      "key": "f",
+      "ms": 0
+    },
+    {
+      "key": "q",
+      "ms": 0
+    },
+    {
+      "key": "w",
+      "ms": 700
+    }
+  ],
+  "startedAt": "2026-09-08T17:42:49.105Z",
+  "sourceSHA256": "d93b0d421e72179db7d91a229eb2473622c9fbbb23b30c46b069fa2abad7bc9e",
+  "final": {
+    "title": "Textured Adventure",
+    "sim": 4.004600000001493,
+    "ended": false,
+    "paused": false,
+    "controller": "thirdperson",
+    "position": {
+      "x": -5.259408084151612,
+      "y": -0.6091650586899419,
+      "z": 1.0091572624918257
+    },
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "objectives": {},
+    "inventory": {},
+    "helpers": [],
+    "webglLost": false
+  },
+  "pauseVisible": true,
+  "restartPassed": true,
+  "passed": true,
+  "finishedAt": "2026-09-08T17:42:54.105Z"
+}

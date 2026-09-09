@@ -1,0 +1,141 @@
+{
+  "id": "survival-arena-2",
+  "phase": "baseline",
+  "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/survival-arena-2.html",
+  "startedAt": "2026-09-08T00:05:22.645Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Survival Arena 2.0",
+      "text": "Wave 1 incoming!\nSurvive the waves! Avoid the red Hunters.\nSurvived: 0.6s\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 0.6,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.7280580431016654,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Survival Arena 2.0",
+      "text": "MAP EDGE — TURN INWARD\nSurvive the waves! Avoid the red Hunters.\nSurvived: 9.5s\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 90
+      },
+      "playtime": 9.529100000023838,
+      "player": {
+        "position": {
+          "x": -30.263005253595093,
+          "y": -1.00019582738083,
+          "z": 25.30717315349298
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Survival Arena 2.0",
+      "text": "MAP EDGE — TURN INWARD\nSurvive the waves! Avoid the red Hunters.\nSurvived: 25.0s\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 90
+      },
+      "playtime": 24.953200000047666,
+      "player": {
+        "position": {
+          "x": -23.630449359859785,
+          "y": -1.0121009301503563,
+          "z": 28.094945428893745
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Survival Arena 2.0",
+    "text": "Wave 1 incoming!\nSurvive the waves! Avoid the red Hunters.\nSurvival Arena 2.0\n\nWaves of Hunters will chase you. Survive to win.\n\nBrace Yourself\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+    "state": {},
+    "playtime": 0,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 1.705555202293345,
+        "z": 0
+      },
+      "visible": true,
+      "controller": "hovercraft"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "MAP EDGE — TURN INWARD\nSurvive the waves! Avoid the red Hunters.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nSurvived: 25.2s\nPress F to interact",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:05:56.577Z"
+}

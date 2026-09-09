@@ -1,0 +1,157 @@
+{
+  "id": "signal-relay",
+  "phase": "after-a",
+  "url": "http://localhost:8837/dist/games/signal-relay.html",
+  "startedAt": "2026-09-08T00:08:25.284Z",
+  "seconds": 26,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 3120
+    },
+    {
+      "key": "d",
+      "milliseconds": 2600
+    },
+    {
+      "key": "w",
+      "milliseconds": 3900
+    },
+    {
+      "key": "a",
+      "milliseconds": 2600
+    },
+    {
+      "key": "s",
+      "milliseconds": 2080
+    },
+    {
+      "key": "w",
+      "milliseconds": 2600
+    },
+    {
+      "key": "d",
+      "milliseconds": 1300
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Signal Relay",
+      "text": "Restore power at all three relay consoles\nWeapon 8/24\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 0.1,
+      "player": {
+        "position": {
+          "x": -30,
+          "y": 1.05,
+          "z": 0
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "helpers": []
+    },
+    {
+      "title": "Signal Relay",
+      "text": "Restore power at all three relay consoles\nWeapon 7/24\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 1.7162999999523167,
+      "player": {
+        "position": {
+          "x": -24.29986771814745,
+          "y": 1.9500000000000002,
+          "z": -1.799867906315094
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "helpers": []
+    },
+    {
+      "title": "Signal Relay",
+      "text": "Restore power at all three relay consoles\nWeapon 8/22\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 4.733599999904632,
+      "player": {
+        "position": {
+          "x": -22.176692014304002,
+          "y": 0.55,
+          "z": -2.1896146035924193
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Signal Relay",
+    "text": "Signal Relay\n\nRestore three relay consoles in a silent communications station. Slip past patrol drones or use your sidearm, then reach the green extraction bay.\n\nBegin mission\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+    "state": {},
+    "playtime": 0,
+    "player": {
+      "position": {
+        "x": -30,
+        "y": 1.25,
+        "z": 0
+      },
+      "visible": false,
+      "controller": "firstperson"
+    },
+    "camera": {
+      "mode": "fixed"
+    },
+    "audio": {},
+    "objectives": {
+      "obj_restore_power": "active"
+    },
+    "inventory": {
+      "Relay sidearm": 1
+    },
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nRestore power at all three relay consoles\nWeapon 8/22\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:09:17.311Z"
+}

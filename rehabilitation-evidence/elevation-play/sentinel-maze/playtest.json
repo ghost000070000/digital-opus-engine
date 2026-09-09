@@ -1,0 +1,55 @@
+{
+  "id": "sentinel-maze",
+  "index": 15,
+  "inputOnly": true,
+  "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+  "errors": [],
+  "actions": [
+    {
+      "key": "w",
+      "ms": 950
+    },
+    {
+      "key": "d",
+      "ms": 520
+    },
+    {
+      "key": "f",
+      "ms": 0
+    },
+    {
+      "key": "q",
+      "ms": 0
+    },
+    {
+      "key": "w",
+      "ms": 700
+    }
+  ],
+  "startedAt": "2026-09-08T17:42:28.433Z",
+  "sourceSHA256": "2a0dd7e2656a40735ccb9c35f9bcd388c729848762dd51b8ccd078f92f29f6e3",
+  "final": {
+    "title": "Sentinel Maze",
+    "sim": 3.937199999995535,
+    "ended": false,
+    "paused": false,
+    "controller": "thirdperson",
+    "position": {
+      "x": -11,
+      "y": 0.4997908937599469,
+      "z": -6.274247324803382
+    },
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "objectives": {},
+    "inventory": {},
+    "helpers": [],
+    "webglLost": false
+  },
+  "pauseVisible": true,
+  "restartPassed": true,
+  "passed": true,
+  "finishedAt": "2026-09-08T17:42:33.346Z"
+}

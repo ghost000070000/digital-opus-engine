@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Showcase asset workshop</title>
+<style>html,body{margin:0;width:100%;height:100%;background:#142330;color:#e6e1ce;font:14px system-ui}canvas{display:block;width:100%;height:100%}aside{position:absolute;left:22px;bottom:18px;pointer-events:none}b{display:block;font-size:21px;letter-spacing:.015em;margin-bottom:5px}span{opacity:.65}</style></head>
+<body><canvas id="view"></canvas><aside><b id="name"></b><span id="stats"></span></aside><script src="../dist/opus-engine.js"></script><script>
+(async()=>{
+  const manifest=await(await fetch('../assets/showcase/manifest.json')).json();
+  const key=new URLSearchParams(location.search).get('key')||'ranger', entry=manifest.meshes.find(a=>a.key===key);
+  if(!entry)throw new Error('Unknown asset '+key);
+  const a=await(await fetch('../assets/showcase/'+entry.file)).json();
+  const app=Opus.create(document.querySelector('canvas'),{autoStart:false});
+  const skin=a.skin&&{...a.skin,clips:a.skin.clips.map(c=>({...c,tracks:c.tracks.map(t=>({...t,times:new Float32Array(t.times),values:new Float32Array(t.values)}))}))};
+  const mesh=skin?Opus.Mesh.fromSkinnedArrays(new Float32Array(a.positions),new Float32Array(a.normals),new Uint16Array(a.indices),new Float32Array(a.uvs),new Float32Array(a.joints),new Float32Array(a.weights),skin):Opus.Mesh.fromArrays(new Float32Array(a.positions),new Float32Array(a.normals),new Uint16Array(a.indices),new Float32Array(a.uvs));
+  const image=new Image();image.src='../assets/showcase/textures/palette.png';await image.decode();
+  const e=app.addEntity({mesh,color:[1,1,1]});e.texture=app.createTexture(image);
+  e.animationClip=0;
+  const size=a.bounds.max.map((x,i)=>x-a.bounds.min[i]),center=a.bounds.max.map((x,i)=>(x+a.bounds.min[i])/2),radius=Math.hypot(...size)/2;
+  app.camera.target=new Opus.Vec3(...center);app.camera.yaw=.48;app.camera.pitch=.27;app.camera.distance=Math.max(radius*3.05,1.1);app.camera.near=.025;
+  app.setEnvironment({skyTop:[.045,.075,.1],skyHorizon:[.17,.24,.29],groundColor:[.08,.12,.14],sunColor:[1,.95,.86],fogDensity:0});
+  app.addEntity({mesh:Opus.Mesh.cube(),position:new Opus.Vec3(center[0],a.bounds.min[1]-.08,center[2]),scale:new Opus.Vec3(radius*2.5,.12,radius*2.5),color:[.18,.24,.27]});
+  document.querySelector('#name').textContent=key;document.querySelector('#stats').textContent=entry.triangles+' triangles · original '+(skin?'animated':'static')+' mesh';
+  app.start();window.__assetReady={key,triangles:entry.triangles,skinned:!!skin};window.__assetApp=app;window.__assetEntity=e;
+})().catch(e=>{document.querySelector('#stats').textContent=e.stack;window.__assetError=e.stack;});
+</script></body></html>

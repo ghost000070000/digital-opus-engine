@@ -1,0 +1,140 @@
+{
+  "id": "assembly-line",
+  "phase": "after-bc",
+  "url": "http://localhost:8837/dist/games/assembly-line.html",
+  "startedAt": "2026-09-08T00:29:06.474Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Assembly Line",
+      "text": "Observe the three active bays, then use the inspection console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 0.5,
+      "simulationSeconds": 0.5,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.1226343990283145,
+          "z": -5
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Assembly Line",
+      "text": "Observe the three active bays, then use the inspection console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 4.424800000071526,
+      "simulationSeconds": 4.424800000071526,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 5.80794429885,
+          "y": 0.55,
+          "z": 10.300020789454143
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Assembly Line",
+      "text": "Inspection complete\n\nAll three fabrication bays are operational.\n\nRestart\nObserve the three active bays, then use the inspection console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 12.950200000166864,
+      "simulationSeconds": 12.950200000166864,
+      "ended": true,
+      "player": {
+        "position": {
+          "x": 4.1187511503922725,
+          "y": 0.55,
+          "z": 13.03345257202781
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Assembly Line",
+    "text": "Assembly Line\n\nThree fabrication bays assemble drones in real time. Clear space with your blaster, then inspect the control desk.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+    "state": {},
+    "playtime": 0,
+    "simulationSeconds": 0,
+    "ended": false,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 1.25,
+        "z": -5
+      },
+      "visible": false,
+      "controller": "firstperson"
+    },
+    "camera": {
+      "mode": "fixed"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "Inspection complete\n\nAll three fabrication bays are operational.\n\nRestart\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nObserve the three active bays, then use the inspection console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:29:40.309Z"
+}

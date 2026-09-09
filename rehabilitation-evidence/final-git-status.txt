@@ -1,0 +1,78 @@
+ M API-FRICTION.md
+ M CHANGELOG.md
+ M README.md
+ M ROADMAP.md
+ M build/build.js
+ M demo/index.html
+ M dist/delivery-run.html
+ M dist/opus-engine.js
+ M docs/architecture.md
+ M engine/src/01-vec3.js
+ M engine/src/02-mat4.js
+ M engine/src/04-input.js
+ M engine/src/05-camera.js
+ M engine/src/07-shader.js
+ M engine/src/08-mesh.js
+ M engine/src/09-renderer.js
+ M engine/src/11-entity.js
+ M engine/src/14-ui.js
+ M engine/src/16-save.js
+ M engine/src/17-audio.js
+ M engine/src/19-terrain.js
+ M engine/src/20-physics.js
+ D engine/src/21-api.js
+ M tests/browser-smoke.html
+ M tests/public-api.test.js
+ M tests/run-tests.js
+?? .claude/
+?? AUDIT.md
+?? CAPABILITY-WAVE-2-REPORT.md
+?? CAPABILITY-WAVE-3-REPORT.md
+?? CAPABILITY-WAVE-4-REPORT.md
+?? CAPABILITY-WAVE-5-REPORT.md
+?? CAPABILITY-WAVE-6-REPORT.md
+?? CAPABILITY-WAVE-7-REPORT.md
+?? CAPABILITY-WAVE-8-REPORT.md
+?? CAPABILITY-WAVE-9-REPORT.md
+?? DIGITAL-OPUS-ENGINE-PUBLIC-HOME-REPORT.md
+?? DIGITAL-OPUS-ENGINE-UPLOAD-READY-REPORT.md
+?? DIGITAL-OPUS-GAMES-PRODUCTION-DEPLOYMENT-REPORT.md
+?? DIGITAL-OPUS-GAMES-PUBLIC-HUB-REPORT.md
+?? EDITOR-UI-REARCHITECTURE-REPORT.md
+?? FULL-GAME-REHABILITATION-REPORT.md
+?? GAME-ART-DIRECTION-SYSTEM.md
+?? GAME-CATALOG-AND-PLAYABLE-BUILDS-REPORT.md
+?? GAME-REHABILITATION-MATRIX.md
+?? MAJOR-EXPANSION-REPORT.md
+?? ONNX-UTILITY-ASSESSMENT.md
+?? POST-WAVE-9-DOGFOOD-02-REPORT.md
+?? POST-WAVE-9-DOGFOOD-REPORT.md
+?? PUBLIC-GAME-QUALITY-STANDARD.md
+?? PUBLIC-SHOWCASE-RECOVERY-REPORT.md
+?? SHOWCASE-ASSET-LICENSES.md
+?? SHOWCASE-ASSET-REQUEST.md
+?? assets/
+?? build/asset-provenance.js
+?? build/build-engine-site.js
+?? build/build-games-site.js
+?? build/build-games.js
+?? build/export-template.js
+?? build/public-game-quality.js
+?? build/templates/
+?? dist/engine-site/
+?? dist/games-site/
+?? dist/games/
+?? dogfood-assets/
+?? editor/
+?? engine/src/21-gltf.js
+?? engine/src/22-api.js
+?? games/
+?? public-showcase-review/
+?? rehabilitation-evidence/
+?? release/
+?? tests/editor-smoke.html
+?? tests/fixtures/
+?? tests/public-site-build.test.js
+?? tests/showcase-quality.test.js
+?? tests/standalone-modal.test.js
+?? tools/

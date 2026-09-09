@@ -1,0 +1,59 @@
+{
+  "id": "signal-relay",
+  "index": 2,
+  "inputOnly": true,
+  "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+  "errors": [],
+  "actions": [
+    {
+      "key": "w",
+      "ms": 950
+    },
+    {
+      "key": "a",
+      "ms": 520
+    },
+    {
+      "key": "f",
+      "ms": 0
+    },
+    {
+      "key": "q",
+      "ms": 0
+    },
+    {
+      "key": "w",
+      "ms": 700
+    }
+  ],
+  "startedAt": "2026-09-08T17:41:20.267Z",
+  "sourceSHA256": "cd30a5795c13f16a39f8fc157ad82417e811c1e56a088736601caeb5a53f1703",
+  "final": {
+    "title": "Signal Relay",
+    "sim": 3.987500000000003,
+    "ended": false,
+    "paused": false,
+    "controller": "firstperson",
+    "position": {
+      "x": -20.9,
+      "y": 0.55,
+      "z": -1.024099494586812
+    },
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "objectives": {
+      "obj_restore_power": "active"
+    },
+    "inventory": {
+      "Relay sidearm": 1
+    },
+    "helpers": [],
+    "webglLost": false
+  },
+  "pauseVisible": true,
+  "restartPassed": true,
+  "passed": true,
+  "finishedAt": "2026-09-08T17:41:25.324Z"
+}

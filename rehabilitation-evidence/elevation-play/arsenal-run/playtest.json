@@ -1,0 +1,61 @@
+{
+  "id": "arsenal-run",
+  "index": 3,
+  "inputOnly": true,
+  "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+  "errors": [],
+  "actions": [
+    {
+      "key": "w",
+      "ms": 950
+    },
+    {
+      "key": "d",
+      "ms": 520
+    },
+    {
+      "key": "f",
+      "ms": 0
+    },
+    {
+      "key": "q",
+      "ms": 0
+    },
+    {
+      "key": "w",
+      "ms": 700
+    }
+  ],
+  "startedAt": "2026-09-08T17:41:25.512Z",
+  "sourceSHA256": "0ed910ba9c8438594c46e48edc6f8512e621a4833d2eede5ed37ebc7aed8b2d1",
+  "final": {
+    "title": "Arsenal Run",
+    "sim": 4.037500000000002,
+    "ended": false,
+    "paused": false,
+    "controller": "firstperson",
+    "position": {
+      "x": -4.826444395577031,
+      "y": 0.55,
+      "z": 1.8452941932803724
+    },
+    "state": {
+      "kills": 0,
+      "maxHealth": 100,
+      "health": 84
+    },
+    "objectives": {
+      "obj_clear": "active"
+    },
+    "inventory": {
+      "Sidearm": 1,
+      "Rifle": 1
+    },
+    "helpers": [],
+    "webglLost": false
+  },
+  "pauseVisible": true,
+  "restartPassed": true,
+  "passed": true,
+  "finishedAt": "2026-09-08T17:41:30.597Z"
+}

@@ -1,0 +1,141 @@
+{
+  "id": "signal-zero",
+  "phase": "baseline",
+  "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/signal-zero.html",
+  "startedAt": "2026-09-08T00:04:58.644Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Signal Zero",
+      "text": "Signal Zero: the relay has gone dark. Reach the console.\n[Left Click] Attack -- [F] Save\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 0.9795,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.05,
+          "z": 8
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Signal Zero",
+      "text": "Signal Zero: the relay has gone dark. Reach the console.\n[Left Click] Attack -- [F] Save\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 9.502699999928458,
+      "player": {
+        "position": {
+          "x": 16.016011273446708,
+          "y": 0.04621999999999998,
+          "z": -1.957225741142714
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Signal Zero",
+      "text": "Signal Zero: the relay has gone dark. Reach the console.\n[Left Click] Attack -- [F] Save\nPress F to interact",
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "playtime": 23.138400000214574,
+      "player": {
+        "position": {
+          "x": -8.76260249831662,
+          "y": 0.55,
+          "z": 12.664392267646203
+        },
+        "visible": false,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Signal Zero",
+    "text": "Signal Zero\n\nThe outpost has gone silent. Investigate.\n\nStart\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+    "state": {},
+    "playtime": 0,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 1.05,
+        "z": 8
+      },
+      "visible": true,
+      "controller": "thirdperson"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "Signal Zero: the relay has gone dark. Reach the console.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\n[Left Click] Attack -- [F] Save\nPress F to interact",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:05:31.401Z"
+}

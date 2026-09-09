@@ -1,0 +1,1293 @@
+{
+  "id": "opus-arena",
+  "method": "Native Playwright keyboard and mouse input; evaluate is read-only instrumentation.",
+  "startedAt": "2026-09-08T16:03:50.166Z",
+  "standaloneSHA256": "dcd6da748669029da464088e4950c00f6721253d3478348a9167f6e34cf682b7",
+  "errors": [],
+  "actions": [
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj49",
+      "distance": 0.519551451728437,
+      "error": 1.8568052333069824,
+      "sim": 4.049099999994042
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj49",
+      "distance": 0.5887452190128399,
+      "error": 1.94744632263639,
+      "sim": 4.550099999994044
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj49",
+      "distance": 0.07849256562420474,
+      "error": 1.9548166852395268,
+      "sim": 4.950499999992554
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj49",
+      "distance": 0.07468404076655685,
+      "error": 1.955266608695203,
+      "sim": 5.401399999998513
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj49",
+      "distance": 0.05546262012029071,
+      "error": 1.9552688710106,
+      "sim": 5.786799999997021
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj53",
+      "distance": 0.13312414836924072,
+      "error": 1.8181498945017762,
+      "sim": 7.085399999998516
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj53",
+      "distance": 0.07329890118776838,
+      "error": 1.9074400720986646,
+      "sim": 7.569799999997029
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj53",
+      "distance": 0.058516071930342584,
+      "error": 1.9074400720986582,
+      "sim": 7.970099999994049
+    }
+  ],
+  "frames": [
+    {
+      "label": "start",
+      "title": "Opus Arena",
+      "text": "Opus Arena\n\nHold the blue courtyard against eight approaching guardians. Face each target before firing. Visual landmark: Opus combat standard.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+      "sim": 0,
+      "playtime": 0,
+      "ended": false,
+      "paused": true,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 0
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 0
+        },
+        "forward": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "controller": "thirdperson",
+        "visible": false,
+        "radius": 0.5
+      },
+      "camera": {
+        "eye": {
+          "x": 0,
+          "y": 4.94631171566674,
+          "z": -6.5
+        },
+        "target": {
+          "x": 0,
+          "y": 0.55,
+          "z": 0
+        },
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.5602440483934887,
+            "z": 0.8283275959665198
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "up": {
+            "x": 0,
+            "y": 0.8283275959665198,
+            "z": 0.5602440483934887
+          }
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "rehab-1",
+          "name": "Inset floor",
+          "p": {
+            "x": 0,
+            "y": -0.18,
+            "z": 0
+          },
+          "scale": {
+            "x": 24,
+            "y": 0.36,
+            "z": 24
+          }
+        },
+        {
+          "id": "promo-1",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-2",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-3",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-4",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "opening",
+      "title": "Opus Arena",
+      "text": "Health 100 / 100\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+      "sim": 1.1302999999970198,
+      "playtime": 1.1302999999970198,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 100
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 0
+        },
+        "forward": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "controller": "thirdperson",
+        "visible": false,
+        "radius": 0.5
+      },
+      "camera": {
+        "eye": {
+          "x": 0,
+          "y": 4.94631171566674,
+          "z": -6.5
+        },
+        "target": {
+          "x": 0,
+          "y": 1.0499068684850748,
+          "z": 0
+        },
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.5141468926898627,
+            "z": 0.8577021468653083
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "up": {
+            "x": 0,
+            "y": 0.8577021468653083,
+            "z": 0.5141468926898627
+          }
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [
+        {
+          "id": "obj49",
+          "p": {
+            "x": 7.538164394898586,
+            "y": 0.5,
+            "z": 5.149924154859707
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 0.7150000000000001,
+              "z": 0
+            },
+            "radius": 0.5850000000000001
+          },
+          "visible": true,
+          "tags": [
+            "enemy",
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.65,
+            "y": 0.65,
+            "z": 0.65
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "rehab-1",
+          "name": "Inset floor",
+          "p": {
+            "x": 0,
+            "y": -0.18,
+            "z": 0
+          },
+          "scale": {
+            "x": 24,
+            "y": 0.36,
+            "z": 24
+          }
+        },
+        {
+          "id": "promo-1",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-2",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-3",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-4",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "kills-0",
+      "title": "Opus Arena",
+      "text": "Health 92 / 100\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+      "sim": 2.39759999999404,
+      "playtime": 2.39759999999404,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 92
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 0
+        },
+        "forward": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "controller": "thirdperson",
+        "visible": false,
+        "radius": 0.5
+      },
+      "camera": {
+        "eye": {
+          "x": 0,
+          "y": 4.94631171566674,
+          "z": -6.5
+        },
+        "target": {
+          "x": 0,
+          "y": 1.049999990349597,
+          "z": 0
+        },
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.5141378530336651,
+            "z": 0.8577075655944358
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "up": {
+            "x": 0,
+            "y": 0.8577075655944358,
+            "z": 0.5141378530336651
+          }
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [
+        {
+          "id": "obj49",
+          "p": {
+            "x": 4.398922021077139,
+            "y": 0.5,
+            "z": 3.0052561319862563
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 0.7150000000000001,
+              "z": 0
+            },
+            "radius": 0.5850000000000001
+          },
+          "visible": true,
+          "tags": [
+            "enemy",
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.65,
+            "y": 0.65,
+            "z": 0.65
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "rehab-1",
+          "name": "Inset floor",
+          "p": {
+            "x": 0,
+            "y": -0.18,
+            "z": 0
+          },
+          "scale": {
+            "x": 24,
+            "y": 0.36,
+            "z": 24
+          }
+        },
+        {
+          "id": "promo-1",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-2",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-3",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-4",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "kills-1",
+      "title": "Opus Arena",
+      "text": "Health 50 / 100\nKills: 1/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+      "sim": 6.016999999992552,
+      "playtime": 6.016999999992552,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 1,
+        "maxHealth": 100,
+        "health": 50
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 4.1570386802231925,
+          "y": 0.55,
+          "z": -0.33691107347408933
+        },
+        "forward": {
+          "x": 0.11267369093707856,
+          "y": 0,
+          "z": -0.9936320442551234
+        },
+        "controller": "thirdperson",
+        "visible": false,
+        "radius": 0.5
+      },
+      "camera": {
+        "eye": {
+          "x": 3.3969184432421984,
+          "y": 4.94631171566674,
+          "z": 6.129403876902093
+        },
+        "target": {
+          "x": 4.2792425011685165,
+          "y": 1.0499999999999996,
+          "z": -0.3709363268415687
+        },
+        "basis": {
+          "forward": {
+            "x": 0.11564151974318927,
+            "y": -0.5106688456980985,
+            "z": -0.8519650045306189
+          },
+          "right": {
+            "x": 0.9909133650881643,
+            "y": 0,
+            "z": 0.1345016835941115
+          },
+          "up": {
+            "x": 0.06868581950545578,
+            "y": 0.8597774886756293,
+            "z": -0.5060285843363913
+          }
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [
+        {
+          "id": "obj53",
+          "p": {
+            "x": 4.494145100140152,
+            "y": 0.5,
+            "z": 1.9416129329081073
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 0.7150000000000001,
+              "z": 0
+            },
+            "radius": 0.5850000000000001
+          },
+          "visible": true,
+          "tags": [
+            "enemy",
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.65,
+            "y": 0.65,
+            "z": 0.65
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "rehab-1",
+          "name": "Inset floor",
+          "p": {
+            "x": 0,
+            "y": -0.18,
+            "z": 0
+          },
+          "scale": {
+            "x": 24,
+            "y": 0.36,
+            "z": 24
+          }
+        },
+        {
+          "id": "promo-1",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-2",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-3",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-4",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "combat-8",
+      "title": "Opus Arena",
+      "text": "Health 8 / 100\nKills: 1/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+      "sim": 8.422999999992557,
+      "playtime": 8.422999999992557,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 1,
+        "maxHealth": 100,
+        "health": 8
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 5.465192241618999,
+          "y": 0.55,
+          "z": 0.8100577683260416
+        },
+        "forward": {
+          "x": 0.8309665075671021,
+          "y": 0,
+          "z": -0.5563224454412508
+        },
+        "controller": "thirdperson",
+        "visible": false,
+        "radius": 0.5
+      },
+      "camera": {
+        "eye": {
+          "x": 0.027085890710568224,
+          "y": 4.942543881891153,
+          "z": 4.393192580519349
+        },
+        "target": {
+          "x": 5.644320439930719,
+          "y": 1.0499999999999998,
+          "z": 0.9446444935564025
+        },
+        "basis": {
+          "forward": {
+            "x": 0.7338076787229223,
+            "y": -0.5085026386683844,
+            "z": -0.45050122876032966
+          },
+          "right": {
+            "x": 0.5231935092461618,
+            "y": 0,
+            "z": 0.8522139120447908
+          },
+          "up": {
+            "x": 0.4333530229846826,
+            "y": 0.8610604313677934,
+            "z": -0.26604527998584504
+          }
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [
+        {
+          "id": "obj53",
+          "p": {
+            "x": 5.401707876263393,
+            "y": 0.5,
+            "z": 0.7623752305017695
+          },
+          "health": {
+            "current": 40,
+            "max": 100
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 0.7150000000000001,
+              "z": 0
+            },
+            "radius": 0.5850000000000001
+          },
+          "visible": true,
+          "tags": [
+            "enemy",
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.65,
+            "y": 0.65,
+            "z": 0.65
+          }
+        },
+        {
+          "id": "obj63",
+          "p": {
+            "x": 5.7735472680561575,
+            "y": 0.5,
+            "z": 2.3252006437331025
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 0.7150000000000001,
+              "z": 0
+            },
+            "radius": 0.5850000000000001
+          },
+          "visible": true,
+          "tags": [
+            "enemy",
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.65,
+            "y": 0.65,
+            "z": 0.65
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "rehab-1",
+          "name": "Inset floor",
+          "p": {
+            "x": 0,
+            "y": -0.18,
+            "z": 0
+          },
+          "scale": {
+            "x": 24,
+            "y": 0.36,
+            "z": 24
+          }
+        },
+        {
+          "id": "promo-1",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-2",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-3",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-4",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "combat-outcome",
+      "title": "Opus Arena",
+      "text": "Try again\n\nRestart from the menu and try a different route.\n\nRestart\nHealth 0 / 100\nKills: 1/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+      "sim": 9.18959999999405,
+      "playtime": 9.18959999999405,
+      "ended": true,
+      "paused": false,
+      "overlay": {
+        "classes": "lose visible",
+        "title": "Try again"
+      },
+      "state": {
+        "kills": 1,
+        "maxHealth": 100,
+        "health": 0
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 5.534065037307302,
+          "y": 0.55,
+          "z": 0.8617875078780638
+        },
+        "forward": {
+          "x": 0.8309665075671021,
+          "y": 0,
+          "z": -0.5563224454412508
+        },
+        "controller": "thirdperson",
+        "visible": false,
+        "radius": 0.5
+      },
+      "camera": {
+        "eye": {
+          "x": 0.14299997944915843,
+          "y": 4.94848795324349,
+          "z": 4.484826169377151
+        },
+        "target": {
+          "x": 5.552040280947235,
+          "y": 1.0499999999999998,
+          "z": 0.8752887616443294
+        },
+        "basis": {
+          "forward": {
+            "x": 0.7134181221948468,
+            "y": -0.5141858444337921,
+            "z": -0.4760750994411353
+          },
+          "right": {
+            "x": 0.5550738826378273,
+            "y": 0,
+            "z": 0.8318010488171841
+          },
+          "up": {
+            "x": 0.4277003246869777,
+            "y": 0.8576787961608402,
+            "z": -0.28541113306727484
+          }
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [
+        {
+          "id": "obj53",
+          "p": {
+            "x": 5.485424013897753,
+            "y": 0.5,
+            "z": 0.8252536711523519
+          },
+          "health": {
+            "current": 40,
+            "max": 100
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 0.7150000000000001,
+              "z": 0
+            },
+            "radius": 0.5850000000000001
+          },
+          "visible": true,
+          "tags": [
+            "enemy",
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.65,
+            "y": 0.65,
+            "z": 0.65
+          }
+        },
+        {
+          "id": "obj63",
+          "p": {
+            "x": 5.534935533142088,
+            "y": 0.5,
+            "z": 0.9434871177926013
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 0.7150000000000001,
+              "z": 0
+            },
+            "radius": 0.5850000000000001
+          },
+          "visible": true,
+          "tags": [
+            "enemy",
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.65,
+            "y": 0.65,
+            "z": 0.65
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "rehab-1",
+          "name": "Inset floor",
+          "p": {
+            "x": 0,
+            "y": -0.18,
+            "z": 0
+          },
+          "scale": {
+            "x": 24,
+            "y": 0.36,
+            "z": 24
+          }
+        },
+        {
+          "id": "promo-1",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-2",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-3",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-4",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "restart",
+      "title": "Opus Arena",
+      "text": "Health 100 / 100\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+      "sim": 0.44200000000000006,
+      "playtime": 0.44200000000000006,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 100
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 0
+        },
+        "forward": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "controller": "thirdperson",
+        "visible": false,
+        "radius": 0.5
+      },
+      "camera": {
+        "eye": {
+          "x": 0,
+          "y": 4.94631171566674,
+          "z": -6.5
+        },
+        "target": {
+          "x": 0,
+          "y": 1.0263524990883666,
+          "z": 0
+        },
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.5164278966124185,
+            "z": 0.8563306765499372
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "up": {
+            "x": 0,
+            "y": 0.8563306765499372,
+            "z": 0.5164278966124185
+          }
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "rehab-1",
+          "name": "Inset floor",
+          "p": {
+            "x": 0,
+            "y": -0.18,
+            "z": 0
+          },
+          "scale": {
+            "x": 24,
+            "y": 0.36,
+            "z": 24
+          }
+        },
+        {
+          "id": "promo-1",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-2",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-3",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-4",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ],
+      "helpers": []
+    }
+  ],
+  "observations": [],
+  "finishedAt": "2026-09-08T16:04:07.532Z",
+  "outcome": "lose visible",
+  "restartVerified": true
+}

@@ -1,0 +1,100 @@
+{
+  "id": "npc-puzzle-adventure",
+  "inputOnly": true,
+  "events": [
+    {
+      "capture": "opening",
+      "state": {
+        "pos": {
+          "x": 0,
+          "y": 0.79,
+          "z": -5
+        },
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.5141379645667312,
+            "z": 0.8577074987378732
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "up": {
+            "x": 0,
+            "y": 0.8577074987378732,
+            "z": 0.5141379645667312
+          }
+        },
+        "ended": false,
+        "sim": 1.8855000000000004,
+        "text": "Speak to the sailor, use the door console, and enter the sanctum.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses."
+      }
+    },
+    {
+      "capture": "approach",
+      "state": {
+        "pos": {
+          "x": 0,
+          "y": 0.79,
+          "z": 0.38084183063529675
+        },
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.4077936845396671,
+            "z": 0.913074099320292
+          },
+          "right": {
+            "x": -0.9999999999999999,
+            "y": 0,
+            "z": 0
+          },
+          "up": {
+            "x": 0,
+            "y": 0.9130740993202919,
+            "z": 0.407793684539667
+          }
+        },
+        "ended": false,
+        "sim": 3.1703999999985117,
+        "text": "Speak to the sailor, use the door console, and enter the sanctum.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses."
+      }
+    },
+    {
+      "capture": "detail",
+      "state": {
+        "pos": {
+          "x": 4.556120388112691,
+          "y": 0.5154842246359381,
+          "z": -2.935481476462153
+        },
+        "basis": {
+          "forward": {
+            "x": 0.707556219340065,
+            "y": -0.4001784151021313,
+            "z": -0.5824271907797062
+          },
+          "right": {
+            "x": 0.6355341729884689,
+            "y": 0,
+            "z": 0.7720727394254139
+          },
+          "up": {
+            "x": 0.30896684520682294,
+            "y": 0.9164372515815508,
+            "z": -0.25432705808976924
+          }
+        },
+        "ended": false,
+        "sim": 4.5551999999955335,
+        "text": "Speak to the sailor, use the door console, and enter the sanctum.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses."
+      }
+    }
+  ],
+  "errors": [],
+  "startedAt": "2026-09-08T20:29:11.302Z",
+  "completed": true,
+  "finishedAt": "2026-09-08T20:29:16.427Z"
+}

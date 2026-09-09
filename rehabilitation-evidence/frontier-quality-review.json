@@ -1,0 +1,54 @@
+{
+  "games": [
+    {
+      "id": "relic-frontier",
+      "before": {
+        "visual": 1,
+        "gameplayClarity": 2,
+        "levelComposition": 2,
+        "audio": 1,
+        "presentation": 2,
+        "uniqueness": 3
+      },
+      "after": {
+        "visual": 3,
+        "gameplayClarity": 4,
+        "levelComposition": 3,
+        "audio": 3,
+        "presentation": 3,
+        "uniqueness": 3
+      },
+      "purpose": "Third-person equipment, state-machine guardian combat and a raised relic route",
+      "playtime": "1–3 minutes",
+      "estimatedMinutes": 2,
+      "notes": "Original ranger, stone guardians, rifle, ruins, woodland and authored audio replace engineering fixtures. Authored a flat terrain court so fixed-height guardians remain grounded; their timed touch damage uses real three-dimensional triggers and cannot hit through the raised ridge. The stone ramp now reaches the supported platform, the relic grants once and is destroyed, the objective HUD advances through weapon, guardian, relic and extraction, the gate opens after a kill, and the exit volume follows the low terrain edge. Normal keyboard-only route acquired the rifle, killed one guardian, climbed to the relic and won at24.94 simulation seconds with64HP. Native Restart restored100HP, both guardians, no inventory and the first objective. Final extraction read25.96sim; zero browser errors and no visible helper objects. Final decorative relocation moves rocks and shrubs away from the platform and changes no gameplay properties.",
+      "remainingGaps": "A compact sample rather than the requested5–10 minute fantasy flagship. Sparse horizon, simple flat combat court, repeated kit pieces, modest lighting and close chase-camera framing remain below Featured. Detailed collision between enemies and polished ranged aiming are limited by the existing movement system. A no-defense loss on the final authored monitor is not yet independently recorded.",
+      "screenshots": [
+        "rehabilitation-evidence/playthroughs/relic-frontier-final-appearance/weapon-pickup.png",
+        "rehabilitation-evidence/playthroughs/relic-frontier-verified/combat-obj1002-1.png"
+      ],
+      "playEvidence": [
+        "rehabilitation-evidence/playthroughs/relic-frontier-verified/playtest.json",
+        "rehabilitation-evidence/playthroughs/relic-frontier-ramp-probe/playtest.json",
+        "rehabilitation-evidence/playthroughs/relic-frontier-final-appearance/playtest.json"
+      ],
+      "outcomeVerified": true,
+      "finalRole": "SAMPLE",
+      "reviewedAt": "2026-09-08T01:00:37.696Z",
+      "sourceGenerator": "tools/refine-relic-frontier.js",
+      "normalInputProof": {
+        "firstWinSim": 24.9415,
+        "finalSim": 25.957899999857048,
+        "health": 64,
+        "kills": 1,
+        "inventory": {
+          "Rifle": 1,
+          "Ridge Relic": 1
+        },
+        "restartVerified": true,
+        "errors": [],
+        "standaloneSHA256": "f1f9ef645939d4d4c8cc2332a8ac001bf76a2f8cc8723f4225e8771769e06922"
+      }
+    }
+  ]
+}

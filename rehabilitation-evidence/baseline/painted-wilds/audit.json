@@ -1,0 +1,132 @@
+{
+  "id": "painted-wilds",
+  "phase": "baseline",
+  "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/painted-wilds.html",
+  "startedAt": "2026-09-08T00:06:29.539Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Painted Wilds",
+      "text": "PAINTED WILDS\nPress F to interact",
+      "state": {},
+      "playtime": 1.9591000001430516,
+      "player": {
+        "position": {
+          "x": -13,
+          "y": -1.5942933068196634,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Painted Wilds",
+      "text": "PAINTED WILDS\nPress F to interact",
+      "state": {},
+      "playtime": 11.245000000119203,
+      "player": {
+        "position": {
+          "x": -23.220657186190707,
+          "y": -1.9,
+          "z": 31.173517264521323
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Painted Wilds",
+      "text": "PAINTED WILDS\nPress F to interact",
+      "state": {},
+      "playtime": 26.708400000095374,
+      "player": {
+        "position": {
+          "x": -17.410596055657834,
+          "y": -1.9,
+          "z": 32.36918179789143
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Painted Wilds",
+    "text": "PAINTED WILDS\nPress F to interact",
+    "state": {},
+    "playtime": 0.48689999997615807,
+    "player": {
+      "position": {
+        "x": -13,
+        "y": -1.5942933068196634,
+        "z": 0
+      },
+      "visible": true,
+      "controller": "thirdperson"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPAINTED WILDS\nPress F to interact",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:07:01.901Z"
+}

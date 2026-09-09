@@ -1,0 +1,109 @@
+{
+  "games": [
+    {
+      "id": "iron-arena",
+      "before": {
+        "visual": 1,
+        "gameplayClarity": 2,
+        "levelComposition": 1,
+        "audio": 1,
+        "presentation": 2,
+        "uniqueness": 2
+      },
+      "after": {
+        "visual": 3,
+        "gameplayClarity": 3,
+        "levelComposition": 3,
+        "audio": 3,
+        "presentation": 3,
+        "uniqueness": 3
+      },
+      "finalRole": "SAMPLE",
+      "purpose": "Skeletal combat animation and hitscan combat",
+      "notes": "The dark skeletal test now has three readable armored sentries, a tiled forge court, cover and a clear kill objective. Final normal-input combat exposed and repaired two source-authoring gaps: sentries now deal supported contact damage, and the existing progress monitor ends the game at zero health. Fresh play verified three kills and Forge secured at 8.96 simulation seconds with 68 HP, then a separate no-defense loss at 10.73 seconds. Ordinary Restart clicks restored 100 HP and three live sentries after both endings; no browser errors.",
+      "remainingGaps": [
+        "The open court needs a stronger focal structure and richer composition before Featured consideration; its reviewed visual and presentation scores remain 3/5."
+      ],
+      "screenshots": [
+        "rehabilitation-evidence/combat-playtest/iron-arena-final-verified/encounter-obj416.png"
+      ],
+      "playEvidence": [
+        "rehabilitation-evidence/after-bc/iron-arena/audit.json",
+        "rehabilitation-evidence/after-bc-final/iron-arena/audit.json",
+        "rehabilitation-evidence/combat-playtest/iron-arena-final-verified/playtest.json"
+      ],
+      "outcomeVerified": true,
+      "recommendedFinalRole": "PUBLIC_SAMPLE_CANDIDATE",
+      "outcomes": {
+        "normalWin": {
+          "verified": true,
+          "kills": 3,
+          "health": 68,
+          "simulationSeconds": 8.96
+        },
+        "normalLoss": {
+          "verified": true,
+          "health": 0,
+          "simulationSeconds": 10.73
+        },
+        "ordinaryRestartAfterWin": true,
+        "ordinaryRestartAfterLoss": true,
+        "browserErrors": 0,
+        "standaloneSHA256": "87f88ddd1e0cb09dc325ef259c8f87624d93d193171362e040dbbfc1c20be816"
+      }
+    },
+    {
+      "id": "opus-arena",
+      "before": {
+        "visual": 1,
+        "gameplayClarity": 3,
+        "levelComposition": 1,
+        "audio": 1,
+        "presentation": 2,
+        "uniqueness": 2
+      },
+      "after": {
+        "visual": 3,
+        "gameplayClarity": 3,
+        "levelComposition": 3,
+        "audio": 3,
+        "presentation": 3,
+        "uniqueness": 2
+      },
+      "finalRole": "INTERNAL",
+      "purpose": "Projectile weapons and bounded enemy spawning",
+      "notes": "Guardians, relic projectiles, cover rocks and a gate replace the original enemy cubes and bare island. A flat tiled court and grounded spawner repair the floating-guardian presentation. Three bounded normal-input combat routes produced real projectile hits and losses. The strongest route reached three of eight kills by 9.51 simulation seconds and lost at 10.13 seconds; ordinary Restart reset health, kills and the spawner after every loss, with no browser errors. These attempts do not establish that the full objective is impossible, and no game state, damage values or success conditions were injected or weakened.",
+      "remainingGaps": [
+        "A complete eight-kill normal-input victory remains unverified after three bounded routes; the best reached 3/8 kills. Review combat pacing, directional aiming feedback and survivability before public promotion.",
+        "Normal loss and ordinary Restart are verified. The open court remains a modest combat study rather than a Featured arena."
+      ],
+      "screenshots": [
+        "rehabilitation-evidence/after-bc-final/opus-arena/opening.png"
+      ],
+      "playEvidence": [
+        "rehabilitation-evidence/after-bc/opus-arena/audit.json",
+        "rehabilitation-evidence/after-bc-final/opus-arena/audit.json",
+        "rehabilitation-evidence/combat-playtest/opus-arena-final-normal/playtest.json",
+        "rehabilitation-evidence/combat-playtest/opus-arena-final-stationary/playtest.json",
+        "rehabilitation-evidence/combat-playtest/opus-arena-final-contact/playtest.json"
+      ],
+      "outcomeVerified": false,
+      "recommendedFinalRole": "INTERNAL_ONLY_UNTIL_REBUILT",
+      "outcomes": {
+        "normalWin": {
+          "verified": false,
+          "bestKills": 3,
+          "requiredKills": 8,
+          "boundedRoutes": 3
+        },
+        "normalLoss": {
+          "verified": true,
+          "simulationSeconds": 10.13,
+          "bestAttemptKills": 3
+        },
+        "ordinaryRestartAfterLoss": true,
+        "browserErrors": 0
+      }
+    }
+  ]
+}

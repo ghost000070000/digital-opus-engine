@@ -1,0 +1,329 @@
+{
+  "id": "sentinel-maze",
+  "inputs": [
+    {
+      "target": [
+        -6,
+        -8
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 3.4521000000014888,
+        "position": {
+          "x": -6.66496576662328,
+          "y": 0.5002036481884238,
+          "z": -8.200065604922552
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": -0.7028969938835049,
+          "y": -0.47544741501666354,
+          "z": -0.5290421264356031
+        },
+        "text": "Health 100 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        -2,
+        -8
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 5.1048999999985085,
+        "position": {
+          "x": -0.8356367314323727,
+          "y": 0.49993928057021453,
+          "z": -7.976809163545127
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": 0.9416464576483253,
+          "y": -0.33311623447248795,
+          "z": -0.04832725037937584
+        },
+        "text": "Health 100 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        -2,
+        -11
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 7.418000000000002,
+        "position": {
+          "x": -2.715811357567782,
+          "y": 0.49983731552933985,
+          "z": -10.787730727257827
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": -0.9260812899439027,
+          "y": -0.3773209283014759,
+          "z": -0.0015367112772514272
+        },
+        "text": "Health 100 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        5,
+        -11
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "maxHealth": 100,
+          "health": 92
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 9.884599999994041,
+        "position": {
+          "x": 5.662440215926776,
+          "y": 0.49958952955782987,
+          "z": -11
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": 0.8164877775334821,
+          "y": -0.37620150094435156,
+          "z": -0.437972761511092
+        },
+        "text": "Health 92 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        8,
+        -8
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "maxHealth": 100,
+          "health": 76
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 12.904599999994057,
+        "position": {
+          "x": 9.098357615056118,
+          "y": 0.49997346224911166,
+          "z": -7.79077208027559
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": 0.8954990018452587,
+          "y": -0.39333357963248916,
+          "z": 0.20825521080548717
+        },
+        "text": "Health 76 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        8,
+        0
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "maxHealth": 100,
+          "health": 52
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 16.29769999999556,
+        "position": {
+          "x": 7.259083087836789,
+          "y": 0.5001161697475833,
+          "z": -0.6180449325440438
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": -0.8814330457282049,
+          "y": -0.4649525965129903,
+          "z": -0.08303534725722782
+        },
+        "text": "Health 52 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        10,
+        4
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "maxHealth": 100,
+          "health": 36
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 19.211399999991087,
+        "position": {
+          "x": 10.434161327695495,
+          "y": 0.499683690251715,
+          "z": 4.295963562611878
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": 0.6916019526374733,
+          "y": -0.5351290234966889,
+          "z": 0.48510170822160015
+        },
+        "text": "Health 36 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        10,
+        9
+      ],
+      "result": "ended",
+      "state": {
+        "level": 0,
+        "state": {
+          "maxHealth": 100,
+          "health": 28
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": true,
+        "playtime": 20.68159999999407,
+        "position": {
+          "x": 10.288518308618432,
+          "y": 0.4999647022572522,
+          "z": 9.322115425699824
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": 0.37071726138871536,
+          "y": -0.3353267981373093,
+          "z": 0.8660973678284857
+        },
+        "text": "Maze escaped\n\nYou passed the sentinel and reached the exit.\n\nRestart\nHealth 28 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "dialogue": false
+      }
+    }
+  ],
+  "errors": [],
+  "started": "2026-09-08T16:00:50.711Z",
+  "start": {
+    "level": 0,
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 2.0338000000044696,
+    "position": {
+      "x": -8,
+      "y": 0.5003414976354006,
+      "z": -8
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": 0,
+      "y": -0.5141378830979033,
+      "z": 0.8577075475729514
+    },
+    "text": "Health 100 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "dialogue": false
+  },
+  "final": {
+    "level": 0,
+    "state": {
+      "maxHealth": 100,
+      "health": 28
+    },
+    "flags": {},
+    "inventory": {},
+    "ended": true,
+    "playtime": 21.64709999999407,
+    "position": {
+      "x": 11,
+      "y": 0.49981295632376765,
+      "z": 11
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": 0.3418288590413771,
+      "y": -0.5110243544597173,
+      "z": 0.7886742928963133
+    },
+    "text": "Maze escaped\n\nYou passed the sentinel and reached the exit.\n\nRestart\nHealth 28 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "dialogue": false
+  },
+  "completed": true,
+  "restart": {
+    "level": 0,
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 0.5491000000014902,
+    "position": {
+      "x": -8,
+      "y": 0.5003414976354006,
+      "z": -8
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": 0,
+      "y": -0.515176759027576,
+      "z": 0.8570839556063587
+    },
+    "text": "Health 100 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "dialogue": false
+  },
+  "finished": "2026-09-08T16:01:15.932Z"
+}

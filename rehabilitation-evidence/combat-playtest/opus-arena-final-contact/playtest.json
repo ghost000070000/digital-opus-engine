@@ -1,0 +1,1037 @@
+{
+  "id": "opus-arena",
+  "method": "Native Playwright keyboard and mouse input; evaluate is read-only instrumentation.",
+  "startedAt": "2026-09-08T01:04:03.324Z",
+  "standaloneSHA256": "5dbecb99ace095f20a0652b0d8c48c7a070f1aecd9f3ad9cb3c0af5e10a195b0",
+  "errors": [],
+  "actions": [
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj49",
+      "distance": 6.149024487481735,
+      "error": 0.2165048585023265,
+      "sim": 1.768399999976157
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj49",
+      "distance": 2.9206872907313066,
+      "error": 0.21078385326357876,
+      "sim": 2.2022000000476827
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj49",
+      "distance": 0.21062608053074094,
+      "error": 2.3858177937050775,
+      "sim": 2.6029999999999984
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj49",
+      "distance": 0.27364069327594415,
+      "error": 3.127667694520083,
+      "sim": 3.003300000071525
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj49",
+      "distance": 0.11707948493226533,
+      "error": 3.1340559501990186,
+      "sim": 3.4203999999761567
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj49",
+      "distance": 0.07124397886021568,
+      "error": 3.134072503459176,
+      "sim": 3.837499999999998
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj49",
+      "distance": 0.06414947928156668,
+      "error": 3.1340727798656127,
+      "sim": 4.254899999976156
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj59",
+      "distance": 0.058868927122388316,
+      "error": 2.6108136531869857,
+      "sim": 4.738600000023839
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj59",
+      "distance": 0.0852614211366888,
+      "error": 2.7872910540226603,
+      "sim": 5.172300000071521
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj59",
+      "distance": 0.09757277483561898,
+      "error": 2.834640166118324,
+      "sim": 5.590100000023837
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj59",
+      "distance": 0.052435566063544034,
+      "error": 2.862633525130379,
+      "sim": 6.006999999999994
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj59",
+      "distance": 0.055222438366252805,
+      "error": 2.8774681307041696,
+      "sim": 6.423700000047677
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj69",
+      "distance": 0.9207623624539956,
+      "error": 3.0119684566201617,
+      "sim": 7.291300000071516
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj69",
+      "distance": 0.0696476576995892,
+      "error": 3.0121727305312556,
+      "sim": 7.708399999976147
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj69",
+      "distance": 0.06978586429165498,
+      "error": 3.0124153454701466,
+      "sim": 8.14210000002383
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj69",
+      "distance": 0.06984416900300075,
+      "error": 3.0125174064272757,
+      "sim": 8.526100000023828
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj69",
+      "distance": 0.06987507494103437,
+      "error": 3.012571436922813,
+      "sim": 8.943200000047668
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj69",
+      "distance": 0.06989004641941256,
+      "error": 3.0125975931082545,
+      "sim": 9.376899999976143
+    }
+  ],
+  "frames": [
+    {
+      "label": "start",
+      "title": "Opus Arena",
+      "text": "Opus Arena\n\nHold the blue courtyard against eight approaching guardians. Face each target before firing.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "sim": 0,
+      "playtime": 0,
+      "ended": false,
+      "paused": true,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 0
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 0
+        },
+        "forward": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "controller": "thirdperson",
+        "visible": false,
+        "radius": 0.5
+      },
+      "camera": {
+        "eye": {
+          "x": 0,
+          "y": 4.94631171566674,
+          "z": -6.5
+        },
+        "target": {
+          "x": 0,
+          "y": 0.55,
+          "z": 0
+        },
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.5602440483934887,
+            "z": 0.8283275959665198
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "up": {
+            "x": 0,
+            "y": 0.8283275959665198,
+            "z": 0.5602440483934887
+          }
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "rehab-1",
+          "name": "Inset floor",
+          "p": {
+            "x": 0,
+            "y": -0.18,
+            "z": 0
+          },
+          "scale": {
+            "x": 24,
+            "y": 0.36,
+            "z": 24
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "opening",
+      "title": "Opus Arena",
+      "text": "Health 100 / 100\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "sim": 0.6839999999999999,
+      "playtime": 0.6839999999999999,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 100
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 0
+        },
+        "forward": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "controller": "thirdperson",
+        "visible": false,
+        "radius": 0.5
+      },
+      "camera": {
+        "eye": {
+          "x": 0,
+          "y": 4.94631171566674,
+          "z": -6.5
+        },
+        "target": {
+          "x": 0,
+          "y": 1.0454801974192733,
+          "z": 0
+        },
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.5145764070852289,
+            "z": 0.8574445295593509
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "up": {
+            "x": 0,
+            "y": 0.8574445295593509,
+            "z": 0.5145764070852289
+          }
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "rehab-1",
+          "name": "Inset floor",
+          "p": {
+            "x": 0,
+            "y": -0.18,
+            "z": 0
+          },
+          "scale": {
+            "x": 24,
+            "y": 0.36,
+            "z": 24
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "kills-0",
+      "title": "Opus Arena",
+      "text": "Health 100 / 100\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "sim": 0.9008999999761579,
+      "playtime": 0.9008999999761579,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 100
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 0
+        },
+        "forward": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "controller": "thirdperson",
+        "visible": false,
+        "radius": 0.5
+      },
+      "camera": {
+        "eye": {
+          "x": 0,
+          "y": 4.94631171566674,
+          "z": -6.5
+        },
+        "target": {
+          "x": 0,
+          "y": 1.0489837306943803,
+          "z": 0
+        },
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.5142364955483743,
+            "z": 0.8576484283470277
+          },
+          "right": {
+            "x": -0.9999999999999999,
+            "y": 0,
+            "z": 0
+          },
+          "up": {
+            "x": 0,
+            "y": 0.8576484283470276,
+            "z": 0.5142364955483741
+          }
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "rehab-1",
+          "name": "Inset floor",
+          "p": {
+            "x": 0,
+            "y": -0.18,
+            "z": 0
+          },
+          "scale": {
+            "x": 24,
+            "y": 0.36,
+            "z": 24
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "kills-1",
+      "title": "Opus Arena",
+      "text": "Health 53 / 100\nKills: 1/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "sim": 4.404999999999998,
+      "playtime": 4.404999999999998,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 1,
+        "maxHealth": 100,
+        "health": 53
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 5.709571016324088,
+          "y": 0.55,
+          "z": 3.5599888839601355
+        },
+        "forward": {
+          "x": 0.8380404631693764,
+          "y": 0,
+          "z": 0.5456080847007833
+        },
+        "controller": "thirdperson",
+        "visible": false,
+        "radius": 0.5
+      },
+      "camera": {
+        "eye": {
+          "x": 0.23127919943690417,
+          "y": 4.94631171566674,
+          "z": -0.006334693557743227
+        },
+        "target": {
+          "x": 5.844896095637208,
+          "y": 1.0499999999999656,
+          "z": 3.646650559234075
+        },
+        "basis": {
+          "forward": {
+            "x": 0.724483987476188,
+            "y": -0.5028514593019582,
+            "z": 0.47144815384991573
+          },
+          "right": {
+            "x": -0.5454222194134939,
+            "y": 0,
+            "z": 0.8381614418297102
+          },
+          "up": {
+            "x": 0.4214707041547031,
+            "y": 0.8643728419367949,
+            "z": 0.2742663589677882
+          }
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [
+        {
+          "id": "obj59",
+          "p": {
+            "x": 5.57783991493741,
+            "y": 0.5,
+            "z": 3.0001895241864687
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 0.7150000000000001,
+              "z": 0
+            },
+            "radius": 0.5850000000000001
+          },
+          "visible": true,
+          "tags": [
+            "enemy",
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.65,
+            "y": 0.65,
+            "z": 0.65
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "rehab-1",
+          "name": "Inset floor",
+          "p": {
+            "x": 0,
+            "y": -0.18,
+            "z": 0
+          },
+          "scale": {
+            "x": 24,
+            "y": 0.36,
+            "z": 24
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "kills-2",
+      "title": "Opus Arena",
+      "text": "Health 32 / 100\nKills: 2/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "sim": 6.573800000071518,
+      "playtime": 6.573800000071518,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 2,
+        "maxHealth": 100,
+        "health": 32
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 5.79061814928871,
+          "y": 0.55,
+          "z": 3.6118912178622335
+        },
+        "forward": {
+          "x": 0.8380404631693764,
+          "y": 0,
+          "z": 0.5456080847007833
+        },
+        "controller": "thirdperson",
+        "visible": false,
+        "radius": 0.5
+      },
+      "camera": {
+        "eye": {
+          "x": 0.37472642079720136,
+          "y": 4.957527790183155,
+          "z": 0.08631361309300077
+        },
+        "target": {
+          "x": 5.793346485388699,
+          "y": 1.0499999999999992,
+          "z": 3.6136384358831144
+        },
+        "basis": {
+          "forward": {
+            "x": 0.717259405926013,
+            "y": -0.517237050765147,
+            "z": 0.4669098177661677
+          },
+          "right": {
+            "x": -0.5455559796805349,
+            "y": 0,
+            "z": 0.8380743839509783
+          },
+          "up": {
+            "x": 0.4334831226766215,
+            "y": 0.8558421778083697,
+            "z": 0.28218176595725036
+          }
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "rehab-1",
+          "name": "Inset floor",
+          "p": {
+            "x": 0,
+            "y": -0.18,
+            "z": 0
+          },
+          "scale": {
+            "x": 24,
+            "y": 0.36,
+            "z": 24
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "combat-8",
+      "title": "Opus Arena",
+      "text": "Health 11 / 100\nKills: 2/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "sim": 8.275800000071513,
+      "playtime": 8.275800000071513,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 2,
+        "maxHealth": 100,
+        "health": 11
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 5.79220811176402,
+          "y": 0.55,
+          "z": 3.612909424926031
+        },
+        "forward": {
+          "x": 0.8380404631693764,
+          "y": 0,
+          "z": 0.5456080847007833
+        },
+        "controller": "thirdperson",
+        "visible": false,
+        "radius": 0.5
+      },
+      "camera": {
+        "eye": {
+          "x": 0.361345363693556,
+          "y": 4.980794135225473,
+          "z": -0.014581601684071813
+        },
+        "target": {
+          "x": 5.792335508866475,
+          "y": 1.0499999999999992,
+          "z": 3.612991009637392
+        },
+        "basis": {
+          "forward": {
+            "x": 0.7124726993174332,
+            "y": -0.5156672048971395,
+            "z": 0.47588862827441253
+          },
+          "right": {
+            "x": -0.5554327222476338,
+            "y": 0,
+            "z": 0.8315614776170086
+          },
+          "up": {
+            "x": 0.42880898286289804,
+            "y": 0.8567889668953326,
+            "z": 0.28641843938984657
+          }
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [
+        {
+          "id": "obj69",
+          "p": {
+            "x": 5.72928595113071,
+            "y": 0.5,
+            "z": 3.582671087364253
+          },
+          "health": {
+            "current": 60,
+            "max": 100
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 0.7150000000000001,
+              "z": 0
+            },
+            "radius": 0.5850000000000001
+          },
+          "visible": true,
+          "tags": [
+            "enemy",
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.65,
+            "y": 0.65,
+            "z": 0.65
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "rehab-1",
+          "name": "Inset floor",
+          "p": {
+            "x": 0,
+            "y": -0.18,
+            "z": 0
+          },
+          "scale": {
+            "x": 24,
+            "y": 0.36,
+            "z": 24
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "kills-3",
+      "title": "Opus Arena",
+      "text": "Health 6 / 100\nKills: 3/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "sim": 9.510300000071512,
+      "playtime": 9.510300000071512,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 3,
+        "maxHealth": 100,
+        "health": 6
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 5.792277588870981,
+          "y": 0.55,
+          "z": 3.612953917850978
+        },
+        "forward": {
+          "x": 0.8380404631693764,
+          "y": 0,
+          "z": 0.5456080847007833
+        },
+        "controller": "thirdperson",
+        "visible": false,
+        "radius": 0.5
+      },
+      "camera": {
+        "eye": {
+          "x": 0.3450114099283325,
+          "y": 4.94631171566674,
+          "z": 0.06649933829963396
+        },
+        "target": {
+          "x": 5.792291422007588,
+          "y": 1.0499999999999992,
+          "z": 3.612962776548986
+        },
+        "basis": {
+          "forward": {
+            "x": 0.7187942470673017,
+            "y": -0.5141366773493915,
+            "z": 0.467972549822186
+          },
+          "right": {
+            "x": -0.5456080651273548,
+            "y": 0,
+            "z": 0.8380404759126997
+          },
+          "up": {
+            "x": 0.4308673457700582,
+            "y": 0.8577082703367896,
+            "z": 0.28051711773960863
+          }
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "rehab-1",
+          "name": "Inset floor",
+          "p": {
+            "x": 0,
+            "y": -0.18,
+            "z": 0
+          },
+          "scale": {
+            "x": 24,
+            "y": 0.36,
+            "z": 24
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "combat-outcome",
+      "title": "Opus Arena",
+      "text": "Try again\n\nRestart from the menu and try a different route.\n\nRestart\nHealth 0 / 100\nKills: 3/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "sim": 10.128100000023831,
+      "playtime": 10.128100000023831,
+      "ended": true,
+      "paused": false,
+      "overlay": {
+        "classes": "lose visible",
+        "title": "Try again"
+      },
+      "state": {
+        "kills": 3,
+        "maxHealth": 100,
+        "health": 0
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 5.792282603661162,
+          "y": 0.55,
+          "z": 3.612957129307136
+        },
+        "forward": {
+          "x": 0.8380404631693764,
+          "y": 0,
+          "z": 0.5456080847007833
+        },
+        "controller": "thirdperson",
+        "visible": false,
+        "radius": 0.5
+      },
+      "camera": {
+        "eye": {
+          "x": 0.3247996599849657,
+          "y": 4.942369191840194,
+          "z": 0.030898311094355674
+        },
+        "target": {
+          "x": 5.792285378291789,
+          "y": 1.0499999999999992,
+          "z": 3.6129589061720253
+        },
+        "basis": {
+          "forward": {
+            "x": 0.71869031875953,
+            "y": -0.5116443278208889,
+            "z": 0.47085486886092187
+          },
+          "right": {
+            "x": -0.5480171351510266,
+            "y": 0,
+            "z": 0.8364671060961462
+          },
+          "up": {
+            "x": 0.42797365024284684,
+            "y": 0.8591973474171757,
+            "z": 0.2803898587486762
+          }
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [
+        {
+          "id": "obj78",
+          "p": {
+            "x": 5.2815227742194315,
+            "y": 0.5,
+            "z": 3.8485568273030513
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 0.7150000000000001,
+              "z": 0
+            },
+            "radius": 0.5850000000000001
+          },
+          "visible": true,
+          "tags": [
+            "enemy",
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.65,
+            "y": 0.65,
+            "z": 0.65
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "rehab-1",
+          "name": "Inset floor",
+          "p": {
+            "x": 0,
+            "y": -0.18,
+            "z": 0
+          },
+          "scale": {
+            "x": 24,
+            "y": 0.36,
+            "z": 24
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "restart",
+      "title": "Opus Arena",
+      "text": "Health 100 / 100\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "sim": 0.26720000004768374,
+      "playtime": 0.26720000004768374,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 100
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 0
+        },
+        "forward": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "controller": "thirdperson",
+        "visible": false,
+        "radius": 0.5
+      },
+      "camera": {
+        "eye": {
+          "x": 0,
+          "y": 4.94631171566674,
+          "z": -6.5
+        },
+        "target": {
+          "x": 0,
+          "y": 0.9704742124426948,
+          "z": 0
+        },
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.5217954274596367,
+            "z": 0.8530706488223676
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "up": {
+            "x": 0,
+            "y": 0.8530706488223676,
+            "z": 0.5217954274596367
+          }
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "rehab-1",
+          "name": "Inset floor",
+          "p": {
+            "x": 0,
+            "y": -0.18,
+            "z": 0
+          },
+          "scale": {
+            "x": 24,
+            "y": 0.36,
+            "z": 24
+          }
+        }
+      ],
+      "helpers": []
+    }
+  ],
+  "observations": [],
+  "finishedAt": "2026-09-08T01:04:15.753Z",
+  "outcome": "lose visible",
+  "restartVerified": true
+}

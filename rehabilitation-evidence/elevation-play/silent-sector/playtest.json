@@ -1,0 +1,58 @@
+{
+  "id": "silent-sector",
+  "index": 4,
+  "inputOnly": true,
+  "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+  "errors": [],
+  "actions": [
+    {
+      "key": "w",
+      "ms": 950
+    },
+    {
+      "key": "a",
+      "ms": 520
+    },
+    {
+      "key": "Space",
+      "ms": 100
+    },
+    {
+      "key": "f",
+      "ms": 0
+    },
+    {
+      "key": "q",
+      "ms": 0
+    },
+    {
+      "key": "w",
+      "ms": 700
+    }
+  ],
+  "startedAt": "2026-09-08T17:41:30.808Z",
+  "sourceSHA256": "258c05cee450a79d9d58699461611fbbfb762b93d29d48e34100adac6927bf0a",
+  "final": {
+    "title": "Silent Sector",
+    "sim": 4.1043999999985115,
+    "ended": false,
+    "paused": false,
+    "controller": "firstperson",
+    "position": {
+      "x": -29,
+      "y": 1.25,
+      "z": -5.5
+    },
+    "state": {},
+    "objectives": {
+      "obj_reach_wing": "active"
+    },
+    "inventory": {},
+    "helpers": [],
+    "webglLost": false
+  },
+  "pauseVisible": true,
+  "restartPassed": true,
+  "passed": true,
+  "finishedAt": "2026-09-08T17:41:36.202Z"
+}

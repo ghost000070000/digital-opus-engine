@@ -1,0 +1,25 @@
+{
+  "id": "relic-frontier",
+  "sourceSHA256": "7ecf9e80589e38075fa04a7918fa93978499fc588ab6801ea60c9c0dd3d0b77a",
+  "errors": [],
+  "capturedAt": "2026-09-08T17:44:11.177Z",
+  "sha256": "618e10288f88daf755108ace8f7cb7ca1e441ae2752ecb0f4826266c420c2013",
+  "state": {
+    "title": "Relic Frontier",
+    "sim": 1.9526000000014905,
+    "ended": false,
+    "text": "A relic glows atop the ridge...\nHealth 100 / 100\nFind the weapon\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact\nFind the weapon • Defeat the guardian • Claim the ridge relic",
+    "controller": "thirdperson",
+    "bodyVisible": false,
+    "visualVisible": true,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 58
+  },
+  "pauseText": "A relic glows atop the ridge...\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nFind the weapon\n[Q] Attack -- [Shift] Sprint -- [C] Crouch\nPress F to interact\nFind the weapon • Defeat the guardian • Claim the ridge relic",
+  "passed": true
+}

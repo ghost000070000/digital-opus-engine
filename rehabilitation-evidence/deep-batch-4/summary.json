@@ -1,0 +1,102 @@
+[
+  {
+    "id": "power-station",
+    "sourceSHA256": "264c4a648d595e09dd245a2836e32bb64e4542783c28b076cd21c722ce12caf6",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:23:57.438Z",
+    "sha256": "7b733d6e59624c9c0c09cba87802184fa1499c022d1305c95c514de273c699dc",
+    "state": {
+      "title": "Power Station",
+      "sim": 1.4180999999940396,
+      "ended": false,
+      "text": "Fuel Cells: 0/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 41
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nFuel Cells: 0/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "relic-runner-2",
+    "sourceSHA256": "74df57dab31bb4694398bd7b5b3fb4b3c09a3769b69c2c11786ce9cde29992b9",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:24:01.240Z",
+    "sha256": "e1d35248e28f51b7fe95af1601caff840912c3e1ce2bd53f1c6ae4580b3c7953",
+    "state": {
+      "title": "Relic Runner 2",
+      "sim": 1.418399999998509,
+      "ended": false,
+      "text": "A relic glows atop the ridge...\nHealth 100 / 100\nReach the relic on the ridge!\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 41
+    },
+    "pauseText": "A relic glows atop the ridge...\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nReach the relic on the ridge!\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "sentinel-maze",
+    "sourceSHA256": "2a0dd7e2656a40735ccb9c35f9bcd388c729848762dd51b8ccd078f92f29f6e3",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:24:04.691Z",
+    "sha256": "8ca0d0bd43e55abdb3a88173e1b07c10ce02fc4bc1109325375f27ce38f07468",
+    "state": {
+      "title": "Sentinel Maze",
+      "sim": 1.4181999999955293,
+      "ended": false,
+      "text": "Health 100 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 49
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "signal-zero",
+    "sourceSHA256": "c7fa71314f2f700d4fccdd4b48f8e0cc144aabc161923805c505c306b1aa8923",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:24:08.014Z",
+    "sha256": "73814f5f37d096fd5e11cdd90ced6a5cf44bb0eb3913b6d5c32e927239855e1e",
+    "state": {
+      "title": "Signal Zero",
+      "sim": 1.9856000000014895,
+      "ended": false,
+      "text": "Signal Zero: the relay has gone dark. Reach the console.\nHealth 100 / 100\nReach the outpost console, then restore the deep relay.\nPress F to interact\nWASD / arrows move; Space jumps; Left Click attacks; Escape pauses.",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 41
+    },
+    "pauseText": "Signal Zero: the relay has gone dark. Reach the console.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nReach the outpost console, then restore the deep relay.\nPress F to interact\nWASD / arrows move; Space jumps; Left Click attacks; Escape pauses.",
+    "passed": true
+  }
+]

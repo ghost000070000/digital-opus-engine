@@ -1,0 +1,164 @@
+{
+  "id": "painted-wilds",
+  "inputs": [
+    {
+      "target": [
+        -5,
+        -4
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "survey": 1
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 4.621299999997023,
+        "position": {
+          "x": -4.018277784714632,
+          "y": 0.9965893118005917,
+          "z": -4.572102611608715
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": 0.8695097377907178,
+          "y": -0.3435299941178097,
+          "z": -0.35488020377098334
+        },
+        "text": "Landscape study 1 recorded.\nVisit all three survey stones.\nStudies: 1 / 3\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        5,
+        -2
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {
+          "survey": 2
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": false,
+        "playtime": 8.143900000005967,
+        "position": {
+          "x": 4.9990959336419145,
+          "y": 1.913115366051628,
+          "z": -1.2509914469517287
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": 0.008033926673085251,
+          "y": -0.47110612888837056,
+          "z": 0.8820399488379342
+        },
+        "text": "Landscape study 2 recorded.\nVisit all three survey stones.\nStudies: 2 / 3\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        7,
+        6
+      ],
+      "result": "ended",
+      "state": {
+        "level": 0,
+        "state": {
+          "survey": 3
+        },
+        "flags": {},
+        "inventory": {},
+        "ended": true,
+        "playtime": 10.159300000004496,
+        "position": {
+          "x": 7.147337997773325,
+          "y": -0.9872704383806253,
+          "z": 5.58438097246598
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "x": 0.31013744906565666,
+          "y": -0.3361207578779924,
+          "z": 0.8892905030475539
+        },
+        "text": "Landscape study 3 recorded.\nSurvey complete\n\nThe three landscape studies are recorded.\n\nRestart\nVisit all three survey stones.\nStudies: 3 / 3\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+        "dialogue": false
+      }
+    }
+  ],
+  "errors": [],
+  "started": "2026-09-08T15:57:51.576Z",
+  "start": {
+    "level": 0,
+    "state": {},
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 2.0054999999925496,
+    "position": {
+      "x": -13,
+      "y": -1.5942933068196634,
+      "z": 0
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": 0,
+      "y": -0.5141378784718372,
+      "z": 0.8577075503459664
+    },
+    "text": "Visit all three survey stones.\nStudies: 0 / 3\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "dialogue": false
+  },
+  "final": {
+    "level": 0,
+    "state": {
+      "survey": 3
+    },
+    "flags": {},
+    "inventory": {},
+    "ended": true,
+    "playtime": 11.384000000007475,
+    "position": {
+      "x": 4.298944085533369,
+      "y": -0.6285969134507263,
+      "z": 8.714833828971647
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": -0.8705370979017302,
+      "y": -0.46068346851339687,
+      "z": 0.17301994976100085
+    },
+    "text": "Landscape study 3 recorded.\nSurvey complete\n\nThe three landscape studies are recorded.\n\nRestart\nVisit all three survey stones.\nStudies: 3 / 3\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "dialogue": false
+  },
+  "completed": true,
+  "restart": {
+    "level": 0,
+    "state": {},
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 0.5913000000044704,
+    "position": {
+      "x": -13,
+      "y": -1.5942933068196634,
+      "z": 0
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "x": 0,
+      "y": -0.5148980263923071,
+      "z": 0.8572514347712151
+    },
+    "text": "Visit all three survey stones.\nStudies: 0 / 3\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "dialogue": false
+  },
+  "finished": "2026-09-08T15:58:08.901Z"
+}

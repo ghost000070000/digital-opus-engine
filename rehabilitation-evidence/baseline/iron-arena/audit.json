@@ -1,0 +1,132 @@
+{
+  "id": "iron-arena",
+  "phase": "baseline",
+  "url": "http://localhost:8837/rehabilitation-evidence/baseline-builds/iron-arena.html",
+  "startedAt": "2026-09-08T00:03:11.606Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Iron Arena",
+      "text": "IRON ARENA\nKills: 0\nPress F to interact",
+      "state": {},
+      "playtime": 1.139799999952316,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 10
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Iron Arena",
+      "text": "IRON ARENA\nKills: 0\nPress F to interact",
+      "state": {},
+      "playtime": 7.555899999856938,
+      "player": {
+        "position": {
+          "x": 9.599999999971319,
+          "y": 0.55,
+          "z": 14.1
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Iron Arena",
+      "text": "IRON ARENA\nKills: 0\nPress F to interact",
+      "state": {},
+      "playtime": 16.984599999904606,
+      "player": {
+        "position": {
+          "x": 7.911604389619895,
+          "y": 0.55,
+          "z": 14.1
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Iron Arena",
+    "text": "Iron Arena\n\nAnimated combat stress test -- fight the Sentries.\n\nEnter Arena\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact",
+    "state": {},
+    "playtime": 0,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": 1.05,
+        "z": 10
+      },
+      "visible": false,
+      "controller": "firstperson"
+    },
+    "camera": {
+      "mode": "fixed"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nIRON ARENA\nKills: 0\nPress F to interact",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:03:44.948Z"
+}

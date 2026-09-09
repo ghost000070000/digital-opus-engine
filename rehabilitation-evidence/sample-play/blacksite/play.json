@@ -1,0 +1,224 @@
+{
+  "id": "blacksite",
+  "inputs": [
+    {
+      "target": [
+        4,
+        2
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {},
+        "inventory": {
+          "Sector Key": 1
+        },
+        "ended": false,
+        "playtime": 3.3282999999970206,
+        "position": {
+          "x": 4.629534715170549,
+          "y": 0.55,
+          "z": 2.6295347151705477
+        },
+        "controller": "firstperson",
+        "basis": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "text": "Recover the card, enter the core, and reach extraction.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        0,
+        6
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {},
+        "inventory": {
+          "Sector Key": 1
+        },
+        "ended": false,
+        "playtime": 5.7635,
+        "position": {
+          "x": -1.7341524595280347,
+          "y": 0.55,
+          "z": 6.916101017530816
+        },
+        "controller": "firstperson",
+        "basis": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "text": "Recover the card, enter the core, and reach extraction.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        0,
+        12
+      ],
+      "result": "arrived",
+      "state": {
+        "level": 0,
+        "state": {},
+        "flags": {},
+        "inventory": {
+          "Sector Key": 1
+        },
+        "ended": false,
+        "playtime": 8.231700000002984,
+        "position": {
+          "x": -0.3676385557173436,
+          "y": 0.55,
+          "z": 11.086143611543871
+        },
+        "controller": "firstperson",
+        "basis": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "text": "Recover the card, enter the core, and reach extraction.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        0,
+        17
+      ],
+      "result": "level-transition",
+      "state": {
+        "level": 1,
+        "state": {},
+        "flags": {},
+        "inventory": {
+          "Sector Key": 1
+        },
+        "ended": false,
+        "playtime": 9.778700000002994,
+        "position": {
+          "x": 0.021028027640006223,
+          "y": 1.2336761999964148,
+          "z": -2.9789719723599934
+        },
+        "controller": "firstperson",
+        "basis": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "text": "Recover the card, enter the core, and reach extraction.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; Escape pauses.",
+        "dialogue": false
+      }
+    },
+    {
+      "target": [
+        0,
+        4
+      ],
+      "result": "ended",
+      "state": {
+        "level": 1,
+        "state": {},
+        "flags": {},
+        "inventory": {
+          "Sector Key": 1
+        },
+        "ended": true,
+        "playtime": 12.104299999997044,
+        "position": {
+          "x": 0.2656368679681145,
+          "y": 0.55,
+          "z": 4.35
+        },
+        "controller": "firstperson",
+        "basis": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        },
+        "text": "Core secured\n\nYou crossed the blacksite and reached extraction.\n\nRestart\nRecover the card, enter the core, and reach extraction.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; Escape pauses.",
+        "dialogue": false
+      }
+    }
+  ],
+  "errors": [],
+  "started": "2026-09-08T15:59:27.712Z",
+  "start": {
+    "level": 0,
+    "state": {},
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 2.048299999997019,
+    "position": {
+      "x": 0,
+      "y": 0.55,
+      "z": -2
+    },
+    "controller": "firstperson",
+    "basis": {
+      "x": 0,
+      "y": 0,
+      "z": 1
+    },
+    "text": "Recover the card, enter the core, and reach extraction.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+    "dialogue": false
+  },
+  "final": {
+    "level": 1,
+    "state": {},
+    "flags": {},
+    "inventory": {
+      "Sector Key": 1
+    },
+    "ended": true,
+    "playtime": 13.298700000003008,
+    "position": {
+      "x": 0.26563754792118177,
+      "y": 0.55,
+      "z": 4.35
+    },
+    "controller": "firstperson",
+    "basis": {
+      "x": 0,
+      "y": 0,
+      "z": 1
+    },
+    "text": "Core secured\n\nYou crossed the blacksite and reached extraction.\n\nRestart\nRecover the card, enter the core, and reach extraction.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; Escape pauses.",
+    "dialogue": false
+  },
+  "completed": true,
+  "restart": {
+    "level": 0,
+    "state": {},
+    "flags": {},
+    "inventory": {},
+    "ended": false,
+    "playtime": 0.55139999999851,
+    "position": {
+      "x": 0,
+      "y": 0.55,
+      "z": -2
+    },
+    "controller": "firstperson",
+    "basis": {
+      "x": 0,
+      "y": 0,
+      "z": 1
+    },
+    "text": "Recover the card, enter the core, and reach extraction.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+    "dialogue": false
+  },
+  "finished": "2026-09-08T15:59:46.422Z"
+}

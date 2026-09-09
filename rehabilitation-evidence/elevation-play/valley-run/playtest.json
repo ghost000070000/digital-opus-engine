@@ -1,0 +1,55 @@
+{
+  "id": "valley-run",
+  "index": 20,
+  "inputOnly": true,
+  "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+  "errors": [],
+  "actions": [
+    {
+      "key": "w",
+      "ms": 950
+    },
+    {
+      "key": "a",
+      "ms": 520
+    },
+    {
+      "key": "f",
+      "ms": 0
+    },
+    {
+      "key": "q",
+      "ms": 0
+    },
+    {
+      "key": "w",
+      "ms": 700
+    }
+  ],
+  "startedAt": "2026-09-08T17:42:54.270Z",
+  "sourceSHA256": "a7442a2c06d2ee128313ec7efb593177808ea1ed21b0189b820f700b375e4214",
+  "final": {
+    "title": "Valley Run",
+    "sim": 3.837200000002984,
+    "ended": false,
+    "paused": false,
+    "controller": "thirdperson",
+    "position": {
+      "x": 2.772258303613793,
+      "y": -1.9666820808390506,
+      "z": -15.544711368727336
+    },
+    "state": {
+      "maxHealth": 100,
+      "health": 100
+    },
+    "objectives": {},
+    "inventory": {},
+    "helpers": [],
+    "webglLost": false
+  },
+  "pauseVisible": true,
+  "restartPassed": true,
+  "passed": true,
+  "finishedAt": "2026-09-08T17:42:59.144Z"
+}

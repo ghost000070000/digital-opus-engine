@@ -1,0 +1,72 @@
+{
+  "method": "Real keyboard W/S held against and away from west wall; mouse movement sets heading; no state mutation.",
+  "errors": [],
+  "before": {
+    "sim": 0.5036999999284746,
+    "position": {
+      "x": -30,
+      "y": 0.55,
+      "z": 0
+    },
+    "bodyVisible": false,
+    "yaw": -1.5696000000000003,
+    "pitch": 0,
+    "sensitivity": 0.0022,
+    "ended": false,
+    "pointerLocked": true,
+    "equipment": [
+      {
+        "name": "Relay sidearm",
+        "visible": true
+      }
+    ],
+    "health": 100
+  },
+  "againstWall": {
+    "sim": 3.5069999999999975,
+    "position": {
+      "x": -34.1,
+      "y": 0.55,
+      "z": 0.019945094034224245
+    },
+    "bodyVisible": false,
+    "yaw": -1.5696000000000003,
+    "pitch": 0,
+    "sensitivity": 0.0022,
+    "ended": false,
+    "pointerLocked": true,
+    "equipment": [
+      {
+        "name": "Relay sidearm",
+        "visible": true
+      }
+    ],
+    "health": 100
+  },
+  "wallStopped": true,
+  "away": {
+    "sim": 6.610399999976149,
+    "position": {
+      "x": -20.9,
+      "y": 0.55,
+      "z": 0.0007115515160016628
+    },
+    "bodyVisible": false,
+    "yaw": -1.5696000000000003,
+    "pitch": 0,
+    "sensitivity": 0.0022,
+    "ended": false,
+    "pointerLocked": true,
+    "equipment": [
+      {
+        "name": "Relay sidearm",
+        "visible": true
+      }
+    ],
+    "health": 100
+  },
+  "returnMovement": true,
+  "bodyHidden": true,
+  "weaponVisible": true,
+  "pass": true
+}

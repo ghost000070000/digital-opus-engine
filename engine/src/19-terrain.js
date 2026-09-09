@@ -1,3 +1,40 @@
+// Terrain Sculpting (Wave 4): an optional additive height-edit layer on top
+// of the procedural base, `opts.heightEdits = { segments, deltas }` -- a
+// dense grid of per-vertex offsets at the SAME resolution as the terrain's
+// own render grid (`opts.segments`), avoiding a second resampling grid
+// entirely. Bilinearly interpolated so sculpted terrain reads smoothly
+// between edited vertices, not as a blocky per-cell step.
+function sampleHeightEdit(x, z, opts) {
+  const edits = opts.heightEdits;
+  if (!edits || !edits.deltas || !edits.segments) return 0;
+  const size = opts.size ?? 22;
+  const segs = edits.segments;
+  const verts = segs + 1;
+  let gx = (x / size + 0.5) * segs;
+  let gz = (z / size + 0.5) * segs;
+  gx = Math.max(0, Math.min(segs, gx));
+  gz = Math.max(0, Math.min(segs, gz));
+  const ix0 = Math.floor(gx), iz0 = Math.floor(gz);
+  const ix1 = Math.min(segs, ix0 + 1), iz1 = Math.min(segs, iz0 + 1);
+  const fx = gx - ix0, fz = gz - iz0;
+  const d = edits.deltas;
+  const v00 = d[iz0 * verts + ix0] || 0;
+  const v10 = d[iz0 * verts + ix1] || 0;
+  const v01 = d[iz1 * verts + ix0] || 0;
+  const v11 = d[iz1 * verts + ix1] || 0;
+  const top = v00 + (v10 - v00) * fx;
+  const bottom = v01 + (v11 - v01) * fx;
+  return top + (bottom - top) * fz;
+}
+
+// The one and only place base terrain height is computed, procedural OR
+// sculpted -- every consumer in the engine (render mesh generation below,
+// collision/grounding, slope-normal sampling, the public Opus.Terrain query
+// API) already calls this single function, so folding the height-edit
+// lookup in HERE rather than touching each of those 6 call sites
+// individually is what guarantees rendering and physics can never disagree
+// about a sculpted terrain's shape -- there was no other way to accidentally
+// wire up a visual-only deformation even if someone tried.
 function islandHeight(x, z, opts) {
   const {
     seed = 1,
@@ -11,7 +48,17 @@ function islandHeight(x, z, opts) {
   const falloff = 1 - smoothstepJS(radius * 0.3, radius, dist);
   const n = fbm2D(x * 0.18, z * 0.18, seed, 5);
   const peak = islandBase + (n * 2 - 1) * amplitude;
-  return oceanFloor + (peak - oceanFloor) * falloff;
+  // Beyond the island's radius, blend toward a gently undulating seafloor
+  // instead of a perfectly flat oceanFloor constant. The terrain mesh is
+  // always a full size x size square (see createTerrainMesh below) but the
+  // island itself is circular, so a dead-flat height outside `radius` reads
+  // as an artificial rectangular "platform" once rendered -- especially
+  // where two terrain tiles sit close together. Inside the island (falloff
+  // === 1) this term cancels out exactly, so on-land height/collision is
+  // unaffected.
+  const seafloorNoise = fbm2D(x * 0.06 + seed, z * 0.06 - seed, seed + 97, 3);
+  const seafloor = oceanFloor + (seafloorNoise * 2 - 1) * 0.35;
+  return seafloor + (peak - seafloor) * falloff + sampleHeightEdit(x, z, opts);
 }
 
 function lerp3(a, b, t) {
@@ -61,6 +108,13 @@ function createTerrainMesh(gl, opts = {}) {
 
   const normals = new Float32Array(verts * verts * 3);
   const colors = new Float32Array(verts * verts * 3);
+  // Wave 6B (Priority D): per-vertex RAW paint weight for up to 3 layers
+  // (matching the editor's own PAINT_MAX_LAYERS=3 cap), populated straight
+  // from the SAME `opts.paintEdits.weights` grid the color blend below
+  // already reads -- no second weight-map system. Left all-zero when there
+  // is no paintEdits at all, which the terrain fragment shader's own
+  // `u_terrainHasTexN` gate already treats as a complete no-op.
+  const layerWeights = new Float32Array(verts * verts * 3);
   for (let iz = 0; iz <= segments; iz++) {
     for (let ix = 0; ix <= segments; ix++) {
       const idx = iz * verts + ix;
@@ -74,7 +128,44 @@ function createTerrainMesh(gl, opts = {}) {
       normals[idx * 3 + 2] = n.z;
 
       const slope = 1 - n.y;
-      const color = terrainColor(heights[idx], slope, waterLevel);
+      let color = terrainColor(heights[idx], slope, waterLevel);
+      // Wave 6 (Priority G): Terrain Painting -- an optional additive COLOR
+      // layer on top of the procedural base, the exact same "dense edit
+      // grid at the terrain's own render resolution" shape `heightEdits`
+      // above already established (opts.paintEdits = { segments, layers,
+      // weights }), so no second grid-sampling mechanism was invented for
+      // it. `weights` is layer-major (`weights[layerIndex*verts*verts+idx]`)
+      // and indexed DIRECTLY by this loop's own `idx` -- unlike
+      // sampleHeightEdit, no bilinear resampling is needed here at all,
+      // since paint edits are only ever authored (and only ever valid)
+      // at this exact same `segments` resolution (ensurePaintEdits, the
+      // editor-side brush, rebuilds the grid from scratch if segments ever
+      // changes, the same "same-resolution, no second grid" reasoning
+      // heightEdits' own comment gives). A vertex with zero total paint
+      // weight renders its procedural color completely unchanged -- an
+      // unpainted terrain (the overwhelming majority) is bit-identical to
+      // before this priority existed.
+      const paint = opts.paintEdits;
+      if (paint && paint.segments === segments && paint.layers && paint.layers.length > 0) {
+        const cellCount = verts * verts;
+        let totalW = 0;
+        for (let li = 0; li < paint.layers.length; li++) totalW += paint.weights[li * cellCount + idx] || 0;
+        totalW = Math.min(1, totalW);
+        if (totalW > 0) {
+          const blended = [color[0] * (1 - totalW), color[1] * (1 - totalW), color[2] * (1 - totalW)];
+          for (let li = 0; li < paint.layers.length; li++) {
+            const w = paint.weights[li * cellCount + idx] || 0;
+            const lc = paint.layers[li].color;
+            blended[0] += lc[0] * w;
+            blended[1] += lc[1] * w;
+            blended[2] += lc[2] * w;
+          }
+          color = blended;
+        }
+        for (let li = 0; li < Math.min(paint.layers.length, 3); li++) {
+          layerWeights[idx * 3 + li] = paint.weights[li * cellCount + idx] || 0;
+        }
+      }
       colors[idx * 3] = color[0];
       colors[idx * 3 + 1] = color[1];
       colors[idx * 3 + 2] = color[2];
@@ -94,5 +185,5 @@ function createTerrainMesh(gl, opts = {}) {
     }
   }
 
-  return createColoredMesh(gl, positions, normals, colors, indices);
+  return createColoredMesh(gl, positions, normals, colors, indices, layerWeights);
 }

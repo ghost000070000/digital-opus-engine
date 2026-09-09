@@ -1,0 +1,102 @@
+[
+  {
+    "id": "survival-arena-2",
+    "sourceSHA256": "34317d0b9a00652972e8cefe40c4653d62b63306a4a8ef54981be1409a8796b5",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:27:15.320Z",
+    "sha256": "48e8ce26a288e48a1ab4dae39ec9a82647f94dbf9b6fcfdf60678ff096f6e7b8",
+    "state": {
+      "title": "Survival Arena 2",
+      "sim": 1.4183999999985097,
+      "ended": false,
+      "text": "Wave 1 incoming!\nSurvive the waves! Avoid the hunter drones.\nHealth 100 / 100\nSurvived: 1.4s\nSurvive both waves for 32 seconds.\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "controller": "hovercraft",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 51
+    },
+    "pauseText": "Wave 1 incoming!\nSurvive the waves! Avoid the hunter drones.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nSurvived: 2.1s\nSurvive both waves for 32 seconds.\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "survival-arena-3",
+    "sourceSHA256": "d7986d491a3a6ea879d84c4201d700c21eba52ac579f2edb07f36ce40dfe71dc",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:27:19.340Z",
+    "sha256": "394a7e10ae2ba2a731769d0cd08fee2fefdace0001067e60dc7924ff0c1612ac",
+    "state": {
+      "title": "Survival Arena 3",
+      "sim": 1.4183999999985095,
+      "ended": false,
+      "text": "Evade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 1.4s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "controller": "hovercraft",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 45
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nEvade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 2.1s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "textured-adventure",
+    "sourceSHA256": "d93b0d421e72179db7d91a229eb2473622c9fbbb23b30c46b069fa2abad7bc9e",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:27:22.807Z",
+    "sha256": "bbdc065154ced6524cff019d5da640b7e4b7626ddf4908b2de5cb019142900cc",
+    "state": {
+      "title": "Textured Adventure",
+      "sim": 1.4181999999955297,
+      "ended": false,
+      "text": "Relics: 0/3\nHealth 100 / 100\nCollect three relics and enter the shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 34
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nRelics: 0/3\nHealth 100 / 100\nCollect three relics and enter the shrine.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "passed": true
+  },
+  {
+    "id": "valley-run",
+    "sourceSHA256": "a7442a2c06d2ee128313ec7efb593177808ea1ed21b0189b820f700b375e4214",
+    "errors": [],
+    "capturedAt": "2026-09-08T17:27:26.048Z",
+    "sha256": "06e2c851a294204b985cf842a8ddd520fd9b0417c7f61344ee7c2f0cd8bc6d68",
+    "state": {
+      "title": "Valley Run",
+      "sim": 1.40160000000149,
+      "ended": false,
+      "text": "Health 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+      "controller": "thirdperson",
+      "bodyVisible": false,
+      "visualVisible": true,
+      "canvas": [
+        1280,
+        720
+      ],
+      "webglLost": false,
+      "helpers": [],
+      "objects": 65
+    },
+    "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "passed": true
+  }
+]

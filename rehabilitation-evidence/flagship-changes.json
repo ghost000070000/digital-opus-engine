@@ -1,0 +1,72 @@
+[
+  {
+    "id": "foglight",
+    "beforeObjects": 80,
+    "afterObjects": 150,
+    "meshes": 18,
+    "textures": 2,
+    "audio": 6,
+    "description": "Carry light through a mist-filled vale. Awaken three ancient beacons, evade the antlered guardian, and open the sanctuary.",
+    "review": "Awaiting rendered audit; no public promotion implied."
+  },
+  {
+    "id": "signal-relay",
+    "beforeObjects": 28,
+    "afterObjects": 115,
+    "meshes": 9,
+    "textures": 2,
+    "audio": 8,
+    "description": "Restore three relay consoles in a silent communications station. Slip past patrol drones or use your sidearm, then reach the green extraction bay.",
+    "review": "Awaiting rendered audit; no public promotion implied."
+  },
+  {
+    "id": "arsenal-run",
+    "beforeObjects": 14,
+    "afterObjects": 72,
+    "meshes": 8,
+    "textures": 2,
+    "audio": 8,
+    "description": "A compact arena assault. Use cover, switch between sidearm and rifle, defeat three sentries and reach extraction.",
+    "review": "Awaiting rendered audit; no public promotion implied."
+  },
+  {
+    "id": "silent-sector",
+    "beforeObjects": 21,
+    "afterObjects": 104,
+    "meshes": 9,
+    "textures": 2,
+    "audio": 9,
+    "description": "A short stealth infiltration through a listening security station. Break sightlines, secure the Data Core and escape unseen.",
+    "review": "Awaiting rendered audit; no public promotion implied."
+  },
+  {
+    "id": "power-grid",
+    "beforeObjects": 17,
+    "afterObjects": 70,
+    "meshes": 6,
+    "textures": 2,
+    "audio": 7,
+    "description": "Bring an abandoned generator hall back online. Carry the power cell to its socket, activate two coolant consoles and open the emergency exit.",
+    "review": "Awaiting rendered audit; no public promotion implied."
+  },
+  {
+    "id": "relic-frontier",
+    "beforeObjects": 15,
+    "afterObjects": 41,
+    "meshes": 17,
+    "textures": 3,
+    "audio": 9,
+    "description": "Explore an overgrown frontier outpost. Recover a weapon, defeat the stone guardian, claim the ridge relic and cross the sealed border gate.",
+    "review": "Awaiting rendered audit; no public promotion implied."
+  },
+  {
+    "id": "relic-island",
+    "beforeObjects": 10,
+    "afterObjects": 39,
+    "meshes": 16,
+    "textures": 1,
+    "audio": 6,
+    "description": "A small island treasure hunt. Recover three golden relics and the gate key, then awaken the hilltop shrine.",
+    "review": "Awaiting rendered audit; no public promotion implied."
+  }
+]

@@ -1,0 +1,152 @@
+{
+  "id": "survival-arena",
+  "phase": "after-bc",
+  "url": "http://localhost:8837/dist/games/survival-arena.html",
+  "startedAt": "2026-09-08T00:33:01.867Z",
+  "seconds": 24,
+  "input": [
+    {
+      "key": "w",
+      "milliseconds": 2880
+    },
+    {
+      "key": "d",
+      "milliseconds": 2400
+    },
+    {
+      "key": "w",
+      "milliseconds": 3600
+    },
+    {
+      "key": "a",
+      "milliseconds": 2400
+    },
+    {
+      "key": "s",
+      "milliseconds": 1920
+    },
+    {
+      "key": "w",
+      "milliseconds": 2400
+    },
+    {
+      "key": "d",
+      "milliseconds": 1200
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "frames": [
+    {
+      "title": "Survival Arena",
+      "text": "Survive! Collect 4 orbs, avoid the red hunters.\nLives: 3\nOrbs: 0 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "health": 3,
+        "collected": 0
+      },
+      "playtime": 0.7,
+      "simulationSeconds": 0.7,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": -0.2505871526561789,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Survival Arena",
+      "text": "MAP EDGE — TURN INWARD\nSurvive! Collect 4 orbs, avoid the red hunters.\nLives: 3\nOrbs: 0 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "health": 3,
+        "collected": 0
+      },
+      "playtime": 9.587000000000002,
+      "simulationSeconds": 9.587000000000002,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": -27.132517697344454,
+          "y": -1.8499999999999999,
+          "z": -19.539435768736364
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    {
+      "title": "Survival Arena",
+      "text": "MAP EDGE — TURN INWARD\nSurvive! Collect 4 orbs, avoid the red hunters.\nLives: 3\nOrbs: 0 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "health": 3,
+        "collected": 0
+      },
+      "playtime": 25.07850000000002,
+      "simulationSeconds": 25.07850000000002,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": -31.573620182546996,
+          "y": -1.8499999999999999,
+          "z": -13.932319141205062
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    }
+  ],
+  "start": {
+    "title": "Survival Arena",
+    "text": "Survive! Collect 4 orbs, avoid the red hunters.\nSurvival Arena\n\nFour amber orbs, three lives, and three hunters. Sweep the courtyard before they surround you.\n\nLaunch\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "state": {
+      "health": 3,
+      "collected": 0
+    },
+    "playtime": 0,
+    "simulationSeconds": 0,
+    "ended": false,
+    "player": {
+      "position": {
+        "x": 0,
+        "y": -0.2505871526561789,
+        "z": 0
+      },
+      "visible": true,
+      "controller": "hovercraft"
+    },
+    "camera": {
+      "mode": "chase"
+    },
+    "audio": {},
+    "objectives": {},
+    "inventory": {},
+    "helpers": []
+  },
+  "pause": "MAP EDGE — TURN INWARD\nSurvive! Collect 4 orbs, avoid the red hunters.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nLives: 3\nOrbs: 0 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+  "completed": true,
+  "finishedAt": "2026-09-08T00:33:32.488Z"
+}

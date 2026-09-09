@@ -1,0 +1,4214 @@
+{
+  "id": "arsenal-run",
+  "method": "Native Playwright keyboard and mouse input; evaluate is read-only instrumentation.",
+  "startedAt": "2026-09-08T00:26:29.067Z",
+  "errors": [],
+  "actions": [
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0,
+        0.75,
+        10.32
+      ],
+      "from": "camera-eye",
+      "sim": 1.5111000000238421,
+      "yawError": 0,
+      "pitchError": -0.001439979268168634,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 1.5111000000238421
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0,
+        0.75,
+        10.32
+      ],
+      "from": "camera-eye",
+      "sim": 2.9111000000238434,
+      "yawError": 0,
+      "pitchError": -0.001439979268168634,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 2.9111000000238434
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0,
+        0.75,
+        10.32
+      ],
+      "from": "camera-eye",
+      "sim": 3.531600000023844,
+      "yawError": 0,
+      "pitchError": -0.001439979268168634,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 3.531600000023844
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0,
+        0.75,
+        10.32
+      ],
+      "from": "camera-eye",
+      "sim": 4.331600000023843,
+      "yawError": 0,
+      "pitchError": -0.001439979268168634,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 4.331600000023843
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0,
+        0.75,
+        10.32
+      ],
+      "from": "camera-eye",
+      "sim": 4.931600000023841,
+      "yawError": 0,
+      "pitchError": -0.001439979268168634,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 4.931600000023841
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0,
+        0.75,
+        10.32
+      ],
+      "from": "camera-eye",
+      "sim": 5.631600000023838,
+      "yawError": 0,
+      "pitchError": -0.001439979268168634,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 5.631600000023838
+    },
+    {
+      "kind": "key",
+      "key": "r",
+      "seconds": 0.08,
+      "sim": 7.159200000047675
+    },
+    {
+      "kind": "key",
+      "key": "v",
+      "seconds": 0.08,
+      "sim": 9.378099999904617
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0,
+        0.75,
+        10.32
+      ],
+      "from": "camera-eye",
+      "sim": 10.148199999928456,
+      "yawError": 0,
+      "pitchError": -0.001439979268168634,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 10.148199999928456
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0,
+        0.75,
+        10.32
+      ],
+      "from": "camera-eye",
+      "sim": 11.248199999928453,
+      "yawError": 0,
+      "pitchError": -0.001439979268168634,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 11.248199999928453
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0,
+        0.75,
+        10.32
+      ],
+      "from": "camera-eye",
+      "sim": 11.84819999992845,
+      "yawError": 0,
+      "pitchError": -0.001439979268168634,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 11.84819999992845
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -9,
+        0.55,
+        6
+      ],
+      "from": "camera-eye",
+      "sim": 12.548199999928448,
+      "yawError": 0.0011531579442094716,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 12.548199999928448
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -9,
+        0.55,
+        6
+      ],
+      "from": "camera-eye",
+      "sim": 13.048199999928446,
+      "yawError": 0.0015457836751820114,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 13.048199999928446
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -9,
+        0.55,
+        6
+      ],
+      "from": "camera-eye",
+      "sim": 13.648199999928444,
+      "yawError": 0.0027665443604532273,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 13.648199999928444
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -9,
+        0.55,
+        6
+      ],
+      "from": "camera-eye",
+      "sim": 14.248199999928442,
+      "yawError": -0.00048578185421430597,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.14329355639273866,
+      "sim": 14.248199999928442
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0,
+        0.75,
+        10.32
+      ],
+      "from": "camera-eye",
+      "sim": 14.64819999992844,
+      "yawError": -0.0007056200812174395,
+      "pitchError": 0.00026946140148223496,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 14.74819999992844
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0,
+        0.75,
+        10.32
+      ],
+      "from": "camera-eye",
+      "sim": 16.07249999988075,
+      "yawError": -0.000133158257388688,
+      "pitchError": 0.0004492246258709087,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 16.07249999988075
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0,
+        0.75,
+        10.32
+      ],
+      "from": "camera-eye",
+      "sim": 16.67249999988076,
+      "yawError": -0.0010283048702246502,
+      "pitchError": 0.0017306676853386105,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 16.67249999988076
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -10,
+        0.55,
+        -5
+      ],
+      "from": "camera-eye",
+      "sim": 17.37249999988077,
+      "yawError": -0.00015911795621592617,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 17.37249999988077
+    },
+    {
+      "kind": "key",
+      "key": "r",
+      "seconds": 0.08,
+      "sim": 18.467200000047672
+    }
+  ],
+  "frames": [
+    {
+      "label": "start",
+      "title": "Arsenal Run",
+      "text": "Arsenal Run\n\nA compact arena assault. Use cover, switch between sidearm and rifle, defeat three sentries and reach extraction.\n\nBegin mission\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+      "sim": 0,
+      "playtime": 0,
+      "ended": false,
+      "paused": true,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 0
+      },
+      "objectives": {
+        "obj_clear": "active"
+      },
+      "inventory": {
+        "Sidearm": 1,
+        "Rifle": 1
+      },
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.25,
+          "z": 13
+        },
+        "forward": {
+          "x": 1.2246467991473532e-16,
+          "y": 0,
+          "z": -1
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 0,
+          "y": 1.85,
+          "z": 13
+        },
+        "target": {
+          "x": 1.2246467991473532e-16,
+          "y": 1.85,
+          "z": 12
+        },
+        "yaw": 3.141592653589793,
+        "pitch": 0,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "slot": "secondaryHand",
+          "name": "Rifle",
+          "entity": true,
+          "visible": false,
+          "destroyed": false,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ],
+      "weaponRuntime": {},
+      "enemies": [
+        {
+          "id": "obj2009",
+          "name": "Guard1",
+          "p": {
+            "x": -10,
+            "y": 0.75,
+            "z": -10
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj2010",
+          "name": "Guard2",
+          "p": {
+            "x": 10,
+            "y": 0.75,
+            "z": -6
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj2011",
+          "name": "Guard3",
+          "p": {
+            "x": 0,
+            "y": 0.75,
+            "z": 10
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "obj2000",
+          "name": "Floor",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 46,
+            "y": 1,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2001",
+          "name": "WallNorth",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": -17
+          },
+          "scale": {
+            "x": 46,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj2002",
+          "name": "WallSouth",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": 17
+          },
+          "scale": {
+            "x": 46,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj2003",
+          "name": "WallWest",
+          "p": {
+            "x": -23,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2004",
+          "name": "WallEast",
+          "p": {
+            "x": 23,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2005",
+          "name": "CoverA",
+          "p": {
+            "x": -6,
+            "y": 1,
+            "z": -2
+          },
+          "scale": {
+            "x": 1,
+            "y": 2,
+            "z": 5
+          }
+        },
+        {
+          "id": "obj2006",
+          "name": "CoverB",
+          "p": {
+            "x": 6,
+            "y": 1,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 2,
+            "z": 5
+          }
+        },
+        {
+          "id": "obj2007",
+          "name": "CoverC",
+          "p": {
+            "x": 0,
+            "y": 1,
+            "z": -8
+          },
+          "scale": {
+            "x": 8,
+            "y": 2,
+            "z": 1
+          }
+        },
+        {
+          "id": "rehab-50",
+          "name": "Armored cargo",
+          "p": {
+            "x": -12,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-51",
+          "name": "Armored cargo",
+          "p": {
+            "x": 12,
+            "y": 0,
+            "z": 9
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-52",
+          "name": "Armored cargo",
+          "p": {
+            "x": -15,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-53",
+          "name": "Armored cargo",
+          "p": {
+            "x": 13,
+            "y": 0,
+            "z": -12
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "opening",
+      "title": "Arsenal Run",
+      "text": "Sidearm 10/30\nHealth 92 / 100\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+      "sim": 0.7,
+      "playtime": 0.7,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 92
+      },
+      "objectives": {
+        "obj_clear": "active"
+      },
+      "inventory": {
+        "Sidearm": 1,
+        "Rifle": 1
+      },
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 13
+        },
+        "forward": {
+          "x": 0.8550442314711223,
+          "y": 0.046183566565907,
+          "z": -0.5164943759686158
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 0,
+          "y": 1.15,
+          "z": 13
+        },
+        "target": {
+          "x": 0.8550442314711223,
+          "y": 1.1961835665659069,
+          "z": 12.483505624031384
+        },
+        "yaw": 2.114192653589793,
+        "pitch": -0.046200000000000005,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": 0.6807985935210086,
+            "y": 0.8989325797232456,
+            "z": 12.904195900216159
+          }
+        },
+        {
+          "slot": "secondaryHand",
+          "name": "Rifle",
+          "entity": true,
+          "visible": false,
+          "destroyed": false,
+          "position": {
+            "x": 0.6807985935210086,
+            "y": 0.8989325797232456,
+            "z": 12.904195900216159
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "eq:primaryHand": {
+          "magazine": 10,
+          "reserve": 30,
+          "reloading": false,
+          "reloadEnd": 0
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj2009",
+          "name": "Guard1",
+          "p": {
+            "x": -9.787167573434328,
+            "y": 0.75,
+            "z": -10.110915996150993
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj2010",
+          "name": "Guard2",
+          "p": {
+            "x": 10.175118100782125,
+            "y": 0.75,
+            "z": -6.446915708806998
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj2011",
+          "name": "Guard3",
+          "p": {
+            "x": 0,
+            "y": 0.75,
+            "z": 10.32
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "obj2000",
+          "name": "Floor",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 46,
+            "y": 1,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2001",
+          "name": "WallNorth",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": -17
+          },
+          "scale": {
+            "x": 46,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj2002",
+          "name": "WallSouth",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": 17
+          },
+          "scale": {
+            "x": 46,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj2003",
+          "name": "WallWest",
+          "p": {
+            "x": -23,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2004",
+          "name": "WallEast",
+          "p": {
+            "x": 23,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2005",
+          "name": "CoverA",
+          "p": {
+            "x": -6,
+            "y": 1,
+            "z": -2
+          },
+          "scale": {
+            "x": 1,
+            "y": 2,
+            "z": 5
+          }
+        },
+        {
+          "id": "obj2006",
+          "name": "CoverB",
+          "p": {
+            "x": 6,
+            "y": 1,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 2,
+            "z": 5
+          }
+        },
+        {
+          "id": "obj2007",
+          "name": "CoverC",
+          "p": {
+            "x": 0,
+            "y": 1,
+            "z": -8
+          },
+          "scale": {
+            "x": 8,
+            "y": 2,
+            "z": 1
+          }
+        },
+        {
+          "id": "rehab-50",
+          "name": "Armored cargo",
+          "p": {
+            "x": -12,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-51",
+          "name": "Armored cargo",
+          "p": {
+            "x": 12,
+            "y": 0,
+            "z": 9
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-52",
+          "name": "Armored cargo",
+          "p": {
+            "x": -15,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-53",
+          "name": "Armored cargo",
+          "p": {
+            "x": 13,
+            "y": 0,
+            "z": -12
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "encounter-obj2011",
+      "title": "Arsenal Run",
+      "text": "Sidearm 9/30\nHealth 84 / 100\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+      "sim": 2.1111000000238427,
+      "playtime": 2.1111000000238427,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 84
+      },
+      "objectives": {
+        "obj_clear": "active"
+      },
+      "inventory": {
+        "Sidearm": 1,
+        "Rifle": 1
+      },
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 13
+        },
+        "forward": {
+          "x": 1.2109684423825166e-16,
+          "y": -0.14904261209792127,
+          "z": -0.9888307740857527
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 0,
+          "y": 1.15,
+          "z": 13
+        },
+        "target": {
+          "x": 1.2109684423825166e-16,
+          "y": 1.0009573879020786,
+          "z": 12.011169225914248
+        },
+        "yaw": 3.141592653589793,
+        "pitch": 0.1496,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": 0.2700000000000001,
+            "y": 0.7807209637552779,
+            "z": 12.428656851454251
+          }
+        },
+        {
+          "slot": "secondaryHand",
+          "name": "Rifle",
+          "entity": true,
+          "visible": false,
+          "destroyed": false,
+          "position": {
+            "x": 0.2700000000000001,
+            "y": 0.7807209637552779,
+            "z": 12.428656851454251
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "eq:primaryHand": {
+          "magazine": 9,
+          "reserve": 30,
+          "reloading": false,
+          "reloadEnd": 0
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj2009",
+          "name": "Guard1",
+          "p": {
+            "x": -9.787167573434328,
+            "y": 0.75,
+            "z": -10.110915996150993
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj2010",
+          "name": "Guard2",
+          "p": {
+            "x": 9.989300596598005,
+            "y": 0.75,
+            "z": -6.13857846626438
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj2011",
+          "name": "Guard3",
+          "p": {
+            "x": 0,
+            "y": 0.75,
+            "z": 10.32
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "obj2000",
+          "name": "Floor",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 46,
+            "y": 1,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2001",
+          "name": "WallNorth",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": -17
+          },
+          "scale": {
+            "x": 46,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj2002",
+          "name": "WallSouth",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": 17
+          },
+          "scale": {
+            "x": 46,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj2003",
+          "name": "WallWest",
+          "p": {
+            "x": -23,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2004",
+          "name": "WallEast",
+          "p": {
+            "x": 23,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2005",
+          "name": "CoverA",
+          "p": {
+            "x": -6,
+            "y": 1,
+            "z": -2
+          },
+          "scale": {
+            "x": 1,
+            "y": 2,
+            "z": 5
+          }
+        },
+        {
+          "id": "obj2006",
+          "name": "CoverB",
+          "p": {
+            "x": 6,
+            "y": 1,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 2,
+            "z": 5
+          }
+        },
+        {
+          "id": "obj2007",
+          "name": "CoverC",
+          "p": {
+            "x": 0,
+            "y": 1,
+            "z": -8
+          },
+          "scale": {
+            "x": 8,
+            "y": 2,
+            "z": 1
+          }
+        },
+        {
+          "id": "rehab-50",
+          "name": "Armored cargo",
+          "p": {
+            "x": -12,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-51",
+          "name": "Armored cargo",
+          "p": {
+            "x": 12,
+            "y": 0,
+            "z": 9
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-52",
+          "name": "Armored cargo",
+          "p": {
+            "x": -15,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-53",
+          "name": "Armored cargo",
+          "p": {
+            "x": 13,
+            "y": 0,
+            "z": -12
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "first-sentry",
+      "title": "Arsenal Run",
+      "text": "Sidearm 4/30\nHealth 60 / 100\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+      "sim": 6.431600000023836,
+      "playtime": 6.431600000023836,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 60
+      },
+      "objectives": {
+        "obj_clear": "active"
+      },
+      "inventory": {
+        "Sidearm": 1,
+        "Rifle": 1
+      },
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 13
+        },
+        "forward": {
+          "x": 1.2109684423825166e-16,
+          "y": -0.14904261209792127,
+          "z": -0.9888307740857527
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 0,
+          "y": 1.15,
+          "z": 13
+        },
+        "target": {
+          "x": 1.2109684423825166e-16,
+          "y": 1.0009573879020786,
+          "z": 12.011169225914248
+        },
+        "yaw": 3.141592653589793,
+        "pitch": 0.1496,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": 0.2700000000000001,
+            "y": 0.7807209637552779,
+            "z": 12.428656851454251
+          }
+        },
+        {
+          "slot": "secondaryHand",
+          "name": "Rifle",
+          "entity": true,
+          "visible": false,
+          "destroyed": false,
+          "position": {
+            "x": 0.2700000000000001,
+            "y": 0.7807209637552779,
+            "z": 12.428656851454251
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "eq:primaryHand": {
+          "magazine": 4,
+          "reserve": 30,
+          "reloading": false,
+          "reloadEnd": 0
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj2009",
+          "name": "Guard1",
+          "p": {
+            "x": -8.68644493456745,
+            "y": 0.75,
+            "z": -10.588838237640767
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj2010",
+          "name": "Guard2",
+          "p": {
+            "x": 11.378937179389068,
+            "y": 0.75,
+            "z": -5.9253164952254735
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj2011",
+          "name": "Guard3",
+          "p": {
+            "x": 0,
+            "y": 0.75,
+            "z": 10.32
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "obj2000",
+          "name": "Floor",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 46,
+            "y": 1,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2001",
+          "name": "WallNorth",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": -17
+          },
+          "scale": {
+            "x": 46,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj2002",
+          "name": "WallSouth",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": 17
+          },
+          "scale": {
+            "x": 46,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj2003",
+          "name": "WallWest",
+          "p": {
+            "x": -23,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2004",
+          "name": "WallEast",
+          "p": {
+            "x": 23,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2005",
+          "name": "CoverA",
+          "p": {
+            "x": -6,
+            "y": 1,
+            "z": -2
+          },
+          "scale": {
+            "x": 1,
+            "y": 2,
+            "z": 5
+          }
+        },
+        {
+          "id": "obj2006",
+          "name": "CoverB",
+          "p": {
+            "x": 6,
+            "y": 1,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 2,
+            "z": 5
+          }
+        },
+        {
+          "id": "obj2007",
+          "name": "CoverC",
+          "p": {
+            "x": 0,
+            "y": 1,
+            "z": -8
+          },
+          "scale": {
+            "x": 8,
+            "y": 2,
+            "z": 1
+          }
+        },
+        {
+          "id": "rehab-50",
+          "name": "Armored cargo",
+          "p": {
+            "x": -12,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-51",
+          "name": "Armored cargo",
+          "p": {
+            "x": 12,
+            "y": 0,
+            "z": 9
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-52",
+          "name": "Armored cargo",
+          "p": {
+            "x": -15,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-53",
+          "name": "Armored cargo",
+          "p": {
+            "x": 13,
+            "y": 0,
+            "z": -12
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "sidearm-reloaded",
+      "title": "Arsenal Run",
+      "text": "Sidearm 10/24\nHealth 52 / 100\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+      "sim": 8.670799999952303,
+      "playtime": 8.670799999952303,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 52
+      },
+      "objectives": {
+        "obj_clear": "active"
+      },
+      "inventory": {
+        "Sidearm": 1,
+        "Rifle": 1
+      },
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 13
+        },
+        "forward": {
+          "x": 1.2109684423825166e-16,
+          "y": -0.14904261209792127,
+          "z": -0.9888307740857527
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 0,
+          "y": 1.15,
+          "z": 13
+        },
+        "target": {
+          "x": 1.2109684423825166e-16,
+          "y": 1.0009573879020786,
+          "z": 12.011169225914248
+        },
+        "yaw": 3.141592653589793,
+        "pitch": 0.1496,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": 0.2700000000000001,
+            "y": 0.7807209637552779,
+            "z": 12.428656851454251
+          }
+        },
+        {
+          "slot": "secondaryHand",
+          "name": "Rifle",
+          "entity": true,
+          "visible": false,
+          "destroyed": false,
+          "position": {
+            "x": 0.2700000000000001,
+            "y": 0.7807209637552779,
+            "z": 12.428656851454251
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "eq:primaryHand": {
+          "magazine": 10,
+          "reserve": 24,
+          "reloading": false,
+          "reloadEnd": 8.359200000047675
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj2009",
+          "name": "Guard1",
+          "p": {
+            "x": -9.936139753757525,
+            "y": 0.75,
+            "z": -10.185536806526034
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj2010",
+          "name": "Guard2",
+          "p": {
+            "x": 11.502040791187238,
+            "y": 0.75,
+            "z": -6.01673029569803
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj2011",
+          "name": "Guard3",
+          "p": {
+            "x": 0,
+            "y": 0.75,
+            "z": 10.32
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "obj2000",
+          "name": "Floor",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 46,
+            "y": 1,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2001",
+          "name": "WallNorth",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": -17
+          },
+          "scale": {
+            "x": 46,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj2002",
+          "name": "WallSouth",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": 17
+          },
+          "scale": {
+            "x": 46,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj2003",
+          "name": "WallWest",
+          "p": {
+            "x": -23,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2004",
+          "name": "WallEast",
+          "p": {
+            "x": 23,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2005",
+          "name": "CoverA",
+          "p": {
+            "x": -6,
+            "y": 1,
+            "z": -2
+          },
+          "scale": {
+            "x": 1,
+            "y": 2,
+            "z": 5
+          }
+        },
+        {
+          "id": "obj2006",
+          "name": "CoverB",
+          "p": {
+            "x": 6,
+            "y": 1,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 2,
+            "z": 5
+          }
+        },
+        {
+          "id": "obj2007",
+          "name": "CoverC",
+          "p": {
+            "x": 0,
+            "y": 1,
+            "z": -8
+          },
+          "scale": {
+            "x": 8,
+            "y": 2,
+            "z": 1
+          }
+        },
+        {
+          "id": "rehab-50",
+          "name": "Armored cargo",
+          "p": {
+            "x": -12,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-51",
+          "name": "Armored cargo",
+          "p": {
+            "x": 12,
+            "y": 0,
+            "z": 9
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-52",
+          "name": "Armored cargo",
+          "p": {
+            "x": -15,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-53",
+          "name": "Armored cargo",
+          "p": {
+            "x": 13,
+            "y": 0,
+            "z": -12
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "rifle-selected",
+      "title": "Arsenal Run",
+      "text": "Switched to Rifle\nRifle 28/84\nHealth 44 / 100\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+      "sim": 9.496099999904617,
+      "playtime": 9.496099999904617,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 44
+      },
+      "objectives": {
+        "obj_clear": "active"
+      },
+      "inventory": {
+        "Sidearm": 1,
+        "Rifle": 1
+      },
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 13
+        },
+        "forward": {
+          "x": 1.2109684423825166e-16,
+          "y": -0.14904261209792127,
+          "z": -0.9888307740857527
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 0,
+          "y": 1.15,
+          "z": 13
+        },
+        "target": {
+          "x": 1.2109684423825166e-16,
+          "y": 1.0009573879020786,
+          "z": 12.011169225914248
+        },
+        "yaw": 3.141592653589793,
+        "pitch": 0.1496,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": true,
+      "activeSlot": "secondaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Sidearm",
+          "entity": true,
+          "visible": false,
+          "destroyed": false,
+          "position": {
+            "x": 0.2700000000000001,
+            "y": 0.7807209637552779,
+            "z": 12.428656851454251
+          }
+        },
+        {
+          "slot": "secondaryHand",
+          "name": "Rifle",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": 0.2700000000000001,
+            "y": 0.7807209637552779,
+            "z": 12.428656851454251
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "eq:primaryHand": {
+          "magazine": 10,
+          "reserve": 24,
+          "reloading": false,
+          "reloadEnd": 8.359200000047675
+        },
+        "eq:secondaryHand": {
+          "magazine": 28,
+          "reserve": 84,
+          "reloading": false,
+          "reloadEnd": 0
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj2009",
+          "name": "Guard1",
+          "p": {
+            "x": -10.878635535776093,
+            "y": 0.75,
+            "z": -9.881374628792084
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj2010",
+          "name": "Guard2",
+          "p": {
+            "x": 10.891636715241843,
+            "y": 0.75,
+            "z": -6.414848370627883
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj2011",
+          "name": "Guard3",
+          "p": {
+            "x": 0,
+            "y": 0.75,
+            "z": 10.32
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "obj2000",
+          "name": "Floor",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 46,
+            "y": 1,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2001",
+          "name": "WallNorth",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": -17
+          },
+          "scale": {
+            "x": 46,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj2002",
+          "name": "WallSouth",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": 17
+          },
+          "scale": {
+            "x": 46,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj2003",
+          "name": "WallWest",
+          "p": {
+            "x": -23,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2004",
+          "name": "WallEast",
+          "p": {
+            "x": 23,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2005",
+          "name": "CoverA",
+          "p": {
+            "x": -6,
+            "y": 1,
+            "z": -2
+          },
+          "scale": {
+            "x": 1,
+            "y": 2,
+            "z": 5
+          }
+        },
+        {
+          "id": "obj2006",
+          "name": "CoverB",
+          "p": {
+            "x": 6,
+            "y": 1,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 2,
+            "z": 5
+          }
+        },
+        {
+          "id": "obj2007",
+          "name": "CoverC",
+          "p": {
+            "x": 0,
+            "y": 1,
+            "z": -8
+          },
+          "scale": {
+            "x": 8,
+            "y": 2,
+            "z": 1
+          }
+        },
+        {
+          "id": "rehab-50",
+          "name": "Armored cargo",
+          "p": {
+            "x": -12,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-51",
+          "name": "Armored cargo",
+          "p": {
+            "x": 12,
+            "y": 0,
+            "z": 9
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-52",
+          "name": "Armored cargo",
+          "p": {
+            "x": -15,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-53",
+          "name": "Armored cargo",
+          "p": {
+            "x": 13,
+            "y": 0,
+            "z": -12
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "encounter-obj2011",
+      "title": "Arsenal Run",
+      "text": "Switched to Rifle\nRifle 27/84\nHealth 36 / 100\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+      "sim": 10.748199999928454,
+      "playtime": 10.748199999928454,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 36
+      },
+      "objectives": {
+        "obj_clear": "active"
+      },
+      "inventory": {
+        "Sidearm": 1,
+        "Rifle": 1
+      },
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 13
+        },
+        "forward": {
+          "x": 1.2109684423825166e-16,
+          "y": -0.14904261209792127,
+          "z": -0.9888307740857527
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 0,
+          "y": 1.15,
+          "z": 13
+        },
+        "target": {
+          "x": 1.2109684423825166e-16,
+          "y": 1.0009573879020786,
+          "z": 12.011169225914248
+        },
+        "yaw": 3.141592653589793,
+        "pitch": 0.1496,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": true,
+      "activeSlot": "secondaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Sidearm",
+          "entity": true,
+          "visible": false,
+          "destroyed": false,
+          "position": {
+            "x": 0.26432458172141005,
+            "y": 0.784470970753311,
+            "z": 12.42766312160591
+          }
+        },
+        {
+          "slot": "secondaryHand",
+          "name": "Rifle",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": 0.26432458172141005,
+            "y": 0.784470970753311,
+            "z": 12.42766312160591
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "eq:primaryHand": {
+          "magazine": 10,
+          "reserve": 24,
+          "reloading": false,
+          "reloadEnd": 8.359200000047675
+        },
+        "eq:secondaryHand": {
+          "magazine": 27,
+          "reserve": 84,
+          "reloading": false,
+          "reloadEnd": 0
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj2009",
+          "name": "Guard1",
+          "p": {
+            "x": -9.976227365292239,
+            "y": 0.75,
+            "z": -9.895581820478508
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj2010",
+          "name": "Guard2",
+          "p": {
+            "x": 10.891636715241843,
+            "y": 0.75,
+            "z": -6.414848370627883
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj2011",
+          "name": "Guard3",
+          "p": {
+            "x": 0,
+            "y": 0.75,
+            "z": 10.32
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "obj2000",
+          "name": "Floor",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 46,
+            "y": 1,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2001",
+          "name": "WallNorth",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": -17
+          },
+          "scale": {
+            "x": 46,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj2002",
+          "name": "WallSouth",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": 17
+          },
+          "scale": {
+            "x": 46,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj2003",
+          "name": "WallWest",
+          "p": {
+            "x": -23,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2004",
+          "name": "WallEast",
+          "p": {
+            "x": 23,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2005",
+          "name": "CoverA",
+          "p": {
+            "x": -6,
+            "y": 1,
+            "z": -2
+          },
+          "scale": {
+            "x": 1,
+            "y": 2,
+            "z": 5
+          }
+        },
+        {
+          "id": "obj2006",
+          "name": "CoverB",
+          "p": {
+            "x": 6,
+            "y": 1,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 2,
+            "z": 5
+          }
+        },
+        {
+          "id": "obj2007",
+          "name": "CoverC",
+          "p": {
+            "x": 0,
+            "y": 1,
+            "z": -8
+          },
+          "scale": {
+            "x": 8,
+            "y": 2,
+            "z": 1
+          }
+        },
+        {
+          "id": "rehab-50",
+          "name": "Armored cargo",
+          "p": {
+            "x": -12,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-51",
+          "name": "Armored cargo",
+          "p": {
+            "x": 12,
+            "y": 0,
+            "z": 9
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-52",
+          "name": "Armored cargo",
+          "p": {
+            "x": -15,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-53",
+          "name": "Armored cargo",
+          "p": {
+            "x": 13,
+            "y": 0,
+            "z": -12
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "encounter-obj2011",
+      "title": "Arsenal Run",
+      "text": "Switched to Rifle\nRifle 24/84\nHealth 28 / 100\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+      "sim": 15.348199999928438,
+      "playtime": 15.348199999928438,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 28
+      },
+      "objectives": {
+        "obj_clear": "active"
+      },
+      "inventory": {
+        "Sidearm": 1,
+        "Rifle": 1
+      },
+      "player": {
+        "position": {
+          "x": -10.686486587859198,
+          "y": 0.55,
+          "z": 4.69937026244585
+        },
+        "forward": {
+          "x": 0.8955129700759957,
+          "y": -0.0373912816724314,
+          "z": 0.44346185008471894
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": -10.686486587859198,
+          "y": 1.15,
+          "z": 4.69937026244585
+        },
+        "target": {
+          "x": -9.790973617783202,
+          "y": 1.1126087183275686,
+          "z": 5.142832112530569
+        },
+        "yaw": 1.1109926535897925,
+        "pitch": 0.0374,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": true,
+      "activeSlot": "secondaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Sidearm",
+          "entity": true,
+          "visible": false,
+          "destroyed": false,
+          "position": {
+            "x": -10.260469221528423,
+            "y": 0.8470132089379788,
+            "z": 5.211628213117705
+          }
+        },
+        {
+          "slot": "secondaryHand",
+          "name": "Rifle",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": -10.260469221528423,
+            "y": 0.8470132089379788,
+            "z": 5.211628213117705
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "eq:primaryHand": {
+          "magazine": 10,
+          "reserve": 24,
+          "reloading": false,
+          "reloadEnd": 8.359200000047675
+        },
+        "eq:secondaryHand": {
+          "magazine": 24,
+          "reserve": 84,
+          "reloading": false,
+          "reloadEnd": 0
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj2009",
+          "name": "Guard1",
+          "p": {
+            "x": -8.325170315435193,
+            "y": 0.75,
+            "z": -4.741498735517649
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj2010",
+          "name": "Guard2",
+          "p": {
+            "x": 11.945564860783694,
+            "y": 0.75,
+            "z": -6.550568947095853
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj2011",
+          "name": "Guard3",
+          "p": {
+            "x": 0,
+            "y": 0.75,
+            "z": 10.32
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "obj2000",
+          "name": "Floor",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 46,
+            "y": 1,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2001",
+          "name": "WallNorth",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": -17
+          },
+          "scale": {
+            "x": 46,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj2002",
+          "name": "WallSouth",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": 17
+          },
+          "scale": {
+            "x": 46,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj2003",
+          "name": "WallWest",
+          "p": {
+            "x": -23,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2004",
+          "name": "WallEast",
+          "p": {
+            "x": 23,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2005",
+          "name": "CoverA",
+          "p": {
+            "x": -6,
+            "y": 1,
+            "z": -2
+          },
+          "scale": {
+            "x": 1,
+            "y": 2,
+            "z": 5
+          }
+        },
+        {
+          "id": "obj2006",
+          "name": "CoverB",
+          "p": {
+            "x": 6,
+            "y": 1,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 2,
+            "z": 5
+          }
+        },
+        {
+          "id": "obj2007",
+          "name": "CoverC",
+          "p": {
+            "x": 0,
+            "y": 1,
+            "z": -8
+          },
+          "scale": {
+            "x": 8,
+            "y": 2,
+            "z": 1
+          }
+        },
+        {
+          "id": "rehab-50",
+          "name": "Armored cargo",
+          "p": {
+            "x": -12,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-51",
+          "name": "Armored cargo",
+          "p": {
+            "x": 12,
+            "y": 0,
+            "z": 9
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-52",
+          "name": "Armored cargo",
+          "p": {
+            "x": -15,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-53",
+          "name": "Armored cargo",
+          "p": {
+            "x": 13,
+            "y": 0,
+            "z": -12
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "west-lane",
+      "title": "Arsenal Run",
+      "text": "Switched to Rifle\nYou Went Down\n\nThe guards were too much.\n\nRestart\nRifle 20/84\nHealth 0 / 100\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+      "sim": 17.47249999988077,
+      "playtime": 17.47249999988077,
+      "ended": true,
+      "paused": false,
+      "overlay": {
+        "classes": "lose visible",
+        "title": "You Went Down"
+      },
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 0
+      },
+      "objectives": {
+        "obj_clear": "active"
+      },
+      "inventory": {
+        "Sidearm": 1,
+        "Rifle": 1
+      },
+      "player": {
+        "position": {
+          "x": -10.829918842636344,
+          "y": 0.55,
+          "z": 4.142675846193326
+        },
+        "forward": {
+          "x": 0.08788646530288595,
+          "y": 0,
+          "z": -0.9961304980857502
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": -10.81416945268808,
+          "y": 1.134150348453272,
+          "z": 4.154249048546627
+        },
+        "target": {
+          "x": -10.742032377333459,
+          "y": 1.15,
+          "z": 3.1465453481075754
+        },
+        "yaw": 3.0535926535897926,
+        "pitch": 0,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": true,
+      "activeSlot": "secondaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Sidearm",
+          "entity": true,
+          "visible": false,
+          "destroyed": false,
+          "position": {
+            "x": -10.527928275612226,
+            "y": 0.8520243768297977,
+            "z": 3.5276906214931945
+          }
+        },
+        {
+          "slot": "secondaryHand",
+          "name": "Rifle",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": -10.527928275612226,
+            "y": 0.8520243768297977,
+            "z": 3.5276906214931945
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "eq:primaryHand": {
+          "magazine": 10,
+          "reserve": 24,
+          "reloading": false,
+          "reloadEnd": 8.359200000047675
+        },
+        "eq:secondaryHand": {
+          "magazine": 20,
+          "reserve": 84,
+          "reloading": false,
+          "reloadEnd": 0
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj2009",
+          "name": "Guard1",
+          "p": {
+            "x": -8.325170315435193,
+            "y": 0.75,
+            "z": -4.741498735517649
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj2010",
+          "name": "Guard2",
+          "p": {
+            "x": 10.57892188349969,
+            "y": 0.75,
+            "z": -6.1175654435496165
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj2011",
+          "name": "Guard3",
+          "p": {
+            "x": 0,
+            "y": 0.75,
+            "z": 10.32
+          },
+          "health": {
+            "current": 89,
+            "max": 100
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "obj2000",
+          "name": "Floor",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 46,
+            "y": 1,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2001",
+          "name": "WallNorth",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": -17
+          },
+          "scale": {
+            "x": 46,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj2002",
+          "name": "WallSouth",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": 17
+          },
+          "scale": {
+            "x": 46,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj2003",
+          "name": "WallWest",
+          "p": {
+            "x": -23,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2004",
+          "name": "WallEast",
+          "p": {
+            "x": 23,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2005",
+          "name": "CoverA",
+          "p": {
+            "x": -6,
+            "y": 1,
+            "z": -2
+          },
+          "scale": {
+            "x": 1,
+            "y": 2,
+            "z": 5
+          }
+        },
+        {
+          "id": "obj2006",
+          "name": "CoverB",
+          "p": {
+            "x": 6,
+            "y": 1,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 2,
+            "z": 5
+          }
+        },
+        {
+          "id": "obj2007",
+          "name": "CoverC",
+          "p": {
+            "x": 0,
+            "y": 1,
+            "z": -8
+          },
+          "scale": {
+            "x": 8,
+            "y": 2,
+            "z": 1
+          }
+        },
+        {
+          "id": "rehab-50",
+          "name": "Armored cargo",
+          "p": {
+            "x": -12,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-51",
+          "name": "Armored cargo",
+          "p": {
+            "x": 12,
+            "y": 0,
+            "z": 9
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-52",
+          "name": "Armored cargo",
+          "p": {
+            "x": -15,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-53",
+          "name": "Armored cargo",
+          "p": {
+            "x": 13,
+            "y": 0,
+            "z": -12
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "sentries-check",
+      "title": "Arsenal Run",
+      "text": "Switched to Rifle\nYou Went Down\n\nThe guards were too much.\n\nRestart\nRifle 20/84\nHealth 0 / 100\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+      "sim": 18.047900000095353,
+      "playtime": 18.047900000095353,
+      "ended": true,
+      "paused": false,
+      "overlay": {
+        "classes": "lose visible",
+        "title": "You Went Down"
+      },
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 0
+      },
+      "objectives": {
+        "obj_clear": "active"
+      },
+      "inventory": {
+        "Sidearm": 1,
+        "Rifle": 1
+      },
+      "player": {
+        "position": {
+          "x": -10.730812715660575,
+          "y": 0.55,
+          "z": 3.0157343972510904
+        },
+        "forward": {
+          "x": 0.08788646530288595,
+          "y": 0,
+          "z": -0.9961304980857502
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": -10.730812715660575,
+          "y": 1.15,
+          "z": 3.0157343972510904
+        },
+        "target": {
+          "x": -10.64292625035769,
+          "y": 1.15,
+          "z": 2.0196038991653404
+        },
+        "yaw": 3.0535926535897926,
+        "pitch": 0,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": true,
+      "activeSlot": "secondaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Sidearm",
+          "entity": true,
+          "visible": false,
+          "destroyed": false,
+          "position": {
+            "x": -10.407367872689633,
+            "y": 0.8699999999999999,
+            "z": 2.4218628340697044
+          }
+        },
+        {
+          "slot": "secondaryHand",
+          "name": "Rifle",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": -10.407367872689633,
+            "y": 0.8699999999999999,
+            "z": 2.4218628340697044
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "eq:primaryHand": {
+          "magazine": 10,
+          "reserve": 24,
+          "reloading": false,
+          "reloadEnd": 8.359200000047675
+        },
+        "eq:secondaryHand": {
+          "magazine": 20,
+          "reserve": 84,
+          "reloading": false,
+          "reloadEnd": 0
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj2009",
+          "name": "Guard1",
+          "p": {
+            "x": -8.325170315435193,
+            "y": 0.75,
+            "z": -4.741498735517649
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj2010",
+          "name": "Guard2",
+          "p": {
+            "x": 10.57892188349969,
+            "y": 0.75,
+            "z": -6.1175654435496165
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj2011",
+          "name": "Guard3",
+          "p": {
+            "x": 0,
+            "y": 0.75,
+            "z": 10.32
+          },
+          "health": {
+            "current": 89,
+            "max": 100
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "obj2000",
+          "name": "Floor",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 46,
+            "y": 1,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2001",
+          "name": "WallNorth",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": -17
+          },
+          "scale": {
+            "x": 46,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj2002",
+          "name": "WallSouth",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": 17
+          },
+          "scale": {
+            "x": 46,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj2003",
+          "name": "WallWest",
+          "p": {
+            "x": -23,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2004",
+          "name": "WallEast",
+          "p": {
+            "x": 23,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2005",
+          "name": "CoverA",
+          "p": {
+            "x": -6,
+            "y": 1,
+            "z": -2
+          },
+          "scale": {
+            "x": 1,
+            "y": 2,
+            "z": 5
+          }
+        },
+        {
+          "id": "obj2006",
+          "name": "CoverB",
+          "p": {
+            "x": 6,
+            "y": 1,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 2,
+            "z": 5
+          }
+        },
+        {
+          "id": "obj2007",
+          "name": "CoverC",
+          "p": {
+            "x": 0,
+            "y": 1,
+            "z": -8
+          },
+          "scale": {
+            "x": 8,
+            "y": 2,
+            "z": 1
+          }
+        },
+        {
+          "id": "rehab-50",
+          "name": "Armored cargo",
+          "p": {
+            "x": -12,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-51",
+          "name": "Armored cargo",
+          "p": {
+            "x": 12,
+            "y": 0,
+            "z": 9
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-52",
+          "name": "Armored cargo",
+          "p": {
+            "x": -15,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-53",
+          "name": "Armored cargo",
+          "p": {
+            "x": 13,
+            "y": 0,
+            "z": -12
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "pause",
+      "title": "Arsenal Run",
+      "text": "Switched to Rifle\nYou Went Down\n\nThe guards were too much.\n\nRestart\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nRifle 20/84\nHealth 0 / 100\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+      "sim": 18.567200000047674,
+      "playtime": 18.567200000047674,
+      "ended": true,
+      "paused": true,
+      "overlay": {
+        "classes": "lose visible",
+        "title": "You Went Down"
+      },
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 0
+      },
+      "objectives": {
+        "obj_clear": "active"
+      },
+      "inventory": {
+        "Sidearm": 1,
+        "Rifle": 1
+      },
+      "player": {
+        "position": {
+          "x": -10.708723526482595,
+          "y": 0.55,
+          "z": 2.764556961326503
+        },
+        "forward": {
+          "x": 0.08788646530288595,
+          "y": 0,
+          "z": -0.9961304980857502
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": -10.708723526482595,
+          "y": 1.15,
+          "z": 2.764556961326503
+        },
+        "target": {
+          "x": -10.62083706117971,
+          "y": 1.15,
+          "z": 1.768426463240753
+        },
+        "yaw": 3.0535926535897926,
+        "pitch": 0,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": false,
+      "activeSlot": "secondaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Sidearm",
+          "entity": true,
+          "visible": false,
+          "destroyed": false,
+          "position": {
+            "x": -10.385278683511654,
+            "y": 0.8699999999999999,
+            "z": 2.170685398145117
+          }
+        },
+        {
+          "slot": "secondaryHand",
+          "name": "Rifle",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": -10.385278683511654,
+            "y": 0.8699999999999999,
+            "z": 2.170685398145117
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "eq:primaryHand": {
+          "magazine": 10,
+          "reserve": 24,
+          "reloading": false,
+          "reloadEnd": 8.359200000047675
+        },
+        "eq:secondaryHand": {
+          "magazine": 20,
+          "reserve": 84,
+          "reloading": true,
+          "reloadEnd": 20.367200000047674
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj2009",
+          "name": "Guard1",
+          "p": {
+            "x": -8.325170315435193,
+            "y": 0.75,
+            "z": -4.741498735517649
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj2010",
+          "name": "Guard2",
+          "p": {
+            "x": 10.57892188349969,
+            "y": 0.75,
+            "z": -6.1175654435496165
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj2011",
+          "name": "Guard3",
+          "p": {
+            "x": -1.100920287267734,
+            "y": 0.75,
+            "z": 9.553013150536115
+          },
+          "health": {
+            "current": 89,
+            "max": 100
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "obj2000",
+          "name": "Floor",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 46,
+            "y": 1,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2001",
+          "name": "WallNorth",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": -17
+          },
+          "scale": {
+            "x": 46,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj2002",
+          "name": "WallSouth",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": 17
+          },
+          "scale": {
+            "x": 46,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj2003",
+          "name": "WallWest",
+          "p": {
+            "x": -23,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2004",
+          "name": "WallEast",
+          "p": {
+            "x": 23,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2005",
+          "name": "CoverA",
+          "p": {
+            "x": -6,
+            "y": 1,
+            "z": -2
+          },
+          "scale": {
+            "x": 1,
+            "y": 2,
+            "z": 5
+          }
+        },
+        {
+          "id": "obj2006",
+          "name": "CoverB",
+          "p": {
+            "x": 6,
+            "y": 1,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 2,
+            "z": 5
+          }
+        },
+        {
+          "id": "obj2007",
+          "name": "CoverC",
+          "p": {
+            "x": 0,
+            "y": 1,
+            "z": -8
+          },
+          "scale": {
+            "x": 8,
+            "y": 2,
+            "z": 1
+          }
+        },
+        {
+          "id": "rehab-50",
+          "name": "Armored cargo",
+          "p": {
+            "x": -12,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-51",
+          "name": "Armored cargo",
+          "p": {
+            "x": 12,
+            "y": 0,
+            "z": 9
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-52",
+          "name": "Armored cargo",
+          "p": {
+            "x": -15,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-53",
+          "name": "Armored cargo",
+          "p": {
+            "x": 13,
+            "y": 0,
+            "z": -12
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "failure",
+      "title": "Arsenal Run",
+      "text": "Switched to Rifle\nYou Went Down\n\nThe guards were too much.\n\nRestart\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nRifle 20/84\nHealth 0 / 100\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+      "sim": 18.567200000047674,
+      "playtime": 18.567200000047674,
+      "ended": true,
+      "paused": true,
+      "overlay": {
+        "classes": "lose visible",
+        "title": "You Went Down"
+      },
+      "state": {
+        "kills": 0,
+        "maxHealth": 100,
+        "health": 0
+      },
+      "objectives": {
+        "obj_clear": "active"
+      },
+      "inventory": {
+        "Sidearm": 1,
+        "Rifle": 1
+      },
+      "player": {
+        "position": {
+          "x": -10.708723526482595,
+          "y": 0.55,
+          "z": 2.764556961326503
+        },
+        "forward": {
+          "x": 0.08788646530288595,
+          "y": 0,
+          "z": -0.9961304980857502
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": -10.708723526482595,
+          "y": 1.15,
+          "z": 2.764556961326503
+        },
+        "target": {
+          "x": -10.62083706117971,
+          "y": 1.15,
+          "z": 1.768426463240753
+        },
+        "yaw": 3.0535926535897926,
+        "pitch": 0,
+        "sensitivity": 0.0022
+      },
+      "pointerLocked": false,
+      "activeSlot": "secondaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Sidearm",
+          "entity": true,
+          "visible": false,
+          "destroyed": false,
+          "position": {
+            "x": -10.385278683511654,
+            "y": 0.8699999999999999,
+            "z": 2.170685398145117
+          }
+        },
+        {
+          "slot": "secondaryHand",
+          "name": "Rifle",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": -10.385278683511654,
+            "y": 0.8699999999999999,
+            "z": 2.170685398145117
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "eq:primaryHand": {
+          "magazine": 10,
+          "reserve": 24,
+          "reloading": false,
+          "reloadEnd": 8.359200000047675
+        },
+        "eq:secondaryHand": {
+          "magazine": 20,
+          "reserve": 84,
+          "reloading": true,
+          "reloadEnd": 20.367200000047674
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj2009",
+          "name": "Guard1",
+          "p": {
+            "x": -8.325170315435193,
+            "y": 0.75,
+            "z": -4.741498735517649
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj2010",
+          "name": "Guard2",
+          "p": {
+            "x": 10.57892188349969,
+            "y": 0.75,
+            "z": -6.1175654435496165
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj2011",
+          "name": "Guard3",
+          "p": {
+            "x": -1.100920287267734,
+            "y": 0.75,
+            "z": 9.553013150536115
+          },
+          "health": {
+            "current": 89,
+            "max": 100
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "obj2000",
+          "name": "Floor",
+          "p": {
+            "x": 0,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 46,
+            "y": 1,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2001",
+          "name": "WallNorth",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": -17
+          },
+          "scale": {
+            "x": 46,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj2002",
+          "name": "WallSouth",
+          "p": {
+            "x": 0,
+            "y": 2.5,
+            "z": 17
+          },
+          "scale": {
+            "x": 46,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj2003",
+          "name": "WallWest",
+          "p": {
+            "x": -23,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2004",
+          "name": "WallEast",
+          "p": {
+            "x": 23,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 34
+          }
+        },
+        {
+          "id": "obj2005",
+          "name": "CoverA",
+          "p": {
+            "x": -6,
+            "y": 1,
+            "z": -2
+          },
+          "scale": {
+            "x": 1,
+            "y": 2,
+            "z": 5
+          }
+        },
+        {
+          "id": "obj2006",
+          "name": "CoverB",
+          "p": {
+            "x": 6,
+            "y": 1,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 2,
+            "z": 5
+          }
+        },
+        {
+          "id": "obj2007",
+          "name": "CoverC",
+          "p": {
+            "x": 0,
+            "y": 1,
+            "z": -8
+          },
+          "scale": {
+            "x": 8,
+            "y": 2,
+            "z": 1
+          }
+        },
+        {
+          "id": "rehab-50",
+          "name": "Armored cargo",
+          "p": {
+            "x": -12,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-51",
+          "name": "Armored cargo",
+          "p": {
+            "x": 12,
+            "y": 0,
+            "z": 9
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-52",
+          "name": "Armored cargo",
+          "p": {
+            "x": -15,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        },
+        {
+          "id": "rehab-53",
+          "name": "Armored cargo",
+          "p": {
+            "x": 13,
+            "y": 0,
+            "z": -12
+          },
+          "scale": {
+            "x": 1.4,
+            "y": 1.4,
+            "z": 1.4
+          }
+        }
+      ],
+      "helpers": []
+    }
+  ],
+  "observations": [
+    {
+      "type": "combat-attempt",
+      "enemy": "obj2011",
+      "endHealth": 0,
+      "sim": 6.431600000023836
+    },
+    {
+      "type": "combat-attempt",
+      "enemy": "obj2011",
+      "endHealth": 0,
+      "sim": 12.448199999928448
+    },
+    {
+      "type": "combat-attempt",
+      "enemy": "obj2011",
+      "endHealth": 89,
+      "sim": 17.27249999988077
+    },
+    {
+      "type": "combat-attempt",
+      "enemy": "obj2009",
+      "endHealth": 0,
+      "sim": 17.47249999988077
+    },
+    {
+      "type": "combat-attempt",
+      "enemy": "obj2010",
+      "endHealth": 0,
+      "sim": 18.047900000095353
+    }
+  ],
+  "finishedAt": "2026-09-08T00:28:07.547Z",
+  "failure": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /Resume/ }).first()\u001b[22m\n\u001b[2m    - locator resolved to <button id=\"pause-resume-btn\">▶ Resume</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div id=\"end-overlay\" class=\"lose visible\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div id=\"end-overlay\" class=\"lose visible\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    25 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div id=\"end-overlay\" class=\"lose visible\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\n    at Session.pauseResume (C:\\Users\\THINKPAD\\Documents\\New folder (2)\\DOEngine\\tools\\playtest-combat.js:71:307)\n    at async arsenal (C:\\Users\\THINKPAD\\Documents\\New folder (2)\\DOEngine\\tools\\playtest-combat.js:82:41)\n    at async C:\\Users\\THINKPAD\\Documents\\New folder (2)\\DOEngine\\tools\\playtest-combat.js:97:505)"
+}

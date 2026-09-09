@@ -1,0 +1,55 @@
+{
+  "id": "iron-arena",
+  "index": 9,
+  "inputOnly": true,
+  "method": "Native keyboard and mouse input; browser evaluation is read-only telemetry.",
+  "errors": [],
+  "actions": [
+    {
+      "key": "w",
+      "ms": 950
+    },
+    {
+      "key": "d",
+      "ms": 520
+    },
+    {
+      "key": "f",
+      "ms": 0
+    },
+    {
+      "key": "q",
+      "ms": 0
+    },
+    {
+      "key": "w",
+      "ms": 700
+    }
+  ],
+  "startedAt": "2026-09-08T17:41:57.262Z",
+  "sourceSHA256": "44d7212ef00b9595723c6897059425a1f790d6541745c705f7120bcee9264bda",
+  "final": {
+    "title": "Iron Arena",
+    "sim": 3.9875000000000034,
+    "ended": false,
+    "paused": false,
+    "controller": "firstperson",
+    "position": {
+      "x": 4.466680324439047,
+      "y": 0.55,
+      "z": 0.15652336577347917
+    },
+    "state": {
+      "maxHealth": 100,
+      "health": 84
+    },
+    "objectives": {},
+    "inventory": {},
+    "helpers": [],
+    "webglLost": false
+  },
+  "pauseVisible": true,
+  "restartPassed": true,
+  "passed": true,
+  "finishedAt": "2026-09-08T17:42:02.181Z"
+}

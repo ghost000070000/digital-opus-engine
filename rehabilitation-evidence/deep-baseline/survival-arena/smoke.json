@@ -1,0 +1,25 @@
+{
+  "id": "survival-arena",
+  "sourceSHA256": "fdd6f0e88297e96d9aaab06fddbcf4700eab0bcd0ce16601f297da0d199125f3",
+  "errors": [],
+  "capturedAt": "2026-09-08T17:10:27.329Z",
+  "sha256": "31a397b7d18dc8bfc5c34f5477ddc73248ad06139fe642112c6c9c71b9e3ecf1",
+  "state": {
+    "title": "Survival Arena",
+    "sim": 1.4183000000044703,
+    "ended": false,
+    "text": "Survive! Collect 4 orbs, avoid the red hunters.\nLives: 3\nOrbs: 0 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "controller": "hovercraft",
+    "bodyVisible": false,
+    "visualVisible": true,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 37
+  },
+  "pauseText": "Survive! Collect 4 orbs, avoid the red hunters.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nLives: 3\nOrbs: 0 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+  "passed": true
+}

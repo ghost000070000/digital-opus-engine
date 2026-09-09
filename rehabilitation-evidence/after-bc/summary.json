@@ -1,0 +1,5338 @@
+[
+  {
+    "id": "forest-range",
+    "phase": "after-bc",
+    "url": "http://localhost:8837/dist/games/forest-range.html",
+    "startedAt": "2026-09-08T00:15:15.487Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Forest Range",
+        "text": "Explore the three groves and reach the lookout.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 0.1,
+        "simulationSeconds": 0.1,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -11,
+            "y": -0.9322636146049059,
+            "z": -5
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_explore": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Forest Range",
+        "text": "Explore the three groves and reach the lookout.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 2.0116000000238428,
+        "simulationSeconds": 2.0116000000238428,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -14.082694622145262,
+            "y": 0.03466454395817464,
+            "z": -5.748525712016029
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_explore": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Forest Range",
+        "text": "Explore the three groves and reach the lookout.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 20.02269999992849,
+        "simulationSeconds": 20.02269999992849,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -11.404744496688528,
+            "y": -1.4971559436595308,
+            "z": -4.605159237097002
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {
+          "obj_explore": "active"
+        },
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Forest Range",
+      "text": "Forest Range\n\nA woodland trail through three groves. Follow the amber waystones to the old lookout.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 0,
+      "simulationSeconds": 0,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": -11,
+          "y": -0.732263614604906,
+          "z": -5
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {
+        "obj_explore": "active"
+      },
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nExplore the three groves and reach the lookout.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:17:25.031Z"
+  },
+  {
+    "id": "iron-arena",
+    "phase": "after-bc",
+    "url": "http://localhost:8837/dist/games/iron-arena.html",
+    "startedAt": "2026-09-08T00:17:25.935Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Iron Arena",
+        "text": "Kills: 0\nDefeat all three sentries.\nHealth 100 / 100\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 0.7,
+        "simulationSeconds": 0.7,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 0.55,
+            "z": -10
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Iron Arena",
+        "text": "Kills: 0\nDefeat all three sentries.\nHealth 100 / 100\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 6.115999999999995,
+        "simulationSeconds": 6.115999999999995,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 8.399999999741878,
+            "y": 0.55,
+            "z": 11.900000000258121
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Iron Arena",
+        "text": "Kills: 1\nDefeat all three sentries.\nHealth 100 / 100\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100,
+          "kills": 1
+        },
+        "playtime": 20.049700000047704,
+        "simulationSeconds": 20.049700000047704,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -14.1,
+            "y": 0.55,
+            "z": 14.1
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Iron Arena",
+      "text": "Iron Arena\n\nThree armored sentries hold the forge courtyard. Keep moving and use the pillars for cover.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 0,
+      "simulationSeconds": 0,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.15,
+          "z": -10
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nKills: 1\nDefeat all three sentries.\nHealth 100 / 100\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:18:40.982Z"
+  },
+  {
+    "id": "dungeon-descent",
+    "phase": "after-bc",
+    "url": "http://localhost:8837/dist/games/dungeon-descent.html",
+    "startedAt": "2026-09-08T00:18:44.614Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Dungeon Descent",
+        "text": "Find both switches to open the gate, then reach the exit.\nTime: 0.4s\nActivate the two seals, then reach the eastern exit.\nPress F to interact\nWASD / arrows move; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 0.4,
+        "simulationSeconds": 0.4,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -10,
+            "y": 1.15,
+            "z": 0
+          },
+          "visible": false,
+          "controller": "topdown"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Dungeon Descent",
+        "text": "Find both switches to open the gate, then reach the exit.\nTime: 3.8s\nActivate the two seals, then reach the eastern exit.\nPress F to interact\nWASD / arrows move; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 3.765200000047686,
+        "simulationSeconds": 3.765200000047686,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -5.201926198676438,
+            "y": 1.15,
+            "z": -11.175
+          },
+          "visible": false,
+          "controller": "topdown"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Dungeon Descent",
+        "text": "Find both switches to open the gate, then reach the exit.\nTime: 20.2s\nActivate the two seals, then reach the eastern exit.\nPress F to interact\nWASD / arrows move; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 20.192000000000018,
+        "simulationSeconds": 20.192000000000018,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -14.175,
+            "y": 1.15,
+            "z": -11.175
+          },
+          "visible": false,
+          "controller": "topdown"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Dungeon Descent",
+      "text": "Find both switches to open the gate, then reach the exit.\nDungeon Descent\n\nTwo distant seals hold the stone gate shut. Light both seals and pass through the eastern arch.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 0,
+      "simulationSeconds": 0,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": -10,
+          "y": 1.15,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "topdown"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "Find both switches to open the gate, then reach the exit.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nTime: 20.7s\nActivate the two seals, then reach the eastern exit.\nPress F to interact\nWASD / arrows move; F interacts; Escape pauses.",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:19:35.917Z"
+  },
+  {
+    "id": "npc-puzzle-adventure",
+    "phase": "after-bc",
+    "url": "http://localhost:8837/dist/games/npc-puzzle-adventure.html",
+    "startedAt": "2026-09-08T00:19:37.071Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "The Sanctum Key",
+        "text": "Speak to the sailor, use the door console, and enter the sanctum.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 0.3233999999761582,
+        "simulationSeconds": 0.3233999999761582,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 0.613072693557267,
+            "z": -5
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "The Sanctum Key",
+        "text": "Speak to the sailor, use the door console, and enter the sanctum.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 5.719399999737736,
+        "simulationSeconds": 5.719399999737736,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -8.175,
+            "y": 0.4533404285732572,
+            "z": -7.6977555456342905
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "The Sanctum Key",
+        "text": "Speak to the sailor, use the door console, and enter the sanctum.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 20.46169999969008,
+        "simulationSeconds": 20.46169999969008,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -6.414182724055302,
+            "y": 0.4676363253991713,
+            "z": 2.1786533923535303
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "The Sanctum Key",
+      "text": "The Sanctum Key\n\nAn old sailor carries the key to a forgotten sanctuary. Speak with him, then unlock the northern door.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 0,
+      "simulationSeconds": 0,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.2000000000000002,
+          "z": -5
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nSpeak to the sailor, use the door console, and enter the sanctum.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:20:26.699Z"
+  },
+  {
+    "id": "opus-arena",
+    "phase": "after-bc",
+    "url": "http://localhost:8837/dist/games/opus-arena.html",
+    "startedAt": "2026-09-08T00:20:27.246Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Opus Arena",
+        "text": "Health 100 / 100\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+        "state": {
+          "kills": 0,
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 0.7,
+        "simulationSeconds": 0.7,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 1.1522823670067854,
+            "z": 0
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Opus Arena",
+        "text": "Health 76 / 100\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+        "state": {
+          "kills": 0,
+          "maxHealth": 100,
+          "health": 76
+        },
+        "playtime": 6.425200000047678,
+        "simulationSeconds": 6.425200000047678,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -8.175,
+            "y": -1.9391713400349873,
+            "z": 8.175
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Opus Arena",
+        "text": "Try again\n\nRestart from the menu and try a different route.\n\nRestart\nHealth 0 / 100\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+        "state": {
+          "kills": 0,
+          "maxHealth": 100,
+          "health": 0
+        },
+        "playtime": 13.728400000095336,
+        "simulationSeconds": 13.728400000095336,
+        "ended": true,
+        "player": {
+          "position": {
+            "x": -1.9854985543789276,
+            "y": -1.8855581836102897,
+            "z": 8.175
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Opus Arena",
+      "text": "Opus Arena\n\nHold the blue courtyard against eight approaching guardians. Face each target before firing.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "state": {
+        "kills": 0
+      },
+      "playtime": 0,
+      "simulationSeconds": 0,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.2022823670067855,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "Try again\n\nRestart from the menu and try a different route.\n\nRestart\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 0 / 100\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:20:59.203Z"
+  },
+  {
+    "id": "power-station",
+    "phase": "after-bc",
+    "url": "http://localhost:8837/dist/games/power-station.html",
+    "startedAt": "2026-09-08T00:21:00.080Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Power Station",
+        "text": "Fuel Cells: 0/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 0.2,
+        "simulationSeconds": 0.2,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 0.55,
+            "z": 0
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Power Station",
+        "text": "Fuel Cells: 0/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 3.4798999999761597,
+        "simulationSeconds": 3.4798999999761597,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 0.15667256249331635,
+            "y": 0.55,
+            "z": 8.175
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Power Station",
+        "text": "Fuel Cell collected.\nFuel Cells: 0/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 20.24400000011923,
+        "simulationSeconds": 20.24400000011923,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -3.5629087484859996,
+            "y": 0.55,
+            "z": 4.603222544423102
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {
+          "fuelCell": 1
+        },
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Power Station",
+      "text": "Power Station\n\nThe turbine is silent. Collect three fuel cells, speak to the engineer, and restart the machine.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 0,
+      "simulationSeconds": 0,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "Fuel Cell collected.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nFuel Cells: 0/3\nPower the Turbine\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:22:31.993Z"
+  },
+  {
+    "id": "relic-runner-2",
+    "phase": "after-bc",
+    "url": "http://localhost:8837/dist/games/relic-runner-2.html",
+    "startedAt": "2026-09-08T00:22:34.217Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Relic Runner 2",
+        "text": "A relic glows atop the ridge...\nHealth 100 / 100\nReach the relic on the ridge!\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 0.4,
+        "simulationSeconds": 0.4,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -8,
+            "y": 0.55,
+            "z": -8
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Relic Runner 2",
+        "text": "A relic glows atop the ridge...\nHealth 100 / 100\nReach the relic on the ridge!\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 7.273499999880782,
+        "simulationSeconds": 7.273499999880782,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -6.646936300165985,
+            "y": -0.46044372777332115,
+            "z": -10.300120745640802
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Relic Runner 2",
+        "text": "A relic glows atop the ridge...\nHealth 100 / 100\nReach the relic on the ridge!\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 20.43579999971392,
+        "simulationSeconds": 20.43579999971392,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -3.531866423333454,
+            "y": -1.9910353951418478,
+            "z": -17.619359354361592
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Relic Runner 2",
+      "text": "Relic Runner 2\n\nReach the amber ridge relic. Use the low ramp, keep clear of the guardian, and claim the high ground.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 0,
+      "simulationSeconds": 0,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": -8,
+          "y": 0.55,
+          "z": -8
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "A relic glows atop the ridge...\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nReach the relic on the ridge!\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; F interacts; Escape pauses.",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:23:17.738Z"
+  },
+  {
+    "id": "sentinel-maze",
+    "phase": "after-bc",
+    "url": "http://localhost:8837/dist/games/sentinel-maze.html",
+    "startedAt": "2026-09-08T00:23:18.263Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Sentinel Maze",
+        "text": "Health 100 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 0.2535,
+        "simulationSeconds": 0.2535,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -8,
+            "y": 0.5003414976354006,
+            "z": -8
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Sentinel Maze",
+        "text": "Health 100 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 5.441199999928472,
+        "simulationSeconds": 5.441199999928472,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -11,
+            "y": 0.4998803325639476,
+            "z": -11
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Sentinel Maze",
+        "text": "Health 100 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 20.386999999761603,
+        "simulationSeconds": 20.386999999761603,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -6.539766371187205,
+            "y": 0.5002273164800028,
+            "z": -1.6128840346296842
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Sentinel Maze",
+      "text": "Sentinel Maze\n\nA watchful guardian patrols a slate labyrinth. Follow the amber route around the walls to the exit.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 0,
+      "simulationSeconds": 0,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": -8,
+          "y": 1.05,
+          "z": -8
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nReach the amber arch beyond the maze.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:24:04.891Z"
+  },
+  {
+    "id": "signal-zero",
+    "phase": "after-bc",
+    "url": "http://localhost:8837/dist/games/signal-zero.html",
+    "startedAt": "2026-09-08T00:24:05.840Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Signal Zero",
+        "text": "Signal Zero: the relay has gone dark. Reach the console.\nHealth 100 / 100\nReach the outpost console, then restore the deep relay.\nPress F to interact\nWASD / arrows move; Space jumps; Left Click attacks; F interacts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 0.4,
+        "simulationSeconds": 0.4,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 1.05,
+            "z": -8
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Signal Zero",
+        "text": "Signal Zero: the relay has gone dark. Reach the console.\nHealth 100 / 100\nReach the outpost console, then restore the deep relay.\nPress F to interact\nWASD / arrows move; Space jumps; Left Click attacks; F interacts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 5.025199999928473,
+        "simulationSeconds": 5.025199999928473,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 8.102197154783301,
+            "y": 0.55,
+            "z": -12.675
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Signal Zero",
+        "text": "Signal Zero: the relay has gone dark. Reach the console.\nHealth 100 / 100\nReach the outpost console, then restore the deep relay.\nPress F to interact\nWASD / arrows move; Space jumps; Left Click attacks; F interacts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 20.244699999928496,
+        "simulationSeconds": 20.244699999928496,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 9.370043346550615,
+            "y": 0.55,
+            "z": -8.28834504227122
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Signal Zero",
+      "text": "Signal Zero\n\nTrace a silent outpost to its deep relay. Reach the cyan console to save your progress and descend.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; Left Click attacks; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 0,
+      "simulationSeconds": 0,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.05,
+          "z": -8
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "Signal Zero: the relay has gone dark. Reach the console.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nReach the outpost console, then restore the deep relay.\nPress F to interact\nWASD / arrows move; Space jumps; Left Click attacks; F interacts; Escape pauses.",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:25:04.790Z"
+  },
+  {
+    "id": "survival-arena-2",
+    "phase": "after-bc",
+    "url": "http://localhost:8837/dist/games/survival-arena-2.html",
+    "startedAt": "2026-09-08T00:25:05.447Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Survival Arena 2",
+        "text": "Wave 1 incoming!\nSurvive the waves! Avoid the red Hunters.\nHealth 100 / 100\nSurvived: 0.6s\nSurvive both waves for 32 seconds.\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 0.6,
+        "simulationSeconds": 0.6,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 1.7280580431016654,
+            "z": 0
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Survival Arena 2",
+        "text": "MAP EDGE — TURN INWARD\nSurvive the waves! Avoid the red Hunters.\nHealth 90 / 100\nSurvived: 9.6s\nSurvive both waves for 32 seconds.\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 90
+        },
+        "playtime": 9.59989999997616,
+        "simulationSeconds": 9.59989999997616,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -36.73296742306716,
+            "y": -0.9279627548255704,
+            "z": 3.933150670723491
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Survival Arena 2",
+        "text": "MAP EDGE — TURN INWARD\nSurvive the waves! Avoid the red Hunters.\nHealth 90 / 100\nSurvived: 25.2s\nSurvive both waves for 32 seconds.\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 90
+        },
+        "playtime": 25.18509999990461,
+        "simulationSeconds": 25.18509999990461,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -34.0133482298429,
+            "y": -1.162081497594697,
+            "z": 9.800443687699179
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Survival Arena 2",
+      "text": "Wave 1 incoming!\nSurvive the waves! Avoid the red Hunters.\nSurvival Arena 2\n\nA hovercraft endurance run on a tidal ring. Two waves arrive; keep moving for thirty-two seconds.\n\nLaunch\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {},
+      "playtime": 0,
+      "simulationSeconds": 0,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.705555202293345,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "MAP EDGE — TURN INWARD\nSurvive the waves! Avoid the red Hunters.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 90 / 100\nSurvived: 25.6s\nSurvive both waves for 32 seconds.\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:25:35.980Z"
+  },
+  {
+    "id": "survival-arena-3",
+    "phase": "after-bc",
+    "url": "http://localhost:8837/dist/games/survival-arena-3.html",
+    "startedAt": "2026-09-08T00:25:36.591Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Survival Arena 3",
+        "text": "Evade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 0.6s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 0.6425,
+        "simulationSeconds": 0.6425,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 0.8237375604350862,
+            "z": 0
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Survival Arena 3",
+        "text": "Evade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 6.5s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 6.487499999880784,
+        "simulationSeconds": 6.487499999880784,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -8.125,
+            "y": -0.9979857298219067,
+            "z": 8.125
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": [
+          "obj49",
+          "obj50"
+        ]
+      },
+      {
+        "title": "Survival Arena 3",
+        "text": "Transmission complete\n\nYou held out until the transmitter completed its call.\n\nRestart\nEvade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 20.3s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 20.28749999988081,
+        "simulationSeconds": 20.28749999988081,
+        "ended": true,
+        "player": {
+          "position": {
+            "x": -8.125,
+            "y": -1.105263684233241,
+            "z": 8.125
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": [
+          "obj49",
+          "obj50",
+          "obj51",
+          "obj52"
+        ]
+      }
+    ],
+    "start": {
+      "title": "Survival Arena 3",
+      "text": "Survival Arena 3\n\nTwenty seconds on the copper island. Hunter drones enter from the central transmitter.\n\nLaunch\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {},
+      "playtime": 0,
+      "simulationSeconds": 0,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.8061405585484482,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "Transmission complete\n\nYou held out until the transmitter completed its call.\n\nRestart\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nEvade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 20.7s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:26:16.313Z"
+  },
+  {
+    "id": "textured-adventure",
+    "phase": "after-bc",
+    "url": "http://localhost:8837/dist/games/textured-adventure.html",
+    "startedAt": "2026-09-08T00:26:17.083Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Textured Adventure",
+        "text": "Relics: 0/3\nHealth 100 / 100\nCollect three relics and enter the shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 0.6315,
+        "simulationSeconds": 0.6315,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 0.3557277948441615,
+            "z": 0
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Textured Adventure",
+        "text": "Relics: 0/3\nHealth 100 / 100\nCollect three relics and enter the shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 6.54779999995231,
+        "simulationSeconds": 6.54779999995231,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -8.175,
+            "y": -1.9574969258498558,
+            "z": 8.175
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Textured Adventure",
+        "text": "Relics: 1/3\nHealth 100 / 100\nCollect three relics and enter the shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100,
+          "relics": 1
+        },
+        "playtime": 20.000799999952335,
+        "simulationSeconds": 20.000799999952335,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -5.947801281049959,
+            "y": -1.7227714492676607,
+            "z": 3.9465063348872693
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Textured Adventure",
+      "text": "Textured Adventure\n\nThree amber relics rest among violet ruins. Collect them, avoid the red fissure, and restore the shrine.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 0,
+      "simulationSeconds": 0,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 0.40572779484416155,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nRelics: 1/3\nHealth 100 / 100\nCollect three relics and enter the shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:27:11.170Z"
+  },
+  {
+    "id": "valley-run",
+    "phase": "after-bc",
+    "url": "http://localhost:8837/dist/games/valley-run.html",
+    "startedAt": "2026-09-08T00:27:12.660Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Valley Run",
+        "text": "Health 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 0.5,
+        "simulationSeconds": 0.5,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": -1.9942011014227994,
+            "z": -17
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Valley Run",
+        "text": "Health 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 4.927699999928474,
+        "simulationSeconds": 4.927699999928474,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 4.878704967371006,
+            "y": -1.9702856070663355,
+            "z": -21.28767920124829
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Valley Run",
+        "text": "Health 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {
+          "maxHealth": 100,
+          "health": 100
+        },
+        "playtime": 20.233699999928497,
+        "simulationSeconds": 20.233699999928497,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 10.290899378449245,
+            "y": -2.008871309800133,
+            "z": -21.172380397176436
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Valley Run",
+      "text": "Valley Run\n\nCross a narrow valley and climb the stepping stones to the far ridge. The amber camp marks your checkpoint.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 0,
+      "simulationSeconds": 0,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": -1.4442011014227993,
+          "z": -17
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:28:17.975Z"
+  },
+  {
+    "id": "painted-wilds",
+    "phase": "after-bc",
+    "url": "http://localhost:8837/dist/games/painted-wilds.html",
+    "startedAt": "2026-09-08T00:28:18.484Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Painted Wilds",
+        "text": "Visit the three survey stones, then return to the trailhead.\nStudies: 0 / 3\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 0.6,
+        "simulationSeconds": 0.6,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -13,
+            "y": -1.5942933068196634,
+            "z": 0
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Painted Wilds",
+        "text": "Visit the three survey stones, then return to the trailhead.\nStudies: 0 / 3\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 5.755200000166889,
+        "simulationSeconds": 5.755200000166889,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -15.175,
+            "y": -1.6916901625536669,
+            "z": -2.7210283206679664
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Painted Wilds",
+        "text": "Visit the three survey stones, then return to the trailhead.\nStudies: 0 / 3\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 20.05520000016691,
+        "simulationSeconds": 20.05520000016691,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -14.341559351782363,
+            "y": -1.6664337070928816,
+            "z": 1.629000365670308
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Painted Wilds",
+      "text": "Painted Wilds\n\nA short landscape walk through moss, ochre and slate. Follow the three survey stones.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 0,
+      "simulationSeconds": 0,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": -13,
+          "y": 1.05,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nVisit the three survey stones, then return to the trailhead.\nStudies: 0 / 3\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:29:05.932Z"
+  },
+  {
+    "id": "assembly-line",
+    "phase": "after-bc",
+    "url": "http://localhost:8837/dist/games/assembly-line.html",
+    "startedAt": "2026-09-08T00:29:06.474Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Assembly Line",
+        "text": "Observe the three active bays, then use the inspection console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 0.5,
+        "simulationSeconds": 0.5,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 1.1226343990283145,
+            "z": -5
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Assembly Line",
+        "text": "Observe the three active bays, then use the inspection console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 4.424800000071526,
+        "simulationSeconds": 4.424800000071526,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 5.80794429885,
+            "y": 0.55,
+            "z": 10.300020789454143
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Assembly Line",
+        "text": "Inspection complete\n\nAll three fabrication bays are operational.\n\nRestart\nObserve the three active bays, then use the inspection console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 12.950200000166864,
+        "simulationSeconds": 12.950200000166864,
+        "ended": true,
+        "player": {
+          "position": {
+            "x": 4.1187511503922725,
+            "y": 0.55,
+            "z": 13.03345257202781
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Assembly Line",
+      "text": "Assembly Line\n\nThree fabrication bays assemble drones in real time. Clear space with your blaster, then inspect the control desk.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 0,
+      "simulationSeconds": 0,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.25,
+          "z": -5
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "Inspection complete\n\nAll three fabrication bays are operational.\n\nRestart\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nObserve the three active bays, then use the inspection console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:29:40.309Z"
+  },
+  {
+    "id": "blacksite",
+    "phase": "after-bc",
+    "url": "http://localhost:8837/dist/games/blacksite.html",
+    "startedAt": "2026-09-08T00:29:40.989Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Blacksite",
+        "text": "Recover the card, enter the core, and reach extraction.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 0.30000000000000004,
+        "simulationSeconds": 0.30000000000000004,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 0.55,
+            "z": -2
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Blacksite",
+        "text": "Recover the card, enter the core, and reach extraction.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 3.448000000000002,
+        "simulationSeconds": 3.448000000000002,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 4.199999435755193,
+            "y": 0.55,
+            "z": 10.422074164381852
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Blacksite",
+        "text": "Recover the card, enter the core, and reach extraction.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 20.298600000023864,
+        "simulationSeconds": 20.298600000023864,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -6.35,
+            "y": 0.55,
+            "z": 12.008712759584474
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Blacksite",
+      "text": "Blacksite\n\nTake the access card, open the security door, and cross the checkpoint into the core.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 0,
+      "simulationSeconds": 0,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.25,
+          "z": -2
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nRecover the card, enter the core, and reach extraction.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; Q attacks; F interacts; Escape pauses.",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:30:48.741Z"
+  },
+  {
+    "id": "moving-temple",
+    "phase": "after-bc",
+    "url": "http://localhost:8837/dist/games/moving-temple.html",
+    "startedAt": "2026-09-08T00:30:49.567Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Moving Temple",
+        "text": "Cross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 0.5,
+        "simulationSeconds": 0.5,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 1.8,
+            "z": -0.4
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Moving Temple",
+        "text": "Cross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 6.60579999995231,
+        "simulationSeconds": 6.60579999995231,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 9.10205081990215,
+            "y": -0.46432075137215545,
+            "z": -12.175
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Moving Temple",
+        "text": "Cross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 20.105799999952335,
+        "simulationSeconds": 20.105799999952335,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 1.477364650809188,
+            "y": 0.0064404003073677,
+            "z": -4.879368401075937
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Moving Temple",
+      "text": "Moving Temple\n\nRide the crossing slab, activate the amber lift, and jump to the high shrine.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 0,
+      "simulationSeconds": 0,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 2.35,
+          "z": -0.4
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nCross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:31:30.005Z"
+  },
+  {
+    "id": "shifting-facility",
+    "phase": "after-bc",
+    "url": "http://localhost:8837/dist/games/shifting-facility.html",
+    "startedAt": "2026-09-08T00:31:30.691Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Shifting Facility",
+        "text": "Pass the entry scanner, try the swing door, and reach the far console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 0.4328000000715255,
+        "simulationSeconds": 0.4328000000715255,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 0.55,
+            "z": -16
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Shifting Facility",
+        "text": "Pass the entry scanner, try the swing door, and reach the far console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 4.741200000047684,
+        "simulationSeconds": 4.741200000047684,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 5.6,
+            "y": 0.55,
+            "z": 0.5401408068524518
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Shifting Facility",
+        "text": "Pass the entry scanner, try the swing door, and reach the far console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 20.012300000071544,
+        "simulationSeconds": 20.012300000071544,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -18.275,
+            "y": 0.55,
+            "z": 3.5155555328459878
+          },
+          "visible": false,
+          "controller": "firstperson"
+        },
+        "camera": {
+          "mode": "fixed"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Shifting Facility",
+      "text": "Shifting Facility\n\nWalk the three machinery bays. Test the swing door and follow the amber lane to the far inspection station.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 0,
+      "simulationSeconds": 0,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.05,
+          "z": -16
+        },
+        "visible": false,
+        "controller": "firstperson"
+      },
+      "camera": {
+        "mode": "fixed"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nPass the entry scanner, try the swing door, and reach the far console.\nPress F to interact\nWASD / arrows move; mouse looks; Space jumps; F interacts; Escape pauses.",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:32:25.603Z"
+  },
+  {
+    "id": "skyway-trial",
+    "phase": "after-bc",
+    "url": "http://localhost:8837/dist/games/skyway-trial.html",
+    "startedAt": "2026-09-08T00:32:26.687Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Skyway Trial",
+        "text": "Jump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 0.7,
+        "simulationSeconds": 0.7,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 0.55,
+            "z": 1
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Skyway Trial",
+        "text": "Jump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 8.23780000007152,
+        "simulationSeconds": 8.23780000007152,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 4.781703713893034,
+            "y": 0.55,
+            "z": 2.2754446070708596
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Skyway Trial",
+        "text": "Jump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {},
+        "playtime": 20.614600000262303,
+        "simulationSeconds": 20.614600000262303,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 2.152822157151883,
+            "y": 0.55,
+            "z": 1.3460668224246988
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Skyway Trial",
+      "text": "Skyway Trial\n\nFive suspended platforms rise above a quiet blue void. Commit to each jump and reach the amber summit.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "state": {},
+      "playtime": 0,
+      "simulationSeconds": 0,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.75,
+          "z": 1
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nJump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:33:01.007Z"
+  },
+  {
+    "id": "survival-arena",
+    "phase": "after-bc",
+    "url": "http://localhost:8837/dist/games/survival-arena.html",
+    "startedAt": "2026-09-08T00:33:01.867Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Survival Arena",
+        "text": "Survive! Collect 4 orbs, avoid the red hunters.\nLives: 3\nOrbs: 0 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+        "state": {
+          "health": 3,
+          "collected": 0
+        },
+        "playtime": 0.7,
+        "simulationSeconds": 0.7,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": -0.2505871526561789,
+            "z": 0
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Survival Arena",
+        "text": "MAP EDGE — TURN INWARD\nSurvive! Collect 4 orbs, avoid the red hunters.\nLives: 3\nOrbs: 0 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+        "state": {
+          "health": 3,
+          "collected": 0
+        },
+        "playtime": 9.587000000000002,
+        "simulationSeconds": 9.587000000000002,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -27.132517697344454,
+            "y": -1.8499999999999999,
+            "z": -19.539435768736364
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Survival Arena",
+        "text": "MAP EDGE — TURN INWARD\nSurvive! Collect 4 orbs, avoid the red hunters.\nLives: 3\nOrbs: 0 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+        "state": {
+          "health": 3,
+          "collected": 0
+        },
+        "playtime": 25.07850000000002,
+        "simulationSeconds": 25.07850000000002,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -31.573620182546996,
+            "y": -1.8499999999999999,
+            "z": -13.932319141205062
+          },
+          "visible": true,
+          "controller": "hovercraft"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Survival Arena",
+      "text": "Survive! Collect 4 orbs, avoid the red hunters.\nSurvival Arena\n\nFour amber orbs, three lives, and three hunters. Sweep the courtyard before they surround you.\n\nLaunch\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+      "state": {
+        "health": 3,
+        "collected": 0
+      },
+      "playtime": 0,
+      "simulationSeconds": 0,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": -0.2505871526561789,
+          "z": 0
+        },
+        "visible": true,
+        "controller": "hovercraft"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "MAP EDGE — TURN INWARD\nSurvive! Collect 4 orbs, avoid the red hunters.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nLives: 3\nOrbs: 0 / 4\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:33:32.488Z"
+  },
+  {
+    "id": "temple-switch-puzzle",
+    "phase": "after-bc",
+    "url": "http://localhost:8837/dist/games/temple-switch-puzzle.html",
+    "startedAt": "2026-09-08T00:33:32.910Z",
+    "seconds": 24,
+    "input": [
+      {
+        "key": "w",
+        "milliseconds": 2880
+      },
+      {
+        "key": "d",
+        "milliseconds": 2400
+      },
+      {
+        "key": "w",
+        "milliseconds": 3600
+      },
+      {
+        "key": "a",
+        "milliseconds": 2400
+      },
+      {
+        "key": "s",
+        "milliseconds": 1920
+      },
+      {
+        "key": "w",
+        "milliseconds": 2400
+      },
+      {
+        "key": "d",
+        "milliseconds": 1200
+      },
+      {
+        "key": "a",
+        "milliseconds": 700,
+        "reason": "Extend representative simulation time"
+      }
+    ],
+    "errors": [],
+    "failedRequests": [],
+    "frames": [
+      {
+        "title": "Temple Switch Puzzle",
+        "text": "Find both switches to open the gate, then reach the goal.\nActivate both seals, then enter the northern shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {
+          "switches": 0
+        },
+        "playtime": 0.5251999999284744,
+        "simulationSeconds": 0.5251999999284744,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": 0,
+            "y": 0.4999050655186603,
+            "z": -10
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Temple Switch Puzzle",
+        "text": "Find both switches to open the gate, then reach the goal.\nActivate both seals, then enter the northern shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {
+          "switches": 0
+        },
+        "playtime": 8.240499999880779,
+        "simulationSeconds": 8.240499999880779,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -15.175,
+            "y": 0.4998840796760775,
+            "z": 9.269499580711082
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      },
+      {
+        "title": "Temple Switch Puzzle",
+        "text": "Find both switches to open the gate, then reach the goal.\nActivate both seals, then enter the northern shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "state": {
+          "switches": 0
+        },
+        "playtime": 20.440499999880814,
+        "simulationSeconds": 20.440499999880814,
+        "ended": false,
+        "player": {
+          "position": {
+            "x": -6.90925066001452,
+            "y": 0.49946934793756625,
+            "z": 2.9260075539624566
+          },
+          "visible": false,
+          "controller": "thirdperson"
+        },
+        "camera": {
+          "mode": "chase"
+        },
+        "audio": {},
+        "objectives": {},
+        "inventory": {},
+        "helpers": []
+      }
+    ],
+    "start": {
+      "title": "Temple Switch Puzzle",
+      "text": "Find both switches to open the gate, then reach the goal.\nTemple Switch Puzzle\n\nTwo amber seals power an ancient gateway. Step onto each seal and cross the open gate.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+      "state": {
+        "switches": 0
+      },
+      "playtime": 0,
+      "simulationSeconds": 0,
+      "ended": false,
+      "player": {
+        "position": {
+          "x": 0,
+          "y": 1.2000000000000002,
+          "z": -10
+        },
+        "visible": true,
+        "controller": "thirdperson"
+      },
+      "camera": {
+        "mode": "chase"
+      },
+      "audio": {},
+      "objectives": {},
+      "inventory": {},
+      "helpers": []
+    },
+    "pause": "Find both switches to open the gate, then reach the goal.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nActivate both seals, then enter the northern shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "completed": true,
+    "finishedAt": "2026-09-08T00:34:04.697Z"
+  }
+]

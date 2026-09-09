@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="g-valley-run-title">
+<title id="g-valley-run-title">Valley Run -- Third-Person Platforming</title>
+<defs><linearGradient id="g-valley-run" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="hsl(205, 38%, 14%)"/><stop offset="100%" stop-color="hsl(245, 45%, 30%)"/>
+</linearGradient></defs>
+<rect width="640" height="400" fill="url(#g-valley-run)"/>
+<text x="50%" y="47%" text-anchor="middle" font-family="system-ui,sans-serif" font-size="40" font-weight="700" fill="#f2f5fa">Valley Run</text>
+<text x="50%" y="58%" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" letter-spacing="2" fill="#c7d3ea" opacity="0.85">THIRD-PERSON PLATFORMING</text>
+</svg>
