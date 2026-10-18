@@ -2938,7 +2938,11 @@ document.write(`<script src="src/00-gameplay-presets.js?bust=${Date.now()}"><\/s
 document.write(`<script src="src/00-onboarding.js?bust=${Date.now()}"><\/script>`);
 document.write(`<script src="src/00-sprite-starters.js?bust=${Date.now()}"><\/script>`);
 document.write(`<script src="src/00-world-starters.js?bust=${Date.now()}"><\/script>`);
-document.write(`<script src="src/01-editor.js?bust=${Date.now()}"><\/script>`);
+document.write(`<script src="src/00-durable-storage.js?bust=${Date.now()}"><\/script>`);
+// Project data lives in IndexedDB: install the durable storage router first,
+// then boot the editor. Any failure keeps ordinary localStorage.
+document.write(`<script type="text/plain" id="editor-boot-script" data-src="src/01-editor.js?bust=${Date.now()}"><\/script>`);
+document.write(`<script>OpusDurableStorage.bootEditor(document.getElementById('editor-boot-script').dataset.src);<\/script>`);
 </script>
 </body>
 </html>

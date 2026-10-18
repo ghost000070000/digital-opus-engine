@@ -178,6 +178,12 @@ fs.copyFileSync(inputConflictsPath, path.join(SITE_DIR, 'editor', 'src', '00-inp
 fs.copyFileSync(onboardingPath, path.join(SITE_DIR, 'editor', 'src', '00-onboarding.js'));
 fs.copyFileSync(spriteStartersPath, path.join(SITE_DIR, 'editor', 'src', '00-sprite-starters.js'));
 fs.copyFileSync(worldStartersPath, path.join(SITE_DIR, 'editor', 'src', '00-world-starters.js'));
+// Any further standalone editor helper (e.g. 00-durable-storage.js) ships too,
+// so a new helper loaded by editor/index.html can never be missing from the site.
+for (const file of fs.readdirSync(path.join(ROOT, 'editor', 'src'))) {
+  const target = path.join(SITE_DIR, 'editor', 'src', file);
+  if (/^00-[a-z0-9-]+\.js$/.test(file) && !fs.existsSync(target)) fs.copyFileSync(path.join(ROOT, 'editor', 'src', file), target);
+}
 fs.copyFileSync(capabilityCatalogPath, path.join(SITE_DIR, 'no-code-capabilities.json'));
 fs.copyFileSync(frictionRegistryPath, path.join(SITE_DIR, 'authoring-friction.json'));
 fs.copyFileSync(editorJsPath, path.join(SITE_DIR, 'editor', 'src', '01-editor.js'));
