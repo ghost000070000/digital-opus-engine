@@ -895,6 +895,7 @@ function commitPlacementPayload(payload, point, placementOptions) {
     if(placementOptions?.plane!=='xy')placementPoint.y = 1; // historical ground placement height
     return placeSpriteAssetInstance(asset, placementPoint);
   }
+  if (payload && typeof payload.libraryModel === 'string') { addContentLibraryModel(payload.libraryModel, placementPoint); return null; } // Content Library drag (loads asynchronously)
   if (payload && payload.paletteType) { placeItem(payload.paletteType, placementPoint,placementOptions); return selectedItem; }
   return null;
 }

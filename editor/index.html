@@ -151,6 +151,15 @@
   .content-library-filters { display: flex; flex-direction: column; gap: 6px; margin-bottom: 6px; }
   .content-library-filters input, .content-library-filters select { width: 100%; box-sizing: border-box; padding: 6px 8px; background: #0b1220; color: #dce6f5; border: 1px solid #2b3a55; border-radius: 6px; font-size: 12px; }
   .content-library-list { max-height: 320px; overflow: auto; display: flex; flex-direction: column; gap: 2px; }
+  .content-library-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin-bottom: 8px; }
+  .content-library-tile { position: relative; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 4px 3px 5px; border: 1px solid #1d2a42; border-radius: 6px; background: #0d1626; cursor: grab; user-select: none; touch-action: none; }
+  .content-library-tile:hover { border-color: #4fd1c5; background: #12203a; }
+  .content-library-tile:active { cursor: grabbing; }
+  .content-library-tile img { width: 56px; height: 56px; object-fit: contain; pointer-events: none; }
+  .content-library-tile span { width: 100%; text-align: center; font-size: 10.5px; line-height: 1.2; color: #c7d3ea; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .content-library-tile.in-project::after { content: ''; position: absolute; left: 5px; top: 5px; width: 7px; height: 7px; border-radius: 50%; background: #4fd1c5; }
+  .content-library-tile button { position: absolute; right: 3px; top: 3px; width: 20px !important; height: 20px; padding: 0 !important; margin: 0; border-radius: 50%; background: #16233a; color: #dce6f5; border: 1px solid #2b3a55; font-size: 13px; line-height: 18px; cursor: pointer; opacity: 0; transition: opacity .1s; }
+  .content-library-tile:hover button, .content-library-tile button:focus { opacity: 1; }
   .content-library-item { display: flex; align-items: center; gap: 6px; padding: 3px 4px; border-radius: 5px; font-size: 12px; color: #c7d3ea; }
   .content-library-item:hover { background: #16233a; }
   .content-library-icon { width: 18px; text-align: center; flex: none; }

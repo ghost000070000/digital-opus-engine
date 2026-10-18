@@ -69,7 +69,8 @@ async function ensureContentLibraryModel(key) {
   }
   return { entry, record, textureRecord };
 }
-async function addContentLibraryModel(key) {
+// position: where the model was dropped (ground point); defaults to the view centre.
+async function addContentLibraryModel(key, position) {
   if (playMode) { showStatus('Stop Play before adding library content'); return null; }
   let prepared;
   try { prepared = await ensureContentLibraryModel(key); }
@@ -80,9 +81,9 @@ async function addContentLibraryModel(key) {
   if (prepared.record) loadAssets([prepared.record]);
   const asset = findAssetById(prepared.entry.id);
   if (!asset) { showStatus('Library model could not be added'); return null; }
-  const target = app.camera.target || new Opus.Vec3(0, 0, 0);
-  const item = placeAssetInstance(asset, new Opus.Vec3(target.x, 0, target.z), false);
-  if (item && !item.name) { item.name = contentLibraryLabel(key); renderSceneList(); }
+  const target = position || app.camera.target || new Opus.Vec3(0, 0, 0);
+  const item = placeAssetInstance(asset, new Opus.Vec3(target.x, position ? target.y : 0, target.z), false);
+  if (item && !item.name) { item.name = contentLibraryLabel(key); renderSceneList(); if (selectedItem === item) renderInspector(); }
   if (typeof refreshAssetDiscovery === 'function') refreshAssetDiscovery();
   showStatus(`Added ${contentLibraryLabel(key)} · Undo removes it`);
   return item;
@@ -124,6 +125,14 @@ function ensureContentLibrarySection() {
   tab.prepend(section);
   section.querySelector('#content-library-search').addEventListener('input', renderContentLibrary);
   section.querySelector('#content-library-group').addEventListener('change', renderContentLibrary);
+  section.querySelector('#content-library-list').addEventListener('pointerdown', (event) => {
+    const tile = event.target.closest('[data-library-drag]');
+    if (!tile || event.target.closest('button') || event.button !== 0) return;
+    if (playMode) { showStatus('Stop Play before adding library content'); return; }
+    const key = tile.dataset.libraryDrag;
+    beginPlacementPointerDrag(event, { libraryModel: key }, contentLibraryLabel(key), { previewHtml: `<img src="${CONTENT_LIBRARY_BASE}thumbs/${escapeHtml(key)}.png" alt="" style="width:56px;height:56px"><span>${escapeHtml(contentLibraryLabel(key))}</span>` });
+    ensureContentLibraryModel(key).catch(() => {}); // warm the cache while dragging
+  });
   section.querySelector('#content-library-list').addEventListener('click', (event) => {
     const button = event.target.closest('button[data-library-action]');
     if (!button) return;
@@ -148,13 +157,14 @@ function renderContentLibrary() {
   const query = section.querySelector('#content-library-search').value.trim().toLowerCase();
   const group = section.querySelector('#content-library-group').value;
   const matchesQuery = (key) => !query || key.replace(/-/g, ' ').includes(query) || key.includes(query);
-  let html = '', count = 0;
+  let html = '', tiles = '', count = 0;
   if (group !== 'sounds') {
     for (const model of contentLibraryManifest.meshes) {
       const modelGroup = contentLibraryGroup(model);
       if ((group && modelGroup.id !== group) || !matchesQuery(model.key)) continue;
       const inProject = !!findAssetById(model.id);
-      html += `<div class="content-library-item" role="listitem"><span class="content-library-icon" aria-hidden="true">${modelGroup.icon}</span><span class="content-library-name">${escapeHtml(contentLibraryLabel(model.key))}${inProject ? ' <small>in project</small>' : ''}</span><button type="button" data-library-action="model" data-library-key="${escapeHtml(model.key)}" title="Add to the scene at the view centre">Add</button></div>`;
+      const label = escapeHtml(contentLibraryLabel(model.key));
+      tiles += `<div class="content-library-tile${inProject ? ' in-project' : ''}" role="listitem" data-library-drag="${escapeHtml(model.key)}" title="${label} · drag into the scene"><img src="${CONTENT_LIBRARY_BASE}thumbs/${escapeHtml(model.key)}.png" alt="" loading="lazy" draggable="false"><span>${label}</span><button type="button" data-library-action="model" data-library-key="${escapeHtml(model.key)}" aria-label="Add ${label} at the view centre" title="Add at the view centre">+</button></div>`;
       count++;
     }
   }
@@ -165,7 +175,7 @@ function renderContentLibrary() {
       count++;
     }
   }
-  list.innerHTML = html || '<p class="field-help">Nothing matches this search.</p>';
+  list.innerHTML = (tiles ? `<div class="content-library-grid">${tiles}</div>` : '') + html || '<p class="field-help">Nothing matches this search.</p>';
   section.querySelector('#content-library-count').textContent = count + (count === 1 ? ' item' : ' items');
 }
 (function mountContentLibrary() {
