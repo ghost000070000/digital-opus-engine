@@ -13,8 +13,9 @@
 //   function onClick(ctx) {}            this object is clicked in Play
 //   function onStop(ctx) {}             Play stops
 //
-// Everything here uses `var`/function declarations: this module is appended
-// after the boot code, and the Inspector may call into it during boot.
+// This module must stay ordered before the boot module (52-onboarding.js):
+// exported and hosted games boot straight into Play, which dispatches script
+// hooks, so its state has to be initialized first.
 
 var SCRIPT_HOOKS = ['onStart', 'onUpdate', 'onTriggerEnter', 'onTriggerExit', 'onInteract', 'onClick', 'onStop'];
 var SCRIPT_TRIGGER_HOOKS = { enter: 'onTriggerEnter', exit: 'onTriggerExit', interact: 'onInteract', click: 'onClick' };

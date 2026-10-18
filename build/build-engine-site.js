@@ -202,6 +202,8 @@ console.log(`Packaged editor -> ${path.relative(ROOT, path.join(SITE_DIR, 'edito
 const gamesResult = buildGamesSite({
   outputDir: path.join(SITE_DIR, 'games'),
   includeRawSource: true,
+  // Hosted pages share one cached engine/editor runtime (see buildGamesSite).
+  sharedRuntime: true,
   // Public Showcase Recovery pass: this is the PUBLIC-facing Engine site --
   // only catalog entries explicitly marked `visibility: 'public'` may ever
   // reach it, regardless of the old `featured` flag. All 28 catalog entries

@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-18 — Editor upgrade: layout, scripting, reusable content, durable saves, lighter site
+
+- Editor source is split into `editor/src/modules/` (assembled by `build/build-editor.js`).
+- Layout: Hierarchy docked left, grouped Objects palette (legacy demo items in their own group), View menu for diagnostics, editor-only ground grid, collapsible Inspector cards with help behind "?" and Up/Down/Remove behind "⋯". Start Blank opens a playable scene (ground, player start, third-person player).
+- Script component: per-object code with onStart/onUpdate/onTriggerEnter/onTriggerExit/onInteract/onClick/onStop, a `ctx` API, a highlighted code editor with templates and API reference, and a Script Console with object names and line numbers. Runs only in Play under the existing trust gate.
+- Reusable content: linked named Materials (saving updates every linked object; hand edits make one unique), Update Prefab From This rebuilds every other instance while keeping per-instance overrides, and assets get default colliders on drop and Scatter (trees at the trunk, ground cover walk-through).
+- Durable saves: projects, previous revisions, version history and the Prefab library live in IndexedDB with automatic migration from localStorage, cross-tab sync and a persistent-storage request. Several large projects now save where the second used to fail.
+- Hosted game pages share one cached, content-hashed engine/editor runtime: average page 7.6 MB → 1.8 MB, site 215 MB → 127 MB, upload ZIP 84 MB → 61 MB. Exports remain single-file.
+
 ## 2026-10-18 — Real-game controls and collision repair
 
 - Third-person camera no longer spins. Movement was camera-relative while the chase camera followed the character's facing, so holding A or D ran the player in circles. The controller now owns the camera yaw: strafing goes straight, forward-diagonal input steers gently (1.6 rad/s), the character turns toward travel at a bounded 12 rad/s instead of snapping, and authored camera bearings are still respected. Added hold-right-mouse-drag and gamepad right-stick camera orbit (no Pointer Lock, so On Click behaviors keep working) and a "Rotate Camera" row in the in-game Controls screen.

@@ -65,6 +65,15 @@
     const embeddedFlags = opts.playableOnly
       ? `window.__OPUS_EMBEDDED_PROJECT__ = ${escapeForInlineScript(opts.embeddedProjectJSON)};\nwindow.__OPUS_PLAYABLE_ONLY__ = true;`
       : `window.__OPUS_EMBEDDED_PROJECT__ = ${escapeForInlineScript(opts.embeddedProjectJSON)};`;
+    // Hosted Playable pages may share one cached engine/editor runtime file
+    // instead of inlining ~3 MB each; Playable mode never reads the inline
+    // source text (only Editable re-export does). Exports stay single-file.
+    const shared = opts.sharedRuntime;
+    if (shared && (!opts.playableOnly || typeof shared.engineSrc !== 'string' || typeof shared.editorSrc !== 'string')) throw new Error('A shared runtime is only valid for Playable pages with engine and editor script paths.');
+    const scriptSrc = (value) => String(value).replace(/[^A-Za-z0-9._\/-]/g, '');
+    const runtimeScripts = shared
+      ? `<script id="opus-export-engine" src="${scriptSrc(shared.engineSrc)}"></script>\n<script id="opus-export-editor" src="${scriptSrc(shared.editorSrc)}"></script>`
+      : `<script id="opus-export-engine">\n${escapeForInlineScript(opts.engineJS)}\n</script>\n<script id="opus-export-editor">\n${escapeForInlineScript(opts.editorJS)}\n</script>`;
     return opts.htmlTemplate
       // The editor's repository/package favicon is intentionally not copied
       // into one-file game exports. Removing these tagged links preserves the
@@ -73,7 +82,7 @@
       // Explicit empty data favicon keeps standalone/editor exports fully
       // offline; otherwise browsers synthesize a /favicon.ico request.
       .replace(/<head>/, '<head>\n<link rel="icon" href="data:,">')
-      .replace(bootPattern, () => `<script>${embeddedFlags}</script>\n${opts.playableOnly?'':`<script id="opus-export-template" type="application/json">${escapeForInlineScript(JSON.stringify(opts.htmlTemplate))}</script>\n`}<script id="opus-export-composer">\n${escapeForInlineScript(opts.templateJS)}\n</script>\n<script id="opus-export-engine">\n${escapeForInlineScript(opts.engineJS)}\n</script>\n<script id="opus-export-editor">\n${escapeForInlineScript(opts.editorJS)}\n</script>`)
+      .replace(bootPattern, () => `<script>${embeddedFlags}</script>\n${opts.playableOnly?'':`<script id="opus-export-template" type="application/json">${escapeForInlineScript(JSON.stringify(opts.htmlTemplate))}</script>\n`}<script id="opus-export-composer">\n${escapeForInlineScript(opts.templateJS)}\n</script>\n${runtimeScripts}`)
       .replace(/<title>[^<]*<\/title>/, `<title>${escapeHtmlForTitle(opts.title || 'Digital Opus Game')}</title>`);
   }
 

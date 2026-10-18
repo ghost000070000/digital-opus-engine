@@ -237,6 +237,18 @@ fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-hud-action-prompts.js'), 'u
   fs.copyFileSync(appIconSource, appIconTarget);
 
   const built = [];
+  // Hosted sites (options.sharedRuntime) write the engine and editor runtime
+  // once, content-hashed so a new build is never served from a stale cache,
+  // and every game page references them instead of inlining ~3 MB each.
+  let sharedRuntime = null;
+  if (options.sharedRuntime) {
+    const hash = (text) => require('crypto').createHash('sha256').update(text).digest('hex').slice(0, 12);
+    sharedRuntime = { engineSrc: `opus-engine-runtime.${hash(engineJS)}.js`, editorSrc: `opus-editor-runtime.${hash(editorJS)}.js` };
+    fs.mkdirSync(outputDir, { recursive: true });
+    fs.writeFileSync(path.join(outputDir, sharedRuntime.engineSrc), engineJS, 'utf8');
+    fs.writeFileSync(path.join(outputDir, sharedRuntime.editorSrc), editorJS, 'utf8');
+    log(`Shared runtime -> ${sharedRuntime.engineSrc} (${(engineJS.length / 1024).toFixed(0)} KB), ${sharedRuntime.editorSrc} (${(editorJS.length / 1024).toFixed(0)} KB)`);
+  }
   const buildFailures = [];
   for (const entry of gamesToBuild) {
     if (entry.playable === false) continue;
@@ -247,6 +259,7 @@ fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-hud-action-prompts.js'), 'u
         embeddedProjectJSON: entry._projectJSON,
         playableOnly: true,
         title,
+        sharedRuntime: sharedRuntime || undefined,
       });
       const outPath = path.join(outputDir, `${entry.id}.html`);
       fs.writeFileSync(outPath, html, 'utf8');
@@ -254,7 +267,11 @@ fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-hud-action-prompts.js'), 'u
       if (stat.size === 0) throw new Error('generated file is empty');
       if (!html.includes('__OPUS_EMBEDDED_PROJECT__')) throw new Error('embedded project payload missing');
       if (!html.includes(`<title>${escapeHtml(title)}</title>`)) throw new Error('resolved title missing from output');
-      if (/<script[^>]+src=/.test(html)) throw new Error('output references an external <script src=, not standalone');
+      // Real external tags only: inline script bodies (e.g. the embedded composer's own source) are not tags.
+      const tagsOnly = html.replace(/<script(?![^>]*\ssrc=)[^>]*>[\s\S]*?<\/script>/g, '');
+      const externalScripts = [...tagsOnly.matchAll(/<script[^>]+src="([^"]+)"/g)].map(m => m[1]);
+      const allowedScripts = sharedRuntime ? [sharedRuntime.engineSrc, sharedRuntime.editorSrc] : [];
+      if (externalScripts.some(src => !allowedScripts.includes(src))) throw new Error('output references an external <script src=, not standalone');
       // The public gate has already checked real files and their review metadata.
       const screenshots = {};
       for (const shot of screenshotRecords(entry)) {

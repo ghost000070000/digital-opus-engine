@@ -3,7 +3,7 @@
 // error line reporting and the trust gate, using the actual module source.
 const assert = require('assert'), fs = require('fs'), path = require('path'), vm = require('vm');
 const root = path.resolve(__dirname, '..');
-const source = fs.readFileSync(path.join(root, 'editor/src/modules/52-script-component.js'), 'utf8');
+const source = fs.readFileSync(path.join(root, 'editor/src/modules/51-script-component.js'), 'utf8');
 // The module's trailing IIFE mounts DOM controls; tests run only the declarations.
 const declarations = source.slice(0, source.indexOf('// Script Console toggle lives in the viewport View menu.'));
 
@@ -103,5 +103,13 @@ function cube(id, code, extra = {}) {
   assert.strictEqual(ctx.projectHasScripts({ levels: [{ objects: [{ id: 'b', script: { code: '   ' } }] }] }), false, 'empty scripts are not code');
   const review = ctx.readCustomScriptReview(project);
   assert(review.entries.some(e => e.includes('Script component on Door') && e.includes('onInteract')), 'review shows the script source');
+}
+{
+  // Exported and hosted games boot straight into Play and dispatch script hooks
+  // during boot, so the Script module must initialize before the boot module.
+  const modules = fs.readdirSync(path.join(root, 'editor/src/modules')).sort();
+  const script = modules.findIndex(f => /script-component\.js$/.test(f)), boot = modules.findIndex(f => /onboarding\.js$/.test(f));
+  assert(script >= 0 && boot >= 0 && script < boot, `Script module must be assembled before the boot module: ${modules[script]} vs ${modules[boot]}`);
+  assert.strictEqual(boot, modules.length - 1, 'the boot module stays last');
 }
 console.log('Script component: normalization, highlighting, lifecycle, error lines, trust gate PASS');
