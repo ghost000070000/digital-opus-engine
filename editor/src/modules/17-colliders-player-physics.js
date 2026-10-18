@@ -58,6 +58,31 @@ function meshTrunkItemCollider(item, asset) {
   return { shape: 'box', size, offset: { x: center.x, y: center.y, z: center.z } };
 }
 
+// Default collision for a placed asset: an explicit asset.colliderPreset, or a
+// sensible guess for showcase models (trees block at the trunk, ground cover
+// stays walk-through, other props get a fitted box). User-imported models stay
+// non-solid unless their asset declares a preset. Never overrides an object
+// that already has its own collider or solidity.
+function assetDefaultColliderPreset(asset) {
+  if (!asset) return null;
+  if (['none', 'mesh', 'trunk'].includes(asset.colliderPreset)) return asset.colliderPreset;
+  const id = String(asset.id || '');
+  if (!id.startsWith('showcase-')) return null;
+  if (/tree/.test(id)) return 'trunk';
+  if (/bush|grass|flower|fern|moss|undergrowth|weed|decal|banner|light-?beam/.test(id)) return 'none';
+  return 'mesh';
+}
+function applyAssetDefaultCollider(item, asset) {
+  if (!item || !item.entity || item.collider || item.entity.solid || item.isTrigger) return false;
+  const preset = assetDefaultColliderPreset(asset);
+  if (!preset || preset === 'none') return false;
+  const fitted = preset === 'trunk' ? meshTrunkItemCollider(item, asset) : meshFittedItemCollider(item, asset);
+  if (!fitted) return false;
+  item.collider = fitted;
+  item.entity.solid = true;
+  return true;
+}
+
 function itemColliderConfig(item) {
   const c = item.collider;
   const offset = (c && c.offset) ? new Opus.Vec3(c.offset.x || 0, c.offset.y || 0, c.offset.z || 0) : new Opus.Vec3(0, 0, 0);

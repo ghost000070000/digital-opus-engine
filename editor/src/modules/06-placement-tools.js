@@ -201,6 +201,8 @@ function scatterPlaceOne(config, point, rotationY, scale) {
       root.entity.scale = config.preservePrefabScale
         ? new Opus.Vec3(authored.x * scale, authored.y * scale, authored.z * scale)
         : new Opus.Vec3(scale, scale, scale);
+      // Fit after scaling so the collider matches the scattered size.
+      if (root.assetId) applyAssetDefaultCollider(root, findAssetById(root.assetId));
     }
     return items;
   }
@@ -209,6 +211,7 @@ function scatterPlaceOne(config, point, rotationY, scale) {
     if (!asset) return [];
     const entity = app.addEntity({ mesh: getAssetMeshHandle(asset), color: [1, 1, 1], position: point, rotationY, scale: new Opus.Vec3(scale, scale, scale) });
     const item = { kind: 'cube', entity, behaviors: [], assetId: config.assetId };
+    applyAssetDefaultCollider(item, asset); // scattered trees/props are solid like dropped ones
     addPlaced(item);
     return [item];
   }
@@ -475,6 +478,47 @@ function swapItemForPrefabInstance(item, prefab, statusVerb) {
   }
   renderSceneList();
   showStatus(`${statusVerb} "${prefab.name}"`);
+}
+// Live prefab linking: after "Update Prefab From This", every other root
+// instance of the prefab in this level is rebuilt from the new definition.
+// Per-instance data survives: name, tags, variables, parameter overrides,
+// position and rotation. Scale counts as an override only when the instance
+// differed from the previous prefab. Caller owns the single Undo step.
+function propagatePrefabToInstances(prefab, previousPrefab, sourceItem) {
+  const sameVec = (a, b) => Array.isArray(b) && a && Math.abs(a.x - b[0]) < 1e-6 && Math.abs(a.y - b[1]) < 1e-6 && Math.abs(a.z - b[2]) < 1e-6;
+  const previousScale = previousPrefab && previousPrefab.record && previousPrefab.record.scale;
+  const instances = placed.filter(item => item !== sourceItem && item.sourcePrefabName === prefab.name && !item.parentId && item.entity);
+  let updated = 0;
+  for (const item of instances) {
+    if (!placed.includes(item)) continue;
+    const position = itemPosition(item).clone();
+    const quaternion = item.entity.quaternion;
+    const scale = item.entity.scale.clone();
+    const scaleOverridden = !sameVec(scale, previousScale);
+    const keep = { name: item.name, tags: item.tags && item.tags.slice(), variables: item.variables && { ...item.variables }, params: item.prefabParams && { ...item.prefabParams } };
+    removeItemAndDescendants(item);
+    let root;
+    if (prefab.records && prefab.records.length > 0) {
+      const created = instantiatePrefabAssembly(prefab, position);
+      for (const it of created) addPlaced(it);
+      root = created.find(it => it.id === created._newRootId) || created[0];
+    } else {
+      root = prefab.record.kind === 'sprite' ? instantiateSpriteRecord(prefab.record, position) : instantiateCubeRecord(prefab.record, position);
+      addPlaced(root);
+    }
+    if (!root) continue;
+    root.sourcePrefabName = prefab.name;
+    if (keep.name) root.name = keep.name;
+    if (keep.tags && keep.tags.length) root.tags = keep.tags;
+    if (keep.variables && Object.keys(keep.variables).length) root.variables = keep.variables;
+    if (keep.params) root.prefabParams = keep.params;
+    if (root.entity && quaternion) root.entity.quaternion = quaternion;
+    if (root.entity && scaleOverridden) root.entity.scale = scale;
+    applyPrefabParameters(prefab, root);
+    updated++;
+  }
+  if (updated) { hierarchyTickToken++; updateHierarchyTransforms(); renderSceneList(); }
+  return updated;
 }
 function updateInstanceFromPrefab(item) {
   const prefab = prefabs.find((p) => p.name === item.sourcePrefabName);

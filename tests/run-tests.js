@@ -19,6 +19,7 @@ run(path.join('tests', 'build-idempotence.test.js'));
 run(path.join('tests', 'public-api.test.js'));
 run(path.join('tests', 'real-controller-collision.test.js'));
 run(path.join('tests', 'script-component.test.js'));
+run(path.join('tests', 'reusable-content.test.js'));
 run(path.join('tests', 'real-demo-evidence.test.js'));
 run(path.join('tests', 'real-demo-wall-content.test.js'));
 run(path.join('tests', 'real-demo-masonry-assembly.test.js'));

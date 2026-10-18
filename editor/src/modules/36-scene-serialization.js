@@ -89,6 +89,7 @@ function serializeCubeRecord(item) {
     tags: (item.tags && item.tags.length) ? item.tags.slice() : undefined,
     textureAssetId: item.textureAssetId || undefined,
     textureDisabled: item.textureDisabled || undefined,
+    materialRef: typeof item.materialRef === 'string' ? item.materialRef : undefined, // linked named Material
     // Transform hierarchy (Wave 4). Local fields are plain numbers/arrays,
     // never live Vec3 references -- parentId is a stable id, not an object
     // pointer, so this stays plain portable data with no circular references
@@ -418,6 +419,7 @@ function instantiateCubeRecord(record, position, originDelta = null) {
     assetId: record.assetId || undefined,
     textureAssetId: record.textureAssetId || undefined,
     textureDisabled: record.textureDisabled || undefined,
+    materialRef: typeof record.materialRef === 'string' ? record.materialRef : undefined,
     parentId: record.parentId || undefined,
     socketName: record.socketName || undefined,
     persistRuntimeState: record.persistRuntimeState || undefined,

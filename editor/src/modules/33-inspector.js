@@ -502,7 +502,7 @@ function changeMaterialAuthoringField(entity,key,value,beforeChange) {
 }
 function bindMaterialAuthoringField(control,entity,key,type,afterChange) {
   let captured=false;
-  const commit=()=>changeMaterialAuthoringField(entity,key,type==='checkbox'?control.checked:type==='color'?hexToRgb(control.value):control.value.trim()?Number(control.value):NaN,()=>{if(type==='checkbox'||!captured){pushUndo();captured=true;}});
+  const commit=()=>changeMaterialAuthoringField(entity,key,type==='checkbox'?control.checked:type==='color'?hexToRgb(control.value):control.value.trim()?Number(control.value):NaN,()=>{if(type==='checkbox'||!captured){pushUndo();captured=true;}if(typeof unlinkMaterialFor==='function')unlinkMaterialFor(entity);});
   if(type==='checkbox')control.onchange=()=>{commit();afterChange?.();};
   else{control.oninput=commit;control.onchange=()=>{commit();afterChange?.();};control.onblur=()=>{captured=false;};}
 }
@@ -1175,9 +1175,10 @@ function renderInspectorBody() {
       ${selectedItem.sourcePrefabName ? `
       <!-- Wave 6 (Priority K): Prefab Workflow 3.0 -- only shown for a
            LINKED instance (one placed from the palette/prefab list, or a
-           prior Update From Prefab). Update From Prefab is a manual,
-           one-way, on-demand re-sync (no automatic propagation, no
-           override tracking) -- the priority's own explicit bounded scope. -->
+           prior Update From Prefab). Update From Prefab re-syncs this one
+           instance; Update Prefab From This saves the prefab and rebuilds
+           every other instance in the level, keeping per-instance name,
+           tags, variables, parameters, placement and scale overrides. -->
       <div class="field-row"><label>Linked Prefab: ${escapeHtml(selectedItem.sourcePrefabName)}</label>
         <div class="field-triple">
           <button id="update-from-prefab-btn" class="toolbar-btn" style="margin-bottom:0" ${prefabs.some((p) => p.name === selectedItem.sourcePrefabName) ? '' : 'disabled title="Source prefab no longer exists"'}>⭯ Update From Prefab</button>
@@ -1298,6 +1299,7 @@ function renderInspectorBody() {
     bindMaterialAuthoringField(document.getElementById('f-color'),entity,'color','color');
     document.getElementById('f-texture').onchange = (e) => {
       if(playMode)return;
+      if (typeof unlinkMaterialFor === 'function') unlinkMaterialFor(entity); // a hand-picked texture makes the look unique
       const texId = e.target.value;
       const asset = texId ? findTextureAssetById(texId) : null;
       if(texId&&!asset)return;
@@ -1330,6 +1332,8 @@ function renderInspectorBody() {
     if(materialApply)materialApply.onclick=()=>applyNamedMaterial(document.getElementById('material-asset-picker').value);
     const materialEdit=document.getElementById('material-edit-btn');
     if(materialEdit)materialEdit.onclick=()=>openMaterialEditor(document.getElementById('material-asset-picker').value);
+    const materialUnlink=document.getElementById('material-unlink-btn');
+    if(materialUnlink)materialUnlink.onclick=()=>{pushUndo();delete selectedItem.materialRef;renderInspector();showStatus('Material link removed · this object keeps its current look');};
     bindMaterialAuthoringField(document.getElementById('f-alpha'),entity,'alpha','number');
     document.getElementById('f-alpha').onchange = () => renderInspector();
     const spritePassRelation = document.getElementById('f-sprite-pass-relation');
@@ -1582,10 +1586,14 @@ function renderInspectorBody() {
         const { payload, memberCount } = buildPrefabPayload(selectedItem, selectedItem.sourcePrefabName);
         pushUndo();
         const existingIndex = prefabs.findIndex((p) => p.name === selectedItem.sourcePrefabName);
+        const previous = existingIndex !== -1 ? prefabs[existingIndex] : null;
         if (existingIndex !== -1) prefabs[existingIndex] = payload; else prefabs.push(payload);
         savePrefabs();
         renderPrefabPalette();
-        showStatus(`Updated prefab "${selectedItem.sourcePrefabName}"${memberCount > 1 ? ` (${memberCount} objects)` : ''} from this object`);
+        const source = selectedItem;
+        const synced = propagatePrefabToInstances(payload, previous, source);
+        if (placed.includes(source)) selectItem(source);
+        showStatus(`Updated prefab "${source.sourcePrefabName}"${memberCount > 1 ? ` (${memberCount} objects)` : ''} from this object${synced ? ` · ${synced} other instance${synced === 1 ? '' : 's'} updated` : ''} · Undo reverts all`);
       };
       document.getElementById('unlink-prefab-btn').onclick = () => {
         pushUndo();

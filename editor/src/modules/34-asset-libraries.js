@@ -595,23 +595,43 @@ let materialAssets = [];
 let nextMaterialAssetId = 1;
 function copyMaterialAssets(value){return Array.isArray(value)?JSON.parse(JSON.stringify(value)):[];}
 function materialTextureRef(item){return item.textureDisabled?null:item.textureAssetId||findAssetById(item.assetId)?.textureAssetId||null;}
-function renderMaterialLibraryFields(){return `<p class="field-help">Capture a named reusable look, then Edit & Preview or Apply to another Mesh or Billboard. Apply copies values; later object edits stay independent. No live link or extra texture channels.</p><input id="material-capture-name" type="text" placeholder="Material name…" maxlength="80"><button id="material-capture-btn" class="toolbar-btn">Capture Material</button><select id="material-asset-picker"><option value="">Choose reusable Material…</option>${materialAssets.map(m=>`<option value="${escapeHtml(m?.id||'')}">${escapeHtml(m?.name||'Unavailable saved Material')}</option>`).join('')}</select><button id="material-edit-btn" class="toolbar-btn">Edit & Preview Material</button><button id="material-apply-btn" class="toolbar-btn">Apply Material</button>`;}
+function renderMaterialLibraryFields(){const linked=selectedItem?.materialRef&&materialAssets.find(m=>m?.id===selectedItem.materialRef);return `<p class="field-help">Capture a named reusable look, then Apply it to Meshes or Billboards. Applied objects stay linked: saving the Material in Edit & Preview updates every linked object. Editing an object's own color, texture or material fields makes it unique.</p>${linked?`<p class="material-link-status">🔗 Linked to <strong>${escapeHtml(linked.name)}</strong> <button id="material-unlink-btn" class="toolbar-btn" type="button">Make Unique</button></p>`:''}<input id="material-capture-name" type="text" placeholder="Material name…" maxlength="80"><button id="material-capture-btn" class="toolbar-btn">Capture Material</button><select id="material-asset-picker"><option value="">Choose reusable Material…</option>${materialAssets.map(m=>`<option value="${escapeHtml(m?.id||'')}">${escapeHtml(m?.name||'Unavailable saved Material')}</option>`).join('')}</select><button id="material-edit-btn" class="toolbar-btn">Edit & Preview Material</button><button id="material-apply-btn" class="toolbar-btn">Apply Material</button>`;}
 function captureNamedMaterial(name){
   if(playMode||selectedItem?.kind!=='cube'||!selectedItem.entity)return false;
   name=typeof name==='string'?name.trim():'';if(!name||name.length>80){showStatus('Give the Material a name (1–80 characters).');return false;}
   let descriptor;try{descriptor=Opus.Material.capture(selectedItem.entity,materialTextureRef(selectedItem));}catch(error){showStatus(error.message);return false;}
   pushUndo();let id;do{id='material-'+(nextMaterialAssetId++);}while(materialAssets.some(m=>m?.id===id));materialAssets.push({id,name,descriptor});renderInspector();if(typeof renderUnifiedAssetLibrary==='function')renderUnifiedAssetLibrary();showStatus('Captured Material: '+name);return true;
 }
+// Linked Materials: objects keep materialRef; saving the Material re-applies it
+// to every linked object (current level live, other levels in their records).
+function applyMaterialDescriptorToItem(item,descriptor){
+  const texture=descriptor.textureAssetRef&&findTextureAssetById(descriptor.textureAssetRef);
+  if(descriptor.textureAssetRef&&!texture)return false;
+  clearTextureFromEntity(item.entity);Opus.Material.apply(item.entity,{...descriptor,textureAssetRef:null});item.textureAssetId=descriptor.textureAssetRef||undefined;item.textureDisabled=!descriptor.textureAssetRef;
+  if(texture)applyTextureToEntity(item.entity,texture);
+  return true;
+}
+function materialRecordFields(d){
+  return {color:d.color.slice(),unlit:d.unlit||undefined,alpha:d.alpha!==1?d.alpha:undefined,emissiveColor:d.emissiveIntensity?d.emissiveColor.slice():undefined,emissiveIntensity:d.emissiveIntensity||undefined,
+    uvScale:d.uvScale[0]!==1||d.uvScale[1]!==1?d.uvScale.slice():undefined,uvOffset:d.uvOffset[0]!==0||d.uvOffset[1]!==0?d.uvOffset.slice():undefined,textureAssetId:d.textureAssetRef||undefined,textureDisabled:!d.textureAssetRef||undefined};
+}
+function propagateLinkedMaterial(id,descriptor){
+  let count=0;
+  for(const item of placed)if(item.materialRef===id&&item.entity&&applyMaterialDescriptorToItem(item,descriptor))count++;
+  const fields=materialRecordFields(descriptor);
+  levels.forEach((level,index)=>{if(index===currentLevelIndex)return;for(const record of level?.objects||[])if(record&&record.materialRef===id){Object.assign(record,fields);count++;}});
+  return count;
+}
+function unlinkMaterialFor(entity){const owner=placed.find(p=>p.entity===entity);if(owner&&owner.materialRef){delete owner.materialRef;return true;}return false;}
 function applyNamedMaterial(id){
   if(playMode||selectedItem?.kind!=='cube'||!selectedItem.entity)return false;
   const matches=materialAssets.filter(m=>m?.id===id);if(matches.length!==1){showStatus('Choose one available named Material.');return false;}
   let descriptor;try{if(!matches[0].descriptor||typeof matches[0].descriptor!=='object')throw new Error('Missing material descriptor');descriptor=Opus.Material.create(matches[0].descriptor);}catch(error){showStatus('Saved Material is unavailable: '+error.message);return false;}
   const texture=descriptor.textureAssetRef&&findTextureAssetById(descriptor.textureAssetRef);
   if(descriptor.textureAssetRef&&!texture){showStatus('Material texture is unavailable; saved values were retained.');return false;}
-  if(JSON.stringify(Opus.Material.capture(selectedItem.entity,materialTextureRef(selectedItem)))===JSON.stringify(descriptor)){showStatus('Material already matches this object.');return false;}
-  pushUndo();clearTextureFromEntity(selectedItem.entity);Opus.Material.apply(selectedItem.entity,{...descriptor,textureAssetRef:null});selectedItem.textureAssetId=descriptor.textureAssetRef||undefined;selectedItem.textureDisabled=!descriptor.textureAssetRef;
-  if(texture)applyTextureToEntity(selectedItem.entity,texture);
-  renderInspector();showStatus('Applied independent Material values: '+matches[0].name);return true;
+  if(JSON.stringify(Opus.Material.capture(selectedItem.entity,materialTextureRef(selectedItem)))===JSON.stringify(descriptor)&&selectedItem.materialRef===id){showStatus('Material already linked to this object.');return false;}
+  pushUndo();applyMaterialDescriptorToItem(selectedItem,descriptor);selectedItem.materialRef=id;
+  renderInspector();showStatus('Linked Material: '+matches[0].name+' · saving the Material updates every linked object');return true;
 }
 // Detached edit transaction: saved assets and placed objects are never preview state.
 function materialDraftCandidate(id,expected,name,descriptor){
@@ -628,7 +648,7 @@ function materialDraftCandidate(id,expected,name,descriptor){
 function saveNamedMaterialDraft(id,expected,name,descriptor){
   const candidate=materialDraftCandidate(id,expected,name,descriptor);
   if(!candidate.ok||!candidate.changed)return candidate;
-  pushUndo();materialAssets=materialAssets.map(m=>m?.id===id?candidate.record:m);if(typeof renderUnifiedAssetLibrary==='function')renderUnifiedAssetLibrary();return candidate;
+  pushUndo();materialAssets=materialAssets.map(m=>m?.id===id?candidate.record:m);candidate.linkedUpdated=propagateLinkedMaterial(id,candidate.record.descriptor);if(typeof renderUnifiedAssetLibrary==='function')renderUnifiedAssetLibrary();return candidate;
 }
 let materialEditorSession=null;
 // One transient canvas/context per page: App.destroy frees resources/listeners,
@@ -676,7 +696,7 @@ function openMaterialEditor(id){
     e.target.value='';
   };
   host.querySelectorAll('[data-material-field]').forEach(control=>control.oninput=()=>{const [key,index]=control.dataset.materialField.split('.');let value=control.type==='checkbox'?control.checked:control.type==='color'?hexToRgb(control.value):control.value.trim()?Number(control.value):NaN;if(index!==undefined){session.draft[key]=session.draft[key].slice();session.draft[key][Number(index)]=value;}else session.draft[key]=value;updatePreview();});
-  save.onclick=()=>{if(session.closed||session.projectLevels!==levels){status.textContent='Project changed. Close and reopen this editor.';return;}const result=saveNamedMaterialDraft(id,expected,q('[data-material-name]').value,session.draft);if(!result.ok){status.textContent=result.reason;return;}closeMaterialEditor();renderInspector();showStatus(result.changed?'Saved independent Material asset. Apply it to update an object.':'Material unchanged; no history entry.');};
+  save.onclick=()=>{if(session.closed||session.projectLevels!==levels){status.textContent='Project changed. Close and reopen this editor.';return;}const result=saveNamedMaterialDraft(id,expected,q('[data-material-name]').value,session.draft);if(!result.ok){status.textContent=result.reason;return;}closeMaterialEditor();renderInspector();showStatus(result.changed?`Saved Material${result.linkedUpdated?` · updated ${result.linkedUpdated} linked object${result.linkedUpdated===1?'':'s'}`:' · Apply it to link objects'}`:'Material unchanged; no history entry.');};
   updatePreview();q('[data-material-name]').focus();return true;
 }
 let nextTextureId = 1;

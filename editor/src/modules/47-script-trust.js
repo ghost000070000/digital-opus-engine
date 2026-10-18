@@ -591,6 +591,7 @@ function placeAssetInstance(asset, position, recordHistory = true) {
   const entity = app.addEntity({ mesh: getAssetMeshHandle(asset), color: [0.8, 0.8, 0.85], position, scale: new Opus.Vec3(1, 1, 1) });
   const item = { kind: 'cube', entity, behaviors: [], assetId: asset.id };
   if(asset.textureAssetId){item.textureAssetId=asset.textureAssetId;const texture=findTextureAssetById(asset.textureAssetId);if(texture)applyTextureToEntity(entity,texture);}
+  applyAssetDefaultCollider(item, asset); // trees/props are solid on drop
   addPlaced(item);
   selectItem(item);
   renderSceneList();

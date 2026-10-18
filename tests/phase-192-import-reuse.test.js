@@ -1,6 +1,8 @@
 'use strict';
 const fs=require('fs'),vm=require('vm'),assert=require('assert');const source=fs.readFileSync('editor/src/01-editor.js','utf8');const start=source.indexOf('function placeAssetInstance(');const code=source.slice(start,source.indexOf('\ndocument.getElementById',start));
 const rows=[],mesh={},texture={id:'texture-1'};let history=0;const c={pushUndo:()=>history++,app:{addEntity:()=>({mesh})},getAssetMeshHandle:()=>mesh,Opus:{Vec3:function(){}},findTextureAssetById:id=>id===texture.id?texture:null,applyTextureToEntity:(entity,value)=>entity.texture=value,addPlaced:item=>{item.id=rows.length+1;rows.push(item);},selectItem:()=>{},renderSceneList:()=>{}};vm.createContext(c);vm.runInContext(code,c);
+// placeAssetInstance applies the asset's default collider; link the actual helpers (non-showcase assets stay non-solid).
+for(const name of ['assetDefaultColliderPreset','applyAssetDefaultCollider']){const fn=source.match(new RegExp(`function ${name}\\([^]*?\\n}`));assert(fn,name);vm.runInContext(fn[0],c);}
 const asset={id:'mesh-1',textureAssetId:'texture-1'};c.placeAssetInstance(asset,{});c.placeAssetInstance(asset,{},false);assert.equal(history,1);assert.equal(rows.length,2);assert.notEqual(rows[0].id,rows[1].id);for(const item of rows){assert.equal(item.entity.mesh,mesh);assert.equal(item.entity.texture,texture);assert.equal(item.textureAssetId,'texture-1');}
 c.placeAssetInstance({id:'mesh-2',textureAssetId:'missing'},{});assert.equal(rows[2].textureAssetId,'missing');assert(!rows[2].entity.texture);c.placeAssetInstance({id:'mesh-3'},{});assert(!rows[3].textureAssetId);
 console.log('Phase192 actual shared Model Place keeps embedded texture and portable reference; independent identity/mesh reuse/history legacy defaults PASS');
