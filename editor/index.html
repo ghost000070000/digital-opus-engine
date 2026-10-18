@@ -88,7 +88,7 @@
   /* --- Shared left/right workspace chrome: a tab strip over a stack of
      panels, exactly one visible at a time, each scrolling on its own. --- */
   #left-panel, #right-panel { flex: none; background: #0e1526; display: flex; flex-direction: column; min-height: 0; }
-  #left-panel { width: 240px; border-right: 1px solid rgba(255,255,255,0.08); }
+  #left-panel { width: 260px; border-right: 1px solid rgba(255,255,255,0.08); }
   #right-panel { width: 340px; border-left: 1px solid rgba(255,255,255,0.08); }
   .tab-strip { display: flex; flex: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
   .tab-btn {
@@ -107,6 +107,31 @@
     width: 100%; box-sizing: border-box; background: #182338; border: 1px solid rgba(255,255,255,0.12);
     color: #dce6f5; padding: 6px 8px; border-radius: 3px; font: inherit; margin-bottom: 10px;
   }
+  #viewport-debug-menu { position: relative; flex-shrink: 0; }
+  #viewport-debug-menu > summary { list-style: none; cursor: pointer; padding: 6px 10px; border: 1px solid #2b3a55; border-radius: 6px; color: #c7d3ea; font-size: 12px; white-space: nowrap; user-select: none; }
+  #viewport-debug-menu > summary::-webkit-details-marker { display: none; }
+  #viewport-debug-menu[open] > summary { background: #1c2a44; }
+  #viewport-debug-menu-items { position: absolute; right: 0; top: calc(100% + 6px); z-index: 30; display: flex; flex-direction: column; gap: 6px; min-width: 190px; padding: 10px 12px; background: #121c30; border: 1px solid #2b3a55; border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,.4); }
+  #viewport-debug-menu-items label { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+  #hierarchy-pane { flex: 0 0 38%; min-height: 120px; display: flex; flex-direction: column; border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0 10px 8px; overflow: hidden; }
+  .hierarchy-head { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.06em; color: #8592a8; padding: 9px 2px 6px; }
+  #hierarchy-pane #scene-search { flex: none; margin-bottom: 6px; }
+  #hierarchy-pane #scene-list { flex: 1; overflow: auto; min-height: 0; }
+  /* Inspector cards (presentation only; see organizeInspectorCards) */
+  .inspector-card { border: 1px solid #24324c; border-radius: 8px; margin: 8px 0; padding: 0 10px 8px; background: #101a2c; }
+  .inspector-card-head { display: flex; align-items: center; gap: 4px; margin: 0 -10px 8px; padding: 5px 6px; border-bottom: 1px solid #1d2a42; }
+  .inspector-card-toggle { flex: 1; text-align: left; background: none; border: 0; color: #dce6f5; font-weight: 600; font-size: 12.5px; cursor: pointer; padding: 3px 4px; margin: 0; width: auto; }
+  .inspector-card-chevron { display: inline-block; transition: transform .12s; color: #8fa0bd; }
+  .inspector-card-collapsed .inspector-card-chevron { transform: rotate(-90deg); }
+  .inspector-card-help, .inspector-card-more { width: auto; margin: 0; background: none; border: 1px solid transparent; color: #8fa0bd; border-radius: 4px; cursor: pointer; padding: 1px 7px; font-size: 13px; line-height: 1.2; }
+  .inspector-card-help:hover, .inspector-card-more:hover { border-color: #33476a; color: #dce6f5; }
+  .inspector-card-help-open .inspector-card-help, .inspector-card-tools-open .inspector-card-more { background: #1c2a44; color: #dce6f5; }
+  .inspector-card-collapsed { padding-bottom: 0; }
+  .inspector-card-collapsed > :not(.inspector-card-head) { display: none !important; }
+  .inspector-card-collapsed > .inspector-card-head { margin-bottom: 0; border-bottom: 0; }
+  .inspector-card-original-title { display: none !important; }
+  .inspector-card:not(.inspector-card-help-open) .schema-component-help { display: none; }
+  .inspector-card:not(.inspector-card-tools-open) .component-lifecycle-tools { display: none; }
   .palette-category { font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: #8592a8; margin: 14px 0 6px; }
   #games-search::placeholder, #games-starter-search::placeholder { color: #a8bad8; opacity: 1; }
   #games-search:focus-visible, #games-starter-search:focus-visible { outline: 2px solid #6fd6bd; outline-offset: 1px; }
@@ -1390,6 +1415,13 @@
   </div>
   <div id="app-body">
   <div id="left-panel">
+    <section id="hierarchy-pane" aria-label="Hierarchy">
+      <div class="hierarchy-head">Hierarchy</div>
+      <input type="text" id="scene-search" placeholder="Filter scene list...">
+      <div id="scene-list">
+        <p id="scene-list-empty">Nothing placed yet. Drag a Cube or Terrain from Objects into the viewport.</p>
+      </div>
+    </section>
     <div class="tab-strip" id="left-tabs">
       <button class="tab-btn" data-left-tab="games">Games</button>
       <button class="tab-btn active" data-left-tab="objects">Objects</button>
@@ -1423,24 +1455,23 @@
     <div class="tab-panel active" id="left-tab-objects" data-tab-panel="objects">
       <button class="surface-help" data-help-topic="create" aria-label="Help for creating objects">?</button>
       <input type="text" id="palette-search" placeholder="Search objects...">
+      <p class="palette-category">Primitives</p>
+      <div class="palette-item" id="palette-cube">▢ Cube</div>
+      <div class="palette-item" id="palette-ramp">◺ Ramp</div>
+      <div class="palette-item" id="palette-sprite" title="Sprite — flat authored visual for 2D and hybrid scenes. Uses Sprite Assets, pivots, and Sprite Sorting Layers.">▧ Sprite</div>
+      <div class="palette-item" id="palette-billboard" title="Billboard — world-space image that automatically faces the camera. Uses ordinary 3D Texture, Material, lighting, and depth.">🌿 World-Space Billboard</div>
+      <div class="palette-item" id="palette-tilemap" title="Tilemap — one transformed sparse grid painted from a Tileset. Phase 032 uses one logical cell plane.">▦ Tilemap</div>
       <p class="palette-category">World</p>
+      <div class="palette-item" id="palette-water">〜 Water</div>
       <div class="palette-item" id="palette-terrain">⛰ Terrain</div>
       <button id="terrain-create-open" class="toolbar-btn" style="width:100%;margin:4px 0 10px">Create Terrain…</button>
-      <div class="palette-item" id="palette-water">〜 Water</div>
       <p class="palette-category">Gameplay</p>
-      <div class="palette-item" id="palette-cube">▢ Cube</div>
-      <div class="palette-item" id="palette-sprite" title="Sprite — flat authored visual for 2D and hybrid scenes. Uses Sprite Assets, pivots, and Sprite Sorting Layers.">▧ Sprite</div>
-      <div class="palette-item" id="palette-tilemap" title="Tilemap — one transformed sparse grid painted from a Tileset. Phase 032 uses one logical cell plane.">▦ Tilemap</div>
-      <div class="palette-item" id="palette-ramp">◺ Ramp</div>
-      <div class="palette-item" id="palette-billboard" title="Billboard — world-space image that automatically faces the camera. Uses ordinary 3D Texture, Material, lighting, and depth.">🌿 World-Space Billboard</div>
-      <div class="palette-item" id="palette-mine">✹ Mine</div>
-      <div class="palette-item" id="palette-boost">▲ Boost Pad</div>
+      <div class="palette-item" id="palette-spawnPoint">🚩 Spawn Point</div>
       <div class="palette-item" id="palette-trigger">◈ Trigger Volume</div>
       <div class="palette-item" id="palette-spawner">💠 Spawner</div>
       <div class="palette-item" id="palette-waypoint">📍 Waypoint</div>
       <div class="palette-item" id="palette-path">🛤 Path</div>
-      <div class="palette-item" id="palette-spawnPoint">🚩 Spawn Point</div>
-      <p class="palette-category">Presets</p>
+      <p class="palette-category">Ready-made</p>
       <div class="palette-item" id="palette-collectible">⭐ Collectible</div>
       <div class="palette-item" id="palette-healthPickup">➕ Health Pickup</div>
       <div class="palette-item" id="palette-damageHazard">☠ Damage Hazard</div>
@@ -1451,12 +1482,13 @@
       <div class="palette-item" id="palette-projectilePreset">● Projectile Starter</div>
       <p class="palette-category">Effects</p>
       <div class="palette-item" id="palette-emitter">✨ Particle Emitter</div>
+      <p class="palette-category">Cameras</p>
       <div class="palette-item" id="palette-camera" title="Place a Camera, then open Camera settings library in its Inspector to save or reuse named settings.">🎥 Camera</div>
-      <div class="palette-item" id="palette-camera2d">▣ 2D Camera</div>
       <div class="palette-item" id="palette-cameraThirdPerson" title="Creates a named active follow Camera using third-person defaults. Replaces this level's opening Camera; Undo restores the previous choice.">🎥 Third-person Camera</div>
       <div class="palette-item" id="palette-cameraTopDown" title="Creates an active fixed-bearing map-north follow Camera. Replaces the opening shot; Undo restores the previous choice.">🎥 Top-down Camera</div>
       <div class="palette-item" id="palette-cameraIsometric" title="Creates an active orthographic equal-axis isometric follow Camera. Replaces the opening shot; Undo restores the previous choice.">🎥 Isometric Camera</div>
-      <p class="palette-category">Lighting</p>
+      <div class="palette-item" id="palette-camera2d">▣ 2D Camera</div>
+      <p class="palette-category">Lights</p>
       <div class="palette-item" id="palette-pointLight">💡 Point Light</div>
       <div class="palette-item" id="palette-spotLight">🔦 Spot Light</div>
       <section aria-label="Lighting rig presets">
@@ -1465,6 +1497,9 @@
         <button id="lighting-rig-add" class="toolbar-btn">Add rig around selection</button>
         <p class="field-help">Creates three grouped, editable lights around the selected object, or (0, 1, 0) without a selection. Existing lighting stays unchanged. Maximum eight lights per level; no local-light shadows.</p>
       </section>
+      <p class="palette-category">Legacy · Hovercraft demo</p>
+      <div class="palette-item" id="palette-mine">✹ Mine</div>
+      <div class="palette-item" id="palette-boost">▲ Boost Pad</div>
       <p id="palette-empty" style="display:none">No objects match this filter.</p>
     </div>
     <div class="tab-panel" id="left-tab-assets" data-tab-panel="assets">
@@ -1665,7 +1700,7 @@
       <span id="tilemap-cell-readout">Cell —</span>
       <button id="tilemap-exit-edit" class="toolbar-btn">Exit Tile Editing</button>
     </div>
-    <div id="hint">Drag an object onto the scene to place it. Click a Cube (or use the Scene list) to select and edit it.</div>
+    <div id="hint">Drag an object onto the scene to place it. Click an object (or pick it in the Hierarchy) to select and edit it.</div>
     <div id="gizmo-toolbar">
       <button class="surface-help" id="viewport-help-btn" data-help-topic="viewport" aria-label="Help for the viewport">?</button>
       <button class="gizmo-mode-btn" id="gizmo-mode-move" title="Move (W)">⇔ Move</button>
@@ -1673,15 +1708,21 @@
       <button class="gizmo-mode-btn" id="gizmo-mode-scale" title="Scale (R)">⤢ Scale</button>
       <label id="gizmo-snap-label" title="Snap placement and shared movement increments; existing assembly offsets are preserved."><input type="checkbox" id="gizmo-snap-toggle"> Snap</label>
       <button class="toolbar-btn" id="gizmo-grid-btn" style="margin-bottom:0" aria-controls="gizmo-grid-settings">Grid…</button>
-      <label id="show-colliders-label" title="Read-only legacy 3D Cube solid and authored Trigger bounds; selected combat volumes. For modern XY Collider/Trigger diagnostics use 2D Debug."><input type="checkbox" id="show-colliders-toggle"> Show Colliders</label>
-      <label id="physics-debug-2d-label" title="2D Physics Debug: read-only modern XY Collider/Trigger and runtime support diagnostics. Not legacy 3D solid bounds. Session only; never saved in your game."><input type="checkbox" id="physics-debug-2d-toggle" aria-label="2D Physics Debug"> 2D Debug</label>
-      <label style="white-space:nowrap;flex-shrink:0" title="Read current Game, Object and retained waiting Graph variable state. No writes or simulation steps."><input type="checkbox" id="live-state-toggle" aria-label="State Inspector"> State Inspector</label>
-      <label id="graph-trace-label" style="white-space:nowrap;flex-shrink:0" title="Observe actual Graph steps, gates, Delays and Function calls. Read-only, session-only and bounded."><input type="checkbox" id="graph-trace-toggle" aria-label="Graph Trace"> Graph Trace</label>
-      <label style="white-space:nowrap;flex-shrink:0" title="Opt-in actual loop CPU and wall-frame cadence. Bounded, read-only and never saved."><input type="checkbox" id="performance-profiler-toggle" aria-label="Performance profiler"> Profiler</label>
-      <label style="white-space:nowrap;flex-shrink:0" title="Inspect actual AI state, hearing memory, cooldown and animation. Read-only and never saved."><input type="checkbox" id="ai-debug-toggle" aria-label="AI Debug"> AI Debug</label>
       <button class="toolbar-btn" id="gizmo-space-toggle" title="Toggle the Move gizmo between World and Local (the selected object's own rotated) axes" style="margin-bottom:0">🌐 World</button>
       <button class="toolbar-btn" id="viewport-quality-btn" aria-controls="viewport-quality-panel" aria-expanded="false" style="margin-bottom:0">Rendering…</button>
       <button class="toolbar-btn" id="viewport-focus-btn" title="Frame selected visible Cubes, static meshes or true Sprites. Authoring viewport only; no game Camera or project history changes." style="margin-bottom:0">Focus Selected</button>
+      <details id="viewport-debug-menu">
+        <summary title="Scene view options and read-only diagnostics; never saved in your game">View ▾</summary>
+        <div id="viewport-debug-menu-items">
+          <label title="Editor-only ground grid. Hidden in Play and never exported."><input type="checkbox" id="scene-grid-toggle" checked> Ground grid</label>
+          <label id="show-colliders-label" title="Read-only legacy 3D Cube solid and authored Trigger bounds; selected combat volumes. For modern XY Collider/Trigger diagnostics use 2D Debug."><input type="checkbox" id="show-colliders-toggle"> Show Colliders</label>
+          <label id="physics-debug-2d-label" title="2D Physics Debug: read-only modern XY Collider/Trigger and runtime support diagnostics. Not legacy 3D solid bounds. Session only; never saved in your game."><input type="checkbox" id="physics-debug-2d-toggle" aria-label="2D Physics Debug"> 2D Debug</label>
+          <label style="white-space:nowrap;flex-shrink:0" title="Read current Game, Object and retained waiting Graph variable state. No writes or simulation steps."><input type="checkbox" id="live-state-toggle" aria-label="State Inspector"> State Inspector</label>
+          <label id="graph-trace-label" style="white-space:nowrap;flex-shrink:0" title="Observe actual Graph steps, gates, Delays and Function calls. Read-only, session-only and bounded."><input type="checkbox" id="graph-trace-toggle" aria-label="Graph Trace"> Graph Trace</label>
+          <label style="white-space:nowrap;flex-shrink:0" title="Opt-in actual loop CPU and wall-frame cadence. Bounded, read-only and never saved."><input type="checkbox" id="performance-profiler-toggle" aria-label="Performance profiler"> Profiler</label>
+          <label style="white-space:nowrap;flex-shrink:0" title="Inspect actual AI state, hearing memory, cooldown and animation. Read-only and never saved."><input type="checkbox" id="ai-debug-toggle" aria-label="AI Debug"> AI Debug</label>
+        </div>
+      </details>
     </div>
     <section id="collider-viz-legend" hidden aria-label="Collider visualization guide" style="position:absolute;bottom:64px;left:20px;z-index:5;max-width:min(360px,calc(100% - 40px));padding:10px;background:#152238e8;border:1px solid #536785;border-radius:8px;font-size:12px;line-height:1.5;pointer-events:none">
       <strong>3D volume preview</strong><br>
@@ -1870,7 +1911,6 @@
     <!-- Scene: full-height hierarchy. -->
     <div class="tab-panel" id="right-tab-scene" data-tab-panel="scene">
       <div id="scene-tab-panel">
-        <input type="text" id="scene-search" placeholder="Filter scene list...">
         <details id="scene-collections"><summary>Collections · editor only</summary>
           <label>Show<select id="scene-collection-filter" class="field-input" aria-label="Scene collection"><option value="">All Objects</option><option value="__none">Uncollected</option></select></label>
           <input id="scene-collection-name" class="field-input" maxlength="80" placeholder="Collection name" aria-label="Collection name">
@@ -1880,9 +1920,7 @@
           <p id="scene-collection-status" class="field-help" role="status"></p>
           <p class="field-help">One collection per Object, scoped to this Level. Not a parent or transform group. Empty collections disappear. Filtering changes only this list, never visibility, physics or gameplay.</p>
         </details>
-        <div id="scene-list">
-          <p id="scene-list-empty">Nothing placed yet. Drag a Cube or Terrain from Objects into the viewport.</p>
-        </div>
+        <p class="field-help">The object list is the Hierarchy, docked at the top of the left panel.</p>
       </div>
     </div>
 

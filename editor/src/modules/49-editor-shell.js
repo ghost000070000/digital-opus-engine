@@ -100,3 +100,46 @@ document.getElementById('narrow-scrim').addEventListener('click', () => {
 document.getElementById('save-alt-btn').addEventListener('click', () => document.getElementById('save-btn').click());
 document.getElementById('export-standalone-alt-btn').addEventListener('click', () => document.getElementById('export-standalone-btn').click());
 
+
+// --- Scene ground grid (editor-only) ---
+// One combined mesh of thin quads (the renderer has no line primitive), with a
+// heavier line every 5 units. It is not a placed object, so it is never picked,
+// saved, exported or shown during Play. It follows the view target in 5-unit
+// steps so the grid always surrounds what you are looking at.
+const SCENE_GRID_HALF = 40;
+let sceneGridEntity = null;
+function buildSceneGridMesh() {
+  const positions = [], normals = [], indices = [];
+  const quad = (x0, z0, x1, z1) => {
+    const base = positions.length / 3;
+    positions.push(x0, 0, z0, x1, 0, z0, x1, 0, z1, x0, 0, z1);
+    for (let i = 0; i < 4; i++) normals.push(0, 1, 0);
+    // Both windings, so the grid reads from above and below whatever culling is active.
+    indices.push(base, base + 2, base + 1, base, base + 3, base + 2, base, base + 1, base + 2, base, base + 2, base + 3);
+  };
+  for (let i = -SCENE_GRID_HALF; i <= SCENE_GRID_HALF; i++) {
+    const w = i % 5 === 0 ? 0.025 : 0.008;
+    quad(i - w, -SCENE_GRID_HALF, i + w, SCENE_GRID_HALF);
+    quad(-SCENE_GRID_HALF, i - w, SCENE_GRID_HALF, i + w);
+  }
+  return Opus.Mesh.fromArrays(new Float32Array(positions), new Float32Array(normals), new Uint16Array(indices));
+}
+const sceneGridToggle = document.getElementById('scene-grid-toggle');
+try { if (localStorage.getItem('doengine:scene-grid') === 'off') sceneGridToggle.checked = false; } catch (error) { /* preference only */ }
+sceneGridToggle.addEventListener('change', () => {
+  try { localStorage.setItem('doengine:scene-grid', sceneGridToggle.checked ? 'on' : 'off'); } catch (error) { /* preference only */ }
+});
+function syncSceneGrid() {
+  const wanted = !window.__OPUS_EMBEDDED_PROJECT__ && !playMode && !appEl.classList.contains('editor-hidden')
+    && sceneGridToggle.checked && app.camera.projection !== 'orthographic';
+  if (wanted && (!sceneGridEntity || sceneGridEntity.destroyed)) {
+    sceneGridEntity = app.addEntity({ mesh: buildSceneGridMesh(), color: [0.55, 0.64, 0.78], unlit: true, alpha: 0.14, position: new Opus.Vec3(0, 0.003, 0) });
+  }
+  if (sceneGridEntity && !sceneGridEntity.destroyed) {
+    sceneGridEntity.visible = wanted;
+    const target = app.camera.target;
+    if (wanted && target) sceneGridEntity.position = new Opus.Vec3(Math.round(target.x / 5) * 5, 0.003, Math.round(target.z / 5) * 5);
+  }
+  requestAnimationFrame(syncSceneGrid);
+}
+if (!window.__OPUS_EMBEDDED_PROJECT__) requestAnimationFrame(syncSceneGrid);

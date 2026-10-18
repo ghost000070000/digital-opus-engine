@@ -2191,7 +2191,7 @@ function mountIntrinsicCoreComponentSlots() {
     const slot=document.createElement('div');slot.dataset.schemaSlot=id;slot.dataset.componentId=id;slot.className='schema-component-section';
     const heading=document.createElement('div');heading.className='field-row';
     const label=document.createElement('label');label.textContent=schema.displayName;
-    const help=document.createElement('p');help.className='field-help';help.textContent=schema.help;heading.append(label,help);
+    const help=document.createElement('p');help.className='field-help schema-component-help';help.textContent=schema.help;heading.append(label,help);
     rows[0].before(slot);slot.append(heading,...rows);
     if(selectedItem.kind==='cube')slot.querySelectorAll('input[type="number"],#f-color').forEach(control=>bindCoreAuthoringInput(control,control.oninput));
     // Keep the one existing native control set and its public Transform/Visual
@@ -2737,7 +2737,69 @@ function mountGameplayPresetWorkflow() {
   });
 }
 
+// --- Inspector cards ---
+// Presentation-only pass over the rendered Inspector: component sections and
+// large settings sections become collapsible cards. Explanations sit behind a
+// per-card "?" and Up/Down/Remove behind "⋯"; nothing is removed from the DOM,
+// so every existing control, id and handler is unchanged. Collapse choices are
+// a per-browser preference.
+const INSPECTOR_CARDS_COLLAPSED_BY_DEFAULT = new Set(['Material', 'Hybrid Layering', 'Property Animation Clips', 'AI Brain — movement',
+  'Object Variables', 'Save as Prefab', 'Prefab Parameters', 'Replace With Prefab', 'Sockets', 'Animation Events', 'Root motion utility',
+  'Populate Along Path', 'Attach to Socket']);
+function readInspectorCardPrefs() {
+  try { const value = JSON.parse(localStorage.getItem('doengine:inspector-cards') || '{}'); return value && typeof value === 'object' ? value : {}; }
+  catch (error) { return {}; }
+}
+function organizeInspectorCards() {
+  const prefs = readInspectorCardPrefs();
+  for (const el of [...inspectorBody.children]) {
+    if (el.classList.contains('inspector-card') || el.tagName === 'DETAILS') continue;
+    let title = '', originalTitle = null, key = '';
+    if (el.matches('[data-schema-slot]')) {
+      title = OpusAuthoring.registry.get(el.dataset.schemaSlot)?.displayName || '';
+      originalTitle = el.querySelector('.field-editor-section-heading') || el.querySelector(':scope > .field-row > label:first-child');
+      key = 'component:' + el.dataset.schemaSlot;
+    } else if (el.classList.contains('field-row')) {
+      const label = el.firstElementChild;
+      if (!label || label.tagName !== 'LABEL') continue;
+      if (el.querySelectorAll('input,select,textarea,button').length < 2 && el.offsetHeight < 80) continue; // small rows stay plain
+      title = label.textContent.trim(); originalTitle = label; key = 'section:' + title;
+    }
+    if (!title) continue;
+    el.classList.add('inspector-card');
+    if (originalTitle) originalTitle.classList.add('inspector-card-original-title');
+    const head = document.createElement('div');
+    head.className = 'inspector-card-head';
+    head.innerHTML = `<button type="button" class="inspector-card-toggle"><span class="inspector-card-chevron" aria-hidden="true">▾</span> ${escapeHtml(title)}</button>`;
+    if (el.querySelector('.schema-component-help')) {
+      const help = document.createElement('button');
+      help.type = 'button'; help.className = 'inspector-card-help'; help.textContent = '?';
+      help.title = 'Show or hide the explanation'; help.setAttribute('aria-label', `Help for ${title}`);
+      help.onclick = () => el.classList.toggle('inspector-card-help-open');
+      head.appendChild(help);
+    }
+    if (el.querySelector('.component-lifecycle-tools')) {
+      const more = document.createElement('button');
+      more.type = 'button'; more.className = 'inspector-card-more'; more.textContent = '⋯';
+      more.title = 'Order and remove'; more.setAttribute('aria-label', `${title} options`);
+      more.onclick = () => el.classList.toggle('inspector-card-tools-open');
+      head.appendChild(more);
+    }
+    el.prepend(head);
+    const toggle = head.firstElementChild;
+    const apply = (collapsed) => { el.classList.toggle('inspector-card-collapsed', collapsed); toggle.setAttribute('aria-expanded', String(!collapsed)); };
+    apply(Object.prototype.hasOwnProperty.call(prefs, key) ? prefs[key] === true : INSPECTOR_CARDS_COLLAPSED_BY_DEFAULT.has(title));
+    toggle.onclick = () => {
+      const collapsed = !el.classList.contains('inspector-card-collapsed');
+      apply(collapsed);
+      const next = readInspectorCardPrefs(); next[key] = collapsed;
+      try { localStorage.setItem('doengine:inspector-cards', JSON.stringify(next)); } catch (error) { /* preference only */ }
+    };
+  }
+}
+
 function renderInspector() {
+  queueMicrotask(organizeInspectorCards);
   if (terrainSculptPreview) terrainSculptPreview.style.display = 'none';
   renderInspectorBody();
   if (selectedItems.size !== 1 || !selectedItem) return;

@@ -12,7 +12,20 @@ let onboardingTargetToken = 0;
 let onboardingPollTimer = null;
 let onboardingRecoveryStepId = null;
 
-function createBlankProject(name) {
+// "Start Blank" should be playable at once: solid ground, a player start and a
+// third-person player. The guided tutorial keeps its empty level.
+function blankStarterLevelContent() {
+  const record = (id, name, position, scale, color, extra) => ({ id, kind: 'cube', name, position, scale, color, rotationY: 0, behaviors: [], ...extra });
+  return {
+    objects: [
+      record('ground', 'Ground', [0, -0.25, 0], [40, 0.5, 40], [0.32, 0.38, 0.3], { solid: true }),
+      record('player-start', 'Player Start', [0, 0.5, 0], [0.3, 0.3, 0.3], [0.3, 0.9, 0.9], { isSpawnPoint: true, isDefaultSpawn: true }),
+    ],
+    environment: { lightDir: { x: -0.5, y: -1, z: -0.3 }, skyTop: [0.18, 0.38, 0.68], skyHorizon: [0.68, 0.82, 0.95], groundColor: [0.16, 0.17, 0.15], sunColor: [1, 0.96, 0.88], fogDensity: 0.006, shadows: { enabled: true, resolution: 1024, distance: 30, bias: 0.0025 } },
+    playerSettings: { controllerType: 'thirdperson', moveSpeed: 6, acceleration: 30, collisionRadius: 0.4, maxHealth: 100, jumpEnabled: true, gravity: 20, jumpSpeed: 8, initialYaw: 0, initialPitch: 0.28 },
+  };
+}
+function createBlankProject(name, options = {}) {
   if(playMode){showStatus('Stop Play before creating a project.');return false;}
   if(projectDurability?.signature!==undefined&&projectHasUnsavedChanges()&&!window.confirm('Replace the current unsaved document? Back Up Project JSON or save first. Named saved projects are kept.'))return false;
   // Explicit choice boundary: replace only the current in-memory document;
@@ -20,10 +33,11 @@ function createBlankProject(name) {
   assets = []; textureAssets = []; spriteAssets = []; spriteAnimationClips = []; tilesets = []; tilemapChunks = []; audioAssets = [];
   nextAssetId = 1; nextTextureId = 1; nextSpriteAssetId = 1; nextSpriteAnimationId = 1; nextAudioId = 1; selectedSpriteAssetId = null; selectedSpriteAnimationId = null;
   const levelId = generateLevelId();
+  const starter = options.playable ? blankStarterLevelContent() : { objects: [], environment: null, playerSettings: null };
   loadProjectFull({
     format: PROJECT_FORMAT, version: PROJECT_FORMAT_VERSION,
     playerPreferenceScope: OpusPlayerRebindScreen.freshScope(),
-    levels: [{ id: levelId, name: 'Level 1', objects: [], environment: null, playerSettings: null, ui: null, description: '', ambientAudio: null, sequences: [], objectiveDefs: [], scatterLayers: [] }],
+    levels: [{ id: levelId, name: 'Level 1', objects: starter.objects, environment: starter.environment, playerSettings: starter.playerSettings, ui: null, description: '', ambientAudio: null, sequences: [], objectiveDefs: [], scatterLayers: [] }],
     currentLevelIndex: 0, startLevelIndex: 0, levelTransition: { mode: 'instant', duration: 0.4 },
     prefabs: [], assets: [], textures: [], spriteAssets: [], spriteAnimations: [], tilesets: [], tilemapChunks: [], audio: [], meta: { ...defaultProjectMeta(), title: name === 'guided-first-game' ? 'My First Game' : '' },
     inputActionMap: { ...INPUT_ACTION_DEFAULTS }, itemDefs: [],
@@ -31,6 +45,17 @@ function createBlankProject(name) {
   document.getElementById('project-name-input').value = name || 'blank-project';
   undoStack.length = 0; redoStack.length = 0; updateUndoRedoButtons();
   deselectAll(); renderSceneList(); renderAssetLibrary(); renderTextureLibrary(); renderSpriteLibrary(); renderSpriteAnimationLibrary(); renderAudioLibrary();
+  if (options.playable) frameBlankStarterView();
+  markProjectPristine();
+}
+// Frame the starter from a comfortable distance so a dropped object reads at
+// a sensible size, instead of the camera sitting on top of the origin.
+function frameBlankStarterView() {
+  if (app.camera.mode !== 'orbit') return;
+  app.camera.target = new Opus.Vec3(0, 0, 0);
+  app.camera.distance = 14;
+  app.camera.pitch = 0.62;
+  app.camera.yaw = 0.75;
 }
 
 function createSpriteStarterProject(starterId) {
@@ -310,7 +335,7 @@ document.querySelectorAll('[data-first-run-choice]').forEach((button) => button.
   const choice = button.dataset.firstRunChoice;
   onboardingStore.choose(choice, document.getElementById('first-run-never').checked);
   firstRunOverlay.hidden = true; setEditorVisible(true);
-  if (choice === 'blank') createBlankProject('blank-project');
+  if (choice === 'blank') createBlankProject('blank-project', { playable: true });
   else if (choice === 'guided') { createBlankProject('guided-first-game'); onboardingStore.restart('guided-first-game'); onboardingStore.bindProject(playerPreferenceScope.id); renderOnboardingCoach(); }
   else activateTab('left-tab', 'games');
 }));
