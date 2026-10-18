@@ -289,6 +289,9 @@ function runGraph(graph, item, startId, scope) {
   if(typeof OpusGraphSchema!=='undefined'&&!OpusGraphSchema.canExecute(graph))return;
   if (!scope && (graph.variables?.length || graph.nodes.some(n=>n.type==='callGraphFunction'))) scope = OpusGraphVariables.createScope(graph);
   let currentId = startId || 'start';
+  // Live graph debugging (Play & watch); a no-op unless a graph editor is watching.
+  const debugPulse = typeof graphDebugPulse === 'function' ? graphDebugPulse : null;
+  if (debugPulse && currentId === 'start') debugPulse(graph, item, 'start', 'enter');
   // Trampoline call/return: repeated reusable calls never grow the JS stack.
   graphInvocation: while (graph) {
   const visited = new Set(); // guards against an accidental cycle hanging the game
@@ -312,9 +315,11 @@ function runGraph(graph, item, startId, scope) {
     const gateEdges = graph.edges.filter((e) => e.kind === 'gate' && e.to === node.id);
     const gatesPass = gateEdges.every((ge) => {
       const condition=graph.nodes.find((n)=>n.id===ge.from),passed=evaluateConditionNode(condition,graph,item,{active:new Set(),remaining:200,invalid:false,scope});
+      if(debugPulse&&condition)debugPulse(graph,item,condition.id,passed?'true':'false');
       if(typeof graphTrace!=='undefined'&&graphTrace.enabled)graphTrace.record({...graphTraceGraphLocation(graph,item),time:simElapsed,owner:item?.name||item?.id,nodeId:condition?.id,label:GRAPH_NODE_TYPES[condition?.type]?.label||'Missing Condition',outcome:passed?'CONDITION_TRUE':'CONDITION_FALSE',functionId:scope?.callChain?.at(-1)});
       return passed;
     });
+    if (debugPulse) debugPulse(graph, item, node.id, gateEdges.length === 0 || gatesPass ? 'run' : 'false');
     if (gateEdges.length === 0 || gatesPass) {
       if (node.type === 'callGraphFunction') {
         const definition = OpusGraphFunctions.find(graphFunctions,node.functionId);

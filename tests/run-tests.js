@@ -23,6 +23,7 @@ run(path.join('tests', 'reusable-content.test.js'));
 run(path.join('tests', 'durable-storage.test.js'));
 run(path.join('tests', 'shared-runtime.test.js'));
 run(path.join('tests', 'content-library.test.js'));
+run(path.join('tests', 'logic-debugger.test.js'));
 run(path.join('tests', 'real-demo-evidence.test.js'));
 run(path.join('tests', 'real-demo-wall-content.test.js'));
 run(path.join('tests', 'real-demo-masonry-assembly.test.js'));

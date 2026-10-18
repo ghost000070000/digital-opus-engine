@@ -117,6 +117,33 @@
   .hierarchy-head { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.06em; color: #8592a8; padding: 9px 2px 6px; }
   #hierarchy-pane #scene-search { flex: none; margin-bottom: 6px; }
   #hierarchy-pane #scene-list { flex: 1; overflow: auto; min-height: 0; }
+  /* Visual logic: Variables panel, Play & watch */
+  #variables-panel { border: 1px solid #24324c; border-radius: 8px; padding: 8px 10px 4px; margin-bottom: 12px; background: #101a2c; }
+  #variables-panel > input { width: 100%; box-sizing: border-box; padding: 6px 8px; margin: 6px 0; background: #0b1220; color: #dce6f5; border: 1px solid #2b3a55; border-radius: 6px; font-size: 12px; }
+  .variables-head { display: flex; justify-content: space-between; align-items: center; color: #dce6f5; font-size: 12.5px; }
+  .variables-head button, .variables-line button { width: auto; margin: 0; padding: 2px 8px; font-size: 11px; background: #16233a; color: #dce6f5; border: 1px solid #2b3a55; border-radius: 4px; cursor: pointer; }
+  #variables-list { max-height: 360px; overflow: auto; }
+  .variables-row { padding: 3px 2px; border-bottom: 1px solid #172338; }
+  .variables-line { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #c7d3ea; }
+  .variables-line input { flex: 1; min-width: 0; padding: 3px 6px; background: #0b1220; color: #fff; border: 1px solid #4fd1c5; border-radius: 4px; font-size: 12px; }
+  .variables-badge { flex: none; width: 18px; height: 18px; border-radius: 4px; background: #1c2a44; color: #4fd1c5; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; }
+  .variables-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-family: ui-monospace, Consolas, monospace; }
+  .variables-uses { color: #6b7d99; font-size: 11px; white-space: nowrap; }
+  .variables-live { color: #7fd8a8; font-family: ui-monospace, Consolas, monospace; font-size: 11px; white-space: nowrap; }
+  .variables-uses-list { margin: 4px 0 4px 26px; padding: 0; list-style: none; font-size: 11px; color: #8fa0bd; }
+  .variables-owner { width: auto !important; margin: 0 !important; padding: 0 !important; background: none !important; border: 0 !important; color: #4fd1c5 !important; text-decoration: underline; cursor: pointer; font-size: 11px !important; }
+  #graph-modal.graph-modal-docked { left: 52%; background: rgba(6,9,18,0.97); border-left: 2px solid #4fd1c5; }
+  #graph-watch-btn { background: #1c3a34; border-color: #2fbf9b; }
+  .graph-modal-docked #graph-watch-btn { background: #5a1f1f; border-color: #ff8a8a; }
+  #graph-watch { position: absolute; right: 14px; bottom: 14px; z-index: 5; min-width: 220px; max-width: 320px; max-height: 40%; overflow: auto; padding: 10px 12px; background: rgba(11,18,32,0.96); border: 1px solid #2b3a55; border-radius: 8px; color: #dce6f5; font-size: 12px; }
+  #graph-watch[hidden] { display: none; }
+  #graph-watch table { width: 100%; border-collapse: collapse; margin-top: 6px; }
+  #graph-watch td { padding: 2px 4px; border-top: 1px solid #172338; font-family: ui-monospace, Consolas, monospace; }
+  .graph-watch-value { color: #7fd8a8; text-align: right; }
+  @keyframes graphPulse { 0% { box-shadow: 0 0 0 3px #4fd1c5, 0 0 18px #4fd1c5; } 100% { box-shadow: 0 0 0 0 transparent; } }
+  @keyframes graphPulseFalse { 0% { box-shadow: 0 0 0 3px #ff6b6b, 0 0 18px #ff6b6b; } 100% { box-shadow: 0 0 0 0 transparent; } }
+  .graph-node.graph-node-pulse { animation: graphPulse 0.9s ease-out; }
+  .graph-node.graph-node-pulse-false { animation: graphPulseFalse 0.9s ease-out; }
   /* Content Library (Assets tab) */
   #content-library { border: 1px solid #24324c; border-radius: 8px; padding: 8px 10px 4px; margin-bottom: 12px; background: #101a2c; }
   .content-library-head { display: flex; justify-content: space-between; align-items: baseline; color: #dce6f5; font-size: 12.5px; margin-bottom: 6px; }
