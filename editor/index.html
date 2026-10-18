@@ -117,6 +117,20 @@
   .hierarchy-head { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.06em; color: #8592a8; padding: 9px 2px 6px; }
   #hierarchy-pane #scene-search { flex: none; margin-bottom: 6px; }
   #hierarchy-pane #scene-list { flex: 1; overflow: auto; min-height: 0; }
+  /* Content Library (Assets tab) */
+  #content-library { border: 1px solid #24324c; border-radius: 8px; padding: 8px 10px 4px; margin-bottom: 12px; background: #101a2c; }
+  .content-library-head { display: flex; justify-content: space-between; align-items: baseline; color: #dce6f5; font-size: 12.5px; margin-bottom: 6px; }
+  .content-library-count { color: #6b7d99; font-size: 11px; }
+  .content-library-filters { display: flex; flex-direction: column; gap: 6px; margin-bottom: 6px; }
+  .content-library-filters input, .content-library-filters select { width: 100%; box-sizing: border-box; padding: 6px 8px; background: #0b1220; color: #dce6f5; border: 1px solid #2b3a55; border-radius: 6px; font-size: 12px; }
+  .content-library-list { max-height: 320px; overflow: auto; display: flex; flex-direction: column; gap: 2px; }
+  .content-library-item { display: flex; align-items: center; gap: 6px; padding: 3px 4px; border-radius: 5px; font-size: 12px; color: #c7d3ea; }
+  .content-library-item:hover { background: #16233a; }
+  .content-library-icon { width: 18px; text-align: center; flex: none; }
+  .content-library-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .content-library-name small { color: #4fd1c5; margin-left: 4px; }
+  .content-library-item button { width: auto; margin: 0; padding: 2px 8px; font-size: 11px; background: #16233a; color: #dce6f5; border: 1px solid #2b3a55; border-radius: 4px; cursor: pointer; }
+  .content-library-item button:hover { border-color: #4fd1c5; }
   /* Script component: editor modal, console, Inspector summary */
   #script-editor-modal { position: fixed; inset: 0; z-index: 2000; background: rgba(4,8,16,.72); display: flex; align-items: center; justify-content: center; }
   #script-editor-modal[hidden] { display: none; }

@@ -190,6 +190,9 @@ fs.copyFileSync(editorJsPath, path.join(SITE_DIR, 'editor', 'src', '01-editor.js
 fs.copyFileSync(engineJSPath, path.join(SITE_DIR, 'dist', 'opus-engine.js'));
 fs.copyFileSync(templateJsPath, path.join(SITE_DIR, 'build', 'export-template.js'));
 fs.copyFileSync(path.join(ROOT, 'assets', 'branding', 'digital-opus-icon.png'), path.join(SITE_DIR, 'assets', 'branding', 'digital-opus-icon.png'));
+// Editor Content Library: ready-made models/textures/sounds loaded on demand.
+// Game-specific landmark (hero-*) models stay inside their example games.
+fs.cpSync(path.join(ROOT, 'assets', 'showcase'), path.join(SITE_DIR, 'assets', 'showcase'), { recursive: true, filter: (src) => !/[\\/]hero-[^\\/]*\.mesh\.json$/.test(src) });
 console.log(`Packaged editor -> ${path.relative(ROOT, path.join(SITE_DIR, 'editor'))} (+ its ../dist, ../build siblings)`);
 
 // --- Build the Engine's own examples hub at dist/engine-site/games/ ---

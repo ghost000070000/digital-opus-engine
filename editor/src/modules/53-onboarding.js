@@ -45,7 +45,7 @@ function createBlankProject(name, options = {}) {
   document.getElementById('project-name-input').value = name || 'blank-project';
   undoStack.length = 0; redoStack.length = 0; updateUndoRedoButtons();
   deselectAll(); renderSceneList(); renderAssetLibrary(); renderTextureLibrary(); renderSpriteLibrary(); renderSpriteAnimationLibrary(); renderAudioLibrary();
-  if (options.playable) frameBlankStarterView();
+  if (options.playable) { frameBlankStarterView(); attachDefaultPlayerCharacter(); }
   markProjectPristine();
 }
 // Frame the starter from a comfortable distance so a dropped object reads at
