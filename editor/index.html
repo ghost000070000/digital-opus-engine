@@ -117,6 +117,35 @@
   .hierarchy-head { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.06em; color: #8592a8; padding: 9px 2px 6px; }
   #hierarchy-pane #scene-search { flex: none; margin-bottom: 6px; }
   #hierarchy-pane #scene-list { flex: 1; overflow: auto; min-height: 0; }
+  /* Script component: editor modal, console, Inspector summary */
+  #script-editor-modal { position: fixed; inset: 0; z-index: 2000; background: rgba(4,8,16,.72); display: flex; align-items: center; justify-content: center; }
+  #script-editor-modal[hidden] { display: none; }
+  .script-editor-window { width: min(1100px, 94vw); height: min(720px, 88vh); display: flex; flex-direction: column; background: #0b1220; border: 1px solid #2b3a55; border-radius: 10px; box-shadow: 0 20px 60px rgba(0,0,0,.55); overflow: hidden; }
+  .script-editor-head { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-bottom: 1px solid #1d2a42; color: #dce6f5; font-size: 13px; }
+  .script-editor-head label { display: flex; align-items: center; gap: 6px; color: #8fa0bd; font-size: 12px; }
+  .script-editor-head button, .script-editor-head select { width: auto; margin: 0; padding: 5px 10px; background: #16233a; color: #dce6f5; border: 1px solid #2b3a55; border-radius: 6px; font-size: 12px; }
+  .script-editor-head .script-editor-primary { background: #2fbf9b; color: #04241c; border-color: #2fbf9b; font-weight: 600; }
+  .script-editor-spacer { flex: 1; }
+  .script-editor-body { flex: 1; display: flex; min-height: 0; font: 13px/1.55 ui-monospace, SFMono-Regular, Consolas, monospace; }
+  .script-editor-gutter { flex: none; width: 46px; padding: 12px 8px 12px 0; text-align: right; color: #4c5d7d; background: #0d1626; overflow: hidden; user-select: none; }
+  .script-editor-code { position: relative; flex: 1; min-width: 0; }
+  #script-editor-highlight, #script-editor-text { position: absolute; inset: 0; margin: 0; padding: 12px 14px; font: inherit; white-space: pre; tab-size: 2; overflow: auto; box-sizing: border-box; }
+  #script-editor-highlight { color: #dce6f5; pointer-events: none; }
+  #script-editor-text { color: transparent; background: transparent; caret-color: #ffffff; border: 0; outline: none; resize: none; }
+  #script-editor-text::selection { background: rgba(80,140,255,.35); color: transparent; }
+  .tok-comment { color: #6b7d99; font-style: italic; } .tok-string { color: #e7c07a; } .tok-number { color: #f19a6b; } .tok-keyword { color: #c792ea; } .tok-api { color: #4fd1c5; font-weight: 600; }
+  #script-editor-api { flex: none; width: 300px; overflow: auto; padding: 10px 14px; border-left: 1px solid #1d2a42; background: #0d1626; color: #c7d3ea; font: 12px/1.5 system-ui, sans-serif; }
+  #script-editor-api code { color: #4fd1c5; } #script-editor-api ul { padding-left: 16px; }
+  .script-editor-status { padding: 7px 14px; border-top: 1px solid #1d2a42; color: #7fd8a8; font-size: 12px; }
+  .script-editor-status.script-editor-error { color: #ff8a8a; }
+  #script-console { position: absolute; left: 12px; bottom: 12px; z-index: 12; width: min(520px, calc(100% - 24px)); max-height: 220px; display: flex; flex-direction: column; background: rgba(9,14,26,.94); border: 1px solid #2b3a55; border-radius: 8px; color: #dce6f5; font: 12px/1.45 ui-monospace, Consolas, monospace; }
+  #script-console[hidden] { display: none; }
+  .script-console-head { display: flex; justify-content: space-between; align-items: center; padding: 6px 10px; border-bottom: 1px solid #1d2a42; font-family: system-ui, sans-serif; }
+  .script-console-head button { width: auto; margin: 0 0 0 6px; padding: 2px 8px; background: #16233a; color: #c7d3ea; border: 1px solid #2b3a55; border-radius: 4px; font-size: 11px; }
+  #script-console-list { overflow: auto; padding: 6px 10px; }
+  .script-console-meta { color: #6b7d99; } .script-console-error { color: #ff8a8a; } .script-console-warn { color: #ffd27a; } .script-console-empty { color: #6b7d99; }
+  .script-summary { margin: 4px 0 6px; color: #8fa0bd; font-size: 12px; } .script-summary-error { color: #ff8a8a; }
+  .script-enable { display: flex !important; align-items: center; gap: 6px; font-size: 12px; color: #c7d3ea; }
   /* Inspector cards (presentation only; see organizeInspectorCards) */
   .inspector-card { border: 1px solid #24324c; border-radius: 8px; margin: 8px 0; padding: 0 10px 8px; background: #101a2c; }
   .inspector-card-head { display: flex; align-items: center; gap: 4px; margin: 0 -10px 8px; padding: 5px 6px; border-bottom: 1px solid #1d2a42; }

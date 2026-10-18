@@ -25,6 +25,7 @@ function projectHasScripts(data) {
     seen.add(value);
     if (++records > 100000) return true;
     if ([value.action, value.type, value.actionType].some(type => type === 'script' || typeof type === 'string' && type.startsWith('custom_'))) return true;
+    if (value.script && typeof value.script.code === 'string' && value.script.code.trim()) return true; // Script component
     for (const key of Object.keys(value)) {
       if (++fields > 1000000) return true;
       const child = value[key];
@@ -121,6 +122,11 @@ function readCustomScriptReview(data) {
       const text = typeof code === 'string' ? code : JSON.stringify(code);
       if (entries.length >= 64 || chars + text.length > 512 * 1024) { limited = true; break; }
       entries.push(path + '\n' + text); chars += text.length;
+    }
+    if (value.script && typeof value.script.code === 'string' && value.script.code.trim()) {
+      const text = value.script.code;
+      if (entries.length >= 64 || chars + text.length > 512 * 1024) { limited = true; break; }
+      entries.push(path + '.script (Script component' + (value.name ? ' on ' + value.name : '') + ')\n' + text); chars += text.length;
     }
     for (const key of Object.keys(value)) {
       if (++fields > 1000000) { limited = true; break; }

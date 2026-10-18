@@ -92,6 +92,7 @@ app.onUpdate((dt, elapsed) => {
   simElapsed = elapsed; // read by damagePlayer's cooldown gate and pendingDelays
   if (!playMode) return;
   runLifecycleBehaviors('update');
+  if (typeof updateScripts === 'function') updateScripts(dt);
   // Wave 8 (Priority H): real accumulated playtime, for Save Slot metadata
   // (Section 51) -- only while actually unpaused (this whole callback
   // already doesn't run at all while app.paused, so no separate pause

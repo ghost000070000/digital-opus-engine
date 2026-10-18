@@ -401,7 +401,9 @@ function processPendingDelays() {
 }
 
 function runBehaviors(item, triggerType) {
-  if (!item.behaviors || gameEnded) return;
+  if (gameEnded) return;
+  if (typeof dispatchScriptHook === 'function') dispatchScriptHook(item, triggerType); // Script component hooks
+  if (!item.behaviors) return;
   for (const behavior of item.behaviors) {
     if (behavior.trigger === triggerType) runAction(behavior, item);
   }
@@ -437,7 +439,7 @@ function dispatchSpriteAnimationEvent(context) {
 const INTERACT_RANGE = 2.5;
 let nearestInteractable = null;
 function interactionPolicy(item) {
-  if (!item || item === heldObjectItem || !item.entity?.visible || item.entity.spriteRenderer?.visible === false || !item.behaviors?.some(b => b.trigger === 'interact')) return null;
+  if (!item || item === heldObjectItem || !item.entity?.visible || item.entity.spriteRenderer?.visible === false || !(item.behaviors?.some(b => b.trigger === 'interact') || /function\s+onInteract\s*\(/.test(item.script?.enabled !== false && item.script?.code || ''))) return null;
   const component = item.components?.interactable;
   if (component) {
     if (!['cube', 'sprite'].includes(item.kind) || component.version !== 1 || component.enabled !== true || !Number.isFinite(component.range) || component.range <= 0 || component.range > 100) return null;

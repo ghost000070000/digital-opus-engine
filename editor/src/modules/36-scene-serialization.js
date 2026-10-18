@@ -139,6 +139,8 @@ function serializeCubeRecord(item) {
     // recognized as its own. Exactly the finding-#48 failure mode this
     // whitelist's own comments warn about, which slipped through anyway.
     scatterLayerId: item.scatterLayerId || undefined,
+    // Script component (bounded code + enabled); inlined so the serializer stays self-contained.
+    script: item.script && typeof item.script.code === 'string' ? { version: 1, enabled: item.script.enabled !== false, code: item.script.code.slice(0, 64 * 1024) } : undefined,
   };
   const components = OpusAuthoring.serializeComponents(authoringItem);
   if (components) record.components = components;
@@ -445,6 +447,8 @@ function instantiateCubeRecord(record, position, originDelta = null) {
     animationClips,
     connections: record.connections === undefined ? undefined : JSON.parse(JSON.stringify(record.connections)),
     scatterLayerId: record.scatterLayerId || undefined, // Wave 9C -- see serializeCubeRecord's own comment; this is the read-back half of that same fix
+    // Script component (bounded code + enabled); inlined so the serializer stays self-contained.
+    script: record.script && typeof record.script.code === 'string' ? { version: 1, enabled: record.script.enabled !== false, code: record.script.code.slice(0, 64 * 1024) } : undefined,
   };
   OpusAuthoring.applyRecord(record, item);
   if (entity.ai) {

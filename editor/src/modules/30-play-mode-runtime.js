@@ -515,6 +515,7 @@ function runStartBehaviors() {
   // 'start') -- this was purely an iteration-safety bug in THIS loop, not
   // a feature anything actually relied on.
   runLifecycleBehaviors('start');
+  if (typeof startScripts === 'function') startScripts();
 }
 
 // Creates and registers the live TriggerVolume for one item, if its
@@ -524,8 +525,9 @@ function runStartBehaviors() {
 // working starting the NEXT play session.
 function wireItemTrigger(item) {
   if (item.kind !== 'cube' || !item.behaviors) return;
-  const hasEnter = item.behaviors.some((b) => b.trigger === 'enter');
-  const hasExit = item.behaviors.some((b) => b.trigger === 'exit');
+  const scriptCode = item.script?.enabled !== false && item.script?.code || ''; // Script component trigger hooks
+  const hasEnter = item.behaviors.some((b) => b.trigger === 'enter') || /function\s+onTriggerEnter\s*\(/.test(scriptCode);
+  const hasExit = item.behaviors.some((b) => b.trigger === 'exit') || /function\s+onTriggerExit\s*\(/.test(scriptCode);
   // On Stay -- fires every frame the player is inside (Damage Zones: a
   // Trigger Volume with a Damage Player behavior whose OWN Cooldown field
   // throttles actual damage, not the one-shot flag below, since a Damage
@@ -569,6 +571,7 @@ function wireItemTrigger(item) {
 }
 
 function exitPlayMode() {
+  if (typeof stopScripts === 'function') stopScripts();
   openingMenuFreshSession = false;
   releaseTouchInputControls();
   inputDeviceRuntime=null;

@@ -2799,7 +2799,7 @@ function organizeInspectorCards() {
 }
 
 function renderInspector() {
-  queueMicrotask(organizeInspectorCards);
+  queueMicrotask(() => { mountScriptInspectorSection(); organizeInspectorCards(); });
   if (terrainSculptPreview) terrainSculptPreview.style.display = 'none';
   renderInspectorBody();
   if (selectedItems.size !== 1 || !selectedItem) return;
