@@ -7318,7 +7318,20 @@
           "mesh": "asset",
           "solid": true,
           "assetId": "showcase-rock-5",
-          "textureAssetId": "showcase-palette"
+          "textureAssetId": "showcase-palette",
+          "collider": {
+            "shape": "box",
+            "size": {
+              "x": 2.236665,
+              "y": 2.8851750000000003,
+              "z": 2.659455
+            },
+            "offset": {
+              "x": -0.04337249999999995,
+              "y": 1.4425875000000001,
+              "z": -0.01704750000000002
+            }
+          }
         },
         {
           "id": "rehab-1",
@@ -7342,9 +7355,22 @@
           ],
           "rotationY": 0,
           "behaviors": [],
-          "solid": false,
+          "solid": true,
           "assetId": "showcase-tree-birch",
-          "textureAssetId": "showcase-palette"
+          "textureAssetId": "showcase-palette",
+          "collider": {
+            "shape": "box",
+            "size": {
+              "x": 0.177,
+              "y": 3.364,
+              "z": 0.173
+            },
+            "offset": {
+              "x": 0,
+              "y": 1.678,
+              "z": -0.005
+            }
+          }
         },
         {
           "id": "rehab-2",
@@ -7368,9 +7394,22 @@
           ],
           "rotationY": 0,
           "behaviors": [],
-          "solid": false,
+          "solid": true,
           "assetId": "showcase-tree-birch",
-          "textureAssetId": "showcase-palette"
+          "textureAssetId": "showcase-palette",
+          "collider": {
+            "shape": "box",
+            "size": {
+              "x": 0.203,
+              "y": 3.844,
+              "z": 0.198
+            },
+            "offset": {
+              "x": 0,
+              "y": 1.918,
+              "z": -0.005
+            }
+          }
         },
         {
           "id": "rehab-3",
@@ -7394,9 +7433,22 @@
           ],
           "rotationY": 0,
           "behaviors": [],
-          "solid": false,
+          "solid": true,
           "assetId": "showcase-tree-birch",
-          "textureAssetId": "showcase-palette"
+          "textureAssetId": "showcase-palette",
+          "collider": {
+            "shape": "box",
+            "size": {
+              "x": 0.203,
+              "y": 3.844,
+              "z": 0.198
+            },
+            "offset": {
+              "x": 0,
+              "y": 1.918,
+              "z": -0.005
+            }
+          }
         },
         {
           "id": "rehab-4",
@@ -7420,9 +7472,22 @@
           ],
           "rotationY": 0,
           "behaviors": [],
-          "solid": false,
+          "solid": true,
           "assetId": "showcase-tree-birch",
-          "textureAssetId": "showcase-palette"
+          "textureAssetId": "showcase-palette",
+          "collider": {
+            "shape": "box",
+            "size": {
+              "x": 0.152,
+              "y": 2.883,
+              "z": 0.148
+            },
+            "offset": {
+              "x": 0,
+              "y": 1.438,
+              "z": -0.004
+            }
+          }
         },
         {
           "id": "rehab-5",
@@ -7446,9 +7511,22 @@
           ],
           "rotationY": 0,
           "behaviors": [],
-          "solid": false,
+          "solid": true,
           "assetId": "showcase-tree-birch",
-          "textureAssetId": "showcase-palette"
+          "textureAssetId": "showcase-palette",
+          "collider": {
+            "shape": "box",
+            "size": {
+              "x": 0.203,
+              "y": 3.844,
+              "z": 0.198
+            },
+            "offset": {
+              "x": 0,
+              "y": 1.918,
+              "z": -0.005
+            }
+          }
         },
         {
           "id": "rehab-6",
@@ -8204,9 +8282,22 @@
           "rotationY": 0,
           "mesh": "asset",
           "behaviors": [],
-          "solid": false,
+          "solid": true,
           "assetId": "showcase-tree-oak",
-          "textureAssetId": "showcase-palette"
+          "textureAssetId": "showcase-palette",
+          "collider": {
+            "shape": "box",
+            "size": {
+              "x": 0.473,
+              "y": 4.105,
+              "z": 0.462
+            },
+            "offset": {
+              "x": 0,
+              "y": 2.042,
+              "z": -0.012
+            }
+          }
         },
         {
           "kind": "cube",
@@ -8230,9 +8321,22 @@
           "rotationY": 0,
           "mesh": "asset",
           "behaviors": [],
-          "solid": false,
+          "solid": true,
           "assetId": "showcase-tree-birch",
-          "textureAssetId": "showcase-palette"
+          "textureAssetId": "showcase-palette",
+          "collider": {
+            "shape": "box",
+            "size": {
+              "x": 0.228,
+              "y": 4.325,
+              "z": 0.222
+            },
+            "offset": {
+              "x": 0,
+              "y": 2.157,
+              "z": -0.006
+            }
+          }
         },
         {
           "kind": "cube",
@@ -8281,9 +8385,22 @@
           "rotationY": 0,
           "mesh": "asset",
           "behaviors": [],
-          "solid": false,
+          "solid": true,
           "assetId": "showcase-cliff-spire",
-          "textureAssetId": "showcase-palette"
+          "textureAssetId": "showcase-palette",
+          "collider": {
+            "shape": "box",
+            "size": {
+              "x": 2.874285,
+              "y": 4.680000000000001,
+              "z": 2.357244
+            },
+            "offset": {
+              "x": 0.04156650000000003,
+              "y": 2.3400000000000003,
+              "z": -0.026990999999999966
+            }
+          }
         },
         {
           "kind": "cube",
@@ -8307,9 +8424,22 @@
           "rotationY": 0,
           "mesh": "asset",
           "behaviors": [],
-          "solid": false,
+          "solid": true,
           "assetId": "showcase-rock-3",
-          "textureAssetId": "showcase-palette"
+          "textureAssetId": "showcase-palette",
+          "collider": {
+            "shape": "box",
+            "size": {
+              "x": 1.2309299999999999,
+              "y": 1.5025320000000002,
+              "z": 1.10655
+            },
+            "offset": {
+              "x": -0.015741000000000005,
+              "y": 0.7512660000000001,
+              "z": 0.04315499999999999
+            }
+          }
         },
         {
           "kind": "cube",
@@ -8358,9 +8488,22 @@
           "rotationY": 0,
           "mesh": "asset",
           "behaviors": [],
-          "solid": false,
+          "solid": true,
           "assetId": "showcase-tree-dead",
-          "textureAssetId": "showcase-palette"
+          "textureAssetId": "showcase-palette",
+          "collider": {
+            "shape": "box",
+            "size": {
+              "x": 0.561,
+              "y": 3.612,
+              "z": 0.547
+            },
+            "offset": {
+              "x": 0,
+              "y": 1.797,
+              "z": -0.014
+            }
+          }
         },
         {
           "kind": "cube",
@@ -8384,9 +8527,22 @@
           "rotationY": 0,
           "mesh": "asset",
           "behaviors": [],
-          "solid": false,
+          "solid": true,
           "assetId": "showcase-rock-5",
-          "textureAssetId": "showcase-palette"
+          "textureAssetId": "showcase-palette",
+          "collider": {
+            "shape": "box",
+            "size": {
+              "x": 1.341999,
+              "y": 1.7311050000000001,
+              "z": 1.595673
+            },
+            "offset": {
+              "x": -0.026023499999999974,
+              "y": 0.8655525000000001,
+              "z": -0.010228500000000014
+            }
+          }
         }
       ],
       "environment": {
@@ -8440,7 +8596,7 @@
           "scale": 1,
           "positionOffset": {
             "x": 0,
-            "y": -0.55,
+            "y": -0.9275,
             "z": 0
           },
           "rotationOffsetY": 0,
@@ -8453,14 +8609,16 @@
             "attack": 5,
             "death": 6
           },
-          "blendTime": 0.15
+          "blendTime": 0.15,
+          "followBodyHeight": true
         },
         "playBounds": {
           "minX": -16,
           "maxX": 16,
           "minZ": -16,
           "maxZ": 16
-        }
+        },
+        "collisionHeight": 1.855
       },
       "ui": {
         "hudElements": [

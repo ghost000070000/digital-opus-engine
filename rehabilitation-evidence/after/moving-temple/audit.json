@@ -2,7 +2,7 @@
   "id": "moving-temple",
   "phase": "after",
   "url": "http://localhost:8837/dist/games/moving-temple.html",
-  "startedAt": "2026-09-08T16:38:01.002Z",
+  "startedAt": "2026-09-20T21:59:41.960Z",
   "seconds": 24,
   "input": [
     {
@@ -437,6 +437,181 @@
       "key": "a",
       "milliseconds": 700,
       "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
     }
   ],
   "errors": [],
@@ -446,13 +621,13 @@
       "title": "Moving Temple",
       "text": "Cross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
       "state": {},
-      "playtime": 0.2,
-      "simulationSeconds": 0.2,
+      "playtime": 0.1,
+      "simulationSeconds": 0.1,
       "ended": false,
       "player": {
         "position": {
           "x": 0,
-          "y": 1.8,
+          "y": 2.15,
           "z": -0.4
         },
         "visible": false,
@@ -470,14 +645,14 @@
       "title": "Moving Temple",
       "text": "Cross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
       "state": {},
-      "playtime": 2.3000000000000007,
-      "simulationSeconds": 2.3000000000000007,
+      "playtime": 1.4041999999880794,
+      "simulationSeconds": 1.4041999999880794,
       "ended": false,
       "player": {
         "position": {
-          "x": 0.07838903955130894,
-          "y": 1.8,
-          "z": 1.52158087454356
+          "x": -0.7251334110503143,
+          "y": 4.2,
+          "z": -2.4767412934057074
         },
         "visible": false,
         "controller": "thirdperson"
@@ -494,14 +669,14 @@
       "title": "Moving Temple",
       "text": "Cross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
       "state": {},
-      "playtime": 20.12430000000449,
-      "simulationSeconds": 20.12430000000449,
+      "playtime": 17.708699999988063,
+      "simulationSeconds": 17.708699999988063,
       "ended": false,
       "player": {
         "position": {
-          "x": 3.3228908337492045,
-          "y": 0.6126949167383557,
-          "z": 2.9051327837818732
+          "x": 0.9396874456687194,
+          "y": -0.42291400225328735,
+          "z": -7.472965409691666
         },
         "visible": false,
         "controller": "thirdperson"
@@ -517,7 +692,7 @@
   ],
   "start": {
     "title": "Moving Temple",
-    "text": "Moving Temple\n\nRide the crossing slab, activate the amber lift, and jump to the high shrine. Visual landmark: Kinetic shrine crown.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "text": "Moving Temple\n\nRide the crossing slab, activate the amber lift, and jump to the high shrine. Visual landmark: Kinetic shrine crown.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nMouse Sensitivity\nInvert Mouse Y\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
     "state": {},
     "playtime": 0,
     "simulationSeconds": 0,
@@ -539,7 +714,7 @@
     "inventory": {},
     "helpers": []
   },
-  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nCross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nMouse Sensitivity\nInvert Mouse Y\nQuality: High\n⛶ Fullscreen\nCross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
   "completed": true,
-  "finishedAt": "2026-09-08T16:40:01.391Z"
+  "finishedAt": "2026-09-20T22:02:13.372Z"
 }

@@ -1,0 +1,98 @@
+'use strict';
+const assert = require('assert');
+const fs = require('fs');
+const path = require('path');
+const ROOT = path.resolve(__dirname, '..');
+const authoring = require('../editor/src/00-authoring-schema.js');
+const plumbing = require('../editor/src/00-authoring-plumbing.js');
+const html = fs.readFileSync(path.join(ROOT, 'editor/index.html'), 'utf8');
+const editor = fs.readFileSync(path.join(ROOT, 'editor/src/01-editor.js'), 'utf8');
+const catalog = JSON.parse(fs.readFileSync(path.join(ROOT, 'games/catalog.json'), 'utf8'));
+const tests=[]; let passed=0;
+function test(name,fn){tests.push({name,fn});}
+function sprite(id='sprite-grass',name='Grass',overrides={}){return {id,type:'sprite',name,version:4,sourceTexture:'texture-atlas',sourceRect:{x:0,y:0,width:16,height:16},nineSlice:null,pivot:[0.5,0.5],pixelsPerUnit:16,filtering:'nearest',...overrides};}
+function tileset(overrides={}){return plumbing.createTileset({id:'tileset-grasslands',name:'Grasslands',cellSize:{width:1,height:1},tiles:[{id:'tile-grass',name:'Grass',spriteAssetRef:'sprite-grass'}],...overrides});}
+function project(ts=tileset(),sprites=[sprite()]){return {levels:[],prefabs:[],assets:[],textures:[{id:'texture-atlas',type:'texture',name:'Atlas',dataURL:'data:image/png;base64,AA==',width:64,height:64}],spriteAssets:sprites,spriteAnimations:[],tilesets:[ts],audio:[],spriteSortingLayers:plumbing.defaultSpriteSortingLayers()};}
+function issues(value){return plumbing.collectProjectIssues(value,{schemaRegistry:authoring.registry}).issues;}
+
+test('Tileset is a registered first-class Asset type',()=>assert.strictEqual(plumbing.assetTypes.get('tileset').displayName,'Tileset'));
+test('Tileset registry advances compatibly through Phase 047 version 6',()=>assert.strictEqual(plumbing.assetTypes.get('tileset').version,6));
+test('Tileset belongs to World Building',()=>assert.strictEqual(plumbing.assetTypes.get('tileset').category,'World Building'));
+test('new Tileset defaults to one-by-one world units',()=>assert.deepStrictEqual(plumbing.createTileset({id:'x'}).cellSize,{width:1,height:1}));
+test('new Tileset is valid while empty',()=>assert.strictEqual(issues(project(tileset({tiles:[]}))).length,0));
+test('invalid Cell Width validates',()=>assert(issues(project(tileset({cellSize:{width:0,height:1}}))).some(x=>x.code==='tileset-cell-width-positive')));
+test('invalid Cell Height validates',()=>assert(issues(project(tileset({cellSize:{width:1,height:-1}}))).some(x=>x.code==='tileset-cell-height-positive')));
+test('nonfinite Cell Size validates',()=>assert(issues(project(tileset({cellSize:{width:Infinity,height:NaN}}))).filter(x=>/tileset-cell/.test(x.code)).length===2));
+test('safe Cell Size fallback is bounded without rewriting authored data',()=>{const t=tileset({cellSize:{width:0,height:-1}});assert.deepStrictEqual(plumbing.safeTilesetCellSize(t),{width:1,height:1});assert.deepStrictEqual(t.cellSize,{width:0,height:-1});});
+test('Tileset v2 Tile record stays bounded',()=>assert.deepStrictEqual(Object.keys(tileset().tiles[0]).sort(),['collision','id','name','spriteAssetRef']));
+test('Tile add creates a stable local ID',()=>{const t=tileset({tiles:[]});const x=plumbing.addTileToTileset(t,sprite());assert.strictEqual(x.id,'tile-grass');});
+test('Tile add derives name from Sprite Asset',()=>{const t=tileset({tiles:[]});assert.strictEqual(plumbing.addTileToTileset(t,sprite()).name,'Grass');});
+test('bulk add preserves input order',()=>{const t=tileset({tiles:[]});plumbing.addSpriteAssetsToTileset(t,[sprite('a','A'),sprite('b','B')]);assert.deepStrictEqual(t.tiles.map(x=>x.spriteAssetRef),['a','b']);});
+test('bulk add resolves names deterministically',()=>{const t=tileset({tiles:[]});plumbing.addSpriteAssetsToTileset(t,[sprite('a','Grass'),sprite('b','Grass'),sprite('c','Grass')]);assert.deepStrictEqual(t.tiles.map(x=>x.name),['Grass','Grass 2','Grass 3']);});
+test('rename preserves Tile ID',()=>{const t=tileset();const id=t.tiles[0].id;t.tiles[0].name='Summer Grass';assert.strictEqual(t.tiles[0].id,id);});
+test('empty Tile name validates',()=>{const t=tileset();t.tiles[0].name='';assert(issues(project(t)).some(x=>x.code==='tileset-tile-name-required'));});
+test('duplicate Tile name validates case-insensitively',()=>{const t=tileset();plumbing.addTileToTileset(t,sprite('s2','Water'));t.tiles[1].name='grass';assert(issues(project(t,[sprite(),sprite('s2','Water')])).some(x=>x.code==='duplicate-tileset-tile-name'));});
+test('missing Tile ID validates',()=>{const t=tileset();t.tiles[0].id='';assert(issues(project(t)).some(x=>x.code==='tileset-tile-id-required'));});
+test('duplicate local Tile ID validates',()=>{const t=tileset({tiles:[{id:'same',name:'A',spriteAssetRef:'sprite-grass'},{id:'same',name:'B',spriteAssetRef:'sprite-grass'}]});assert(issues(project(t)).some(x=>x.code==='duplicate-tileset-tile-id'));});
+test('blank Sprite Asset ref remains repairable and validates',()=>{const t=tileset();t.tiles[0].spriteAssetRef=null;assert(issues(project(t)).some(x=>x.code==='required-reference-missing'));assert.strictEqual(t.tiles.length,1);});
+test('missing Sprite Asset ref remains stored and validates',()=>{const t=tileset();t.tiles[0].spriteAssetRef='missing';assert(issues(project(t)).some(x=>x.code==='dangling-reference'));assert.strictEqual(t.tiles[0].spriteAssetRef,'missing');});
+test('wrong Texture type validates',()=>{const t=tileset();t.tiles[0].spriteAssetRef='texture-atlas';assert(issues(project(t)).some(x=>x.code==='invalid-reference-type'));});
+test('wrong Tileset type validates',()=>{const t=tileset();t.tiles[0].spriteAssetRef=t.id;assert(issues(project(t)).some(x=>x.code==='invalid-reference-type'));});
+test('Tileset dependency is exactly Sprite Asset refs',()=>assert.deepStrictEqual(plumbing.assetTypes.getDependencies(tileset(),'tileset'),[{assetType:'sprite',id:'sprite-grass'}]));
+test('Tile stores no Texture or atlas bytes',()=>assert(!/sourceTexture|sourceRect|dataURL/.test(JSON.stringify(tileset().tiles[0]))));
+test('atlas sourceRect remains canonical on Sprite Asset',()=>assert.deepStrictEqual(sprite().sourceRect,{x:0,y:0,width:16,height:16}));
+test('Sprite rename does not break Tile reference',()=>{const s=sprite();const t=tileset();s.name='Summer Grass Art';assert.strictEqual(issues(project(t,[s])).length,0);assert.strictEqual(t.tiles[0].spriteAssetRef,'sprite-grass');});
+test('Sprite sourceRect edits flow through shared record',()=>{const s=sprite();const t=tileset();s.sourceRect.x=16;assert.strictEqual(t.tiles[0].spriteAssetRef,s.id);assert.strictEqual(s.sourceRect.x,16);});
+test('Sprite filtering edits flow through shared record',()=>{const s=sprite();s.filtering='linear';assert.strictEqual(issues(project(tileset(),[s])).length,0);});
+test('Sprite deletion creates a repairable Tileset dependency error',()=>assert(issues(project(tileset(),[])).some(x=>x.assetId==='tileset-grasslands'&&x.code==='dangling-reference')));
+test('duplicate Tile receives a new local ID',()=>{const t=tileset();const x=plumbing.duplicateTileInTileset(t,'tile-grass');assert.notStrictEqual(x.id,'tile-grass');});
+test('duplicate Tile shares only Sprite Asset ref',()=>{const t=tileset();const x=plumbing.duplicateTileInTileset(t,'tile-grass');assert.strictEqual(x.spriteAssetRef,'sprite-grass');assert.strictEqual(x.name,'Grass Copy');});
+test('remove Tile never mutates Sprite Asset',()=>{const t=tileset();const s=sprite();assert(plumbing.removeTileFromTileset(t,'tile-grass'));assert.strictEqual(s.id,'sprite-grass');assert.strictEqual(t.tiles.length,0);});
+test('reorder preserves Tile IDs',()=>{const t=tileset();plumbing.addTileToTileset(t,sprite('s2','Water'));const ids=t.tiles.map(x=>x.id);assert(plumbing.reorderTilesetTile(t,ids[1],-1));assert.deepStrictEqual(t.tiles.map(x=>x.id),ids.reverse());});
+test('reorder preserves names and Sprite refs',()=>{const t=tileset();plumbing.addTileToTileset(t,sprite('s2','Water'));const before=new Map(t.tiles.map(x=>[x.id,{name:x.name,ref:x.spriteAssetRef}]));plumbing.reorderTilesetTile(t,t.tiles[1].id,-1);for(const x of t.tiles)assert.deepStrictEqual({name:x.name,ref:x.spriteAssetRef},before.get(x.id));});
+test('Tileset duplicate gets a new Asset ID',()=>assert.strictEqual(plumbing.duplicateTileset(tileset(),'tileset-variant').id,'tileset-variant'));
+test('Tileset duplicate retains local Tile IDs by design',()=>assert.deepStrictEqual(plumbing.duplicateTileset(tileset(),'variant').tiles.map(x=>x.id),['tile-grass']));
+test('Tileset duplicate is structurally independent',()=>{const a=tileset();const b=plumbing.duplicateTileset(a,'b');b.cellSize.width=2;b.tiles[0].name='Other';assert.strictEqual(a.cellSize.width,1);assert.strictEqual(a.tiles[0].name,'Grass');});
+test('lookup finds Tileset by stable ID',()=>assert.strictEqual(plumbing.getTilesetById([tileset()],'tileset-grasslands').name,'Grasslands'));
+test('lookup finds Tile by parent plus local ID',()=>assert.strictEqual(plumbing.getTileById(tileset(),'tile-grass').name,'Grass'));
+test('one thousand Tile lookup and serialization remains sane',()=>{const t=tileset({tiles:[]});for(let i=0;i<1000;i++)plumbing.addTileToTileset(t,null,{id:`tile-${i}`,name:`Tile ${i}`,spriteAssetRef:'sprite-grass'});const started=Date.now();assert.strictEqual(plumbing.getTileById(t,'tile-999').name,'Tile 999');const copy=JSON.parse(JSON.stringify(t));assert.strictEqual(copy.tiles.length,1000);assert(Date.now()-started<1000);});
+test('256 Tile Palette input validates without identity loss',()=>{const t=tileset({tiles:[]});for(let i=0;i<256;i++)plumbing.addTileToTileset(t,sprite('sprite-grass',`Tile ${i}`));assert.strictEqual(t.tiles.length,256);assert.strictEqual(new Set(t.tiles.map(x=>x.id)).size,256);});
+test('Create Tileset is discoverable',()=>assert(html.includes('id="create-tileset-btn"')&&html.includes('Create Tileset')));
+test('Tileset has a dedicated Asset Library section',()=>assert(html.includes('data-asset-kind="tileset"')&&html.includes('id="tileset-library-list"')));
+test('Tileset participates in normal name search and folder filtering',()=>assert(editor.includes("assetMatchesFilter(tileset, query, folder)")&&editor.includes('populateAssetFolderFilter(folderEl, tilesets, folder)')));
+test('Tileset Inspector exposes name and Cell Size',()=>{for(const text of ['Tileset Inspector','Cell Width','Cell Height','Open Tile Palette'])assert(editor.includes(text));});
+test('dedicated Tile Palette dialog exists',()=>assert(html.includes('id="tile-palette-modal"')&&html.includes('aria-label="Tiles"')));
+test('empty Palette explains its next actions',()=>assert(editor.includes('No tiles yet. Add Sprite Assets to build this Tileset.')));
+test('Palette exposes Add Tile and bulk Add Sprite Assets',()=>assert(html.includes('id="tile-palette-add-tile"')&&html.includes('id="tile-palette-add-sprites"')));
+test('Palette cards use semantic keyboard-accessible buttons',()=>assert(editor.includes('<button type="button" role="option"')));
+test('Palette search is editor state',()=>assert(editor.includes("document.getElementById('tile-palette-search').addEventListener('input', renderTilePalette)")));
+test('Palette size is editor state and not Tileset schema',()=>{assert(html.includes('id="tile-palette-size"'));assert(!JSON.stringify(tileset()).includes('cardSize'));});
+test('Pixel thumbnails explicitly use pixelated rendering',()=>assert(html.includes('.tile-palette-card.pixel img')&&html.includes('image-rendering:pixelated')));
+test('Smooth thumbnails do not receive Pixel class',()=>assert(editor.includes("sprite.filtering === 'nearest' ? 'pixel' : ''")));
+test('thumbnail rendering reuses qualified Sprite region preview',()=>assert(editor.includes('spriteRegionPreviewHtml(sprite, sourceTextureForSpriteAsset(sprite)')));
+test('selected Tile seam uses active Tileset and Tile IDs',()=>assert(editor.includes('let activeTilesetId = null')&&editor.includes('let activeTileId = null')));
+test('selected Tile is not serialized',()=>assert(!JSON.stringify(tileset()).includes('activeTileId')));
+test('Tile detail picker only enumerates Sprite Assets',()=>assert(editor.includes('spriteAssets.map((asset) => `<option')));
+test('Tile rename commits on input before blur',()=>{assert(editor.includes("bindTilesetTileIdentityInputs(host.querySelector('[data-tile-detail-name]')"));assert(editor.includes('name.oninput=()=>{'));assert(editor.includes('edited=true;tile.name=next;guard.updated();'));});
+test('Cell Size commits through guarded input before blur',()=>assert(editor.includes('input.oninput=commit;')&&editor.includes('bindTilesetCellSizeInput(host.querySelector(selector),tileset,key,renderTilesetLibrary)')));
+test('Tileset edits use shared snapshot Undo history',()=>assert(editor.includes('function captureEditorSnapshot()')&&editor.includes('tilesets: serializeTilesets()')));
+test('Undo restore recreates independent Tileset records',()=>assert(editor.includes('OpusAuthoringPlumbing.createTileset(tileset)')));
+test('Project Validation includes complete Tileset authoring state',()=>assert(editor.includes('project.tilesets = serializeTilesets()')));
+test('validation navigation opens the exact Tileset Palette',()=>assert(editor.includes('openTilePalette(entry.assetId)')&&editor.includes('activeTileId = tile.id')));
+test('usage count includes Tileset Tiles',()=>assert(editor.includes('for (const tileset of tilesets) count +=')));
+test('deletion warning names Tileset and Tile',()=>assert(editor.includes('Tileset "${tileset.name}" → Tile "${tile.name}"')));
+test('Editable serialization retains complete Tilesets, with conservative unknown-graph retention',()=>assert(editor.includes('includeTilesetAuthoring || deps.preserveUnknownGraphs ? serializeTilesets()')));
+test('Editable closure retains Sprite and Texture through Tileset',()=>assert(editor.includes('deps.spriteAssets.add(tile.spriteAssetRef)')&&editor.includes('deps.textureAssets.add(sprite.sourceTexture)')));
+test('Playable Export explicitly excludes Tileset authoring roots',()=>assert(editor.includes('serializeProject({ includeTilesets: !playableOnly })')));
+test('direct Sprite dependency path remains independent',()=>assert(editor.includes('dep.spriteAssets.add(renderer.spriteAssetRef)')));
+test('Save and load carry Tilesets',()=>assert(editor.includes('tilesets: loadedTilesets')&&editor.includes('loadTilesets(normalized.tilesets)')));
+test('project format advances compatibly for Chunk Assets',()=>assert(editor.includes("const PROJECT_FORMAT_VERSION = 7")));
+test('Phase 031 Tileset records remain independent of Phase 032 Tilemap objects',()=>assert(!/cells|sortingLayerRef|orderInLayer/.test(JSON.stringify(tileset()))));
+test('Phase 031 Tile Palette remains asset authoring rather than a paint tool',()=>assert(!/tile-palette-(paint|erase)/i.test(html+editor)));
+test('Tile schema adds only bounded collision intent and no later-roadmap metadata',()=>{const value=JSON.stringify(tileset().tiles[0]);assert(value.includes('collision'));assert(!/terrain|weight|animation|tint|flipX|flipY|rotate|properties/i.test(value));});
+test('Phase 030 starters remain Tileset-free',()=>{const starters=require('../editor/src/00-sprite-starters.js');for(const x of starters.list())assert(!JSON.stringify(starters.instantiate(x.id).project).includes('tileset'));});
+test('public catalog remains exactly 28 games',()=>assert.strictEqual((catalog.games||catalog).length,28));
+test('later evidence keeps the portable Tilemaps path at A with scale qualification',()=>{const caps=JSON.parse(fs.readFileSync(path.join(ROOT,'no-code-capabilities.json'),'utf8'));const list=caps.capabilities||caps;const cap=list.find(x=>/tilemap/i.test(x.name||x.capability||x.id));assert(cap);assert.strictEqual(cap.grade,'A');assert(cap.lastImprovedPhase>=40);});
+
+for(const entry of tests){try{entry.fn();passed++;}catch(error){console.error(`FAIL: ${entry.name}`);console.error(error.stack||error);process.exitCode=1;}}
+if(!process.exitCode)console.log(`Phase 031 Tileset/Palette: ${passed}/${tests.length} tests passed`);

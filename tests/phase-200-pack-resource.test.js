@@ -1,0 +1,25 @@
+'use strict';
+const fs=require('fs'),vm=require('vm'),assert=require('assert'),src=fs.readFileSync(require.resolve('../editor/src/01-editor.js'),'utf8');
+const extract=name=>{const at=src.indexOf('function '+name+'(');assert(at>=0);return src.slice(at,src.indexOf('\nfunction ',at+10));};
+const triangle={id:'new',type:'mesh',positions:[0,0,0,1,0,0,0,1,0],normals:[0,0,1,0,0,1,0,0,1],indices:[0,1,2]};let allocations=0;
+const c={setTimeout,clearTimeout,setInterval,clearInterval,assets:[],textureAssets:[],audioAssets:[],serializeAssets:()=>[],serializeTextureAssets:()=>[],serializeAudioAssets:()=>[],getAssetMeshHandle:record=>{allocations++;record.meshHandle={};}};vm.createContext(c);vm.runInContext(['completeModelImportDiagnostics','prepareModelAssetVariant','prepareAssetReplacementLibraryReuse'].map(extract).join('\n'),c);
+const snapshot={meshAssets:[triangle],textures:[],audio:[],_phase198ModelVariant:true};c.prepareAssetReplacementLibraryReuse(snapshot);
+assert.equal(allocations,0,'History planning must not allocate and discard incoming Model GPU handles');
+console.log('PASS200 resource history planning does not allocate discarded Model handles');
+let generation=0,decoded=0;
+c.assertTilemapBundleLease=lease=>{if(!lease||lease.generation!==generation||c.playMode)throw new Error('stale or Play');};
+c.decodeTextureImage=async()=>{decoded++;return {naturalWidth:2,naturalHeight:3};};
+c.dataURLToArrayBuffer=()=>new ArrayBuffer(1);c.app={audio:{decodeAudio:async()=>({duration:1,length:100,sampleRate:100,numberOfChannels:1})}};
+vm.runInContext(extract('analyzeAudioImport'),c);
+vm.runInContext(src.slice(src.indexOf('async function prepareAssetPackResources('),src.indexOf('function planTilemapBundleImport(')),c);
+(async()=>{
+ const plan={dependencies:{meshAssets:[triangle],textures:[{dataURL:'texture'}],audio:[{dataURL:'audio'}]}},before=JSON.stringify(plan),lease={generation};
+ assert.equal((await c.prepareAssetPackResources(plan,lease)).decodedBytes,424);assert.equal(allocations,0);assert.equal(JSON.stringify(plan),before);
+ c.decodeTextureImage=async()=>{throw Error('bad image bytes');};await assert.rejects(c.prepareAssetPackResources(plan,lease),/bad image bytes/);
+ c.decodeTextureImage=async()=>({naturalWidth:10000,naturalHeight:10000});await assert.rejects(c.prepareAssetPackResources(plan,lease),/64MiB/);
+ c.decodeTextureImage=async()=>({naturalWidth:4096,naturalHeight:4096});await assert.rejects(c.prepareAssetPackResources({dependencies:{meshAssets:[],textures:[{},{},{}],audio:[]}},lease),/128MiB/);
+ c.decodeTextureImage=async()=>({naturalWidth:1,naturalHeight:1});c.app.audio.decodeAudio=async()=>({duration:0,length:0,sampleRate:0,numberOfChannels:0});await assert.rejects(c.prepareAssetPackResources(plan,lease),/Audio decode rejected/);
+ let finish;c.decodeTextureImage=()=>new Promise(r=>finish=r);const pending=c.prepareAssetPackResources(plan,lease);generation++;finish({naturalWidth:1,naturalHeight:1});await assert.rejects(pending,/stale/);
+ c.playMode=true;await assert.rejects(c.prepareAssetPackResources(plan,{generation}),/Play/);assert.equal(allocations,0);
+ console.log('PASS200 actual resource probes: Model zero-GPU, valid Texture/Audio sizes, malformed/zero/64MiB128MiB limits, stale async/Play/input unchanged');
+})().catch(e=>{console.error(e);process.exitCode=1;});

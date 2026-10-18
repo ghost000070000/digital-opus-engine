@@ -1,0 +1,14 @@
+{
+  "kind": "tilemap",
+  "version": 1,
+  "id": "legacy-map",
+  "name": "Legacy Map",
+  "tilesetRef": "ts",
+  "cells": [
+    { "x": 2, "y": 1, "tileId": "broken" },
+    { "x": -3, "y": -2, "tileId": "a" },
+    { "x": 0, "y": 0, "tileId": "b" }
+  ],
+  "sortingLayerRef": "sprite-layer-default",
+  "orderInLayer": 0
+}

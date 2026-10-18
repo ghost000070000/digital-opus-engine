@@ -1,6 +1,6 @@
 {
   "method": "Synthetic ending UI fixture only; real Start/canvas/Restart clicks, no force clicks, no gameplay verdict, no public screenshots.",
-  "buildSHA256": "493cc5e1100a36759e825184065f08b72098f1750a39ff4a74dc0967d747dd08",
+  "buildSHA256": "8056d74dbc5f25af270929e07433e04c31ca8f1d9c4de4a44b5c9544b5ddbde0",
   "cases": [
     {
       "syntheticEnding": "win",
@@ -19,5 +19,5 @@
   ],
   "errors": [],
   "ok": true,
-  "finishedAt": "2026-09-08T00:37:17.191Z"
+  "finishedAt": "2026-09-11T17:00:18.136Z"
 }

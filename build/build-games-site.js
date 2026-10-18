@@ -139,7 +139,7 @@ function buildGamesSite(options) {
     const srcPath = path.join(GAMES_DIR, entry.file || '');
     if (!entry.file || !fs.existsSync(srcPath)) { validationErrors.push(`${entry.id}: source file games/${entry.file} does not exist`); continue; }
     let projectJSON, parsed;
-    try { projectJSON = fs.readFileSync(srcPath, 'utf8'); parsed = JSON.parse(projectJSON); }
+    try { parsed = JSON.parse(fs.readFileSync(srcPath, 'utf8')); projectJSON = JSON.stringify(parsed); } // compact: indentation only doubles shipped pages
     catch (err) { validationErrors.push(`${entry.id}: games/${entry.file} does not parse: ${err.message}`); continue; }
     const hasLevels = Array.isArray(parsed.levels) && parsed.levels.length >= 1;
     const hasBareObjects = Array.isArray(parsed.objects);
@@ -169,7 +169,61 @@ function buildGamesSite(options) {
   const engineJSPath = path.join(DIST_DIR, 'opus-engine.js');
   if (!fs.existsSync(engineJSPath)) return { ok: false, errors: ['dist/opus-engine.js not found -- run node build/build.js first'] };
   const engineJS = fs.readFileSync(engineJSPath, 'utf8');
-  const editorJS = fs.readFileSync(path.join(ROOT, 'editor', 'src', '01-editor.js'), 'utf8');
+  const editorJS = [
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-inspector-fields.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-collision-filter-2d.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-collider-2d.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-trigger-collider-2d.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-one-way-2d.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-character-slope-2d.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-moving-platform-2d.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-body-2d.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-platformer-controller-2d.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-topdown-controller-2d.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-controller-state-events.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-controller-abilities.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-controller-templates.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-ai-brain.js'), 'utf8'),
+  fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-weapon-definitions.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-damage-policy.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-combat-volumes.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-loot-tables.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-inventory-templates.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-physics-debug-2d.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-authoring-schema.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-authoring-plumbing.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-character-tile-query.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-sprite-authoring.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-authoring-language.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-graph-values.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-graph-variables.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-graph-schema.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-signals.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-graph-functions.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-graph-templates.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-graph-trace.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-gameplay-presets.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-hud-layout.js'), 'utf8'),
+fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-hud-bindings.js'), 'utf8'),
+fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-hud-action-prompts.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-menu-screen-stack.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-hud-button-actions.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-hud-widgets.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-hud-tweens.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-ui-templates.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-input-action-assets.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-input-action-sets.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-input-device-mappings.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-player-rebind-screen.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-input-tuning.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-input-contexts.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-touch-control-layout.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-input-conflicts.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-onboarding.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-sprite-starters.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '00-world-starters.js'), 'utf8'),
+    fs.readFileSync(path.join(ROOT, 'editor', 'src', '01-editor.js'), 'utf8'),
+  ].join('\n');
   const htmlTemplate = fs.readFileSync(path.join(ROOT, 'editor', 'index.html'), 'utf8');
   const templateJS = fs.readFileSync(path.join(ROOT, 'build', 'export-template.js'), 'utf8');
   const sitePageTemplate = fs.readFileSync(path.join(ROOT, 'build', 'templates', 'games-site.html'), 'utf8');

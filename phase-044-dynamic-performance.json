@@ -1,0 +1,72 @@
+{
+  "phase": 44,
+  "status": "PASS",
+  "phase043ReferenceMedianMs": {
+    "1x1000": 9.112,
+    "10x1000": 13.812,
+    "50x500": 8.924
+  },
+  "fixtures": [
+    {
+      "dynamics": 1,
+      "statics": 1000,
+      "resting": false,
+      "minMs": 0.377,
+      "medianMs": 0.647,
+      "maxMs": 1.381,
+      "metrics": {
+        "candidates": 20000,
+        "broadRejects": 20000,
+        "narrowTests": 0,
+        "sweeps": 0,
+        "cappedSweeps": 0
+      }
+    },
+    {
+      "dynamics": 10,
+      "statics": 1000,
+      "resting": false,
+      "minMs": 2.237,
+      "medianMs": 3.723,
+      "maxMs": 6.787,
+      "metrics": {
+        "candidates": 200000,
+        "broadRejects": 200000,
+        "narrowTests": 0,
+        "sweeps": 0,
+        "cappedSweeps": 0
+      }
+    },
+    {
+      "dynamics": 50,
+      "statics": 500,
+      "resting": false,
+      "minMs": 5.914,
+      "medianMs": 7.384,
+      "maxMs": 9.186,
+      "metrics": {
+        "candidates": 500000,
+        "broadRejects": 500000,
+        "narrowTests": 0,
+        "sweeps": 0,
+        "cappedSweeps": 0
+      }
+    },
+    {
+      "dynamics": 100,
+      "statics": 100,
+      "resting": true,
+      "minMs": 2.887,
+      "medianMs": 4.662,
+      "maxMs": 6.946,
+      "metrics": {
+        "candidates": 200000,
+        "broadRejects": 198000,
+        "narrowTests": 2000,
+        "sweeps": 0,
+        "cappedSweeps": 0
+      }
+    }
+  ],
+  "generatedAt": "2026-09-23T19:29:24.660Z"
+}

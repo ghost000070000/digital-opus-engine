@@ -1,0 +1,7 @@
+'use strict';
+const assert=require('assert'),fs=require('fs'),path=require('path'),{repair}=require('../tools/real-demo-stone-roles'),asset=require('../tools/showcase-assets').getMesh('rock-5');
+const base=()=>({assets:[asset],levels:[{id:'lab',playerSettings:{controllerType:'thirdperson'},objects:[{id:'rock',kind:'cube',name:'Weathered stone',assetId:asset.id,position:[0,0,0],scale:[1,1,1],solid:false,behaviors:[]}]}]});
+const p=base();assert.strictEqual(repair(p).changes.length,1);assert(p.levels[0].objects[0].collider.size.y>1.9);assert.strictEqual(repair(p).changes.length,0);
+for(const edit of [p=>p.levels[0].playerSettings.controllerType='hovercraft',p=>p.levels[0].objects[0].collider={shape:'sphere',radius:.3},p=>Object.assign(p.levels[0].objects[0],{name:'Trail edging',scale:[.3,.3,.3]})]){const p=base();edit(p);const original=JSON.stringify(p);assert.strictEqual(repair(p).changes.length,0);assert.strictEqual(JSON.stringify(p),original,'Historical/scenery/protected content preserved');}
+const root=path.resolve(__dirname,'..'),frontier=JSON.parse(fs.readFileSync(path.join(root,'games/relic-frontier.json'))),rock=frontier.levels[0].objects.find(o=>o.id==='rehab-4');assert(rock.solid===true&&rock.collider?.shape==='box','Reproduced substantial Weathered stone must block, not remain accidental walkthrough decoration');
+console.log('Physical land stone roles: measured shape, idempotence, hovercraft/protected/trail preservation and reproduced catalog rock PASS');

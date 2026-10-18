@@ -1,0 +1,76 @@
+{
+  "phase": 26,
+  "feature": "Nine-Slice Sprites",
+  "status": "qualified",
+  "date": "2026-09-15",
+  "browser": {
+    "engine": "Codex in-app Chromium browser",
+    "url": "http://127.0.0.1:8841/editor/",
+    "profile": "fresh blank project",
+    "interactionBoundary": "Fixture import, asset editing, placement, Inspector edits, direct resize, Prefab creation/placement, validation, Play, Save/Load, and exports were performed through visible editor controls. No project state was injected during this dogfood run.",
+    "warningsOrErrors": []
+  },
+  "assets": [
+    {
+      "name": "phase-026-nine-slice-panel Sprite",
+      "fixture": "tests/fixtures/phase-026-nine-slice-panel.png",
+      "source": "full 64x64 image",
+      "filtering": "smooth",
+      "nineSlice": { "left": 8, "right": 16, "top": 6, "bottom": 12 },
+      "overlayObserved": true
+    },
+    {
+      "name": "phase-026-nine-slice-atlas Sprite",
+      "fixture": "tests/fixtures/phase-026-nine-slice-atlas.png",
+      "source": { "texture": "128x96", "rect": { "x": 32, "y": 16, "width": 64, "height": 64 } },
+      "filtering": "nearest",
+      "hostileNeighborColors": true,
+      "nineSlice": { "left": 8, "right": 16, "top": 6, "bottom": 12 },
+      "overlayObserved": true
+    }
+  ],
+  "sprites": [
+    { "name": "Simple Baseline", "renderMode": "simple", "width": 0.64, "height": 0.64 },
+    { "name": "Nine-Slice Normal", "renderMode": "nine-slice", "width": 2, "height": 2 },
+    { "name": "Nine-Slice Wide", "renderMode": "nine-slice", "width": 6, "height": 1 },
+    { "name": "Nine-Slice Tall", "renderMode": "nine-slice", "width": 1, "height": 5 },
+    { "name": "Nine-Slice Tiny", "renderMode": "nine-slice", "width": 0.15, "height": 0.12, "expectedCenterCollapse": true },
+    { "name": "Nine-Slice Flip X", "renderMode": "nine-slice", "width": 3, "height": 2, "flipX": true },
+    { "name": "Nine-Slice Flip Y", "renderMode": "nine-slice", "widthBeforeDirectResize": 3, "widthAfterDirectResize": 3.6419477909966833, "height": 2, "flipY": true },
+    { "name": "Atlas Nine-Slice", "renderMode": "nine-slice", "width": 4, "height": 2, "tint": "#d8f8ff", "opacity": 0.85 }
+  ],
+  "prefab": {
+    "name": "Nine-Slice Panel Prefab",
+    "savedThroughInspector": true,
+    "instances": [
+      { "name": "Prefab Normal", "width": 1, "height": 1 },
+      { "name": "Prefab Wide", "width": 5, "height": 1.5 },
+      { "name": "Prefab Tiny", "width": 0.18, "height": 0.14 }
+    ]
+  },
+  "checks": [
+    { "id": "blank-import", "pass": true, "evidence": "Started Blank and imported both fixtures with Import as Sprite." },
+    { "id": "numeric-guides", "pass": true, "evidence": "Defined asymmetric 8/16/6/12 source-pixel guides and observed the 3x3 preview overlay." },
+    { "id": "eight-sprite-matrix", "pass": true, "evidence": "Placed and named simple, normal, wide, tall, tiny, Flip X, Flip Y, and atlas instances." },
+    { "id": "direct-resize", "pass": true, "evidence": "Dragged the selected Sprite right handle; visible size changed from 3.00x2.00 to 3.64x2.00 while guide metadata stayed unchanged." },
+    { "id": "invalid-guide-break", "pass": true, "evidence": "Set atlas Left to 60 with Right 16 on a 64px region. Validate Project reported sprite-nine-slice-guides-invalid and sprite-nine-slice-horizontal-bounds." },
+    { "id": "safe-fallback", "pass": true, "evidence": "Entered Play with invalid guides; the scene stayed running and the invalid nine-slice renderer used the documented Simple fallback." },
+    { "id": "repair", "pass": true, "evidence": "Restored Left to 8; Validate Project returned No structured authoring issues found." },
+    { "id": "save-reload-load", "pass": true, "evidence": "Saved as Phase 026 Nine-Slice Dogfood, reloaded the browser, loaded the saved slot, and observed all eight named Sprite records." },
+    { "id": "prefab", "pass": true, "evidence": "Saved Nine-Slice Panel Prefab, placed three linked instances, and edited them to normal, wide, and tiny sizes." },
+    { "id": "final-validation", "pass": true, "evidence": "Final visible Validate Project returned No structured authoring issues found." },
+    { "id": "ui-export", "pass": true, "evidence": "Playable export visibly reported completion; editable export entered its normal build flow without browser console warnings or errors." },
+    { "id": "clean-boot-export", "pass": true, "evidence": "phase-026-export-proof.json records editable and playable standalone files, eight Sprite records, finite cell geometry, offline boot, editor availability only in editable output, and no errors." }
+  ],
+  "exports": {
+    "editable": ".tmp-phase026/phase-026-editable.html",
+    "playable": ".tmp-phase026/phase-026-playable.html",
+    "proof": "phase-026-export-proof.json",
+    "editableBytes": 1635918,
+    "playableBytes": 1635979,
+    "offlineRequests": 0
+  },
+  "authoringChoice": "Guide editing is numeric with a visual overlay. Draggable guide lines were intentionally omitted because they would conflict with the existing source-region drag surface; this was explicitly permitted by the phase brief.",
+  "capabilityGrades": { "sprites2d": "B", "animation": "C" },
+  "verdict": "PHASE_026_NINE_SLICE_SPRITES_READY"
+}

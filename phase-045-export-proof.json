@@ -1,0 +1,41 @@
+{
+  "phase": 45,
+  "status": "PASS",
+  "sourceProject": "qualification/phase-045/phase-045-project.json",
+  "browserCycles": 20,
+  "editable": {
+    "bytes": 2022009,
+    "containsCharacterComponent": true,
+    "containsTilemapLayerCollisionEnabled": true,
+    "containsSparseTileQuery": true,
+    "standaloneRuntimeGrounded": true
+  },
+  "playable": {
+    "bytes": 1998382,
+    "containsCharacterComponent": true,
+    "containsTilemapLayerCollisionEnabled": true,
+    "containsSparseTileQuery": true,
+    "standaloneRuntimeGrounded": true
+  },
+  "runtime": {
+    "wallRight": true,
+    "wallSliding": true,
+    "tileFloorGrounded": true,
+    "stateClearedOnStop": true,
+    "authoredPositionAndVelocityRestoredOnStop": true,
+    "saveReloadPreservedCharacterAndLayerFlag": true,
+    "parentedWorldDeltaConvertedToLocal": true,
+    "layerFlagOneUndo": true
+  },
+  "extendedDogfood": {
+    "browserLoaded": true,
+    "objects": 10,
+    "populatedScaleMapCells": 10240,
+    "characterGrounded": true,
+    "sampleBodyCandidates": 7
+  },
+  "pageErrors": 0,
+  "consoleErrors": 0,
+  "networkErrors": 0,
+  "publicCatalogChanged": false
+}

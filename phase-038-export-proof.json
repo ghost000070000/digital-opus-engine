@@ -1,0 +1,28 @@
+{
+  "phase": 38,
+  "status": "PASS",
+  "editable": {
+    "path": "qualification/phase-038/phase-038-editable-game.html",
+    "bytes": 2026010,
+    "chunkAssets": 3,
+    "captureAvailable": true,
+    "stampAvailable": true,
+    "undoRedoAvailable": true,
+    "semanticResolverAvailable": true
+  },
+  "playable": {
+    "path": "qualification/phase-038/phase-038-playable-game.html",
+    "bytes": 1963695,
+    "chunkAssets": 0,
+    "chunkRuntime": false,
+    "materializedCells": 1803,
+    "spawnMarkers": 22,
+    "semanticAuthoringFieldsStripped": true,
+    "chunkOnlyDependenciesPruned": true
+  },
+  "compositions": { "editable": 10, "playable": 10 },
+  "networkRequestsExternal": [],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "materializedWorldIndependentOfChunk": true
+}

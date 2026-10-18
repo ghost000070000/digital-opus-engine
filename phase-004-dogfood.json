@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-12",
+  "project": "Arsenal Run",
+  "browser": "Microsoft Edge (headless Playwright)",
+  "workflows": {
+    "createGameplayObject": {
+      "objectCreatedThroughPaletteDrag": true,
+      "behaviorCreatedThroughInspector": true,
+      "behavior": "On Start -> Show Message",
+      "observationId": "AFR-0021",
+      "canonicalIssue": "AFR-0003"
+    },
+    "crossObjectReference": {
+      "configuredThroughReferencePicker": true,
+      "availableOptions": 129,
+      "projectValidationPassed": true,
+      "observationId": "AFR-0022",
+      "canonicalIssue": "AFR-0003"
+    },
+    "importAndUseAsset": {
+      "file": "phase-004-proof.png",
+      "importedThroughFileInput": true,
+      "appliedThroughObjectInspector": true,
+      "assetRowActions": ["Rename", "Delete"],
+      "newFinding": "AFR-0023"
+    }
+  },
+  "pageErrors": [],
+  "passed": true
+}

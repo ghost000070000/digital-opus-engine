@@ -2,7 +2,7 @@
   "id": "foglight",
   "phase": "after",
   "url": "http://localhost:8837/dist/games/foglight.html",
-  "startedAt": "2026-09-08T16:20:11.559Z",
+  "startedAt": "2026-09-20T22:01:53.693Z",
   "seconds": 24,
   "input": [
     {
@@ -32,176 +32,6 @@
     {
       "key": "d",
       "milliseconds": 1200
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
     },
     {
       "key": "a",
@@ -388,19 +218,19 @@
     },
     {
       "title": "Foglight",
-      "text": "Health 100 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+      "text": "Health 70 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
       "state": {
         "maxHealth": 100,
-        "health": 100
+        "health": 70
       },
-      "playtime": 1.3215000000000001,
-      "simulationSeconds": 1.3215000000000001,
+      "playtime": 2.907100000023842,
+      "simulationSeconds": 2.907100000023842,
       "ended": false,
       "player": {
         "position": {
-          "x": 2.988222582929718,
-          "y": 2.7900000000000005,
-          "z": 1.3448038654063839
+          "x": -0.726247237015543,
+          "y": 0.3,
+          "z": 0.8029919094482807
         },
         "visible": false,
         "controller": "thirdperson"
@@ -422,8 +252,8 @@
         "maxHealth": 100,
         "health": 0
       },
-      "playtime": 8.821499999999986,
-      "simulationSeconds": 8.821499999999986,
+      "playtime": 9.611999999999982,
+      "simulationSeconds": 9.611999999999982,
       "ended": true,
       "player": {
         "position": {
@@ -447,7 +277,7 @@
   ],
   "start": {
     "title": "Foglight",
-    "text": "Foglight\n\nCarry light through a layered twilight vale, awaken three beacons, face the guardian and reach the high sanctuary. Visual landmark: Amber beacon spire.\n\nBegin journey\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+    "text": "Foglight\n\nCarry light through a layered twilight vale, awaken three beacons, face the guardian and reach the high sanctuary. Visual landmark: Amber beacon spire.\n\nBegin journey\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nMouse Sensitivity\nInvert Mouse Y\nQuality: High\n⛶ Fullscreen\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
     "state": {},
     "playtime": 0,
     "simulationSeconds": 0,
@@ -471,7 +301,7 @@
     "inventory": {},
     "helpers": []
   },
-  "pause": "🌫 Lost to the Mist\n\nThe Guardian caught you. Try again.\n\nRestart\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nHealth 0 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+  "pause": "🌫 Lost to the Mist\n\nThe Guardian caught you. Try again.\n\nRestart\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nMouse Sensitivity\nInvert Mouse Y\nQuality: High\n⛶ Fullscreen\nHealth 0 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
   "completed": true,
-  "finishedAt": "2026-09-08T16:21:49.773Z"
+  "finishedAt": "2026-09-20T22:03:17.960Z"
 }

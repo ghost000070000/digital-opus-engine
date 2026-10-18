@@ -1,0 +1,19 @@
+{
+  "editable": {
+    "path": "qualification\\phase-032\\phase-032-editable-game.html",
+    "bytes": 1728143,
+    "tilesets": 1,
+    "tiles": 3,
+    "cells": 6
+  },
+  "playable": {
+    "path": "qualification\\phase-032\\phase-032-playable-game.html",
+    "bytes": 1728181,
+    "tilesets": 1,
+    "tiles": 3,
+    "sprites": 3,
+    "textures": 1,
+    "cells": 6
+  },
+  "cellParity": true
+}

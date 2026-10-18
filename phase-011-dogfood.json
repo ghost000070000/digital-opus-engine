@@ -1,0 +1,42 @@
+{
+  "phase": 11,
+  "browser": "Codex in-app browser",
+  "url": "http://127.0.0.1:8871/editor/",
+  "normalEditorUIOnly": true,
+  "directRuntimeMutation": false,
+  "texturesImported": [
+    "digital-opus-icon.png",
+    "foliage.png"
+  ],
+  "proofScene": [
+    { "name": "Sprite A — Center Layer 0", "texture": "digital-opus-icon", "pivot": [0.5, 0.5], "size": [3, 3], "layer": 0 },
+    { "name": "Sprite B — Bottom Center Layer 1", "texture": "foliage", "pivot": [0.5, 0], "size": [2.5, 2.5], "layer": 1, "overlaps": "Sprite A" },
+    { "name": "Sprite C — Tinted Rotated", "texture": "digital-opus-icon", "size": [1.6, 2.4], "tint": "#5de4ff", "rotationZDegrees": 28 },
+    { "name": "Sprite D — Child Layer -1", "texture": "foliage", "parent": "Sprite A — Center Layer 0", "layer": -1 }
+  ],
+  "checks": {
+    "palettePlacement": "passed",
+    "typedTexturePicker": "passed",
+    "overlapAndLayer": "passed",
+    "pivotFieldsAndPreset": "passed",
+    "tintAndRotation": "passed",
+    "hierarchy": "passed",
+    "duplicate": "passed",
+    "undoRedo": "passed",
+    "prefabSaveAndInstantiate": "passed",
+    "saveAndLoadSelected": "passed",
+    "levelDuplicate": "passed",
+    "projectValidation": "passed — no structured authoring issues",
+    "editableExport": "passed",
+    "playableExport": "passed",
+    "playMode": "passed",
+    "billboardStillPresent": "passed"
+  },
+  "visualEvidence": [
+    "editor scene capture emitted in Phase 011 task",
+    "overlap/layer capture emitted in Phase 011 task",
+    "pivot/Inspector capture emitted in Phase 011 task",
+    "Playable Export capture emitted in Phase 011 task"
+  ],
+  "browserErrorsAfterFix": []
+}

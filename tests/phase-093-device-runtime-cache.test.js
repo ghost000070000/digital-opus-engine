@@ -1,0 +1,43 @@
+'use strict';
+// Execute actual editor poll, not a substitute cache/transport algorithm.
+const assert=require('assert'),fs=require('fs'),vm=require('vm'),{performance}=require('perf_hooks');
+const source=fs.readFileSync(require.resolve('../editor/src/01-editor'),'utf8');
+function extract(name){const start=source.indexOf('function '+name+'(');assert(start>=0,name);let cursor=source.indexOf('(',start)+1,p=1;while(p){if(source[cursor]==='(')p++;if(source[cursor]===')')p--;cursor++;}const brace=source.indexOf('{',cursor);let depth=1,end=brace+1;while(depth){if(source[end]==='{')depth++;if(source[end]==='}')depth--;end++;}return source.slice(start,end);}
+const c={inputDeviceMappings:[],inputActionAssets:[],inputActionMap:{},playerInputOverrides:{},effectiveInputMap:{},gamepadHeldKeys:new Set(),gamepadStartWasHeld:false,GAMEPAD_STICK_DEADZONE:.15,GAMEPAD_LOOK_RATE:2,player:null,playMode:true,pad:null,window:{addEventListener(){},removeEventListener(){}},document:{addEventListener(){},removeEventListener(){},getElementById:()=>({click(){}})}};
+c.navigator={getGamepads:()=>[c.pad]};vm.createContext(c);
+c.inputDeviceRuntime=null;
+c.inputContextLookAllowed=()=>true; // Historical unrestricted context;096 tests actual filtering.
+c.gamepadTuningRuntime=null;c.currentPlayerSettings={};c.gameEnded=false;
+vm.runInContext(fs.readFileSync(require.resolve('../editor/src/00-input-tuning'),'utf8')+'\n'+extract('effectiveGamepadTuning'),c);
+for(const name of ['00-input-action-assets','00-input-device-mappings'])vm.runInContext(fs.readFileSync(require.resolve('../editor/src/'+name),'utf8'),c);
+vm.runInContext(source.match(/const INPUT_ACTION_LABELS = [^\r\n]+/)[0],c);
+vm.runInContext(['findInputAction','inputActionLabels','validInputActionCode','getInputDeviceMapping','inputDeviceTargetCode','compileInputDeviceRuntime','pollGamepad'].map(extract).join('\n'),c);
+vm.runInContext(fs.readFileSync(require.resolve('../engine/src/04-input'),'utf8')+'\napp={input:new Input(window)};',c);
+c.app.settings={get:()=>undefined};
+vm.runInContext(`for(let n=1;n<=128;n++){const id='input-action-'+n;inputActionAssets.push({kind:'InputAction',version:1,id,name:'Action '+n,description:''});inputActionMap[id]='';inputDeviceMappings.push({kind:'InputDeviceMapping',version:1,action:id,gamepad:['button:5'],touch:true});}`,c);
+c.catalogCalls=0;c.findCalls=0;
+vm.runInContext('const actualCatalog=inputActionLabels,actualFind=findInputAction;inputActionLabels=(...args)=>{catalogCalls++;return actualCatalog(...args);};findInputAction=(...args)=>{findCalls++;return actualFind(...args);};',c);
+const start=performance.now();c.pollGamepad(.016);const absentMs=performance.now()-start;
+console.log(JSON.stringify({provenance:'Actual-source pollGamepad;128 canonical assets/mappings;no connected pad;controlled source not browser',absentMs,catalogCalls:c.catalogCalls,findCalls:c.findCalls}));
+if(process.argv.includes('--observe-red'))process.exit(0);
+assert.equal(c.catalogCalls,0,'No connected pad must not rediscover the whole authored Action catalog each frame');
+assert.equal(c.findCalls,0,'No connected pad must not validate every Action identity each frame');
+c.compileCalls=0;c.assetFindCalls=0;
+vm.runInContext(`const moduleBefore=OpusInputDeviceMappings,assetsBefore=OpusInputActionAssets;OpusInputDeviceMappings={...moduleBefore,compile(...args){compileCalls++;return moduleBefore.compile(...args);}};OpusInputActionAssets={...assetsBefore,find(...args){assetFindCalls++;return assetsBefore.find(...args);}};`,c);
+c.compileInputDeviceRuntime();assert.equal(c.compileCalls,1);assert.equal(c.inputDeviceRuntime.routes.length,140);
+c.catalogCalls=0;c.findCalls=0;c.assetFindCalls=0;
+c.pad={connected:true,axes:[0,0,0,0],buttons:Array.from({length:17},()=>({pressed:false}))};c.pad.buttons[5].pressed=true;
+const connectedStart=performance.now();for(let n=0;n<100;n++)c.pollGamepad(.016);const connected100Ms=performance.now()-connectedStart;
+assert.equal(c.compileCalls,1,'Compiled metadata reused, not compiled per frame');assert.equal(c.catalogCalls,0);assert.equal(c.assetFindCalls,0,'Connected compiled poll does not validate custom assets per frame');
+assert(c.app.input.isDown('OpusAction:input-action-128'));
+c.playerInputOverrides['input-action-128']='KeyZ';c.pollGamepad(.016);assert(c.app.input.isDown('KeyZ'));assert(!c.app.input.isDown('OpusAction:input-action-128'),'Current player rebind reread without recompiling catalog');
+c.pad=null;c.pollGamepad(.016);assert.equal(c.app.input.keys.size,0);assert.equal(c.catalogCalls,0);assert.equal(c.assetFindCalls,0);
+c.playMode=false;c.inputDeviceRuntime=null;
+vm.runInContext(`inputActionAssets=inputActionAssets.filter(record=>record.id!=='input-action-128');inputDeviceMappings[0].gamepad=[];`,c);
+c.playMode=true;c.compileInputDeviceRuntime();assert.equal(c.compileCalls,2);assert(!c.findInputAction('input-action-128'),'Next Play must not retain deleted previous session identity');
+c.pad={connected:true,axes:[0,0,0,0],buttons:Array.from({length:17},()=>({pressed:false}))};c.pad.buttons[5].pressed=true;c.pollGamepad(.016);
+assert(!c.app.input.isDown('OpusAction:input-action-1'),'Next Play uses new disabled source policy');assert(!c.app.input.isDown('KeyZ'));
+for(const helper of ['exitPlayMode','loadProjectFull'])assert(extract(helper).includes('inputDeviceRuntime=null'),'Actual '+helper+' invalidates transient cache');
+for(const helper of ['captureEditorSnapshot','captureTilemapBundleSnapshot','serializeProject'])assert(!extract(helper).includes('inputDeviceRuntime'),'Transient cache must not become authored persistence');
+console.log(JSON.stringify({provenance:'Actual-source compiled connected poll100 iterations; timing diagnostic only',connected100Ms,compileCalls:c.compileCalls,perFrameAssetFindCalls:0}));
+console.log('Phase093 actual cached routing lifecycle PASS');

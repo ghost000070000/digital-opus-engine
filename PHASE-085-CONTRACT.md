@@ -1,0 +1,5 @@
+# Phase 085 — Action-binding prompts and glyphs
+
+IN PROGRESS. Expose canonical Input Actions through an opt-in HUD Action Prompt picker and local accessible keycap/text presentation. Observe authored defaults in preview and actual effective player binding in Play; do not introduce another input system. Existing keyboard/mouse names and controller-specific meaning (hovercraft Jump is Boost) remain canonical. Unknown action references are retained and visibly unavailable. Legacy `{bind:action}` tokens remain unchanged.
+
+No unsupported active-device claim: touch capability is not last-used-device detection. Start with accurate keyboard/mouse keycaps and readable fallback; any optional standard-gamepad presentation must match actual canonical mapping. Player-local overrides must not leak into authored project/export records. Characterize and regress existing authored rebinding history before depending on it. Qualify native action selection, rebind/history, missing references, preview/runtime, Save/reopen and Source/Editable/Playable before086. No menu/screen-stack work leaks into085.

@@ -1,0 +1,728 @@
+{
+  "generatedAt": "2026-09-20T22:13:36.287Z",
+  "scope": "Cross-cutting stabilization; no Phase 039 or Phase 041 expansion",
+  "refreshRatesHz": [
+    30,
+    60,
+    120,
+    144,
+    240
+  ],
+  "deltaClampSeconds": 0.1,
+  "deepAuditIds": [
+    "arsenal-run",
+    "power-grid",
+    "signal-relay",
+    "silent-sector",
+    "relic-frontier"
+  ],
+  "collisionDogfoodIds": [
+    "arsenal-run",
+    "signal-relay",
+    "relic-frontier"
+  ],
+  "summary": {
+    "games": 28,
+    "sourcePass": 28,
+    "browserPass": 28,
+    "bounded": 21,
+    "solids": 290
+  },
+  "games": [
+    {
+      "id": "forest-range",
+      "title": "Forest Range",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "playBounds": true,
+      "solids": 3,
+      "boxColliders": 3,
+      "sphereColliders": 0,
+      "enemySpeedRange": [
+        1.5,
+        4
+      ],
+      "riskReasons": [],
+      "deepAudit": false,
+      "collisionDogfood": false,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 3,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "arsenal-run",
+      "title": "Arsenal Run",
+      "controller": "firstperson",
+      "moveSpeed": 6.5,
+      "acceleration": 42,
+      "playBounds": false,
+      "solids": 30,
+      "boxColliders": 30,
+      "sphereColliders": 0,
+      "enemySpeedRange": [
+        1.2,
+        3.2
+      ],
+      "riskReasons": [
+        "no authored play bounds",
+        "30 solid obstacles",
+        "pointer-lock camera"
+      ],
+      "deepAudit": true,
+      "collisionDogfood": true,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 30,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "power-grid",
+      "title": "Power Grid",
+      "controller": "firstperson",
+      "moveSpeed": 6,
+      "acceleration": 40,
+      "playBounds": false,
+      "solids": 17,
+      "boxColliders": 17,
+      "sphereColliders": 0,
+      "enemySpeedRange": null,
+      "riskReasons": [
+        "no authored play bounds",
+        "17 solid obstacles",
+        "pointer-lock camera"
+      ],
+      "deepAudit": true,
+      "collisionDogfood": false,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 17,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "moving-temple",
+      "title": "Moving Temple",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "playBounds": true,
+      "solids": 8,
+      "boxColliders": 8,
+      "sphereColliders": 0,
+      "enemySpeedRange": null,
+      "riskReasons": [],
+      "deepAudit": false,
+      "collisionDogfood": false,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 8,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "foglight",
+      "title": "Foglight",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "playBounds": true,
+      "solids": 25,
+      "boxColliders": 25,
+      "sphereColliders": 0,
+      "enemySpeedRange": [
+        1.4,
+        3
+      ],
+      "riskReasons": [
+        "25 solid obstacles"
+      ],
+      "deepAudit": false,
+      "collisionDogfood": false,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 25,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "relic-frontier",
+      "title": "Relic Frontier",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "playBounds": false,
+      "solids": 14,
+      "boxColliders": 14,
+      "sphereColliders": 0,
+      "enemySpeedRange": [
+        0.8,
+        3
+      ],
+      "riskReasons": [
+        "no authored play bounds",
+        "14 solid obstacles"
+      ],
+      "deepAudit": true,
+      "collisionDogfood": true,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 14,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "relic-island",
+      "title": "Relic Island",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "playBounds": false,
+      "solids": 4,
+      "boxColliders": 4,
+      "sphereColliders": 0,
+      "enemySpeedRange": null,
+      "riskReasons": [
+        "no authored play bounds"
+      ],
+      "deepAudit": false,
+      "collisionDogfood": false,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 4,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "npc-puzzle-adventure",
+      "title": "The Sanctum Key",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "playBounds": true,
+      "solids": 5,
+      "boxColliders": 5,
+      "sphereColliders": 0,
+      "enemySpeedRange": null,
+      "riskReasons": [],
+      "deepAudit": false,
+      "collisionDogfood": false,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 5,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "relic-runner-2",
+      "title": "Relic Runner 2",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "playBounds": true,
+      "solids": 9,
+      "boxColliders": 9,
+      "sphereColliders": 0,
+      "enemySpeedRange": [
+        3,
+        3
+      ],
+      "riskReasons": [],
+      "deepAudit": false,
+      "collisionDogfood": false,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 9,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "valley-run",
+      "title": "Valley Run",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "playBounds": true,
+      "solids": 0,
+      "boxColliders": 0,
+      "sphereColliders": 0,
+      "enemySpeedRange": [
+        2.5,
+        2.5
+      ],
+      "riskReasons": [],
+      "deepAudit": false,
+      "collisionDogfood": false,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 0,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "painted-wilds",
+      "title": "Painted Wilds",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "playBounds": true,
+      "solids": 4,
+      "boxColliders": 4,
+      "sphereColliders": 0,
+      "enemySpeedRange": null,
+      "riskReasons": [],
+      "deepAudit": false,
+      "collisionDogfood": false,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 4,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "textured-adventure",
+      "title": "Textured Adventure",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "playBounds": true,
+      "solids": 4,
+      "boxColliders": 4,
+      "sphereColliders": 0,
+      "enemySpeedRange": null,
+      "riskReasons": [],
+      "deepAudit": false,
+      "collisionDogfood": false,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 4,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "temple-switch-puzzle",
+      "title": "Temple Switch Puzzle",
+      "controller": "thirdperson",
+      "moveSpeed": 6,
+      "acceleration": 28,
+      "playBounds": true,
+      "solids": 3,
+      "boxColliders": 3,
+      "sphereColliders": 0,
+      "enemySpeedRange": null,
+      "riskReasons": [],
+      "deepAudit": false,
+      "collisionDogfood": false,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 3,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "signal-relay",
+      "title": "Signal Relay",
+      "controller": "firstperson",
+      "moveSpeed": 6,
+      "acceleration": 40,
+      "playBounds": false,
+      "solids": 26,
+      "boxColliders": 26,
+      "sphereColliders": 0,
+      "enemySpeedRange": [
+        1.1,
+        3.2
+      ],
+      "riskReasons": [
+        "no authored play bounds",
+        "26 solid obstacles",
+        "pointer-lock camera"
+      ],
+      "deepAudit": true,
+      "collisionDogfood": true,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 26,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "silent-sector",
+      "title": "Silent Sector",
+      "controller": "firstperson",
+      "moveSpeed": 5.5,
+      "acceleration": 40,
+      "playBounds": false,
+      "solids": 20,
+      "boxColliders": 20,
+      "sphereColliders": 0,
+      "enemySpeedRange": [
+        1,
+        3.4
+      ],
+      "riskReasons": [
+        "no authored play bounds",
+        "20 solid obstacles",
+        "pointer-lock camera"
+      ],
+      "deepAudit": true,
+      "collisionDogfood": false,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 20,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "iron-arena",
+      "title": "Iron Arena",
+      "controller": "firstperson",
+      "moveSpeed": 6,
+      "acceleration": 40,
+      "playBounds": true,
+      "solids": 11,
+      "boxColliders": 11,
+      "sphereColliders": 0,
+      "enemySpeedRange": [
+        3,
+        3
+      ],
+      "riskReasons": [
+        "pointer-lock camera"
+      ],
+      "deepAudit": false,
+      "collisionDogfood": false,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 11,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "opus-arena",
+      "title": "Opus Arena",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "playBounds": true,
+      "solids": 11,
+      "boxColliders": 11,
+      "sphereColliders": 0,
+      "enemySpeedRange": null,
+      "riskReasons": [],
+      "deepAudit": false,
+      "collisionDogfood": false,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 11,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "power-station",
+      "title": "Power Station",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "playBounds": true,
+      "solids": 6,
+      "boxColliders": 6,
+      "sphereColliders": 0,
+      "enemySpeedRange": null,
+      "riskReasons": [],
+      "deepAudit": false,
+      "collisionDogfood": false,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 6,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "assembly-line",
+      "title": "Assembly Line",
+      "controller": "firstperson",
+      "moveSpeed": 6,
+      "acceleration": 40,
+      "playBounds": true,
+      "solids": 7,
+      "boxColliders": 7,
+      "sphereColliders": 0,
+      "enemySpeedRange": null,
+      "riskReasons": [
+        "pointer-lock camera"
+      ],
+      "deepAudit": false,
+      "collisionDogfood": false,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 7,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "blacksite",
+      "title": "Blacksite",
+      "controller": "firstperson",
+      "moveSpeed": 6,
+      "acceleration": 40,
+      "playBounds": true,
+      "solids": 16,
+      "boxColliders": 16,
+      "sphereColliders": 0,
+      "enemySpeedRange": null,
+      "riskReasons": [
+        "16 solid obstacles",
+        "pointer-lock camera"
+      ],
+      "deepAudit": false,
+      "collisionDogfood": false,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 8,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "shifting-facility",
+      "title": "Shifting Facility",
+      "controller": "firstperson",
+      "moveSpeed": 6,
+      "acceleration": 40,
+      "playBounds": true,
+      "solids": 9,
+      "boxColliders": 9,
+      "sphereColliders": 0,
+      "enemySpeedRange": null,
+      "riskReasons": [
+        "pointer-lock camera"
+      ],
+      "deepAudit": false,
+      "collisionDogfood": false,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 9,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "signal-zero",
+      "title": "Signal Zero",
+      "controller": "thirdperson",
+      "moveSpeed": 6,
+      "acceleration": 28,
+      "playBounds": true,
+      "solids": 8,
+      "boxColliders": 8,
+      "sphereColliders": 0,
+      "enemySpeedRange": [
+        2.5,
+        2.8
+      ],
+      "riskReasons": [],
+      "deepAudit": false,
+      "collisionDogfood": false,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 3,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "dungeon-descent",
+      "title": "Dungeon Descent",
+      "controller": "topdown",
+      "moveSpeed": 6,
+      "acceleration": 24,
+      "playBounds": true,
+      "solids": 15,
+      "boxColliders": 15,
+      "sphereColliders": 0,
+      "enemySpeedRange": null,
+      "riskReasons": [
+        "15 solid obstacles"
+      ],
+      "deepAudit": false,
+      "collisionDogfood": false,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 15,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "sentinel-maze",
+      "title": "Sentinel Maze",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "playBounds": true,
+      "solids": 8,
+      "boxColliders": 8,
+      "sphereColliders": 0,
+      "enemySpeedRange": [
+        3.5,
+        3.5
+      ],
+      "riskReasons": [],
+      "deepAudit": false,
+      "collisionDogfood": false,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 8,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "survival-arena",
+      "title": "Survival Arena",
+      "controller": "hovercraft",
+      "moveSpeed": 6,
+      "acceleration": 28,
+      "playBounds": true,
+      "solids": 4,
+      "boxColliders": 4,
+      "sphereColliders": 0,
+      "enemySpeedRange": [
+        1.65,
+        1.65
+      ],
+      "riskReasons": [
+        "inertial controller"
+      ],
+      "deepAudit": false,
+      "collisionDogfood": false,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 4,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "survival-arena-2",
+      "title": "Survival Arena 2",
+      "controller": "hovercraft",
+      "moveSpeed": 11,
+      "acceleration": 10,
+      "playBounds": true,
+      "solids": 8,
+      "boxColliders": 8,
+      "sphereColliders": 0,
+      "enemySpeedRange": null,
+      "riskReasons": [
+        "inertial controller"
+      ],
+      "deepAudit": false,
+      "collisionDogfood": false,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 8,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "survival-arena-3",
+      "title": "Survival Arena 3",
+      "controller": "hovercraft",
+      "moveSpeed": 11,
+      "acceleration": 10,
+      "playBounds": true,
+      "solids": 9,
+      "boxColliders": 9,
+      "sphereColliders": 0,
+      "enemySpeedRange": null,
+      "riskReasons": [
+        "inertial controller"
+      ],
+      "deepAudit": false,
+      "collisionDogfood": false,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 9,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    },
+    {
+      "id": "skyway-trial",
+      "title": "Skyway Trial",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 60,
+      "playBounds": false,
+      "solids": 6,
+      "boxColliders": 6,
+      "sphereColliders": 0,
+      "enemySpeedRange": null,
+      "riskReasons": [
+        "no authored play bounds"
+      ],
+      "deepAudit": false,
+      "collisionDogfood": false,
+      "sourcePass": true,
+      "browserPass": true,
+      "browserCollision": {
+        "solidCount": 6,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      }
+    }
+  ],
+  "pass": true
+}

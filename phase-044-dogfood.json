@@ -1,0 +1,24 @@
+{
+  "phase": 44,
+  "qualificationOnly": true,
+  "productProjectCreated": false,
+  "publicCatalogChanged": false,
+  "status": "PASS",
+  "decision": "NOT_JUSTIFIED",
+  "scenarios": [
+    { "name": "Falling Crate", "result": "Box rests on Static floor for 60 simulated seconds", "distinctWorkflow": "drop-and-rest" },
+    { "name": "Falling Ball", "result": "Circle rests on Static floor for 60 simulated seconds", "distinctWorkflow": "drop-and-rest" },
+    { "name": "Ballistic Object", "result": "initial XY velocity and world gravity produce analytic arc", "distinctWorkflow": "ballistic-arc" },
+    { "name": "Falling Trigger Hazard", "result": "post-movement Enter, Stay, Exit before Static floor rest in 20 browser cycles", "distinctWorkflow": "drop-and-rest" },
+    { "name": "Horizontal Gravity", "result": "Circle rests against Static wall without bounce", "distinctWorkflow": "drop-and-rest-rotated" },
+    { "name": "Zero Gravity", "result": "initial velocity remains constant until Static contact", "distinctWorkflow": "ballistic-arc-without-acceleration" },
+    { "name": "Diagonal Floor Slide", "result": "Y velocity zeroes at floor; tangential X velocity survives", "distinctWorkflow": "drop-and-rest" },
+    { "name": "High-Speed Thin Floor", "result": "no tunneling at canonical clamped dt", "distinctWorkflow": "drop-and-rest" },
+    { "name": "Rotated Static", "result": "no illegal final penetration", "distinctWorkflow": "drop-and-rest" },
+    { "name": "Dynamic/Dynamic", "result": "no physical response; objects may overlap", "limitation": true },
+    { "name": "Dynamic/Kinematic", "result": "no physical response", "limitation": true },
+    { "name": "Tilemap Collision", "result": "metadata does not obstruct qualification model", "limitation": true }
+  ],
+  "materiallyDistinctUsefulWorkflowCount": 2,
+  "evidence": ["tests/phase-044-dynamic-body-utility.test.js", "phase-044-utility-browser.json", "phase-044-dynamic-fuzz.json"]
+}

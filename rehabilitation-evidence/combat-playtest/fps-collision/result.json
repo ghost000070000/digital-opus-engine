@@ -2,16 +2,16 @@
   "method": "Real keyboard W/S held against and away from west wall; mouse movement sets heading; no state mutation.",
   "errors": [],
   "before": {
-    "sim": 0.5036999999284746,
+    "sim": 0.45040000003576297,
     "position": {
       "x": -30,
       "y": 0.55,
       "z": 0
     },
     "bodyVisible": false,
-    "yaw": -1.5696000000000003,
+    "yaw": 4.7118,
     "pitch": 0,
-    "sensitivity": 0.0022,
+    "sensitivity": 0.0018,
     "ended": false,
     "pointerLocked": true,
     "equipment": [
@@ -23,16 +23,16 @@
     "health": 100
   },
   "againstWall": {
-    "sim": 3.5069999999999975,
+    "sim": 3.4538000000119187,
     "position": {
       "x": -34.1,
       "y": 0.55,
-      "z": 0.019945094034224245
+      "z": -0.009819746741997657
     },
     "bodyVisible": false,
-    "yaw": -1.5696000000000003,
+    "yaw": 4.7118,
     "pitch": 0,
-    "sensitivity": 0.0022,
+    "sensitivity": 0.0018,
     "ended": false,
     "pointerLocked": true,
     "equipment": [
@@ -45,16 +45,16 @@
   },
   "wallStopped": true,
   "away": {
-    "sim": 6.610399999976149,
+    "sim": 6.5906000000238345,
     "position": {
       "x": -20.9,
       "y": 0.55,
-      "z": 0.0007115515160016628
+      "z": -0.0004964503142934618
     },
     "bodyVisible": false,
-    "yaw": -1.5696000000000003,
+    "yaw": 4.7118,
     "pitch": 0,
-    "sensitivity": 0.0022,
+    "sensitivity": 0.0018,
     "ended": false,
     "pointerLocked": true,
     "equipment": [

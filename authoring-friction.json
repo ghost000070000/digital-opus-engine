@@ -1,0 +1,2074 @@
+{
+  "schemaVersion": 1,
+  "identityFormat": "AFR-####",
+  "sourceOfTruth": true,
+  "updatedAt": "2026-10-16",
+  "lifecycle": [
+    "OBSERVED",
+    "REPRODUCED",
+    "CONFIRMED",
+    "PLANNED",
+    "IN_PROGRESS",
+    "RESOLVED",
+    "ACCEPTED_LIMITATION",
+    "DUPLICATE",
+    "INVALID"
+  ],
+  "severities": [
+    "CRITICAL",
+    "HIGH",
+    "MEDIUM",
+    "LOW"
+  ],
+  "frequencies": [
+    "ONCE",
+    "OCCASIONAL",
+    "REPEATED",
+    "PERVASIVE"
+  ],
+  "rootCauses": [
+    "MISSING_CAPABILITY",
+    "DISCOVERABILITY",
+    "WORKFLOW",
+    "DATA_MODEL",
+    "REFERENCE_SAFETY",
+    "VALIDATION",
+    "INSPECTOR_UI",
+    "VIEWPORT_UI",
+    "RUNTIME",
+    "ASSET_PIPELINE",
+    "DOCUMENTATION",
+    "PERFORMANCE",
+    "COMPATIBILITY"
+  ],
+  "fixLayers": [
+    "runtime",
+    "authoring schema",
+    "Inspector",
+    "viewport/direct manipulation",
+    "component",
+    "preset",
+    "action/condition/event vocabulary",
+    "Visual Graph",
+    "timeline",
+    "project model",
+    "asset pipeline",
+    "validation",
+    "onboarding/documentation"
+  ],
+  "creatorJourneys": [
+    "Create Object",
+    "Add Gameplay",
+    "Import Asset",
+    "Build Character",
+    "Create UI",
+    "Build Level",
+    "Test Game",
+    "Debug",
+    "Save",
+    "Export",
+    "Reuse Content",
+    "Learn Engine"
+  ],
+  "systems": [
+    "Scene/Object Creation",
+    "Transform",
+    "Hierarchy",
+    "Prefabs",
+    "Mesh Assets",
+    "Texture Assets",
+    "Audio Assets",
+    "Sprites / 2D",
+    "Tilemaps",
+    "Terrain",
+    "Materials",
+    "Lighting",
+    "Cameras",
+    "Colliders",
+    "Trigger Volumes",
+    "Player Controllers",
+    "Input Actions",
+    "Rebinding",
+    "AI",
+    "AI State Machine",
+    "Navigation",
+    "Health",
+    "Damage",
+    "Weapons",
+    "Projectiles",
+    "Items",
+    "Inventory",
+    "Equipment",
+    "Objectives",
+    "Dialogue",
+    "HUD",
+    "Menus",
+    "Save Game",
+    "Levels",
+    "Transitions",
+    "Animation",
+    "Animation Events",
+    "Sequences",
+    "Node Graph",
+    "Behaviors",
+    "Variables",
+    "Signals / Events",
+    "Particles",
+    "Audio Zones",
+    "Fog Zones",
+    "Scatter",
+    "Paths",
+    "World-building tools",
+    "Import",
+    "Export",
+    "Debugging",
+    "Validation",
+    "Templates",
+    "Onboarding",
+    "Custom Script"
+  ],
+  "resolutionStandard": [
+    "root cause addressed",
+    "creator workflow re-run",
+    "regression coverage where appropriate",
+    "workaround no longer required",
+    "inventory/coverage grade reconsidered"
+  ],
+  "issues": [
+    {
+      "id": "AFR-0001",
+      "title": "2D workflow still lacks a dedicated controller, general physics, and pixel-perfect Camera authoring",
+      "status": "ACCEPTED_LIMITATION",
+      "severity": "CRITICAL",
+      "frequency": "PERVASIVE",
+      "primaryRootCause": "MISSING_CAPABILITY",
+      "contributingCauses": [
+        "DATA_MODEL",
+        "VIEWPORT_UI",
+        "ASSET_PIPELINE"
+      ],
+      "creatorJourney": "Create Object",
+      "fixLayer": "component",
+      "affectedSystems": [
+        "Sprites / 2D",
+        "Colliders",
+        "Player Controllers",
+        "Cameras"
+      ],
+      "discoveredInPhase": 1,
+      "targetPhase": 11,
+      "resolvedInPhase": null,
+      "affectedByPhases": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        45,
+        46
+      ],
+      "phase12Impact": "A first-class reusable Sprite Asset now owns the stable Texture relationship, default pivot, Pixels Per Unit, derived source dimensions/natural size, library preview/search/filter/duplicate/delete behavior, validation, Save/Load, Prefab references, and transitive export closure.",
+      "phase13Impact": "Project-owned named Sprite Sorting Layers now provide stable rename-safe IDs, explicit ordering, per-instance integer Order in Layer, deterministic Object-ID tie-breaking, guarded deletion/reassignment, migration, validation, persistence, Prefab/Level retention, and shared export support. The broad issue remains CONFIRMED because orthographic/pixel-perfect Camera, animation/slicing, Tilemaps, and 2D collision/physics remain absent.",
+      "phase14Impact": "Sprite and Billboard now have an explicit creator-facing semantic boundary. Sprite keeps authored orientation, Sprite Assets, pivots, and named sorting; Billboard remains a camera-facing world-space textured 3D entity with generic Material, lighting, alpha, and depth. Hybrid pass order and occlusion are documented and tested, Scene labels and Help are distinct, and hierarchy resolves before Billboard facing.",
+      "phase17Impact": "Sprite Assets now own independent Smooth or Pixel / Nearest sampling without duplicating their shared source Texture, and Sprite Renderer owns bounded per-instance opacity that preserves source alpha. Save/Load, Prefabs, Play, validation, and both exports were qualified. The broad issue remains CONFIRMED because orthographic/pixel-perfect Camera, animation/slicing, Tilemaps, and 2D collision/physics remain absent.",
+      "phase18Impact": "Sprite Assets now support reusable atlas/sub-rectangle regions, cropped previews, natural region size, manual editing, and regular-grid slicing while retaining one shared Texture dependency.",
+      "phase19Impact": "Sprite Asset rows now drag directly into the perspective viewport through a typed stable-ID payload and the existing ray/snap/selection/Undo machinery. One drop produces a selected natural-size Sprite with asset pivot, predictable defaults, and collision-safe naming; Place Sprite provides the same path without dragging.",
+      "phase20Impact": "A fresh-profile clean-room run qualified the bounded Sprite foundation from import through atlas slicing, repeated placement, direct editing, named sorting, hierarchy, linked Prefabs, Level duplication, Save/Load, validation, Play, and both export tiers. A reproduced sequential-Inspector identity defect was fixed at its live-component root cause. The broader issue remains CONFIRMED only for the explicitly deferred orthographic/pixel-perfect Camera, Sprite animation/playback, Tilemaps, and 2D collision/physics systems.",
+      "phase26Impact": "Sprite Assets now own optional source-pixel nine-slice guides and Sprite Renderers own a bounded Simple/Nine-Slice mode. Numeric guide authoring, visual overlays, direct resize, asymmetric flips, atlas-safe sampling, proportional tiny-target compression, Prefab reuse, validation repair, persistence, and both export tiers were qualified. The broad issue remains CONFIRMED because orthographic/pixel-perfect Camera, Tilemaps, and 2D collision/physics remain absent.",
+      "phase30Impact": "Epoch 03 added visual Sprite clips, named states, frame events with no-code reactions, directional variants and mirror reuse, nine-slice, parallax, Orthographic Camera authoring, bounded hybrid layering, and three discoverable normal-project starters. A visible-control dogfood combined those systems and survived validation, Save/Load, Editable export, and Playable export. AFR-0001 remains CONFIRMED only for the still-material Tilemap, 2D collision/physics, dedicated controller/input, and genuine pixel-perfect Camera gaps.",
+      "phase31Impact": "First-class Tileset assets and a dedicated Tile Palette now provide stable Tile identity, typed Sprite Asset reuse, search, bulk-add, rename, reorder, duplicate, remove, repair, persistence, validation, and Editable-export authoring. AFR-0001 remains CONFIRMED for world Tilemap/Grid placement and rendering, 2D collision/physics, dedicated controller/input, and genuine pixel-perfect Camera gaps.",
+      "phase41Impact": "First-class passive Box Collider 2D and Circle Collider 2D Components now provide searchable no-code shape authoring, selected-only handles, Transform-aware geometry, validation, overlap queries, persistence, Prefab reuse, and export portability. The broad issue remains CONFIRMED for trigger/response/body semantics, dedicated 2D controllers/input, and genuine pixel-perfect Camera authoring.",
+      "phase45Impact": "Character Collision 2D now consumes Static Bodies and sparse Tilemap collision, reports transient grounded/ceiling/wall contact, and provides bounded wall slide. The broad issue remains CONFIRMED for dedicated controller/input and jump authoring, general 2D physics, and genuine pixel-perfect Camera workflow.",
+      "phase46Impact": "Character-only one-way support is now first-class on Static Box scene objects and collision-bearing Tiles, including upward pass, downward landing, persistent ground, Palette authoring, and portable exports. The issue remains CONFIRMED for dedicated controller/input/jump/drop-through authoring, general 2D physics, and pixel-perfect Camera workflow.",
+      "observation": "The normal Sprite and Tilemap paths now include reusable 2D collision shapes, Static/Kinematic response, Trigger detection, and eligible Character Tile collision. Remaining broad friction is dedicated controller/input and jump authoring, general 2D physics, and genuine pixel-perfect Camera workflow.",
+      "currentWorkaround": "Compose Character Collision 2D with a Kinematic Body and Box/Circle Collider for Static and Tile blocking; author movement separately. Dedicated controller/input, gravity, and jumping remain future work.",
+      "reproduction": [
+        "Create a Tileset, Tilemap, and Character Collision 2D object; confirm Tile blocking and contact state without code.",
+        "Search the Scene, Components, and viewport for dedicated 2D controller/input and jump authoring, general Dynamic physics, and pixel-perfect Camera snapping; confirm those remaining gaps."
+      ],
+      "evidence": [
+        {
+          "type": "phase_report",
+          "path": "PHASE-001-REPORT.md",
+          "note": "Original Sprite/2D assessment"
+        },
+        {
+          "type": "phase_report",
+          "path": "PHASE-012-REPORT.md",
+          "note": "Reusable Sprite Asset workflow"
+        },
+        {
+          "type": "phase_report",
+          "path": "PHASE-013-REPORT.md",
+          "note": "Named sorting-layer implementation"
+        },
+        {
+          "type": "phase_report",
+          "path": "PHASE-014-REPORT.md",
+          "note": "Sprite/Billboard boundary and hybrid rendering acceptance"
+        },
+        {
+          "type": "phase_report",
+          "path": "PHASE-017-REPORT.md",
+          "note": "Sampling and opacity implementation and acceptance"
+        },
+        {
+          "type": "phase_report",
+          "path": "PHASE-018-REPORT.md",
+          "note": "Atlas region and slicing acceptance"
+        },
+        {
+          "type": "phase_report",
+          "path": "PHASE-019-REPORT.md",
+          "note": "Direct Sprite Asset placement acceptance"
+        },
+        {
+          "type": "phase_report",
+          "path": "PHASE-020-REPORT.md",
+          "note": "Epoch 02 clean-room qualification and hardening"
+        },
+        {
+          "type": "phase_report",
+          "path": "PHASE-026-REPORT.md",
+          "note": "Nine-slice implementation and qualification"
+        },
+        {
+          "type": "contract",
+          "path": "NINE-SLICE-SPRITE-ASSET-CONTRACT.md",
+          "note": "Guide ownership and validation"
+        },
+        {
+          "type": "contract",
+          "path": "NINE-SLICE-RENDERING-CONTRACT.md",
+          "note": "Rendering, UV, flip, and tiny-target rules"
+        },
+        {
+          "type": "contract",
+          "path": "SPRITE-ASSET-PLACEMENT-CONTRACT.md",
+          "note": "Typed payload, perspective placement, defaults, cancellation, history, and identity"
+        },
+        {
+          "type": "contract",
+          "path": "SPRITE-SORTING-LAYER-CONTRACT.md",
+          "note": "Stable IDs, explicit order, runtime tuple, and deletion safety"
+        },
+        {
+          "type": "contract",
+          "path": "SPRITE-VS-BILLBOARD-CONTRACT.md",
+          "note": "Authoritative object, workflow, persistence, and conversion boundary"
+        },
+        {
+          "type": "source",
+          "path": "editor/src/00-authoring-plumbing.js",
+          "note": "Sprite asset and placement-record contracts"
+        },
+        {
+          "type": "source",
+          "path": "editor/src/01-editor.js",
+          "note": "Shared pointer placement dispatcher and stable live-component synchronization"
+        },
+        {
+          "type": "test",
+          "path": "tests/phase-020-sprite-foundation.test.js",
+          "note": "Epoch-wide Sprite contracts, repair paths, regression, and boundary coverage"
+        },
+        {
+          "type": "test",
+          "path": "tests/phase-026-nine-slice-sprites.test.js",
+          "note": "Nine-slice contract and regression coverage"
+        },
+        {
+          "type": "browser_audit",
+          "path": "phase-020-dogfood.json",
+          "note": "Fresh-profile clean-room authoring, persistence, hybrid scene, and export evidence"
+        },
+        {
+          "type": "browser_audit",
+          "path": "phase-026-dogfood.json",
+          "note": "Visible creator workflow, repair, persistence, Prefab, and export evidence"
+        },
+        {
+          "type": "phase_report",
+          "path": "PHASE-030-REPORT.md",
+          "note": "Epoch 03 starter and integrated dogfood qualification"
+        },
+        {
+          "type": "browser_audit",
+          "path": "phase-030-dogfood.json",
+          "note": "Visible starter/dogfood authoring plus isolated Editable and Playable export evidence"
+        },
+        {
+          "type": "review",
+          "path": "qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md",
+          "note": "AFR-0001 supported evidence and residual boundary; original observations remain unchanged."
+        }
+      ],
+      "phase240Disposition": {
+        "previousStatus": "CONFIRMED",
+        "reviewedAt": "2026-10-16T06:54:00Z",
+        "decision": "Accepted residual scope, not implementation of omitted features",
+        "supportedEvidence": "Dedicated Sprite controllers/current239 platformer/topdown and collision/carry/filter gates supersede controller-absence."
+      },
+      "acceptance": {
+        "intentionallyBounded": true,
+        "reasonableWorkaround": true,
+        "disproportionateCost": true,
+        "documented": true,
+        "rationale": {
+          "intentionallyBounded": "Split stale controller claim from explicit future pixel-perfect Camera and utility-rejected general Dynamic physics. Neither is promised by orthographic framing or Character collision. Bounded limitation, not new physics mandate.",
+          "reasonableWorkaround": "Use qualified Sprite controllers, orthographic framing and Character/Tile collision; integer-pixel or mass-stacking games remain outside this contract.",
+          "disproportionateCost": "044 declined Dynamic promotion; a new solver/pixel policy exceeds the qualified common2D workflow.",
+          "documented": "Creator Guide docs/generated/index.html#scope-limits; AUTHORING-FRICTION-REGISTER.md AFR-0001 individual rationale; qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md supported evidence and explicit residual."
+        }
+      }
+    },
+    {
+      "id": "AFR-0002",
+      "title": "No tile-based level authoring",
+      "status": "RESOLVED",
+      "severity": "CRITICAL",
+      "frequency": "PERVASIVE",
+      "primaryRootCause": "MISSING_CAPABILITY",
+      "contributingCauses": [
+        "DATA_MODEL",
+        "VIEWPORT_UI",
+        "ASSET_PIPELINE"
+      ],
+      "creatorJourney": "Build Level",
+      "fixLayer": "viewport/direct manipulation",
+      "affectedSystems": [
+        "Tilemaps",
+        "Sprites / 2D",
+        "Colliders"
+      ],
+      "discoveredInPhase": 1,
+      "targetPhase": 31,
+      "resolvedInPhase": 32,
+      "affectedByPhases": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        45
+      ],
+      "phase31Impact": "First-class Tileset assets and a dedicated Tile Palette remove the asset-grouping and stable-Tile-identity portion of this friction.",
+      "phase32Impact": "A first-class Tilemap scene object, sparse cell model, direct viewport Paint/Erase, Sprite-pass renderer, grouped Undo/Redo, validation, Save/Load, and both export tiers resolve the missing common tile-based level-authoring path. Multiple layers and collision are explicit later capabilities, not requirements for resolving the original absent-path finding.",
+      "phase33Impact": "Stable ordered Tile Layers now organize one Tilemap without multiplying scene objects. Active-layer Paint/Erase, visibility, edit locking, rename, reorder, duplicate, delete, per-layer clearing, migration, validation, persistence, and both export tiers remove the single-plane organizational limitation while preserving the resolved common path.",
+      "phase34Impact": "Tile-owned None, Full Cell, and Custom Rectangle collision intent now survives identity and artwork edits, validates once per Tile, previews in the Palette, and resolves across painted layers through an editor-only overlay and pure geometry seam. Actual 2D collision response remains deliberately deferred.",
+      "phase35Impact": "Tileset-owned Auto-Tile Sets now add stable four-way and gated eight-way connectivity, visual Rule authoring, direct Auto Paint/Erase, manual override, local and global deterministic retiling, and compact resolved Playable exports without a runtime solver.",
+      "phase36Impact": "Tileset-owned Terrain Brushes add deterministic weighted Tile variation, Auto-Tile-backed connected Terrain, semantic Terrain cells, bounded square/circle footprints, exact hover previews, global Brush-edit recompute, repair, persistence, and resolved Playable exports without runtime Terrain logic.",
+      "phase37Impact": "Cell-centered Prefab placement and Tilemap-owned Spawn Markers add reusable object intent without coupling ordinary scene objects to Tilemap storage or automatic runtime spawning.",
+      "phase38Impact": "First-class Tilemap Chunk Assets now capture rectangular multi-Layer semantic regions and optional Spawn Markers, then materialize them through explicit target Layer mapping, destination Terrain/Auto-Tile recompute, merge-only holes, fresh marker identities, one-step Undo/Redo, Save/Load, and authoring-only export pruning.",
+      "phase39Impact": "Deterministic self-contained Tilemap and Chunk bundles now preserve full semantic and media closure across projects, verify canonical SHA-256 integrity, preview stable-ID remapping, import atomically without overwrite/name merge, remain untrusted for Custom Script, and round-trip byte-identically.",
+      "phase40Impact": "A real 10,240-cell, four-Layer world now qualifies the resolved Tilemap journey at scale across editing, deterministic Terrain/Auto-Tile changes, Chunk reuse, Save/Load, portable Bundles, Editable/Playable outputs, transient render batching, cache invalidation, browser frame gates, and an active one-hour browser soak on the recorded host.",
+      "observation": "The common multi-layer tile-based level-authoring journey is discoverable, direct-manipulation based, persistent, validated, connectivity-aware, supports deterministic natural Terrain variation and large-area painting, renders at runtime, and is portable across projects without code.",
+      "phase45Impact": "Tile Layer collision participation is authorable and eligible Character Collision 2D objects now physically consume Full Cell and Custom Rectangle metadata directly from sparse Tilemaps; no per-cell scene objects or Bodies are required.",
+      "currentWorkaround": "None for visual multi-layer Tilemaps or eligible Character Tile collision. General Body-vs-Tile physics and later one-way/slope rules remain outside this resolved authoring issue.",
+      "reproduction": [
+        "Create a Tileset and one Tilemap, add four layers, paint the same coordinate in multiple layers, reorder, hide, lock, duplicate, and clear one layer.",
+        "Undo/Redo layer and stroke operations, Save/Load, validate, and export Editable and Playable artifacts; confirm one Tilemap object remains one scene object."
+      ],
+      "evidence": [
+        {
+          "type": "phase_report",
+          "path": "PHASE-001-REPORT.md",
+          "note": "Original Tilemap assessment"
+        },
+        {
+          "type": "phase_report",
+          "path": "PHASE-031-REPORT.md",
+          "note": "Tileset and Tile Palette foundation qualification"
+        },
+        {
+          "type": "browser_audit",
+          "path": "phase-031-dogfood.json",
+          "note": "Visible Tileset/Palette authoring, repair, persistence, and export evidence"
+        },
+        {
+          "type": "test",
+          "path": "tests/phase-031-tileset-palette.test.js",
+          "note": "Schema, references, UI, persistence, pruning, and boundary coverage"
+        },
+        {
+          "type": "phase_report",
+          "path": "PHASE-032-REPORT.md",
+          "note": "Tilemap object, paint and erase, runtime, persistence, export, and qualification closure"
+        },
+        {
+          "type": "browser_audit",
+          "path": "phase-032-dogfood.json",
+          "note": "Live authoring and exact Editable and Playable artifact boot evidence"
+        },
+        {
+          "type": "test",
+          "path": "tests/phase-032-tilemap-paint-erase.test.js",
+          "note": "Sparse model, viewport workflow, renderer, export, and scope regression coverage"
+        },
+        {
+          "type": "phase_report",
+          "path": "PHASE-033-REPORT.md",
+          "note": "Multi-layer Tilemap implementation and qualification"
+        },
+        {
+          "type": "browser_audit",
+          "path": "phase-033-dogfood.json",
+          "note": "Layer-panel, Paint/Erase, Undo/Redo, validation, and export boot evidence"
+        },
+        {
+          "type": "test",
+          "path": "tests/phase-033-multilayer-tilemaps.test.js",
+          "note": "Migration, identity, layer isolation, validation, dependency, export, and bounded performance coverage"
+        },
+        {
+          "type": "phase_report",
+          "path": "PHASE-034-REPORT.md",
+          "note": "Tile collision metadata authoring and no-physics boundary qualification"
+        },
+        {
+          "type": "browser_audit",
+          "path": "phase-034-dogfood.json",
+          "note": "Visible collision editing, overlay, repair, persistence, and export evidence"
+        },
+        {
+          "type": "test",
+          "path": "tests/phase-034-tile-collision-metadata.test.js",
+          "note": "Schema, geometry, validation, identity, overlay, export, and scope coverage"
+        },
+        {
+          "type": "phase_report",
+          "path": "PHASE-035-REPORT.md",
+          "note": "Auto-Tile Set, resolver, authoring, persistence, export, and no-runtime-solver qualification"
+        },
+        {
+          "type": "browser_audit",
+          "path": "phase-035-dogfood.json",
+          "note": "Visible Rule authoring, Auto Paint/Erase, override, retiling, persistence, and export evidence"
+        },
+        {
+          "type": "test",
+          "path": "tests/phase-035-auto-tiling.test.js",
+          "note": "Masks, gated corners, membership, resolver, validation, migration, export, and scope coverage"
+        },
+        {
+          "type": "phase_report",
+          "path": "PHASE-036-REPORT.md",
+          "note": "Terrain Brush authoring, determinism, footprint, export, and qualification evidence"
+        },
+        {
+          "type": "test",
+          "path": "tests/phase-036-terrain-brushes.test.js",
+          "note": "Terrain schema, hashing, footprints, semantics, validation, persistence, and scope coverage"
+        },
+        {
+          "type": "browser_audit",
+          "path": "phase-036-dogfood.json",
+          "note": "Visible Terrain Brush creation, painting, recompute, repair, persistence, and export evidence"
+        }
+      ],
+      "resolution": {
+        "rootCauseAddressed": true,
+        "workflowRerun": true,
+        "regressionCovered": true,
+        "workaroundRemoved": true,
+        "gradeReconsidered": true
+      }
+    },
+    {
+      "id": "AFR-0003",
+      "title": "Capability discovery depends on a dense conditional Inspector",
+      "status": "ACCEPTED_LIMITATION",
+      "severity": "HIGH",
+      "frequency": "REPEATED",
+      "primaryRootCause": "DISCOVERABILITY",
+      "contributingCauses": [
+        "INSPECTOR_UI",
+        "DATA_MODEL"
+      ],
+      "creatorJourney": "Add Gameplay",
+      "fixLayer": "Inspector",
+      "affectedSystems": [
+        "Behaviors",
+        "Health",
+        "Trigger Volumes",
+        "Particles"
+      ],
+      "discoveredInPhase": 1,
+      "targetPhase": null,
+      "resolvedInPhase": null,
+      "affectedByPhases": [
+        2,
+        5,
+        6,
+        7,
+        8
+      ],
+      "phase5Impact": "Consistent noun/verb/event terminology and metadata reduce ambiguity, but no Add Component catalog exists, so the workflow remains open.",
+      "phase6Impact": "Health, Trigger Volume, and Particle Emitter now share declared labels, help, defaults, validation, Undo, modified state, and Reset behavior instead of bespoke field wiring. Capability discovery still lacks Add Component, so the issue remains CONFIRMED.",
+      "phase7Impact": "An obvious searchable, keyboard-operable Add Component workflow now discovers eligible registered schemas, prevents singleton duplicates, and renders newly added components generically. The frequency drops from PERVASIVE to REPEATED, but the broader issue remains CONFIRMED because many legacy capabilities such as Behaviors still live in conditional bespoke panels rather than registered schemas.",
+      "phase8Impact": "A searchable Gameplay Preset browser now packages seven proven roles over ordinary Behaviors, Components, AI, clips, and object fields. It removes manual multi-step setup for those roles, but the issue remains CONFIRMED / REPEATED because the catalog is intentionally bounded and legacy capabilities outside registered components or presets still depend on conditional panels.",
+      "observation": "Registered Components and seven common gameplay roles now have searchable entry points, while capabilities outside those bounded catalogs still surface through conditional Inspector panels.",
+      "currentWorkaround": "Use Add Component or Apply Gameplay Preset when the needed capability is cataloged; use the legacy Inspector and samples for uncataloged capabilities.",
+      "reproduction": [
+        "Select a scene object and search Apply Gameplay Preset for a supported role such as Checkpoint or Damage Zone.",
+        "Search for an uncataloged behavior role or advanced capability.",
+        "Observe that the supported role is one-click configurable while the uncataloged capability still requires manual Inspector discovery and wiring."
+      ],
+      "evidence": [
+        {
+          "type": "source",
+          "path": "editor/src/01-editor.js",
+          "note": "renderInspectorBody/renderInspector conditional surface"
+        },
+        {
+          "type": "browser_audit",
+          "path": "tools/audit-phase-004.js",
+          "note": "Workflows A and B repeat this discovery path."
+        },
+        {
+          "type": "browser_audit",
+          "path": "tools/audit-phase-006.js",
+          "note": "Health, Trigger Volume, and Particle Emitter share one field/section interaction path; Add Component remains absent."
+        },
+        {
+          "type": "browser_audit",
+          "path": "tools/audit-phase-007.js",
+          "note": "Search, keyboard add, duplicate prevention, Undo/Redo, Save/Load, validation, prefab, duplicate, and exports passed; legacy non-schema discovery remains outside the picker."
+        },
+        {
+          "type": "browser_audit",
+          "path": "tools/audit-phase-008.js",
+          "note": "Seven-role preset dogfood passed with parameters, one-step application, semantic update/no duplication, Undo/Redo, Save/Load, Prefab, Duplicate, validation, and both export tiers."
+        },
+        {
+          "type": "review",
+          "path": "qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md",
+          "note": "AFR-0003 supported evidence and residual boundary; original observations remain unchanged."
+        }
+      ],
+      "phase240Disposition": {
+        "previousStatus": "CONFIRMED",
+        "reviewedAt": "2026-10-16T06:54:00Z",
+        "decision": "Accepted residual scope, not implementation of omitted features",
+        "supportedEvidence": "Searchable Components/Presets, unified191 Assets,234 command palette,237 local guide and current firstcreator connect common authoring."
+      },
+      "acceptance": {
+        "intentionallyBounded": true,
+        "reasonableWorkaround": true,
+        "disproportionateCost": true,
+        "documented": true,
+        "rationale": {
+          "intentionallyBounded": "Advanced conditional Inspector density remains. Do not claim every capability is a Component, novice learning certification or universal tablet accessibility. Partial improvement/explicit limit.",
+          "reasonableWorkaround": "Use searchable Components/Presets, command palette, starters and guide; advanced conditional panels remain.",
+          "disproportionateCost": "A full Inspector framework replacement would risk preserved authoring ownership without improving an unproven common-path blocker.",
+          "documented": "Creator Guide docs/generated/index.html#scope-limits; AUTHORING-FRICTION-REGISTER.md AFR-0003 individual rationale; qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md supported evidence and explicit residual."
+        }
+      }
+    },
+    {
+      "id": "AFR-0004",
+      "title": "Free-typed state keys are not rename-safe",
+      "status": "ACCEPTED_LIMITATION",
+      "severity": "HIGH",
+      "frequency": "REPEATED",
+      "primaryRootCause": "REFERENCE_SAFETY",
+      "contributingCauses": [
+        "DATA_MODEL",
+        "VALIDATION"
+      ],
+      "creatorJourney": "Add Gameplay",
+      "fixLayer": "project model",
+      "affectedSystems": [
+        "Variables",
+        "Save Game",
+        "Behaviors",
+        "Node Graph"
+      ],
+      "discoveredInPhase": 1,
+      "targetPhase": null,
+      "resolvedInPhase": null,
+      "observation": "Counters, flags, timers, variables, slots, and semantic tags frequently use free-typed string keys, so typos and renames split state silently.",
+      "currentWorkaround": "Keep spellings synchronized manually and search project JSON/source while debugging.",
+      "reproduction": [
+        "Create two actions that address the same state key.",
+        "Introduce a spelling difference in one key.",
+        "Observe that both values remain valid strings but no longer address the same state."
+      ],
+      "evidence": [
+        {
+          "type": "inventory",
+          "path": "CURRENT-AUTHORING-SURFACE-INVENTORY.md",
+          "note": "Variables and Save Game use name-based state."
+        },
+        {
+          "type": "review",
+          "path": "qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md",
+          "note": "AFR-0004 supported evidence and residual boundary; original observations remain unchanged."
+        }
+      ],
+      "phase240Disposition": {
+        "previousStatus": "CONFIRMED",
+        "reviewedAt": "2026-10-16T06:54:00Z",
+        "decision": "Accepted residual scope, not implementation of omitted features",
+        "supportedEvidence": "Current bounded exact-case Flag/Counter/Timer name suggestions and actual authoring/history/Prefab/Save/export/runtime proofs in CHECKPOINT0503."
+      },
+      "acceptance": {
+        "intentionallyBounded": true,
+        "reasonableWorkaround": true,
+        "disproportionateCost": true,
+        "documented": true,
+        "rationale": {
+          "intentionallyBounded": "Names remain strings; no automatic global rename/reference identity and Object Variables not newly covered. Clearly retain this limitation; do not introduce a parallel state runtime to close the title.",
+          "reasonableWorkaround": "Select existing exact-case state hints or copy matching strings; explicitly edit every use on rename. Object Variables remain separate.",
+          "disproportionateCost": "Global string rename across opaque legacy graphs requires a new identity/migration contract; guessing would risk user data.",
+          "documented": "Creator Guide docs/generated/index.html#scope-limits; AUTHORING-FRICTION-REGISTER.md AFR-0004 individual rationale; qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md supported evidence and explicit residual."
+        }
+      }
+    },
+    {
+      "id": "AFR-0005",
+      "title": "Project input actions are fixed and incomplete",
+      "status": "ACCEPTED_LIMITATION",
+      "severity": "HIGH",
+      "frequency": "REPEATED",
+      "primaryRootCause": "MISSING_CAPABILITY",
+      "contributingCauses": [
+        "DATA_MODEL",
+        "RUNTIME"
+      ],
+      "creatorJourney": "Add Gameplay",
+      "fixLayer": "project model",
+      "affectedSystems": [
+        "Input Actions",
+        "Rebinding",
+        "Player Controllers"
+      ],
+      "discoveredInPhase": 1,
+      "targetPhase": null,
+      "resolvedInPhase": null,
+      "observation": "Named Actions and controller discovery have explicit keyboard-or-mouse/gamepad/touch author defaults. Generated Controls and project-scoped local keyboard/mouse preferences, bounded tuning and contextual logical maps use canonical runtime paths; consult094–096 reports for frozen creator/native/export evidence. Automatic active-device prompts qualified097 and optional per-level joystick/button layout qualified098 after native resize/default occlusion repairs. Persistent device/context/effective-binding diagnostics qualified099 with native typed repairs and alltiers; composed cross-device epoch qualification100 development and physical hardware acceptance remains unclaimed. Phone preview needs explicit scaled viewport boundary. Collection membership does not create abilities or disable input.",
+      "currentWorkaround": "Use named Input Action assets, Device Mappings and an On Update typed Pressed/Held graph; no Custom Script needed for the common mapped-action path.",
+      "reproduction": [
+        "Open Project Input Actions and Device Mappings.",
+        "Create a named Action and configure device-only touch or gamepad input.",
+        "Validate real authoring/export gates before treating the broader cross-device workflow as complete."
+      ],
+      "evidence": [
+        {
+          "type": "inventory",
+          "path": "CURRENT-AUTHORING-SURFACE-INVENTORY.md",
+          "note": "Input Actions and Rebinding rows."
+        },
+        {
+          "type": "review",
+          "path": "qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md",
+          "note": "AFR-0005 supported evidence and residual boundary; original observations remain unchanged."
+        }
+      ],
+      "phase240Disposition": {
+        "previousStatus": "CONFIRMED",
+        "reviewedAt": "2026-10-16T06:54:00Z",
+        "decision": "Accepted residual scope, not implementation of omitted features",
+        "supportedEvidence": "094–099 named action/rebinding/context/device architecture and239 native named-action gameplay supersede fixed-keyboard-only observation."
+      },
+      "acceptance": {
+        "intentionallyBounded": true,
+        "reasonableWorkaround": true,
+        "disproportionateCost": true,
+        "documented": true,
+        "rationale": {
+          "intentionallyBounded": "Physical gamepad/touch/hotplug/cross-device testing remains unavailable, not implicitly passed. No all-device compatibility promise.",
+          "reasonableWorkaround": "Use qualified named keyboard/mouse Actions and author device mappings; test physical controllers/touch on actual target hardware.",
+          "disproportionateCost": "Desktop automation cannot certify every physical device; universal device coverage is outside available evidence.",
+          "documented": "Creator Guide docs/generated/index.html#scope-limits; AUTHORING-FRICTION-REGISTER.md AFR-0005 individual rationale; qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md supported evidence and explicit residual."
+        }
+      }
+    },
+    {
+      "id": "AFR-0006",
+      "title": "Equipment setup spans hidden cross-panel contracts",
+      "status": "ACCEPTED_LIMITATION",
+      "severity": "HIGH",
+      "frequency": "REPEATED",
+      "primaryRootCause": "WORKFLOW",
+      "contributingCauses": [
+        "REFERENCE_SAFETY",
+        "INSPECTOR_UI"
+      ],
+      "creatorJourney": "Build Character",
+      "fixLayer": "component",
+      "affectedSystems": [
+        "Equipment",
+        "Inventory",
+        "Weapons",
+        "Mesh Assets"
+      ],
+      "discoveredInPhase": 1,
+      "targetPhase": null,
+      "resolvedInPhase": null,
+      "observation": "Item, equipment, rig socket, slot/name, and weapon settings live in separate sections that must agree.",
+      "currentWorkaround": "Learn the implicit mapping and manually coordinate names across panels.",
+      "reproduction": [
+        "Configure an inventory item and equippable weapon.",
+        "Assign its socket and slot across the relevant panels.",
+        "Observe the multiple name-based relationships and separate configuration surfaces."
+      ],
+      "evidence": [
+        {
+          "type": "inventory",
+          "path": "CURRENT-AUTHORING-SURFACE-INVENTORY.md",
+          "note": "Equipment and Inventory limitations."
+        },
+        {
+          "type": "review",
+          "path": "qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md",
+          "note": "AFR-0006 supported evidence and residual boundary; original observations remain unchanged."
+        }
+      ],
+      "phase240Disposition": {
+        "previousStatus": "CONFIRMED",
+        "reviewedAt": "2026-10-16T06:54:00Z",
+        "decision": "Accepted residual scope, not implementation of omitted features",
+        "supportedEvidence": "Current32+11 native observations above prove named Item/slot/Weapon/socket ownership, Play/Stop, history, persistence and actual file tiers. Final144/145 qualification confirms earlier review defects were repaired."
+      },
+      "acceptance": {
+        "intentionallyBounded": true,
+        "reasonableWorkaround": true,
+        "disproportionateCost": true,
+        "documented": true,
+        "rationale": {
+          "intentionallyBounded": "Separate panels remain; arbitrary legacy mapping uses historical first match, sockets use names, no automatic rename/bone migration/scale inheritance. The old implicit-ID workaround is superseded for supported named paths.",
+          "reasonableWorkaround": "Use named Item/slot/Weapon/socket selectors and explicit suggestions; inspect unavailable/legacy mappings.",
+          "disproportionateCost": "Automatic cross-panel/bone rename and scale inheritance change qualified equipment/rig ownership semantics.",
+          "documented": "Creator Guide docs/generated/index.html#scope-limits; AUTHORING-FRICTION-REGISTER.md AFR-0006 individual rationale; qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md supported evidence and explicit residual."
+        }
+      }
+    },
+    {
+      "id": "AFR-0007",
+      "title": "Prefabs lack portable identity and explicit overrides",
+      "status": "ACCEPTED_LIMITATION",
+      "severity": "HIGH",
+      "frequency": "REPEATED",
+      "primaryRootCause": "DATA_MODEL",
+      "contributingCauses": [
+        "REFERENCE_SAFETY",
+        "WORKFLOW"
+      ],
+      "creatorJourney": "Reuse Content",
+      "fixLayer": "project model",
+      "affectedSystems": [
+        "Prefabs"
+      ],
+      "discoveredInPhase": 1,
+      "targetPhase": null,
+      "resolvedInPhase": null,
+      "observation": "Prefabs are name-identified, locally stored, manually synchronized, and have limited override semantics and unclear project/library ownership.",
+      "currentWorkaround": "Bundle/import projects, manually update linked instances, or duplicate objects.",
+      "reproduction": [
+        "Save an object as a prefab and place multiple instances.",
+        "Change the source and inspect update/override behavior.",
+        "Attempt to reuse it in another project."
+      ],
+      "evidence": [
+        {
+          "type": "inventory",
+          "path": "CURRENT-AUTHORING-SURFACE-INVENTORY.md",
+          "note": "Prefabs graded C."
+        },
+        {
+          "type": "review",
+          "path": "qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md",
+          "note": "AFR-0007 supported evidence and residual boundary; original observations remain unchanged."
+        }
+      ],
+      "phase240Disposition": {
+        "previousStatus": "CONFIRMED",
+        "reviewedAt": "2026-10-16T06:54:00Z",
+        "decision": "Accepted residual scope, not implementation of omitted features",
+        "supportedEvidence": "Current two named Projects restore complete independent Prefab libraries; palette reuse/history/parameter Clear/save/reload/actual files pass (CHECKPOINT0518/0535/0557/0606)."
+      },
+      "acceptance": {
+        "intentionallyBounded": true,
+        "reasonableWorkaround": true,
+        "disproportionateCost": true,
+        "documented": true,
+        "rationale": {
+          "intentionallyBounded": "Name identity and explicit manual synchronization remain; global GUID/live-sync promises are absent. Ownership restoration is repaired, not cache deletion or a new Prefab format. No blanket claim about every override combination.",
+          "reasonableWorkaround": "Save complete Project libraries; use explicit portable transfers, independent linked placement, parameters/Clear and manual updates.",
+          "disproportionateCost": "GUID/live-sync conversion needs legacy migration/conflict semantics; detached snapshot restoration must preserve compatible names.",
+          "documented": "Creator Guide docs/generated/index.html#scope-limits; AUTHORING-FRICTION-REGISTER.md AFR-0007 individual rationale; qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md supported evidence and explicit residual."
+        }
+      }
+    },
+    {
+      "id": "AFR-0008",
+      "title": "Branching logic lacks a readable traced overview",
+      "status": "ACCEPTED_LIMITATION",
+      "severity": "HIGH",
+      "frequency": "REPEATED",
+      "primaryRootCause": "INSPECTOR_UI",
+      "contributingCauses": [
+        "VALIDATION",
+        "DISCOVERABILITY"
+      ],
+      "creatorJourney": "Add Gameplay",
+      "fixLayer": "Visual Graph",
+      "affectedSystems": [
+        "AI State Machine",
+        "Node Graph",
+        "AI"
+      ],
+      "discoveredInPhase": 1,
+      "targetPhase": null,
+      "resolvedInPhase": null,
+      "affectedByPhases": [
+        5,
+        122
+      ],
+      "phase5Impact": "Graph Actions and Conditions now use canonical labels and metadata; runtime tracing remains absent.",
+      "observation": "AI now has a canonical authored node/edge overview. Live AI execution tracing and broader branching diagnostics remain separate unresolved friction.",
+      "currentWorkaround": "Keep graphs small, rely on naming, and inspect the running game manually.",
+      "reproduction": [
+        "Open an object's AI state machine or Node Graph.",
+        "Run branching logic.",
+        "Attempt to identify the active state, fired edge, and failed condition from the authoring surface."
+      ],
+      "evidence": [
+        {
+          "type": "inventory",
+          "path": "CURRENT-AUTHORING-SURFACE-INVENTORY.md",
+          "note": "AI State Machine and Node Graph rows."
+        },
+        {
+          "type": "review",
+          "path": "qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md",
+          "note": "AFR-0008 supported evidence and residual boundary; original observations remain unchanged."
+        }
+      ],
+      "phase122Impact": "Authored AI state topology is now visible/selectable, transitions removable/reorderable and entry Action parameters editable. Live active-state/fired-edge/failed-condition trace is outside this phase; broad issue remains CONFIRMED.",
+      "phase240Disposition": {
+        "previousStatus": "CONFIRMED",
+        "reviewedAt": "2026-10-16T06:54:00Z",
+        "decision": "Accepted residual scope, not implementation of omitted features",
+        "supportedEvidence": "129 live AI state/noise/input/restart and215 bounded Graph Trace replace blanket unreadability; existing trace scopes documented."
+      },
+      "acceptance": {
+        "intentionallyBounded": true,
+        "reasonableWorkaround": true,
+        "disproportionateCost": true,
+        "documented": true,
+        "rationale": {
+          "intentionallyBounded": "No complete AI decision-reason history or visual replay debugger. Partial improvement with explicit diagnostic bounds.",
+          "reasonableWorkaround": "Inspect live AI state/noise/input and bounded Graph Trace outcomes; reproduce conditions through Play/Pause.",
+          "disproportionateCost": "Full AI reason replay requires retained execution semantics beyond qualified observational tracing.",
+          "documented": "Creator Guide docs/generated/index.html#scope-limits; AUTHORING-FRICTION-REGISTER.md AFR-0008 individual rationale; qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md supported evidence and explicit residual."
+        }
+      }
+    },
+    {
+      "id": "AFR-0009",
+      "title": "Animation control relies on clip-name conventions",
+      "status": "ACCEPTED_LIMITATION",
+      "severity": "HIGH",
+      "frequency": "REPEATED",
+      "primaryRootCause": "DATA_MODEL",
+      "contributingCauses": [
+        "DISCOVERABILITY",
+        "COMPATIBILITY"
+      ],
+      "creatorJourney": "Build Character",
+      "fixLayer": "component",
+      "affectedSystems": [
+        "Animation",
+        "AI State Machine"
+      ],
+      "discoveredInPhase": 1,
+      "targetPhase": null,
+      "resolvedInPhase": null,
+      "affectedByPhases": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "phase22Impact": "Sprite-frame clips now have a discoverable dedicated visual editor, shared-semantics preview, and explicit Once/Loop metadata.",
+      "phase23Impact": "Sprite Renderers gained explicit local named states and no-code switching, removing clip-name conventions from the bounded Sprite workflow.",
+      "phase24Impact": "Sprite Clips gained stable named frame events and target-specific no-code listeners. AFR-0009 remains CONFIRMED because semantic 3D/skinned clip mapping and broader controller transitions still rely on conventions.",
+      "phase25Impact": "Sprite Renderers gained explicit semantic direction, sparse per-State Clip variants, and mirror reuse, removing left/right Clip swapping and negative-scale hacks from the bounded Sprite workflow. AFR-0009 remains CONFIRMED because semantic 3D/skinned clip mapping and broader controller transitions still rely on conventions.",
+      "observation": "Auto-animation infers states from clip names such as idle, walk, run, attack, and death; complex transitions have no visual controller.",
+      "currentWorkaround": "Rename clips externally or manually select and play clips/actions.",
+      "reproduction": [
+        "Import an animated model with non-conventional clip names.",
+        "Enable automatic character animation.",
+        "Observe that semantic mapping and transitions cannot be authored explicitly."
+      ],
+      "evidence": [
+        {
+          "type": "inventory",
+          "path": "CURRENT-AUTHORING-SURFACE-INVENTORY.md",
+          "note": "Animation limitations."
+        },
+        {
+          "type": "browser_audit",
+          "path": "phase-022-dogfood.json",
+          "note": "Three Sprite clips were visually authored, previewed, looped, saved, reused, and exported without raw IDs."
+        },
+        {
+          "type": "contract",
+          "path": "SPRITE-ANIMATION-EDITOR-CONTRACT.md",
+          "note": "Bounded one-clip visual authoring surface."
+        },
+        {
+          "type": "browser_audit",
+          "path": "phase-024-dogfood.json",
+          "note": "Sprite frame events were authored, renamed, dispatched, persisted, and exported; the 3D skinned-animation convention remains."
+        },
+        {
+          "type": "contract",
+          "path": "SPRITE-ANIMATION-EVENT-NOCODE-CONTRACT.md",
+          "note": "Target-specific Sprite event listener boundary and remaining generic-animation exclusions."
+        },
+        {
+          "type": "browser_audit",
+          "path": "phase-025-dogfood.json",
+          "note": "Base flips, semantic directions, sparse variants, mirror reuse, fallback, persistence, and exports were qualified in the real editor."
+        },
+        {
+          "type": "contract",
+          "path": "SPRITE-DIRECTIONAL-ANIMATION-CONTRACT.md",
+          "note": "Bounded direction resolution, XOR flip composition, fallback, playback, persistence, and no-controller boundary."
+        },
+        {
+          "type": "review",
+          "path": "qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md",
+          "note": "AFR-0009 supported evidence and residual boundary; original observations remain unchanged."
+        }
+      ],
+      "phase240Disposition": {
+        "previousStatus": "CONFIRMED",
+        "reviewedAt": "2026-10-16T06:54:00Z",
+        "decision": "Accepted residual scope, not implementation of omitted features",
+        "supportedEvidence": "182 explicit manual/Player animation identity mapping, unavailable choices and183 native crossfades supersede heuristic-only control."
+      },
+      "acceptance": {
+        "intentionallyBounded": true,
+        "reasonableWorkaround": true,
+        "disproportionateCost": true,
+        "documented": true,
+        "rationale": {
+          "intentionallyBounded": "Legacy auto-name mode retained, no universal skeletal visual blend tree or automatic clip rename rebinding.",
+          "reasonableWorkaround": "Use explicit Player/manual animation maps and existing crossfades; unavailable choices remain visible.",
+          "disproportionateCost": "Universal skeletal blend trees/automatic clip migration introduce another controller architecture.",
+          "documented": "Creator Guide docs/generated/index.html#scope-limits; AUTHORING-FRICTION-REGISTER.md AFR-0009 individual rationale; qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md supported evidence and explicit residual."
+        }
+      }
+    },
+    {
+      "id": "AFR-0010",
+      "title": "Sequences are form lists rather than a timeline",
+      "status": "ACCEPTED_LIMITATION",
+      "severity": "HIGH",
+      "frequency": "REPEATED",
+      "primaryRootCause": "INSPECTOR_UI",
+      "contributingCauses": [
+        "VIEWPORT_UI",
+        "WORKFLOW"
+      ],
+      "creatorJourney": "Add Gameplay",
+      "fixLayer": "timeline",
+      "affectedSystems": [
+        "Sequences",
+        "Cameras",
+        "Animation",
+        "Audio Assets"
+      ],
+      "discoveredInPhase": 1,
+      "targetPhase": null,
+      "resolvedInPhase": null,
+      "affectedByPhases": [
+        5,
+        22
+      ],
+      "phase5Impact": "Sequence steps now share canonical Action labels; timeline editing remains absent.",
+      "phase22Impact": "The Sprite Animation vertical frame form was replaced by a visual frame strip with preview and scrubbing, reducing a related animation-authoring symptom. Multi-track Sequence timing, markers, and alignment remain untouched, so AFR-0010 stays CONFIRMED.",
+      "observation": "Sequence authoring provides an ordered action list without tracks, ruler, scrubbing, markers, or spatial-temporal overview.",
+      "currentWorkaround": "Chain camera, delay, and action records and replay from the beginning.",
+      "reproduction": [
+        "Create a sequence with camera, delay, animation, and sound actions.",
+        "Attempt to scrub or align actions on tracks.",
+        "Observe that timing is edited only as ordered form values."
+      ],
+      "evidence": [
+        {
+          "type": "inventory",
+          "path": "CURRENT-AUTHORING-SURFACE-INVENTORY.md",
+          "note": "Sequences graded C."
+        },
+        {
+          "type": "browser_audit",
+          "path": "phase-022-dogfood.json",
+          "note": "Visual Sprite frame authoring reduced form scanning; the broader Sequence surface was intentionally unchanged."
+        },
+        {
+          "type": "contract",
+          "path": "SPRITE-ANIMATION-PREVIEW-CONTRACT.md",
+          "note": "Bounded preview/scrub scope is asset-local, not a Sequence timeline."
+        },
+        {
+          "type": "review",
+          "path": "qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md",
+          "note": "AFR-0010 supported evidence and residual boundary; original observations remain unchanged."
+        }
+      ],
+      "phase240Disposition": {
+        "previousStatus": "CONFIRMED",
+        "reviewedAt": "2026-10-16T06:54:00Z",
+        "decision": "Accepted residual scope, not implementation of omitted features",
+        "supportedEvidence": "185 ordered Sequence editor and186 qualified utility decision compose canonical Sequence/Camera/Freeze/Animation."
+      },
+      "acceptance": {
+        "intentionallyBounded": true,
+        "reasonableWorkaround": true,
+        "disproportionateCost": true,
+        "documented": true,
+        "rationale": {
+          "intentionallyBounded": "No general multitrack timeline or Sequence scrub;181 property-clip scrub is not a substitute claim. Intentional utility bound.",
+          "reasonableWorkaround": "Compose ordered Sequences with Camera/Freeze/Animation; property clip scrub is not multitrack Sequence scrub.",
+          "disproportionateCost": "186 utility gate retained existing composition rather than a second timeline language/clock.",
+          "documented": "Creator Guide docs/generated/index.html#scope-limits; AUTHORING-FRICTION-REGISTER.md AFR-0010 individual rationale; qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md supported evidence and explicit residual."
+        }
+      }
+    },
+    {
+      "id": "AFR-0011",
+      "title": "Navigation graph authoring scales poorly",
+      "status": "ACCEPTED_LIMITATION",
+      "severity": "HIGH",
+      "frequency": "REPEATED",
+      "primaryRootCause": "VIEWPORT_UI",
+      "contributingCauses": [
+        "VALIDATION",
+        "WORKFLOW"
+      ],
+      "creatorJourney": "Build Level",
+      "fixLayer": "viewport/direct manipulation",
+      "affectedSystems": [
+        "Navigation",
+        "Paths",
+        "AI"
+      ],
+      "discoveredInPhase": 1,
+      "targetPhase": null,
+      "resolvedInPhase": null,
+      "observation": "Authors place waypoints and add connections one dropdown edge at a time without automatic reachability checks or a navigation surface.",
+      "currentWorkaround": "Hand-build and visually inspect the waypoint graph.",
+      "reproduction": [
+        "Place several waypoints.",
+        "Connect them through Inspector dropdowns.",
+        "Attempt to visualize directionality and validate reachability."
+      ],
+      "evidence": [
+        {
+          "type": "inventory",
+          "path": "CURRENT-AUTHORING-SURFACE-INVENTORY.md",
+          "note": "Navigation authoring limitations."
+        },
+        {
+          "type": "review",
+          "path": "qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md",
+          "note": "AFR-0011 supported evidence and residual boundary; original observations remain unchanged."
+        }
+      ],
+      "phase240Disposition": {
+        "previousStatus": "CONFIRMED",
+        "reviewedAt": "2026-10-16T06:54:00Z",
+        "decision": "Accepted residual scope, not implementation of omitted features",
+        "supportedEvidence": "126 named reciprocal Connect, retained directed links and actual navigation across tiers supersede one-edge-only authoring."
+      },
+      "acceptance": {
+        "intentionallyBounded": true,
+        "reasonableWorkaround": true,
+        "disproportionateCost": true,
+        "documented": true,
+        "rationale": {
+          "intentionallyBounded": "No automatic navmesh/reachability/avoidance/bulk editing. Direct fallback/disconnected behavior remains documented; no pathfinding expansion justified by stale title.",
+          "reasonableWorkaround": "Author named reciprocal/directed Waypoints and test intended routes; direct/disconnected fallback is explicit.",
+          "disproportionateCost": "Automatic navmesh/reachability/avoidance/bulk generation needs algorithms outside126's navigation scope.",
+          "documented": "Creator Guide docs/generated/index.html#scope-limits; AUTHORING-FRICTION-REGISTER.md AFR-0011 individual rationale; qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md supported evidence and explicit residual."
+        }
+      }
+    },
+    {
+      "id": "AFR-0012",
+      "title": "HUD and menu layout lacks a responsive canvas",
+      "status": "ACCEPTED_LIMITATION",
+      "severity": "HIGH",
+      "frequency": "PERVASIVE",
+      "primaryRootCause": "VIEWPORT_UI",
+      "contributingCauses": [
+        "DATA_MODEL",
+        "WORKFLOW"
+      ],
+      "creatorJourney": "Create UI",
+      "fixLayer": "viewport/direct manipulation",
+      "affectedSystems": [
+        "HUD",
+        "Menus"
+      ],
+      "discoveredInPhase": 1,
+      "targetPhase": null,
+      "resolvedInPhase": null,
+      "affectedByPhases": [
+        81,
+        82,
+        83,
+        84,
+        85
+      ],
+      "phase82Impact": "Native visual HUD canvas, responsive anchors/constraints, actual container fitting, typed live sources and keyboard/mouse Action Prompts now qualify through085 with history and both exports. The broad issue remains CONFIRMED for menu composition;086 Menu pages/stack is still in progress, not yet acceptance.",
+      "observation": "HUD direct manipulation and responsive preview are qualified; menu composition is still constrained by fixed legacy screens. Narrow HUD Inspector label spacing remains non-blocking polish friction.",
+      "currentWorkaround": "Use the qualified HUD canvas and typed fields; legacy Start/Pause screens until Menu page qualification finishes.",
+      "reproduction": [
+        "Create several HUD elements and verify actual Desktop/Tablet/Phone fit.",
+        "Try composing a new menu screen beyond existing Start/Pause fields.",
+        "Retest native page/history/export acceptance before treating086 as complete."
+      ],
+      "evidence": [
+        {
+          "type": "inventory",
+          "path": "CURRENT-AUTHORING-SURFACE-INVENTORY.md",
+          "note": "HUD and Menus limitations."
+        },
+        {
+          "type": "review",
+          "path": "qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md",
+          "note": "AFR-0012 supported evidence and residual boundary; original observations remain unchanged."
+        }
+      ],
+      "phase240Disposition": {
+        "previousStatus": "CONFIRMED",
+        "reviewedAt": "2026-10-16T06:54:00Z",
+        "decision": "Accepted residual scope, not implementation of omitted features",
+        "supportedEvidence": "086 screen stack and239 real Menu/New Game/Continue/Lose flow plus template/HUD authoring supersede fixed-menu-only observation."
+      },
+      "acceptance": {
+        "intentionallyBounded": true,
+        "reasonableWorkaround": true,
+        "disproportionateCost": true,
+        "documented": true,
+        "rationale": {
+          "intentionallyBounded": "No universal responsive free-layout canvas, physical small-device or assistive-tech certification; narrow advanced density remains.",
+          "reasonableWorkaround": "Use existing HUD anchors, screen stack/templates and intended-viewport preview.",
+          "disproportionateCost": "A universal responsive free-layout canvas is a different authoring model; physical small-device certification remains unverified.",
+          "documented": "Creator Guide docs/generated/index.html#scope-limits; AUTHORING-FRICTION-REGISTER.md AFR-0012 individual rationale; qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md supported evidence and explicit residual."
+        }
+      }
+    },
+    {
+      "id": "AFR-0013",
+      "title": "Runtime behavior is not author-traceable",
+      "status": "ACCEPTED_LIMITATION",
+      "severity": "HIGH",
+      "frequency": "REPEATED",
+      "primaryRootCause": "VALIDATION",
+      "contributingCauses": [
+        "DISCOVERABILITY",
+        "RUNTIME"
+      ],
+      "creatorJourney": "Debug",
+      "fixLayer": "validation",
+      "affectedSystems": [
+        "Debugging",
+        "Node Graph",
+        "Behaviors",
+        "AI State Machine"
+      ],
+      "discoveredInPhase": 1,
+      "targetPhase": null,
+      "resolvedInPhase": null,
+      "observation": "Authors cannot see which event fired or why an action or condition failed; failures surface through status text, console messages, or silent no-ops.",
+      "currentWorkaround": "Open browser developer tools and inspect runtime globals or source.",
+      "reproduction": [
+        "Create a behavior or graph with a condition that does not pass.",
+        "Run the game.",
+        "Attempt to inspect event, condition, action, and state execution from the editor."
+      ],
+      "evidence": [
+        {
+          "type": "inventory",
+          "path": "CURRENT-AUTHORING-SURFACE-INVENTORY.md",
+          "note": "Debugging graded C."
+        },
+        {
+          "type": "review",
+          "path": "qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md",
+          "note": "AFR-0013 supported evidence and residual boundary; original observations remain unchanged."
+        }
+      ],
+      "phase240Disposition": {
+        "previousStatus": "CONFIRMED",
+        "reviewedAt": "2026-10-16T06:54:00Z",
+        "decision": "Accepted residual scope, not implementation of omitted features",
+        "supportedEvidence": "215 canonical bounded GraphTrace, owner/node navigation and real repair/history/Save/Prefab/exports provide actual traceability."
+      },
+      "acceptance": {
+        "intentionallyBounded": true,
+        "reasonableWorkaround": true,
+        "disproportionateCost": true,
+        "documented": true,
+        "rationale": {
+          "intentionallyBounded": "No breakpoint/replay/all-AI-reasons/effect-success guarantee. Blanket untraceability stale, bounded diagnostics remain.",
+          "reasonableWorkaround": "Use bounded Graph Trace, live State/AI observation and owner/node navigation for the corresponding execution scope.",
+          "disproportionateCost": "Breakpoints/replay/all-AI-reasons and guaranteed effect success exceed existing diagnostic semantics.",
+          "documented": "Creator Guide docs/generated/index.html#scope-limits; AUTHORING-FRICTION-REGISTER.md AFR-0013 individual rationale; qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md supported evidence and explicit residual."
+        }
+      }
+    },
+    {
+      "id": "AFR-0014",
+      "title": "Project preflight does not cover every incomplete setup",
+      "status": "ACCEPTED_LIMITATION",
+      "severity": "HIGH",
+      "frequency": "REPEATED",
+      "primaryRootCause": "VALIDATION",
+      "contributingCauses": [
+        "REFERENCE_SAFETY",
+        "DATA_MODEL"
+      ],
+      "creatorJourney": "Export",
+      "fixLayer": "validation",
+      "affectedSystems": [
+        "Validation",
+        "Prefabs",
+        "Equipment",
+        "Variables"
+      ],
+      "discoveredInPhase": 1,
+      "targetPhase": null,
+      "resolvedInPhase": null,
+      "affectedByPhases": [
+        3,
+        6
+      ],
+      "phase6Impact": "Schema-backed fields now share concise inline ERROR/WARNING/INFO presentation and required-value validation. Unregistered prefab, socket, equipment, and state-name semantics remain outside preflight, so the issue remains CONFIRMED.",
+      "observation": "Phase 003 added centralized component/reference/asset validation, but unregistered prefab, socket, and state-name contracts can still remain silent until play.",
+      "currentWorkaround": "Use Validate Project for covered data, then manually play unregistered paths.",
+      "reproduction": [
+        "Run Project > Validate Project to confirm covered structured references are checked.",
+        "Create an invalid unregistered name-based setup such as a socket/state relationship.",
+        "Observe that broader semantic preflight remains incomplete."
+      ],
+      "evidence": [
+        {
+          "type": "phase_report",
+          "path": "PHASE-003-REPORT.md",
+          "note": "Bounded validator coverage"
+        },
+        {
+          "type": "contract",
+          "path": "PROJECT-VALIDATION-CONTRACT.md",
+          "note": "Validation scope and exclusions."
+        },
+        {
+          "type": "browser_audit",
+          "path": "tools/audit-phase-006.js",
+          "note": "Required-field issue and invalid-draft recovery were verified inline; broader unregistered semantic checks remain outside scope."
+        },
+        {
+          "type": "review",
+          "path": "qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md",
+          "note": "AFR-0014 supported evidence and residual boundary; original observations remain unchanged."
+        }
+      ],
+      "phase240Disposition": {
+        "previousStatus": "CONFIRMED",
+        "reviewedAt": "2026-10-16T06:54:00Z",
+        "decision": "Accepted residual scope, not implementation of omitted features",
+        "supportedEvidence": "211 Problems and217 immutable shared snapshot preflight/review/Cancel/stale ownership/repair handoff. Current equipment private-fixture refusals confirm real missing-reference blocking."
+      },
+      "acceptance": {
+        "intentionallyBounded": true,
+        "reasonableWorkaround": true,
+        "disproportionateCost": true,
+        "documented": true,
+        "rationale": {
+          "intentionallyBounded": "No gameplay correctness proof or free-text typo oracle; warnings retain data. Do not silence legitimate preflight to improve completion rate.",
+          "reasonableWorkaround": "Use typed Problems/preflight and native Play; preserve warnings/unknown data for deliberate repair.",
+          "disproportionateCost": "Guessing opaque authored intent would mutate compatible data; validator is not a gameplay correctness or typo oracle.",
+          "documented": "Creator Guide docs/generated/index.html#scope-limits; AUTHORING-FRICTION-REGISTER.md AFR-0014 individual rationale; qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md supported evidence and explicit residual."
+        }
+      }
+    },
+    {
+      "id": "AFR-0015",
+      "title": "No guided first-game onboarding",
+      "status": "RESOLVED",
+      "severity": "HIGH",
+      "frequency": "PERVASIVE",
+      "primaryRootCause": "DOCUMENTATION",
+      "contributingCauses": [
+        "DISCOVERABILITY",
+        "WORKFLOW"
+      ],
+      "creatorJourney": "Learn Engine",
+      "fixLayer": "onboarding/documentation",
+      "affectedSystems": [
+        "Onboarding",
+        "Templates"
+      ],
+      "discoveredInPhase": 1,
+      "targetPhase": 9,
+      "resolvedInPhase": 9,
+      "affectedByPhases": [
+        5,
+        9
+      ],
+      "phase5Impact": "The product gained a documented canonical authoring taxonomy, but still had no guided first-run workflow.",
+      "phase9Impact": "A clean-profile creator can choose Blank, Guided First Game, or Examples; the guided path points to actual controls, derives progress from editor state/actions, resumes a saved tutorial project, and ends with a real Playable Export.",
+      "observation": "The missing first-game path was reproduced from a clean local profile, then closed with the verified palette-to-export guided journey.",
+      "currentWorkaround": "None for the bounded first 3D game journey; richer genre templates remain intentionally outside Phase 009.",
+      "reproduction": [
+        "Open the editor with cleared local storage as a first-time creator.",
+        "Attempt to build and export a complete small game using only in-product guidance.",
+        "Observe that no progressive onboarding path coordinates the steps."
+      ],
+      "evidence": [
+        {
+          "type": "inventory",
+          "path": "CURRENT-AUTHORING-SURFACE-INVENTORY.md",
+          "note": "Onboarding reconsidered from D/Poor to A/Good after clean-profile closure."
+        },
+        {
+          "type": "browser_audit",
+          "path": "phase-009-dogfood.json",
+          "note": "Edge clean-profile run verifies first run, Skip, resume, Save/Load, state isolation, Help, and final Playable Export."
+        },
+        {
+          "type": "regression",
+          "path": "tests/phase-009-onboarding.test.js",
+          "note": "Dependency-free regression contract covers the onboarding state and editor/build integration."
+        }
+      ],
+      "resolution": {
+        "rootCauseAddressed": true,
+        "workflowRerun": true,
+        "regressionCovered": true,
+        "workaroundRemoved": true,
+        "gradeReconsidered": true
+      }
+    },
+    {
+      "id": "AFR-0016",
+      "title": "Material changes require reapplying to placed copies",
+      "status": "ACCEPTED_LIMITATION",
+      "severity": "MEDIUM",
+      "frequency": "REPEATED",
+      "primaryRootCause": "DATA_MODEL",
+      "contributingCauses": [
+        "ASSET_PIPELINE",
+        "WORKFLOW"
+      ],
+      "creatorJourney": "Reuse Content",
+      "fixLayer": "asset pipeline",
+      "affectedSystems": [
+        "Materials",
+        "Texture Assets"
+      ],
+      "discoveredInPhase": 1,
+      "targetPhase": null,
+      "resolvedInPhase": null,
+      "observation": "Named Capture/Edit & Preview/Apply assets reuse independent material values with portable texture references. Centralized preview editing now exists; shared instance relationships remain absent by the compatibility-preserving copy contract.",
+      "currentWorkaround": "Edit and Save the named Material, then Apply to each object that should receive the new appearance. Existing placed objects retain independent values until explicitly updated.",
+      "phase172Impact": "Actual engine-rendered isolated preview, atomic saved-asset history and Cancel/Escape disposal are implemented. Real20-cycle context eviction exposed and repaired with one transient reusable canvas; no global App.destroy semantic change. Independent-copy/shared-update friction remains open; no shader/multi-map or cross-browser endurance claim.",
+      "phase171Impact": "Canonical version1 Opus.Material composes existing Entity fields. Named assets survive history, Prefabs, Save/reopen and Editable/Playable exports. Missing references/future descriptors remain recoverable and cannot partially Apply. Grade/status remain partial pending the live-preview editor and later rendering phases.",
+      "reproduction": [
+        "Give multiple objects the same material settings.",
+        "Attempt to edit the shared look once.",
+        "Observe that every object owns separate fields."
+      ],
+      "evidence": [
+        {
+          "type": "inventory",
+          "path": "CURRENT-AUTHORING-SURFACE-INVENTORY.md",
+          "note": "Materials graded C."
+        },
+        {
+          "type": "review",
+          "path": "qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md",
+          "note": "AFR-0016 supported evidence and residual boundary; original observations remain unchanged."
+        }
+      ],
+      "phase240Disposition": {
+        "previousStatus": "CONFIRMED",
+        "reviewedAt": "2026-10-16T06:54:00Z",
+        "decision": "Accepted residual scope, not implementation of omitted features",
+        "supportedEvidence": "171/172 and191 Capture/Edit/Preview/Apply are explicit independent-value copy contracts."
+      },
+      "acceptance": {
+        "intentionallyBounded": true,
+        "reasonableWorkaround": true,
+        "disproportionateCost": true,
+        "documented": true,
+        "rationale": {
+          "intentionallyBounded": "Reapply after library changes is intentional; no live shared-material links. Not automatically a renderer/data-model defect.",
+          "reasonableWorkaround": "Capture/Edit/Preview/Apply Material looks; reapply deliberately, leaving placed copies independent.",
+          "disproportionateCost": "Live material links contradict the existing copy-ownership contract and change saved/render semantics.",
+          "documented": "Creator Guide docs/generated/index.html#scope-limits; AUTHORING-FRICTION-REGISTER.md AFR-0016 individual rationale; qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md supported evidence and explicit residual."
+        }
+      }
+    },
+    {
+      "id": "AFR-0017",
+      "title": "Spatial zones are hidden compositions",
+      "status": "ACCEPTED_LIMITATION",
+      "severity": "MEDIUM",
+      "frequency": "REPEATED",
+      "primaryRootCause": "DISCOVERABILITY",
+      "contributingCauses": [
+        "WORKFLOW",
+        "INSPECTOR_UI"
+      ],
+      "creatorJourney": "Add Gameplay",
+      "fixLayer": "preset",
+      "affectedSystems": [
+        "Audio Zones",
+        "Fog Zones",
+        "Trigger Volumes",
+        "Behaviors"
+      ],
+      "discoveredInPhase": 1,
+      "targetPhase": null,
+      "resolvedInPhase": null,
+      "affectedByPhases": [
+        8
+      ],
+      "phase8Impact": "Phase 008 establishes the registry and browser needed to package spatial recipes, but Audio Zone and Fog Zone were intentionally not cataloged without completing a dedicated live capability audit. The finding remains unchanged rather than inflating the initial preset count.",
+      "observation": "Audio and fog zones are expressed as actions on generic triggers, so the Palette and Inspector do not present them as recognizable authored objects.",
+      "currentWorkaround": "Place Trigger Volume, then know which zone action and fields to add.",
+      "reproduction": [
+        "Search the palette for Audio Zone or Fog Zone.",
+        "Create one using Trigger Volume and the appropriate action.",
+        "Observe that the composition depends on prior knowledge."
+      ],
+      "evidence": [
+        {
+          "type": "inventory",
+          "path": "CURRENT-AUTHORING-SURFACE-INVENTORY.md",
+          "note": "Audio Zones and Fog Zones rows."
+        },
+        {
+          "type": "phase_report",
+          "path": "PHASE-008-REPORT.md",
+          "note": "Initial catalog exclusions and bounded-capability rationale."
+        },
+        {
+          "type": "review",
+          "path": "qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md",
+          "note": "AFR-0017 supported evidence and residual boundary; original observations remain unchanged."
+        }
+      ],
+      "phase240Disposition": {
+        "previousStatus": "CONFIRMED",
+        "reviewedAt": "2026-10-16T06:54:00Z",
+        "decision": "Accepted residual scope, not implementation of omitted features",
+        "supportedEvidence": "168 Fog/Audio region authoring/runtime overlaps and current native044226775Z Add Trigger/visible Environment zone/Fog Apply/exact history show discoverable composition."
+      },
+      "acceptance": {
+        "intentionallyBounded": true,
+        "reasonableWorkaround": true,
+        "disproportionateCost": true,
+        "documented": true,
+        "rationale": {
+          "intentionallyBounded": "One managed effect per legacy Trigger; no full weather authoring or physical listening claim. Old hidden-only description superseded for supported paths.",
+          "reasonableWorkaround": "Use visible Fog/Audio Environment zone setup; distinct effects can use separate colocated Trigger Objects/grouped Prefabs.",
+          "disproportionateCost": "A multi-effect weather stack adds new overlap/ownership rules beyond the qualified one-effect Trigger.",
+          "documented": "Creator Guide docs/generated/index.html#scope-limits; AUTHORING-FRICTION-REGISTER.md AFR-0017 individual rationale; qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md supported evidence and explicit residual."
+        }
+      }
+    },
+    {
+      "id": "AFR-0018",
+      "title": "Large-scene hierarchy operations are minimal",
+      "status": "ACCEPTED_LIMITATION",
+      "severity": "MEDIUM",
+      "frequency": "REPEATED",
+      "primaryRootCause": "VIEWPORT_UI",
+      "contributingCauses": [
+        "WORKFLOW",
+        "DISCOVERABILITY"
+      ],
+      "creatorJourney": "Build Level",
+      "fixLayer": "viewport/direct manipulation",
+      "affectedSystems": [
+        "Hierarchy",
+        "Scene/Object Creation"
+      ],
+      "discoveredInPhase": 1,
+      "targetPhase": null,
+      "resolvedInPhase": null,
+      "observation": "The scene tree lacks mature bulk operations, filtering, locking, visibility controls, and clear generated-object ownership.",
+      "currentWorkaround": "Operate one selection at a time and use names and groups manually.",
+      "reproduction": [
+        "Open a level with many objects.",
+        "Attempt to filter, lock, hide, bulk reparent, and distinguish generated ownership in the scene tree."
+      ],
+      "evidence": [
+        {
+          "type": "inventory",
+          "path": "CURRENT-AUTHORING-SURFACE-INVENTORY.md",
+          "note": "Hierarchy graded B with scalability limits."
+        },
+        {
+          "type": "review",
+          "path": "qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md",
+          "note": "AFR-0018 supported evidence and residual boundary; original observations remain unchanged."
+        }
+      ],
+      "phase240Disposition": {
+        "previousStatus": "CONFIRMED",
+        "reviewedAt": "2026-10-16T06:54:00Z",
+        "decision": "Accepted residual scope, not implementation of omitted features",
+        "supportedEvidence": "Current Scene filter/flattened matches/visibility/collapse and229 actual521-object collections/history/Prefab/persistence/retained future metadata."
+      },
+      "acceptance": {
+        "intentionallyBounded": true,
+        "reasonableWorkaround": true,
+        "disproportionateCost": true,
+        "documented": true,
+        "rationale": {
+          "intentionallyBounded": "No universal scene locking/bulk reparent/generated ownership/100k-object performance guarantee. Bounded scale tooling.",
+          "reasonableWorkaround": "Use Scene filters/flattened matches/visibility/collapse, Collections and reusable Prefabs/Chunks at demonstrated scale.",
+          "disproportionateCost": "General locking/bulk reparent/generated ownership/100k-object guarantees require a broader scene/performance contract.",
+          "documented": "Creator Guide docs/generated/index.html#scope-limits; AUTHORING-FRICTION-REGISTER.md AFR-0018 individual rationale; qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md supported evidence and explicit residual."
+        }
+      }
+    },
+    {
+      "id": "AFR-0019",
+      "title": "Project save and game save have an unclear mental model",
+      "status": "RESOLVED",
+      "severity": "MEDIUM",
+      "frequency": "OCCASIONAL",
+      "primaryRootCause": "DOCUMENTATION",
+      "contributingCauses": [
+        "DATA_MODEL",
+        "DISCOVERABILITY"
+      ],
+      "creatorJourney": "Save",
+      "fixLayer": "onboarding/documentation",
+      "affectedSystems": [
+        "Save Game",
+        "Export"
+      ],
+      "discoveredInPhase": 1,
+      "targetPhase": null,
+      "resolvedInPhase": 240,
+      "observation": "Save Project, project JSON export, and runtime Save Game use different stores and semantics without one clear product explanation.",
+      "currentWorkaround": "Learn the distinction through experimentation and action labels.",
+      "reproduction": [
+        "Use Save Project, export project JSON, and run a Save Game action.",
+        "Reload the editor and exported game.",
+        "Compare what each mechanism persisted and where."
+      ],
+      "evidence": [
+        {
+          "type": "inventory",
+          "path": "CURRENT-AUTHORING-SURFACE-INVENTORY.md",
+          "note": "Save Game and Export persistence paths."
+        },
+        {
+          "type": "qualification",
+          "path": "qualification/phase-240/CHECKPOINT-20261016T0518.md",
+          "note": "Canonical generated persistence guide repair, native discoverability and actual store boundary evidence."
+        },
+        {
+          "type": "browser_audit",
+          "path": "qualification/phase-240/save-guide-20261016T063651842Z/results.json",
+          "note": "Current source and built package offline anchor/three-store table/shared runtime-origin warning/640px+360px fit/errors[]external[] closed."
+        },
+        {
+          "type": "browser_audit",
+          "path": "qualification/phase-239/gauntlet-flow-20261016T063116205Z/proof.json",
+          "note": "Current37 native observations: exact authoring Save/browser reload/HomeOpen plus actual offline Editable/Playable Autosave/NewGame/Continue/Win/Lose."
+        }
+      ],
+      "phase240Impact": "The canonical generated Creator Guide now explicitly separates browser-local Save Project, portable Project JSON/Editable transfers, and runtime Save Game/Load Game. Native source/package/Help/offline Editable discovery and narrow layout qualified; current integrated three-tier Project Save/reopen and Autosave/NewGame/Continue round-trips pass. Shared-origin runtime slots, browser profile/storage/file-protocol limits and backups are explicit, not silently migrated or isolated.",
+      "resolution": {
+        "rootCauseAddressed": true,
+        "workflowRerun": true,
+        "regressionCovered": true,
+        "workaroundRemoved": true,
+        "gradeReconsidered": true,
+        "note": "Resolved explanation-absence only. Actual guide063651842Z on6167 and integrated flow063116205Z support the three-store mental model; tests/phase-237-docs.test.js (canonical storage seams and generated guide checks) plus full regression govern coverage. Save Game grade C retained after review because shared-origin slots/storage bounds remain; this documentation repair does not add cloud sync or clone progress isolation."
+      }
+    },
+    {
+      "id": "AFR-0020",
+      "title": "Asset import diagnostics are too shallow",
+      "status": "ACCEPTED_LIMITATION",
+      "severity": "MEDIUM",
+      "frequency": "OCCASIONAL",
+      "primaryRootCause": "ASSET_PIPELINE",
+      "contributingCauses": [
+        "VALIDATION",
+        "COMPATIBILITY"
+      ],
+      "creatorJourney": "Import Asset",
+      "fixLayer": "asset pipeline",
+      "affectedSystems": [
+        "Import",
+        "Mesh Assets",
+        "Texture Assets",
+        "Audio Assets"
+      ],
+      "discoveredInPhase": 1,
+      "targetPhase": null,
+      "resolvedInPhase": null,
+      "observation": "Importers provide useful fallbacks but limited structured diagnostics, normalization options, and compatibility preview.",
+      "currentWorkaround": "Retry a differently exported asset and inspect the browser console.",
+      "reproduction": [
+        "Import a model, image, or audio file that is unsupported or malformed.",
+        "Inspect the creator-facing result.",
+        "Observe that the response does not provide a structured pipeline report with actionable normalization guidance."
+      ],
+      "evidence": [
+        {
+          "type": "source",
+          "path": "editor/src/01-editor.js",
+          "note": "Import handlers report compact status errors."
+        },
+        {
+          "type": "browser_audit",
+          "path": "tools/audit-phase-004.js",
+          "note": "Workflow C exercises the current successful import path."
+        },
+        {
+          "type": "review",
+          "path": "qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md",
+          "note": "AFR-0020 supported evidence and residual boundary; original observations remain unchanged."
+        },
+        {
+          "type": "browser_audit",
+          "path": "qualification/phase-240/import-diagnostics-20261016T065025427Z/results.json",
+          "note": "Current9 native observations: mixed staging/Cancel/one UndoRedo/malformed refusals/recovery/independent Model+Prefab/SaveReload/actual reviewed file tiers; errors[]external[]/resources closed. Universal normalization/codec/security not claimed."
+        }
+      ],
+      "phase240Disposition": {
+        "previousStatus": "CONFIRMED",
+        "reviewedAt": "2026-10-16T06:54:00Z",
+        "decision": "Accepted residual scope, not implementation of omitted features",
+        "supportedEvidence": "192–196 FINAL-REVIEW evidence: staged mixed import/Model/image/Audio reports, supported limitations, explicit approval/Cancel/Play-stale guards/full history/reuse/Prefab/Save/export/dependency viewer. Current changed geometry/encoded Audio native checks add actual fidelity evidence."
+      },
+      "acceptance": {
+        "intentionallyBounded": true,
+        "reasonableWorkaround": true,
+        "disproportionateCost": true,
+        "documented": true,
+        "rationale": {
+          "intentionallyBounded": "No universal codec/PBR/morph/external-folder/transcoder/decompression-security guarantee; Audio memory cap is after decode. Broad console-only/shallow diagnostics stale for supported formats; normalization expansion not mandatory.",
+          "reasonableWorkaround": "Use staged reports/approval for supported embedded models/images/browser Audio; Cancel or re-export unsupported content, retaining original files.",
+          "disproportionateCost": "Universal codec/PBR/morph/external-folder/transcoding/predecoder security support adds major decoder and asset semantics.",
+          "documented": "Creator Guide docs/generated/index.html#scope-limits; AUTHORING-FRICTION-REGISTER.md AFR-0020 individual rationale; qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md supported evidence and explicit residual."
+        }
+      }
+    },
+    {
+      "id": "AFR-0021",
+      "title": "Dogfood A repeats dense capability discovery",
+      "status": "DUPLICATE",
+      "severity": "HIGH",
+      "frequency": "REPEATED",
+      "primaryRootCause": "DISCOVERABILITY",
+      "contributingCauses": [
+        "INSPECTOR_UI"
+      ],
+      "creatorJourney": "Add Gameplay",
+      "fixLayer": "Inspector",
+      "affectedSystems": [
+        "Behaviors",
+        "Scene/Object Creation"
+      ],
+      "discoveredInPhase": 4,
+      "targetPhase": 5,
+      "resolvedInPhase": null,
+      "duplicateOf": "AFR-0003",
+      "affectedByPhases": [
+        5
+      ],
+      "phase5Impact": "Behavior Event and Action wording is consistent; finding the Behaviors entry point is still required.",
+      "observation": "Creating a cube is direct, but adding gameplay still requires locating the Behaviors section in the long object Inspector.",
+      "currentWorkaround": "Know that Behaviors is the capability-entry surface and scroll to it.",
+      "reproduction": [
+        "Drag Cube from the palette into the viewport.",
+        "Find Behaviors in Inspector.",
+        "Add an On Start Show Message behavior."
+      ],
+      "evidence": [
+        {
+          "type": "browser_audit",
+          "path": "tools/audit-phase-004.js",
+          "note": "Workflow A."
+        }
+      ]
+    },
+    {
+      "id": "AFR-0022",
+      "title": "Dogfood B repeats dense behavior-entry discovery",
+      "status": "DUPLICATE",
+      "severity": "HIGH",
+      "frequency": "REPEATED",
+      "primaryRootCause": "DISCOVERABILITY",
+      "contributingCauses": [
+        "INSPECTOR_UI"
+      ],
+      "creatorJourney": "Add Gameplay",
+      "fixLayer": "Inspector",
+      "affectedSystems": [
+        "Behaviors",
+        "Validation"
+      ],
+      "discoveredInPhase": 4,
+      "targetPhase": 5,
+      "resolvedInPhase": null,
+      "duplicateOf": "AFR-0003",
+      "affectedByPhases": [
+        5
+      ],
+      "phase5Impact": "The same Action label appears in Behavior, Graph, and Sequence; capability discovery remains unresolved.",
+      "observation": "The cross-object picker is safe after Phase 003, but reaching it still depends on finding the correct behavior and field inside the Inspector.",
+      "currentWorkaround": "Know the action vocabulary and locate its Inspector section.",
+      "reproduction": [
+        "Select the newly created object.",
+        "Choose Move Object in Behaviors.",
+        "Pick another object from the target selector and validate the project."
+      ],
+      "evidence": [
+        {
+          "type": "browser_audit",
+          "path": "tools/audit-phase-004.js",
+          "note": "Workflow B; picker and validation succeed."
+        }
+      ]
+    },
+    {
+  "id": "AFR-0023",
+      "title": "Imported textures cannot be applied from the asset library",
+      "status": "RESOLVED",
+      "severity": "LOW",
+      "frequency": "REPEATED",
+      "primaryRootCause": "WORKFLOW",
+      "contributingCauses": [
+        "INSPECTOR_UI",
+        "ASSET_PIPELINE"
+      ],
+      "creatorJourney": "Import Asset",
+      "fixLayer": "asset pipeline",
+      "affectedSystems": [
+        "Texture Assets",
+        "Materials",
+        "Import"
+      ],
+      "discoveredInPhase": 4,
+      "targetPhase": null,
+      "resolvedInPhase": 240,
+      "observation": "A successful texture import creates a library row, but that row has Rename and Delete only; applying it requires returning to the selected object's Material controls.",
+      "currentWorkaround": "None for assigning an existing Texture to one selected Mesh/Billboard: use Assign to selected Mesh in the Texture library. Sprite images remain owned by Sprite Assets; no bulk assignment or new texture channels are claimed.",
+  "resolution": {
+    "rootCauseAddressed": true,
+    "workflowRerun": true,
+    "regressionCovered": true,
+    "workaroundRemoved": true,
+    "gradeReconsidered": true
+  },
+      "phase240Impact": "Native baseline042321470Z found zero library assignment routes. The library now delegates to existing applyTextureAssetToItem with one complete Undo, Play/selection/missing/decode/no-op guards and refreshed usage. Native source042631582Z and built-package043016421Z prove assignment/whole UndoRedo/independent textured Prefab/Save-reload-HomeOpen/actual reviewed file Editable+Playable exact tier data/GPU texture resolution/native movement. Scoped layout was repaired after root visual review. No material/storage/render format change; existing Texture Assets grade is reconsidered without inventing a broad A or new capability.",
+      "phase240Evidence": ["qualification/phase-240/texture-workflow-20261016T042321470Z/results.json", "qualification/phase-240/texture-workflow-20261016T042631582Z/results.json", "qualification/phase-240/texture-workflow-20261016T043016421Z/results.json", "tests/phase-240-texture-library.test.js", "qualification/real-demo-collision/regression-20261016T042653563Z/results.json"],
+      "reproduction": [
+        "Import an image from Assets.",
+        "Inspect the new texture row actions.",
+        "Return to the object Inspector and assign the texture through Material."
+      ],
+      "evidence": [
+        {
+          "type": "browser_audit",
+          "path": "tools/audit-phase-004.js",
+          "note": "Workflow C imports and applies phase-004-proof.png."
+        },
+        {
+          "type": "source",
+          "path": "editor/src/01-editor.js",
+          "note": "Texture library rows expose Rename/Delete; assignment is f-texture in Inspector."
+        }
+      ]
+    },
+    {
+      "id": "AFR-0024",
+      "title": "Sequential Sprite Inspector edits could target a replaced component record",
+      "status": "RESOLVED",
+      "severity": "HIGH",
+      "frequency": "REPEATED",
+      "primaryRootCause": "DATA_MODEL",
+      "contributingCauses": [
+        "INSPECTOR_UI",
+        "VIEWPORT_UI"
+      ],
+      "creatorJourney": "Create Object",
+      "fixLayer": "component",
+      "affectedSystems": [
+        "Sprites / 2D",
+        "Transform",
+        "Prefabs"
+      ],
+      "discoveredInPhase": 20,
+      "targetPhase": 20,
+      "resolvedInPhase": 20,
+      "affectedByPhases": [
+        20
+      ],
+      "observation": "In a fresh project, editing multiple Sprite fields and then applying a pivot or direct viewport manipulation could preserve the first edit while silently reverting later edits because mounted controls referenced a component object replaced during synchronization.",
+      "currentWorkaround": "None. Synchronization now preserves an existing live canonical component object and only invokes normalization when the component is absent; convenience actions also reacquire the selected component at click time.",
+      "reproduction": [
+        "Select one Sprite and edit Width, Height, Opacity, Tint, and Order in Layer sequentially.",
+        "Apply a pivot preset, resize in the viewport, and drag the pivot handle.",
+        "Before the fix, observe later Inspector values revert; after the fix, all values remain together."
+      ],
+      "evidence": [
+        {
+          "type": "source",
+          "path": "editor/src/01-editor.js",
+          "note": "syncSpriteRenderer preserves existing component identity and click callbacks reacquire live state."
+        },
+        {
+          "type": "test",
+          "path": "tests/phase-020-sprite-foundation.test.js",
+          "note": "Regression guards the live-component synchronization path."
+        },
+        {
+          "type": "browser_audit",
+          "path": "phase-020-dogfood.json",
+          "note": "Clean-room reproduction and post-fix multi-field/direct-manipulation rerun."
+        }
+      ],
+      "resolution": {
+        "rootCauseAddressed": true,
+        "workflowRerun": true,
+        "regressionCovered": true,
+        "workaroundRemoved": true,
+        "gradeReconsidered": true
+      }
+    },
+    {
+      "id": "AFR-0025",
+      "title": "Trigger Collider 2D detection remains bounded without filtering and multiple volumes",
+      "status": "ACCEPTED_LIMITATION",
+      "severity": "MEDIUM",
+      "frequency": "REPEATED",
+      "primaryRootCause": "MISSING_CAPABILITY",
+      "contributingCauses": [
+        "DOCUMENTATION",
+        "DATA_MODEL"
+      ],
+      "creatorJourney": "Add Gameplay",
+      "fixLayer": "component",
+      "affectedSystems": [
+        "Trigger Volumes",
+        "Colliders",
+        "Sprites / 2D",
+        "Behaviors"
+      ],
+      "discoveredInPhase": 42,
+      "targetPhase": 49,
+      "resolvedInPhase": null,
+      "affectedByPhases": [
+        42,
+        43,
+        48,
+        49
+      ],
+      "observation": "Trigger Collider 2D is separate detection geometry and deliberately does not block. Trigger-only objects do not target each other, v1 allows one Trigger per object, Stay fires every simulation tick, Circle uses the larger XY scale, invisible regions require selection, and all eligible ordinary colliders participate because Layers/Masks are deferred. Phase 048 provides scoped moving-platform carry. Phase 049 provides named geometry-owned mutual filters; remaining multiplicity and Dynamic boundaries are unchanged.",
+      "currentWorkaround": "Use ordinary Collider 2D components on targets, attach Behaviors to canonical Trigger 2D events, keep Stay actions bounded, and structure scenes conservatively until filtering lands. Use selected gizmos to author invisible regions. Static/Kinematic Body 2D can now supply physical blocking independently of Trigger detection. Use named Collision Layers and geometry-owned Masks instead of scripts to select eligible 2D pairs.",
+      "reproduction": [
+        "Add Trigger Collider 2D and an ordinary Collider 2D to separate objects.",
+        "Enter Play and observe detection without blocking, including after Kinematic Body 2D motion.",
+        "Search for Layers/Masks, Trigger-vs-Trigger targeting, multiple Trigger arrays, or a visual event graph and confirm those are intentionally absent."
+      ],
+      "evidence": [
+        {
+          "type": "phase_report",
+          "path": "PHASE-042-REPORT.md",
+          "note": "Qualified detection lifecycle and explicit no-response scope."
+        },
+        {
+          "type": "contract",
+          "path": "TRIGGER-COLLIDER-2D-CONTRACT.md",
+          "note": "Ownership, geometry, and response boundary."
+        },
+        {
+          "type": "seam",
+          "path": "PHASE-043-BODY-TRIGGER-INTERACTION-SEAM.md",
+          "note": "Implemented Body-before-Trigger update order."
+        },
+        {
+          "type": "seam",
+          "path": "PHASE-049-COLLISION-FILTERING-SEAM.md",
+          "note": "Future filtering boundary."
+        },
+        {
+          "type": "contract",
+          "path": "COLLISION-LAYERS-MASKS-CONTRACT.md",
+          "note": "Implemented mutual filtering; broader limitations remain open."
+        },
+        {
+          "type": "review",
+          "path": "qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md",
+          "note": "AFR-0025 supported evidence and residual boundary; original observations remain unchanged."
+        }
+      ],
+      "phase240Disposition": {
+        "previousStatus": "CONFIRMED",
+        "reviewedAt": "2026-10-16T06:54:00Z",
+        "decision": "Accepted residual scope, not implementation of omitted features",
+        "supportedEvidence": "049 actual mutual Layers/Masks filters supersede deferred-filtering clause; later controllers compose canonical collision."
+      },
+      "acceptance": {
+        "intentionallyBounded": true,
+        "reasonableWorkaround": true,
+        "disproportionateCost": true,
+        "documented": true,
+        "rationale": {
+          "intentionallyBounded": "One Trigger/object, ordinary Collider targets, tick Stay and larger-XY-scale Circle remain bounded semantics. No multiple-volume schema/general physics claim.",
+          "reasonableWorkaround": "Use mutual Layers/Masks and eligible Colliders; multiple volumes can be separate Trigger Objects/grouped Prefabs.",
+          "disproportionateCost": "Multiple sensor shapes on one owner and general response alter collision identities/schema beyond049 filtering.",
+          "documented": "Creator Guide docs/generated/index.html#scope-limits; AUTHORING-FRICTION-REGISTER.md AFR-0025 individual rationale; qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md supported evidence and explicit residual."
+        }
+      }
+    },
+    {
+      "id": "AFR-0026",
+      "title": "Body 2D v1 lacks Dynamic motion and richer contact authoring",
+      "status": "ACCEPTED_LIMITATION",
+      "severity": "MEDIUM",
+      "frequency": "REPEATED",
+      "primaryRootCause": "MISSING_CAPABILITY",
+      "contributingCauses": [
+        "DOCUMENTATION",
+        "DATA_MODEL"
+      ],
+      "creatorJourney": "Add Gameplay",
+      "fixLayer": "component",
+      "affectedSystems": [
+        "Colliders",
+        "Sprites / 2D",
+        "Behaviors"
+      ],
+      "discoveredInPhase": 43,
+      "targetPhase": null,
+      "resolvedInPhase": null,
+      "affectedByPhases": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "observation": "Body 2D deliberately exposes only Static and Kinematic roles. Phase 045 adds scoped Character Collision 2D Tilemap consumption and contact state, Phase 046 adds Character-only one-way support surfaces, and Phase 047 adds bounded Character slope and step handling plus support identity. None adds a Dynamic Body, gravity, forces, mass, friction, restitution, collision filtering, a full input/jump/drop-through controller, moving-platform carry, or general collision events. Phase 044's qualification-only gravity model was stable but its Dynamic label would mislead without broader movable-body response. Extreme high-speed/grazing sweeps can conservatively hit the 48-iteration cap; Phase 044 rest tests had no recurring cap. Phase 048 provides scoped moving-platform carry. Phase 049 provides named geometry-owned mutual filters; remaining multiplicity and Dynamic boundaries are unchanged.",
+      "currentWorkaround": "Use Static Bodies for obstacles and velocity-driven Kinematic Bodies for moving objects. Add Character Collision 2D for scoped Static/Tile blocking and wall contacts, and a separate Trigger Collider 2D for detection. Author movement separately; do not promise Dynamic stacking or moving-platform carry. Use named Collision Layers and geometry-owned Masks instead of scripts to select eligible 2D pairs.",
+      "reproduction": [
+        "Add a Body 2D and inspect its Static/Kinematic type selector and velocity fields.",
+        "Move an ordinary Kinematic Body into a Static Body, an ordinary Collider without Static Body, and another Kinematic Body; only the Static Body blocks it.",
+        "Add Character Collision 2D and a Tilemap floor, then observe scoped Tile blocking and contact state while Dynamic and general collision events remain absent."
+      ],
+      "evidence": [
+        {
+          "type": "contract",
+          "path": "BODY-2D-STATIC-KINEMATIC-CONTRACT.md",
+          "note": "Explicit v1 role and authoring scope."
+        },
+        {
+          "type": "test",
+          "path": "tests/phase-043-static-kinematic-bodies.test.js",
+          "note": "Static response and Kinematic pass-through cases."
+        },
+        {
+          "type": "fuzz",
+          "path": "qualification/phase-043/kinematic-fuzz.json",
+          "note": "Legal-separation and anti-tunneling coverage."
+        },
+        {
+          "type": "utility_gate",
+          "path": "PHASE-044-DYNAMIC-BODY-UTILITY-GATE.md",
+          "note": "Dynamic product promotion rejected after prototype stability, creator-value, and expectation review."
+        },
+        {
+          "type": "fuzz",
+          "path": "phase-044-dynamic-fuzz.json",
+          "note": "Capped sweep and rest-contact evidence."
+        },
+        {
+          "type": "contract",
+          "path": "COLLISION-LAYERS-MASKS-CONTRACT.md",
+          "note": "Implemented mutual filtering; broader limitations remain open."
+        },
+        {
+          "type": "review",
+          "path": "qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md",
+          "note": "AFR-0026 supported evidence and residual boundary; original observations remain unchanged."
+        }
+      ],
+      "phase240Disposition": {
+        "previousStatus": "CONFIRMED",
+        "reviewedAt": "2026-10-16T06:54:00Z",
+        "decision": "Accepted residual scope, not implementation of omitted features",
+        "supportedEvidence": "044 utility gate explicitly NOT_JUSTIFIED for Dynamic promotion;048 carry/049 filtering/later Character controllers supersede respective absent clauses."
+      },
+      "acceptance": {
+        "intentionallyBounded": true,
+        "reasonableWorkaround": true,
+        "disproportionateCost": true,
+        "documented": true,
+        "rationale": {
+          "intentionallyBounded": "Static/Kinematic/Character is not mass/forces/stacking/general rigidbody physics. Keep explicit boundary; don't promote prototype tests to production capability.",
+          "reasonableWorkaround": "Use Static/Kinematic/Character movement, carry, filtering, clips and Triggers; mass/forces/stacking are not equivalent supported games.",
+          "disproportionateCost": "044 explicitly declined canonical Dynamic promotion; a mass-based solver would bypass that utility gate.",
+          "documented": "Creator Guide docs/generated/index.html#scope-limits; AUTHORING-FRICTION-REGISTER.md AFR-0026 individual rationale; qualification/phase-240/FRICTION-DISPOSITIONS-20261016T0618.md supported evidence and explicit residual."
+        }
+      }
+    }
+  ]
+}

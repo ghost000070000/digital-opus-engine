@@ -1,0 +1,25 @@
+{
+  "id": "survival-arena-3",
+  "sourceSHA256": "d7986d491a3a6ea879d84c4201d700c21eba52ac579f2edb07f36ce40dfe71dc",
+  "errors": [],
+  "capturedAt": "2026-09-11T17:02:16.232Z",
+  "sha256": "86a2d008f637e9f5f0d02ff5ce065acac9920a50c183af1121544bfce930cf89",
+  "state": {
+    "title": "Survival Arena 3",
+    "sim": 1.4182999999523154,
+    "ended": false,
+    "text": "Evade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 1.4s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "controller": "hovercraft",
+    "bodyVisible": false,
+    "visualVisible": true,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 45
+  },
+  "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nMouse Sensitivity\nInvert Mouse Y\nQuality: High\n⛶ Fullscreen\nEvade the hunter drones for 20 seconds.\nHealth 100 / 100\nSurvived: 2.1s / 20\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+  "passed": true
+}

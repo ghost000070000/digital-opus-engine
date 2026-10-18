@@ -1,0 +1,7 @@
+# Tile one-way collision contract (Phase 046)
+
+Tileset schema advances v4→v5. Each Tile collision record has `oneWay: false` by default; historical Tiles migrate false. Full Cell and Custom Rectangle may set true. None canonicalizes false. A nonboolean value is reported by validation but valid collision geometry safely resolves as solid, never an unexpected hole.
+
+The Tile Palette exposes an enabled-only-for-collision `One-Way Platform` checkbox, concise Character semantics, an explicit `↑ One-Way` top indicator, and a collision badge. The selected Tilemap collision overlay draws a distinct top edge and arrow. Layer `collisionEnabled` gates both solid and one-way; hidden/locked Layers can still support. Runtime reads the resolved Tile ID, so Terrain/Auto-Tile output inherits its current collision mode and flag. Custom Rectangle top follows `rect.maxY`; Full Cell follows normalized `maxY = 1`.
+
+The Phase 045 sparse query still produces local candidate cells and stable synthetic IDs, with no per-cell objects. A valid one-way Tile needs a transformed local-horizontal top edge approximately world-horizontal. Materially rotated Tilemaps warn where authoring validation can inspect their world basis; collision-bearing Tiles then conservatively fall back to solid. Portable bundles and both export tiers retain the evolved Tileset metadata. Chunk cells continue to carry semantic Tile identities, not a separate physics flag.

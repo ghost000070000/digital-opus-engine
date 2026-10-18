@@ -1,0 +1,9251 @@
+{
+  "generatedAt": "2026-09-20T22:11:56.963Z",
+  "requestedMinutes": 30,
+  "actualMinutes": 30.290966666666666,
+  "ids": [
+    "arsenal-run",
+    "power-grid",
+    "signal-relay",
+    "silent-sector",
+    "relic-frontier"
+  ],
+  "cycles": 486,
+  "errors": [],
+  "results": [
+    {
+      "cycle": 1,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.2969848480983498,
+          "y": 0.55,
+          "z": 11.713544217359878
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 2,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -13.8568409780249,
+          "y": 0.55,
+          "z": -0.800075759482111
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 3,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.85030302513805,
+          "y": 0.55,
+          "z": -1.992800875350771
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 4,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 5,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 6,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": 9.824312243032119e-17,
+          "y": 0.55,
+          "z": 12.197784026392576
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 7,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.338780950986438,
+          "y": 0.55,
+          "z": -0.644482399611296
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 8,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.924721247924335,
+          "y": 0.55,
+          "z": -1.9992770483288396
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 9,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 10,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 11,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.39016121701555073,
+          "y": 0.55,
+          "z": 11.324510810280804
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 12,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.284538267582812,
+          "y": 0.55,
+          "z": -0.615976503549543
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 13,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.001532005779538,
+          "y": 0.55,
+          "z": -1.9446148344383813
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 14,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 15,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 16,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7140973630268448,
+          "y": 0.55,
+          "z": 10.230350173837332
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 17,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.221237147768319,
+          "y": 0.55,
+          "z": -0.6231307522234901
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 18,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.002634700088397,
+          "y": 0.55,
+          "z": -1.9552051069550078
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 19,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 20,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 21,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 1.1491086000910045,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.29674634470686656,
+          "y": 0.55,
+          "z": 10.76265957520361
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 22,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 1.1518517999467373,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -15.480295864326957,
+          "y": 0.55,
+          "z": -0.655533444742213
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 23,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.816984161785353,
+          "y": 0.55,
+          "z": -0.6918842179866391
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 24,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 25,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 26,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7679439165053332,
+          "y": 0.55,
+          "z": 10.061771902913282
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 27,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -13.64957250238943,
+          "y": 0.55,
+          "z": -0.9730866924242914
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 28,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.91841629021531,
+          "y": 0.55,
+          "z": -1.984350116488079
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 29,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 30,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 31,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -1.1013062802752664,
+          "y": 0.55,
+          "z": 11.381850023936552
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 32,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -15.068302456167155,
+          "y": 0.55,
+          "z": -0.5470668712842985
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 33,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.927419669309113,
+          "y": 0.55,
+          "z": -2.0137981919673305
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 34,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 35,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 36,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.48844146881550077,
+          "y": 0.55,
+          "z": 11.065470276989416
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 37,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 1.25,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -16.066666666666666,
+          "y": 0.65,
+          "z": 5.71501839602098e-17
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 38,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.003264014931688,
+          "y": 0.55,
+          "z": -1.887660211957554
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 39,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 40,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 41,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.669365334216685,
+          "y": 0.55,
+          "z": 10.04607697451957
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 42,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -15.023368077705387,
+          "y": 0.55,
+          "z": -0.11144596619187416
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 43,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.901830808695053,
+          "y": 0.55,
+          "z": -1.972145218964741
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 44,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 45,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 46,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7630877695081111,
+          "y": 0.55,
+          "z": 9.951983519280489
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 47,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.311938365866698,
+          "y": 0.55,
+          "z": -0.636602333975068
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 48,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.962428816751416,
+          "y": 0.55,
+          "z": -2.046706157371994
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 49,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 50,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 51,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.8146647908827847,
+          "y": 0.55,
+          "z": 10.04400674575667
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 52,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.244112633753224,
+          "y": 0.55,
+          "z": -0.6692168086332596
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 53,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.944635945507695,
+          "y": 0.55,
+          "z": -1.9174194604853405
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 54,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 55,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 56,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7386063410823482,
+          "y": 0.55,
+          "z": 9.939298329018893
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 57,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.355651681839998,
+          "y": 0.55,
+          "z": -0.6058221175009184
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 58,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.676255572897343,
+          "y": 0.55,
+          "z": -1.3495904148002906
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 59,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 60,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 61,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7097399470896335,
+          "y": 0.55,
+          "z": 9.909547313408689
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 62,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.23726184507988,
+          "y": 0.55,
+          "z": -0.7350008449492119
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 63,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.928133625117447,
+          "y": 0.55,
+          "z": -2.118904667407988
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 64,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 65,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 66,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.958293226272502,
+          "y": 0.55,
+          "z": 11.61232615933195
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 67,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -15.580625891758409,
+          "y": 0.55,
+          "z": -0.6541999097493756
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 68,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.95476085657723,
+          "y": 0.55,
+          "z": -1.9804972126117482
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 69,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 70,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 71,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7386042538826227,
+          "y": 0.55,
+          "z": 10.082748461602598
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 72,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.321741984599477,
+          "y": 0.55,
+          "z": -0.6795385146100643
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 73,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 1.1996046000288962,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.477187729642925,
+          "y": 0.55,
+          "z": -2.2692290230205696
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 74,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 75,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 76,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7348527845414996,
+          "y": 0.55,
+          "z": 10.145178806072506
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 77,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.32782891062885,
+          "y": 0.55,
+          "z": -0.7481559670927431
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 78,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -29.29926119438077,
+          "y": 0.55,
+          "z": -1.6701833801352766
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 79,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 80,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 81,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.760716607129716,
+          "y": 0.55,
+          "z": 10.003275866082362
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 82,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -15.741876784525743,
+          "y": 0.55,
+          "z": -0.36400893928591965
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 83,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 1.246135800013256,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.66055499673628,
+          "y": 0.55,
+          "z": -1.3653347680563004
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 84,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 85,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 86,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 1.195216200022626,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.8552763397780516,
+          "y": 0.55,
+          "z": 11.447454779663651
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 87,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.166415728807793,
+          "y": 0.55,
+          "z": -0.6958899846807606
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 88,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.299180356475222,
+          "y": 0.55,
+          "z": -2.3958589925520477
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 89,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 90,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 91,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 1.25,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.6584994859443704,
+          "y": 0.55,
+          "z": 10.466225774836266
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 92,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.097008326852446,
+          "y": 0.55,
+          "z": -0.6599207645414611
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 93,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.997965453823713,
+          "y": 0.55,
+          "z": -1.9267649877772486
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 94,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 95,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 96,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7295463289092323,
+          "y": 0.55,
+          "z": 9.86264025062541
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 97,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.276874716391806,
+          "y": 0.55,
+          "z": -0.7197556345031243
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 98,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.97317492366548,
+          "y": 0.55,
+          "z": -1.9525510714745151
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 99,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 100,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 101,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.729126818157148,
+          "y": 0.55,
+          "z": 10.117403529864472
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 102,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.24351508644448,
+          "y": 0.55,
+          "z": -0.6845825169812818
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 103,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.97619375527906,
+          "y": 0.55,
+          "z": -1.914836242436942
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 104,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 105,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 106,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7566415238908414,
+          "y": 0.55,
+          "z": 9.894843820748285
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 107,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -15.942102790656222,
+          "y": 0.55,
+          "z": -0.3174962452795245
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 108,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -29.37666952803061,
+          "y": 0.55,
+          "z": -0.3645534592306394
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 109,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 110,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 111,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.92941480008955,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7454151399599696,
+          "y": 0.55,
+          "z": 12.25458486004003
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 112,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.772248705321688,
+          "y": 0.55,
+          "z": -0.8146082064588651
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 113,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -29.21405068142961,
+          "y": 0.55,
+          "z": -1.0861471408293608
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 114,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 115,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 116,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": 1.563894608964978e-16,
+          "y": 0.55,
+          "z": 11.722983140891055
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 117,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.944373600033903,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -16.256073225050756,
+          "y": 0.55,
+          "z": -0.7439267749492366
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 118,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.6176500000603198,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.399683978135627,
+          "y": 0.55,
+          "z": -1.7440241371627718
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 119,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 120,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 121,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7650608346103763,
+          "y": 0.55,
+          "z": 10.009881690897267
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 122,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.9478743913588,
+          "y": 0.55,
+          "z": -0.8553083709444984
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 123,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.970619666608936,
+          "y": 0.55,
+          "z": -2.0060958729022476
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 124,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 125,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 126,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 1.05,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": 5.1435165564188844e-17,
+          "y": 0.65,
+          "z": 12.58
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 127,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -15.561683342187639,
+          "y": 0.55,
+          "z": 8.807149455751153e-17
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 128,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.93689549934751,
+          "y": 0.55,
+          "z": -2.137806661433771
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 129,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 130,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 131,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.2969848480983498,
+          "y": 0.55,
+          "z": 11.715046577312592
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 132,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.502809287497524,
+          "y": 0.55,
+          "z": -0.6951686027836828
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 133,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -29.15980956742478,
+          "y": 0.55,
+          "z": -1.4091902665601919
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 134,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 135,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 136,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.5591099955286699,
+          "y": 0.55,
+          "z": 10.172126147856615
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 137,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.9979657999377967,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -13.605776012178493,
+          "y": 0.55,
+          "z": -0.7022980352487208
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 138,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.998842095771476,
+          "y": 0.55,
+          "z": -1.8976912363752707
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 139,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 140,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 141,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 1.1485164000307084,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.5752697035696571,
+          "y": 0.55,
+          "z": 12.424730296430342
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 142,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 1.2287447999689103,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.222132885799788,
+          "y": 0.55,
+          "z": -0.26799427356442007
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 143,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.749070959235826,
+          "y": 0.55,
+          "z": -1.0592671965377156
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 144,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 145,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 146,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7472615011242659,
+          "y": 0.55,
+          "z": 10.11707843618898
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 147,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.370228851988312,
+          "y": 0.55,
+          "z": -0.5995766367810735
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 148,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.059577177609555,
+          "y": 0.55,
+          "z": -2.017122877087538
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 149,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 150,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 151,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7074326944550828,
+          "y": 0.55,
+          "z": 10.126447992196686
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 152,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.377378483270055,
+          "y": 0.55,
+          "z": -0.6695349653779155
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 153,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.93039800113726,
+          "y": 0.55,
+          "z": -2.0032812785920924
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 154,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 155,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 156,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.710718111868624,
+          "y": 0.55,
+          "z": 11.442337280842267
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 157,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.215203481640968,
+          "y": 0.55,
+          "z": -0.6566858842788417
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 158,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 1.202294600027585,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.193340650389146,
+          "y": 0.55,
+          "z": -1.211495122012903
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 159,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 160,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 161,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.4688844768941676,
+          "y": 0.55,
+          "z": 10.998406444212172
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 162,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -15.242916783188633,
+          "y": 0.55,
+          "z": -0.6591863240930567
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 163,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.925217791036822,
+          "y": 0.55,
+          "z": -1.5578844995187677
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 164,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 165,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 166,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.970395,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7583761184549478,
+          "y": 0.55,
+          "z": 9.732055137270155
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 167,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -15.369515718352815,
+          "y": 0.55,
+          "z": -0.9559719798903552
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 168,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.8574686001371382,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -29.776581704805896,
+          "y": 0.55,
+          "z": -0.8529016600913696
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 169,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 170,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 171,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": 1.4731041268768029e-16,
+          "y": 0.55,
+          "z": 11.797119195589755
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 172,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -15.538194437536605,
+          "y": 0.55,
+          "z": -0.2828427124746189
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 173,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.897922623815706,
+          "y": 0.55,
+          "z": -0.9722116270203289
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 174,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 175,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 176,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.5472340806066327,
+          "y": 0.55,
+          "z": 11.091676607067328
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 177,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 1.25,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -16.18382395419205,
+          "y": 0.65,
+          "z": -0.28284271247461895
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 178,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.8715087997794866,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.13349173581335,
+          "y": 0.55,
+          "z": -2.0478767686324133
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 179,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 180,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 181,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 1.25,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": 5.1435165564188844e-17,
+          "y": 1.05,
+          "z": 12.58
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 182,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.539017121590462,
+          "y": 0.55,
+          "z": -0.4506878586310082
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 183,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.874523399953699,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.978635392759603,
+          "y": 0.55,
+          "z": -2.001581754494329
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 184,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 185,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 186,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.8779897999935864,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.8666275901939018,
+          "y": 0.55,
+          "z": 9.215673688292839
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 187,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -15.366604446456018,
+          "y": 0.55,
+          "z": -0.5768237042782741
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 188,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.894419109669215,
+          "y": 0.55,
+          "z": -1.9334470089259914
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 189,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 190,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 191,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.731347977015637,
+          "y": 0.55,
+          "z": 10.12797399011589
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 192,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.331648048525677,
+          "y": 0.55,
+          "z": -0.6326435996106059
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 193,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.00730362120081,
+          "y": 0.55,
+          "z": -1.9101590331992817
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 194,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 195,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 196,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7378806142452595,
+          "y": 0.55,
+          "z": 9.987917896625746
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 197,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.241852873395874,
+          "y": 0.55,
+          "z": -0.7195205991624396
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 198,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.967614830369744,
+          "y": 0.55,
+          "z": -1.939913240570892
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 199,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 200,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 201,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.9442364477673306,
+          "y": 0.55,
+          "z": 9.638174250714885
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 202,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.29986188159109,
+          "y": 0.55,
+          "z": -0.6945879901436789
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 203,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.950351960205737,
+          "y": 0.55,
+          "z": -2.0653344576040977
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 204,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 205,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 206,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.2814032718219648,
+          "y": 0.55,
+          "z": 10.779979596853485
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 207,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.6791194000251055,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -16.6,
+          "y": 0.55,
+          "z": 2.449293598294706e-17
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 208,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.6770351998842238,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.930491493663133,
+          "y": 0.55,
+          "z": -0.6629333603606453
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 209,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 210,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 211,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 1.227555,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -1.0874914456462492,
+          "y": 0.55,
+          "z": 8.643022851668979
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 212,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.16168866492548,
+          "y": 0.55,
+          "z": -0.6513234286633838
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 213,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.897324379356483,
+          "y": 0.55,
+          "z": -2.298915409038554
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 214,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 215,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 216,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7567580846551458,
+          "y": 0.55,
+          "z": 11.419721932571742
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 217,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.8480608000003814,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -16.18382395419205,
+          "y": 0.55,
+          "z": -0.28284271247461895
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 218,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -29.60832300831632,
+          "y": 0.55,
+          "z": -0.22907142942684286
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 219,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 220,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 221,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7652349464331544,
+          "y": 0.55,
+          "z": 9.173611265016245
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 222,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -13.705465156840681,
+          "y": 0.55,
+          "z": -0.9893862926881893
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 223,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -26.765094916218388,
+          "y": 0.55,
+          "z": -3.423163324763412
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 224,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 225,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 226,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7015341319206633,
+          "y": 0.55,
+          "z": 10.000946046156345
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 227,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -13.876194579742654,
+          "y": 0.55,
+          "z": -0.6716861305383651
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 228,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -29.121908613885573,
+          "y": 0.55,
+          "z": -0.5135498210399736
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 229,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 230,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 231,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.8473685093705119,
+          "y": 0.55,
+          "z": 9.563685886132635
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 232,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -15.545288823965013,
+          "y": 0.55,
+          "z": 8.907536927075654e-17
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 233,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.748262973697567,
+          "y": 0.55,
+          "z": -0.7320756540970704
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 234,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 235,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 236,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7876216545181167,
+          "y": 0.55,
+          "z": 9.918709550709169
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 237,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.037660211671518,
+          "y": 0.55,
+          "z": -0.7110344257797301
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 238,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.9531454002218007,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -29.65471625334045,
+          "y": 0.55,
+          "z": -0.20193844183994303
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 239,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 240,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 241,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 1.05,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.9983050652144584,
+          "y": 0.55,
+          "z": 12.00169493478554
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 242,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -15.63760616079774,
+          "y": 0.55,
+          "z": 8.342256271785591e-17
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 243,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 1.25,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.75326686357324,
+          "y": 0.55,
+          "z": -2.0046574929988537
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 244,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 245,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 246,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7817769025280539,
+          "y": 0.55,
+          "z": 10.019527703679199
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 247,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.217786947625074,
+          "y": 0.55,
+          "z": -0.61632441219042
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 248,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.936548073970613,
+          "y": 0.55,
+          "z": -2.0071778338653985
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 249,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 250,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 251,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.15744880576633175,
+          "y": 0.55,
+          "z": 10.816751549362573
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 252,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.197811658471835,
+          "y": 0.55,
+          "z": -0.6615715172201385
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 253,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.883624922741074,
+          "y": 0.55,
+          "z": -1.9584350649736193
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 254,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 255,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 256,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7214131503630105,
+          "y": 0.55,
+          "z": 10.062942679298734
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 257,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.303727598490653,
+          "y": 0.55,
+          "z": -0.612412166167636
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 258,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.014207359388834,
+          "y": 0.55,
+          "z": -1.8975448684269245
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 259,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 260,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 261,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.6903933629605257,
+          "y": 0.55,
+          "z": 10.067758845265734
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 262,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.24523779981692,
+          "y": 0.55,
+          "z": -0.717602304225068
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 263,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.997672862049267,
+          "y": 0.55,
+          "z": -1.9863820706513766
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 264,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 265,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 266,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7122011925693292,
+          "y": 0.55,
+          "z": 10.159324684199087
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 267,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.362524339603455,
+          "y": 0.55,
+          "z": -0.6401701630069712
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 268,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -29.520153736631848,
+          "y": 0.55,
+          "z": -1.3181550745660067
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 269,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 270,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 271,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7139139189124035,
+          "y": 0.55,
+          "z": 10.130063754644636
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 272,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.230946454024116,
+          "y": 0.55,
+          "z": -0.6647667183091373
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 273,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.68003254181387,
+          "y": 0.55,
+          "z": -1.1555022692136514
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 274,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 275,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 276,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -1.435374804728406,
+          "y": 0.55,
+          "z": 8.940255877560555
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 277,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -13.893004083353786,
+          "y": 0.55,
+          "z": -0.7638096958110797
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 278,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.99155268303566,
+          "y": 0.55,
+          "z": -2.0485350169342906
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 279,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 280,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 281,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.9288849261073364,
+          "y": 0.55,
+          "z": 9.854496831247445
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 282,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.15950291640676,
+          "y": 0.55,
+          "z": -0.7419099450657639
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 283,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.79017929040836,
+          "y": 0.55,
+          "z": -2.2373574989659453
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 284,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 285,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 286,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7570712201201026,
+          "y": 0.55,
+          "z": 9.814310539070794
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 287,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -15.825735109308415,
+          "y": 0.55,
+          "z": 7.190298698682816e-17
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 288,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.873201507424586,
+          "y": 0.55,
+          "z": -2.34192823596757
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 289,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 290,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 291,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7352694672514384,
+          "y": 0.55,
+          "z": 9.904816134487131
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 292,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.156525827986222,
+          "y": 0.55,
+          "z": -0.7226382136867151
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 293,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.004794187004276,
+          "y": 0.55,
+          "z": -2.0086194157076664
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 294,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 295,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 296,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7604451035648339,
+          "y": 0.55,
+          "z": 9.98183619840301
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 297,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -13.865328882955357,
+          "y": 0.55,
+          "z": -0.9489156220805856
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 298,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.9114149425563,
+          "y": 0.55,
+          "z": -2.0827766251512454
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 299,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 300,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 301,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7225076330560753,
+          "y": 0.55,
+          "z": 9.913400526463226
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 302,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.233240528525071,
+          "y": 0.55,
+          "z": -0.7193930991622886
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 303,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -29.803151738456723,
+          "y": 0.55,
+          "z": -0.11512627396894505
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 304,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 305,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 306,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.9724928851194019,
+          "y": 0.55,
+          "z": 9.056509303434432
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 307,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -15.108748501533803,
+          "y": 0.55,
+          "z": -0.13535504958916802
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 308,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.908446476824114,
+          "y": 0.55,
+          "z": -2.0482078404265973
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 309,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 310,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 311,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.9443004685302863,
+          "y": 0.55,
+          "z": 9.819453490199031
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 312,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -16.053737799257256,
+          "y": 0.55,
+          "z": -0.6707226062374284
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 313,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.731929692042183,
+          "y": 0.55,
+          "z": -2.1437728251556436
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 314,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 315,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 316,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7223270048942874,
+          "y": 0.55,
+          "z": 9.82423607167583
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 317,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -13.63049652149052,
+          "y": 0.55,
+          "z": -0.8674818399860669
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 318,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.60998235578321,
+          "y": 0.55,
+          "z": -0.8563629515057782
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 319,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 320,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 321,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7125557463563075,
+          "y": 0.55,
+          "z": 9.754271456955522
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 322,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.236535488792,
+          "y": 0.55,
+          "z": -0.8699429687172666
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 323,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.394890446013022,
+          "y": 0.55,
+          "z": -2.6061639424836507
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 324,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 325,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 326,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.1501717410758274,
+          "y": 0.55,
+          "z": 10.587651084521834
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 327,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -13.958052010720191,
+          "y": 0.55,
+          "z": -0.6949640269543816
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 328,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.88237707852516,
+          "y": 0.55,
+          "z": -2.3161986503499983
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 329,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 330,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 331,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": 1.9113765503821865e-16,
+          "y": 0.55,
+          "z": 11.439242603081182
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 332,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -16.33692202063823,
+          "y": 0.55,
+          "z": -0.30251197185896667
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 333,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.7410000352598,
+          "y": 0.55,
+          "z": -2.174351048228369
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 334,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 335,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 336,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": 4.153760845503362e-17,
+          "y": 0.55,
+          "z": 12.660819687080767
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 337,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.085055428202079,
+          "y": 0.55,
+          "z": -0.7446685487287408
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 338,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.77908780763621,
+          "y": 0.55,
+          "z": -2.1458871552045427
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 339,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 340,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 341,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 1.25,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -1.0110490620160144,
+          "y": 0.55,
+          "z": 9.977112803676437
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 342,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -13.998881689509062,
+          "y": 0.55,
+          "z": -0.6644226723449649
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 343,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.605110406584746,
+          "y": 0.55,
+          "z": -2.5117159654428347
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 344,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 345,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 346,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": 1.5683352339002476e-16,
+          "y": 0.55,
+          "z": 11.719357095456271
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 347,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -13.804346795234043,
+          "y": 0.55,
+          "z": -1.0677556811272562
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 348,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.007386211425914,
+          "y": 0.55,
+          "z": -2.8030280867565955
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 349,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 350,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 351,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7239339681342208,
+          "y": 0.55,
+          "z": 9.608331132562977
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 352,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.252143938480492,
+          "y": 0.55,
+          "z": -0.6962564456981053
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 353,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.955636407348358,
+          "y": 0.55,
+          "z": -2.0328852822304286
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 354,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 355,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 356,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.8759030033111094,
+          "y": 0.55,
+          "z": 9.910592793888025
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 357,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.095289959058505,
+          "y": 0.55,
+          "z": -0.7192524309738703
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 358,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 1.25,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -29.65471625334045,
+          "y": 1.05,
+          "z": -0.20193844183994303
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 359,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 360,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 361,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7805942907040967,
+          "y": 0.55,
+          "z": 9.827836109607686
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 362,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.178364650297574,
+          "y": 0.55,
+          "z": -0.6691107267355317
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 363,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.93235354691049,
+          "y": 0.55,
+          "z": -1.9820386875831235
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 364,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 365,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 366,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -1.0008555624819426,
+          "y": 0.55,
+          "z": 9.724725641255297
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 367,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.230085236993864,
+          "y": 0.55,
+          "z": -0.7385871658654415
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 368,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.805295548051824,
+          "y": 0.55,
+          "z": -2.225821078308112
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 369,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 370,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 371,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.9887167778916977,
+          "y": 0.55,
+          "z": 9.570216709903637
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 372,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.611812699538795,
+          "y": 0.55,
+          "z": -0.3086934382487125
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 373,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -26.582411617347617,
+          "y": 0.55,
+          "z": -2.9029008062177972
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 374,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 375,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 376,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7575046008518256,
+          "y": 0.55,
+          "z": 9.810822854151132
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 377,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -13.860483572532418,
+          "y": 0.55,
+          "z": -0.9590398004076753
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 378,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.979258212284183,
+          "y": 0.55,
+          "z": -2.039173449289586
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 379,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 380,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 381,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7142527389155549,
+          "y": 0.55,
+          "z": 10.172369589162374
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 382,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.361000802063824,
+          "y": 0.55,
+          "z": -0.6263344369320992
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 383,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.046121668529555,
+          "y": 0.55,
+          "z": -1.8357411516666087
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 384,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 385,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 386,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.6531932356394121,
+          "y": 0.55,
+          "z": 10.051818395882592
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 387,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.275128608992881,
+          "y": 0.55,
+          "z": -0.6752158978123209
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 388,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.963626591839375,
+          "y": 0.55,
+          "z": -1.9393028995187218
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 389,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 390,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 391,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7342950646753018,
+          "y": 0.55,
+          "z": 10.01880750703537
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 392,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.305842610532933,
+          "y": 0.55,
+          "z": -0.6528425430565503
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 393,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.977392157404797,
+          "y": 0.55,
+          "z": -1.9117497453860177
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 394,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 395,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 396,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7185398020118791,
+          "y": 0.55,
+          "z": 10.061209897887869
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 397,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.31809935837681,
+          "y": 0.55,
+          "z": -0.6466022307114401
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 398,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.060028507523725,
+          "y": 0.55,
+          "z": -1.8964557905346524
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 399,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 400,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 401,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7633381759962652,
+          "y": 0.55,
+          "z": 10.086563019993713
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 402,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.332318057654858,
+          "y": 0.55,
+          "z": -0.6770133193512988
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 403,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.049867459617438,
+          "y": 0.55,
+          "z": -1.9010884823076513
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 404,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 405,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 406,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.8895975999634502,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7034095530255136,
+          "y": 0.55,
+          "z": 10.382817133850834
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 407,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.13888037073962,
+          "y": 0.55,
+          "z": -0.6777299279338498
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 408,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.984088886433597,
+          "y": 0.55,
+          "z": -1.9325849676916371
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 409,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 410,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 411,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.6913541245264203,
+          "y": 0.55,
+          "z": 10.158117409338475
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 412,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.591193460442337,
+          "y": 0.55,
+          "z": -0.47964706690325165
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 413,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -29.60744050417128,
+          "y": 0.55,
+          "z": -1.0718525589358872
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 414,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 415,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 416,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.78560982562989,
+          "y": 0.55,
+          "z": 9.568679904986787
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 417,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.9637287998842715,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.215157872608629,
+          "y": 0.55,
+          "z": -0.7728680317637293
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 418,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -29.203033516970997,
+          "y": 0.55,
+          "z": -0.4661040994212264
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 419,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 420,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 421,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.8528046293069748,
+          "y": 0.55,
+          "z": 9.236111713613324
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 422,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -13.381539120288044,
+          "y": 0.55,
+          "z": -0.8368474166737299
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 423,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.85790639957698,
+          "y": 0.55,
+          "z": -2.098319030752706
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 424,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 425,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 426,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 1.25,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7161315973276716,
+          "y": 0.55,
+          "z": 10.837099692261402
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 427,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.59770053881056,
+          "y": 0.55,
+          "z": -0.3942938880579636
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 428,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 1.25,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -29.65471625334045,
+          "y": 1.05,
+          "z": -0.20193844183994303
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 429,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 430,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 431,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7033944302704866,
+          "y": 0.55,
+          "z": 10.120999407184895
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 432,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.19448701108576,
+          "y": 0.55,
+          "z": -0.6594226888369188
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 433,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.854283843347158,
+          "y": 0.55,
+          "z": -2.0447768489238
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 434,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 435,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 436,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": 1.1077810235245823e-16,
+          "y": 0.55,
+          "z": 12.095428147694614
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 437,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 1.227151199983883,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -13.379629928850807,
+          "y": 0.55,
+          "z": -0.7225205887155087
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 438,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.915517361834947,
+          "y": 0.55,
+          "z": -1.9635829954595738
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 439,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 440,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 441,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": 1.6055635150339017e-16,
+          "y": 0.55,
+          "z": 11.688957896961183
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 442,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -15.53154047901193,
+          "y": 0.55,
+          "z": 8.991721260277465e-17
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 443,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.89956751379531,
+          "y": 0.55,
+          "z": -2.063501661168373
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 444,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 445,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 446,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": 1.9296124252648507e-16,
+          "y": 0.55,
+          "z": 11.424351881204995
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 447,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 1.25,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.156723255257873,
+          "y": 0.55,
+          "z": -0.6532531027629285
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 448,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -29.171978798225236,
+          "y": 0.55,
+          "z": -0.48426638355990104
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 449,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 450,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 451,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": 1.9196309688045946e-16,
+          "y": 0.55,
+          "z": 11.432502358932293
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 452,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.22210099862972,
+          "y": 0.55,
+          "z": -0.6648539750309814
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 453,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.971720611479768,
+          "y": 0.55,
+          "z": -1.9958335500981161
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 454,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 455,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 456,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.6786306359588029,
+          "y": 0.55,
+          "z": 10.067970008116161
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 457,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -16.263803402582997,
+          "y": 0.55,
+          "z": -0.2986842613958016
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 458,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.977598747644176,
+          "y": 0.55,
+          "z": -1.9803430721574005
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 459,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 460,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 461,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.7544598455869471,
+          "y": 0.55,
+          "z": 9.925992854517009
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 462,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -15.788606282606148,
+          "y": 0.55,
+          "z": -0.6558330465255892
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 463,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -27.83019400793165,
+          "y": 0.55,
+          "z": -2.0579913023384493
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 464,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 465,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 466,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.8986930660395894,
+          "y": 0.55,
+          "z": 9.68128143146166
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 467,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.272757760941834,
+          "y": 0.55,
+          "z": -0.7308255000554739
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 468,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -29.28702802079113,
+          "y": 0.55,
+          "z": -0.41698009810737124
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 469,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 470,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 471,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.01900970315984117,
+          "y": 0.55,
+          "z": 11.30340885680373
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 472,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.347441795946434,
+          "y": 0.55,
+          "z": -0.7431559316358183
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 473,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.929727917429847,
+          "y": 0.55,
+          "z": -0.9536103708163028
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 474,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 475,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 476,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.30691151061844835,
+          "y": 0.55,
+          "z": 10.717049063339665
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 477,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.920170558573638,
+          "y": 0.55,
+          "z": -1.1511894743100515
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 478,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -28.866480169118223,
+          "y": 0.55,
+          "z": -0.6629365866695086
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 479,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 480,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 481,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.9871998001074315,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.09379821658171172,
+          "y": 0.55,
+          "z": 10.159978607111782
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 482,
+      "id": "power-grid",
+      "before": {
+        "x": -17,
+        "y": 0.55,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -14.832594065377837,
+          "y": 0.55,
+          "z": -0.24673326658166878
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 483,
+      "id": "signal-relay",
+      "before": {
+        "x": -30,
+        "y": 0.9143602000068903,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -30,
+          "y": 0.9143602000068903,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 484,
+      "id": "silent-sector",
+      "before": {
+        "x": -29,
+        "y": 1.25,
+        "z": -5.5
+      },
+      "after": {
+        "position": {
+          "x": -29,
+          "y": 1.25,
+          "z": -5.5
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 485,
+      "id": "relic-frontier",
+      "before": {
+        "x": -8,
+        "y": 1.4500000000000002,
+        "z": 0
+      },
+      "after": {
+        "position": {
+          "x": -8,
+          "y": 1.4500000000000002,
+          "z": 0
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    },
+    {
+      "cycle": 486,
+      "id": "arsenal-run",
+      "before": {
+        "x": 0,
+        "y": 0.55,
+        "z": 13
+      },
+      "after": {
+        "position": {
+          "x": -0.20262877853708328,
+          "y": 0.55,
+          "z": 9.469519031799743
+        },
+        "heldInputs": 0
+      },
+      "pageErrors": [],
+      "pass": true
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,155 @@
+{
+  "phase": 40,
+  "environment": {
+    "platform": "win32",
+    "arch": "x64",
+    "node": "v24.19.0",
+    "cpu": "AMD Ryzen 7 PRO 6850U with Radeon Graphics     ",
+    "logicalCpus": 16,
+    "totalMemory": 33038872576
+  },
+  "fixture": {
+    "name": "Phase 040 10K Tilemap Qualification",
+    "internalOnly": true,
+    "populatedCells": 10240,
+    "layers": 4,
+    "semantic": {
+      "manual": 3584,
+      "autoTile": 2048,
+      "weightedTerrain": 3072,
+      "autoTerrain": 1536
+    },
+    "coordinateRange": {
+      "minX": -48,
+      "maxX": 56,
+      "minY": -18,
+      "maxY": 19
+    },
+    "tiles": 32,
+    "textures": 1,
+    "nearestTiles": 28,
+    "smoothTiles": 4,
+    "collision": {
+      "none": 11,
+      "fullCell": 11,
+      "customRectangle": 10
+    },
+    "spawnMarkers": 100,
+    "ordinaryPrefabObjects": 75,
+    "chunkCells": 1000,
+    "bundle": {
+      "bytes": 1509344,
+      "sha256": "ad055251c7cec9ef22bbe55c96755dd6769c41cee7f5e33c1cffed825088f1a4"
+    },
+    "chunkBundle": {
+      "bytes": 157334,
+      "sha256": "8ac00f568f6118b5fe0be8310f55a4f75f071e9250f1bcf1b80d84370aa1c709"
+    }
+  },
+  "scaling": {
+    "1000": {
+      "validationMs": 1.3817000000000021,
+      "indexWalkMs": 1.9593999999999951,
+      "normalizationMs": 0.3674000000000035,
+      "issues": 0
+    },
+    "2500": {
+      "validationMs": 1.055400000000006,
+      "indexWalkMs": 2.454099999999997,
+      "normalizationMs": 0.47330000000000183,
+      "issues": 0
+    },
+    "5000": {
+      "validationMs": 1.595399999999998,
+      "indexWalkMs": 3.795899999999996,
+      "normalizationMs": 1.2723999999999975,
+      "issues": 0
+    },
+    "10240": {
+      "validationMs": 2.2423,
+      "indexWalkMs": 3.864599999999996,
+      "normalizationMs": 1.6886999999999972,
+      "issues": 0
+    }
+  },
+  "operations": {
+    "paint": {
+      "samples": 1000,
+      "medianMs": 0.0009000000000014552,
+      "p95Ms": 0.0023999999999944066,
+      "p99Ms": 0.004500000000007276,
+      "maxMs": 1.5035000000000025
+    },
+    "erase": {
+      "samples": 1000,
+      "medianMs": 0.0006999999999948159,
+      "p95Ms": 0.0020000000000095497,
+      "p99Ms": 0.00359999999999161,
+      "maxMs": 0.12359999999999616
+    },
+    "terrainCircleR8": {
+      "affectedCells": 197,
+      "totalMs": 13.483100000000007
+    },
+    "autoTileLine500": {
+      "totalMs": 11.353499999999997
+    },
+    "terrainGlobalRecompute": {
+      "totalMs": 26.088000000000008
+    },
+    "autoRuleGlobalRecompute": {
+      "totalMs": 14.769299999999987
+    },
+    "chunkPlan": {
+      "totalMs": 107.81050000000002,
+      "changedCells": 4347
+    },
+    "chunkCommit": {
+      "totalMs": 2.113999999999976
+    },
+    "chunkUndo": {
+      "totalMs": 5.0428
+    },
+    "save": {
+      "samples": 20,
+      "medianMs": 2.4599999999999227,
+      "p95Ms": 2.935600000000022,
+      "p99Ms": 2.935600000000022,
+      "maxMs": 3.0506000000000313
+    },
+    "loadParse": {
+      "samples": 20,
+      "medianMs": 3.4621999999999957,
+      "p95Ms": 4.052000000000021,
+      "p99Ms": 4.052000000000021,
+      "maxMs": 5.042799999999943
+    },
+    "validation": {
+      "samples": 20,
+      "medianMs": 2.1614000000000715,
+      "p95Ms": 3.0112000000000307,
+      "p99Ms": 3.0112000000000307,
+      "maxMs": 4.29260000000005
+    },
+    "bundleExport": {
+      "samples": 20,
+      "medianMs": 99.50150000000008,
+      "p95Ms": 128.28969999999993,
+      "p99Ms": 128.28969999999993,
+      "maxMs": 133.8066
+    },
+    "bundleImportPlanCommit": {
+      "samples": 10,
+      "medianMs": 19.770099999999957,
+      "p95Ms": 21.406100000000038,
+      "p99Ms": 21.406100000000038,
+      "maxMs": 21.914999999999964
+    },
+    "bundleBytes": 1509344
+  },
+  "memory": {
+    "rss": 326893568,
+    "heapUsed": 139820136
+  },
+  "status": "PASS"
+}

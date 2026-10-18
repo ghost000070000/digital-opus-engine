@@ -585,6 +585,32 @@ test('sphere collision pushes a mover out along the center-to-center vector', ()
   assert.ok(Math.abs(fromZ.correctedPosition.x) < 1e-9, 'no spurious X displacement from a pure-Z approach');
 });
 
+test('continuous collider sweeps stop fast movers and preserve wall-slide velocity', () => {
+  const start = new Opus.Vec3(-6, 0, -1);
+  const end = new Opus.Vec3(6, 0, 2);
+  const velocity = new Opus.Vec3(80, 0, 20);
+  const wall = { center: new Opus.Vec3(0, 0, 0), half: new Opus.Vec3(0.1, 2, 5), quat: null };
+  assert.strictEqual(Opus.Physics.resolveOrientedBoxCollision(end, velocity, 0.5, wall).collided, false, 'destination-only overlap demonstrates the tunneling setup');
+  const boxHit = Opus.Physics.resolveSweptOrientedBoxCollision(start, end, velocity, 0.5, wall);
+  assert.ok(boxHit.collided, 'fast segment must hit the thin wall');
+  assert.ok(boxHit.correctedPosition.x < -0.59 && boxHit.correctedPosition.x > -0.61, 'mover stops at its expanded contact plane');
+  assert.ok(Math.abs(boxHit.correctedVelocity.x) < 1e-9, 'inward wall velocity is removed');
+  assert.ok(Math.abs(boxHit.correctedVelocity.z - 20) < 1e-9, 'tangent velocity survives for stable wall sliding');
+
+  const sphereHit = Opus.Physics.resolveSweptSphereCollision(
+    new Opus.Vec3(-5, 0, 0), new Opus.Vec3(5, 0, 1), new Opus.Vec3(60, 0, 6), 0.5,
+    new Opus.Vec3(0, 0, 0), 0.5,
+  );
+  assert.ok(sphereHit.collided, 'fast segment must hit an expanded sphere collider');
+  assert.ok(sphereHit.correctedPosition.x < 0, 'sphere contact remains on the approach side');
+
+  const rotated = Opus.Physics.resolveSweptOrientedBoxCollision(
+    new Opus.Vec3(0, 0, -6), new Opus.Vec3(0, 0, 6), new Opus.Vec3(0, 0, 80), 0.5,
+    { center: new Opus.Vec3(0, 0, 0), half: new Opus.Vec3(5, 2, 0.1), quat: Opus.Quat.fromAxisAngle(new Opus.Vec3(0, 1, 0), Math.PI / 4) },
+  );
+  assert.ok(rotated.collided, 'sweep follows the real orientation of a rotated thin wall');
+});
+
 test('vertical box collision lands a falling mover on top and blocks it from rising through the underside', () => {
   const box = Opus.Physics.AABB.fromCenterSize(new Opus.Vec3(0, 2, 0), new Opus.Vec3(4, 2, 4));
   const radius = 0.5;
@@ -644,6 +670,17 @@ test('vertical box collision does not tunnel through a thin platform at a large 
   assert.ok(result.grounded);
   assert.strictEqual(result.correctedPosition.y, thinBox.max.y + halfHeight);
   assert.strictEqual(result.correctedVelocity.y, 0);
+});
+
+test('ramp collision follows the authored slope without discarding horizontal velocity', () => {
+  const ramp = { center: new Opus.Vec3(0, 1, 0), half: new Opus.Vec3(4, 1, 2), quat: Opus.Quat.identity() };
+  const velocity = new Opus.Vec3(3, -4, 1);
+  const result = Opus.Physics.resolveRampCollision(new Opus.Vec3(0, 1.3, 0), velocity, 0.5, 0.5, ramp, 0.1);
+  assert.ok(result.collided && result.grounded);
+  assert.ok(Math.abs(result.correctedPosition.y - 1.5) < 1e-9, 'mover feet land on the midpoint of the visible slope');
+  assert.strictEqual(result.correctedVelocity.y, 0);
+  assert.strictEqual(result.correctedVelocity.x, 3);
+  assert.strictEqual(result.correctedVelocity.z, 1);
 });
 
 test('trigger volumes emit one enter and exit for a swept crossing', () => {

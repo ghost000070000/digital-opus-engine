@@ -1,0 +1,26 @@
+'use strict';
+const fs=require('fs'),path=require('path'),http=require('http'),assert=require('assert');
+const {chromium}=require('C:/Users/THINKPAD/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const root=path.resolve(__dirname,'..'),catalog=require('../no-code-capabilities.json');
+const runId='capability-truth-'+new Date().toISOString().replace(/[-:.]/g,''),dir=path.join(root,'qualification/phase-240',runId);fs.mkdirSync(dir,{recursive:true});
+const proof={runId,startedAt:new Date().toISOString(),fingerprint:require('./real-demo-program-state').fingerprint(),errors:[],external:[],routes:[]};
+const ids=['prefabs','equipment','ai-state-machine','input-actions','node-graph','rebinding','variables','animation','animation-events','sequences','debugging','save-game','validation','audio-zones','fog-zones','onboarding','templates','colliders','player-controllers','trigger-volumes','sprites-2d'];
+const server=http.createServer((req,res)=>{const f=path.resolve(root,'.'+decodeURIComponent(req.url.split('?')[0]));if(!f.startsWith(root+path.sep)){res.writeHead(403);return res.end();}fs.readFile(f,(e,b)=>{res.writeHead(e?404:200,{'Content-Type':f.endsWith('.js')?'text/javascript':f.endsWith('.html')?'text/html':'application/octet-stream'});res.end(e?'Not found':b);});});
+(async()=>{let browser;try{
+ await new Promise(r=>server.listen(0,'127.0.0.1',r));browser=await chromium.launch({channel:'msedge',headless:true});
+ for(const route of ['/editor/index.html','/dist/engine-site/editor/index.html']){
+  const p=await browser.newPage({viewport:{width:1280,height:960}});p.setDefaultTimeout(10000);p.on('pageerror',e=>proof.errors.push(e.stack));p.on('request',r=>{if(!/^(http:\/\/127\.0\.0\.1:|data:|blob:)/.test(r.url()))proof.external.push(r.url());});
+  try{
+   await p.goto('http://127.0.0.1:'+server.address().port+route);await p.locator('[data-first-run-choice="guided"]').click();await p.locator('#onboarding-pause').click();
+   const snap=()=>p.evaluate(()=>JSON.stringify({project:serializeProject(),undo:undoStack,redo:redoStack,storage:Object.keys(localStorage).sort().map(k=>[k,localStorage.getItem(k)])}));const before=await snap();
+   await p.locator('#help-btn').click();await p.locator('#capability-dashboard-btn').click();await p.waitForFunction(()=>document.querySelectorAll('.capability-card').length===57);
+   for(const id of ids){const c=catalog.capabilities.find(c=>c.id===id),card=p.locator('[data-capability-id="'+id+'"]');await card.scrollIntoViewIfNeeded();const text=await card.innerText();assert(text.includes(c.explanation),id+' explanation');assert(text.includes(c.limitations),id+' limits');assert(text.includes('Last improved: Phase '+c.lastImprovedPhase),id+' phase');assert.equal(await card.getAttribute('data-grade'),c.grade);for(const e of c.evidence)assert(text.includes(e),id+' evidence');}
+   await p.locator('#capability-search').fill('Rebinding');assert.equal(await p.locator('[data-capability-id="rebinding"]').count(),1);assert(!(await p.locator('[data-capability-id="rebinding"]').innerText()).includes('Interact/Attack only'));
+   await p.locator('#capability-search').fill('');await p.locator('[data-capability-grade="C"]').click();assert.equal(await p.locator('.capability-card').count(),17);
+   await p.locator('#capability-search').fill('Graph Trace');assert((await p.locator('.capability-card').count())>=2);
+   const layouts=[];for(const width of [1280,640,360]){await p.setViewportSize({width,height:960});const layout=await p.evaluate(()=>{const box=s=>document.querySelector(s).getBoundingClientRect(),card=box('.capability-dashboard-card'),results=box('#capability-results');return {width:innerWidth,inputHeight:box('#capability-search').height,selectHeight:box('#capability-category').height,cardLeft:card.left,cardRight:card.right,resultWidth:results.width,scrollWidth:document.querySelector('#capability-results').scrollWidth,clientWidth:document.querySelector('#capability-results').clientWidth};});assert(layout.inputHeight<=40&&layout.selectHeight<=40,'Filter controls must not stretch to grade-group height');assert(layout.cardLeft>=0&&layout.cardRight<=width,'Dashboard contained');assert(layout.scrollWidth<=layout.clientWidth+1,'Capability text wraps without horizontal scrolling');layouts.push(layout);await p.screenshot({path:path.join(dir,(route.includes('dist/')?'package':'source')+'-trace-'+width+'.png')});}proof.routes.push({route,layouts});
+   await p.locator('#capability-dashboard-close').click();assert.equal(await snap(),before,'Read-only Help must preserve whole authored project/history/storage');proof.routes.push({route,checked:ids.length,grades:'unchanged canonical rubric',wholeAuthoredHistoryStorageUnchanged:true});
+  }finally{await p.close();}
+ }
+ assert.deepStrictEqual(proof.errors,[]);assert.deepStrictEqual(proof.external,[]);proof.status='SOURCE_PACKAGE_NATIVE_HELP_EXACT_CATALOG_FILTERS_NONMUTATION_PASS';
+}catch(e){proof.status='FAIL';proof.failure=e.stack;process.exitCode=1;}finally{if(browser)await browser.close();await new Promise(r=>server.close(r));proof.resourcesClosed=true;proof.endedAt=new Date().toISOString();fs.writeFileSync(path.join(dir,'results.json'),JSON.stringify(proof,null,2));console.log(JSON.stringify(proof));}})();

@@ -1,0 +1,43 @@
+{
+  "phase": 38,
+  "project": "Phase 038 Tilemap Chunk Reuse Dogfood",
+  "internalOnly": true,
+  "status": "PASS",
+  "browserEvidence": "qualification/phase-038/browser-campaign.json",
+  "screenshot": "qualification/phase-038/phase-038-tilemap-chunks.png",
+  "chunks": [
+    { "name": "Village Plot", "width": 12, "height": 10, "layers": 3, "cells": 133, "markers": 2, "semantic": ["manual", "weighted-terrain", "auto-tile", "auto-terrain"] },
+    { "name": "Dungeon Room", "width": 9, "height": 7, "layers": 2, "cells": 54, "markers": 0 },
+    { "name": "Road Intersection", "width": 7, "height": 5, "layers": 1, "cells": 5, "markers": 0 }
+  ],
+  "proof": {
+    "negativeSourceCapture": true,
+    "reversedDrag": true,
+    "ordinaryObjectsExcluded": true,
+    "spawnMarkersOptional": true,
+    "explicitLayerMapping": true,
+    "createNewLayer": true,
+    "positiveAndNegativeStamps": true,
+    "destinationTerrainResolution": true,
+    "autoTileBoundaryRecompute": true,
+    "adjacentStampsConnect": true,
+    "overwriteRemovesOldSemantics": true,
+    "holesPreserved": true,
+    "freshMarkerIds": true,
+    "collisionSafeMarkerNames": true,
+    "oneStepUndoRedo": true,
+    "saveReload": true,
+    "chunkDeleteIndependent": true,
+    "chunkEditIndependent": true,
+    "sourceTilemapIndependent": true,
+    "repairableBrokenRefs": true
+  },
+  "browserCycles": 30,
+  "stampCycles": 30,
+  "saveLoadCycles": 5,
+  "finalMaterializedCells": 1803,
+  "finalMarkers": 22,
+  "pageErrors": [],
+  "consoleErrors": [],
+  "externalRequests": []
+}

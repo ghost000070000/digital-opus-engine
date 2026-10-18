@@ -18,12 +18,39 @@ const path = require('path');
 const zlib = require('zlib');
 const startedAt = process.hrtime.bigint();
 
+// Windows can briefly lock a just-served artifact while browser/antivirus
+// inspection releases its read handle. Keep the build deterministic while
+// tolerating only that narrow transient class; all other failures surface
+// immediately, and a persistent lock still fails after five seconds.
+function writeArtifact(file, contents) {
+  // An unchanged build should not truncate a byte-identical public artifact.
+  // Besides avoiding needless filesystem churn, this permits a second build
+  // while Windows inspection still holds a handle on the first output.
+  try { if (fs.readFileSync(file, 'utf8') === contents) return; }
+  catch (error) { if (error.code !== 'ENOENT') throw error; }
+  for (let attempt = 0; ; attempt++) {
+    try { fs.writeFileSync(file, contents, 'utf8'); return; }
+    catch (error) {
+      if (!['UNKNOWN', 'EBUSY', 'EPERM'].includes(error.code) || attempt >= 20) throw error;
+      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 250);
+    }
+  }
+}
+
 const ROOT = path.resolve(__dirname, '..');
 const ENGINE_SRC_DIR = path.join(ROOT, 'engine', 'src');
 const DEMO_SRC_DIR = path.join(ROOT, 'demo', 'src');
-const DIST_DIR = path.join(ROOT, 'dist');
+// Explicit isolated output supports release/recovery qualification without
+// replacing a browser-held development bundle. Default output is unchanged.
+const outputIndex = process.argv.indexOf('--out-dir');
+if (outputIndex >= 0 && !process.argv[outputIndex + 1]) throw new Error('--out-dir requires a directory');
+const DIST_DIR = outputIndex < 0 ? path.join(ROOT, 'dist') : path.resolve(ROOT, process.argv[outputIndex + 1]);
+if (!DIST_DIR.startsWith(ROOT + path.sep)) throw new Error('Build output must be inside the checkout');
 
 const verbose = process.argv.includes('--verbose');
+
+// The editor script is assembled from editor/src/modules before anything reads it.
+require('./build-editor').buildEditor();
 
 function readSourceDir(dir, label) {
   if (!fs.existsSync(dir)) {
@@ -156,7 +183,7 @@ window.Opus = Opus;
 })();
 `;
 const engineOutFile = path.join(DIST_DIR, 'opus-engine.js');
-fs.writeFileSync(engineOutFile, engineBundle, 'utf8');
+writeArtifact(engineOutFile, engineBundle);
 const engineBytes = Buffer.byteLength(engineBundle);
 const engineGzipBytes = zlib.gzipSync(engineBundle).length;
 console.log(`Engine bundle  -> ${path.relative(ROOT, engineOutFile)} (${engineBytes} bytes, ${engineGzipBytes} gzip bytes, ${engine.files.length} files)`);
@@ -195,7 +222,7 @@ ${demoBody}
 </html>
 `;
 const demoOutFile = path.join(DIST_DIR, 'delivery-run.html');
-fs.writeFileSync(demoOutFile, demoHtml, 'utf8');
+writeArtifact(demoOutFile, demoHtml);
 const demoBytes = Buffer.byteLength(demoHtml);
 console.log(`Demo bundle    -> ${path.relative(ROOT, demoOutFile)} (${demoBytes} bytes, ${engine.files.length} engine + ${demo.files.length} demo files)`);
 

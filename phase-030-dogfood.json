@@ -1,0 +1,127 @@
+{
+  "phase": 30,
+  "feature": "Sprite starters and internal dogfood",
+  "status": "passed",
+  "visibleAuthoring": {
+    "projectName": "Phase 030 Sprite Dogfood",
+    "sourceStarter": "sprite-animated-character",
+    "method": "normal editor controls",
+    "finalValidation": "No structured authoring issues found.",
+    "breakRepair": [
+      "cleared Walk state Clip",
+      "observed two structured errors",
+      "restored Walk Clip",
+      "returned to zero issues"
+    ],
+    "savedReloaded": true
+  },
+  "starters": {
+    "sprite-2d-scene": {
+      "name": "2D Sprite Scene",
+      "validation": "No structured authoring issues found.",
+      "savedName": "sprite-project-1",
+      "instantiateMs": 4021,
+      "exports": {
+        "editableBytes": 1657776,
+        "playableBytes": 1657814
+      },
+      "pageErrors": [],
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "externalRequests": []
+    },
+    "sprite-animated-character": {
+      "name": "Animated Character",
+      "validation": "No structured authoring issues found.",
+      "savedName": "sprite-project-1",
+      "instantiateMs": 2732,
+      "exports": {
+        "editableBytes": 1660456,
+        "playableBytes": 1660494
+      },
+      "pageErrors": [],
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "externalRequests": []
+    },
+    "sprite-parallax-hybrid": {
+      "name": "Parallax Hybrid Scene",
+      "validation": "No structured authoring issues found.",
+      "savedName": "sprite-project-1",
+      "instantiateMs": 2978,
+      "exports": {
+        "editableBytes": 1661318,
+        "playableBytes": 1661356
+      },
+      "pageErrors": [],
+      "consoleErrors": [],
+      "consoleWarnings": [],
+      "externalRequests": []
+    }
+  },
+  "dogfood": {
+    "validation": "No structured authoring issues found.",
+    "editable": {
+      "file": ".tmp-phase030\\phase-030-dogfood-editable.html",
+      "bytes": 1664988,
+      "chromeVisible": true,
+      "chromeButtonText": "🛠 Edit This Game",
+      "modification": {
+        "initialState": "walk",
+        "direction": "right"
+      },
+      "reaction": true,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "consoleWarnings": [
+        "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. "
+      ],
+      "externalRequests": [],
+      "reviewedWarnings": [
+        "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. "
+      ],
+      "unexplainedWarnings": []
+    },
+    "playable": {
+      "file": ".tmp-phase030\\phase-030-dogfood-playable.html",
+      "bytes": 1665026,
+      "chromeVisible": false,
+      "chromeButtonText": "🛠 Edit This Game",
+      "modification": null,
+      "reaction": true,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "consoleWarnings": [
+        "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. "
+      ],
+      "externalRequests": [],
+      "reviewedWarnings": [
+        "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. "
+      ],
+      "unexplainedWarnings": []
+    },
+    "fixture": "qualification/phase-030/phase-030-sprite-dogfood.json",
+    "systems": [
+      "Orthographic Camera",
+      "Sorting Layers",
+      "Parallax",
+      "Sprite Animation Clips",
+      "Animation States",
+      "Direction and Mirror X",
+      "Animation Event listener",
+      "Nine-Slice",
+      "opaque 3D",
+      "transparent Billboard",
+      "Prefab"
+    ]
+  },
+  "publicBoundary": {
+    "publicGames": 28,
+    "dogfoodInCatalog": false,
+    "dogfoodInPublicNavigation": false,
+    "game29Added": false
+  },
+  "errors": [],
+  "ok": true,
+  "verdict": "PHASE_030_SPRITE_STARTERS_QUALIFIED"
+}

@@ -1,0 +1,16 @@
+{
+  "phase": 35,
+  "seeds": [35, 1035, 2035, 3035, 4035, 5035, 6035, 7035, 8035, 9035],
+  "operationsPerSeed": 5000,
+  "operations": 50000,
+  "comparisonBatches": 1000,
+  "modes": ["four-way", "eight-way"],
+  "operationsCovered": ["Auto Paint A", "Auto Paint B", "Manual Paint", "Erase", "negative coordinates", "same-cell repaint", "Set switch", "Rule edit", "Save/Load normalization"],
+  "result": "PASS_INCREMENTAL_EQUALS_FULL_REFERENCE",
+  "boundedPerformanceMs": {
+    "fullRecompute2500Cells": 12.97,
+    "globalRuleEdit25Tilemaps5000Cells": 19.1,
+    "autoStroke1000Cells": 14.11
+  },
+  "environmentNote": "Single current local Node run; bounded sanity evidence, not a Phase 040 performance claim."
+}

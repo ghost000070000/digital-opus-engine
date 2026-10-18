@@ -1,0 +1,95 @@
+{
+  "generatedAt": "2026-09-11T17:15:30.398Z",
+  "method": "Native keyboard/mouse inputs; read-only runtime instrumentation",
+  "results": [
+    {
+      "id": "forest-range",
+      "title": "Forest Range",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "enemySpeedRange": [
+        1.5,
+        4
+      ],
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": -7,
+          "y": -0.13073938994376344,
+          "z": -5.5
+        },
+        "controller": "thirdperson",
+        "rotationY": 1.0471975511965976,
+        "yaw": 0,
+        "pitch": 0,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": false,
+        "basis": {
+          "forward": {
+            "x": 0.7417156207163025,
+            "y": -0.5162143456426217,
+            "z": 0.42822971328270765
+          },
+          "right": {
+            "x": -0.5000000000000001,
+            "y": 0,
+            "z": 0.8660254037844387
+          }
+        },
+        "solidCount": 3,
+        "collidingSolids": 0,
+        "frozen": false,
+        "sim": 0.30000000000000004
+      },
+      "movement": {
+        "beforeW": {
+          "x": -7,
+          "y": -0.13073938994376344,
+          "z": -5.5
+        },
+        "afterW": {
+          "x": -6.740192378864668,
+          "y": -0.030550907686651918,
+          "z": -5.35
+        },
+        "expectedForward": {
+          "x": 0.7417156207163025,
+          "z": 0.42822971328270765
+        },
+        "wDistance": 0.31628741988416775,
+        "wForwardDot": 0.256937827969625,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 0
+          },
+          {
+            "key": "A",
+            "distance": 0.3609238373180831
+          },
+          {
+            "key": "D",
+            "distance": 0
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "collision": {
+        "solidCount": 3,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    }
+  ]
+}

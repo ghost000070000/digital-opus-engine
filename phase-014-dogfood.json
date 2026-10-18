@@ -1,0 +1,110 @@
+{
+  "phase": 14,
+  "project": "phase-014-hybrid-dogfood",
+  "method": "Normal editor UI in the live local preview",
+  "savedAndReloaded": true,
+  "browserConsoleWarningsOrErrors": 0,
+  "scene": {
+    "spriteAssets": [
+      {
+        "name": "palette Sprite",
+        "sourceTexture": "palette",
+        "source": "assets/showcase/textures/palette.png",
+        "dimensions": [64, 16]
+      },
+      {
+        "name": "phase-014-transparent-sprite Sprite",
+        "sourceTexture": "phase-014-transparent-sprite",
+        "source": "tests/fixtures/phase-014-transparent-sprite.png",
+        "dimensions": [64, 64],
+        "alpha": "transparent pixels around an opaque cyan diamond and a partially transparent white center"
+      }
+    ],
+    "sortingLayers": ["Default", "Background", "Actors", "Foreground"],
+    "sprites": {
+      "minimumRequired": 5,
+      "authored": 6,
+      "totalIncludingDuplicate": 7,
+      "duplicateCreated": true,
+      "transparent": "Transparent Alpha Sprite uses a real RGBA Sprite Asset rather than a generic Material opacity field",
+      "rotated": ["Background Sprite", "Actor Sprite B", "Child Sprite", "Transparent Alpha Sprite"],
+      "tinted": ["Background Sprite", "Actor Sprite B", "Child Sprite"],
+      "orders": [-5, 0, 2, 8, 3],
+      "hierarchy": {
+        "spriteUnderSprite": "Child Sprite parented to Actor Sprite A",
+        "spriteUnderGenericParent": "Transparent Alpha Sprite parented to Transparent Mesh"
+      }
+    },
+    "billboards": [
+      {
+        "name": "Full Billboard",
+        "mode": "full",
+        "texture": "palette",
+        "alpha": 1,
+        "parent": "Opaque Occluder"
+      },
+      {
+        "name": "Cylindrical Alpha Billboard",
+        "mode": "cylindrical",
+        "texture": "palette",
+        "alpha": 0.55
+      }
+    ],
+    "billboardDuplicateCreated": true,
+    "geometry": [
+      {"name": "Opaque Occluder", "alpha": 1},
+      {
+        "name": "Transparent Mesh",
+        "alpha": 0.4,
+        "children": ["Transparent Alpha Sprite"],
+        "onStart": [
+          "Move To (Tween): [1,1,-1] over 2 seconds with easeInOut",
+          "Rotate To (Tween): 90 degrees over 2 seconds with easeInOut"
+        ]
+      }
+    ],
+    "lighting": ["Point Light #10"],
+    "cameraEvidence": {
+      "angleA": "Default player/chase view, showing opaque occlusion, transparent overlap, layered Sprites, and camera-facing Billboards.",
+      "angleB": "Authored fixed camera at [10,5,10], aimed at Opaque Occluder and activated through an On Start Change Camera behavior.",
+      "result": "The views are substantially different. Billboards remain camera-readable; authored Sprite planes retain their own rotation and show perspective foreshortening."
+    }
+  },
+  "workflows": {
+    "paletteDistinction": "pass",
+    "sceneTreeDistinction": "pass",
+    "inspectorDistinction": "pass",
+    "spriteAuthoredOrientation": "pass",
+    "transparentSpriteTextureAlpha": "pass",
+    "billboardCameraFacing": "pass",
+    "spriteSortingIndependent": "pass",
+    "opaqueOcclusion": "pass",
+    "deterministicOverlap": "pass",
+    "spriteDuplicate": "pass",
+    "billboardDuplicate": "pass",
+    "spriteUnderGenericParent": "pass",
+    "spriteUnderSpriteParent": "pass",
+    "billboardUnderGenericParent": "pass",
+    "movingAndRotatingParent": "pass",
+    "spritePrefabCreated": "pass",
+    "billboardPrefabCreated": "pass",
+    "saveLoadRoundTrip": "pass",
+    "editorPlay": "pass",
+    "editableExport": "pass",
+    "playableExport": "pass"
+  },
+  "visualEvidence": [
+    "Inline browser capture: editor Scene tree with distinct Sprite/Billboard names and hierarchy.",
+    "Inline browser capture: angle A front/chase view.",
+    "Inline browser capture: angle B fixed oblique view.",
+    "Inline browser capture: close perspective view demonstrating textured plane overlap.",
+    "Inline browser capture: transparent RGBA Sprite Asset preview and placed Transparent Alpha Sprite under Transparent Mesh.",
+    "Live Inspector evidence: Transparent Mesh retains On Start Move To and Rotate To behaviors after Save/Load.",
+    "Playable Export success toast."
+  ],
+  "notes": [
+    "The 28-game corpus contains no Billboard records; legacy compatibility is covered by the frozen pre-Phase-014 fixture in tests/phase-014-sprite-billboard.test.js.",
+    "Hybrid coexistence is valid and produces no new Project Validation warnings.",
+    "No automatic conversion was used."
+  ]
+}

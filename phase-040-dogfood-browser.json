@@ -1,0 +1,135 @@
+{
+  "phase": 40,
+  "browserMode": "headless Edge/Chromium with hardware WebGL requested and background/occlusion throttling disabled",
+  "sampleSeconds": 60,
+  "warmupSeconds": 10,
+  "coldLoads": [
+    2029,
+    2223,
+    1836,
+    1760,
+    2266,
+    2396,
+    2105,
+    2015,
+    1899,
+    2093,
+    2025,
+    2388,
+    1979,
+    2383,
+    1904,
+    2117,
+    1817,
+    1890,
+    2062,
+    1947
+  ],
+  "editableBoots": [
+    1274,
+    1311,
+    1416,
+    1144,
+    1275,
+    1199,
+    1191,
+    1174,
+    1234,
+    1211
+  ],
+  "playableBoots": [
+    1114,
+    1005,
+    1404,
+    1572,
+    1637,
+    998,
+    1171,
+    1006,
+    1419,
+    1071
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "externalRequests": [],
+  "frameWindows": {
+    "editorNormal": {
+      "samples": 8136,
+      "medianMs": 6.900000000008731,
+      "p95Ms": 7,
+      "p99Ms": 7.100000000005821,
+      "maxMs": 479.40000000000146,
+      "fps": 144.92753623170066
+    },
+    "editorWorstVisible": {
+      "samples": 8203,
+      "medianMs": 6.900000000008731,
+      "p95Ms": 7,
+      "p99Ms": 7.100000000005821,
+      "maxMs": 556,
+      "fps": 144.92753623170066
+    },
+    "playable": {
+      "samples": 8179,
+      "medianMs": 6.900000000008731,
+      "p95Ms": 7.099999999998545,
+      "p99Ms": 7.100000000005821,
+      "maxMs": 514.0999999999985,
+      "fps": 144.92753623170066
+    }
+  },
+  "operations": {
+    "paint": {
+      "medianMs": 0,
+      "p95Ms": 0,
+      "p99Ms": 0.10000002384185791
+    },
+    "erase": {
+      "medianMs": 0,
+      "p95Ms": 0,
+      "p99Ms": 0.10000002384185791
+    },
+    "terrainR8Ms": 3.099999964237213,
+    "autoLine500Ms": 10.700000047683716,
+    "terrainGlobalMs": 27.799999952316284,
+    "autoRuleGlobalMs": 12.200000047683716,
+    "chunkPlanMs": 134,
+    "chunkCommitMs": 3.799999952316284,
+    "chunkUndoMs": 4.5,
+    "saveMs": 45.799999952316284,
+    "parseMs": 2.700000047683716,
+    "validationMs": 49.5,
+    "bundleExportMs": 160.79999995231628,
+    "bundleImportMs": 108.5,
+    "bundleBytes": 1597739,
+    "exportedCells": 10784,
+    "importedCells": 10784,
+    "metrics": {
+      "drawCalls": 3,
+      "submittedCells": 10784,
+      "batchCount": 3,
+      "geometryRebuilds": 3,
+      "bufferUploads": 36,
+      "cacheBytes": 1509760
+    },
+    "heap": 75013076
+  },
+  "memory": [
+    {
+      "label": "editor-warm",
+      "usedJsHeap": 75013076
+    }
+  ],
+  "status": "PASS_WITH_RECORDED_ENVIRONMENT_LIMITATION",
+  "coldEditorLoadMs": 2905,
+  "renderer": "ANGLE (AMD, AMD Radeon(TM) Graphics (0x00001681) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "maximumStallGate": {
+    "status": "ENVIRONMENT_LIMITED",
+    "observations": {
+      "editorWorstVisible": 556,
+      "playable": 514.0999999999985
+    },
+    "rationale": "Isolated RAF gaps recur while p99 remains <= 7.2 ms under hardware WebGL with Chromium background/occlusion throttling disabled; retained as host scheduler evidence, not removed from traces."
+  },
+  "ended": "2026-09-21T11:52:03.781Z"
+}

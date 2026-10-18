@@ -1,0 +1,61 @@
+{
+  "phase": 25,
+  "feature": "Sprite Flip X/Y and Directional Variants",
+  "status": "qualified",
+  "manualProject": "Phase 025 Directional Proof",
+  "sprites": ["Hero", "Hero Prefab Instance"],
+  "baseFlip": {
+    "combinationsTested": ["none", "x", "y", "x+y"],
+    "final": { "flipX": false, "flipY": false },
+    "transformScaleStayedPositive": true
+  },
+  "initialDirection": "down",
+  "stateIds": ["walk", "idle", "attack"],
+  "directionalVariants": {
+    "walk": {
+      "right": "Walk Right",
+      "left": "Walk Right + Mirror X",
+      "up": "Walk Up",
+      "down": "Walk Down"
+    },
+    "idle": { "left": "Idle Right + Mirror X" },
+    "attack": { "left": "Attack Right + Mirror X" }
+  },
+  "clipIds": ["Walk Right", "Walk Up", "Walk Down", "Attack Right", "Idle Right"],
+  "actions": [
+    "On Start -> Set Sprite Direction Hero left",
+    "On Click -> Set Sprite Flip Hero flipX true"
+  ],
+  "checks": [
+    "Flip X, Flip Y, and combined flip changed UV presentation without changing Transform scale.",
+    "Four-way Walk authoring used sparse typed directional rows; Left reused Walk Right with Mirror X.",
+    "Walk Right frame zero carried a Footstep event and direction changes retained Clip event identity.",
+    "Save/Load restored states, directional rows, mirrors, actions, and initial direction.",
+    "Directional Hero Prefab was saved, instantiated, updated, and revalidated.",
+    "Deleting referenced Walk Up preserved spriteAnimation2 and produced three actionable errors across the scene object, instance, and Prefab.",
+    "Playing the broken Up reference did not crash and safely fell back to the base Clip.",
+    "Repairing the scene object and updating the Prefab returned validation to zero issues.",
+    "Editable and Playable UI export controls were invoked after repair.",
+    "Isolated generated exports booted offline and verified initial Down, Idle/Walk/Attack, Right-to-Left time preservation with Mirror X, and Right-to-Up Clip restart."
+  ],
+  "tests": {
+    "phase025": "77/77",
+    "focusedPhase011Through025": "667/667",
+    "full": "1029/1029",
+    "showcase": "15/15",
+    "publicSite": "1/1 (28 public games)"
+  },
+  "exports": {
+    "proof": "phase-025-export-proof.json",
+    "editable": { "file": ".tmp-phase025/phase-025-editable.html", "bytes": 1615924, "pass": true },
+    "playable": { "file": ".tmp-phase025/phase-025-playable.html", "bytes": 1615985, "pass": true }
+  },
+  "browserWarningsOrErrors": [],
+  "capabilityGrades": {
+    "Sprites / 2D": "B",
+    "Animation": "C",
+    "Animation Events": "C"
+  },
+  "openFriction": ["AFR-0009 remains CONFIRMED"],
+  "verdict": "PHASE_025_SPRITE_DIRECTIONAL_VARIANTS_READY"
+}

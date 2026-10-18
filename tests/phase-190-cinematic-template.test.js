@@ -1,0 +1,26 @@
+'use strict';
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const source=fs.readFileSync('editor/src/01-editor.js','utf8');
+function fn(name){const start=source.indexOf('function '+name+'(');if(start<0)return '';const next=source.indexOf('\nfunction ',start+1);return source.slice(start,next<0?source.length:next);}
+const c={};vm.createContext(c);assert(fn('createCinematicTemplateRecord'),'actual cinematic template packager missing');
+vm.runInContext(fn('createCinematicTemplateRecord'),c);
+const records=[{id:'camera',kind:'camera',options:{position:[0,2,0]}},{id:'path',kind:'path',pointIds:['a','b']},{id:'a',kind:'cube',position:[0,0,0]},{id:'b',kind:'cube',position:[2,0,0]}];
+const sequence={id:'s',name:'Opening',steps:[{kind:'action',actionType:'changeCamera',params:{cameraId:'camera',blendSeconds:0}},{kind:'action',actionType:'playCameraPath',params:{pathId:'path',duration:1,lookMode:'alongPath'}},{kind:'delay',seconds:1.1}]};
+const pack=(r=records,s=sequence)=>c.createCinematicTemplateRecord('Opening rail',r,s);
+const before=JSON.stringify({records,sequence}),p=pack();assert(p.ok,p.reason);assert.equal(JSON.stringify({records,sequence}),before);p.record.records[0].id='mutated';assert.equal(records[0].id,'camera');
+const changed=x=>JSON.parse(JSON.stringify(x));let s=changed(sequence);s.steps[1].params.lookAtTargetId='outside';s.steps[1].params.lookMode='lookAtObject';assert(!pack(records,s).ok);
+let r=changed(records);r[1].pointIds[1]='missing';assert(!pack(r).ok);r=changed(records);r[0].id='a';assert(!pack(r).ok);
+r=changed(records);r[0].behaviors=[{type:'onStart',actionType:'customScript'}];assert(!pack(r).ok);
+s=changed(sequence);s.steps[1].params.duration=Infinity;assert(!pack(records,s).ok);s=changed(sequence);s.steps[1].params.loop=true;assert(!pack(records,s).ok);s=changed(sequence);s.steps.push({kind:'action',actionType:'incrementCounter',params:{counter:'shared'}});assert(!pack(records,s).ok);
+r=changed(records);r[0].cycle=r;assert(!pack(r).ok);s=changed(sequence);s.steps[1].params.loop='false';assert(!pack(records,s).ok);s=changed(sequence);s.steps[1].params.returnToPrevious='false';assert(!pack(records,s).ok);
+console.log('Phase190 actual bounded cinematic packager detached data/reference closure/duplicate IDs/nonfinite/cyclic/unsupported ownership refusal PASS');
+let serial=0;c.generateItemId=()=>`new${++serial}`;c.generateSequenceId=()=>`sequence${++serial}`;c.generateGroupId=()=>`group${++serial}`;c.currentSequences=[{id:'existing',name:'Opening rail'}];
+vm.runInContext(fn('remapObjectIds')+'\n'+fn('prepareCinematicTemplatePlacement'),c);
+const template=pack().record,original=JSON.stringify(template);template.records.forEach(r=>r.groupId='sourceGroup');
+template.sequence.steps.push({kind:'action',actionType:'playCameraPath',params:{pathId:'path',duration:1,lookMode:'fixedTarget',fixedTargetX:3,fixedTargetY:4,fixedTargetZ:5}});
+const saved=JSON.stringify(template),one=c.prepareCinematicTemplatePlacement(template,[10,5,20]),two=c.prepareCinematicTemplatePlacement(template,[20,5,20]);assert(one.ok&&two.ok);assert.equal(JSON.stringify(template),saved);
+const styled=JSON.parse(JSON.stringify(template));styled.records[2].components={transform:{position:[0,0,0]},visual:{textureAssetRef:null}};const normal=c.prepareCinematicTemplatePlacement(styled,[10,5,20]);assert(normal.ok);assert.deepStrictEqual(Array.from(normal.records[2].components.transform.position),[10,3,20]);styled.records[2].components.collider={enabled:true};assert(!c.prepareCinematicTemplatePlacement(styled,[10,5,20]).ok);
+assert(!one.records.some(r=>two.records.some(s=>s.id===r.id)));assert.notEqual(one.sequence.id,two.sequence.id);assert.equal(one.sequence.name,'Opening rail 2');assert.notEqual(one.records[0].groupId,two.records[0].groupId);assert(one.records.every(r=>r.groupId===one.records[0].groupId));
+assert.equal(one.sequence.steps[0].params.cameraId,one.records[0].id);assert.equal(one.sequence.steps[1].params.pathId,one.records[1].id);assert.equal(one.records[1].pointIds[0],one.records[2].id);assert.deepStrictEqual(Array.from(one.records[2].position),[10,3,20]);assert.equal(one.sequence.steps[3].params.fixedTargetX,13);assert.equal(one.sequence.steps[3].params.fixedTargetY,7);assert.equal(one.sequence.steps[3].params.fixedTargetZ,25);
+const idsBefore=serial;assert(!c.prepareCinematicTemplatePlacement(template,[Infinity,0,0]).ok);assert.equal(serial,idsBefore);
+console.log('Phase190 actual canonical object+Sequence remap, independent groups/IDs, placement/fixedXYZ translation, detached/no invalid-ID consumption PASS');

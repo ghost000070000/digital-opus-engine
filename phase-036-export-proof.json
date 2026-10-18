@@ -1,0 +1,62 @@
+{
+  "phase": 36,
+  "runId": "phase-036-20260916T204608-0700",
+  "exports": {
+    "editable": {
+      "path": "qualification\\phase-036\\phase-036-editable-game.html",
+      "bytes": 1857513,
+      "terrainBrushes": 3,
+      "terrainCells": 196
+    },
+    "playable": {
+      "path": "qualification\\phase-036\\phase-036-playable-game.html",
+      "bytes": 1845891,
+      "terrainBrushes": 0,
+      "terrainCells": 0,
+      "autoCells": 0,
+      "policy": "Terrain and Auto-Tile authoring stripped; resolved Tile IDs retained"
+    },
+    "visualParity": true
+  },
+  "editableBoot": {
+    "state": {
+      "tilesetVersion": 4,
+      "terrainBrushes": 3,
+      "autoSets": 1,
+      "terrainCells": 196,
+      "autoCells": 55,
+      "cellKeys": [
+        "autoTileSetId",
+        "terrainBrushId",
+        "tileId",
+        "x",
+        "y"
+      ],
+      "chromeVisible": true
+    },
+    "pageErrors": [],
+    "consoleErrors": [],
+    "externalRequests": []
+  },
+  "playableBoot": {
+    "state": {
+      "tilesetVersion": 4,
+      "terrainBrushes": 0,
+      "autoSets": 0,
+      "terrainCells": 0,
+      "autoCells": 0,
+      "cellKeys": [
+        "tileId",
+        "x",
+        "y"
+      ],
+      "chromeVisible": false
+    },
+    "pageErrors": [],
+    "consoleErrors": [],
+    "externalRequests": []
+  },
+  "network": [],
+  "pageErrors": [],
+  "consoleErrors": []
+}

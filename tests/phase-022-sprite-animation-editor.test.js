@@ -1,0 +1,80 @@
+'use strict';
+const assert = require('assert');
+const fs = require('fs');
+const path = require('path');
+const plumbing = require('../editor/src/00-authoring-plumbing.js');
+const authoring = require('../editor/src/00-authoring-schema.js');
+
+const tests = []; let passed = 0;
+function test(name, fn) { tests.push({ name, fn }); }
+function frame(id, durationMs = 100) { return { spriteAsset: id, durationMs }; }
+function clip(extra = {}) { return plumbing.createSpriteAnimationClip({ id: 'spriteAnimation1', name: 'Run', playbackMode: 'once', frames: [frame('s1', 80), frame('s2', 80), frame('s3', 160), frame('s4', 80)], ...extra }); }
+const editor = fs.readFileSync(path.join(__dirname, '../editor/src/01-editor.js'), 'utf8');
+const html = fs.readFileSync(path.join(__dirname, '../editor/index.html'), 'utf8');
+const runner = fs.readFileSync(path.join(__dirname, 'run-tests.js'), 'utf8');
+
+test('Sprite Animation Clip schema migrates forward to current version 3', () => assert.strictEqual(plumbing.assetTypes.get('sprite-animation').version, 3));
+test('v1 clip migrates through v2 to v3', () => assert.strictEqual(plumbing.createSpriteAnimationClip({ id: 'old', version: 1, frames: [frame('s1')] }).version, 3));
+test('v1 migration preserves historical Once behavior', () => assert.strictEqual(plumbing.createSpriteAnimationClip({ id: 'old', version: 1, frames: [frame('s1')] }).playbackMode, 'once'));
+test('playbackMode defaults to once', () => assert.strictEqual(plumbing.createSpriteAnimationClip({ id: 'new' }).playbackMode, 'once'));
+test('loop mode serializes canonically', () => assert.strictEqual(clip({ playbackMode: 'loop' }).playbackMode, 'loop'));
+test('unsupported playback mode normalizes to once', () => assert.strictEqual(clip({ playbackMode: 'pingpong' }).playbackMode, 'once'));
+test('raw invalid playback mode validates', () => assert(plumbing.assetTypes.validate({ ...clip(), playbackMode: 'reverse' }, 'sprite-animation').some((issue) => issue.code === 'sprite-animation-playback-mode')));
+test('duplicate clip preserves mode', () => assert.strictEqual(plumbing.duplicateSpriteAnimationClip(clip({ playbackMode: 'loop' }), 'copy').playbackMode, 'loop'));
+test('duplicate clip owns independent frames', () => { const a = clip({ playbackMode: 'loop' }); const b = plumbing.duplicateSpriteAnimationClip(a, 'copy'); b.frames[0].durationMs = 9; assert.strictEqual(a.frames[0].durationMs, 80); });
+test('total duration is derived from frames', () => assert.strictEqual(plumbing.spriteAnimationTotalDuration(clip()), 400));
+test('frame ranges expose deterministic starts and ends', () => assert.deepStrictEqual(plumbing.spriteAnimationFrameRanges(clip()).map(({ startMs, endMs }) => [startMs, endMs]), [[0,80],[80,160],[160,320],[320,400]]));
+test('time zero maps to frame zero', () => assert.strictEqual(plumbing.spriteAnimationFrameAtTime(clip(), 0, false).frameIndex, 0));
+test('time boundary maps to next frame', () => assert.strictEqual(plumbing.spriteAnimationFrameAtTime(clip(), 80, false).frameIndex, 1));
+test('end time maps to final held frame', () => assert.strictEqual(plumbing.spriteAnimationFrameAtTime(clip(), 400, false).frameIndex, 3));
+test('wrapped time maps modulo total duration', () => { const p = plumbing.spriteAnimationFrameAtTime(clip({ playbackMode: 'loop' }), 550, true); assert.deepStrictEqual([p.frameIndex,p.elapsedMs],[1,70]); });
+test('seek updates preview-style state without editing clip', () => { const c=clip(); const before=JSON.stringify(c); const s=plumbing.seekSpriteAnimation(null,c,250); assert.deepStrictEqual([s.currentFrameIndex,s.elapsedMs],[2,90]); assert.strictEqual(JSON.stringify(c),before); });
+test('Once behavior still holds final frame', () => { const c=clip(); const s=plumbing.playSpriteAnimation(null,c,true); plumbing.advanceSpriteAnimation(s,c,1); assert.deepStrictEqual([s.currentFrameIndex,s.playing,s.completed],[3,false,true]); });
+test('Loop wraps to frame zero', () => { const c=clip({playbackMode:'loop'}); const s=plumbing.playSpriteAnimation(null,c,true); plumbing.advanceSpriteAnimation(s,c,.41); assert.deepStrictEqual([s.currentFrameIndex,Math.round(s.elapsedMs),s.playing],[0,10,true]); });
+test('large delta crosses multiple complete loops mathematically', () => { const c=clip({playbackMode:'loop'}); const s=plumbing.playSpriteAnimation(null,c,true); plumbing.advanceSpriteAnimation(s,c,1.35); assert.deepStrictEqual([s.currentFrameIndex,Math.round(s.elapsedMs),s.completed],[1,70,false]); });
+test('absurd loop delta is bounded by modulo', () => { const c=clip({playbackMode:'loop'}); const s=plumbing.playSpriteAnimation(null,c,true); plumbing.advanceSpriteAnimation(s,c,1000000.15); assert.strictEqual(s.currentFrameIndex,1); });
+test('one-frame Loop stays safely on frame zero', () => { const c=clip({playbackMode:'loop',frames:[frame('s1',100)]}); const s=plumbing.playSpriteAnimation(null,c,true); plumbing.advanceSpriteAnimation(s,c,99999); assert.deepStrictEqual([s.currentFrameIndex,s.elapsedMs,s.playing],[0,0,true]); });
+test('empty Loop is safe and unplayable', () => { const c=clip({playbackMode:'loop',frames:[]}); const s=plumbing.playSpriteAnimation(null,c,true); plumbing.advanceSpriteAnimation(s,c,2); assert.strictEqual(s.playing,false); });
+test('runtime Stop still restores static fallback state', () => { const c=clip({playbackMode:'loop'}); const s=plumbing.playSpriteAnimation(null,c,true); plumbing.stopSpriteAnimation(s); assert.deepStrictEqual([s.currentFrameIndex,s.started,s.playing],[0,false,false]); });
+test('playOnStart remains Sprite-instance metadata', () => { const schema=authoring.registry.get('sprite-renderer'); assert(schema.fields.some((x)=>x.key==='playOnStart')); assert.strictEqual(schema.defaults.playOnStart,false); assert(!('playOnStart' in clip())); });
+test('three Loop instances remain independent', () => { const c=clip({playbackMode:'loop'}); const states=Array.from({length:3},()=>plumbing.playSpriteAnimation(null,c,true)); plumbing.advanceSpriteAnimation(states[0],c,.09); plumbing.advanceSpriteAnimation(states[1],c,.33); assert.deepStrictEqual(states.map((s)=>s.currentFrameIndex),[1,3,0]); });
+test('100 looping instances share one immutable clip', () => { const c=clip({playbackMode:'loop'}); const before=JSON.stringify(c); const states=Array.from({length:100},(_,i)=>{const s=plumbing.playSpriteAnimation(null,c,true); plumbing.advanceSpriteAnimation(s,c,i*.017); return s;}); assert.strictEqual(new Set(states).size,100); assert.strictEqual(JSON.stringify(c),before); });
+test('100-frame editor timing stays linear and correct', () => { const c=clip({playbackMode:'loop',frames:Array.from({length:100},(_,i)=>frame(`s${i}`,10))}); assert.strictEqual(plumbing.spriteAnimationTotalDuration(c),1000); assert.strictEqual(plumbing.spriteAnimationFrameAtTime(c,995,true).frameIndex,99); });
+test('dedicated Sprite Animation Editor modal exists', () => assert(html.includes('id="sprite-animation-editor-modal"')));
+test('Asset card has discoverable Edit Animation action', () => assert(editor.includes('data-edit-sprite-animation')));
+test('Inspector has Open Animation Editor action', () => assert(editor.includes('data-open-sprite-animation-editor')));
+test('generic Asset Inspector no longer owns the frame form list', () => { const body=editor.slice(editor.indexOf('function renderSpriteAnimationInspector'),editor.indexOf('let spriteAnimationEditorState')); assert(!body.includes('data-sprite-animation-frame=')); });
+test('visual frame strip uses creator-facing frame numbering', () => { assert(html.includes('sprite-animation-frame-strip')); assert(editor.includes('Frame ${index + 1}')); });
+test('frame cards reuse atlas-aware Sprite region previews', () => assert(editor.includes('spriteRegionPreviewHtml(asset, sourceTextureForSpriteAsset(asset), 78)')));
+test('broken frames retain a visible card and missing state', () => { assert(editor.includes("broken ? ' broken'")); assert(editor.includes('missing Sprite Asset')); });
+test('clicking a frame selects and seeks its start', () => { assert(editor.includes('selectedFrameIndex = index')); assert(editor.includes('seekSpriteAnimation')); });
+test('Add Frame uses the Phase 021 default duration', () => assert(editor.includes('DEFAULT_SPRITE_FRAME_DURATION_MS')));
+test('Remove Frame removes only the frame array entry', () => assert(editor.includes('clip.frames.splice(selectedIndex, 1)')));
+test('Duplicate Frame copies into an independent record through current helper', () => assert(editor.includes("duplicateSpriteAnimationFrame(clip, selected)")));
+test('drag drop reorder changes canonical array order', () => { assert(editor.includes("setData('text/x-opus-frame-index'")); assert(editor.includes('reorderSpriteAnimationFrame(from, index)')); });
+test('Move Left and Move Right remain accessible reorder fallbacks', () => { assert(html.includes('Frame Strip')); assert(editor.includes('Move Left')); assert(editor.includes('Move Right')); });
+test('duration remains directly editable in milliseconds', () => { assert(editor.includes('Duration (ms)')); assert(editor.includes('data-sprite-animation-detail-duration')); });
+test('frame strip displays total milliseconds and seconds', () => assert(editor.includes('Duration: ${total} ms / ${(total / 1000).toFixed(2)} s')));
+test('preview has checkerboard transparency stage', () => { assert(html.includes('sprite-animation-preview-stage')); assert(html.includes('background-image: linear-gradient')); });
+test('preview Play uses shared playback helper', () => assert(editor.includes('OpusAuthoringPlumbing.playSpriteAnimation(spriteAnimationEditorState.playback')));
+test('preview tick uses shared delta advancement', () => assert(editor.includes('OpusAuthoringPlumbing.advanceSpriteAnimation(state, clip')));
+test('preview Pause freezes isolated preview state', () => { assert(editor.includes('pauseSpriteAnimationPreview')); assert(editor.includes('spriteAnimationEditorState.playback.playing = false')); });
+test('preview Stop resets frame and elapsed time', () => { assert(editor.includes('stopSpriteAnimationPreview(true)')); assert.strictEqual(plumbing.createSpriteAnimationPlayback('x',false).elapsedMs,0); });
+test('scrubber seeks without mutating authored clip', () => { assert(html.includes('id="sprite-animation-scrubber"')); assert(editor.includes("OpusAuthoringPlumbing.seekSpriteAnimation(spriteAnimationEditorState.playback")); });
+test('scrubber captures requested time before Pause can repaint its input', () => { const start=editor.indexOf("document.getElementById('sprite-animation-scrubber').oninput"); const handler=editor.slice(start, editor.indexOf("window.addEventListener('keydown'", start)); assert(handler.indexOf('const requestedMs') < handler.indexOf('pauseSpriteAnimationPreview()')); assert(!handler.includes('Number(event.target.value)); const position')); });
+test('current playback frame has a distinct indicator', () => { assert(html.includes('.sprite-animation-frame-card.current::after')); assert(editor.includes("classList.toggle('current'")); });
+test('Pixel preview uses pixelated image rendering', () => { assert(html.includes('.sprite-animation-preview-art.pixel img { image-rendering: pixelated')); assert(editor.includes("asset.filtering === 'nearest'")); });
+test('Sprite Asset tray supports stable-ID drag into frame strip', () => { assert(editor.includes("setData('application/x-opus-sprite-asset'")); assert(editor.includes("getData('application/x-opus-sprite-asset'")); });
+test('structural edits reset preview safely', () => { for(const token of ['addSpriteAnimationFrame','reorderSpriteAnimationFrame','resetSpriteAnimationPreview']) assert(editor.includes(token)); });
+test('preview state is not serialized', () => { assert(!/spriteAnimationEditorState\s*[:=].*serializeProject/.test(editor)); assert(!JSON.stringify(clip()).includes('selectedFrameIndex')); });
+test('save load remains normalized through current clip creator', () => { assert(editor.includes('loadSpriteAnimationClips')); assert(editor.includes('createSpriteAnimationClip(record)')); });
+test('Prefab relationship remains a stable state-to-clip reference', () => { const record={kind:'sprite',components:{'sprite-renderer':{...authoring.registry.get('sprite-renderer').defaults,version:6,animationStates:[{id:'idle',name:'Idle',clipRef:'spriteAnimation1'}]}}}; assert.strictEqual(authoring.serializeComponents(record)['sprite-renderer'].animationStates[0].clipRef,'spriteAnimation1'); });
+test('dependency closure remains frame Sprite Assets only', () => assert.deepStrictEqual(plumbing.assetTypes.getDependencies(clip(),'sprite-animation').map((x)=>x.id),['s1','s2','s3','s4']));
+test('Editable and Playable exports embed one editor and runtime', () => { assert(editor.includes('buildExportHTML(playableOnly)')); assert(html.includes('sprite-animation-editor-modal')); });
+test('static Sprite and Billboard boundaries remain intact', () => { assert.deepStrictEqual(authoring.registry.get('sprite-renderer').eligibility,['sprite']); assert.deepStrictEqual(authoring.registry.get('sprite-renderer').defaults.animationStates,[]); });
+test('no state machine transitions or directional variants leaked into top-level clip schema', () => { const keys=Object.keys(clip()); for(const forbidden of ['states','transitions','events','direction','flipX','flipY']) assert(!keys.includes(forbidden)); });
+test('Phase 022 suite is wired after Phase 021', () => assert(runner.indexOf('phase-022-sprite-animation-editor.test.js') > runner.indexOf('phase-021-sprite-animation-clips.test.js')));
+
+console.log('Phase 022 Sprite Animation Editor tests');
+for (const entry of tests) { try { entry.fn(); passed++; console.log(`  PASS ${entry.name}`); } catch (error) { console.error(`  FAIL ${entry.name}`); console.error(error.stack || error); process.exitCode=1; } }
+if (!process.exitCode) console.log(`Phase 022 tests passed: ${passed}/${tests.length}`);

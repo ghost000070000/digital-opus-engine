@@ -1,0 +1,25 @@
+{
+  "id": "skyway-trial",
+  "sourceSHA256": "f606e30da2790dcb362c4d301548a98ce82ebda81039408870f6c672df63c8bc",
+  "errors": [],
+  "capturedAt": "2026-09-11T17:02:19.526Z",
+  "sha256": "aeedd2c3a0399bdf8537710cc43db2db39f3c4b8c8929831b148bba23a438f37",
+  "state": {
+    "title": "Skyway Trial",
+    "sim": 1.4016000000238404,
+    "ended": false,
+    "text": "Jump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; C careful steps; Escape pauses.",
+    "controller": "thirdperson",
+    "bodyVisible": false,
+    "visualVisible": true,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 31
+  },
+  "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nMouse Sensitivity\nInvert Mouse Y\nQuality: High\n⛶ Fullscreen\nJump across five platforms to the summit.\nPress F to interact\nWASD / arrows move; Space jumps; C careful steps; Escape pauses.",
+  "passed": true
+}

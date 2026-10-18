@@ -1,0 +1,110 @@
+{
+  "phase": 38,
+  "feature": "tilemap-chunk-prefab-reuse",
+  "verdict": "PHASE_038_TILEMAP_CHUNK_REUSE_READY",
+  "runId": "phase-038-endurance-closure-20260919T112921342Z",
+  "startTimestamp": "2026-09-19T11:29:21.342Z",
+  "endTimestamp": "2026-09-19T14:29:51.561Z",
+  "activeElapsedSeconds": 10830.064,
+  "targetSeconds": 10830,
+  "excludedSuspendedSeconds": 0,
+  "operations": {
+    "captureOperations": 3826656,
+    "chunkNormalizations": 3826656,
+    "layerMapsResolved": 5739984,
+    "dryRunPlans": 3826656,
+    "stampCommits": 3826656,
+    "semanticCellWrites": 89926416,
+    "terrainResolutions": 50224860,
+    "autoTileRecomputes": 956664,
+    "markersCreated": 2551104,
+    "markerIdChecks": 2551104,
+    "previewCommitComparisons": 3826656,
+    "overwritePlans": 3746934,
+    "holePreservationChecks": 3268602,
+    "undoOperations": 3826656,
+    "redoOperations": 3826656,
+    "saveLoadCycles": 3826656,
+    "browserCycles": 9,
+    "editableCycles": 4,
+    "playableCycles": 4
+  },
+  "heartbeats": 19,
+  "midpoint": {
+    "timestamp": "2026-09-19T12:59:21.590Z",
+    "activeElapsedSeconds": 5400.089,
+    "status": "PASS"
+  },
+  "twoHourMilestone": {
+    "timestamp": "2026-09-19T13:29:24.350Z",
+    "activeElapsedSeconds": 7200.048,
+    "status": "PASS"
+  },
+  "memory": {
+    "observations": 46,
+    "rssBytes": { "minimum": 57044992, "maximum": 233869312, "final": 232960000 },
+    "heapUsedBytes": { "minimum": 6290576, "maximum": 82953064, "final": 54488184 },
+    "lastTenRssBytes": { "minimum": 231641088, "maximum": 233590784 },
+    "interpretation": "Bounded observation stabilized in the final samples; this is not a formal leak proof."
+  },
+  "transientFileLockRetries": 0,
+  "semanticMismatches": 0,
+  "crashes": 0,
+  "unresolvedFailures": 0,
+  "sourceFingerprint": {
+    "start": "005bb7157ec842dee6b7e1ea806d5d2268e3da7be859b9714a58bc5f185f537d",
+    "end": "005bb7157ec842dee6b7e1ea806d5d2268e3da7be859b9714a58bc5f185f537d",
+    "unchanged": true
+  },
+  "postRunGates": {
+    "phase038Focused": "89/89 PASS",
+    "phase011Through038": "1638/1638 PASS",
+    "integrated": "2000/2000 PASS",
+    "phase037": "69/69 PASS",
+    "phase036": "102/102 PASS",
+    "phase035": "104/104 PASS",
+    "phase034": "86/86 PASS",
+    "phase033": "85/85 PASS",
+    "phase032": "52/52 PASS",
+    "phase031": "78/78 PASS",
+    "engineBuild": "PASS",
+    "engineBytes": 166134,
+    "engineGzipBytes": 42573,
+    "editorPackageKilobytes": 1848,
+    "publicGames": "28/28 PASS",
+    "engineSite": "PASS: path safety, 28 game links, 8 home links, no dogfood route",
+    "gamesSite": "28/28 PASS: path safety and links",
+    "capability": "PASS: 57 capabilities; A=5 B=33 C=18 D=0 N/A=1",
+    "friction": "PASS: 24 records; 19 open canonical; 1 Critical; 12 High; 2 duplicates",
+    "javascriptSyntax": "202/202 PASS",
+    "phase038Json": "19/19 PASS before final evidence write; final evidence revalidated after write",
+    "diffCheck": "PASS; characterized line-ending warnings only",
+    "chunkRuntimeAbsent": true,
+    "chunkOnlyDependenciesPruned": true,
+    "publicCatalogCount": 28,
+    "game29Absent": true,
+    "phase039ImplementationAbsent": true,
+    "dirtyWorktreePreserved": true,
+    "phase038OwnedOrphanProcesses": 0
+  },
+  "postRunMaintenance": [
+    "Updated Phase 020 and Phase 031 assertions from lastImprovedPhase 37 to the already-qualified Phase 038 catalog value 38; no product semantics changed."
+  ],
+  "retainedArtifacts": [
+    "qualification/phase-038/closure-artifacts/first-editable.html",
+    "qualification/phase-038/closure-artifacts/first-playable.html",
+    "qualification/phase-038/closure-artifacts/midpoint-editable.html",
+    "qualification/phase-038/closure-artifacts/midpoint-playable.html",
+    "qualification/phase-038/closure-artifacts/final-editable.html",
+    "qualification/phase-038/closure-artifacts/final-playable.html"
+  ],
+  "processCleanup": {
+    "enduranceWorkerExited": true,
+    "browserContextsClosed": true,
+    "serversClosed": true,
+    "phase038PortsListening": 0,
+    "orphanCount": 0
+  },
+  "recommendedNextPhase": "Phase 039 only after human/controller roadmap update; no Phase 039 implementation was started here.",
+  "roadmapState": "Phase 038 evidence is ready for human review; external tracker remains unchanged."
+}

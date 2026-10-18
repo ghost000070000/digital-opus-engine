@@ -1,0 +1,74 @@
+{
+  "phase": 34,
+  "exports": {
+    "editable": {
+      "path": "qualification\\phase-034\\phase-034-editable-game.html",
+      "bytes": 1763821,
+      "tiles": 7,
+      "collisionTiles": 3
+    },
+    "playable": {
+      "path": "qualification\\phase-034\\phase-034-playable-game.html",
+      "bytes": 1763135,
+      "tiles": 5,
+      "collisionTiles": 3,
+      "policy": "retained on dependency-pruned used Tile records; no runtime consumer"
+    },
+    "visualTilemapParity": true
+  },
+  "editableBoot": {
+    "state": {
+      "tilesetVersion": 2,
+      "wallCollision": {
+        "mode": "custom-rect",
+        "rect": {
+          "minX": 0.25,
+          "minY": 0,
+          "maxX": 1,
+          "maxY": 1
+        }
+      },
+      "objectCount": 1,
+      "cellKeys": [
+        "tileId",
+        "x",
+        "y"
+      ],
+      "hasColliderObjects": false,
+      "overlayNodes": 4,
+      "chromeVisible": true
+    },
+    "pageErrors": [],
+    "consoleErrors": [],
+    "externalRequests": []
+  },
+  "playableBoot": {
+    "state": {
+      "tilesetVersion": 2,
+      "wallCollision": {
+        "mode": "custom-rect",
+        "rect": {
+          "minX": 0.2,
+          "minY": 0.1,
+          "maxX": 0.8,
+          "maxY": 0.7
+        }
+      },
+      "objectCount": 1,
+      "cellKeys": [
+        "tileId",
+        "x",
+        "y"
+      ],
+      "hasColliderObjects": false,
+      "overlayNodes": 0,
+      "chromeVisible": false
+    },
+    "pageErrors": [],
+    "consoleErrors": [],
+    "externalRequests": []
+  },
+  "network": [],
+  "pageErrors": [],
+  "consoleErrors": []
+}

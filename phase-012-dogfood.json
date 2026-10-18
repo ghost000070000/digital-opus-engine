@@ -1,0 +1,28 @@
+{
+  "phase": 12,
+  "method": "Normal editor UI through the local in-app browser; no JSON injection",
+  "sourceImage": "assets/branding/digital-opus-icon.png",
+  "sourceDimensions": [1024, 1024],
+  "steps": {
+    "importAsSprite": "passed: created one Texture and one Sprite Asset",
+    "rename": "passed: digital-opus-icon Sprite -> Digital Opus Hero without changing the reference",
+    "metadata": "passed: pivot [0.25, 0.5], PPU 256, natural size 4x4",
+    "placement": "passed: first instance used Sprite Asset and natural size",
+    "duplicateAsset": "passed: second stable asset reused the same Texture",
+    "duplicateIndependence": "passed: duplicate pivot [0.25, 0.75], PPU 512, natural size 2x2; original stayed 4x4",
+    "secondPlacement": "passed: second Sprite used the duplicate asset",
+    "prefab": "passed: Hero Sprite Prefab saved and retained the Sprite Asset reference",
+    "saveLoad": "passed: phase-012-dogfood reloaded both assets, metadata, references, and instances",
+    "validationHealthy": "passed: no structured authoring issues",
+    "missingSource": "passed: source cleared through the Sprite Asset Inspector; placeholder and broken-source state were visible; validation reported errors",
+    "repair": "passed: existing Texture reassigned through the same Inspector",
+    "editablePlayableExport": "passed through normal UI: editor reported Editable game exported and Playable game exported (no editor access); shared export builders also passed",
+    "phase011LegacyCompatibility": "passed through normal UI: converted an existing Sprite instance to direct Texture compatibility, preserved 4x4 Width/Height, pivot [0.25, 0.5], tint, visibility, and layer; saved as phase-011-legacy-dogfood; reloaded; entered Play; exported editable and playable HTML; then used Convert Legacy Texture to Sprite Asset and preserved the same instance appearance fields",
+    "convertedInspector": "passed: the generated digital-opus-icon Sprite record exposed Source Width 1024 px, Source Height 1024 px, Natural Width 10.240 world units, and Natural Height 10.240 world units as separate read-only fields",
+    "convertedValidation": "passed: No structured authoring issues found",
+    "browserConsole": "passed: no errors or warnings"
+  },
+  "secondFormat": "deferred: no existing JPG/JPEG/WebP fixture in the repository",
+  "visualEvidence": "Captured in the browser session: Assets panel showed two Sprite cards over one Texture, 4x4 versus 2x2 natural sizes, local thumbnails, Inspector metadata, and the missing-source placeholder.",
+  "passed": true
+}

@@ -1,0 +1,12 @@
+'use strict';
+const assert=require('assert'),fs=require('fs'),path=require('path'),vm=require('vm');
+const source=fs.readFileSync(path.join(__dirname,'../build/build.js'),'utf8');
+const body=source.slice(source.indexOf('function writeArtifact('),source.indexOf('\nconst ROOT ='));
+let stored='same',writes=0,blocked=false;
+const fileSystem={readFileSync(){if(stored===null){const e=new Error('missing');e.code='ENOENT';throw e;}return stored;},writeFileSync(file,text){writes++;if(blocked){const e=new Error('Windows handle');e.code='UNKNOWN';throw e;}stored=text;}};
+const write=vm.runInNewContext(body+';writeArtifact',{fs:fileSystem,Atomics:{wait(){}},Int32Array,SharedArrayBuffer});
+blocked=true;write('artifact','same');assert.strictEqual(writes,0,'Byte-identical output avoids the proven failing rewrite');
+blocked=false;write('artifact','changed');assert.strictEqual(stored,'changed');assert.strictEqual(writes,1,'Changed output must still be rebuilt');
+stored=null;write('artifact','new');assert.strictEqual(stored,'new','Missing output must be created');
+blocked=true;assert.throws(()=>write('artifact','different'),/Windows handle/,'Persistent write failure cannot be reported as success');
+console.log('Actual build writer: identical locked artifact preserved, changed/missing output rebuilt, persistent failure surfaced PASS');

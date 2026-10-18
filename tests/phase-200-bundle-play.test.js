@@ -1,0 +1,13 @@
+'use strict';
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const src=fs.readFileSync(require.resolve('../editor/src/01-editor.js'),'utf8');
+const calls=[],c={playMode:true,captureTilemapBundleSnapshot:()=>calls.push('capture')};vm.createContext(c);
+vm.runInContext(src.slice(src.indexOf('function commitTilemapBundleImport('),src.indexOf('async function previewTilemapBundleImportFile(')),c);
+assert.throws(()=>c.commitTilemapBundleImport({},'private'),/Stop Play/);assert.equal(calls.length,0,'Refuse before snapshot, resources, libraries or history');
+const messages=[],p={playMode:true,levels:[],currentLevelIndex:0,undoStack:[],redoStack:[],captureAssetReplacementState:()=>({project:{}}),closeTilemapBundleModal:()=>{},showStatus:s=>messages.push(s)};vm.createContext(p);
+vm.runInContext(src.slice(src.indexOf('let pendingTilemapBundleAction = null;'),src.indexOf('function tilemapBundleProjectView(')),p);
+vm.runInContext(src.slice(src.indexOf('async function previewTilemapBundleImportFile('),src.indexOf("document.getElementById('tilemap-bundle-cancel').onclick")),p);
+(async()=>{await p.previewTilemapBundleImportFile({text:()=>{throw Error('Must not read file during Play');}});assert.match(messages[0],/Stop Play/);
+  p.playMode=false;let resolve;const file={text:()=>new Promise(r=>resolve=r)};p.OpusTilemapBundle={verifyBundleText:async()=>({})};p.planTilemapBundleImport=()=>({});p.openTilemapBundleModal=()=>{throw Error('Must not open preview after Play starts');};const pending=p.previewTilemapBundleImportFile(file);p.playMode=true;resolve('{}');await pending;assert.match(messages[1],/Stop Play/);
+  console.log('PASS200 actual bundle direct commit and asynchronous file preview refuse Play before authored mutation');
+})().catch(e=>{console.error(e);process.exitCode=1;});

@@ -1,0 +1,85 @@
+{
+  "url": "http://127.0.0.1:8880/editor/index.html?phase=22",
+  "profile": "fresh localhost origin",
+  "project": "phase-022-sprite-animation-editor",
+  "sourceFixture": "tests/fixtures/phase-018-atlas.png",
+  "authored": {
+    "atlasSize": [128, 128],
+    "gridCellSize": [32, 32],
+    "slicedSpriteAssets": 16,
+    "clips": [
+      {"name": "Once Accent", "mode": "once", "frames": 4, "durationsMs": [80, 80, 160, 300]},
+      {"name": "Loop Cycle", "mode": "loop", "frames": 6, "totalMs": 550},
+      {"name": "One Frame Loop", "mode": "loop", "frames": 1, "durationMs": 100}
+    ],
+    "spriteInstances": 8,
+    "prefab": "Looping Atlas Sprite",
+    "prefabInstantiations": 3,
+    "mixedPlayOnStart": true
+  },
+  "preview": {
+    "play": true,
+    "pauseFrozenAt": "466 / 550 ms",
+    "frameClick": true,
+    "scrubberControlExercised": true,
+    "scrubberAfterRepair": "328 / 550 ms, frame 4",
+    "nativeDragReorder": true,
+    "buttonReorder": true,
+    "duplicateThenRemove": true,
+    "loopAfter760Ms": "244 / 550 ms",
+    "stopReset": "0 / 550 ms",
+    "oneFrameAfter430Ms": "24 / 100 ms",
+    "pixelAtlasFrame": {
+      "asset": "phase-018-atlas_001",
+      "previewClass": "sprite-animation-preview-art pixel",
+      "computedImageRendering": "pixelated",
+      "validation": "No structured authoring issues found."
+    }
+  },
+  "validation": {
+    "brokenResult": "2 issues — 2 error, 0 warning, 0 info",
+    "brokenCodes": ["required-reference-missing", "sprite-animation-frame-source-required"],
+    "repairedResult": "No structured authoring issues found."
+  },
+  "saveLoad": {
+    "saved": true,
+    "reloaded": true,
+    "verifiedMode": "loop",
+    "verifiedFrames": 6,
+    "verifiedTotalMs": 550
+  },
+  "exports": {
+    "editableBytes": 1544356,
+    "playableBytes": 1544394,
+    "editableBooted": true,
+    "editableEditorOpened": true,
+    "editableReordered": true,
+    "editableRetimedTotalMs": 625,
+    "editableLoopAfter770Ms": "70 / 625 ms",
+    "finalEditableScrub": "321 / 550 ms, frame 4",
+    "finalEditableLoopAfter760Ms": "201 / 550 ms, frame 3",
+    "finalEditableEnteredPlay": true,
+    "playableBooted": true,
+    "playableVisualChangedAcross180Ms": true,
+    "remoteDependencies": false
+  },
+  "interactions": {
+    "approximate": 88,
+    "note": "Includes import/slice, three clip builds, per-frame timing, native and button reorder, preview controls, scene assignment, prefab drags, validation break/repair, Save/Load, and both exports. Count is observational, not optimized."
+  },
+  "friction": [
+    "The dedicated strip removed the Phase 021 vertical form-list scan and made order, artwork, and duration legible together.",
+    "The embedded Sprite Asset tray made click-to-add direct; narrow horizontal tray overflow still requires scrolling for later atlas cells.",
+    "Asset edits remain outside scene Undo by existing policy, which is clear but less forgiving than scene authoring.",
+    "Top-level Animation and Sequence friction remains broader than this one-clip Sprite editor."
+  ],
+  "defectsFoundAndRepaired": [
+    "Scrubber pause repainted the range before reading event.target.value, forcing seeks to 0; capture requestedMs before Pause and regression-lock ordering."
+  ],
+  "consoleErrors": [],
+  "consoleWarnings": [],
+  "pageErrors": [],
+  "developerStateInjection": false,
+  "normalVisibleControlsOnly": true,
+  "ok": true
+}

@@ -1,0 +1,406 @@
+{
+  "phase": 27,
+  "url": "http://127.0.0.1:8877/editor/",
+  "fixture": "tests\\fixtures\\phase-026-nine-slice-panel.png",
+  "checks": {
+    "validation": "No structured authoring issues found.",
+    "editable": {
+      "file": ".tmp-phase027\\phase-027-editable.html",
+      "bytes": 1648026,
+      "playableOnly": false,
+      "chromeVisible": true,
+      "editorOpened": true,
+      "managerVisible": true,
+      "pickerVisible": true,
+      "runtime": {
+        "layers": [
+          {
+            "id": "far",
+            "name": "Far Sky",
+            "factorX": 0.1,
+            "factorY": 0.1
+          },
+          {
+            "id": "mountains",
+            "name": "Distant Mountains",
+            "factorX": 0.45,
+            "factorY": 0.45
+          },
+          {
+            "id": "trees",
+            "name": "Trees",
+            "factorX": 0.6,
+            "factorY": 0.6
+          },
+          {
+            "id": "foreground",
+            "name": "Foreground",
+            "factorX": 1.2,
+            "factorY": 1.2
+          },
+          {
+            "id": "lock-x",
+            "name": "Screen Lock X",
+            "factorX": 0,
+            "factorY": 1
+          }
+        ],
+        "rows": [
+          {
+            "name": "Phase 027 Far",
+            "ref": "far",
+            "renderMode": "simple",
+            "before": [
+              0,
+              0,
+              0
+            ],
+            "after": [
+              0,
+              0,
+              0
+            ],
+            "factors": {
+              "factorX": 0.1,
+              "factorY": 0.1,
+              "missing": false
+            },
+            "offset": {
+              "x": 18,
+              "y": 9,
+              "z": 0
+            }
+          },
+          {
+            "name": "Phase 027 Nine-Slice",
+            "ref": "mountains",
+            "renderMode": "nine-slice",
+            "before": [
+              2,
+              1,
+              -1
+            ],
+            "after": [
+              2,
+              1,
+              -1
+            ],
+            "factors": {
+              "factorX": 0.45,
+              "factorY": 0.45,
+              "missing": false
+            },
+            "offset": {
+              "x": 11,
+              "y": 5.5,
+              "z": 0
+            }
+          },
+          {
+            "name": "Phase 027 Trees",
+            "ref": "trees",
+            "renderMode": "simple",
+            "before": [
+              4,
+              2,
+              -2
+            ],
+            "after": [
+              4,
+              2,
+              -2
+            ],
+            "factors": {
+              "factorX": 0.6,
+              "factorY": 0.6,
+              "missing": false
+            },
+            "offset": {
+              "x": 8,
+              "y": 4,
+              "z": 0
+            }
+          },
+          {
+            "name": "Phase 027 Foreground",
+            "ref": "foreground",
+            "renderMode": "simple",
+            "before": [
+              6,
+              3,
+              -3
+            ],
+            "after": [
+              6,
+              3,
+              -3
+            ],
+            "factors": {
+              "factorX": 1.2,
+              "factorY": 1.2,
+              "missing": false
+            },
+            "offset": {
+              "x": -3.999999999999999,
+              "y": -1.9999999999999996,
+              "z": 0
+            }
+          },
+          {
+            "name": "Phase 027 Lock X",
+            "ref": "lock-x",
+            "renderMode": "simple",
+            "before": [
+              8,
+              4,
+              -4
+            ],
+            "after": [
+              8,
+              4,
+              -4
+            ],
+            "factors": {
+              "factorX": 0,
+              "factorY": 1,
+              "missing": false
+            },
+            "offset": {
+              "x": 20,
+              "y": 0,
+              "z": 0
+            }
+          },
+          {
+            "name": "Phase 027 World",
+            "ref": null,
+            "renderMode": "simple",
+            "before": [
+              10,
+              5,
+              -5
+            ],
+            "after": [
+              10,
+              5,
+              -5
+            ],
+            "factors": {
+              "factorX": 1,
+              "factorY": 1,
+              "missing": false
+            },
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          }
+        ]
+      },
+      "errors": [],
+      "network": [],
+      "pass": true
+    },
+    "playable": {
+      "file": ".tmp-phase027\\phase-027-playable.html",
+      "bytes": 1647778,
+      "playableOnly": true,
+      "chromeVisible": false,
+      "editorOpened": false,
+      "managerVisible": false,
+      "pickerVisible": false,
+      "runtime": {
+        "layers": [
+          {
+            "id": "far",
+            "name": "Far Sky",
+            "factorX": 0.1,
+            "factorY": 0.1
+          },
+          {
+            "id": "mountains",
+            "name": "Distant Mountains",
+            "factorX": 0.45,
+            "factorY": 0.45
+          },
+          {
+            "id": "trees",
+            "name": "Trees",
+            "factorX": 0.6,
+            "factorY": 0.6
+          },
+          {
+            "id": "foreground",
+            "name": "Foreground",
+            "factorX": 1.2,
+            "factorY": 1.2
+          },
+          {
+            "id": "lock-x",
+            "name": "Screen Lock X",
+            "factorX": 0,
+            "factorY": 1
+          }
+        ],
+        "rows": [
+          {
+            "name": "Phase 027 Far",
+            "ref": "far",
+            "renderMode": "simple",
+            "before": [
+              0,
+              0,
+              0
+            ],
+            "after": [
+              0,
+              0,
+              0
+            ],
+            "factors": {
+              "factorX": 0.1,
+              "factorY": 0.1,
+              "missing": false
+            },
+            "offset": {
+              "x": 18,
+              "y": 9,
+              "z": 0
+            }
+          },
+          {
+            "name": "Phase 027 Nine-Slice",
+            "ref": "mountains",
+            "renderMode": "nine-slice",
+            "before": [
+              2,
+              1,
+              -1
+            ],
+            "after": [
+              2,
+              1,
+              -1
+            ],
+            "factors": {
+              "factorX": 0.45,
+              "factorY": 0.45,
+              "missing": false
+            },
+            "offset": {
+              "x": 11,
+              "y": 5.5,
+              "z": 0
+            }
+          },
+          {
+            "name": "Phase 027 Trees",
+            "ref": "trees",
+            "renderMode": "simple",
+            "before": [
+              4,
+              2,
+              -2
+            ],
+            "after": [
+              4,
+              2,
+              -2
+            ],
+            "factors": {
+              "factorX": 0.6,
+              "factorY": 0.6,
+              "missing": false
+            },
+            "offset": {
+              "x": 8,
+              "y": 4,
+              "z": 0
+            }
+          },
+          {
+            "name": "Phase 027 Foreground",
+            "ref": "foreground",
+            "renderMode": "simple",
+            "before": [
+              6,
+              3,
+              -3
+            ],
+            "after": [
+              6,
+              3,
+              -3
+            ],
+            "factors": {
+              "factorX": 1.2,
+              "factorY": 1.2,
+              "missing": false
+            },
+            "offset": {
+              "x": -3.999999999999999,
+              "y": -1.9999999999999996,
+              "z": 0
+            }
+          },
+          {
+            "name": "Phase 027 Lock X",
+            "ref": "lock-x",
+            "renderMode": "simple",
+            "before": [
+              8,
+              4,
+              -4
+            ],
+            "after": [
+              8,
+              4,
+              -4
+            ],
+            "factors": {
+              "factorX": 0,
+              "factorY": 1,
+              "missing": false
+            },
+            "offset": {
+              "x": 20,
+              "y": 0,
+              "z": 0
+            }
+          },
+          {
+            "name": "Phase 027 World",
+            "ref": null,
+            "renderMode": "simple",
+            "before": [
+              10,
+              5,
+              -5
+            ],
+            "after": [
+              10,
+              5,
+              -5
+            ],
+            "factors": {
+              "factorX": 1,
+              "factorY": 1,
+              "missing": false
+            },
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          }
+        ]
+      },
+      "errors": [],
+      "network": [],
+      "pass": true
+    }
+  },
+  "errors": [],
+  "ok": true
+}

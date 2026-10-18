@@ -1,0 +1,48 @@
+{
+  "phase": 41,
+  "status": "READY_FOR_BROWSER_QUALIFICATION",
+  "project": "qualification/phase-041/phase-041-project.json",
+  "objects": {
+    "total": 23,
+    "boxSprite": "box-sprite",
+    "circleSprite": "circle-sprite",
+    "invisible": "invisible-box",
+    "both": "both-colliders",
+    "rotated": "rotated-box",
+    "parented": "parented-sprite",
+    "nonuniform": "nonuniform-circle",
+    "mirrored": "mirrored-box",
+    "overlapCases": {
+      "boxSeparated": [
+        "box-separated-a",
+        "box-separated-b"
+      ],
+      "boxTouching": [
+        "box-touch-a",
+        "box-touch-b"
+      ],
+      "boxOverlapping": [
+        "box-overlap-a",
+        "box-overlap-b"
+      ],
+      "rotatedBox": [
+        "rotated-overlap-a",
+        "rotated-overlap-b"
+      ],
+      "circleCircle": [
+        "circle-overlap-a",
+        "circle-overlap-b"
+      ],
+      "circleRotatedBox": [
+        "circle-box-a",
+        "circle-box-b"
+      ],
+      "boxCircleTouching": [
+        "touching-a",
+        "touching-b"
+      ]
+    }
+  },
+  "prefab": "Phase 041 Collider Prefab",
+  "publicCatalog": false
+}

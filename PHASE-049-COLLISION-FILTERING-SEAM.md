@@ -1,0 +1,5 @@
+# Phase 049 collision filtering seam
+
+Phase 048 Character movement considers all eligible Static Body ordinary Collider shapes, explicit Moving Platform 2D Boxes, extracted walkable Box tops, and all collision-bearing cells in Tilemap Layers with `collisionEnabled: true`. Tile obstacles can be full-cell or custom-rectangle solids, flat one-way surfaces, solid slope triangles, or one-way slope tops. The Tilemap Layer flag and Moving Platform opt-in are source participation choices, not categories/masks/groups.
+
+A later filtering system should apply pair rules at obstacle enumeration, before ordinary solid, moving-platform carry, one-way/slope classification, safe-carry obstruction, and step/support probes. Otherwise the same obstacle could be ignored by a blocking sweep yet still become support or clamp a platform. Filtering must cover Character-vs-Static, Character-vs-Tilemap, Character-vs-Moving-Platform, and Trigger pairs while preserving stable support IDs. Phase 048 authors no collision categories, masks, groups, or overrides.

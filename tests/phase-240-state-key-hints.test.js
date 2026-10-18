@@ -1,0 +1,24 @@
+'use strict';
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const source=fs.readFileSync(require.resolve('../editor/src/01-editor.js'),'utf8');
+const field=(key,label)=>({key,label,type:'text'}),flag=field('name','Flag name'),counter=field('counter','Counter name'),timer=field('timer','Timer name');
+const action={setFlagTrue:{fields:[flag]},setCounter:{fields:[counter]}},conditions={isFlagTrue:{fields:[flag]},timerFinished:{fields:[timer]}};
+const c={ACTION_TYPES:action,CONDITION_TYPES:conditions,placed:[{behaviors:[{action:'setFlagTrue',params:{name:'GateOpen'}}]}],currentSequences:[],graphEditorState:null,escapeHtml:s=>String(s).replace(/[&<>"']/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]))};
+vm.createContext(c);vm.runInContext(source.slice(source.indexOf('let stateKeyHintSerial ='),source.indexOf('function renderActionFieldInput(')),c);
+let getterCalls=0;const malicious={};Object.defineProperty(malicious,'action',{enumerable:true,get(){getterCalls++;return 'setFlagTrue';}});Object.defineProperty(malicious,'child',{enumerable:true,get(){getterCalls++;return {};}});
+const roots=[{action:'setFlagTrue',params:{name:'GateOpen'}},{type:'isFlagTrue',name:'gateopen'},{actionType:'setCounter',params:{counter:'score'}},{type:'timerFinished',timer:'Clock'},malicious];roots.push(roots);
+const hints=c.collectStateKeyHints(roots,'flag');assert.deepStrictEqual(Array.from(hints.names),['GateOpen','gateopen']);assert.equal(getterCalls,0);assert.equal(hints.truncated,false);
+assert.deepStrictEqual(Array.from(c.collectStateKeyHints(roots,'counter').names),['score']);assert.deepStrictEqual(Array.from(c.collectStateKeyHints(roots,'timer').names),['Clock']);
+const many=Array.from({length:100},(_,i)=>({action:'setFlagTrue',params:{name:'key'+i}}));const bounded=c.collectStateKeyHints(many,'flag');assert.equal(bounded.names.length,64);assert(bounded.truncated);
+assert(c.collectStateKeyHints(Array.from({length:5000},()=>({})),'flag').truncated);
+assert.equal(c.stateKeyFieldKind(field('name','Variable name')),null,'Object-variable scope is not guessed');assert.equal(c.stateKeyFieldHTML(field('name','Item name'),'x'),null);
+assert.equal(c.stateKeyFieldKind(field('name','toString')),null);
+const before=JSON.stringify(c.placed),html=c.stateKeyFieldHTML(flag,'<saved"&>','field"');assert(html.includes('list="state-key-hints-'));assert(html.includes('GateOpen'));assert(html.includes('&lt;saved&quot;&amp;&gt;'));assert(html.includes('id="field&quot;"'));assert(html.includes('does not rename other uses'));assert.equal(JSON.stringify(c.placed),before);
+const html2=c.stateKeyFieldHTML(flag,'');assert(!html2.includes('list="state-key-hints-1"'),'Each rendered control has a distinct list');
+console.log('Phase240 actual state-key hints: typed families, exact case, Behaviors/Graph/Sequence shapes, bounded cycles/no getters, escaped unique read-only controls PASS');
+const prefab={name:'Reusable',parameters:[{id:'p1',default:7}]},item={sourcePrefabName:'Reusable',prefabParams:{p1:12}},calls=[];
+const clear={playMode:false,selectedItem:item,placed:[item],prefabs:[prefab],pushUndo:()=>calls.push('undo'),applyPrefabParameters:(p,i)=>{calls.push('canonical');assert(!Object.hasOwn(i.prefabParams,'p1'));}};vm.createContext(clear);
+vm.runInContext(source.slice(source.indexOf('function clearPrefabParameterOverride('),source.indexOf('function renderPrefabParamPanel(')),clear);
+assert(clear.clearPrefabParameterOverride(item,prefab,'p1'));assert.deepStrictEqual(calls,['undo','canonical']);assert(!clear.clearPrefabParameterOverride(item,prefab,'p1'));assert.equal(calls.length,2);
+for(const retire of [()=>{clear.playMode=true;},()=>{clear.selectedItem={};},()=>{clear.placed=[];},()=>{clear.prefabs=[];},()=>{clear.prefabs=[prefab,{...prefab}];},()=>{prefab.parameters=[{id:'p1'},{id:'p1'}];}]){clear.playMode=false;clear.selectedItem=item;clear.placed=[item];clear.prefabs=[prefab];prefab.parameters=[{id:'p1',default:7}];item.prefabParams={p1:12};retire();assert(!clear.clearPrefabParameterOverride(item,prefab,'p1'));assert.equal(item.prefabParams.p1,12);assert.equal(calls.length,2);}
+console.log('Phase240 actual Prefab Clear Override: absent no-op and Play/stale/ambiguous-owner refusal before history, canonical changed clear PASS');

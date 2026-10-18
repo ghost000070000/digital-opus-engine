@@ -720,7 +720,20 @@
           "behaviors": [],
           "solid": true,
           "assetId": "showcase-barricade",
-          "textureAssetId": "showcase-palette"
+          "textureAssetId": "showcase-palette",
+          "collider": {
+            "shape": "box",
+            "size": {
+              "x": 1.9158620000000002,
+              "y": 0.9359999999999999,
+              "z": 0.355589
+            },
+            "offset": {
+              "x": 0,
+              "y": 0.46799999999999997,
+              "z": 0.012330499999999993
+            }
+          }
         },
         {
           "kind": "cube",
@@ -744,9 +757,22 @@
           "rotationY": -0.7853981633974483,
           "mesh": "asset",
           "behaviors": [],
-          "solid": false,
+          "solid": true,
           "assetId": "showcase-barricade",
-          "textureAssetId": "showcase-palette"
+          "textureAssetId": "showcase-palette",
+          "collider": {
+            "shape": "box",
+            "size": {
+              "x": 1.9158620000000002,
+              "y": 0.9359999999999999,
+              "z": 0.355589
+            },
+            "offset": {
+              "x": -0.008718980165420718,
+              "y": 0.46799999999999997,
+              "z": 0.00871898016542072
+            }
+          }
         },
         {
           "kind": "cube",
@@ -772,7 +798,20 @@
           "behaviors": [],
           "solid": true,
           "assetId": "showcase-barricade",
-          "textureAssetId": "showcase-palette"
+          "textureAssetId": "showcase-palette",
+          "collider": {
+            "shape": "box",
+            "size": {
+              "x": 1.9158620000000002,
+              "y": 0.9359999999999999,
+              "z": 0.355589
+            },
+            "offset": {
+              "x": -0.012330499999999993,
+              "y": 0.46799999999999997,
+              "z": 7.550253678443215e-19
+            }
+          }
         },
         {
           "kind": "cube",
@@ -796,9 +835,22 @@
           "rotationY": -2.356194490192345,
           "mesh": "asset",
           "behaviors": [],
-          "solid": false,
+          "solid": true,
           "assetId": "showcase-barricade",
-          "textureAssetId": "showcase-palette"
+          "textureAssetId": "showcase-palette",
+          "collider": {
+            "shape": "box",
+            "size": {
+              "x": 1.9158620000000002,
+              "y": 0.9359999999999999,
+              "z": 0.355589
+            },
+            "offset": {
+              "x": -0.00871898016542072,
+              "y": 0.46799999999999997,
+              "z": -0.008718980165420718
+            }
+          }
         },
         {
           "kind": "cube",
@@ -824,7 +876,20 @@
           "behaviors": [],
           "solid": true,
           "assetId": "showcase-barricade",
-          "textureAssetId": "showcase-palette"
+          "textureAssetId": "showcase-palette",
+          "collider": {
+            "shape": "box",
+            "size": {
+              "x": 1.9158620000000002,
+              "y": 0.9359999999999999,
+              "z": 0.355589
+            },
+            "offset": {
+              "x": -1.510050735688643e-18,
+              "y": 0.46799999999999997,
+              "z": -0.012330499999999993
+            }
+          }
         },
         {
           "kind": "cube",
@@ -848,9 +913,22 @@
           "rotationY": -3.9269908169872414,
           "mesh": "asset",
           "behaviors": [],
-          "solid": false,
+          "solid": true,
           "assetId": "showcase-barricade",
-          "textureAssetId": "showcase-palette"
+          "textureAssetId": "showcase-palette",
+          "collider": {
+            "shape": "box",
+            "size": {
+              "x": 1.9158620000000002,
+              "y": 0.9359999999999999,
+              "z": 0.355589
+            },
+            "offset": {
+              "x": 0.008718980165420718,
+              "y": 0.46799999999999997,
+              "z": -0.008718980165420722
+            }
+          }
         },
         {
           "kind": "cube",
@@ -876,7 +954,20 @@
           "behaviors": [],
           "solid": true,
           "assetId": "showcase-barricade",
-          "textureAssetId": "showcase-palette"
+          "textureAssetId": "showcase-palette",
+          "collider": {
+            "shape": "box",
+            "size": {
+              "x": 1.9158620000000002,
+              "y": 0.9359999999999999,
+              "z": 0.355589
+            },
+            "offset": {
+              "x": 0.012330499999999993,
+              "y": 0.46799999999999997,
+              "z": -2.2650761035329642e-18
+            }
+          }
         },
         {
           "kind": "cube",
@@ -900,9 +991,22 @@
           "rotationY": -5.497787143782138,
           "mesh": "asset",
           "behaviors": [],
-          "solid": false,
+          "solid": true,
           "assetId": "showcase-barricade",
-          "textureAssetId": "showcase-palette"
+          "textureAssetId": "showcase-palette",
+          "collider": {
+            "shape": "box",
+            "size": {
+              "x": 1.9158620000000002,
+              "y": 0.9359999999999999,
+              "z": 0.355589
+            },
+            "offset": {
+              "x": 0.008718980165420722,
+              "y": 0.46799999999999997,
+              "z": 0.008718980165420716
+            }
+          }
         },
         {
           "kind": "light",
@@ -1059,7 +1163,20 @@
           "behaviors": [],
           "solid": true,
           "assetId": "showcase-barricade",
-          "textureAssetId": "showcase-palette"
+          "textureAssetId": "showcase-palette",
+          "collider": {
+            "shape": "box",
+            "size": {
+              "x": 2.063236,
+              "y": 1.008,
+              "z": 0.38294199999999995
+            },
+            "offset": {
+              "x": 0.009389670947376158,
+              "y": 0.504,
+              "z": -0.009389670947376158
+            }
+          }
         },
         {
           "kind": "light",
@@ -1163,7 +1280,20 @@
           "behaviors": [],
           "solid": true,
           "assetId": "showcase-barricade",
-          "textureAssetId": "showcase-palette"
+          "textureAssetId": "showcase-palette",
+          "collider": {
+            "shape": "box",
+            "size": {
+              "x": 2.063236,
+              "y": 1.008,
+              "z": 0.38294199999999995
+            },
+            "offset": {
+              "x": -0.009389670947376158,
+              "y": 0.504,
+              "z": -0.00938967094737616
+            }
+          }
         },
         {
           "kind": "light",
@@ -1267,7 +1397,20 @@
           "behaviors": [],
           "solid": true,
           "assetId": "showcase-barricade",
-          "textureAssetId": "showcase-palette"
+          "textureAssetId": "showcase-palette",
+          "collider": {
+            "shape": "box",
+            "size": {
+              "x": 2.063236,
+              "y": 1.008,
+              "z": 0.38294199999999995
+            },
+            "offset": {
+              "x": -0.00938967094737616,
+              "y": 0.504,
+              "z": 0.009389670947376156
+            }
+          }
         },
         {
           "kind": "light",
@@ -1371,7 +1514,20 @@
           "behaviors": [],
           "solid": true,
           "assetId": "showcase-barricade",
-          "textureAssetId": "showcase-palette"
+          "textureAssetId": "showcase-palette",
+          "collider": {
+            "shape": "box",
+            "size": {
+              "x": 2.063236,
+              "y": 1.008,
+              "z": 0.38294199999999995
+            },
+            "offset": {
+              "x": 0.009389670947376156,
+              "y": 0.504,
+              "z": 0.00938967094737616
+            }
+          }
         },
         {
           "kind": "light",
@@ -1605,6 +1761,8 @@
           "type": "follow",
           "speed": 3.2,
           "radius": 5,
+          "collideWithSolids": true,
+          "collisionRadius": 0.6,
           "base": [
             0,
             0.5,

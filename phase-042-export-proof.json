@@ -1,0 +1,67 @@
+{
+  "phase": 42,
+  "status": "PASS",
+  "exports": {
+    "editable": {
+      "bytes": 1989548,
+      "bootMs": 764,
+      "lifecycle": {
+        "sequence": [
+          "trigger2DEnter",
+          "trigger2DStay",
+          "trigger2DExit",
+          "trigger2DEnter"
+        ],
+        "frozen": true,
+        "stableIds": true,
+        "pairs": 1,
+        "metrics": {
+          "ticks": 10,
+          "candidates": 230,
+          "aabbRejects": 282,
+          "narrowTests": 8,
+          "shapeResolutions": 110,
+          "enter": 3,
+          "stay": 5,
+          "exit": 1,
+          "peakPairs": 1
+        }
+      },
+      "authoringOverlayVisible": false
+    },
+    "playable": {
+      "bytes": 1965921,
+      "bootMs": 709,
+      "lifecycle": {
+        "sequence": [
+          "trigger2DEnter",
+          "trigger2DStay",
+          "trigger2DExit",
+          "trigger2DEnter"
+        ],
+        "frozen": true,
+        "stableIds": true,
+        "pairs": 1,
+        "metrics": {
+          "ticks": 11,
+          "candidates": 253,
+          "aabbRejects": 310,
+          "narrowTests": 9,
+          "shapeResolutions": 121,
+          "enter": 3,
+          "stay": 6,
+          "exit": 1,
+          "peakPairs": 1
+        }
+      },
+      "authoringOverlayVisible": false
+    }
+  },
+  "sequence": [
+    "trigger2DEnter",
+    "trigger2DStay",
+    "trigger2DExit",
+    "trigger2DEnter"
+  ],
+  "publicCatalog": false
+}

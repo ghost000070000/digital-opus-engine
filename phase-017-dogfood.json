@@ -1,0 +1,59 @@
+{
+  "url": "http://127.0.0.1:8873/editor/",
+  "fixture": "tests\\fixtures\\phase-017-pixel-art.png",
+  "checks": {
+    "assetModes": [
+      {
+        "id": "spriteAsset1",
+        "sourceTexture": "texture1",
+        "filtering": "nearest",
+        "hasBytes": false
+      },
+      {
+        "id": "spriteAsset2",
+        "sourceTexture": "texture1",
+        "filtering": "linear",
+        "hasBytes": false
+      }
+    ],
+    "sharedSourceRuntime": {
+      "sameTextureHandle": true,
+      "firstSampling": "nearest",
+      "secondSampling": "linear",
+      "widths": [
+        3,
+        3
+      ]
+    },
+    "opacityBeforePrefab": {
+      "value": 0.35,
+      "alpha": 0.35
+    },
+    "opacityPrefab": {
+      "runtimeAlpha": 0.35,
+      "componentOpacity": 0.35,
+      "prefabOpacity": 0.35
+    },
+    "saveLoad": {
+      "pixel": "nearest",
+      "smooth": "linear",
+      "opacity": 0.35
+    },
+    "playStop": true,
+    "editable": {
+      "filename": "editable-game.html",
+      "bytes": 1487013,
+      "hasNearest": true,
+      "hasOpacity": true
+    },
+    "playable": {
+      "filename": "playable-game.html",
+      "bytes": 1487030,
+      "hasNearest": true,
+      "hasOpacity": true
+    },
+    "screenshot": "phase-017-filtering-proof.png"
+  },
+  "errors": [],
+  "ok": true
+}

@@ -19,6 +19,49 @@ class SaveSystem {
     }
   }
 
+  // Authoring opt-in: never replace an occupied slot unless the caller owns
+  // the exact bytes it opened/saved. Legacy save() and record format remain
+  // compatible. This synchronous check is not a cross-tab transaction lock.
+  saveChecked(slot, data, expectedRaw = null) {
+    const key = this._key(slot, 'SaveSystem.saveChecked');
+    let raw;
+    try {
+      raw = JSON.stringify({ data, savedAt: Date.now() });
+      if (raw.length > 16 * 1024 * 1024) return { ok: false, code: 'too-large' };
+    } catch (error) { return { ok: false, code: 'serialization' }; }
+    let storage;
+    try {
+      storage = localStorage;
+      if (storage.getItem(key) !== expectedRaw) return { ok: false, code: 'conflict' };
+    } catch (error) { return { ok: false, code: 'unavailable' }; }
+    // Retain one exact previous revision before replacing the canonical record.
+    // A committed write followed by a failed read-back must not erase the last
+    // known-good bytes. This is local recovery, not an off-device backup.
+    if (expectedRaw !== null) {
+      try {
+        const previous = this.previousKey(slot);
+        storage.setItem(previous, expectedRaw);
+        if (storage.getItem(previous) !== expectedRaw) return { ok: false, code: 'verification' };
+      } catch (error) { return { ok: false, code: error && error.name === 'QuotaExceededError' ? 'quota' : error && error.name === 'SecurityError' ? 'unavailable' : 'write' }; }
+    }
+    try { storage.setItem(key, raw); }
+    catch (error) { return { ok: false, code: error && error.name === 'QuotaExceededError' ? 'quota' : error && error.name === 'SecurityError' ? 'unavailable' : 'write' }; }
+    try {
+      if (storage.getItem(key) !== raw) return { ok: false, code: 'verification' };
+    } catch (error) { return { ok: false, code: 'verification' }; }
+    return { ok: true, raw };
+  }
+
+  previousKey(slot) {
+    this._key(slot, 'SaveSystem.previousKey');
+    return 'doengine:previous-save:' + JSON.stringify([this.namespace, slot]);
+  }
+
+  loadPrevious(slot) {
+    const raw = localStorage.getItem(this.previousKey(slot));
+    return raw === null ? null : JSON.parse(raw).data;
+  }
+
   load(slot) {
     const key = this._key(slot, 'SaveSystem.load');
     try {

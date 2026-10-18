@@ -21,7 +21,7 @@ let serial=0;
 function cube(level,name,pos,scale,color,extra={}) { const r={kind:'cube',id:`rehab-${++serial}`,name,position:pos,scale,color,rotationY:0,mesh:'cube',behaviors:[],solid:false,...extra}; level.objects.push(r);return r; }
 function mesh(project,level,key,pos,scale=1,name=key,extra={}) {
   kit.install(project,{meshes:[key]}); const a=kit.getMesh(key);
-  return cube(level,name,pos,Array.isArray(scale)?scale:[scale,scale,scale],[1,1,1],{mesh:'asset',assetId:a.id,textureAssetId:a.textureAssetId,...extra});
+  return cube(level,name,pos,Array.isArray(scale)?scale:[scale,scale,scale],[1,1,1],{mesh:'asset',assetId:a.id,textureAssetId:a.textureAssetId,...require('./showcase-wall-collision')(key,a,scale,extra.rotationY||0),...extra});
 }
 function swap(project,r,key,scale=1,groundY) {
   kit.install(project,{meshes:[key]});const a=kit.getMesh(key);
@@ -282,10 +282,19 @@ for(const [id,profile] of Object.entries(profiles)) {
   // Final authored traversal bounds and combat targets follow their visible models.
   for(const level of project.levels){
     if(id==='foglight'){level.playerSettings.playBounds={minX:-18,maxX:18,minZ:-4,maxZ:88};const guard=level.objects.find(o=>o.name==='MistGuardian');if(guard)guard.scale=[.85,.85,.85];const voidZone=level.objects.find(o=>o.name==='MistVoid');voidZone.position[1]=-1.5;level.ui.startScreen.howToPlay+=' Stay on the stone path: falling into the mist returns you to the last checkpoint and costs health.';const key=level.objects.find(o=>o.name==='ValeKeyPickup');key.scale=[.65,.65,.65];const win=level.objects.find(o=>o.name==='SanctuaryWin').behaviors[0].graph;win.nodes.push({id:'key',type:'hasItem',name:'Vale Key',count:1});win.edges.push({kind:'gate',from:'key',to:'w'});}
-    for(const o of level.objects){if(!(o.tags||[]).includes('enemy'))continue;if(o.assetId==='showcase-guardian'){const sy=Number(o.scale?.[1])||1;o.collider={shape:'sphere',offset:{x:0,y:1.05*sy,z:0},radius:1.1*sy};}else if(o.assetId==='showcase-drone')o.collider={shape:'sphere',offset:{x:0,y:0,z:0},radius:.75};}
+    for(const o of level.objects){if(!(o.tags||[]).includes('enemy'))continue;if(o.assetId==='showcase-guardian'){const sy=Number(o.scale?.[1])||1;o.collider={shape:'sphere',offset:{x:0,y:1.05*sy,z:0},radius:1.1*sy};}else if(o.assetId==='showcase-drone')o.collider={shape:'sphere',offset:{x:0,y:0,z:0},radius:.75};if(id==='silent-sector'&&o.ai?.mode==='stateMachine'){o.ai.collideWithSolids=true;o.ai.collisionRadius=o.collider.radius;}}
   }
   if(id==='relic-island')require('./refine-relic-island')(project);
   require('./refine-controls-copy')(project);
+  require('./real-demo-masonry-assembly').repair(project);
+  require('./real-demo-architectural-assemblies').repair(project);
+  require('./real-demo-stone-roles').repair(project);
+  require('./real-demo-machinery-roles').repair(project);
+  require('./real-demo-actor-policy').apply(project,id);
+  require('./real-demo-gate-visuals').repair(project,id);
+  require('./real-demo-extraction-frame').repair(project,id);
+  require('./real-demo-platform-decoration').repair(project,id);
+  require('./real-demo-character-body').repair(project);
   fs.writeFileSync(path.join(ROOT,'games',id+'.json'),JSON.stringify(project,null,2)+'\n');
   notes.push({id,beforeObjects:before,afterObjects:level.objects.length,meshes:project.assets.length,textures:(project.textures||[]).length,audio:(project.audio||[]).length,description:profile.description,review:'Awaiting rendered audit; no public promotion implied.'});
   console.log(id,level.objects.length,'objects',project.assets.length,'meshes');

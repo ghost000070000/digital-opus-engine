@@ -1,0 +1,24 @@
+{
+  "id": "silent-sector",
+  "sourceSHA256": "258c05cee450a79d9d58699461611fbbfb762b93d29d48e34100adac6927bf0a",
+  "errors": [],
+  "capturedAt": "2026-09-11T17:01:30.086Z",
+  "sha256": "7396eda74e78ecbf46940a0285ff6968e6fdd4c82aaa95db43a24520b071a3ed",
+  "state": {
+    "title": "Silent Sector",
+    "sim": 6.4239000000357525,
+    "ended": false,
+    "text": "Reach the Security Wing\nPress F to interact\nC crouch • Use cover • Secure the Data Core",
+    "controller": "firstperson",
+    "bodyVisible": false,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 169
+  },
+  "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nMouse Sensitivity\nInvert Mouse Y\nQuality: High\n⛶ Fullscreen\nReach the Security Wing\nPress F to interact\nC crouch • Use cover • Secure the Data Core",
+  "passed": true
+}

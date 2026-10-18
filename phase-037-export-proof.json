@@ -1,0 +1,13 @@
+{
+  "phase": 37,
+  "status": "PASS",
+  "editableExports": 10,
+  "playableExports": 10,
+  "requiredEach": 10,
+  "markerMetadataRetained": true,
+  "markerLinkedPrefabsRetained": true,
+  "automaticSpawnAbsent": true,
+  "browserCampaign": "qualification/phase-037/browser-campaign.json",
+  "editableArtifact": "qualification/phase-037/phase-037-editable-game.html",
+  "playableArtifact": "qualification/phase-037/phase-037-playable-game.html"
+}

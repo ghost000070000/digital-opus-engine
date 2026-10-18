@@ -10,6 +10,9 @@ const editor = fs.readFileSync(path.join(ROOT, 'editor/src/01-editor.js'), 'utf8
 let passed = 0;
 function test(name, fn) { fn(); passed++; console.log(`  PASS ${name}`); }
 function functionsInContext(names, globals) {
+  globals.controllerStateSession = 0;
+  globals.controllerStateEvents = null;
+  names = ['resetControllerStateEvents', ...names];
   const context = vm.createContext(globals);
   for (const name of names) {
     const start = editor.indexOf(`function ${name}(`);
@@ -22,6 +25,87 @@ function functionsInContext(names, globals) {
   }
   return context;
 }
+
+test('actual third-person spawn honours an authored ranger-height body instead of fixed 1.1m', () => {
+  class Vec { constructor(x=0,y=0,z=0) { Object.assign(this,{x,y,z}); } clone() { return new Vec(this.x,this.y,this.z); } }
+  const c=functionsInContext(['playerBodyHeight','spawnThirdPersonController'], {
+    currentPlayerSettings:{collisionHeight:1.855,collisionRadius:.5}, cubeMesh:{}, isTouchDevice:false,
+    Opus:{Vec3:Vec}, document:{getElementById:()=>({style:{}})},
+    app:{addEntity:o=>o,camera:{setChaseOptions(){},setTarget(){},setMode(){}}},
+  });
+  c.spawnThirdPersonController(new Vec(0,.9275,0));
+  assert.strictEqual(c.player.entity.scale.y,1.855,'native ranger height must not extend .755m above the physical body');
+});
+
+test('explicit character body height covers the rendered ranger and preserves historical defaults', () => {
+  // Native 060958036Z: ranger head reaches .755 above the court while its
+  // fixed 1.1m body reports clear. A body fit must not silently resize old projects.
+  const c = functionsInContext(['playerBodyHeight', 'playerTerrainClearance', 'fitPlayerCharacterBody'], {
+    currentPlayerSettings: { controllerType: 'thirdperson', collisionRadius: .5 },
+    findAssetById: () => ({ type: 'skinnedMesh', positions: [-.48309,0,-.2395,.48309,1.855,.23] }),
+  });
+  assert.strictEqual(c.playerBodyHeight(), 1.1);
+  assert.strictEqual(c.playerTerrainClearance({ scale: { y: 1.1 } }, .5), .5);
+  c.currentPlayerSettings.visual = { mode: 'skinned', assetId: 'ranger', scale: 1, positionOffset: { x: 0, y: -.55, z: 0 } };
+  const fit = c.fitPlayerCharacterBody();
+  assert.strictEqual(fit.collisionHeight, 1.855);
+  assert.strictEqual(fit.visual.positionOffset.y, -.9275);
+  assert.strictEqual(fit.visual.followBodyHeight, true);
+  Object.assign(c.currentPlayerSettings, fit);
+  assert.strictEqual(c.playerBodyHeight(), 1.855);
+  assert.strictEqual(c.playerTerrainClearance({ scale: { y: 1.855 } }, .5), .9275);
+  assert.strictEqual(c.playerTerrainClearance({ scale: { y: 1.02025 } }, .5), .510125);
+  c.currentPlayerSettings.collisionHeight = NaN;
+  assert.strictEqual(c.playerBodyHeight(), 1.1, 'invalid authored heights do not poison movement');
+  c.currentPlayerSettings.visual.scale = -1;
+  assert.strictEqual(c.fitPlayerCharacterBody(), null, 'invalid visuals cannot be fitted');
+});
+
+test('fitted visual feet/head follow standing and crouched body while legacy offset stays unchanged', () => {
+  const publicContext={window:{addEventListener(){},removeEventListener(){}},document:{addEventListener(){},removeEventListener(){}},localStorage:{getItem(){return null;},setItem(){}},Float32Array,Uint16Array,Uint32Array,Uint8Array,DataView,ArrayBuffer,TextDecoder};
+  vm.runInNewContext(fs.readFileSync(path.join(ROOT,'dist/opus-engine.js'),'utf8'),publicContext);
+  const O=publicContext.window.Opus,body={position:new O.Vec3(0,-.9275,0),scale:new O.Vec3(.6,1.855,.6),quaternion:O.Quat.identity()};
+  const visualEntity={position:new O.Vec3(),scale:new O.Vec3(1,1,1),quaternion:O.Quat.identity()};
+  const c=functionsInContext(['playerBodyHeight','syncPlayerVisual'],{
+    Opus:O,player:{controllerType:'thirdperson',entity:body},playerVisualEntity:visualEntity,
+    currentPlayerSettings:{collisionHeight:1.855,visual:{mode:'skinned',assetId:'ranger',scale:1,positionOffset:{x:0,y:-.9275,z:0},followBodyHeight:true}},
+    playerVisualSupportsSkinnedBody:()=>true,findAssetById:()=>({type:'skinnedMesh'}),setPlayerFallbackVisible(){},
+  });
+  for(const stance of [1,.55,1]) {
+    body.scale.y=1.855*stance;body.position.y=-body.scale.y/2;c.syncPlayerVisual();
+    const feet=visualEntity.position.y,head=feet+1.855*visualEntity.scale.y;
+    assert(Math.abs(head)<1e-9,'ranger head remains below the solid court underside');
+    assert(Math.abs(feet-(body.position.y-body.scale.y/2))<1e-9,'crouch never buries the visible feet');
+    assert.strictEqual(visualEntity.scale.x,1,'standing width/visual identity is preserved');
+  }
+  delete c.currentPlayerSettings.visual.followBodyHeight;
+  body.scale.y=1.855*.55;c.syncPlayerVisual();
+  assert.strictEqual(visualEntity.scale.y,1,'historical unfitted visual scaling is not silently changed');
+});
+
+test('stock character-body migration is exact, idempotent and preserves custom character assets/settings', () => {
+  const repair=require('../tools/real-demo-character-body').repair;
+  const project=()=>({assets:[require('../tools/showcase-assets').getMesh('ranger')],levels:[{id:'lab',playerSettings:{controllerType:'thirdperson',visual:{mode:'skinned',assetId:'showcase-ranger',scale:1,rotationOffsetY:0,positionOffset:{x:0,y:-.55,z:0}}}}]});
+  const p=project();assert.strictEqual(repair(p).changes.length,1);assert.strictEqual(repair(p).changes.length,0);
+  for(const mutate of [p=>p.assets[0].positions[0]+=.1,p=>p.levels[0].playerSettings.collisionHeight=2,p=>p.levels[0].playerSettings.visual.positionOffset.x=.1,p=>p.levels[0].playerSettings.controllerType='topdown']) {
+    const custom=project();mutate(custom);const before=JSON.stringify(custom);assert.strictEqual(repair(custom).changes.length,0);assert.strictEqual(JSON.stringify(custom),before,'custom authored content stays byte-equivalent');
+  }
+});
+
+test('shared editor history captures independent player settings, not just scene objects', () => {
+  const c=functionsInContext(['copyComponentPresetLibrary','captureLevelLogicSnapshot','captureEditorSnapshot'],{
+    serializeScene:()=>[],serializeTilesets:()=>[],serializeTilemapChunks:()=>[],collisionLayers:[],levels:[],prefabs:[],graphFunctions:[],
+    currentPlayerSettings:{controllerType:'thirdperson',visual:{positionOffset:{x:0,y:-.55,z:0}}},
+    OpusComponentPresets:require('../editor/src/00-component-presets'),componentPresets:[{format:'future-preserved',version:99,record:{value:0}}],
+  });
+  const snapshot=c.captureEditorSnapshot();
+  c.currentPlayerSettings.collisionHeight=1.855;c.currentPlayerSettings.visual.positionOffset.y=-.9275;
+  assert(snapshot.playerSettings,'native Fit/Undo proved settings were absent from shared history');
+  assert.strictEqual(snapshot.playerSettings.collisionHeight,undefined);
+  assert.strictEqual(snapshot.playerSettings.visual.positionOffset.y,-.55,'snapshot must not alias live visual settings');
+  c.componentPresets[0].record.value=9;
+  assert.strictEqual(snapshot.componentPresets[0].record.value,0,'actual snapshot uses the independent real preset library copy');
+});
 
 test('first-person collision body stays hidden across 120 visual-sync frames; equipment survives', () => {
   const body = { visible: true, solid: true, position: { x: 2, y: 1, z: 3 } };
@@ -43,10 +127,108 @@ test('first-person collision body stays hidden across 120 visual-sync frames; eq
   assert.strictEqual(removed[0], weapon);
 });
 
+test('despawn tears down the authored player visual before recreating the controller', () => {
+  // Native Moving Temple060235690Z / Valley060314890Z pause-restarts show
+  // both the green primitive and ranger: the old visual survives despawn.
+  const body={visible:false,solid:true},visual={visible:true},weapon={visible:true};
+  const removed=[];let controllerDespawned=false;
+  const inventory={Rifle:1},equipmentDefs=[{itemName:'Rifle',slot:'primaryHand',assetId:'rifle',extension:{keep:true}}];
+  const c=functionsInContext(['playerVisualSupportsSkinnedBody','setPlayerFallbackVisible','teardownPlayerEquipmentVisualsOnly','unequipSlot','teardownPlayerEquipment','teardownPlayerVisual','despawnPlayer'],{
+    player:{controllerType:'thirdperson',entity:body},playerVisualEntity:visual,craftParts:[],
+    playerEquipment:{primaryHand:{entity:weapon,itemName:'Rifle'}},app:{scene:{remove:e=>removed.push(e)}},
+    window:{__gameInventory:inventory},currentPlayerSettings:{equipmentDefs},
+    PLAYER_CONTROLLERS:{thirdperson:{despawn(){controllerDespawned=true;}}},
+  });
+  c.despawnPlayer();
+  assert.strictEqual(c.playerVisualEntity,null,'a new controller must receive a newly owned authored visual');
+  assert.strictEqual(controllerDespawned,true);
+  assert.deepStrictEqual(removed,[visual,weapon]);
+  assert.strictEqual(Object.keys(c.playerEquipment).length,0,'controller generation cleanup clears transient equipped slots');
+  assert.strictEqual(c.window.__gameInventory,inventory,'generation cleanup does not replace logical inventory');
+  assert.strictEqual(c.window.__gameInventory.Rifle,1,'owned item remains in canonical inventory');
+  assert.strictEqual(c.currentPlayerSettings.equipmentDefs,equipmentDefs,'generation cleanup preserves authored equipment definitions');
+  assert.strictEqual(c.currentPlayerSettings.equipmentDefs[0].extension.keep,true);
+  assert.strictEqual(body.solid,true,'render cleanup does not mutate collision policy');
+});
+
+test('first-person look uses standard signs, honors invert Y, sensitivity, and clamps extreme input', () => {
+  let inverted = false;
+  const rotations = [];
+  const c = functionsInContext(['applyFirstPersonLook', 'effectiveMouseSensitivity'], {
+    fpYaw: 0, fpPitch: 0, FP_PITCH_LIMIT: 1.5,
+    firstPersonEntity: { quaternion: null },
+    currentPlayerSettings: { mouseSensitivity: 0.0022 },
+    app: { settings: { get: (key) => key === 'invertMouseY' ? inverted : 0.0018 } },
+    Opus: { Quat: { fromEuler: (...args) => { rotations.push(args); return args; } } },
+    Number,
+  });
+  assert.strictEqual(c.effectiveMouseSensitivity(), 0.0018);
+  c.applyFirstPersonLook(100, -50, c.effectiveMouseSensitivity());
+  assert.ok(c.fpYaw > 0, 'mouse right looks right');
+  assert.ok(c.fpPitch < 0, 'mouse up looks up in the engine quaternion convention');
+  const ordinaryPitch = c.fpPitch;
+  inverted = true;
+  c.fpPitch = 0;
+  c.applyFirstPersonLook(0, -50, c.effectiveMouseSensitivity());
+  assert.ok(c.fpPitch > 0 && Math.abs(c.fpPitch + ordinaryPitch) < 1e-9, 'invert Y reverses only the vertical response');
+  c.applyFirstPersonLook(0, 1e9, 1);
+  assert.strictEqual(c.fpPitch, -1.5, 'repeated extreme inverted input remains pitch-clamped');
+  assert.ok(rotations.length >= 3);
+});
+
+test('player input overrides persist independently of author defaults', () => {
+  const persisted = new Map();
+  const c = functionsInContext(['validInputActionCode', 'loadPlayerInputOverrides', 'savePlayerInputOverrides'], {
+    playerInputOverrides: {},
+    findInputAction: (id) => ['moveForward', 'attack'].includes(id) ? { id } : null,
+    app: { settings: { get: (key) => persisted.get(key), set: (key, value) => persisted.set(key, JSON.parse(JSON.stringify(value))) } },
+  });
+  vm.runInContext(fs.readFileSync(require.resolve('../editor/src/00-player-rebind-screen'),'utf8')+'\nplayerPreferenceScope=OpusPlayerRebindScreen.scope({projectMeta:{id:"showcase"}});',c);
+  c.playerInputOverrides = { moveForward: 'KeyI', attack: 'Mouse0' };
+  c.savePlayerInputOverrides();
+  c.playerInputOverrides = {};
+  c.loadPlayerInputOverrides();
+  assert.deepStrictEqual(JSON.parse(JSON.stringify(c.playerInputOverrides)), { moveForward: 'KeyI', attack: 'Mouse0' });
+});
+
+test('step, crouch clearance, and moving-platform carry keep physical bodies coherent', () => {
+  class Vec {
+    constructor(x, y, z) { Object.assign(this, { x, y, z }); }
+    add(v) { return new Vec(this.x + v.x, this.y + v.y, this.z + v.z); }
+    sub(v) { return new Vec(this.x - v.x, this.y - v.y, this.z - v.z); }
+    scale(n) { return new Vec(this.x * n, this.y * n, this.z * n); }
+    clone() { return new Vec(this.x, this.y, this.z); }
+  }
+  const mover = { position: new Vec(0, 0.5, 0), scale: new Vec(1, 1, 1) };
+  const velocity = new Vec(2, -1, 0);
+  const step = { kind: 'cube', entity: { position: new Vec(0, 0.2, 0), scale: new Vec(2, 0.4, 2), solid: true, visible: true, quaternion: null } };
+  const c = functionsInContext(['itemColliderConfig', 'tryStepUp', 'canStandAt', 'applyCrouchState', 'applyPlatformCarry'], {
+    Opus: { Vec3: Vec }, STEP_HEIGHT: 0.5, CROUCH_HEIGHT_MULTIPLIER: 0.55, placed: [step],
+  });
+  assert.ok(c.tryStepUp(mover, velocity, 0.5, true, step));
+  assert.strictEqual(mover.position.y, 0.9);
+  assert.strictEqual(velocity.y, 0);
+
+  assert.ok(c.applyCrouchState(mover, true, 0.5));
+  assert.strictEqual(mover.scale.y, 0.55);
+  assert.ok(Math.abs((mover.position.y - mover.scale.y / 2) - 0.4) < 1e-9, 'crouch keeps feet planted');
+  const lowCeiling = { kind: 'cube', entity: { position: new Vec(0, 1.2, 0), scale: new Vec(3, 0.3, 3), solid: true, visible: true, quaternion: null } };
+  c.placed = [lowCeiling];
+  assert.ok(c.applyCrouchState(mover, false, 0.5), 'release cannot expand the body through a low ceiling');
+
+  const platform = { entity: { position: new Vec(3, 2, 4) }, _carryPrevPos: new Vec(1, 1, 1) };
+  const beforeY = mover.position.y;
+  c.applyPlatformCarry(mover, platform, true);
+  assert.strictEqual(mover.position.x, 2);
+  assert.strictEqual(mover.position.z, 3);
+  assert.strictEqual(mover.position.y, beforeY, 'vertical snap remains authoritative; carry only applies XZ delta');
+});
+
 test('authoring markers, old path members and spawn nodes hide; functional visible props remain', () => {
   const item = (id, extra = {}) => ({ id, kind: 'cube', entity: { visible: true }, ...extra });
   const placed = [item('trigger', { isTrigger: true }), item('waypoint', { isWaypoint: true }), item('spawn', { isSpawnPoint: true }), item('newpoint', { isPathPoint: true }), item('oldpoint'), item('prop'), item('camera', { kind: 'camera' }), item('light', { kind: 'light' }), item('spawner', { kind: 'spawner', options: { startEnabled: false } }), { kind: 'path', pointIds: ['oldpoint'] }];
-  const c = functionsInContext(['preparePlacedForPlay'], { placed });
+  const c = functionsInContext(['captureAuthoredSessionLevels','captureAuthoredDeathBaseline','captureAuthoredObjectHealth','preparePlacedForPlay'], { placed, levels:[{id:'markers',objects:[]}], currentLevelIndex:0, restoreDoorGatesForAuthoring: () => {}, prepareDoorGatesForPlay: () => {}, OpusAuthoring: require('../editor/src/00-authoring-schema'), serializeItemRecord: item => ({ id:item.id, kind:item.kind, pointIds:item.pointIds }) }); // No Door components in this marker-only fixture.
+  vm.runInContext('let authoredDeathBaseline = new Map(); let authoredDeathJournal = new Set(); let authoredSessionLevels = new Map();', c);
   c.preparePlacedForPlay();
   for (const record of placed.filter((p) => p.entity && p.id !== 'prop')) assert.strictEqual(record.entity.visible, false, record.id);
   assert.strictEqual(placed.find((p) => p.id === 'prop').entity.visible, true);
@@ -104,8 +286,9 @@ test('authored world bounds constrain XZ without losing vertical motion or legac
 test('carried objects do not steal interact focus from the target console', () => {
   const item = (id, distance) => ({ id, kind: 'cube', entity: { visible: true, position: distance }, behaviors: [{ trigger: 'interact' }] });
   const cell = item('cell', .6), generator = item('generator', 1.4);
-  const c = functionsInContext(['updateInteract'], {
+  const c = functionsInContext(['interactionPolicy', 'updateInteract'], {
     placed: [cell, generator], heldObjectItem: cell, INTERACT_RANGE: 3,
+    playMode: true, gameEnded: false, app: { paused: false }, effectiveInputMap: { interact: 'KeyF' }, keyCodeToLabel: () => 'F',
     player: { entity: { position: { sub: (distance) => ({ length: () => distance }) } } },
     document: { getElementById: () => ({ classList: { toggle() {}, remove() {} } }) },
   });
@@ -119,7 +302,7 @@ test('carried objects do not steal interact focus from the target console', () =
 test('static mesh UVs and mesh-owned palette metadata survive save/load', () => {
   const asset = { id: 'mesh1', name: 'Original prop', type: 'mesh', positions: [0, 0, 0], normals: [0, 1, 0], indices: [0], uvs: [0.4, 0.6], textureAssetId: 'palette' };
   let args;
-  const c = functionsInContext(['getAssetMeshHandle', 'serializeAssets', 'loadAssets'], {
+  const c = functionsInContext(['copyPortableAssetExtras', 'getAssetMeshHandle', 'serializeAssets', 'loadAssets'], {
     assets: [asset], Float32Array, Uint16Array,
     Opus: { Mesh: { fromArrays: (...values) => { args = values; return { uploaded: true }; } } },
     findAssetById: () => null, reconcileAssetIdCounter() {}, renderAssetLibrary() {},

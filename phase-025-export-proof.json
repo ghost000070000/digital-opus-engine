@@ -1,0 +1,75 @@
+{
+  "phase": 25,
+  "url": "http://127.0.0.1:8875/editor/",
+  "fixture": "tests\\fixtures\\phase-018-atlas.png",
+  "checks": {
+    "validation": "No structured authoring issues found.",
+    "validationItems": [],
+    "editable": {
+      "file": ".tmp-phase025\\phase-025-editable.html",
+      "bytes": 1615924,
+      "playableOnly": false,
+      "chromeVisible": true,
+      "editorOpened": true,
+      "runtime": {
+        "initialDirection": "down",
+        "stateIds": [
+          "idle",
+          "walk",
+          "attack"
+        ],
+        "right": {
+          "clipId": "phase025-walk-right",
+          "elapsedMs": 50
+        },
+        "left": {
+          "clipId": "phase025-walk-right",
+          "elapsedMs": 50,
+          "mirrorX": true
+        },
+        "up": {
+          "clipId": "phase025-walk-up",
+          "elapsedMs": 0
+        },
+        "direction": "up"
+      },
+      "errors": [],
+      "network": [],
+      "pass": true
+    },
+    "playable": {
+      "file": ".tmp-phase025\\phase-025-playable.html",
+      "bytes": 1615985,
+      "playableOnly": true,
+      "chromeVisible": false,
+      "editorOpened": false,
+      "runtime": {
+        "initialDirection": "down",
+        "stateIds": [
+          "idle",
+          "walk",
+          "attack"
+        ],
+        "right": {
+          "clipId": "phase025-walk-right",
+          "elapsedMs": 50
+        },
+        "left": {
+          "clipId": "phase025-walk-right",
+          "elapsedMs": 50,
+          "mirrorX": true
+        },
+        "up": {
+          "clipId": "phase025-walk-up",
+          "elapsedMs": 0
+        },
+        "direction": "up"
+      },
+      "errors": [],
+      "network": [],
+      "pass": true
+    }
+  },
+  "errors": [],
+  "ok": true
+}

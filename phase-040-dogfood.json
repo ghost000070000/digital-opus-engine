@@ -1,0 +1,38 @@
+{
+  "name": "Phase 040 10K Tilemap Qualification",
+  "internalOnly": true,
+  "populatedCells": 10240,
+  "layers": 4,
+  "semantic": {
+    "manual": 3584,
+    "autoTile": 2048,
+    "weightedTerrain": 3072,
+    "autoTerrain": 1536
+  },
+  "coordinateRange": {
+    "minX": -48,
+    "maxX": 56,
+    "minY": -18,
+    "maxY": 19
+  },
+  "tiles": 32,
+  "textures": 1,
+  "nearestTiles": 28,
+  "smoothTiles": 4,
+  "collision": {
+    "none": 11,
+    "fullCell": 11,
+    "customRectangle": 10
+  },
+  "spawnMarkers": 100,
+  "ordinaryPrefabObjects": 75,
+  "chunkCells": 1000,
+  "bundle": {
+    "bytes": 1509344,
+    "sha256": "ad055251c7cec9ef22bbe55c96755dd6769c41cee7f5e33c1cffed825088f1a4"
+  },
+  "chunkBundle": {
+    "bytes": 157334,
+    "sha256": "8ac00f568f6118b5fe0be8310f55a4f75f071e9250f1bcf1b80d84370aa1c709"
+  }
+}

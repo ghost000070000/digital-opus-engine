@@ -1,0 +1,20 @@
+{
+  "format": "digital-opus-tilemap-bundle",
+  "version": 1,
+  "sha256": "4fe01c0849a4ef3bbee262c4575595ab06dd2a144fb98e9e8d65e7d50c0acb35",
+  "bytes": 100262,
+  "summary": {
+    "layers": 4,
+    "cells": 576,
+    "markers": 8,
+    "tilesets": 1,
+    "tiles": 10,
+    "prefabs": 3,
+    "scripts": 1,
+    "textures": 2,
+    "blobs": 1
+  },
+  "verified": true,
+  "duplicateTextureBytesDeduplicated": true,
+  "cleanCanonical": true
+}

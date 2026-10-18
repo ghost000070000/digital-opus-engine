@@ -410,6 +410,16 @@ const Skin = Object.freeze({
    * `Opus.Skin` function already follows. Bounded, entity-agnostic public
    * data -- never a raw WebGL uniform buffer.
    */
+  // Root travel in skin-local units, with explicit root selection for multi-root
+  // rigs. Does not drive Transform, animation time, physics or controllers.
+  computeRootMotionDelta(skin, clipIndex, fromTime, toTime, rootName) {
+    optionsObject(skin, 'skin', 'Opus.Skin.computeRootMotionDelta');
+    if (!Array.isArray(skin.jointParents) || !Array.isArray(skin.jointLocalBind) || !Array.isArray(skin.clips)) fail('Opus.Skin.computeRootMotionDelta', 'skin', 'a valid skin', skin);
+    const roots = skin.jointParents.map((parent,index)=>({parent,index})).filter(root=>root.parent===-1);
+    const matches = rootName === undefined ? roots : roots.filter(root=>skin.jointNames?.[root.index] === rootName);
+    if (matches.length !== 1) fail('Opus.Skin.computeRootMotionDelta', 'rootName', 'one available unambiguous skeleton root', rootName);
+    return computeRootTranslationDelta(skin, clipIndex, fromTime, toTime, matches[0].index);
+  },
   computeJointTransforms(skin, clipIndex, time) {
     optionsObject(skin, 'skin', 'Opus.Skin.computeJointTransforms');
     if (!Array.isArray(skin.jointParents) || !Array.isArray(skin.jointLocalBind) || !Array.isArray(skin.clips)) {
@@ -428,6 +438,17 @@ const Physics = Object.freeze({
   sphereSphereIntersect,
   raySphere,
   rayAABB,
+  /** Nearest target-to-eye entry into expanded authored box/sphere geometry.
+   * Ignores malformed candidates and target-containing expanded obstacles;
+   * caller owns solid/visibility/target exclusions. No depenetration guarantee. */
+  cameraObstructionDistance(origin, desiredEye, radius, obstacles) {
+    const method = 'Opus.Physics.cameraObstructionDistance';
+    vector(origin, 'origin', method);
+    vector(desiredEye, 'desiredEye', method);
+    positive(radius, 'radius', method);
+    if (!Array.isArray(obstacles)) fail(method, 'obstacles', 'an array of box/sphere descriptions', obstacles);
+    return cameraObstructionDistance(origin, desiredEye, radius, obstacles);
+  },
   sampleWaveHeight,
   applyBuoyancy,
   resolveTerrainCollision(position, velocity, radius = 0.5, terrainOrOptions = {}) {
@@ -487,6 +508,18 @@ const Physics = Object.freeze({
     if (obb.quat !== undefined && obb.quat !== null && !(obb.quat instanceof Quat)) fail('Opus.Physics.resolveOrientedBoxCollision', 'obb.quat', 'an Opus.Quat, null, or undefined', obb.quat);
     return resolveOrientedBoxCollision(position, velocity, radius, obb);
   },
+  /** Sweeps a circular mover between two positions against an oriented box, preventing high-speed XZ tunneling. */
+  resolveSweptOrientedBoxCollision(previousPosition, position, velocity, radius, obb) {
+    vector(previousPosition, 'previousPosition', 'Opus.Physics.resolveSweptOrientedBoxCollision');
+    vector(position, 'position', 'Opus.Physics.resolveSweptOrientedBoxCollision');
+    vector(velocity, 'velocity', 'Opus.Physics.resolveSweptOrientedBoxCollision');
+    positive(radius, 'radius', 'Opus.Physics.resolveSweptOrientedBoxCollision');
+    optionsObject(obb, 'obb', 'Opus.Physics.resolveSweptOrientedBoxCollision');
+    vector(obb.center, 'obb.center', 'Opus.Physics.resolveSweptOrientedBoxCollision');
+    vector(obb.half, 'obb.half', 'Opus.Physics.resolveSweptOrientedBoxCollision');
+    if (obb.quat !== undefined && obb.quat !== null && !(obb.quat instanceof Quat)) fail('Opus.Physics.resolveSweptOrientedBoxCollision', 'obb.quat', 'an Opus.Quat, null, or undefined', obb.quat);
+    return resolveSweptOrientedBoxCollision(previousPosition, position, velocity, radius, obb);
+  },
   /**
    * Wave 6 (Priority A/Section 7): resolves a circular mover against a
    * Sphere Collider, in the XZ plane (Y ignored, same scoping as
@@ -499,6 +532,16 @@ const Physics = Object.freeze({
     vector(center, 'center', 'Opus.Physics.resolveSphereCollision');
     positive(colliderRadius, 'colliderRadius', 'Opus.Physics.resolveSphereCollision');
     return resolveSphereCollision(position, velocity, radius, center, colliderRadius);
+  },
+  /** Sweeps a circular mover between two positions against a sphere collider in the XZ plane. */
+  resolveSweptSphereCollision(previousPosition, position, velocity, radius, center, colliderRadius) {
+    vector(previousPosition, 'previousPosition', 'Opus.Physics.resolveSweptSphereCollision');
+    vector(position, 'position', 'Opus.Physics.resolveSweptSphereCollision');
+    vector(velocity, 'velocity', 'Opus.Physics.resolveSweptSphereCollision');
+    positive(radius, 'radius', 'Opus.Physics.resolveSweptSphereCollision');
+    vector(center, 'center', 'Opus.Physics.resolveSweptSphereCollision');
+    positive(colliderRadius, 'colliderRadius', 'Opus.Physics.resolveSweptSphereCollision');
+    return resolveSweptSphereCollision(previousPosition, position, velocity, radius, center, colliderRadius);
   },
   /**
    * Wave 6 (Priority B/Section 14-15): resolves a mover's vertical extent
@@ -562,6 +605,7 @@ class App {
     this._shadowsEnabled = false;
     this._shadowDistance = 30;
     this._shadowBias = 0.0025;
+    this._postProcessing = {enabled: false, exposure: 0, saturation: 1};
     this._terrains = [];
     this._waters = [];
     this._emitters = [];
@@ -583,7 +627,7 @@ class App {
 
     this._loop = new GameLoop(
       (dt, elapsed) => {
-        if (!this.paused) {
+        try { if (!this.paused) {
           this._elapsed += dt;
           this.camera.update(this.input, dt);
           this.scene.update(dt);
@@ -592,6 +636,7 @@ class App {
         }
         if (this.hud) this.hud.reportFrame(dt);
         this.audio.updateListener(this.camera);
+        } finally { this.input.endFrame(); }
       },
       () => this._render()
     );
@@ -613,11 +658,7 @@ class App {
   _wireHud() {
     this.hud.onPauseToggle(() => this.paused ? this.resume() : this.pause());
     this.hud.onQualityToggle(() => {
-      const high = this._qualitySettings.dprCap <= 1;
-      this._qualitySettings.dprCap = high ? 2 : 1;
-      this.settings.set('quality', high ? 'high' : 'low');
-      this.hud.setQualityLabel(high ? 'High' : 'Low');
-      this.resize();
+      this.setQuality(this._qualitySettings.dprCap <= 1 ? 'high' : 'low');
     });
     this.hud.onSoundToggle(() => {
       const muted = !this.audio.muted;
@@ -669,12 +710,23 @@ class App {
     this._gpuMeshes.delete(mesh);
   }
 
+  /** Release a cached Mesh GPU allocation only when no live Scene entity owns it.
+   * The portable Mesh description remains reusable, including in another App. */
+  releaseMesh(description) {
+    this._alive('releaseMesh');
+    if(!MESH_DATA.has(description))fail('App.releaseMesh','mesh','a mesh returned by Opus.Mesh',description);
+    const mesh=this._meshCache.get(description);
+    if(!mesh)return false;
+    if(this.scene.entities.some(entity=>entity.mesh===description||ENTITY_MESHES.get(entity)===mesh))return false;
+    this._destroyMesh(mesh);this._meshCache.delete(description);return true;
+  }
+
   _prepareEntity(entity) {
     if (!(entity instanceof Entity)) fail('Scene.add', 'entity', 'an Opus.Entity', entity);
     vector(entity.position, 'entity.position', 'Scene.add');
     vector(entity.scale, 'entity.scale', 'Scene.add');
     if (!MESH_DATA.has(entity.mesh)) fail('Scene.add', 'entity.mesh', 'a mesh returned by Opus.Mesh', entity.mesh);
-    if (!ENTITY_MESHES.has(entity)) ENTITY_MESHES.set(entity, this._makeRenderMesh(entity.mesh));
+    if (!ENTITY_MESHES.has(entity)||!this._gpuMeshes.has(ENTITY_MESHES.get(entity))) ENTITY_MESHES.set(entity, this._makeRenderMesh(entity.mesh));
   }
 
   // Bounded Directional Shadows (Wave 5, Priority H): the shadow box is
@@ -713,12 +765,14 @@ class App {
     // exact same filtered array, so they can never disagree about which
     // lights are currently active.
     const activeLights = this._lights.filter((l) => l.enabled);
+    const postFrame = this._renderer.beginSceneFrame(this._postProcessing);
     this._renderer.renderScene(this.camera, aspect, this.scene, this._lightDir, activeLights, shadowInfo);
     for (const terrain of this._terrains) this._renderer.renderTerrain(this.camera, aspect, terrain, this._lightDir, activeLights, shadowInfo);
     for (const water of this._waters) this._renderer.renderWater(this.camera, aspect, water, this._elapsed, this._lightDir);
     const particles = [];
     for (const emitter of this._emitters) emitter.appendRenderData(particles);
     this._renderer.renderParticles(this.camera, aspect, particles);
+    if (postFrame) this._renderer.finishSceneFrame(this._postProcessing);
     if (this._pendingScreenshot) {
       this._pendingScreenshot = false;
       captureScreenshot(this.canvas, this._screenshotFilename);
@@ -934,6 +988,24 @@ class App {
     if (this._lights.length <= App.MAX_LIGHTS) this._lightsOverLimitWarned = false;
   }
 
+  /** Opt-in loop CPU diagnostics; disabled by default and never used as simulation dt. */
+  setPerformanceCapture(enabled) {
+    this._alive('setPerformanceCapture');
+    this._loop.setPerformanceCapture(enabled);
+  }
+
+  /** Clears transient CPU samples without touching simulation or authored data. */
+  clearPerformanceCapture() {
+    this._alive('clearPerformanceCapture');
+    this._loop.clearPerformanceCapture();
+  }
+
+  /** Bounded immutable CPU callback durations and wall frame intervals; not GPU timing. */
+  getPerformanceSnapshot() {
+    this._alive('getPerformanceSnapshot');
+    return this._loop.getPerformanceSnapshot();
+  }
+
   /** Registers a per-frame callback and returns an unsubscribe function. */
   onUpdate(fn) {
     this._alive('onUpdate');
@@ -1016,6 +1088,8 @@ class App {
     // environment field already uses -- see configureShadows for the
     // options shape.
     if (options.shadows !== undefined) this.configureShadows(options.shadows);
+    if (options.postProcessing !== undefined) this.configurePostProcessing(options.postProcessing);
+    if (options.lighting2D !== undefined) this.configureLighting2D(options.lighting2D);
   }
 
   /** Returns the current environment/lighting properties (see setEnvironment). */
@@ -1024,6 +1098,8 @@ class App {
     return {
       lightDir: this._lightDir,
       shadows: this.getShadowConfig(),
+      postProcessing: this.getPostProcessing(),
+      lighting2D: this.getLighting2D(),
       skyTop: this._renderer.skyTop,
       skyHorizon: this._renderer.skyHorizon,
       groundColor: this._renderer.groundColor,
@@ -1063,6 +1139,62 @@ class App {
     return { enabled: this._shadowsEnabled, resolution: this._renderer._shadowSize, distance: this._shadowDistance, bias: this._shadowBias };
   }
 
+  /** Default-off planar XY illumination for all Sprites/Tilemaps. Existing
+   * Point/Spot lights supply range/color/intensity; Z is ignored, no shadows.
+   */
+  configureLighting2D(options = {}) {
+    this._alive('configureLighting2D');
+    optionsObject(options, 'options', 'App.configureLighting2D');
+    const next = {...this._renderer.lighting2D};
+    for (const [key, value] of Object.entries(options)) {
+      if (key === 'enabled') {
+        if (typeof value !== 'boolean') fail('App.configureLighting2D', key, 'a boolean', value);
+      } else if (key === 'ambient') {
+        finite(value, key, 'App.configureLighting2D');
+        if (value < 0 || value > 1) fail('App.configureLighting2D', key, '0 to 1', value);
+      } else fail('App.configureLighting2D', key, 'enabled or ambient', value);
+      next[key] = value;
+    }
+    this._renderer.lighting2D = next;
+  }
+
+  getLighting2D() {
+    this._alive('getLighting2D');
+    return {...this._renderer.lighting2D};
+  }
+
+  /** Opt-in whole-scene LDR grading. Exposure is -4..4 stops, saturation 0..2.
+   * No HDR highlight recovery/bloom; DOM HUDs remain untouched. Atomic patches.
+   */
+  configurePostProcessing(options = {}) {
+    this._alive('configurePostProcessing');
+    optionsObject(options, 'options', 'App.configurePostProcessing');
+    const next = {...this._postProcessing};
+    for (const [key, value] of Object.entries(options)) {
+      if (key === 'enabled') { if (typeof value !== 'boolean') fail('App.configurePostProcessing', key, 'a boolean', value); }
+      else if (key === 'exposure' || key === 'saturation') {
+        finite(value, key, 'App.configurePostProcessing');
+        if (value < (key === 'exposure' ? -4 : 0) || value > (key === 'exposure' ? 4 : 2)) fail('App.configurePostProcessing', key, key === 'exposure' ? '-4 to 4 stops' : '0 to 2', value);
+      } else fail('App.configurePostProcessing', key, 'enabled, exposure or saturation', value);
+      next[key] = value;
+    }
+    this._postProcessing = next;
+  }
+
+  /** Detached settings suitable for environment persistence and public tools. */
+  getPostProcessing() {
+    this._alive('getPostProcessing');
+    return {...this._postProcessing};
+  }
+
+  /** Read-only current GPU target budget; no handles or mutable renderer internals. */
+  getPostProcessingInfo() {
+    this._alive('getPostProcessingInfo');
+    const target = this._renderer._postTarget;
+    return {active: !!target, width: target?.width || 0, height: target?.height || 0, samples: target?.samples || 0,
+      estimatedTargetBytes: target ? target.width * target.height * (target.samples > 0 ? 4 + 7 * target.samples : 7) : 0};
+  }
+
   /** Resizes the drawing buffer to the displayed canvas size. */
   resize() { this._alive('resize'); this._context.resize(); }
 
@@ -1078,7 +1210,20 @@ class App {
     if (level !== 'high' && level !== 'low') fail('App.setQuality', 'level', "'high' or 'low'", level);
     this._qualitySettings.dprCap = level === 'low' ? 1 : 2;
     this.settings.set('quality', level);
+    if (this.hud) this.hud.setQualityLabel(level === 'low' ? 'Low' : 'High');
     this.resize();
+  }
+
+  /** Detached device-local quality inspection; never changes authored scene data. */
+  getQuality() {
+    this._alive('getQuality');
+    const reported = window.devicePixelRatio;
+    const devicePixelRatio = Number.isFinite(reported) && reported > 0 ? reported : 1;
+    const dprCap = this._qualitySettings.dprCap;
+    const width = this.canvas.width, height = this.canvas.height;
+    return { profile: this.settings.get('quality') === 'low' ? 'low' : 'high', dprCap,
+      devicePixelRatio, effectivePixelRatio: Math.min(devicePixelRatio, dprCap),
+      width, height, pixelCount: width * height };
   }
 
   /** Queues a PNG capture immediately after the next rendered frame. */
@@ -1118,6 +1263,78 @@ class App {
   }
 }
 
+// Phase171: portable paint descriptors over the existing renderer fields.
+// Texture references are creator data; GPU handles never enter descriptors.
+const Material = Object.freeze({
+  VERSION: 1,
+  PRESETS: Object.freeze([
+    Object.freeze({id:'transparent',label:'Transparent',description:'Half-opacity surface; texture alpha still applies.'}),
+    Object.freeze({id:'emissive',label:'Surface emission',description:'Self-lit color, not a glow or a scene light.'}),
+    Object.freeze({id:'unlit',label:'Flat unlit',description:'Color and texture without scene lighting.'}),
+  ]),
+  preset(id, descriptor = {}) {
+    if(!Material.PRESETS.some(p=>p.id===id))fail('Opus.Material.preset','id','a supported Material preset',id);
+    const value=Material.create(descriptor);
+    value.alpha=id==='transparent'?.5:1;
+    value.unlit=id==='unlit';
+    value.emissiveColor=id==='emissive'?value.color.slice():[0,0,0];
+    value.emissiveIntensity=id==='emissive'?1:0;
+    return value;
+  },
+  create(options = {}) {
+    const method='Opus.Material.create';
+    if(!options||typeof options!=='object'||Array.isArray(options))fail(method,'options','a material descriptor',options);
+    if(options.version!==undefined&&options.version!==1)fail(method,'version','the supported material version 1',options.version);
+    const rgb=(key,fallback)=>{const v=options[key]??fallback;colorArray(v,key,method);return v.slice();};
+    const pair=(key,fallback)=>{const v=options[key]??fallback;if(!Array.isArray(v)||v.length!==2)fail(method,key,'an array of two finite numbers',v);v.forEach((n,i)=>finite(n,`${key}[${i}]`,method));return v.slice();};
+    const alpha=options.alpha??1;finite(alpha,'alpha',method);if(alpha<0||alpha>1)fail(method,'alpha','between 0 and 1',alpha);
+    const unlit=options.unlit??false;if(typeof unlit!=='boolean')fail(method,'unlit','a boolean',unlit);
+    const emissiveIntensity=options.emissiveIntensity??0;positive(emissiveIntensity,'emissiveIntensity',method,true);
+    const textureAssetRef=options.textureAssetRef??null;if(textureAssetRef!==null&&(typeof textureAssetRef!=='string'||!textureAssetRef))fail(method,'textureAssetRef','a nonempty asset ID or null',textureAssetRef);
+    return {version:1,color:rgb('color',[1,1,1]),textureAssetRef,alpha,unlit,emissiveColor:rgb('emissiveColor',[0,0,0]),emissiveIntensity,uvScale:pair('uvScale',[1,1]),uvOffset:pair('uvOffset',[0,0])};
+  },
+  capture(entity, textureAssetRef = null) {
+    if(!(entity instanceof Entity))fail('Opus.Material.capture','entity','an Opus.Entity',entity);
+    return Material.create({color:entity.color,textureAssetRef,alpha:entity.alpha,unlit:entity.unlit,emissiveColor:entity.emissiveColor,emissiveIntensity:entity.emissiveIntensity,uvScale:entity.uvScale,uvOffset:entity.uvOffset});
+  },
+  apply(entity, descriptor, bindings = {}) {
+    if(!(entity instanceof Entity))fail('Opus.Material.apply','entity','an Opus.Entity',entity);
+    if(!descriptor||typeof descriptor!=='object'||Array.isArray(descriptor))fail('Opus.Material.apply','descriptor','a material descriptor',descriptor);
+    const value=Material.create(descriptor);
+    if(value.textureAssetRef&&(!bindings||!bindings.texture))fail('Opus.Material.apply','bindings.texture','a resolved texture for the saved asset reference',bindings?.texture);
+    // Validate the whole record before writing any field; arrays are detached.
+    for(const key of ['color','alpha','unlit','emissiveColor','emissiveIntensity','uvScale','uvOffset'])entity[key]=value[key];
+    entity.texture=value.textureAssetRef?bindings.texture:null;
+    return entity;
+  },
+});
+
+/** Portable lighting recipes. Outputs are ordinary detached point/spot records,
+ * not runtime owners: callers resolve arrays to Vec3 for App.createLight. */
+const LightingRig = Object.freeze({
+  VERSION: 1,
+  PRESETS: Object.freeze([
+    Object.freeze({id:'studio',label:'Soft studio',description:'Three point lights: warm key, cool fill and neutral rim.'}),
+    Object.freeze({id:'stage',label:'Warm stage',description:'Two aimed spot lights and a soft point fill.'}),
+  ]),
+  preset(id, options = {}) {
+    const method='Opus.LightingRig.preset';
+    if(!LightingRig.PRESETS.some(p=>p.id===id))fail(method,'id','a supported lighting rig preset',id);
+    if(!options||typeof options!=='object'||Array.isArray(options))fail(method,'options','a rig descriptor',options);
+    if(options.version!==undefined&&options.version!==1)fail(method,'version','the supported rig version 1',options.version);
+    const center=options.center??[0,1,0],size=options.size??3;
+    if(!Array.isArray(center)||center.length!==3)fail(method,'center','three finite coordinates',center);
+    center.forEach((v,i)=>{finite(v,`center[${i}]`,method);if(Math.abs(v)>1e6)fail(method,'center','coordinates within ±1000000',center);});
+    finite(size,'size',method);if(size<.5||size>50)fail(method,'size','between 0.5 and 50',size);
+    const offsets=[[-1,1,1],[1,.5,1],[0,1,-1]],colors=id==='studio'?[[1,.9,.75],[.65,.8,1],[1,1,1]]:[[1,.65,.3],[.65,.8,1],[1,.8,.5]];
+    const lights=offsets.map((offset,i)=>{
+      const length=Math.hypot(...offset);
+      return {name:['Key','Fill','Rim'][i],type:id==='stage'&&i!==1?'spot':'point',position:center.map((v,k)=>v+offset[k]*size),color:colors[i].slice(),intensity:[2,.7,1.4][i],range:size*4,angle:Math.PI/4,direction:offset.map(v=>-v/length),enabled:true};
+    });
+    return {version:1,preset:id,center:center.slice(),size,lights};
+  },
+});
+
 /** Single supported browser namespace. */
 const Opus = Object.freeze({
   VERSION: '0.1.0',
@@ -1126,7 +1343,13 @@ const Opus = Object.freeze({
   Mat4,
   Scene,
   Entity,
+  Material,
+  LightingRig,
   Camera,
+  CAMERA_SCHEMA_VERSION,
+  CAMERA_PROJECTIONS: Object.freeze(CAMERA_PROJECTIONS.slice()),
+  SPRITE_PASS_RELATIONS,
+  normalizeSpritePassRelation,
   Mesh,
   Terrain,
   Water,

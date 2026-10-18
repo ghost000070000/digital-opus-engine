@@ -1,0 +1,108 @@
+'use strict';
+// Actual editor integration; no replacement mapping model or native proof.
+const assert=require('assert'),fs=require('fs'),vm=require('vm');
+const source=fs.readFileSync(require.resolve('../editor/src/01-editor'),'utf8');
+const required=['copyInputDeviceMappings','getInputDeviceMapping','inputDeviceTargetCode','setInputDeviceMapping','resetInputDeviceMapping'];
+const observed={provenance:'Actual editor source before Phase093 mapping integration',helpers:Object.fromEntries(required.map(name=>[name,source.includes('function '+name+'(')])),storage:/let inputDeviceMappings\s*=/.test(source),mappingUI:/data-input-device|input-device-action/.test(source)};
+if(process.argv.includes('--observe-red')){console.log(JSON.stringify(observed,null,2));process.exit(0);}
+for(const name of required)assert(observed.helpers[name],`Missing actual no-code device mapping helper ${name}`);
+assert(observed.storage,'Missing canonical project-owned inputDeviceMappings');
+console.log('Phase093 device mapping authoring integration discovery PASS');
+function extract(name){const start=source.indexOf('function '+name+'(');assert(start>=0,name);let cursor=source.indexOf('(',start)+1,p=1;while(p){if(source[cursor]==='(')p++;if(source[cursor]===')')p--;cursor++;}const brace=source.indexOf('{',cursor);let depth=1,end=brace+1;while(depth){if(source[end]==='{')depth++;if(source[end]==='}')depth--;end++;}return (name==='wireTouchButton'?extract('markGameplayPointerDevice')+'\n':'')+source.slice(start,end);}
+const clone=v=>JSON.parse(JSON.stringify(v));
+const c={inputDeviceMappings:[],inputActionMap:{interact:'KeyF'},effectiveInputMap:{interact:'KeyF'},playerInputOverrides:{},playMode:false,history:[],renderInputActionPanel(){},refreshInputActionConsumers(){}};
+vm.createContext(c);
+c.inputDeviceRuntime=null;
+c.inputContextLookAllowed=()=>true; // Explicit historical unrestricted fixture.
+for(const module of ['00-input-action-assets','00-input-device-mappings'])vm.runInContext(fs.readFileSync(require.resolve('../editor/src/'+module),'utf8'),c);
+vm.runInContext(source.match(/const INPUT_ACTION_LABELS = [^\r\n]+/)[0],c);
+vm.runInContext(`inputActionAssets=[{kind:'InputAction',version:1,id:'input-action-1',name:'Open map',description:''}];`,c);
+vm.runInContext(['findInputAction','inputActionLabels','validInputActionCode','inputActionBinding',...required,'inputTouchActionCode'].map(extract).join('\n'),c);
+vm.runInContext('pushUndo=()=>history.push({map:{...inputActionMap},records:copyInputDeviceMappings(inputDeviceMappings)});',c);
+assert.equal(c.inputDeviceTargetCode('input-action-1'),null);
+assert(c.setInputDeviceMapping('input-action-1',['button:5'],true,'').ok);
+assert.equal(c.history.length,1);assert.deepStrictEqual(clone(c.history[0]),{map:{interact:'KeyF'},records:[]});
+assert.equal(c.inputActionMap['input-action-1'],'');
+assert.equal(c.inputDeviceTargetCode('input-action-1'),'OpusAction:input-action-1');
+assert.equal(c.inputActionBinding('input-action-1'),'OpusAction:input-action-1');
+assert.equal(c.inputTouchActionCode('input-action-1'),'OpusAction:input-action-1');
+assert(c.setInputDeviceMapping('input-action-1',['button:5'],true,'').ok);assert.equal(c.history.length,1);
+for(const args of [['input-action-999',[],false,''],['input-action-1',['bogus'],false,''],['input-action-1',['button:5','button:5'],false,''],['input-action-1',[],false,'bogus'],['input-action-1',[],0,'']])assert(!c.setInputDeviceMapping(...args).ok);
+assert.equal(c.history.length,1);
+c.playMode=true;assert(!c.setInputDeviceMapping('input-action-1',[],false,'').ok);assert(!c.resetInputDeviceMapping('input-action-1').ok);c.playMode=false;
+assert(c.setInputDeviceMapping('input-action-1',[],false,'').ok);
+assert.equal(c.inputDeviceTargetCode('input-action-1'),null,'Explicit disabled devices with no primary code remain inert');
+assert.equal(c.inputTouchActionCode('input-action-1'),null);
+assert(c.setInputDeviceMapping('input-action-1',['axis:0:positive'],false,'Mouse2').ok);
+c.effectiveInputMap['input-action-1']='Mouse2';assert.equal(c.inputActionBinding('input-action-1'),'Mouse2');
+c.playerInputOverrides['input-action-1']='KeyP';assert.equal(c.inputDeviceTargetCode('input-action-1'),'KeyP');assert.equal(c.inputDeviceTargetCode('input-action-1',true),'Mouse2','Preview excludes local player override');
+assert(c.resetInputDeviceMapping('input-action-1').ok);assert.equal(c.inputActionMap['input-action-1'],'Mouse2','Reset device defaults preserves canonical keyboard/mouse binding');
+const resetHistory=c.history.length;assert(c.resetInputDeviceMapping('input-action-1').ok);assert.equal(c.history.length,resetHistory);
+vm.runInContext(`inputDeviceMappings.push({kind:'InputDeviceMapping',version:99,action:'interact',gamepad:[],touch:false,future:{retain:0}});`,c);
+const future=clone(c.inputDeviceMappings);assert(!c.setInputDeviceMapping('interact',[],false,'KeyF').ok);assert(!c.resetInputDeviceMapping('interact').ok);assert.deepStrictEqual(clone(c.inputDeviceMappings),future);assert.equal(c.history.length,resetHistory);
+vm.runInContext(`inputDeviceMappings=[{kind:'InputDeviceMapping',version:1,action:'interact',gamepad:[],touch:false},{kind:'InputDeviceMapping',version:1,action:'interact',gamepad:[],touch:false}];`,c);
+assert(!c.setInputDeviceMapping('interact',[],false,'KeyF').ok);assert(!c.resetInputDeviceMapping('interact').ok);assert.equal(c.history.length,resetHistory);
+vm.runInContext(`inputDeviceMappings=[{kind:'InputDeviceMapping',version:1,action:'input-action-1',gamepad:['button:5'],touch:true}];inputActionAssets=[];`,c);
+assert.equal(c.inputDeviceTargetCode('input-action-1'),null);assert.equal(c.inputTouchActionCode('input-action-1'),null);assert.equal(c.inputActionBinding('input-action-1'),null);
+assert(!c.setInputDeviceMapping('input-action-1',[],false,'').ok);assert.equal(c.inputDeviceMappings.length,1,'Missing identity record retained but never executes');
+const copied=c.copyInputDeviceMappings(c.inputDeviceMappings);copied[0].gamepad.push('button:6');assert.equal(c.inputDeviceMappings[0].gamepad.length,1);
+for(const helper of ['captureEditorSnapshot','captureTilemapBundleSnapshot','loadEditorSnapshot','restoreTilemapBundleSnapshot','serializeProject','loadProjectFull'])assert(extract(helper).includes('inputDeviceMappings'),helper+' must retain independent mapping ownership');
+c.nextInputActionAssetId=1;vm.runInContext(extract('reconcileInputActionAssetIds'),c);
+vm.runInContext(`reconcileInputActionAssetIds({inputDeviceMappings:[{kind:'InputDeviceMapping',version:99,action:'input-action-91'}]});`,c);
+assert.equal(c.nextInputActionAssetId,92,'Retained mapping IDs reserve future Action identity');
+console.log('Phase093 actual-source mapping validation/history/identity/fallback PASS');
+// Real poll + real Input projection, with deterministic gamepad observations.
+c.window={addEventListener(){},removeEventListener(){}};c.document={addEventListener(){},removeEventListener(){},getElementById:()=>({click(){}})};
+c.pad={connected:true,axes:[0,0,0,0],buttons:Array.from({length:17},()=>({pressed:false}))};c.navigator={getGamepads:()=>[c.pad]};
+Object.assign(c,{gamepadHeldKeys:new Set(),gamepadStartWasHeld:false,GAMEPAD_STICK_DEADZONE:.15,GAMEPAD_LOOK_RATE:2,player:null});
+vm.runInContext(fs.readFileSync(require.resolve('../engine/src/04-input'),'utf8')+'\napp={input:new Input(window)};',c);
+vm.runInContext(extract('pollGamepad'),c);
+c.app.settings={get:()=>undefined};c.currentPlayerSettings={};c.gamepadTuningRuntime=null;c.gameEnded=false;
+vm.runInContext(fs.readFileSync(require.resolve('../editor/src/00-input-tuning'),'utf8')+'\n'+extract('effectiveGamepadTuning'),c);
+vm.runInContext(extract('compileInputDeviceRuntime'),c);
+c.playMode=true;
+const touchNode={addEventListener(type,fn){this[type]=fn;}};
+c.document.getElementById=()=>touchNode;vm.runInContext(extract('wireTouchButton'),c);
+vm.runInContext(`inputActionAssets=[{kind:'InputAction',version:1,id:'input-action-1',name:'Open map',description:''}];inputDeviceMappings=[{kind:'InputDeviceMapping',version:1,action:'input-action-1',gamepad:['button:5'],touch:true},{kind:'InputDeviceMapping',version:1,action:'interact',gamepad:[],touch:false}];inputActionMap['input-action-1']='';playerInputOverrides={};`,c);
+c.pad.buttons[1].pressed=true;c.pollGamepad(.016);assert(!c.app.input.isDown('KeyF'),'Explicit empty configuration replaces legacy Interact gamepad mapping');
+c.pad.buttons[5].pressed=true;c.pollGamepad(.016);assert(c.app.input.isDown('OpusAction:input-action-1'),'Actual configured custom source reaches canonical Input');
+c.wireTouchButton('custom',()=>c.inputTouchActionCode('input-action-1'));
+const pointerEvent={pointerId:4,preventDefault(){}};touchNode.pointerdown(pointerEvent);
+c.pad.buttons[5].pressed=false;c.pollGamepad(.016);assert(c.app.input.isDown('OpusAction:input-action-1'),'Actual named touch bridge retains shared configured custom transport');
+touchNode.pointercancel(pointerEvent);assert(!c.app.input.isDown('OpusAction:input-action-1'));
+c.app.input.simulateKeyDown('OpusAction:input-action-1','separate-owner');
+touchNode.pointerdown(pointerEvent);c.document.querySelectorAll=()=>[touchNode];vm.runInContext(extract('releaseTouchInputControls'),c);
+c.releaseTouchInputControls();assert(c.app.input.isDown('OpusAction:input-action-1'),'Stop touch cleanup preserves another owner');
+c.app.input.simulateKeyUp('OpusAction:input-action-1','separate-owner');assert(!c.app.input.isDown('OpusAction:input-action-1'));
+touchNode.pointerdown(pointerEvent);assert(c.app.input.isDown('OpusAction:input-action-1'),'Next session pointer can reacquire after cleanup');touchNode.pointerup(pointerEvent);assert(!c.app.input.isDown('OpusAction:input-action-1'));
+c.pad.buttons[5].pressed=true;c.pollGamepad(.016);
+vm.runInContext(`inputActionAssets=[];inputDeviceRuntime=null;compileInputDeviceRuntime();`,c);c.pollGamepad(.016);assert(!c.app.input.isDown('OpusAction:input-action-1'),'Deleted identity releases prior pad lease after canonical session rebuild');
+Object.assign(c,{copyComponentPresetLibrary:clone,componentPresets:[],serializeScene:()=>[],captureLevelLogicSnapshot:()=>null,serializeTilesets:()=>[],serializeTilemapChunks:()=>[],collisionLayers:[],levels:[],prefabs:[],graphFunctions:[],textureAssets:[],spriteAssets:[],spriteAnimationClips:[],assets:[],audioAssets:[],signalDefinitions:[],OpusSignals:{copy:clone},orderedSpriteSortingLayers:()=>[],scriptsTrusted:true,serializeTextureAssets:()=>[],serializeSpriteAssets:()=>[],serializeSpriteAnimationClips:()=>[],serializeAssets:()=>[],serializeAudioAssets:()=>[]});
+c.currentPlayerSettings={controllerType:'firstperson'};
+vm.runInContext(['copyInputActionAssets','copyInputActionSets','captureEditorSnapshot','captureTilemapBundleSnapshot'].map(extract).join('\n'),c);
+for(const name of ['captureEditorSnapshot','captureTilemapBundleSnapshot']){const snapshot=c[name]();assert.deepStrictEqual(clone(snapshot.inputDeviceMappings),clone(c.inputDeviceMappings));snapshot.inputDeviceMappings[0].gamepad.push('button:6');assert.equal(c.inputDeviceMappings[0].gamepad.length,1,'History owns independent device mapping records');assert(!Object.hasOwn(snapshot,'playerInputOverrides'));}
+Object.assign(c,{PROJECT_FORMAT:'digital-opus-project',PROJECT_FORMAT_VERSION:7,currentLevelIndex:0,currentItemDefs:[],startLevelIndex:0,levelTransitionConfig:{},parallaxLayers:[],projectMeta:{},liveAutoTileProject:()=>({}),OpusAuthoringPlumbing:{recomputeProjectTerrain(){}},collectProjectDependencies:()=>({prefabs:new Set(),meshAssets:new Set(),textureAssets:new Set(),spriteAssets:new Set(),spriteAnimations:new Set(),tilesets:new Set(),tileIdsByTileset:new Map(),audioAssets:new Set()})});
+c.tilesets=[];c.tilemapChunks=[];
+c.playerPreferenceScope=undefined;
+c.renderLootTableList=()=>{};vm.runInContext(fs.readFileSync(require.resolve('../editor/src/00-loot-tables.js'),'utf8')+'\nlootTables=[];\n'+extract('copyLootLibrary'),c);
+require('./inventory-template-fixture')(c);
+vm.runInContext(extract('serializeProject'),c);
+// Phase094 preserves an explicit unavailable identity rather than deriving one on reload.
+vm.runInContext(fs.readFileSync(require.resolve('../editor/src/00-player-rebind-screen'),'utf8'),c);c.playerPreferenceScope=null;
+assert(Object.hasOwn(c.serializeProject(),'playerPreferenceScope'));assert.equal(c.serializeProject().playerPreferenceScope,null);
+for(const options of [undefined,{includeTilesets:false}]){const disk=clone(c.serializeProject(options));assert.deepStrictEqual(disk.inputDeviceMappings,clone(c.inputDeviceMappings));assert(!Object.hasOwn(disk,'playerInputOverrides'));disk.inputDeviceMappings[0].gamepad.push('button:6');assert.equal(c.inputDeviceMappings[0].gamepad.length,1);}
+console.log('Phase093 actual-source configured poll and independent Save/history PASS');
+// Mount actual editor handlers against observable native-control-shaped nodes.
+const controls={},mappingHost={innerHTML:'',querySelector(selector){return controls[selector]||(controls[selector]={value:'',checked:false,textContent:''});}};
+c.playMode=false;c.inputDeviceRuntime=null;
+c.document.getElementById=id=>id==='input-device-mappings'?mappingHost:id==='input-device-status'?mappingHost.querySelector('#input-device-status'):null;
+Object.assign(c,{editingInputDeviceAction:'input-action-1',rebindingAction:null,escapeHtml:value=>String(value).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch])),keyCodeToLabel:code=>code||'Not bound'});
+vm.runInContext(`inputActionAssets=[{kind:'InputAction',version:1,id:'input-action-1',name:'<Map>',description:''}];inputDeviceMappings=[];`,c);
+vm.runInContext(extract('renderInputDeviceMappingEditor'),c);c.renderInputDeviceMappingEditor();
+assert(mappingHost.innerHTML.includes('&lt;Map&gt;'));assert(!mappingHost.innerHTML.includes('><Map><'));
+assert(mappingHost.innerHTML.includes('No primary input (device-only)'));
+mappingHost.querySelector('#input-device-mouse').value='Mouse2';mappingHost.querySelector('#input-device-gamepad').value='button:5';mappingHost.querySelector('#input-device-touch').checked=true;
+const beforeMounted=c.history.length;controls['#input-device-save'].onclick();assert.equal(c.history.length,beforeMounted+1);assert.equal(c.inputActionMap['input-action-1'],'Mouse2');assert.deepStrictEqual(clone(c.getInputDeviceMapping('input-action-1').record.gamepad),['button:5']);
+controls['#input-device-key'].onclick();assert.equal(c.rebindingAction,'input-action-1','Capture control starts canonical keyboard capture');
+c.playMode=true;c.renderInputDeviceMappingEditor();const beforeBlocked=c.history.length;controls['#input-device-save'].onclick();assert.equal(c.history.length,beforeBlocked,'Retained mounted save handler cannot mutate during Play');assert(mappingHost.innerHTML.includes('id="input-device-save" type="button" disabled'));
+console.log('Phase093 actual mounted named mapping UI/escaping/Play guard PASS');

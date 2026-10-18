@@ -1,0 +1,8 @@
+'use strict';
+const fs=require('fs'),vm=require('vm'),assert=require('assert'),s=fs.readFileSync('editor/src/01-editor.js','utf8');
+const extract=n=>{const at=s.indexOf('function '+n+'(');assert(at>=0,n);return s.slice(at,s.indexOf('\nfunction ',at+10));};
+let writes=0;const c={normalizeProjectData:p=>({...p,levels:[{objects:[]}]}),validateImportedSceneRecords(){},validateImportedPrefabs(){},ensureLevelIds(){},OpusPlayerRebindScreen:{scope:()=>null},copyMaterialAssets:()=>{writes++;throw new Error('FIRST_WRITE_BOUNDARY');}};
+vm.createContext(c);vm.runInContext(['copyPortableAssetExtras',...(s.includes('function validatePortableProjectAssetExtras(')?['validatePortableProjectAssetExtras']:[]),'restoreFullProjectPrefabLibrary','loadProjectFull'].map(extract).join('\n'),c);
+for(const family of ['assets','textures','audio']){const record={id:'fixture',future:JSON.parse('{"nested":{"constructor":{"unsafe":true}}}')};writes=0;assert.throws(()=>c.loadProjectFull({[family]:[{id:'safe',future:{retain:true}},record]},'fixture'),/Unsupported asset metadata/,'Actual full-project load must refuse unknown unsafe metadata before first library write');assert.equal(writes,0);}
+writes=0;assert.throws(()=>c.loadProjectFull({assets:[{id:'safe',positions:[0,1,2],meshHandle:{},future:{retain:[0,false]}}],textures:[],audio:[]},'fixture'),/FIRST_WRITE_BOUNDARY/);assert.equal(writes,1,'Safe extras and excluded runtime fields must reach unchanged canonical load');
+console.log('Phase197 actual full-project load unsafe library extras refuse before first mutation; safe canonical metadata path retained PASS');

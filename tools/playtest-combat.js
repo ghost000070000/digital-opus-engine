@@ -18,7 +18,7 @@ async function read(page){return page.evaluate(()=>({
   overlay:{classes:document.querySelector('#end-overlay').className,title:document.querySelector('#end-overlay-title').textContent},
   state:window.__gameState,objectives:window.__gameObjectives,inventory:window.__gameInventory,
   player:player&&{position:player.entity.position,forward:player.entity.forward,visible:player.entity.visible,radius:player.radius},
-  camera:{eye:app.camera.eye,target:app.camera.currentTarget,yaw:fpYaw,pitch:fpPitch,sensitivity:currentPlayerSettings.mouseSensitivity||.0022},
+  camera:{eye:app.camera.eye,target:app.camera.currentTarget,yaw:fpYaw,pitch:fpPitch,sensitivity:effectiveMouseSensitivity()},
   pointerLocked:!!document.pointerLockElement,
   activeSlot:activeWeaponSlot,
   equipment:Object.entries(playerEquipment).map(([slot,e])=>({slot,name:e.itemName,entity:!!e.entity,visible:e.entity?.visible,destroyed:e.entity?.destroyed,position:e.entity?.position})),
@@ -43,7 +43,7 @@ class Session{
     const yaw=Math.atan2(dx,dz),pitch=-Math.atan2(dy,Math.hypot(dx,dz));
     for(let k=0;k<3;k++){
       s=await read(this.page);const dyaw=wrap(yaw-s.camera.yaw),dpitch=pitch-s.camera.pitch;if(Math.abs(dyaw)<.006&&Math.abs(dpitch)<.006)break;
-      const mx=-dyaw/s.camera.sensitivity,my=-dpitch/s.camera.sensitivity;
+      const mx=dyaw/s.camera.sensitivity,my=dpitch/s.camera.sensitivity;
       this.mx+=mx;this.my+=my;await this.page.mouse.move(this.mx,this.my,{steps:1});await this.page.waitForTimeout(100);
     }
     const after=await read(this.page);this.report.actions.push({kind:'mouse-aim',point,from:camera?'camera-eye':'player-root',sim:after.sim,yawError:wrap(yaw-after.camera.yaw),pitchError:pitch-after.camera.pitch,pointerLocked:after.pointerLocked});

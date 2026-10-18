@@ -1,0 +1,13 @@
+'use strict';
+const fs=require('fs'),vm=require('vm'),assert=require('assert'),s=fs.readFileSync(require.resolve('../editor/src/01-editor.js'),'utf8');
+const start=s.indexOf('const ANIMATION_EVENT_ACTIONS ='),end=s.indexOf('function renderAnimationEventList(',start);assert(start>=0&&end>start);
+const asset={id:'rig',type:'skinnedMesh',animationEvents:[{id:'aevt1',clipIndex:0,time:.2,action:'message',params:{text:'original'}}]},item={assetId:'rig',entity:{skin:{clips:[{name:'Idle',duration:1},{name:'Walk',duration:2}]}}};let history=0,next=1;
+const c={assets:[asset],placed:[item],selectedItem:item,playMode:false,pushUndo:()=>history++,generateAnimEventId:()=>`aevt${next++}`,ACTION_TYPES:{message:{fields:[{key:'text',type:'text'}]},sound:{fields:[{key:'frequency',type:'number'},{key:'mode',type:'select',options:['synth','asset']},{key:'audioAssetId',type:'audioAsset'}]},fireWeapon:{fields:[]}},findAudioAssetById:id=>id==='sound1'?{}:null};vm.createContext(c);vm.runInContext(s.slice(start,end),c);
+const change=(key,value,id='aevt1')=>c.changeAnimationEvent(item,id,key,value);
+for(const value of [-1,Infinity,NaN,null,'0.4',1.01,.2])assert.equal(change('time',value),false);assert.equal(history,0);
+assert(change('time',.4));assert.equal(history,1);assert.equal(asset.animationEvents[0].time,.4);assert(!change('params.text','original'));assert(change('params.text','changed'));assert.equal(history,2);
+assert(!change('action','message'));assert.equal(asset.animationEvents[0].params.text,'changed');assert(!change('action','unknown'));assert(change('action','sound'));assert(!change('params.frequency','660'));assert(change('params.frequency',660));assert(!change('params.mode','bad'));assert(!change('params.audioAssetId','missing'));assert(change('params.audioAssetId','sound1'));assert(!change('params.notAField','bad'));
+const n=history;c.playMode=true;assert(!change('time',.6));c.playMode=false;c.selectedItem={};assert(!change('time',.6));c.selectedItem=item;c.placed=[];assert(!change('time',.6));c.placed=[item];c.assets.push({...asset});assert(!change('time',.6));c.assets.pop();assert.equal(history,n);
+assert(change('add',undefined,null));assert.equal(asset.animationEvents.at(-1).id,'aevt2');assert(change('remove',undefined,'aevt2'));assert(!change('remove',undefined,'aevt2'));
+asset.animationEvents.push({...asset.animationEvents[0]});assert(!change('time',.8));asset.animationEvents.pop();asset.animationEvents[0].params=null;assert(!change('params.frequency',700));assert(change('action','message'));
+asset.animationEvents=null;assert(!change('add',undefined,null));console.log('PASS184 actual authoring guards finite/bounds/no-op/params/history/Play/stale/unique IDs/shared owners/retained malformed metadata. Native gates pending.');

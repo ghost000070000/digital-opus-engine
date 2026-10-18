@@ -13,7 +13,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
   const report={id,inputOnly:true,startedAt:new Date().toISOString(),events,errors};page.on('pageerror',e=>errors.push(e.message));
   const read=()=>page.evaluate(()=>({
    pos:player&&player.entity.position,controller:player&&player.controllerType,basis:app.camera.getBasis(),eye:app.camera.eye,
-   yaw:fpYaw,pitch:fpPitch,sensitivity:currentPlayerSettings.mouseSensitivity||.0022,pointerLocked:!!document.pointerLockElement,sim:window.__gamePlaytimeSeconds,ended:gameEnded,frozen:playerFrozen,health:window.__gameState,inventory:window.__gameInventory,
+   yaw:fpYaw,pitch:fpPitch,sensitivity:effectiveMouseSensitivity(),pointerLocked:!!document.pointerLockElement,sim:window.__gamePlaytimeSeconds,ended:gameEnded,frozen:playerFrozen,health:window.__gameState,inventory:window.__gameInventory,
    objectives:window.__gameObjectives,held:heldObjectItem&&heldObjectItem.id,nearest:nearestInteractable&&nearestInteractable.id,
    text:document.body.innerText,beacons:placed.filter(o=>/^Foglight\d$/.test(o.name||'')).map(o=>({id:o.id,lit:o.variables?.lit})),
    objs:placed.filter(o=>o.name&&o.entity&&!o.isWaypoint&&!o.isTrigger).map(o=>({id:o.id,name:o.name,pos:o.entity.position,visible:o.entity.visible}))
@@ -42,7 +42,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
   async function aimAt(point){
     let st=await read();if(st.ended)return;if(!st.pointerLocked){await page.mouse.move(mx,my);await page.mouse.click(mx,my);await page.waitForTimeout(150);st=await read();}
     const dx=point[0]-st.eye.x,dz=point[2]-st.eye.z,dy=point[1]-st.eye.y,yaw=Math.atan2(dx,dz),pitch=-Math.atan2(dy,Math.hypot(dx,dz));
-    for(let k=0;k<4;k++){st=await read();const dyaw=Math.atan2(Math.sin(yaw-st.yaw),Math.cos(yaw-st.yaw)),dp=pitch-st.pitch;if(Math.abs(dyaw)<.006&&Math.abs(dp)<.006)break;mx-=dyaw/st.sensitivity;my-=dp/st.sensitivity;await page.mouse.move(mx,my,{steps:1});await page.waitForTimeout(120);}
+    for(let k=0;k<4;k++){st=await read();const dyaw=Math.atan2(Math.sin(yaw-st.yaw),Math.cos(yaw-st.yaw)),dp=pitch-st.pitch;if(Math.abs(dyaw)<.006&&Math.abs(dp)<.006)break;mx+=dyaw/st.sensitivity;my+=dp/st.sensitivity;await page.mouse.move(mx,my,{steps:1});await page.waitForTimeout(120);}
     events.push({mouseAim:point,state:await read()});
   }
   async function interact(label){await hold('f',160);await page.waitForTimeout(250);events.push({interact:label,state:await read()});}

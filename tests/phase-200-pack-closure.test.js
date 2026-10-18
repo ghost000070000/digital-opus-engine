@@ -1,0 +1,18 @@
+'use strict';
+const assert=require('assert'),api=require('../editor/src/00-tilemap-bundle');
+const project={meshAssets:[{id:'shared',name:'Model',mesh:{positions:[0,0,0]}}],textures:[{id:'shared',dataURL:'data:image/png;base64,YQ==',folder:'art',tags:['kept']}],audio:[{id:'shared',dataURL:'data:audio/wav;base64,Yg=='}],spriteAssets:[{id:'sprite',sourceTexture:'shared',extra:{futureLabel:'retained'}}],spriteAnimations:[{id:'clip',frames:[{spriteAssetRef:'sprite'}]}],tilesets:[{id:'tiles',tiles:[{id:'cell',spriteAssetRef:'sprite'}]}],tilemapChunks:[{id:'chunk',tilesetRef:'tiles',layers:[]}],prefabs:[{name:'Assembly',record:{assetId:'shared',textureAssetId:'shared',audioAssetId:'shared',clipRef:'clip',tilemapChunkRef:'chunk',sourcePrefabName:'Nested'}},{name:'Nested',record:{sourcePrefabName:'Assembly',spriteAssetRef:'sprite'}}]};
+const before=JSON.stringify(project),roots=[{collection:'prefabs',id:'Assembly'}],closure=api.collectAssetPackClosure(project,roots);
+for(const family of ['meshAssets','textures','audio','spriteAssets','spriteAnimations','tilesets','tilemapChunks'])assert.equal(closure.dependencies[family].length,1,family);
+assert.equal(closure.dependencies.prefabs.length,2,'Prefab cycle terminates with full typed closure');assert.equal(closure.dependencies.spriteAssets[0].extra.futureLabel,'retained');assert.equal(JSON.stringify(project),before);
+closure.dependencies.textures[0].tags.push('independent');assert.equal(JSON.stringify(project),before,'Outputs detached');
+assert.deepStrictEqual(api.collectAssetPackClosure(project,[...roots,...roots]).selections,roots,'Duplicate selections deduplicate');
+for(const collection of ['meshAssets','textures','audio'])assert.equal(api.collectAssetPackClosure(project,[{collection,id:'shared'}]).dependencies[collection][0].id,'shared','Cross-family IDs do not collide');
+assert.throws(()=>api.collectAssetPackClosure(project,[]),/Select/);assert.throws(()=>api.collectAssetPackClosure(project,[{collection:'future',id:'shared'}]),/Unsupported/);assert.throws(()=>api.collectAssetPackClosure(project,[{collection:'audio',id:'absent'}]),/Missing/);
+assert.throws(()=>api.collectAssetPackClosure({...project,textures:[...project.textures,...project.textures]},roots),/Duplicate/);
+assert.throws(()=>api.collectAssetPackClosure({...project,spriteAssets:[]},roots),/Missing required spriteAssets/);
+for(const extra of [{customScript:'private'},{nodeGraph:{version:999,nodes:[]}}])assert.throws(()=>api.collectAssetPackClosure({...project,prefabs:[{name:'Assembly',record:extra}]},roots),/full project transfer/);
+assert.throws(()=>api.collectAssetPackClosure({...project,audio:[{id:'shared',value:NaN}]},[{collection:'audio',id:'shared'}]),/Non-finite/);
+let deep={};for(let i=0;i<40;i++)deep={child:deep};assert.throws(()=>api.collectAssetPackClosure({audio:[{id:'deep',extra:deep}]},[{collection:'audio',id:'deep'}]),/depth/);
+const cyclic={id:'cycle'};cyclic.extra=cyclic;assert.throws(()=>api.collectAssetPackClosure({audio:[cyclic]},[{collection:'audio',id:'cycle'}]),/depth/);
+const dense={audio:Array.from({length:4096},(_,i)=>({id:'audio-'+i,name:'Audio '+i}))},denseRoots=dense.audio.map(a=>({collection:'audio',id:a.id})),denseBefore=JSON.stringify(dense),start=Date.now();assert.equal(api.collectAssetPackClosure(dense,denseRoots).dependencies.audio.length,4096);assert(Date.now()-start<2000,'4096 selected roots bounded under2s');assert.equal(JSON.stringify(dense),denseBefore);
+console.log('PASS200 selected typed library roots: transitive cycle/Clip/Sprite/Texture/Tileset/Chunk closure, metadata detachment, strict unsupported/missing/duplicate/depth refusal and4096-root bound');

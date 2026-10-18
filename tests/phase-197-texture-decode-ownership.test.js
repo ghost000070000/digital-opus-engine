@@ -1,0 +1,14 @@
+'use strict';
+const fs=require('fs'),vm=require('vm'),assert=require('assert'),source=fs.readFileSync('editor/src/01-editor.js','utf8');
+const at=source.indexOf('function loadTextureAssets('),end=source.indexOf('\nfunction ',at+10);assert(at>=0);
+const jobs=[],events=[];const c={textureAssets:[],findTextureAssetById:id=>c.textureAssets.find(a=>a.id===id),reconcileTextureIdCounter:()=>{},decodeTextureImage:()=>new Promise((resolve,reject)=>jobs.push({resolve,reject})),renderTextureLibrary:()=>events.push('texture'),renderSpriteLibrary:()=>events.push('sprite'),showStatus:message=>events.push(message)};vm.createContext(c);vm.runInContext(source.slice(source.indexOf('function copyPortableAssetExtras('),source.indexOf('function serializeAssets('))+source.slice(at,end),c);
+const drain=async()=>{await Promise.resolve();await Promise.resolve();};
+(async()=>{
+  c.loadTextureAssets([{id:'same',name:'Old',dataURL:'old'}]);const retired=c.textureAssets[0];let staleCallbacks=0;retired.pendingCallbacks.push(()=>staleCallbacks++);
+  c.textureAssets=[];c.loadTextureAssets([{id:'same',name:'New',dataURL:'new'}]);const current=c.textureAssets[0],before=events.length;
+  jobs[0].resolve({naturalWidth:99,naturalHeight:99});await drain();assert.equal(staleCallbacks,0,'Retired decode must not run callbacks after history/project replaced its library, even when ID is reused');assert.equal(events.length,before,'Retired success must not refresh current editor');assert.equal(retired.image,null);assert.equal(retired.pendingCallbacks.length,0);assert.equal(current.image,null);
+  let liveCallbacks=0;current.pendingCallbacks.push(()=>liveCallbacks++);jobs[1].resolve({naturalWidth:64,naturalHeight:16});await drain();assert.equal(liveCallbacks,1);assert.equal(current.width,64);assert.equal(current.height,16);assert.deepEqual(events.slice(before),['texture','sprite']);
+  c.loadTextureAssets([{id:'bad-old',name:'Retired failure',dataURL:'bad'}]);const failure=c.textureAssets.at(-1);failure.pendingCallbacks.push(()=>staleCallbacks++);c.textureAssets=c.textureAssets.filter(a=>a!==failure);const noFeedback=events.length;jobs[2].reject(new Error('retired decode'));await drain();assert.equal(events.length,noFeedback);assert.equal(failure.decodeError,undefined);assert.equal(failure.pendingCallbacks.length,0);
+  c.loadTextureAssets([{id:'bad-live',name:'Current failure',dataURL:'bad'}]);jobs[3].reject(new Error('current decode'));await drain();assert.equal(c.textureAssets.at(-1).decodeError,'current decode');assert(events.some(e=>String(e).includes('Source retained')));
+  console.log('Phase197 actual deferred Texture decoder ownership: same-ID retired success/error callbacks suppressed, live decode/callback/retained error recovery preserved PASS');
+})().catch(error=>{console.error(error);process.exitCode=1;});

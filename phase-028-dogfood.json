@@ -1,0 +1,36 @@
+{
+  "phase": 28,
+  "feature": "2D Camera Mode and Orthographic Scene Authoring",
+  "status": "qualified",
+  "date": "2026-09-15",
+  "browser": {
+    "engine": "Codex in-app Chromium browser",
+    "url": "http://127.0.0.1:8843/editor/",
+    "project": "blank-project",
+    "interactionBoundary": "Blank project creation, palette drag placement, Inspector edits, Camera View, local Sprite image import, nine-slice guide authoring, pixel sampling, flip, direction, parallax registry/assignment, Save, reload, Load Selected, validation, and both exports used visible controls. No project state was injected into the visible run.",
+    "warningsOrErrors": []
+  },
+  "cameras": {
+    "perspective": { "name": "Camera #2", "projection": "perspective", "fovDegrees": 45 },
+    "orthographic": { "name": "Phase 028 2D Camera", "projection": "orthographic", "mode": "fixed", "active": true, "orthographicHeightAfterReload": 18, "positionZAfterReload": 30 },
+    "cameraView": { "heightsExercised": [12, 6, 18], "zPositionsCompared": [10, 30], "returnToSceneView": true },
+    "zInvariantEvidence": "At height 6 the same Sprite/Billboard/Mesh composition retained its displayed scale when camera Z changed from 10 to 30; the independent export audit compares matrix scale terms exactly."
+  },
+  "scene": {
+    "plainSprite": true,
+    "pixelNineSliceSprite": { "guides": { "left": 8, "right": 8, "top": 8, "bottom": 8 }, "sampling": "pixel", "flipX": true, "initialDirection": "right" },
+    "parallax": { "name": "Camera Test Background", "stableId": "parallax-layer-1", "factorX": 0.25, "factorY": 0.25, "effectiveSummaryObserved": "X 0.25, Y 0.25" },
+    "billboard": true,
+    "mesh": true,
+    "animationCompatibility": "Covered by Phase 021-025 focused and integrated regression suites; no new animation data model was introduced."
+  },
+  "saveReload": { "pass": true, "restoredObjects": 5, "restoredCameraProjection": "orthographic", "restoredHeight": 18, "restoredZ": 30, "restoredActive": true },
+  "validation": { "final": "No structured authoring issues found.", "pass": true },
+  "focusedTests": { "pass": true, "count": 55 },
+  "integratedTests": { "pass": true, "count": 1218, "phase011Through028": 856 },
+  "exports": { "uiCommands": { "editable": "completed", "playable": "completed" }, "proof": "phase-028-export-proof.json", "editable": ".tmp-phase028/phase-028-editable.html", "playable": ".tmp-phase028/phase-028-playable.html", "editableBytes": 1659939, "playableBytes": 1659999, "offlineNetworkRequests": 0, "errors": [] },
+  "build": { "engineBytes": 163664, "engineGzipBytes": 42050, "games": "28/28", "engineSiteTotal": "222.0 MB", "editorPackage": "1599 KB" },
+  "capabilityGrades": { "sprites2d": "B", "animation": "C" },
+  "limitations": ["Numeric Orthographic Height is used instead of a direct frame-resize handle.", "Pixel-perfect scaling, follow/bounds cameras, UI Canvas, 2D physics/controllers, and Phase 029 remain deferred."],
+  "verdict": "PHASE_028_2D_CAMERA_READY"
+}

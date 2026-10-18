@@ -1,0 +1,73 @@
+{
+  "phase": 32,
+  "method": "normal Import Project JSON control plus normal export buttons",
+  "serverPid": 12748,
+  "fixture": "qualification\\phase-032\\phase-032-browser-input.json",
+  "browser": {
+    "authoring": {
+      "live": {
+        "objectCount": 1,
+        "cells": 6,
+        "renderCells": 6,
+        "sort": [
+          0,
+          0,
+          "phase032-tilemap"
+        ],
+        "missing": 0
+      },
+      "validation": "No structured authoring issues found.",
+      "pageErrors": [],
+      "consoleErrors": [],
+      "externalRequests": []
+    },
+    "editable": {
+      "state": {
+        "kind": "tilemap",
+        "cells": 6,
+        "renderCells": 6,
+        "tileset": "tileset1",
+        "visible": true,
+        "validation": "No structured authoring issues found."
+      },
+      "toggleVisible": true,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "externalRequests": []
+    },
+    "playable": {
+      "state": {
+        "kind": "tilemap",
+        "cells": 6,
+        "renderCells": 6,
+        "tileset": "tileset1",
+        "visible": true
+      },
+      "toggleVisible": false,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "externalRequests": []
+    }
+  },
+  "ok": true,
+  "exports": {
+    "editable": {
+      "path": "qualification\\phase-032\\phase-032-editable-game.html",
+      "bytes": 1728143,
+      "tilesets": 1,
+      "tiles": 3,
+      "cells": 6
+    },
+    "playable": {
+      "path": "qualification\\phase-032\\phase-032-playable-game.html",
+      "bytes": 1728181,
+      "tilesets": 1,
+      "tiles": 3,
+      "sprites": 3,
+      "textures": 1,
+      "cells": 6
+    },
+    "cellParity": true
+  },
+  "verdict": "PASS"
+}

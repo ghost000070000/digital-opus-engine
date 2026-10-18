@@ -68,3 +68,13 @@ The new kit does not incorporate historical `dogfood-assets` geometry or audio. 
 - `node tools/verify-showcase-assets.js --render` also captures real engine asset previews with locally installed Playwright/Sharp and Edge. These are asset-review images, not game screenshots.
 - Game JSON embeds only the selected meshes, textures and audio through `install`; no remote asset requests are needed in standalone exports.
 - Keep this provenance document and `LICENSE` with any subsequently approved release. This pass does not authorize deployment or a public upload.
+
+## Collision-recovery masonry pieces
+
+`tools/real-demo-masonry-assembly.js` derives ten disconnected stone/rubble mesh
+pieces from the original MIT `showcase-broken-wall` asset. It retains all source
+triangles and UVs, recentres/normalizes component vertices and adjusts normals
+for equivalent world rendering. Existing no-code groups compose visible solid
+pieces without filling the space above the lower stones. Permanent tests verify
+triangle counts and original world-vertex reconstruction at multiple scales/yaws.
+These derived pieces remain MIT; no third-party geometry or remote assets added.

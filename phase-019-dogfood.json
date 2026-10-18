@@ -1,0 +1,28 @@
+{
+  "url": "http://127.0.0.1:8872/editor/index.html?phase=19",
+  "project": "phase-019-dogfood",
+  "assets": {
+    "normal": { "fixture": "tests/fixtures/phase-017-pixel-art.png", "textureSize": [16, 16], "spriteAsset": "spriteAsset1", "naturalSize": [0.16, 0.16], "pivot": [0.5, 0.5], "filtering": "nearest", "placements": 5 },
+    "atlas": { "fixture": "tests/fixtures/phase-018-atlas.png", "textureSize": [128, 128], "grid": [4, 4], "cellSize": [32, 32], "createdRegionAssets": 16, "naturalSize": [0.32, 0.32], "filtering": "linear", "distinctCellsDragged": 4 }
+  },
+  "checks": {
+    "blankProjectImportToDrag": true,
+    "repeatedNames": ["phase-017-pixel-art Sprite", "phase-017-pixel-art Sprite 2", "phase-017-pixel-art Sprite 3", "phase-017-pixel-art Sprite 4", "phase-017-pixel-art Sprite 5"],
+    "defaultSorting": ["sprite-layer-default", 0],
+    "defaultAppearance": { "tint": "#ffffff", "opacity": 1, "visible": true },
+    "rootParent": true,
+    "directManipulation": { "resizedTo": [1.346744, 0.32], "pivotTo": [0.643359, 0.83538], "movedXTo": -8 },
+    "sortingEdit": { "layer": "sprite-layer-1", "orderInLayer": 7 },
+    "undoRedoPlacement": true,
+    "cancelledPlaceCommand": true,
+    "prefab": { "name": "Phase 019 Atlas Sprite", "instantiated": true },
+    "saveLoad": { "slot": "phase-019-dogfood", "objects": 11, "spriteAssets": 18, "textures": 2 },
+    "levelDuplicate": { "name": "Level 1 Copy", "objects": 11 },
+    "playStop": true,
+    "editableExport": true,
+    "playableExport": true
+  },
+  "errors": [],
+  "warnings": [],
+  "ok": true
+}

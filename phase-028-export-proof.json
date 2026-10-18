@@ -1,0 +1,87 @@
+{
+  "phase": 28,
+  "url": "http://127.0.0.1:8878/editor/",
+  "checks": {
+    "validation": "No structured authoring issues found.",
+    "editable": {
+      "file": ".tmp-phase028\\phase-028-editable.html",
+      "bytes": 1659939,
+      "playableOnly": false,
+      "chromeVisible": true,
+      "editorOpened": true,
+      "inspectorReady": true,
+      "proof": {
+        "cameraCount": 2,
+        "spriteCount": 2,
+        "billboardCount": 1,
+        "meshCount": 36,
+        "perspective": {
+          "projection": "perspective",
+          "fov": 45
+        },
+        "orthographic": {
+          "projection": "orthographic",
+          "height": 12,
+          "active": true,
+          "version": 2
+        },
+        "bounds": {
+          "left": -10.666666666666666,
+          "right": 10.666666666666666,
+          "bottom": -6,
+          "top": 6,
+          "width": 21.333333333333332,
+          "height": 12,
+          "aspect": 1.7777777777777777
+        },
+        "zInvariant": true,
+        "parallelRays": true,
+        "activeProjectionAfterSwitch": "perspective"
+      },
+      "errors": [],
+      "network": [],
+      "pass": true
+    },
+    "playable": {
+      "file": ".tmp-phase028\\phase-028-playable.html",
+      "bytes": 1659999,
+      "playableOnly": true,
+      "chromeVisible": false,
+      "editorOpened": false,
+      "inspectorReady": false,
+      "proof": {
+        "cameraCount": 2,
+        "spriteCount": 2,
+        "billboardCount": 1,
+        "meshCount": 36,
+        "perspective": {
+          "projection": "perspective",
+          "fov": 45
+        },
+        "orthographic": {
+          "projection": "orthographic",
+          "height": 12,
+          "active": true,
+          "version": 2
+        },
+        "bounds": {
+          "left": -10.666666666666666,
+          "right": 10.666666666666666,
+          "bottom": -6,
+          "top": 6,
+          "width": 21.333333333333332,
+          "height": 12,
+          "aspect": 1.7777777777777777
+        },
+        "zInvariant": true,
+        "parallelRays": true,
+        "activeProjectionAfterSwitch": "perspective"
+      },
+      "errors": [],
+      "network": [],
+      "pass": true
+    }
+  },
+  "errors": [],
+  "ok": true
+}

@@ -1,0 +1,58 @@
+{
+  "phase": 24,
+  "feature": "Sprite Animation Events",
+  "status": "qualified",
+  "scenario": {
+    "walkFrames": 4,
+    "walkEvents": ["Footstep Left", "Footstep Right"],
+    "attackEvents": ["Whoosh", "Damage Window"],
+    "renamedFrom": "Hit",
+    "listenerReaction": "ordinary no-code action"
+  },
+  "checks": [
+    "Created Walk with 4 frames and Footstep Left/Right events.",
+    "Previewed more than 3 loops; event feedback remained preview-only.",
+    "Created Attack Once with Whoosh and Hit, then renamed Hit to Damage Window.",
+    "Authored exact target/Clip/event listeners with creator-facing pickers.",
+    "Verified Walk Footstep Left reaction and different-state Attack Damage Window reaction in Play.",
+    "Cleared the Attack state Clip to produce a structured listener validation error, then repaired it.",
+    "Assigned valid Sprite Assets and reached zero structured authoring issues.",
+    "Saved, loaded, replayed, and retained Clip v3 events and reactions.",
+    "Editor, editable export, and playable export consoles contained no warnings or errors."
+  ],
+  "automatedQualification": {
+    "phase024": "66/66",
+    "phases011Through024": "590/590 across 14 suites",
+    "fullRunner": "952/952",
+    "showcase": "15/15",
+    "publicSite": "1/1",
+    "gamesBuild": "28/28",
+    "engineSiteExamples": "28/28",
+    "gamesSite": "28/28",
+    "capabilityCatalog": "57 valid; A=5, B=32, C=18, D=1, N/A=1"
+  },
+  "exports": {
+    "editable": {
+      "file": "editable-game (19).html",
+      "bytes": 1596508,
+      "booted": true,
+      "editThisGameVisible": true,
+      "reactionObserved": "DAMAGE WINDOW",
+      "consoleWarningsOrErrors": 0
+    },
+    "playable": {
+      "file": "playable-game (16).html",
+      "bytes": 1596546,
+      "booted": true,
+      "editThisGameVisible": false,
+      "reactionObserved": "DAMAGE WINDOW",
+      "consoleWarningsOrErrors": 0
+    }
+  },
+  "limitations": [
+    "No generic payloads or wildcard listeners.",
+    "Older skinned-animation time/action events remain a separate bounded surface.",
+    "AFR-0009 remains CONFIRMED."
+  ],
+  "verdict": "PHASE_024_SPRITE_ANIMATION_EVENTS_READY"
+}

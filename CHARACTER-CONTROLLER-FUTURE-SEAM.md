@@ -1,0 +1,5 @@
+# Future Character Controller seam
+
+A later input/controller system should set or request Kinematic world-XY velocity, call the canonical Character movement service, then query read-only grounded/wall/ceiling state plus `onSlope`, `groundNormal`, `slopeAngle`, `groundSupportId`, `onMovingPlatform`, and `groundSupportVelocity`. It should use the Character's actual displacement and support state to drive animation, foot placement, and future jump eligibility, without assuming that touching a steep wall means grounded. Future jump logic may deliberately include `groundSupportVelocity` as inherited launch momentum; Phase 048 does not implement jumping or momentum transfer.
+
+Input mapping, jump requests, gravity, acceleration, animation, and Player Builder semantics belong in that later controller, not in Character Collision 2D. Do not duplicate the Phase 047 slope/step solver, Phase 048 carry ordering, collision geometry, contact probes, or sparse Tilemap queries in a controller. NPC and scripted movers should be able to use the same movement service.

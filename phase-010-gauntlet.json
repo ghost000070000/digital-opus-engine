@@ -1,0 +1,67 @@
+{
+  "browser": "Microsoft Edge",
+  "url": "http://127.0.0.1:8870/editor/",
+  "cleanProfile": true,
+  "normalEditorUIOnly": true,
+  "customScript": false,
+  "clicks": 38,
+  "checks": {
+    "dashboard": {
+      "total": 57,
+      "countLabel": "57 of 57 capabilities · authoritative local catalog"
+    },
+    "environmentAndPlayer": {
+      "sky": [
+        0.09411764705882353,
+        0.18823529411764706,
+        0.2901960784313726
+      ],
+      "controller": "topdown"
+    },
+    "authored": {
+      "objects": 2,
+      "components": [
+        "health"
+      ],
+      "presets": [
+        "checkpoint",
+        "collectible"
+      ],
+      "interaction": true,
+      "simpleState": true,
+      "winCondition": true,
+      "hud": [
+        "counter"
+      ]
+    },
+    "saveLoad": true,
+    "validation": {
+      "total": 0,
+      "errors": 0,
+      "warnings": 0
+    },
+    "play": true,
+    "export": {
+      "filename": "playable-game.html",
+      "bytes": 1383498,
+      "catalogPayloadExcluded": true
+    }
+  },
+  "friction": [
+    {
+      "system": "Validation",
+      "observation": "Project validation passed with zero errors, but remains C because AFR-0014 documents uncovered semantic setup classes."
+    },
+    {
+      "system": "Variables",
+      "observation": "The collectible counter supplies simple state, but free-typed state names remain a C-grade pressure."
+    },
+    {
+      "system": "HUD",
+      "observation": "Counter HUD is quick to add; layout remains form/numeric rather than direct canvas manipulation."
+    }
+  ],
+  "errors": [],
+  "elapsedSeconds": 4.2,
+  "ok": true
+}

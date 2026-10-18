@@ -1,0 +1,336 @@
+{
+  "phase": 31,
+  "feature": "Tile Palette and Tileset Asset foundation",
+  "status": "passed",
+  "visibleAuthoring": {
+    "method": "normal visible editor controls; no project-state injection",
+    "fixture": "tests/fixtures/phase-031-tileset-atlas.svg",
+    "textureId": "texture1",
+    "slicedSpriteAssetIds": [
+      "spriteAsset2",
+      "spriteAsset3",
+      "spriteAsset4",
+      "spriteAsset5",
+      "spriteAsset6",
+      "spriteAsset7",
+      "spriteAsset8",
+      "spriteAsset9",
+      "spriteAsset10",
+      "spriteAsset11",
+      "spriteAsset12",
+      "spriteAsset13",
+      "spriteAsset14",
+      "spriteAsset15",
+      "spriteAsset16",
+      "spriteAsset17"
+    ],
+    "sourceRects": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 16,
+        "height": 16
+      },
+      {
+        "x": 16,
+        "y": 0,
+        "width": 16,
+        "height": 16
+      },
+      {
+        "x": 32,
+        "y": 0,
+        "width": 16,
+        "height": 16
+      },
+      {
+        "x": 48,
+        "y": 0,
+        "width": 16,
+        "height": 16
+      },
+      {
+        "x": 0,
+        "y": 16,
+        "width": 16,
+        "height": 16
+      },
+      {
+        "x": 16,
+        "y": 16,
+        "width": 16,
+        "height": 16
+      },
+      {
+        "x": 32,
+        "y": 16,
+        "width": 16,
+        "height": 16
+      },
+      {
+        "x": 48,
+        "y": 16,
+        "width": 16,
+        "height": 16
+      },
+      {
+        "x": 0,
+        "y": 32,
+        "width": 16,
+        "height": 16
+      },
+      {
+        "x": 16,
+        "y": 32,
+        "width": 16,
+        "height": 16
+      },
+      {
+        "x": 32,
+        "y": 32,
+        "width": 16,
+        "height": 16
+      },
+      {
+        "x": 48,
+        "y": 32,
+        "width": 16,
+        "height": 16
+      },
+      {
+        "x": 0,
+        "y": 48,
+        "width": 16,
+        "height": 16
+      },
+      {
+        "x": 16,
+        "y": 48,
+        "width": 16,
+        "height": 16
+      },
+      {
+        "x": 32,
+        "y": 48,
+        "width": 16,
+        "height": 16
+      },
+      {
+        "x": 48,
+        "y": 48,
+        "width": 16,
+        "height": 16
+      }
+    ],
+    "filtering": [
+      "nearest"
+    ],
+    "tilesetId": "tileset1",
+    "cellSize": {
+      "width": 1,
+      "height": 1
+    },
+    "tileIds": [
+      "tile-phase-031-tileset-atlas-001",
+      "tile-phase-031-tileset-atlas-002",
+      "tile-phase-031-tileset-atlas-003",
+      "tile-phase-031-tileset-atlas-004",
+      "tile-phase-031-tileset-atlas-005",
+      "tile-phase-031-tileset-atlas-006",
+      "tile-phase-031-tileset-atlas-008",
+      "tile-phase-031-tileset-atlas-007",
+      "tile-phase-031-tileset-atlas-009",
+      "tile-phase-031-tileset-atlas-010",
+      "tile-phase-031-tileset-atlas-011",
+      "tile-phase-031-tileset-atlas-012",
+      "tile-phase-031-tileset-atlas-013",
+      "tile-phase-031-tileset-atlas-014",
+      "tile-phase-031-tileset-atlas-015",
+      "tile-phase-031-tileset-atlas-016",
+      "tile-floor-copy"
+    ],
+    "tileNames": [
+      "Grass",
+      "Water",
+      "Sand",
+      "Stone",
+      "Path",
+      "Flower",
+      "Floor",
+      "Wall",
+      "phase-031-tileset-atlas_009",
+      "phase-031-tileset-atlas_010",
+      "phase-031-tileset-atlas_011",
+      "phase-031-tileset-atlas_012",
+      "phase-031-tileset-atlas_013",
+      "phase-031-tileset-atlas_014",
+      "phase-031-tileset-atlas_015",
+      "phase-031-tileset-atlas_016",
+      "Floor Copy"
+    ],
+    "tileOrder": [
+      "tile-phase-031-tileset-atlas-001",
+      "tile-phase-031-tileset-atlas-002",
+      "tile-phase-031-tileset-atlas-003",
+      "tile-phase-031-tileset-atlas-004",
+      "tile-phase-031-tileset-atlas-005",
+      "tile-phase-031-tileset-atlas-006",
+      "tile-phase-031-tileset-atlas-008",
+      "tile-phase-031-tileset-atlas-007",
+      "tile-phase-031-tileset-atlas-009",
+      "tile-phase-031-tileset-atlas-010",
+      "tile-phase-031-tileset-atlas-011",
+      "tile-phase-031-tileset-atlas-012",
+      "tile-phase-031-tileset-atlas-013",
+      "tile-phase-031-tileset-atlas-014",
+      "tile-phase-031-tileset-atlas-015",
+      "tile-phase-031-tileset-atlas-016",
+      "tile-floor-copy"
+    ],
+    "spriteRefs": [
+      "spriteAsset2",
+      "spriteAsset3",
+      "spriteAsset4",
+      "spriteAsset5",
+      "spriteAsset6",
+      "spriteAsset7",
+      "spriteAsset9",
+      "spriteAsset8",
+      "spriteAsset10",
+      "spriteAsset11",
+      "spriteAsset12",
+      "spriteAsset13",
+      "spriteAsset14",
+      "spriteAsset15",
+      "spriteAsset16",
+      "spriteAsset17",
+      "spriteAsset9"
+    ],
+    "renameProof": [
+      "Grass",
+      "Water",
+      "Sand",
+      "Stone",
+      "Path",
+      "Flower",
+      "Wall",
+      "Floor"
+    ],
+    "reorderProof": {
+      "floorBeforeWall": true,
+      "idsStable": true
+    },
+    "searchProof": {
+      "query": "Grass",
+      "filtered": 1,
+      "restored": 17,
+      "orderMutation": false
+    },
+    "brokenRepairProof": {
+      "clearedSpriteRef": true,
+      "validationErrors": 1,
+      "navigationFocusedTile": true,
+      "repaired": true,
+      "finalValidation": "clean"
+    },
+    "duplicatedTilesetProof": {
+      "id": "tileset2",
+      "name": "Grasslands Variant",
+      "cellSize": {
+        "width": 2,
+        "height": 2
+      },
+      "firstTwoNames": [
+        "Water",
+        "Variant Grass"
+      ],
+      "originalUnchanged": true
+    },
+    "savedReloaded": true
+  },
+  "exports": {
+    "editable": {
+      "path": "C:\\Users\\THINKPAD\\Downloads\\editable-game (22).html",
+      "bytes": 1698386,
+      "tilesets": 2,
+      "sprites": 16,
+      "textures": 1
+    },
+    "playable": {
+      "path": "C:\\Users\\THINKPAD\\Downloads\\playable-game (19).html",
+      "bytes": 1688147,
+      "tilesets": 0,
+      "sprites": 0,
+      "textures": 0
+    }
+  },
+  "pruning": {
+    "unusedTilesetPruned": true,
+    "unusedTilesetSpritesPruned": true,
+    "unusedTexturePruned": true,
+    "directSpriteOverlap": {
+      "tilesets": 0,
+      "sprites": [
+        "spriteAsset2"
+      ],
+      "textures": [
+        "texture1"
+      ],
+      "unrelatedSpritesPruned": true
+    }
+  },
+  "browser": {
+    "editable": {
+      "file": "editable-game (22).html",
+      "bytes": 1698386,
+      "editorToggleVisible": true,
+      "tilePaletteVisible": false,
+      "edit": {
+        "paletteVisible": true,
+        "tileName": "Export Audit Grass",
+        "validation": "No structured authoring issues found."
+      },
+      "pageErrors": [],
+      "consoleErrors": [],
+      "consoleWarnings": [
+        "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. "
+      ],
+      "externalRequests": [],
+      "reviewedWarnings": [
+        "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. "
+      ],
+      "unexplainedWarnings": []
+    },
+    "playable": {
+      "file": "playable-game (19).html",
+      "bytes": 1688147,
+      "editorToggleVisible": false,
+      "tilePaletteVisible": false,
+      "edit": null,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "consoleWarnings": [
+        "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. "
+      ],
+      "externalRequests": [],
+      "reviewedWarnings": [
+        "The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. "
+      ],
+      "unexplainedWarnings": []
+    }
+  },
+  "publicBoundary": {
+    "publicGames": 28,
+    "dogfoodInCatalog": false,
+    "game29Added": false
+  },
+  "performance": {
+    "tiles": 1000,
+    "lookupAndSerializeMs": 1,
+    "serializedBytes": 67882,
+    "found": "Tile 999",
+    "paletteSanityTiles": 256
+  },
+  "ok": true,
+  "verdict": "PHASE_031_TILESET_PALETTE_READY"
+}

@@ -1,0 +1,14 @@
+'use strict';
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const src=fs.readFileSync(require.resolve('../engine/src/22-api.js'),'utf8');
+const begin=src.indexOf('  setQuality(level) {'),end=src.indexOf('\n  /** Queues a PNG',begin);
+const context={window:{devicePixelRatio:2},fail:()=>{throw Error('invalid quality');}};vm.createContext(context);
+vm.runInContext('class ActualQuality { '+src.slice(begin,end)+' }; globalThis.ActualQuality=ActualQuality;',context);
+const app=new context.ActualQuality();app._alive=()=>{};app._qualitySettings={dprCap:2};app.canvas={width:800,height:600};app.settings={get:()=>app.preference,set:(key,value)=>{app.preference=value;}};let resized=0,label='High';app.resize=()=>{resized++;};app.hud={setQualityLabel:value=>{label=value;}};
+app.setQuality('low');assert.equal(app._qualitySettings.dprCap,1);assert.equal(app.preference,'low');assert.equal(resized,1);
+assert.equal(label,'Low','Public setQuality must synchronize the existing HUD instead of leaving a stale High label');
+assert.throws(()=>app.setQuality('ultra'));assert.equal(app._qualitySettings.dprCap,1);
+let q=app.getQuality();assert.equal(q.profile,'low');assert.equal(q.effectivePixelRatio,1);assert.equal(q.pixelCount,480000);q.width=0;q.dprCap=9;assert.equal(app.getQuality().dprCap,1);assert.equal(app.canvas.width,800);
+app.hud=null;app.setQuality('high');assert.equal(app.getQuality().effectivePixelRatio,2);context.window.devicePixelRatio=1;assert.equal(app.getQuality().effectivePixelRatio,1);context.window.devicePixelRatio=NaN;assert.equal(app.getQuality().devicePixelRatio,1);app._alive=()=>{throw Error('destroyed');};assert.throws(()=>app.getQuality(),/destroyed/);assert.throws(()=>app.setQuality('low'),/destroyed/);
+const glContext={window:{devicePixelRatio:2,addEventListener(){},removeEventListener(){}},document:{addEventListener(){},removeEventListener(){},hidden:false}};vm.createContext(glContext);vm.runInContext(fs.readFileSync(require.resolve('../engine/src/06-gl-context.js'),'utf8'),glContext);const settings={dprCap:2},canvas={clientWidth:320,clientHeight:180,width:0,height:0,getContext:()=>({viewport(){}})},handle=glContext.initGL(canvas,settings);assert.equal(canvas.width,640);assert.equal(canvas.height,360);settings.dprCap=1;handle.resize();assert.equal(canvas.width,320);assert.equal(canvas.height,180);canvas.clientWidth=0;handle.resize();assert.equal(canvas.width,320);handle.destroy();
+console.log('PASS180 actual public quality profile/HUD synchronization and invalid refusal');

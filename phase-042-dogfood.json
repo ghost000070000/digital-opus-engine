@@ -1,0 +1,25 @@
+{
+  "phase": 42,
+  "status": "READY_FOR_BROWSER_QUALIFICATION",
+  "project": "qualification/phase-042/phase-042-project.json",
+  "lab": "Phase 042 Trigger Lifecycle Lab",
+  "objects": {
+    "triggerBox": "trigger-box",
+    "targetBox": "target-box",
+    "targetCircle": "target-circle",
+    "triggerCircle": "trigger-circle",
+    "dualColliderTarget": "target-both",
+    "selfIgnored": "self-proof",
+    "triggerOnlyNotTarget": "trigger-only-target",
+    "disabledTarget": "disabled-target",
+    "parentedTrigger": "parented-trigger"
+  },
+  "prefab": "Phase 042 Trigger Pair Prefab",
+  "eventSequence": [
+    "trigger2DEnter",
+    "trigger2DStay",
+    "trigger2DExit",
+    "trigger2DEnter"
+  ],
+  "publicCatalog": false
+}

@@ -54,7 +54,7 @@ function cube(level,name,pos,scale,color,extra={}) {
  level.objects.push(o);return o;
 }
 function prop(level,key,pos,scale=1,name=key,extra={}){
- const a=use(key);return cube(level,name,pos,Array.isArray(scale)?scale:[scale,scale,scale],[1,1,1],{mesh:'asset',assetId:a.id,textureAssetId:a.textureAssetId,...extra});
+ const a=use(key);return cube(level,name,pos,Array.isArray(scale)?scale:[scale,scale,scale],[1,1,1],{mesh:'asset',assetId:a.id,textureAssetId:a.textureAssetId,...require('./showcase-wall-collision')(key,a,scale,extra.rotationY||0),...extra});
 }
 function place(level,key,x,z,scale=1,name=key,extra={}) {return prop(level,key,[x,terrainY(level,x,z)-.06,z],scale,name,extra);}
 function model(o,key,scale=1){const a=use(key);o.mesh='asset';o.assetId=a.id;o.textureAssetId=a.textureAssetId;o.color=[1,1,1];o.scale=Array.isArray(scale)?scale:[scale,scale,scale];return o;}
@@ -209,6 +209,7 @@ function rehab(id,p){const s=SPECS[id];const l=p.levels[0];
   for(const x of[-9,9])for(const z of[-8,2,11]){prop(l,'terminal',[x,0,z],.65,'Bay monitor');light(l,[x,2.5,z],[.2,.68,.9],6,.7);}
   end(l,[0,0,15],'Final inspection console',{type:'isFlagTrue',name:'checkpointReached'});
  }else if(id==='moving-temple'){
+  by(l,'obj57').animationClips.find(c=>c.name==='Cross').tracks.position.at(-1).value[0]=7.5;
   const rise=by(l,'obj59').animationClips.find(c=>c.name==='Rise');rise.duration=8;rise.tracks.position[1].t=8;
   by(l,'obj56').position=[0,1.8,-.4];model(by(l,'obj60'),'beacon',.35);by(l,'obj60').position=[14,1.25,0];
   const goal=by(l,'obj62');model(goal,'relic',.8);goal.position[1]=6.9;
@@ -242,6 +243,8 @@ function rehab(id,p){const s=SPECS[id];const l=p.levels[0];
   by(l,'cam-intro').options.position=[14,6,-6];by(l,'cam-intro').options.lookAtTargetId='relic1';
   for(const seq of l.sequences||[])for(const step of seq.steps||[])if(step.kind==='delay'&&step.seconds===1.5)step.seconds=.65;
  }else if(id==='valley-run'){
+  for(const o of l.objects)if(['obj101','obj102','obj103','obj104'].includes(o.id))o.solid=true;
+  const firstStone=by(l,'obj101');if(firstStone){firstStone.position[1]=.4;firstStone.position[2]=6;}
   for(const o of l.objects){if(o.ai){model(o,'guardian',.6);ground(o,l);}if(o.behaviors?.some(b=>b.action==='setCheckpoint')){model(o,'beacon',.6);ground(o,l);}if(o.behaviors?.some(b=>b.action==='win')){model(o,'relic',.8);ground(o,l,.8);}}
   woodland(l,[[-6,-14,.9],[6,-11,.8],[-6,-7,.75],[6,-3,.9],[-7,4,.8],[7,7,.9],[-7,13,.9],[7,18,.8],[-5,22,.8]]);
   prop(l,'arch',[0,terrainY(l,0,22),23],.9,'Far ridge arch');trail(l,[[-2,-14],[2,-11],[-2,-7],[2,-3],[-2,2]]);
@@ -284,6 +287,8 @@ function rehab(id,p){const s=SPECS[id];const l=p.levels[0];
   for(const o of l.objects){if(o.ai)model(o,'drone',.7);if(o.name==='Orb')model(o,'relic',.55);}
   for(const f of p.prefabs||[])model(f.record,'drone',.75);
   const n=id==='survival-arena'?1:id==='survival-arena-2'?2:3;
+  if(n===1)for(const record of l.objects){if(record.ai?.type==='follow'){record.ai.collideWithSolids=true;record.ai.collisionRadius=record.collider?.radius||.44;}}
+  if(n===3)for(const prefab of p.prefabs||[]){const record=prefab.record;if(record?.ai?.type==='follow'&&prefab.name==='Hunter'){record.ai.collideWithSolids=true;record.ai.collisionRadius=record.collider?.radius||.6;}}
   l.environment.skyTop=n===2?[.09,.20,.25]:n===3?[.23,.11,.085]:[.08,.12,.22];l.environment.skyHorizon=n===2?[.36,.56,.60]:n===3?[.66,.40,.25]:[.40,.46,.57];
   rim(l,0,0,10.5,8,n===2?'rock-3':'pillar');for(const [x,z]of[[-5,-4],[5,-4],[-5,4],[5,4]])place(l,n===2?'beacon':'generator',x,z,.4,n===2?'Tidal marker':'Arena transmitter');
   if(n===1)l.ui.hudElements=[{kind:'counter',counterName:'health',text:'Lives: {value}',anchor:'top-left',visible:true},{kind:'counter',counterName:'collected',text:'Orbs: {value} / 4',anchor:'top-right',visible:true}];
@@ -338,6 +343,12 @@ for(const [id,s] of Object.entries(SPECS)){
  const visibleFixtureRefs=p.levels.flatMap(l=>l.objects).filter(o=>o.assetId&&!o.assetId.startsWith('showcase-')).map(o=>o.assetId);
  require('./refine-health-outcomes')(p,id);
  require('./refine-controls-copy')(p);
+ require('./real-demo-masonry-assembly').repair(p);
+ require('./real-demo-architectural-assemblies').repair(p);
+ require('./real-demo-stone-roles').repair(p);
+ require('./real-demo-machinery-roles').repair(p);
+ require('./real-demo-character-body').repair(p);
+ require('./real-demo-actor-policy').apply(p,id);
  fs.writeFileSync(path.join(root,'games',id+'.json'),JSON.stringify(p,null,2)+'\n');
  reports.push({id,title:s[0],purpose:s[4],artFamily:s[1],description:s[2],objective:s[3],beforeObjects:before,afterObjects:p.levels.reduce((n,l)=>n+l.objects.length,0),levels:p.levels.length,models:[...meshes],textures:[...textures],audio:[...audios],unreplacedModelReferences:visibleFixtureRefs,changes:['Authored title, start screen, controls, objective and outcome text','Original kit models and environment composition specific to sample purpose','Coherent lighting, ambient loop and interaction feedback','Original gameplay ids and technical systems retained','Authored play bounds and low edging contain compact samples; third-person gravity enabled','Historical fixture imports preserved only in the internal baseline snapshots'],caveats:['Requires standalone visual and representative-play audit before public classification','Enemy collision remains a simple gameplay proxy; sample scope stays deliberately compact']});
  console.log(id+': '+before+' -> '+reports[reports.length-1].afterObjects+' objects; '+meshes.size+' meshes');

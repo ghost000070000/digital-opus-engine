@@ -1,0 +1,164 @@
+{
+  "phase": 35,
+  "method": "real editor import, visible Auto-Tile Set and 3x3 Rule authoring, canvas Paint/Erase, Undo/Redo, Save/Load, Editable and Playable exports",
+  "fixture": "qualification\\phase-035\\phase-035-browser-input.json",
+  "ok": true,
+  "authoring": {
+    "authored": {
+      "id": "auto-tile-set",
+      "name": "Road",
+      "mode": "four-way",
+      "defaultTileId": "tile-phase-031-tileset-atlas-001",
+      "rules": 16,
+      "masks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "shapes": {
+      "single": "tile-phase-031-tileset-atlas-001",
+      "horizontal": [
+        "tile-phase-031-tileset-atlas-003",
+        "tile-phase-031-tileset-atlas-011",
+        "tile-phase-031-tileset-atlas-009"
+      ],
+      "vertical": [
+        "tile-phase-031-tileset-atlas-002",
+        "tile-phase-031-tileset-atlas-006",
+        "tile-phase-031-tileset-atlas-005"
+      ],
+      "l": "tile-phase-031-tileset-atlas-010",
+      "t": "tile-phase-031-tileset-atlas-012",
+      "plus": "tile-phase-031-tileset-atlas-016",
+      "negative": [
+        "tile-phase-031-tileset-atlas-003",
+        "tile-phase-031-tileset-atlas-011",
+        "tile-phase-031-tileset-atlas-011",
+        "tile-phase-031-tileset-atlas-009"
+      ],
+      "autoCount": 33
+    },
+    "stroke": {
+      "beforeStroke": 33,
+      "afterStroke": 41,
+      "afterUndo": 33,
+      "afterRedo": 41
+    },
+    "erase": {
+      "left": "tile-phase-031-tileset-atlas-009",
+      "right": "tile-phase-031-tileset-atlas-003",
+      "missing": true
+    },
+    "manual": {
+      "cell": {
+        "x": 2,
+        "y": 0,
+        "tileId": "tile-phase-031-tileset-atlas-016"
+      },
+      "left": "tile-phase-031-tileset-atlas-009"
+    },
+    "liveEditCount": 12,
+    "duplicate": {
+      "sets": [
+        {
+          "id": "auto-tile-set",
+          "name": "Stone Road"
+        },
+        {
+          "id": "auto-tile-stone-road-copy",
+          "name": "Stone Road Copy"
+        }
+      ],
+      "managedIds": [
+        "auto-tile-set"
+      ]
+    },
+    "eightWay": {
+      "borderId": "auto-tile-set-2",
+      "validCorner": 19,
+      "gatedCorner": 2
+    },
+    "multilayer": {
+      "ground": 2,
+      "details": 0
+    },
+    "reloaded": {
+      "sets": 3,
+      "rules": 16,
+      "autoCells": 44,
+      "version": 3
+    },
+    "validation": "No structured authoring issues found.",
+    "pageErrors": [],
+    "consoleErrors": [],
+    "externalRequests": []
+  },
+  "exports": {
+    "editable": {
+      "path": "qualification\\phase-035\\phase-035-editable-game.html",
+      "bytes": 1806985,
+      "autoSets": 3,
+      "autoCells": 44
+    },
+    "playable": {
+      "path": "qualification\\phase-035\\phase-035-playable-game.html",
+      "bytes": 1800831,
+      "autoSets": 0,
+      "autoCells": 0,
+      "policy": "authoring Sets/Rules and cell membership stripped; resolved Tile IDs retained"
+    },
+    "visualParity": true
+  },
+  "editableBoot": {
+    "state": {
+      "tilesetVersion": 3,
+      "tilemapVersion": 3,
+      "autoSets": 3,
+      "cellKeys": [
+        "autoTileSetId",
+        "tileId",
+        "x",
+        "y"
+      ],
+      "autoCells": 44,
+      "cells": 44,
+      "chromeVisible": true
+    },
+    "pageErrors": [],
+    "consoleErrors": [],
+    "externalRequests": []
+  },
+  "playableBoot": {
+    "state": {
+      "tilesetVersion": 3,
+      "tilemapVersion": 3,
+      "autoSets": 0,
+      "cellKeys": [
+        "tileId",
+        "x",
+        "y"
+      ],
+      "autoCells": 0,
+      "cells": 44,
+      "chromeVisible": false
+    },
+    "pageErrors": [],
+    "consoleErrors": [],
+    "externalRequests": []
+  },
+  "verdict": "PASS"
+}

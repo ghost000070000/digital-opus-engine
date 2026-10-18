@@ -1,0 +1,5 @@
+# Character Ground Support contract — Phase 047
+
+`getCharacterCollision2DState(objectId)` remains transient and read-only. Eligible Characters report `active`, `grounded`, `ceiling`, `wallLeft`, `wallRight`, and `wallSliding`. Phase 047 adds `onSlope`, `groundNormal`, `slopeAngle`, and `groundSupportId`. A valid flat support reports world-up normal `[0, 1]` and 0° angle; a walkable slope reports its upward unit normal and measured angle. The support ID identifies a scene Static object or a synthetic Tile cell ID. Where surfaces meet, selection is deterministic by nearest nonpenetrating support gap and stable source ID.
+
+An unsupported or ineligible Character reports no ground support. These values are recomputed after movement, are not serialized into the project, and do not transfer support motion. A one-way platform contributes ground only on an eligible downward landing or when already supported at its upper edge; it cannot create wall or ceiling contact from its pass-through sides. The state is intended to make the eventual Phase 048 moving-platform-carry design informed, but Phase 047 does not implement carry.

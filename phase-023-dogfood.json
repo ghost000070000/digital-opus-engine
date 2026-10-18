@@ -1,0 +1,55 @@
+{
+  "phase": 23,
+  "project": "phase-023-sprite-animation-states",
+  "status": "passed",
+  "browserDate": "2026-09-15",
+  "authored": {
+    "spriteObjectId": "obj44",
+    "controllerObjectId": "obj2",
+    "states": [
+      {"id": "animation-state", "name": "Idle", "clipId": "spriteAnimation1", "clipName": "Idle Clip", "mode": "loop"},
+      {"id": "animation-state-2", "name": "Moving", "clipId": "spriteAnimation2", "clipName": "Walk Clip", "mode": "loop"},
+      {"id": "animation-state-3", "name": "Attack", "clipId": "spriteAnimation3", "clipName": "Attack Clip", "mode": "once"}
+    ],
+    "initialState": "animation-state",
+    "playOnStart": true,
+    "actions": [
+      {"trigger": "start", "targetId": "obj44", "stateId": "animation-state", "restartIfActive": false},
+      {"trigger": "interact", "targetId": "obj44", "stateId": "animation-state-2", "restartIfActive": false},
+      {"trigger": "click", "targetId": "obj44", "stateId": "animation-state-3", "restartIfActive": true}
+    ],
+    "rename": {"id": "animation-state-2", "from": "Walk", "to": "Moving", "actionReferenceUnchanged": true}
+  },
+  "switching": {
+    "differentStateImmediateFrameZero": true,
+    "sameStateNoRestart": true,
+    "sameStateExplicitRestart": true,
+    "attackOnceFinalHold": true,
+    "switchAwayBackResets": true,
+    "stopRestoresStaticFallback": true,
+    "evidence": "Visible-control browser play plus Phase 023 runtime contract tests"
+  },
+  "validation": {
+    "breakDetected": true,
+    "breakCode": "required-reference-missing",
+    "repairPassed": true,
+    "finalSummary": "No structured authoring issues found."
+  },
+  "saveLoad": {
+    "passed": true,
+    "verified": ["states", "names", "stable IDs", "initial state", "playOnStart", "action references", "clip mappings"]
+  },
+  "prefab": {"passed": true, "name": "Phase 023 Animated Sprite", "linkedAfterReload": true},
+  "exports": {
+    "editable": {"booted": true, "bytes": 1580028, "path": ".tmp-phase023/phase-023-editable.html", "stateAuthoringVisible": true, "actionsVisible": true},
+    "playable": {"booted": true, "bytes": 1580066, "path": ".tmp-phase023/phase-023-playable.html", "editorChromeAbsent": true, "authoredInputsExercised": true},
+    "remoteDependencies": false
+  },
+  "performance": {"sharedInstances": 100, "statesOnOneSprite": 100, "passed": true},
+  "consoleErrors": [],
+  "consoleWarnings": [],
+  "pageWarnings": ["Editable export correctly held pre-existing Custom Script behind its Enable Scripts trust gate."],
+  "developerStateInjection": false,
+  "normalVisibleControlsOnly": true,
+  "ok": true
+}

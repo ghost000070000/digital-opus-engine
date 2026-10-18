@@ -1,0 +1,5 @@
+# Tilemap Character collision contract (Phase 045)
+
+Tilemap v5 Layers own `collisionEnabled` (default true, including v1–v4 migration). It is independent of `visible` and `locked`; a hidden/locked Layer may collide, while disabled collision does not alter art or authored cells. Chunk Layers do not own this flag; a stamped target Layer does. Layer serialization and portable Tilemap bundles preserve it.
+
+Only enabled Character Collision 2D queries Tilemaps. `00-character-tile-query.js` transforms a conservative swept world AABB into Tilemap-local coordinate bounds, inflating by a transformed cell footprint so rotated cell world AABBs are not missed. It uses each Layer's sparse `byKey` index and the current resolved `cell.tileId`. Full Cell and normalized Custom Rectangle use Phase 034 world quads; None yields no shape. Terrain and Auto-Tile identities add no physics rule. Stable diagnostic IDs are `tile:<tilemapId>:<layerId>:<x>:<y>`. No per-cell scene object, Body, or Collider is created. Tileset artwork/alpha is not collision authority. Negative coordinates, non-square cell dimensions, transform rotation/scale, and multilayer data follow the same query path.

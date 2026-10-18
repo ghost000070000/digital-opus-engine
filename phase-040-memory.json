@@ -1,0 +1,9 @@
+{
+  "phase": 40,
+  "observations": [
+    {
+      "label": "editor-warm",
+      "usedJsHeap": 75013076
+    }
+  ]
+}

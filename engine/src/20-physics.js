@@ -65,6 +65,42 @@ function rayAABB(origin, dir, box) {
   return tMin >= 0 ? tMin : (tMax >= 0 ? tMax : null);
 }
 
+// Stateless finite-segment query for an opt-in chase camera. Box expansion is
+// deliberately conservative at corners (not a new mesh/terrain collision system).
+// A target already inside an expanded obstacle has no valid segment-side entry;
+// ignore that container rather than interpreting rayAABB/raySphere's EXIT as entry
+// or inventing global depenetration. Other obstacles still participate normally.
+function cameraObstructionDistance(origin, desiredEye, radius, obstacles) {
+  const delta = desiredEye.sub(origin), length = delta.length();
+  if (!Number.isFinite(length) || length < 1e-6) return null;
+  const direction = delta.scale(1 / length);
+  const validVector = value => value instanceof Vec3 && [value.x, value.y, value.z].every(Number.isFinite);
+  let nearest = null;
+  for (const obstacle of obstacles) {
+    if (!obstacle || !validVector(obstacle.center)) continue;
+    let hit;
+    if (obstacle.shape === 'sphere') {
+      if (!Number.isFinite(obstacle.radius) || obstacle.radius <= 0) continue;
+      const expanded = obstacle.radius + radius;
+      if (!Number.isFinite(expanded) || origin.sub(obstacle.center).length() <= expanded) continue;
+      hit = raySphere(origin, direction, obstacle.center, expanded);
+    } else if (obstacle.shape === 'box') {
+      if (!validVector(obstacle.half) || [obstacle.half.x, obstacle.half.y, obstacle.half.z].some(n => n <= 0)) continue;
+      const q = obstacle.quat;
+      if (q != null && (!(q instanceof Quat) || ![q.x, q.y, q.z, q.w].every(Number.isFinite) || Math.abs(q.x*q.x + q.y*q.y + q.z*q.z + q.w*q.w - 1) > 1e-4)) continue;
+      const localOrigin = q ? q.conjugate().rotateVec3(origin.sub(obstacle.center)) : origin.sub(obstacle.center);
+      const localDirection = q ? q.conjugate().rotateVec3(direction) : direction;
+      const half = obstacle.half.add(new Vec3(radius, radius, radius));
+      if (![half.x, half.y, half.z].every(Number.isFinite)) continue;
+      const box = new AABB(half.scale(-1), half);
+      if (box.containsPoint(localOrigin)) continue;
+      hit = rayAABB(localOrigin, localDirection, box);
+    } else continue;
+    if (hit !== null && Number.isFinite(hit) && hit >= 0 && hit <= length && (nearest === null || hit < nearest)) nearest = hit;
+  }
+  return nearest;
+}
+
 class TriggerVolume {
   // Wave 6 (Priority A/Section 8): `shape` is optional and defaults to
   // 'sphere' -- every pre-Wave-6 caller (which never passed `shape`/`half`/
@@ -368,6 +404,60 @@ function resolveOrientedBoxCollision(position, velocity, radius, obb) {
   return { collided: true, correctedPosition, correctedVelocity };
 }
 
+// Continuous XZ collision for fast movers. Callers retain the ordinary
+// overlap resolver first; this catches crossing a thin wall in one frame.
+function resolveSweptOrientedBoxCollision(previousPosition, position, velocity, radius, obb) {
+  const quat = obb.quat;
+  const inverse = quat ? quat.conjugate() : null;
+  const toLocal = (point) => {
+    const relative = point.sub(obb.center);
+    return inverse ? inverse.rotateVec3(relative) : relative;
+  };
+  const start = toLocal(previousPosition);
+  const end = toLocal(position);
+  const deltaX = end.x - start.x;
+  const deltaZ = end.z - start.z;
+  const minX = -obb.half.x - radius;
+  const maxX = obb.half.x + radius;
+  const minZ = -obb.half.z - radius;
+  const maxZ = obb.half.z + radius;
+  let enter = 0;
+  let exit = 1;
+  let normalX = 0;
+  let normalZ = 0;
+  const slab = (startValue, delta, min, max, axis) => {
+    if (Math.abs(delta) < 1e-9) return startValue >= min && startValue <= max;
+    let near = (min - startValue) / delta;
+    let far = (max - startValue) / delta;
+    let nearSign = -1;
+    if (near > far) { [near, far] = [far, near]; nearSign = 1; }
+    if (near > enter) {
+      enter = near;
+      normalX = axis === 'x' ? nearSign : 0;
+      normalZ = axis === 'z' ? nearSign : 0;
+    }
+    exit = Math.min(exit, far);
+    return enter <= exit;
+  };
+  if (!slab(start.x, deltaX, minX, maxX, 'x')
+      || !slab(start.z, deltaZ, minZ, maxZ, 'z')
+      || enter < 0 || enter > 1
+      || (normalX === 0 && normalZ === 0)) {
+    return { collided: false, correctedPosition: position.clone(), correctedVelocity: velocity.clone() };
+  }
+  const hitLocal = new Vec3(start.x + deltaX * enter + normalX * 1e-4, end.y, start.z + deltaZ * enter + normalZ * 1e-4);
+  const localVelocity = inverse ? inverse.rotateVec3(velocity) : velocity.clone();
+  const inward = localVelocity.x * normalX + localVelocity.z * normalZ;
+  if (inward < 0) {
+    localVelocity.x -= normalX * inward;
+    localVelocity.z -= normalZ * inward;
+  }
+  const correctedPosition = (quat ? quat.rotateVec3(hitLocal) : hitLocal).add(obb.center);
+  const correctedVelocity = quat ? quat.rotateVec3(localVelocity) : localVelocity;
+  return { collided: true, correctedPosition, correctedVelocity,
+    timeOfImpact: enter, contactNormal: quat ? quat.rotateVec3(new Vec3(normalX, 0, normalZ)) : new Vec3(normalX, 0, normalZ) };
+}
+
 // Wave 6 (Priority A/Section 7): circle-vs-circle collision in the XZ
 // plane, the Sphere Collider's own resolution -- same "walls push
 // horizontally, Y is left to terrain/water/vertical-box height handling"
@@ -407,6 +497,40 @@ function resolveSphereCollision(position, velocity, radius, center, colliderRadi
   }
 
   return { collided, correctedPosition, correctedVelocity };
+}
+
+// Segment-vs-expanded-circle companion to resolveSphereCollision.
+function resolveSweptSphereCollision(previousPosition, position, velocity, radius, center, colliderRadius) {
+  const sx = previousPosition.x - center.x;
+  const sz = previousPosition.z - center.z;
+  const dx = position.x - previousPosition.x;
+  const dz = position.z - previousPosition.z;
+  const expanded = radius + colliderRadius;
+  const a = dx * dx + dz * dz;
+  const b = 2 * (sx * dx + sz * dz);
+  const c = sx * sx + sz * sz - expanded * expanded;
+  const discriminant = b * b - 4 * a * c;
+  if (a < 1e-12 || c <= 0 || discriminant < 0) {
+    return { collided: false, correctedPosition: position.clone(), correctedVelocity: velocity.clone() };
+  }
+  const t = (-b - Math.sqrt(discriminant)) / (2 * a);
+  if (t < 0 || t > 1) return { collided: false, correctedPosition: position.clone(), correctedVelocity: velocity.clone() };
+  const hitX = previousPosition.x + dx * t;
+  const hitZ = previousPosition.z + dz * t;
+  const length = Math.hypot(hitX - center.x, hitZ - center.z) || 1;
+  const nx = (hitX - center.x) / length;
+  const nz = (hitZ - center.z) / length;
+  const correctedPosition = position.clone();
+  correctedPosition.x = hitX + nx * 1e-4;
+  correctedPosition.z = hitZ + nz * 1e-4;
+  const correctedVelocity = velocity.clone();
+  const inward = correctedVelocity.x * nx + correctedVelocity.z * nz;
+  if (inward < 0) {
+    correctedVelocity.x -= nx * inward;
+    correctedVelocity.z -= nz * inward;
+  }
+  return { collided: true, correctedPosition, correctedVelocity,
+    timeOfImpact: t, contactNormal: new Vec3(nx, 0, nz) };
 }
 
 // The vertical (Y-aware) half of "a solid object can be a platform" --

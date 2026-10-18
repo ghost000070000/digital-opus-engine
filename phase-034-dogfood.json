@@ -1,0 +1,208 @@
+{
+  "phase": 34,
+  "method": "real editor import, visible Palette collision editing, active-layer SVG overlay, Undo/Redo, validation, Editable and Playable exports",
+  "fixture": "qualification\\phase-034\\phase-034-browser-input.json",
+  "ok": true,
+  "authoring": {
+    "edited": {
+      "mode": "custom-rect",
+      "rect": {
+        "minX": 0.2,
+        "minY": 0.1,
+        "maxX": 0.8,
+        "maxY": 0.7
+      }
+    },
+    "invalid": {
+      "resolved": {
+        "mode": "none"
+      },
+      "issues": [
+        "tile-collision-rect-horizontal-area"
+      ]
+    },
+    "identityDogfood": {
+      "renamed": {
+        "collision": {
+          "mode": "custom-rect",
+          "rect": {
+            "minX": 0.2,
+            "minY": 0.1,
+            "maxX": 0.8,
+            "maxY": 0.7
+          }
+        },
+        "cells": "[[{\"x\":-2,\"y\":-1,\"tileId\":\"tile-phase-031-tileset-atlas-001\"},{\"x\":-1,\"y\":-1,\"tileId\":\"tile-phase-031-tileset-atlas-006\"},{\"x\":0,\"y\":-1,\"tileId\":\"tile-phase-031-tileset-atlas-001\"}],[{\"x\":-2,\"y\":0,\"tileId\":\"tile-phase-031-tileset-atlas-003\"},{\"x\":-1,\"y\":0,\"tileId\":\"tile-phase-031-tileset-atlas-004\"},{\"x\":0,\"y\":0,\"tileId\":\"tile-phase-031-tileset-atlas-005\"},{\"x\":1,\"y\":0,\"tileId\":\"tile-phase-031-tileset-atlas-003\"},{\"x\":2,\"y\":0,\"tileId\":\"tile-phase-031-tileset-atlas-001\"}],[{\"x\":-12,\"y\":2,\"tileId\":\"tile-phase-031-tileset-atlas-003\"},{\"x\":-11,\"y\":2,\"tileId\":\"tile-phase-031-tileset-atlas-003\"},{\"x\":-10,\"y\":2,\"tileId\":\"tile-phase-031-tileset-atlas-003\"},{\"x\":-9,\"y\":2,\"tileId\":\"tile-phase-031-tileset-atlas-003\"},{\"x\":-8,\"y\":2,\"tileId\":\"tile-phase-031-tileset-atlas-003\"},{\"x\":-7,\"y\":2,\"tileId\":\"tile-phase-031-tileset-atlas-003\"},{\"x\":-6,\"y\":2,\"tileId\":\"tile-phase-031-tileset-atlas-003\"},{\"x\":-5,\"y\":2,\"tileId\":\"tile-phase-031-tileset-atlas-003\"},{\"x\":-4,\"y\":2,\"tileId\":\"tile-phase-031-tileset-atlas-003\"},{\"x\":-3,\"y\":2,\"tileId\":\"tile-phase-031-tileset-atlas-003\"},{\"x\":-2,\"y\":2,\"tileId\":\"tile-phase-031-tileset-atlas-003\"},{\"x\":-1,\"y\":2,\"tileId\":\"tile-phase-031-tileset-atlas-003\"},{\"x\":0,\"y\":2,\"tileId\":\"tile-phase-031-tileset-atlas-003\"},{\"x\":1,\"y\":2,\"tileId\":\"tile-phase-031-tileset-atlas-003\"},{\"x\":2,\"y\":2,\"tileId\":\"tile-phase-031-tileset-atlas-003\"},{\"x\":3,\"y\":2,\"tileId\":\"tile-phase-031-tileset-atlas-003\"},{\"x\":4,\"y\":2,\"tileId\":\"tile-phase-031-tileset-atlas-003\"},{\"x\":5,\"y\":2,\"tileId\":\"tile-phase-031-tileset-atlas-003\"},{\"x\":6,\"y\":2,\"tileId\":\"tile-phase-031-tileset-atlas-003\"},{\"x\":7,\"y\":2,\"tileId\":\"tile-phase-031-tileset-atlas-003\"},{\"x\":8,\"y\":2,\"tileId\":\"tile-phase-031-tileset-atlas-003\"},{\"x\":9,\"y\":2,\"tileId\":\"tile-phase-031-tileset-atlas-003\"},{\"x\":10,\"y\":2,\"tileId\":\"tile-phase-031-tileset-atlas-003\"},{\"x\":11,\"y\":2,\"tileId\":\"tile-phase-031-tileset-atlas-003\"}],[{\"x\":0,\"y\":4,\"tileId\":\"tile-phase-031-tileset-atlas-003\"}]]"
+      },
+      "reordered": {
+        "mode": "custom-rect",
+        "rect": {
+          "minX": 0.2,
+          "minY": 0.1,
+          "maxX": 0.8,
+          "maxY": 0.7
+        }
+      }
+    },
+    "spriteRefDogfood": {
+      "before": {
+        "collision": {
+          "mode": "custom-rect",
+          "rect": {
+            "minX": 0.38,
+            "minY": 0,
+            "maxX": 0.62,
+            "maxY": 0.42
+          }
+        },
+        "spriteAssetRef": "spriteAsset6"
+      },
+      "after": {
+        "collision": {
+          "mode": "custom-rect",
+          "rect": {
+            "minX": 0.38,
+            "minY": 0,
+            "maxX": 0.62,
+            "maxY": 0.42
+          }
+        },
+        "spriteAssetRef": "spriteAsset2"
+      }
+    },
+    "cellSizeDogfood": {
+      "cellSize": {
+        "width": 2,
+        "height": 1
+      },
+      "collision": {
+        "mode": "custom-rect",
+        "rect": {
+          "minX": 0.1,
+          "minY": 0.05,
+          "maxX": 0.9,
+          "maxY": 0.75
+        }
+      },
+      "local": {
+        "minX": 0.2,
+        "minY": 0.05,
+        "maxX": 1.8,
+        "maxY": 0.75
+      },
+      "treeArt": {
+        "width": 2,
+        "height": 2
+      },
+      "treeCollision": {
+        "mode": "custom-rect",
+        "rect": {
+          "minX": 0.38,
+          "minY": 0,
+          "maxX": 0.62,
+          "maxY": 0.42
+        }
+      }
+    },
+    "overlay": {
+      "count": 4,
+      "cells": [
+        "-2,0",
+        "-1,0",
+        "0,0",
+        "1,0"
+      ],
+      "objectCount": 1,
+      "cellKeys": [
+        "tileId",
+        "x",
+        "y"
+      ]
+    },
+    "saveReload": {
+      "project": "phase-034-collision-dogfood",
+      "collision": {
+        "mode": "custom-rect",
+        "rect": {
+          "minX": 0.2,
+          "minY": 0.1,
+          "maxX": 0.8,
+          "maxY": 0.7
+        }
+      }
+    },
+    "validation": "No structured authoring issues found.",
+    "pageErrors": [],
+    "consoleErrors": [],
+    "externalRequests": []
+  },
+  "exports": {
+    "editable": {
+      "path": "qualification\\phase-034\\phase-034-editable-game.html",
+      "bytes": 1763821,
+      "tiles": 7,
+      "collisionTiles": 3
+    },
+    "playable": {
+      "path": "qualification\\phase-034\\phase-034-playable-game.html",
+      "bytes": 1763135,
+      "tiles": 5,
+      "collisionTiles": 3,
+      "policy": "retained on dependency-pruned used Tile records; no runtime consumer"
+    },
+    "visualTilemapParity": true
+  },
+  "editableBoot": {
+    "state": {
+      "tilesetVersion": 2,
+      "wallCollision": {
+        "mode": "custom-rect",
+        "rect": {
+          "minX": 0.25,
+          "minY": 0,
+          "maxX": 1,
+          "maxY": 1
+        }
+      },
+      "objectCount": 1,
+      "cellKeys": [
+        "tileId",
+        "x",
+        "y"
+      ],
+      "hasColliderObjects": false,
+      "overlayNodes": 4,
+      "chromeVisible": true
+    },
+    "pageErrors": [],
+    "consoleErrors": [],
+    "externalRequests": []
+  },
+  "playableBoot": {
+    "state": {
+      "tilesetVersion": 2,
+      "wallCollision": {
+        "mode": "custom-rect",
+        "rect": {
+          "minX": 0.2,
+          "minY": 0.1,
+          "maxX": 0.8,
+          "maxY": 0.7
+        }
+      },
+      "objectCount": 1,
+      "cellKeys": [
+        "tileId",
+        "x",
+        "y"
+      ],
+      "hasColliderObjects": false,
+      "overlayNodes": 0,
+      "chromeVisible": false
+    },
+    "pageErrors": [],
+    "consoleErrors": [],
+    "externalRequests": []
+  },
+  "verdict": "PASS"
+}

@@ -1,149 +1,289 @@
 {
   "id": "opus-arena",
   "method": "Native Playwright keyboard and mouse input; evaluate is read-only instrumentation.",
-  "startedAt": "2026-09-08T07:11:30.732Z",
-  "standaloneSHA256": "e5f961e241a562e96af0fd8a8871b75a711e4a2f8387d7f54fd087c584c744ba",
+  "startedAt": "2026-09-11T17:21:48.991Z",
+  "standaloneSHA256": "701fbbc8c476c24595bb3a0264d68ca2a69b57aa625fcf8437a5187f5a291406",
   "errors": [],
   "actions": [
     {
       "kind": "aimed-thirdperson-shot",
       "enemy": "obj49",
-      "distance": 4.051639068692399,
-      "error": 0.21069500225824733,
-      "sim": 1.8021999999997196
+      "distance": 1.401330238970612,
+      "error": 0.4304166344353716,
+      "sim": 1.4183999999761572
     },
     {
       "kind": "aimed-thirdperson-shot",
       "enemy": "obj49",
-      "distance": 0.4912739249832921,
-      "error": 0.9059382099423889,
-      "sim": 2.2691000000000923
+      "distance": 0.09260638739138115,
+      "error": 2.694848298437754,
+      "sim": 1.8354999999999986
     },
     {
       "kind": "aimed-thirdperson-shot",
       "enemy": "obj49",
-      "distance": 0.425116231134983,
-      "error": 3.1080841094778533,
-      "sim": 2.7031000000000924
+      "distance": 0.07607756641365805,
+      "error": 3.1381933468175465,
+      "sim": 2.252599999964236
     },
     {
       "kind": "aimed-thirdperson-shot",
       "enemy": "obj49",
-      "distance": 0.11113144472424204,
-      "error": 3.125278280519339,
-      "sim": 3.1387999999998133
+      "distance": 0.10037998053895149,
+      "error": 3.1412758284502424,
+      "sim": 2.6863999999761567
     },
     {
       "kind": "aimed-thirdperson-shot",
-      "enemy": "obj49",
-      "distance": 0.06424637291824428,
-      "error": 3.1254539767008795,
-      "sim": 3.554100000000093
+      "enemy": "obj55",
+      "distance": 4.857465843332778,
+      "error": 0.04101212497875028,
+      "sim": 5.456199999988074
     },
     {
       "kind": "aimed-thirdperson-shot",
-      "enemy": "obj49",
-      "distance": 0.07839191025034697,
-      "error": 3.1254556199742103,
-      "sim": 3.971100000000094
+      "enemy": "obj55",
+      "distance": 3.1082206998403255,
+      "error": 0.014942062126590772,
+      "sim": 5.873299999952311
     },
     {
       "kind": "aimed-thirdperson-shot",
-      "enemy": "obj59",
-      "distance": 0.14491317264696008,
-      "error": 2.4822306683554434,
-      "sim": 4.471799999999813
+      "enemy": "obj55",
+      "distance": 1.8095884730086351,
+      "error": 0.009186189660058242,
+      "sim": 6.290699999988073
     },
     {
       "kind": "aimed-thirdperson-shot",
-      "enemy": "obj59",
-      "distance": 0.07253715335234086,
-      "error": 2.728565075466257,
-      "sim": 4.888799999999811
+      "enemy": "obj55",
+      "distance": 0.7243689663978703,
+      "error": 0.03578923571600212,
+      "sim": 6.707799999952309
     },
     {
       "kind": "aimed-thirdperson-shot",
-      "enemy": "obj59",
-      "distance": 0.08671307562819593,
-      "error": 2.802201950149712,
-      "sim": 5.322499999999994
+      "enemy": "obj62",
+      "distance": 10.63648319090562,
+      "error": 0.09503140140151757,
+      "sim": 8.726499999999987
     },
     {
       "kind": "aimed-thirdperson-shot",
-      "enemy": "obj59",
-      "distance": 0.09316081981253237,
-      "error": 2.827781641598341,
-      "sim": 5.739799999999803
+      "enemy": "obj62",
+      "distance": 9.737122238484492,
+      "error": 0.09501884637178037,
+      "sim": 9.143699999988067
     },
     {
       "kind": "aimed-thirdperson-shot",
-      "enemy": "obj59",
-      "distance": 0.09630277865821496,
-      "error": 2.83893383561185,
-      "sim": 6.173699999999708
+      "enemy": "obj62",
+      "distance": 8.83944898840006,
+      "error": 0.09501235069047731,
+      "sim": 9.56069999998807
     },
     {
       "kind": "aimed-thirdperson-shot",
-      "enemy": "obj67",
-      "distance": 1.4829349396428497,
-      "error": 0.3937376117143871,
-      "sim": 7.207999999999984
+      "enemy": "obj62",
+      "distance": 7.94215363947189,
+      "error": 0.09500895625109274,
+      "sim": 9.977799999952312
     },
     {
       "kind": "aimed-thirdperson-shot",
-      "enemy": "obj67",
-      "distance": 0.07567184672483428,
-      "error": 3.1114876425077655,
-      "sim": 7.641899999999891
+      "enemy": "obj62",
+      "distance": 7.007721421342347,
+      "error": 0.09500710968785342,
+      "sim": 10.412299999952314
     },
     {
       "kind": "aimed-thirdperson-shot",
-      "enemy": "obj67",
-      "distance": 0.07943075080640598,
-      "error": 2.9826484213215303,
-      "sim": 8.058999999999983
+      "enemy": "obj62",
+      "distance": 6.112132019021563,
+      "error": 0.09500617363803153,
+      "sim": 10.828799999952317
     },
     {
       "kind": "aimed-thirdperson-shot",
-      "enemy": "obj67",
-      "distance": 0.09992820129807069,
-      "error": 2.9819165121891658,
-      "sim": 8.409299999999801
+      "enemy": "obj62",
+      "distance": 5.25121938839123,
+      "error": 0.0950056763318271,
+      "sim": 11.22919999998808
     },
     {
       "kind": "aimed-thirdperson-shot",
-      "enemy": "obj67",
-      "distance": 0.05435815774977449,
-      "error": 2.9818466093443425,
-      "sim": 8.84310000000008
+      "enemy": "obj62",
+      "distance": 4.353353050098318,
+      "error": 0.09500538218368515,
+      "sim": 11.646799999952318
     },
     {
       "kind": "aimed-thirdperson-shot",
-      "enemy": "obj75",
-      "distance": 1.0892939674516222,
-      "error": 0.4509930984428039,
-      "sim": 10.344899999999898
+      "enemy": "obj62",
+      "distance": 3.457220645180538,
+      "error": 0.09500521187508804,
+      "sim": 12.063599999964243
     },
     {
       "kind": "aimed-thirdperson-shot",
-      "enemy": "obj75",
-      "distance": 0.08423025514047454,
-      "error": 3.1198211742416637,
-      "sim": 10.761899999999903
+      "enemy": "obj74",
+      "distance": 4.242926448561616,
+      "error": 0.0006790962634830587,
+      "sim": 12.981099999964247
     },
     {
       "kind": "aimed-thirdperson-shot",
-      "enemy": "obj75",
-      "distance": 0.06286046006801649,
-      "error": 3.140419939619097,
-      "sim": 11.196399999999905
+      "enemy": "obj74",
+      "distance": 3.3457303349717513,
+      "error": 0.0006790526885336323,
+      "sim": 13.39839999997617
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj74",
+      "distance": 2.4491798098087987,
+      "error": 0.0006790257704414327,
+      "sim": 13.815399999976172
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj74",
+      "distance": 1.5524145617983796,
+      "error": 0.0006790073094327109,
+      "sim": 14.232500000000016
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj81",
+      "distance": 7.303524053250733,
+      "error": 0.2915273294316088,
+      "sim": 16.36939999997618
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj81",
+      "distance": 0.8367477680859279,
+      "error": 0.8058399403935891,
+      "sim": 17.36929999995237
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj81",
+      "distance": 0.3941492086337548,
+      "error": 2.693348575019315,
+      "sim": 17.78650000000006
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj81",
+      "distance": 0.2096048835660494,
+      "error": 2.678157542584743,
+      "sim": 18.220199999988154
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj81",
+      "distance": 0.0761472936929782,
+      "error": 2.6764191915628643,
+      "sim": 18.6375000000001
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj89",
+      "distance": 3.7901915278780303,
+      "error": 0.23861796280981643,
+      "sim": 21.106799999952504
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj89",
+      "distance": 2.858779993715209,
+      "error": 0.15343490001844629,
+      "sim": 21.52389999997636
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj89",
+      "distance": 1.2097824059536182,
+      "error": 0.5260398032123348,
+      "sim": 21.941199999988292
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj89",
+      "distance": 0.11969892062519537,
+      "error": 2.658696290587652,
+      "sim": 22.374899999976375
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj89",
+      "distance": 0.10911114897549927,
+      "error": 2.6542963634348946,
+      "sim": 22.79239999997639
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj97",
+      "distance": 0.1293549439588093,
+      "error": 2.230851741441483,
+      "sim": 24.060000000000258
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj97",
+      "distance": 0.06653100487345595,
+      "error": 2.504181793301637,
+      "sim": 24.46079999995258
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj97",
+      "distance": 0.07316530416031705,
+      "error": 2.6668886488104055,
+      "sim": 24.87769999998835
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj97",
+      "distance": 0.07666814079590482,
+      "error": 2.729645408746154,
+      "sim": 25.261399999976447
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj103",
+      "distance": 6.16773413389412,
+      "error": 0.006283432442411031,
+      "sim": 27.680699999988445
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj103",
+      "distance": 5.23502801770816,
+      "error": 0.006286822920359203,
+      "sim": 28.114500000000387
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj103",
+      "distance": 4.337602214218252,
+      "error": 0.006288599620104307,
+      "sim": 28.531899999976535
+    },
+    {
+      "kind": "aimed-thirdperson-shot",
+      "enemy": "obj103",
+      "distance": 3.483399895532076,
+      "error": 0.006289603479766369,
+      "sim": 28.929199999988466
     }
   ],
   "frames": [
     {
       "label": "start",
       "title": "Opus Arena",
-      "text": "Opus Arena\n\nHold the blue courtyard against eight approaching guardians. Face each target before firing.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+      "text": "Opus Arena\n\nHold the blue courtyard against eight approaching guardians. Face each target before firing. Visual landmark: Opus combat standard.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nMouse Sensitivity\nInvert Mouse Y\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
       "sim": 0,
       "playtime": 0,
       "ended": false,
@@ -202,7 +342,7 @@
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022
+        "sensitivity": 0.0018
       },
       "pointerLocked": false,
       "activeSlot": "primaryHand",
@@ -279,6 +419,90 @@
             "x": 1,
             "y": 1,
             "z": 1
+          }
+        },
+        {
+          "id": "deep3-1",
+          "name": "West cover deck",
+          "p": {
+            "x": -7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-2",
+          "name": "East cover deck",
+          "p": {
+            "x": 7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-3",
+          "name": "Deep barricade",
+          "p": {
+            "x": -3,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-4",
+          "name": "Deep barricade",
+          "p": {
+            "x": 3,
+            "y": 0,
+            "z": 6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-5",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": -8,
+            "y": 0,
+            "z": 8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
+        },
+        {
+          "id": "deep3-6",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
           }
         }
       ],
@@ -287,9 +511,9 @@
     {
       "label": "opening",
       "title": "Opus Arena",
-      "text": "Health 100 / 100\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
-      "sim": 0.7178999999999068,
-      "playtime": 0.7178999999999068,
+      "text": "Health 180 / 180\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+      "sim": 0.7347999999523163,
+      "playtime": 0.7347999999523163,
       "ended": false,
       "paused": false,
       "overlay": {
@@ -298,8 +522,8 @@
       },
       "state": {
         "kills": 0,
-        "maxHealth": 100,
-        "health": 100
+        "maxHealth": 180,
+        "health": 180
       },
       "objectives": {},
       "inventory": {},
@@ -326,14 +550,14 @@
         },
         "target": {
           "x": 0,
-          "y": 1.0464211813885123,
+          "y": 1.0468142517820627,
           "z": 0
         },
         "basis": {
           "forward": {
             "x": 0,
-            "y": -0.5144851369741169,
-            "z": 0.8574992966951775
+            "y": -0.5144470061954669,
+            "z": 0.8575221733672672
           },
           "right": {
             "x": -1,
@@ -342,13 +566,13 @@
           },
           "up": {
             "x": 0,
-            "y": 0.8574992966951775,
-            "z": 0.5144851369741169
+            "y": 0.8575221733672672,
+            "z": 0.5144470061954669
           }
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022
+        "sensitivity": 0.0018
       },
       "pointerLocked": false,
       "activeSlot": "primaryHand",
@@ -425,6 +649,90 @@
             "x": 1,
             "y": 1,
             "z": 1
+          }
+        },
+        {
+          "id": "deep3-1",
+          "name": "West cover deck",
+          "p": {
+            "x": -7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-2",
+          "name": "East cover deck",
+          "p": {
+            "x": 7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-3",
+          "name": "Deep barricade",
+          "p": {
+            "x": -3,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-4",
+          "name": "Deep barricade",
+          "p": {
+            "x": 3,
+            "y": 0,
+            "z": 6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-5",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": -8,
+            "y": 0,
+            "z": 8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
+        },
+        {
+          "id": "deep3-6",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
           }
         }
       ],
@@ -433,9 +741,9 @@
     {
       "label": "kills-0",
       "title": "Opus Arena",
-      "text": "Health 100 / 100\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
-      "sim": 0.9846000000000927,
-      "playtime": 0.9846000000000927,
+      "text": "Health 180 / 180\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+      "sim": 1.0698999999761576,
+      "playtime": 1.0698999999761576,
       "ended": false,
       "paused": false,
       "overlay": {
@@ -444,8 +752,8 @@
       },
       "state": {
         "kills": 0,
-        "maxHealth": 100,
-        "health": 100
+        "maxHealth": 180,
+        "health": 180
       },
       "objectives": {},
       "inventory": {},
@@ -472,14 +780,14 @@
         },
         "target": {
           "x": 0,
-          "y": 1.0494286931683823,
+          "y": 1.0496864872373843,
           "z": 0
         },
         "basis": {
           "forward": {
             "x": 0,
-            "y": -0.514193308096023,
-            "z": 0.8576743215867363
+            "y": -0.5141682851648159,
+            "z": 0.8576893228498724
           },
           "right": {
             "x": -0.9999999999999999,
@@ -488,19 +796,47 @@
           },
           "up": {
             "x": 0,
-            "y": 0.8576743215867362,
-            "z": 0.5141933080960229
+            "y": 0.8576893228498723,
+            "z": 0.5141682851648158
           }
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022
+        "sensitivity": 0.0018
       },
       "pointerLocked": false,
       "activeSlot": "primaryHand",
       "equipment": [],
       "weaponRuntime": {},
-      "enemies": [],
+      "enemies": [
+        {
+          "id": "obj49",
+          "p": {
+            "x": -0.8610077024975096,
+            "y": 0.5,
+            "z": 2.222186776604658
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 0.7150000000000001,
+              "z": 0
+            },
+            "radius": 0.5850000000000001
+          },
+          "visible": true,
+          "tags": [
+            "enemy",
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.65,
+            "y": 0.65,
+            "z": 0.65
+          }
+        }
+      ],
       "interactables": [],
       "solids": [
         {
@@ -571,6 +907,90 @@
             "x": 1,
             "y": 1,
             "z": 1
+          }
+        },
+        {
+          "id": "deep3-1",
+          "name": "West cover deck",
+          "p": {
+            "x": -7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-2",
+          "name": "East cover deck",
+          "p": {
+            "x": 7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-3",
+          "name": "Deep barricade",
+          "p": {
+            "x": -3,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-4",
+          "name": "Deep barricade",
+          "p": {
+            "x": 3,
+            "y": 0,
+            "z": 6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-5",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": -8,
+            "y": 0,
+            "z": 8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
+        },
+        {
+          "id": "deep3-6",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
           }
         }
       ],
@@ -579,9 +999,9 @@
     {
       "label": "kills-1",
       "title": "Opus Arena",
-      "text": "Health 58 / 100\nKills: 1/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
-      "sim": 4.121699999999721,
-      "playtime": 4.121699999999721,
+      "text": "Health 173 / 180\nKills: 1/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+      "sim": 2.819899999976157,
+      "playtime": 2.819899999976157,
       "ended": false,
       "paused": false,
       "overlay": {
@@ -590,21 +1010,21 @@
       },
       "state": {
         "kills": 1,
-        "maxHealth": 100,
-        "health": 58
+        "maxHealth": 180,
+        "health": 173
       },
       "objectives": {},
       "inventory": {},
       "player": {
         "position": {
-          "x": 5.144542040991803,
+          "x": -0.002272455870196026,
           "y": 0.55,
-          "z": 2.4983340604749467
+          "z": 1.7998924445072941
         },
         "forward": {
-          "x": 0.8917880982395888,
+          "x": -0.0005309818748683255,
           "y": 0,
-          "z": 0.45245329906877385
+          "z": 0.9999998590291144
         },
         "controller": "thirdperson",
         "visible": false,
@@ -612,69 +1032,41 @@
       },
       "camera": {
         "eye": {
-          "x": -0.7151039796428916,
-          "y": 4.950509712719946,
-          "z": -0.5141114675330976
+          "x": 0.001241250389868177,
+          "y": 4.94631171566674,
+          "z": -4.7507352023753855
         },
         "target": {
-          "x": 5.309554618743835,
-          "y": 1.0499999999997587,
-          "z": 2.578732531566114
+          "x": -0.0025428897718681592,
+          "y": 1.0499999981488368,
+          "z": 2.0206562421189993
         },
         "basis": {
           "forward": {
-            "x": 0.770897326545369,
-            "y": -0.499097577164857,
-            "z": 0.39575108388148744
+            "x": -0.0004843784912271851,
+            "y": -0.49873670382657004,
+            "z": 0.8667534053199246
           },
           "right": {
-            "x": -0.45669956261055383,
+            "x": -0.9999998438476624,
             "y": 0,
-            "z": 0.8896209920586007
+            "z": -0.0005588422411926539
           },
           "up": {
-            "x": 0.44400768173144406,
-            "y": 0.8665457913279422,
-            "z": 0.22793764519117732
+            "x": -0.00027871513733147726,
+            "y": 0.8667535406655158,
+            "z": 0.4987366259476679
           }
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022
+        "sensitivity": 0.0018
       },
       "pointerLocked": false,
       "activeSlot": "primaryHand",
       "equipment": [],
       "weaponRuntime": {},
-      "enemies": [
-        {
-          "id": "obj59",
-          "p": {
-            "x": 4.722153873957692,
-            "y": 0.5,
-            "z": 1.4226203316947794
-          },
-          "collider": {
-            "shape": "sphere",
-            "offset": {
-              "x": 0,
-              "y": 0.7150000000000001,
-              "z": 0
-            },
-            "radius": 0.5850000000000001
-          },
-          "visible": true,
-          "tags": [
-            "enemy",
-            "enemy"
-          ],
-          "scale": {
-            "x": 0.65,
-            "y": 0.65,
-            "z": 0.65
-          }
-        }
-      ],
+      "enemies": [],
       "interactables": [],
       "solids": [
         {
@@ -745,6 +1137,90 @@
             "x": 1,
             "y": 1,
             "z": 1
+          }
+        },
+        {
+          "id": "deep3-1",
+          "name": "West cover deck",
+          "p": {
+            "x": -7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-2",
+          "name": "East cover deck",
+          "p": {
+            "x": 7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-3",
+          "name": "Deep barricade",
+          "p": {
+            "x": -3,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-4",
+          "name": "Deep barricade",
+          "p": {
+            "x": 3,
+            "y": 0,
+            "z": 6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-5",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": -8,
+            "y": 0,
+            "z": 8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
+        },
+        {
+          "id": "deep3-6",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
           }
         }
       ],
@@ -753,9 +1229,9 @@
     {
       "label": "kills-2",
       "title": "Opus Arena",
-      "text": "Health 40 / 100\nKills: 2/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
-      "sim": 6.324799999999801,
-      "playtime": 6.324799999999801,
+      "text": "Health 162 / 180\nKills: 2/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+      "sim": 6.840999999999992,
+      "playtime": 6.840999999999992,
       "ended": false,
       "paused": false,
       "overlay": {
@@ -764,21 +1240,21 @@
       },
       "state": {
         "kills": 2,
-        "maxHealth": 100,
-        "health": 40
+        "maxHealth": 180,
+        "health": 162
       },
       "objectives": {},
       "inventory": {},
       "player": {
         "position": {
-          "x": 5.24379984403615,
+          "x": 1.4216123890586705,
           "y": 0.55,
-          "z": 2.546695203391054
+          "z": 3.0231061979074054
         },
         "forward": {
-          "x": 0.8917880982395888,
+          "x": 0.8795915804805216,
           "y": 0,
-          "z": 0.45245329906877385
+          "z": 0.4757295991924174
         },
         "controller": "thirdperson",
         "visible": false,
@@ -786,35 +1262,35 @@
       },
       "camera": {
         "eye": {
-          "x": -0.5535421896740907,
-          "y": 4.94631171566674,
-          "z": -0.39460174974269435
+          "x": -4.342508218207252,
+          "y": 4.9430766529144385,
+          "z": -0.10897062795579224
         },
         "target": {
-          "x": 5.24692293825004,
+          "x": 1.5973367561280203,
           "y": 1.0499999999999992,
-          "z": 2.5482168611447062
+          "z": 3.155218269150277
         },
         "basis": {
           "forward": {
-            "x": 0.7650303588276381,
-            "y": -0.5138892630508106,
-            "z": 0.3881319046318533
+            "x": 0.7599417985497191,
+            "y": -0.4980789374623042,
+            "z": 0.41761924629193087
           },
           "right": {
-            "x": -0.45244384259413073,
+            "x": -0.48160994451781214,
             "y": 0,
-            "z": 0.8917928959678125
+            "z": 0.876385680703165
           },
           "up": {
-            "x": 0.4582827941028474,
-            "y": 0.8578565295672085,
-            "z": 0.2325060328425748
+            "x": 0.4365092486518106,
+            "y": 0.8671316924530104,
+            "z": 0.23987976943671113
           }
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022
+        "sensitivity": 0.0018
       },
       "pointerLocked": false,
       "activeSlot": "primaryHand",
@@ -891,6 +1367,90 @@
             "x": 1,
             "y": 1,
             "z": 1
+          }
+        },
+        {
+          "id": "deep3-1",
+          "name": "West cover deck",
+          "p": {
+            "x": -7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-2",
+          "name": "East cover deck",
+          "p": {
+            "x": 7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-3",
+          "name": "Deep barricade",
+          "p": {
+            "x": -3,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-4",
+          "name": "Deep barricade",
+          "p": {
+            "x": 3,
+            "y": 0,
+            "z": 6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-5",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": -8,
+            "y": 0,
+            "z": 8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
+        },
+        {
+          "id": "deep3-6",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
           }
         }
       ],
@@ -899,9 +1459,9 @@
     {
       "label": "combat-8",
       "title": "Opus Arena",
-      "text": "Health 27 / 100\nKills: 2/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
-      "sim": 8.192600000000079,
-      "playtime": 8.192600000000079,
+      "text": "Health 162 / 180\nKills: 2/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+      "sim": 8.860099999964225,
+      "playtime": 8.860099999964225,
       "ended": false,
       "paused": false,
       "overlay": {
@@ -910,21 +1470,21 @@
       },
       "state": {
         "kills": 2,
-        "maxHealth": 100,
-        "health": 27
+        "maxHealth": 180,
+        "health": 162
       },
       "objectives": {},
       "inventory": {},
       "player": {
         "position": {
-          "x": 5.550879076599015,
+          "x": 1.526121956062344,
           "y": 0.55,
-          "z": 4.159810169824286
+          "z": 3.101675610778412
         },
         "forward": {
-          "x": 0.01822747225044361,
+          "x": 0.8795915804805216,
           "y": 0,
-          "z": 0.999833865827398
+          "z": 0.4757295991924174
         },
         "controller": "thirdperson",
         "visible": false,
@@ -932,35 +1492,35 @@
       },
       "camera": {
         "eye": {
-          "x": 5.39910847180777,
+          "x": -4.1922877973489205,
           "y": 4.94631171566674,
-          "z": -2.440262170430326
+          "z": 0.008632947755588448
         },
         "target": {
-          "x": 5.632795153953214,
-          "y": 1.0499999999999992,
-          "z": 4.614832911275408
+          "x": 1.5307583159892437,
+          "y": 1.0499999999999996,
+          "z": 3.105161187153047
         },
         "basis": {
           "forward": {
-            "x": 0.028982986940868503,
-            "y": -0.48323999697354353,
-            "z": 0.8750080524160878
+            "x": 0.7545821423228855,
+            "y": -0.5137276868542754,
+            "z": 0.4082764434139695
           },
           "right": {
-            "x": -0.9994518808125009,
+            "x": -0.475872572263243,
             "y": 0,
-            "z": 0.03310495341114942
+            "z": 0.8795142380698362
           },
           "up": {
-            "x": 0.015997637586213146,
-            "y": 0.8754879241457357,
-            "z": 0.48297512385903535
+            "x": 0.4518308150790174,
+            "y": 0.8579532992881114,
+            "z": 0.24446891578618982
           }
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022
+        "sensitivity": 0.0018
       },
       "pointerLocked": false,
       "activeSlot": "primaryHand",
@@ -968,15 +1528,11 @@
       "weaponRuntime": {},
       "enemies": [
         {
-          "id": "obj67",
+          "id": "obj62",
           "p": {
-            "x": 5.531965692756864,
+            "x": 10.120205732382457,
             "y": 0.5,
-            "z": 4.054491857964825
-          },
-          "health": {
-            "current": 40,
-            "max": 100
+            "z": 8.866102054850861
           },
           "collider": {
             "shape": "sphere",
@@ -1070,6 +1626,90 @@
             "y": 1,
             "z": 1
           }
+        },
+        {
+          "id": "deep3-1",
+          "name": "West cover deck",
+          "p": {
+            "x": -7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-2",
+          "name": "East cover deck",
+          "p": {
+            "x": 7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-3",
+          "name": "Deep barricade",
+          "p": {
+            "x": -3,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-4",
+          "name": "Deep barricade",
+          "p": {
+            "x": 3,
+            "y": 0,
+            "z": 6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-5",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": -8,
+            "y": 0,
+            "z": 8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
+        },
+        {
+          "id": "deep3-6",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
         }
       ],
       "helpers": []
@@ -1077,9 +1717,9 @@
     {
       "label": "kills-3",
       "title": "Opus Arena",
-      "text": "Health 14 / 100\nKills: 3/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
-      "sim": 8.976600000000081,
-      "playtime": 8.976600000000081,
+      "text": "Health 154 / 180\nKills: 3/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+      "sim": 12.213599999964245,
+      "playtime": 12.213599999964245,
       "ended": false,
       "paused": false,
       "overlay": {
@@ -1088,21 +1728,21 @@
       },
       "state": {
         "kills": 3,
-        "maxHealth": 100,
-        "health": 14
+        "maxHealth": 180,
+        "health": 154
       },
       "objectives": {},
       "inventory": {},
       "player": {
         "position": {
-          "x": 5.5889835495761275,
+          "x": 1.5289527934353757,
           "y": 0.55,
-          "z": 4.371616516115768
+          "z": 3.10380381048978
         },
         "forward": {
-          "x": 0.01822747225044361,
+          "x": 0.8795915804805216,
           "y": 0,
-          "z": 0.999833865827398
+          "z": 0.4757295991924174
         },
         "controller": "thirdperson",
         "visible": false,
@@ -1110,35 +1750,35 @@
       },
       "camera": {
         "eye": {
-          "x": 5.465825592808874,
-          "y": 4.94631171566674,
-          "z": -2.152910546428201
+          "x": -4.209414913609204,
+          "y": 4.971643070819895,
+          "z": 0.02700259227566733
         },
         "target": {
-          "x": 5.609071108269737,
-          "y": 1.0499999999999992,
-          "z": 4.483273175216169
+          "x": 1.5289638827006036,
+          "y": 1.0499999999999996,
+          "z": 3.1038121473060443
         },
         "basis": {
           "forward": {
-            "x": 0.0186110531198228,
-            "y": -0.5062250226707686,
-            "z": 0.8622005886820948
+            "x": 0.7549516061246725,
+            "y": -0.515938532476644,
+            "z": 0.40479069050019456
           },
           "right": {
-            "x": -0.9997671139154266,
+            "x": -0.4725409644008074,
             "y": 0,
-            "z": 0.021580498910320843
+            "z": 0.8813087069598003
           },
           "up": {
-            "x": 0.010924588550123666,
-            "y": 0.862401429974452,
-            "z": 0.5061071299073258
+            "x": 0.4547011209277281,
+            "y": 0.8566256070803904,
+            "z": 0.24380209170805064
           }
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022
+        "sensitivity": 0.0018
       },
       "pointerLocked": false,
       "activeSlot": "primaryHand",
@@ -1216,39 +1856,123 @@
             "y": 1,
             "z": 1
           }
+        },
+        {
+          "id": "deep3-1",
+          "name": "West cover deck",
+          "p": {
+            "x": -7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-2",
+          "name": "East cover deck",
+          "p": {
+            "x": 7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-3",
+          "name": "Deep barricade",
+          "p": {
+            "x": -3,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-4",
+          "name": "Deep barricade",
+          "p": {
+            "x": 3,
+            "y": 0,
+            "z": 6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-5",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": -8,
+            "y": 0,
+            "z": 8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
+        },
+        {
+          "id": "deep3-6",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
         }
       ],
       "helpers": []
     },
     {
-      "label": "combat-outcome",
+      "label": "kills-4",
       "title": "Opus Arena",
-      "text": "Try again\n\nRestart from the menu and try a different route.\n\nRestart\nHealth 0 / 100\nKills: 3/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
-      "sim": 11.329299999999813,
-      "playtime": 11.329299999999813,
-      "ended": true,
+      "text": "Health 146 / 180\nKills: 4/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+      "sim": 14.382599999964253,
+      "playtime": 14.382599999964253,
+      "ended": false,
       "paused": false,
       "overlay": {
-        "classes": "lose visible",
-        "title": "Try again"
+        "classes": "",
+        "title": ""
       },
       "state": {
-        "kills": 3,
-        "maxHealth": 100,
-        "health": 0
+        "kills": 4,
+        "maxHealth": 180,
+        "health": 146
       },
       "objectives": {},
       "inventory": {},
       "player": {
         "position": {
-          "x": 5.627724881656295,
+          "x": 1.5289594396991912,
           "y": 0.55,
-          "z": 6.019543066370474
+          "z": 3.103808807094978
         },
         "forward": {
-          "x": 0.016387547050901823,
+          "x": 0.8795915804805216,
           "y": 0,
-          "z": 0.9998657151346148
+          "z": 0.4757295991924174
         },
         "controller": "thirdperson",
         "visible": false,
@@ -1256,35 +1980,265 @@
       },
       "camera": {
         "eye": {
-          "x": 5.483909264650724,
-          "y": 4.898411937308799,
-          "z": -0.4867453218108784
+          "x": -4.2531964508296625,
+          "y": 4.935979532098332,
+          "z": -0.056553158677198345
         },
         "target": {
-          "x": 5.632704249740888,
-          "y": 1.0499999999999992,
-          "z": 6.3042999977697995
+          "x": 1.5289596633692386,
+          "y": 1.0499999999999996,
+          "z": 3.1038089752482367
         },
         "basis": {
           "forward": {
-            "x": 0.019058947180137717,
-            "y": -0.49293784865218915,
-            "z": 0.8698557546504685
+            "x": 0.755840273771537,
+            "y": -0.507973111656244,
+            "z": 0.41312080361468245
           },
           "right": {
-            "x": -0.9997600520734836,
+            "x": -0.47960736992354985,
             "y": 0,
-            "z": 0.021905211207042963
+            "z": 0.8774832025258462
           },
           "up": {
-            "x": 0.010797907686671581,
-            "y": 0.8700645248291365,
-            "z": 0.4928195692375036
+            "x": 0.44573787281314026,
+            "y": 0.8613729261094017,
+            "z": 0.24362764807333293
           }
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022
+        "sensitivity": 0.0018
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "rehab-1",
+          "name": "Inset floor",
+          "p": {
+            "x": 0,
+            "y": -0.18,
+            "z": 0
+          },
+          "scale": {
+            "x": 24,
+            "y": 0.36,
+            "z": 24
+          }
+        },
+        {
+          "id": "promo-1",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-2",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-3",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-4",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "deep3-1",
+          "name": "West cover deck",
+          "p": {
+            "x": -7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-2",
+          "name": "East cover deck",
+          "p": {
+            "x": 7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-3",
+          "name": "Deep barricade",
+          "p": {
+            "x": -3,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-4",
+          "name": "Deep barricade",
+          "p": {
+            "x": 3,
+            "y": 0,
+            "z": 6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-5",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": -8,
+            "y": 0,
+            "z": 8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
+        },
+        {
+          "id": "deep3-6",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "combat-16",
+      "title": "Opus Arena",
+      "text": "Health 142 / 180\nKills: 4/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+      "sim": 16.918899999976187,
+      "playtime": 16.918899999976187,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 4,
+        "maxHealth": 180,
+        "health": 142
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 3.6089144525255104,
+          "y": 0.55,
+          "z": 4.227753818300403
+        },
+        "forward": {
+          "x": 0.8810320364700158,
+          "y": 0,
+          "z": 0.47305660413263106
+        },
+        "controller": "thirdperson",
+        "visible": false,
+        "radius": 0.5
+      },
+      "camera": {
+        "eye": {
+          "x": -2.84915317043284,
+          "y": 4.952713221057303,
+          "z": 0.751221547315626
+        },
+        "target": {
+          "x": 6.588571861765614,
+          "y": 1.0499999999999996,
+          "z": 5.837022462800418
+        },
+        "basis": {
+          "forward": {
+            "x": 0.8272114678753749,
+            "y": -0.3420706919594815,
+            "z": 0.4457676851430901
+          },
+          "right": {
+            "x": -0.47438535096332085,
+            "y": 0,
+            "z": 0.8803172943839095
+          },
+          "up": {
+            "x": 0.30113074603380247,
+            "y": 0.9396742210481042,
+            "z": 0.16227332525946464
+          }
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0018
       },
       "pointerLocked": false,
       "activeSlot": "primaryHand",
@@ -1292,14 +2246,732 @@
       "weaponRuntime": {},
       "enemies": [
         {
-          "id": "obj75",
+          "id": "obj81",
           "p": {
-            "x": 5.62644008394766,
+            "x": 5.892968012163091,
             "y": 0.5,
-            "z": 5.9463412993444695
+            "z": 7.401615085380002
+          },
+          "collider": {
+            "shape": "sphere",
+            "offset": {
+              "x": 0,
+              "y": 0.7150000000000001,
+              "z": 0
+            },
+            "radius": 0.5850000000000001
+          },
+          "visible": true,
+          "tags": [
+            "enemy",
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.65,
+            "y": 0.65,
+            "z": 0.65
+          }
+        }
+      ],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "rehab-1",
+          "name": "Inset floor",
+          "p": {
+            "x": 0,
+            "y": -0.18,
+            "z": 0
+          },
+          "scale": {
+            "x": 24,
+            "y": 0.36,
+            "z": 24
+          }
+        },
+        {
+          "id": "promo-1",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-2",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-3",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-4",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "deep3-1",
+          "name": "West cover deck",
+          "p": {
+            "x": -7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-2",
+          "name": "East cover deck",
+          "p": {
+            "x": 7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-3",
+          "name": "Deep barricade",
+          "p": {
+            "x": -3,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-4",
+          "name": "Deep barricade",
+          "p": {
+            "x": 3,
+            "y": 0,
+            "z": 6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-5",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": -8,
+            "y": 0,
+            "z": 8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
+        },
+        {
+          "id": "deep3-6",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "kills-5",
+      "title": "Opus Arena",
+      "text": "Health 135 / 180\nKills: 5/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+      "sim": 18.770899999976262,
+      "playtime": 18.770899999976262,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 5,
+        "maxHealth": 180,
+        "health": 135
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 5.449698621337789,
+          "y": 0.55,
+          "z": 8.469332445096391
+        },
+        "forward": {
+          "x": -0.30996581377975196,
+          "y": 0,
+          "z": 0.9507477027518163
+        },
+        "controller": "thirdperson",
+        "visible": false,
+        "radius": 0.5
+      },
+      "camera": {
+        "eye": {
+          "x": 7.450632074394773,
+          "y": 4.94632900310956,
+          "z": 2.202394821945089
+        },
+        "target": {
+          "x": 5.507113708249593,
+          "y": 1.0500172874428209,
+          "z": 8.848519161638482
+        },
+        "basis": {
+          "forward": {
+            "x": -0.24460906754447453,
+            "y": -0.4903854742171542,
+            "z": 0.8364738434355491
+          },
+          "right": {
+            "x": -0.9598031288274449,
+            "y": 0,
+            "z": -0.2806741062033462
+          },
+          "up": {
+            "x": -0.13763850467100383,
+            "y": 0.8715056435140377,
+            "z": 0.47067351248515493
+          }
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0018
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "rehab-1",
+          "name": "Inset floor",
+          "p": {
+            "x": 0,
+            "y": -0.18,
+            "z": 0
+          },
+          "scale": {
+            "x": 24,
+            "y": 0.36,
+            "z": 24
+          }
+        },
+        {
+          "id": "promo-1",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-2",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-3",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-4",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "deep3-1",
+          "name": "West cover deck",
+          "p": {
+            "x": -7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-2",
+          "name": "East cover deck",
+          "p": {
+            "x": 7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-3",
+          "name": "Deep barricade",
+          "p": {
+            "x": -3,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-4",
+          "name": "Deep barricade",
+          "p": {
+            "x": 3,
+            "y": 0,
+            "z": 6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-5",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": -8,
+            "y": 0,
+            "z": 8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
+        },
+        {
+          "id": "deep3-6",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "kills-6",
+      "title": "Opus Arena",
+      "text": "Health 124 / 180\nKills: 6/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+      "sim": 22.94209999996447,
+      "playtime": 22.94209999996447,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 6,
+        "maxHealth": 180,
+        "health": 124
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 5.60925195207793,
+          "y": 0.55,
+          "z": 5.345561441554003
+        },
+        "forward": {
+          "x": 0.5483020074029522,
+          "y": 0,
+          "z": -0.8362804007495888
+        },
+        "controller": "thirdperson",
+        "visible": false,
+        "radius": 0.5
+      },
+      "camera": {
+        "eye": {
+          "x": 2.0429278230431596,
+          "y": 4.946311715666743,
+          "z": 10.928472798741893
+        },
+        "target": {
+          "x": 5.666474700729806,
+          "y": 1.050000000000001,
+          "z": 4.723852515681105
+        },
+        "basis": {
+          "forward": {
+            "x": 0.44332021654636483,
+            "y": -0.47669143295981714,
+            "z": -0.7590997716664128
+          },
+          "right": {
+            "x": 0.8635252891905281,
+            "y": 0,
+            "z": 0.5043055372771698
+          },
+          "up": {
+            "x": 0.24039812921422454,
+            "y": 0.8790706898439488,
+            "z": -0.4116351075012733
+          }
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0018
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "rehab-1",
+          "name": "Inset floor",
+          "p": {
+            "x": 0,
+            "y": -0.18,
+            "z": 0
+          },
+          "scale": {
+            "x": 24,
+            "y": 0.36,
+            "z": 24
+          }
+        },
+        {
+          "id": "promo-1",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-2",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-3",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-4",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "deep3-1",
+          "name": "West cover deck",
+          "p": {
+            "x": -7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-2",
+          "name": "East cover deck",
+          "p": {
+            "x": 7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-3",
+          "name": "Deep barricade",
+          "p": {
+            "x": -3,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-4",
+          "name": "Deep barricade",
+          "p": {
+            "x": 3,
+            "y": 0,
+            "z": 6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-5",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": -8,
+            "y": 0,
+            "z": 8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
+        },
+        {
+          "id": "deep3-6",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "combat-24",
+      "title": "Opus Arena",
+      "text": "Health 117 / 180\nKills: 6/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+      "sim": 25.011099999964518,
+      "playtime": 25.011099999964518,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 6,
+        "maxHealth": 180,
+        "health": 117
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 5.643972830979167,
+          "y": 0.9500000000000001,
+          "z": 4.973395283534244
+        },
+        "forward": {
+          "x": 0.5483020074029522,
+          "y": 0,
+          "z": -0.8362804007495888
+        },
+        "controller": "thirdperson",
+        "visible": false,
+        "radius": 0.5
+      },
+      "camera": {
+        "eye": {
+          "x": 2.0796876827844093,
+          "y": 5.34402829026258,
+          "z": 10.412670499677722
+        },
+        "target": {
+          "x": 5.645376461427121,
+          "y": 1.44771657459584,
+          "z": 4.958350043951306
+        },
+        "basis": {
+          "forward": {
+            "x": 0.4696373605587671,
+            "y": -0.5131837531699744,
+            "z": -0.7183892990919154
+          },
+          "right": {
+            "x": 0.8370116212055211,
+            "y": 0,
+            "z": 0.5471851112438142
+          },
+          "up": {
+            "x": 0.2808065090668305,
+            "y": 0.8582787632712223,
+            "z": -0.4295407652171343
+          }
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0018
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [
+        {
+          "id": "obj97",
+          "p": {
+            "x": 5.5800919737431025,
+            "y": 0.5,
+            "z": 5.011977879619886
           },
           "health": {
-            "current": 40,
+            "current": 25,
             "max": 100
           },
           "collider": {
@@ -1394,6 +3066,550 @@
             "y": 1,
             "z": 1
           }
+        },
+        {
+          "id": "deep3-1",
+          "name": "West cover deck",
+          "p": {
+            "x": -7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-2",
+          "name": "East cover deck",
+          "p": {
+            "x": 7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-3",
+          "name": "Deep barricade",
+          "p": {
+            "x": -3,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-4",
+          "name": "Deep barricade",
+          "p": {
+            "x": 3,
+            "y": 0,
+            "z": 6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-5",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": -8,
+            "y": 0,
+            "z": 8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
+        },
+        {
+          "id": "deep3-6",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "kills-7",
+      "title": "Opus Arena",
+      "text": "Health 117 / 180\nKills: 7/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+      "sim": 25.411500000000288,
+      "playtime": 25.411500000000288,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "kills": 7,
+        "maxHealth": 180,
+        "health": 117
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 5.644413814741229,
+          "y": 0.9500000000000001,
+          "z": 4.968668466769529
+        },
+        "forward": {
+          "x": 0.5483020074029522,
+          "y": 0,
+          "z": -0.8362804007495888
+        },
+        "controller": "thirdperson",
+        "visible": false,
+        "radius": 0.5
+      },
+      "camera": {
+        "eye": {
+          "x": 2.080294091313994,
+          "y": 5.34616645292643,
+          "z": 10.40617044834652
+        },
+        "target": {
+          "x": 5.6450974437983685,
+          "y": 1.4498547372596897,
+          "z": 4.96134078325812
+        },
+        "basis": {
+          "forward": {
+            "x": 0.4699683599640297,
+            "y": -0.5136729984402579,
+            "z": -0.7178229526186211
+          },
+          "right": {
+            "x": 0.836637096999857,
+            "y": 0,
+            "z": 0.5477575813474898
+          },
+          "up": {
+            "x": 0.2813682792291486,
+            "y": 0.8579860434024524,
+            "z": -0.42975788622226946
+          }
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0018
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "rehab-1",
+          "name": "Inset floor",
+          "p": {
+            "x": 0,
+            "y": -0.18,
+            "z": 0
+          },
+          "scale": {
+            "x": 24,
+            "y": 0.36,
+            "z": 24
+          }
+        },
+        {
+          "id": "promo-1",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-2",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-3",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-4",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "deep3-1",
+          "name": "West cover deck",
+          "p": {
+            "x": -7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-2",
+          "name": "East cover deck",
+          "p": {
+            "x": 7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-3",
+          "name": "Deep barricade",
+          "p": {
+            "x": -3,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-4",
+          "name": "Deep barricade",
+          "p": {
+            "x": 3,
+            "y": 0,
+            "z": 6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-5",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": -8,
+            "y": 0,
+            "z": 8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
+        },
+        {
+          "id": "deep3-6",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "combat-outcome",
+      "title": "Opus Arena",
+      "text": "Courtyard cleared\n\nAll eight guardians have fallen.\n\nRestart\nHealth 113 / 180\nKills: 8/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+      "sim": 29.210800000012316,
+      "playtime": 29.210800000012316,
+      "ended": true,
+      "paused": false,
+      "overlay": {
+        "classes": "win visible",
+        "title": "Courtyard cleared"
+      },
+      "state": {
+        "kills": 8,
+        "maxHealth": 180,
+        "health": 113
+      },
+      "objectives": {},
+      "inventory": {},
+      "player": {
+        "position": {
+          "x": 5.644830840319545,
+          "y": 0.9500000000000001,
+          "z": 4.9641984529856025
+        },
+        "forward": {
+          "x": 0.5483020074029522,
+          "y": 0,
+          "z": -0.8362804007495888
+        },
+        "controller": "thirdperson",
+        "visible": false,
+        "radius": 0.5
+      },
+      "camera": {
+        "eye": {
+          "x": 2.080867631681451,
+          "y": 5.346311715666739,
+          "z": 10.400022778428006
+        },
+        "target": {
+          "x": 5.6448316229085425,
+          "y": 1.4499999999999995,
+          "z": 4.96419006457061
+        },
+        "basis": {
+          "forward": {
+            "x": 0.4702824272422877,
+            "y": -0.5141373300759482,
+            "z": -0.7172846327989175
+          },
+          "right": {
+            "x": 0.8362808017747196,
+            "y": 0,
+            "z": 0.5483013957514902
+          },
+          "up": {
+            "x": 0.281902215688587,
+            "y": 0.8577078790721091,
+            "z": -0.42996317861822764
+          }
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0018
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [],
+      "weaponRuntime": {},
+      "enemies": [],
+      "interactables": [],
+      "solids": [
+        {
+          "id": "rehab-1",
+          "name": "Inset floor",
+          "p": {
+            "x": 0,
+            "y": -0.18,
+            "z": 0
+          },
+          "scale": {
+            "x": 24,
+            "y": 0.36,
+            "z": 24
+          }
+        },
+        {
+          "id": "promo-1",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-2",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": -7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-3",
+          "name": "Arena cover",
+          "p": {
+            "x": -7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-4",
+          "name": "Arena cover",
+          "p": {
+            "x": 7,
+            "y": 0,
+            "z": 7
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "deep3-1",
+          "name": "West cover deck",
+          "p": {
+            "x": -7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-2",
+          "name": "East cover deck",
+          "p": {
+            "x": 7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-3",
+          "name": "Deep barricade",
+          "p": {
+            "x": -3,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-4",
+          "name": "Deep barricade",
+          "p": {
+            "x": 3,
+            "y": 0,
+            "z": 6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-5",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": -8,
+            "y": 0,
+            "z": 8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
+        },
+        {
+          "id": "deep3-6",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
         }
       ],
       "helpers": []
@@ -1401,9 +3617,9 @@
     {
       "label": "restart",
       "title": "Opus Arena",
-      "text": "Health 100 / 100\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
-      "sim": 0.30040000000037254,
-      "playtime": 0.30040000000037254,
+      "text": "Health 180 / 180\nKills: 0/8\nDefeat eight guardians.\nPress F to interact\nWASD / arrows move; Space jumps; Q attacks; Escape pauses.",
+      "sim": 0.29129999995231626,
+      "playtime": 0.29129999995231626,
       "ended": false,
       "paused": false,
       "overlay": {
@@ -1412,8 +3628,8 @@
       },
       "state": {
         "kills": 0,
-        "maxHealth": 100,
-        "health": 100
+        "maxHealth": 180,
+        "health": 180
       },
       "objectives": {},
       "inventory": {},
@@ -1440,29 +3656,29 @@
         },
         "target": {
           "x": 0,
-          "y": 0.9867090974682857,
+          "y": 0.9872174627671491,
           "z": 0
         },
         "basis": {
           "forward": {
             "x": 0,
-            "y": -0.5202422721910792,
-            "z": 0.8540187224092121
+            "y": -0.5201935544264716,
+            "z": 0.854048397886884
           },
           "right": {
-            "x": -0.9999999999999999,
+            "x": -1,
             "y": 0,
             "z": 0
           },
           "up": {
             "x": 0,
-            "y": 0.854018722409212,
-            "z": 0.5202422721910791
+            "y": 0.854048397886884,
+            "z": 0.5201935544264716
           }
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022
+        "sensitivity": 0.0018
       },
       "pointerLocked": false,
       "activeSlot": "primaryHand",
@@ -1540,13 +3756,97 @@
             "y": 1,
             "z": 1
           }
+        },
+        {
+          "id": "deep3-1",
+          "name": "West cover deck",
+          "p": {
+            "x": -7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-2",
+          "name": "East cover deck",
+          "p": {
+            "x": 7,
+            "y": 0.2,
+            "z": 0
+          },
+          "scale": {
+            "x": 5,
+            "y": 0.4,
+            "z": 9
+          }
+        },
+        {
+          "id": "deep3-3",
+          "name": "Deep barricade",
+          "p": {
+            "x": -3,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-4",
+          "name": "Deep barricade",
+          "p": {
+            "x": 3,
+            "y": 0,
+            "z": 6
+          },
+          "scale": {
+            "x": 0.7,
+            "y": 0.7,
+            "z": 0.7
+          }
+        },
+        {
+          "id": "deep3-5",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": -8,
+            "y": 0,
+            "z": 8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
+        },
+        {
+          "id": "deep3-6",
+          "name": "Deep ammo-crate",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": -8
+          },
+          "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+          }
         }
       ],
       "helpers": []
     }
   ],
   "observations": [],
-  "finishedAt": "2026-09-08T07:11:45.021Z",
-  "outcome": "lose visible",
+  "finishedAt": "2026-09-11T17:22:21.214Z",
+  "outcome": "win visible",
   "restartVerified": true
 }

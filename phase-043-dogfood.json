@@ -1,0 +1,26 @@
+{
+  "phase": 43,
+  "status": "READY_FOR_BROWSER_QUALIFICATION",
+  "project": "qualification/phase-043/phase-043-project.json",
+  "lab": "Phase 043 Static Kinematic Body Lab",
+  "objects": [
+    "wall",
+    "mover",
+    "sensor",
+    "blocked-sensor",
+    "rotated-wall",
+    "static-circle",
+    "circle-mover",
+    "dual-mover",
+    "free-mover",
+    "empty-static",
+    "passive-collider",
+    "authoring-probe",
+    "parent",
+    "parented-mover",
+    "corner-x",
+    "corner-y"
+  ],
+  "prefab": "Phase 043 Kinematic Prefab",
+  "publicCatalog": false
+}

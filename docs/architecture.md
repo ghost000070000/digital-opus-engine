@@ -1,5 +1,17 @@
 # Digital Opus Engine — Architecture Overview
 
+## Tilemap v4 object placement and Spawn Markers (Phase 037)
+
+Tilemap v4 adds a top-level `spawnMarkers[]` metadata list. Marker records are independent from ordered visual Layers and contain stable Tilemap-local identity, required name, safe integer cell coordinates, and an optional Prefab-name reference. The runtime exposes immutable query views whose world positions are derived from current cell size and the Tilemap's resolved Entity basis. It performs no automatic spawning.
+
+The editor's Place Object tool is separate: it cell-snaps the existing Prefab instantiation path once, yielding ordinary scene objects with no continuing Tilemap binding. This preserves scene hierarchy, serialization, dependency, and Undo conventions without inventing an object-layer runtime.
+
+## Tilemap v2 multi-layer model (Phase 033)
+
+A Tilemap is one scene object with one Transform, Tileset, Sorting Layer, and Order in Layer. Its canonical version-2 `layers[]` array is stored bottom-to-top; every layer has a Tilemap-local stable ID, unique name, visibility, authoring lock, and its own sparse row-major cell list. Version-1 top-level cells migrate deterministically into `tilemap-layer-default`. Save and exports write layers only.
+
+Editor cell access is explicitly layer-aware and uses one transient index per layer. Active Layer is transient editor state. Runtime resolution flattens visible layers bottom-to-top into one contiguous Tilemap Sprite-pass entity, so no per-layer scene entities, Textures, or timers are created. Collision, auto-tiling, terrain, object layers, layer opacity/tint/parallax/Transform, and per-layer Tilesets remain outside this phase.
+
 The Digital Opus Engine is designed with a core philosophy: **Zero dependencies, single-file bundle distribution, and immediate usability via standard HTML script tags.**
 
 ## Architecture Layers
@@ -55,6 +67,16 @@ The Digital Opus Engine is designed with a core philosophy: **Zero dependencies,
 
 Game code stays outside the engine IIFE and communicates only through `window.Opus` and its App. Renderer contexts, shaders, programs, buffers, and caches are implementation details.
 
+## How a schema component becomes addable
+
+The editor has one component registry and one generic Add Component/Inspector path. To add a new schema-backed capability:
+
+1. Register its schema with `addable: true`, creator-facing `displayName`, `category`, `help`, eligibility, defaults, and field descriptors.
+2. Keep `multiplicity: 'single'` while records use the current one-component-per-schema-ID bag. Internal or automatically managed schemas omit `addable` and stay hidden.
+3. Supply `readTarget` / `applyTarget` only when the component needs compatibility or runtime behavior.
+
+The registry automatically provides eligibility filtering, deterministic search/category ordering, duplicate prevention, default creation, generic primitive Inspector controls, validation, Undo integration, Save/Load, prefab/duplicate transport, and export embedding. There is no separate picker catalog or per-component Add button to maintain.
+
 ## Current status vs. this document
 
 This document describes the v0.1.0-era engine core and predates the
@@ -74,3 +96,8 @@ background reading; the README is the up-to-date reference.
 - 2D Canvas fallback or 2D physics
 - Plugin architectures
 - TypeScript definitions or npm packaging
+# Phase 038 Tilemap Chunk reuse
+
+Tilemap Chunks are versioned `tilemap-chunk` authoring Assets. They capture a zero-based rectangular subset of one Tileset's sparse Tile Layers plus optional Spawn Marker templates. They never own ordinary scene objects, source Tilemap identity, or runtime instances.
+
+The stamp planner clones the target Tilemap, resolves explicit distinct Layer mappings, applies stored Cells with merge-only hole semantics, re-resolves weighted Terrain from destination Layer/coordinates, runs canonical Auto-Tile recomputation across destination boundaries, and allocates fresh marker IDs/names. Commit materializes that exact plan in one editor snapshot transaction. Editable project data retains Chunks; Playable data strips them and carries only materialized Tilemap content.

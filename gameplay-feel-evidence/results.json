@@ -1,0 +1,2545 @@
+{
+  "generatedAt": "2026-09-20T21:39:30.522Z",
+  "method": "Native keyboard/mouse inputs; read-only runtime instrumentation",
+  "results": [
+    {
+      "id": "forest-range",
+      "title": "Forest Range",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "enemySpeedRange": [
+        1.5,
+        4
+      ],
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": -7,
+          "y": -0.13073938994376344,
+          "z": -5.5
+        },
+        "controller": "thirdperson",
+        "rotationY": 1.0471975511965976,
+        "yaw": 0,
+        "pitch": 0,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": false,
+        "basis": {
+          "forward": {
+            "x": 0.7417156207163025,
+            "y": -0.5162143456426217,
+            "z": 0.42822971328270765
+          },
+          "right": {
+            "x": -0.5000000000000001,
+            "y": 0,
+            "z": 0.8660254037844387
+          }
+        },
+        "solidCount": 3,
+        "collidingSolids": 0,
+        "frozen": false,
+        "sim": 0.30000000000000004
+      },
+      "movement": {
+        "beforeW": {
+          "x": -7,
+          "y": -0.13073938994376344,
+          "z": -5.5
+        },
+        "afterW": {
+          "x": -3.148762652939727,
+          "y": 1.701666992497716,
+          "z": -3.2764870809616085
+        },
+        "expectedForward": {
+          "x": 0.7417156207163025,
+          "z": 0.42822971328270765
+        },
+        "wDistance": 4.8097559142782655,
+        "wForwardDot": 3.8086971992008234,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 0.43249694144445167
+          },
+          {
+            "key": "A",
+            "distance": 0.6339581168020852
+          },
+          {
+            "key": "D",
+            "distance": 0.6752489546352969
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "collision": {
+        "solidCount": 3,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "arsenal-run",
+      "title": "Arsenal Run",
+      "controller": "firstperson",
+      "moveSpeed": 6.5,
+      "acceleration": 42,
+      "enemySpeedRange": [
+        1.2,
+        3.2
+      ],
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": 0,
+          "y": 0.65,
+          "z": 13
+        },
+        "controller": "firstperson",
+        "rotationY": -2.300992653589793,
+        "yaw": 3.9821926535897934,
+        "pitch": 0.0126,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": true,
+        "basis": {
+          "forward": {
+            "x": 1.2246467991473532e-16,
+            "y": 0,
+            "z": -1
+          },
+          "right": {
+            "x": 1,
+            "y": 0,
+            "z": 1.2246467991473532e-16
+          }
+        },
+        "solidCount": 30,
+        "collidingSolids": 0,
+        "health": 100,
+        "frozen": false,
+        "sim": 0.2
+      },
+      "look": {
+        "rightDelta": 0.14400000000000013,
+        "upDelta": -0.108,
+        "standardDirections": true
+      },
+      "movement": {
+        "beforeW": {
+          "x": 0,
+          "y": 0.55,
+          "z": 13
+        },
+        "afterW": {
+          "x": -3.521800441502434,
+          "y": 0.55,
+          "z": 10.661310608763841
+        },
+        "expectedForward": {
+          "x": -0.8330508785240277,
+          "z": -0.5531963790466689
+        },
+        "wDistance": 4.2275934547266125,
+        "wForwardDot": 4.2275934547266125,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 3.1897203674022285
+          },
+          {
+            "key": "A",
+            "distance": 2.9174069106858598
+          },
+          {
+            "key": "D",
+            "distance": 2.5440086345305284
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "settings": {
+        "sensitivity": 0.0018,
+        "invertMouseY": true,
+        "invertDirectionWorks": true
+      },
+      "collision": {
+        "solidCount": 30,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "power-grid",
+      "title": "Power Grid",
+      "controller": "firstperson",
+      "moveSpeed": 6,
+      "acceleration": 40,
+      "enemySpeedRange": null,
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": -17,
+          "y": 0.55,
+          "z": 0
+        },
+        "controller": "firstperson",
+        "rotationY": 2.4113963267948972,
+        "yaw": 2.411396326794897,
+        "pitch": 0.0126,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": true,
+        "basis": {
+          "forward": {
+            "x": 0.6669629728296047,
+            "y": -0.012599666606646567,
+            "z": -0.7449843228388753
+          },
+          "right": {
+            "x": 0.7450434636065777,
+            "y": 0,
+            "z": 0.6670159198528278
+          }
+        },
+        "solidCount": 17,
+        "collidingSolids": 0,
+        "frozen": false,
+        "sim": 0.30000000000000004
+      },
+      "look": {
+        "rightDelta": 0.14400000000000013,
+        "upDelta": -0.108,
+        "standardDirections": true
+      },
+      "movement": {
+        "beforeW": {
+          "x": -17,
+          "y": 0.55,
+          "z": 0
+        },
+        "afterW": {
+          "x": -14.842458237441031,
+          "y": 0.55,
+          "z": -3.2490126993408994
+        },
+        "expectedForward": {
+          "x": 0.5531963790466687,
+          "z": -0.8330508785240277
+        },
+        "wDistance": 3.900137174211248,
+        "wForwardDot": 3.900137174211248,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 3.0009600313110942
+          },
+          {
+            "key": "A",
+            "distance": 2.717616600377078
+          },
+          {
+            "key": "D",
+            "distance": 2.4036989358950294
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "settings": {
+        "sensitivity": 0.0018,
+        "invertMouseY": true,
+        "invertDirectionWorks": true
+      },
+      "collision": {
+        "solidCount": 17,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "moving-temple",
+      "title": "Moving Temple",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "enemySpeedRange": null,
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": 0,
+          "y": 1.8,
+          "z": -0.4
+        },
+        "controller": "thirdperson",
+        "rotationY": 1.5707963267948966,
+        "yaw": 0,
+        "pitch": 0,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": false,
+        "basis": {
+          "forward": {
+            "x": 0.8575547444021027,
+            "y": -0.514392710245241,
+            "z": 5.12656858060176e-17
+          },
+          "right": {
+            "x": -5.978123978750843e-17,
+            "y": 0,
+            "z": 1
+          }
+        },
+        "solidCount": 8,
+        "collidingSolids": 0,
+        "frozen": false,
+        "sim": 0.5
+      },
+      "movement": {
+        "beforeW": {
+          "x": 0,
+          "y": 1.8,
+          "z": -0.4
+        },
+        "afterW": {
+          "x": 3.801619413571161,
+          "y": 0.9500000000000001,
+          "z": -0.4
+        },
+        "expectedForward": {
+          "x": 0.8575547444021027,
+          "z": 5.12656858060176e-17
+        },
+        "wDistance": 3.8954858702915525,
+        "wForwardDot": 3.2600967645190884,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 0.4321862191683544
+          },
+          {
+            "key": "A",
+            "distance": 0.6320143358810032
+          },
+          {
+            "key": "D",
+            "distance": 0.6311109502080036
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "collision": {
+        "solidCount": 8,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "foglight",
+      "title": "Foglight",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "enemySpeedRange": [
+        1.4,
+        3
+      ],
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": 0,
+          "y": 0.79,
+          "z": 0
+        },
+        "controller": "thirdperson",
+        "rotationY": 0.12,
+        "yaw": 0,
+        "pitch": 0,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": false,
+        "basis": {
+          "forward": {
+            "x": 0.11380430182141296,
+            "y": -0.31026809920329335,
+            "z": 0.9438126336851589
+          },
+          "right": {
+            "x": -0.9928086358538664,
+            "y": 0,
+            "z": 0.11971220728891938
+          }
+        },
+        "solidCount": 25,
+        "collidingSolids": 0,
+        "health": 100,
+        "frozen": false,
+        "sim": 0.30000000000000004
+      },
+      "movement": {
+        "beforeW": {
+          "x": 0,
+          "y": 0.79,
+          "z": 0
+        },
+        "afterW": {
+          "x": 0.5323632789470278,
+          "y": 0.925,
+          "z": 4.415045655907904
+        },
+        "expectedForward": {
+          "x": 0.11380430182141296,
+          "z": 0.9438126336851589
+        },
+        "wDistance": 4.449074488533822,
+        "wForwardDot": 4.227561099618583,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 0.4324770587487997
+          },
+          {
+            "key": "A",
+            "distance": 0.6320345670736032
+          },
+          {
+            "key": "D",
+            "distance": 0.6311112123134568
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "collision": {
+        "solidCount": 25,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "relic-frontier",
+      "title": "Relic Frontier",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "enemySpeedRange": [
+        0.8,
+        3
+      ],
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": -8,
+          "y": 0.55,
+          "z": 0
+        },
+        "controller": "thirdperson",
+        "rotationY": 0.6,
+        "yaw": 0,
+        "pitch": 0,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": false,
+        "basis": {
+          "forward": {
+            "x": 0.48977350323638946,
+            "y": -0.49760344125972505,
+            "z": 0.7158999446668743
+          },
+          "right": {
+            "x": -0.8253356149096783,
+            "y": 0,
+            "z": 0.5646424733950353
+          }
+        },
+        "solidCount": 14,
+        "collidingSolids": 0,
+        "health": 100,
+        "frozen": false,
+        "sim": 2.123899999976158
+      },
+      "movement": {
+        "beforeW": {
+          "x": -8,
+          "y": 0.55,
+          "z": 0
+        },
+        "afterW": {
+          "x": -5.853444211414596,
+          "y": 0.55,
+          "z": 2.75
+        },
+        "expectedForward": {
+          "x": 0.48977350323638946,
+          "z": 0.7158999446668743
+        },
+        "wDistance": 3.4885816248884742,
+        "wForwardDot": 3.0200509963017286,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 0.5129005256077491
+          },
+          {
+            "key": "A",
+            "distance": 0.8075735009273486
+          },
+          {
+            "key": "D",
+            "distance": 0.7703737354752831
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "collision": {
+        "solidCount": 14,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "relic-island",
+      "title": "Relic Island",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "enemySpeedRange": null,
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": 0,
+          "y": 1.1744689090810891,
+          "z": 0
+        },
+        "controller": "thirdperson",
+        "rotationY": 3.141592653589793,
+        "yaw": 0,
+        "pitch": 0,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": false,
+        "basis": {
+          "forward": {
+            "x": 1.1653357526340188e-16,
+            "y": -0.30743570693527145,
+            "z": -0.9515688551551117
+          },
+          "right": {
+            "x": 1,
+            "y": 0,
+            "z": 1.2246467991473532e-16
+          }
+        },
+        "solidCount": 4,
+        "collidingSolids": 0,
+        "health": 100,
+        "frozen": false,
+        "sim": 0.8999999999999999
+      },
+      "movement": {
+        "beforeW": {
+          "x": 0,
+          "y": 1.1744689090810891,
+          "z": 0
+        },
+        "afterW": {
+          "x": 4.655641046406361e-16,
+          "y": 1.310957678522896,
+          "z": -3.801619413571161
+        },
+        "expectedForward": {
+          "x": 1.1653357526340188e-16,
+          "z": -0.9515688551551117
+        },
+        "wDistance": 3.8040687887871947,
+        "wForwardDot": 3.6175026331073568,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 0.46261744895918844
+          },
+          {
+            "key": "A",
+            "distance": 0.6830646876813327
+          },
+          {
+            "key": "D",
+            "distance": 0.6400977261979129
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "collision": {
+        "solidCount": 4,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "npc-puzzle-adventure",
+      "title": "The Sanctum Key",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "enemySpeedRange": null,
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": 0,
+          "y": 0.79,
+          "z": -5
+        },
+        "controller": "thirdperson",
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": false,
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.5141637551782567,
+            "z": 0.8576920384735969
+          },
+          "right": {
+            "x": -0.9999999999999999,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "solidCount": 5,
+        "collidingSolids": 0,
+        "frozen": false,
+        "sim": 0.7268000000119209
+      },
+      "movement": {
+        "beforeW": {
+          "x": 0,
+          "y": 0.79,
+          "z": -5
+        },
+        "afterW": {
+          "x": 0,
+          "y": 0.79,
+          "z": -1.1983805864288395
+        },
+        "expectedForward": {
+          "x": 0,
+          "z": 0.8576920384735969
+        },
+        "wDistance": 3.8016194135711605,
+        "wForwardDot": 3.2606187043266486,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 0.4321862191683544
+          },
+          {
+            "key": "A",
+            "distance": 0.6459888358215309
+          },
+          {
+            "key": "D",
+            "distance": 0.6322663261598886
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "collision": {
+        "solidCount": 5,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "relic-runner-2",
+      "title": "Relic Runner 2",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "enemySpeedRange": [
+        3,
+        3
+      ],
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": -8,
+          "y": -0.19111882869149222,
+          "z": -8
+        },
+        "controller": "thirdperson",
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": false,
+        "basis": {
+          "forward": {
+            "x": -0.24292615028573644,
+            "y": -0.4669863306055235,
+            "z": 0.8502415260000775
+          },
+          "right": {
+            "x": -0.9615239476408232,
+            "y": 0,
+            "z": -0.27472112789737807
+          }
+        },
+        "solidCount": 9,
+        "collidingSolids": 0,
+        "health": 100,
+        "frozen": false,
+        "sim": 0.9999999999999999
+      },
+      "movement": {
+        "beforeW": {
+          "x": -8,
+          "y": -0.19111882869149222,
+          "z": -8
+        },
+        "afterW": {
+          "x": -8.567850788851592,
+          "y": -0.20558143678232166,
+          "z": -4.7749213046518575
+        },
+        "expectedForward": {
+          "x": -0.24292615028573644,
+          "z": 0.8502415260000775
+        },
+        "wDistance": 3.274720793689233,
+        "wForwardDot": 2.8800416374755793,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 0.21204872443157638
+          },
+          {
+            "key": "A",
+            "distance": 0.8798294725918436
+          },
+          {
+            "key": "D",
+            "distance": 0.7705288939638344
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "collision": {
+        "solidCount": 9,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "valley-run",
+      "title": "Valley Run",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "enemySpeedRange": [
+        2.5,
+        2.5
+      ],
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": 0,
+          "y": -1.9942011014227994,
+          "z": -17
+        },
+        "controller": "thirdperson",
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": false,
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.5143927102452409,
+            "z": 0.8575547444021027
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "solidCount": 0,
+        "collidingSolids": 0,
+        "health": 100,
+        "frozen": false,
+        "sim": 0.5
+      },
+      "movement": {
+        "beforeW": {
+          "x": 0,
+          "y": -1.9942011014227994,
+          "z": -17
+        },
+        "afterW": {
+          "x": 0,
+          "y": -1.996557750781378,
+          "z": -13.198380586428838
+        },
+        "expectedForward": {
+          "x": 0,
+          "z": 0.8575547444021027
+        },
+        "wDistance": 3.801620144022459,
+        "wForwardDot": 3.2600967645190893,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 0.43218673754120623
+          },
+          {
+            "key": "A",
+            "distance": 0.6459893674066914
+          },
+          {
+            "key": "D",
+            "distance": 0.6322786106090803
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "collision": {
+        "solidCount": 0,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "painted-wilds",
+      "title": "Painted Wilds",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "enemySpeedRange": null,
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": -13,
+          "y": -1.5942933068196634,
+          "z": 0
+        },
+        "controller": "thirdperson",
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": false,
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.5142270679462526,
+            "z": 0.8576540809623655
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "solidCount": 4,
+        "collidingSolids": 0,
+        "frozen": false,
+        "sim": 0.6
+      },
+      "movement": {
+        "beforeW": {
+          "x": -13,
+          "y": -1.5942933068196634,
+          "z": 0
+        },
+        "afterW": {
+          "x": -13,
+          "y": -1.6715627246749145,
+          "z": 3.801619413571161
+        },
+        "expectedForward": {
+          "x": 0,
+          "z": 0.8576540809623655
+        },
+        "wDistance": 3.802404598221608,
+        "wForwardDot": 3.260474404315061,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 0.4326208172556742
+          },
+          {
+            "key": "A",
+            "distance": 0.6461074682742391
+          },
+          {
+            "key": "D",
+            "distance": 0.6322868477956612
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "collision": {
+        "solidCount": 4,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "textured-adventure",
+      "title": "Textured Adventure",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "enemySpeedRange": null,
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": 0,
+          "y": 0.3557277948441615,
+          "z": 0
+        },
+        "controller": "thirdperson",
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": false,
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.5141416775688686,
+            "z": 0.857705273031867
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "solidCount": 4,
+        "collidingSolids": 0,
+        "health": 100,
+        "frozen": false,
+        "sim": 0.8999999999999999
+      },
+      "movement": {
+        "beforeW": {
+          "x": 0,
+          "y": 0.3557277948441615,
+          "z": 0
+        },
+        "afterW": {
+          "x": 0,
+          "y": 0.79,
+          "z": 3.801619413571161
+        },
+        "expectedForward": {
+          "x": 0,
+          "z": 0.857705273031867
+        },
+        "wDistance": 3.826343230005909,
+        "wForwardDot": 3.260669017080299,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 0.4321862191683548
+          },
+          {
+            "key": "A",
+            "distance": 0.6459888358215307
+          },
+          {
+            "key": "D",
+            "distance": 0.6322663261598891
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "collision": {
+        "solidCount": 4,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "temple-switch-puzzle",
+      "title": "Temple Switch Puzzle",
+      "controller": "thirdperson",
+      "moveSpeed": 6,
+      "acceleration": 28,
+      "enemySpeedRange": null,
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": 0,
+          "y": 0.4999050655186603,
+          "z": -10
+        },
+        "controller": "thirdperson",
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": false,
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.5141690795427061,
+            "z": 0.8576888466350757
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "solidCount": 3,
+        "collidingSolids": 0,
+        "frozen": false,
+        "sim": 0.7
+      },
+      "movement": {
+        "beforeW": {
+          "x": 0,
+          "y": 0.4999050655186603,
+          "z": -10
+        },
+        "afterW": {
+          "x": 0,
+          "y": 0.499539499064523,
+          "z": -6.477297732126201
+        },
+        "expectedForward": {
+          "x": 0,
+          "z": 0.8576888466350757
+        },
+        "wDistance": 3.522702286842026,
+        "wForwardDot": 3.0213824451714446,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 0.4056103723723634
+          },
+          {
+            "key": "A",
+            "distance": 0.590004166413642
+          },
+          {
+            "key": "D",
+            "distance": 0.5765021844114343
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "collision": {
+        "solidCount": 3,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "signal-relay",
+      "title": "Signal Relay",
+      "controller": "firstperson",
+      "moveSpeed": 6,
+      "acceleration": 40,
+      "enemySpeedRange": [
+        1.1,
+        3.2
+      ],
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": -30,
+          "y": 0.55,
+          "z": 0
+        },
+        "controller": "firstperson",
+        "rotationY": 2.9406,
+        "yaw": 2.9406,
+        "pitch": -0.0108,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": true,
+        "basis": {
+          "forward": {
+            "x": 0.19963045634744603,
+            "y": 0.01079979004922449,
+            "z": -0.9798117397915802
+          },
+          "right": {
+            "x": 0.9798688851895079,
+            "y": 0,
+            "z": 0.19964209936151
+          }
+        },
+        "solidCount": 26,
+        "collidingSolids": 0,
+        "health": 100,
+        "frozen": false,
+        "sim": 0.4
+      },
+      "look": {
+        "rightDelta": 0.14400000000000013,
+        "upDelta": -0.108,
+        "standardDirections": true
+      },
+      "movement": {
+        "beforeW": {
+          "x": -30,
+          "y": 0.55,
+          "z": 0
+        },
+        "afterW": {
+          "x": -29.777841146680696,
+          "y": 0.55,
+          "z": -3.8938047487716125
+        },
+        "expectedForward": {
+          "x": 0.05696180503298114,
+          "z": -0.9983763582774707
+        },
+        "wDistance": 3.900137174211249,
+        "wForwardDot": 3.900137174211249,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 3.0009600313110965
+          },
+          {
+            "key": "A",
+            "distance": 2.7176166003770748
+          },
+          {
+            "key": "D",
+            "distance": 2.4036989358950347
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "settings": {
+        "sensitivity": 0.0018,
+        "invertMouseY": true,
+        "invertDirectionWorks": true
+      },
+      "collision": {
+        "solidCount": 26,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "silent-sector",
+      "title": "Silent Sector",
+      "controller": "firstperson",
+      "moveSpeed": 5.5,
+      "acceleration": 40,
+      "enemySpeedRange": [
+        1,
+        3.4
+      ],
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": -29,
+          "y": 0.55,
+          "z": -5.5
+        },
+        "controller": "firstperson",
+        "rotationY": 2.411396326794897,
+        "yaw": 2.411396326794897,
+        "pitch": 0.036,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": true,
+        "basis": {
+          "forward": {
+            "x": 0.666583740215188,
+            "y": -0.0359922245038693,
+            "z": -0.7445607275810309
+          },
+          "right": {
+            "x": 0.7450434636065786,
+            "y": 0,
+            "z": 0.6670159198528269
+          }
+        },
+        "solidCount": 20,
+        "collidingSolids": 0,
+        "frozen": false,
+        "sim": 6.299999999999994
+      },
+      "look": {
+        "rightDelta": 0.14400000000000013,
+        "upDelta": -0.10800000000000001,
+        "standardDirections": true
+      },
+      "movement": {
+        "beforeW": {
+          "x": -29,
+          "y": 0.55,
+          "z": -5.5
+        },
+        "afterW": {
+          "x": -26.680029193151046,
+          "y": 0.55,
+          "z": -8.6
+        },
+        "expectedForward": {
+          "x": 0.5531963790466687,
+          "z": -0.8330508785240277
+        },
+        "wDistance": 3.8719845744309698,
+        "wForwardDot": 3.865857173267305,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 3.032233607919852
+          },
+          {
+            "key": "A",
+            "distance": 2.5524128390187037
+          },
+          {
+            "key": "D",
+            "distance": 2.338433086167922
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "settings": {
+        "sensitivity": 0.0018,
+        "invertMouseY": true,
+        "invertDirectionWorks": true
+      },
+      "collision": {
+        "solidCount": 20,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "iron-arena",
+      "title": "Iron Arena",
+      "controller": "firstperson",
+      "moveSpeed": 6,
+      "acceleration": 40,
+      "enemySpeedRange": [
+        3,
+        3
+      ],
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": -10
+        },
+        "controller": "firstperson",
+        "rotationY": 0.891,
+        "yaw": 0.891,
+        "pitch": 0.0126,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": true,
+        "basis": {
+          "forward": {
+            "x": 0.7776390378421943,
+            "y": -0.01259966660664658,
+            "z": 0.6285847398921388
+          },
+          "right": {
+            "x": -0.6286346402496947,
+            "y": 0,
+            "z": 0.7777007709126543
+          }
+        },
+        "solidCount": 11,
+        "collidingSolids": 0,
+        "health": 100,
+        "frozen": false,
+        "sim": 0.30000000000000004
+      },
+      "look": {
+        "rightDelta": 0.14399999999999993,
+        "upDelta": -0.108,
+        "standardDirections": true
+      },
+      "movement": {
+        "beforeW": {
+          "x": 0,
+          "y": 0.55,
+          "z": -10
+        },
+        "afterW": {
+          "x": 3.3535811411853658,
+          "y": 0.55,
+          "z": -8.008878831625166
+        },
+        "expectedForward": {
+          "x": 0.8598623564730346,
+          "z": 0.5105259326622303
+        },
+        "wDistance": 3.9001371742112485,
+        "wForwardDot": 3.9001371742112485,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 3.6004114599111974
+          },
+          {
+            "key": "A",
+            "distance": 2.792059281440239
+          },
+          {
+            "key": "D",
+            "distance": 2.403698817392136
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "settings": {
+        "sensitivity": 0.0018,
+        "invertMouseY": true,
+        "invertDirectionWorks": true
+      },
+      "collision": {
+        "solidCount": 11,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "opus-arena",
+      "title": "Opus Arena",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "enemySpeedRange": null,
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 0
+        },
+        "controller": "thirdperson",
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": false,
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.514392710245241,
+            "z": 0.8575547444021027
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "solidCount": 11,
+        "collidingSolids": 0,
+        "health": 180,
+        "frozen": false,
+        "sim": 0.5
+      },
+      "movement": {
+        "beforeW": {
+          "x": 0,
+          "y": 0.55,
+          "z": 0
+        },
+        "afterW": {
+          "x": 0,
+          "y": 0.55,
+          "z": 3.801619413571161
+        },
+        "expectedForward": {
+          "x": 0,
+          "z": 0.8575547444021027
+        },
+        "wDistance": 3.801619413571161,
+        "wForwardDot": 3.2600967645190884,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 0.43218621916835487
+          },
+          {
+            "key": "A",
+            "distance": 0.6459888358215308
+          },
+          {
+            "key": "D",
+            "distance": 0.6322663261598888
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "collision": {
+        "solidCount": 11,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "power-station",
+      "title": "Power Station",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "enemySpeedRange": null,
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": 0,
+          "y": 0.9500000000000001,
+          "z": 0
+        },
+        "controller": "thirdperson",
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": false,
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.5162143456426218,
+            "z": 0.8564594265654153
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "solidCount": 6,
+        "collidingSolids": 0,
+        "frozen": false,
+        "sim": 0.30000000000000004
+      },
+      "movement": {
+        "beforeW": {
+          "x": 0,
+          "y": 0.9500000000000001,
+          "z": 0
+        },
+        "afterW": {
+          "x": 0,
+          "y": 0.75,
+          "z": 4.4470258380767795
+        },
+        "expectedForward": {
+          "x": 0,
+          "z": 0.8564594265654153
+        },
+        "wDistance": 4.451520954069799,
+        "wForwardDot": 3.808697199200824,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 0.4764833746774521
+          },
+          {
+            "key": "A",
+            "distance": 0.6459903249032669
+          },
+          {
+            "key": "D",
+            "distance": 0.7481714837347131
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "collision": {
+        "solidCount": 6,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "assembly-line",
+      "title": "Assembly Line",
+      "controller": "firstperson",
+      "moveSpeed": 6,
+      "acceleration": 40,
+      "enemySpeedRange": null,
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": 0,
+          "y": 0.8500000000000001,
+          "z": -5
+        },
+        "controller": "firstperson",
+        "rotationY": 0.891,
+        "yaw": 0.891,
+        "pitch": 0.0126,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": true,
+        "basis": {
+          "forward": {
+            "x": 0.7776390378421943,
+            "y": -0.01259966660664658,
+            "z": 0.6285847398921388
+          },
+          "right": {
+            "x": -0.6286346402496947,
+            "y": 0,
+            "z": 0.7777007709126543
+          }
+        },
+        "solidCount": 7,
+        "collidingSolids": 0,
+        "frozen": false,
+        "sim": 0.4
+      },
+      "look": {
+        "rightDelta": 0.14399999999999993,
+        "upDelta": -0.108,
+        "standardDirections": true
+      },
+      "movement": {
+        "beforeW": {
+          "x": 0,
+          "y": 0.8500000000000001,
+          "z": -5
+        },
+        "afterW": {
+          "x": 3.3535811411853658,
+          "y": 0.8500000000000001,
+          "z": -3.008878831625167
+        },
+        "expectedForward": {
+          "x": 0.8598623564730346,
+          "z": 0.5105259326622303
+        },
+        "wDistance": 3.9001371742112485,
+        "wForwardDot": 3.900137174211248,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 3.000960031311096
+          },
+          {
+            "key": "A",
+            "distance": 2.7176166003770783
+          },
+          {
+            "key": "D",
+            "distance": 2.4036989358950303
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "settings": {
+        "sensitivity": 0.0018,
+        "invertMouseY": true,
+        "invertDirectionWorks": true
+      },
+      "collision": {
+        "solidCount": 7,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "blacksite",
+      "title": "Blacksite",
+      "controller": "firstperson",
+      "moveSpeed": 6,
+      "acceleration": 40,
+      "enemySpeedRange": null,
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": -2
+        },
+        "controller": "firstperson",
+        "rotationY": 0.891,
+        "yaw": 0.891,
+        "pitch": 0.0126,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": true,
+        "basis": {
+          "forward": {
+            "x": 0.7776390378421941,
+            "y": -0.012599666606646576,
+            "z": 0.6285847398921389
+          },
+          "right": {
+            "x": -0.6286346402496951,
+            "y": 0,
+            "z": 0.7777007709126542
+          }
+        },
+        "solidCount": 8,
+        "collidingSolids": 0,
+        "frozen": false,
+        "sim": 0.519800000011921
+      },
+      "look": {
+        "rightDelta": 0.14399999999999993,
+        "upDelta": -0.108,
+        "standardDirections": true
+      },
+      "movement": {
+        "beforeW": {
+          "x": 0,
+          "y": 0.55,
+          "z": -2
+        },
+        "afterW": {
+          "x": 3.3535811411853658,
+          "y": 0.55,
+          "z": -0.008878831625166783
+        },
+        "expectedForward": {
+          "x": 0.8598623564730346,
+          "z": 0.5105259326622303
+        },
+        "wDistance": 3.9001371742112485,
+        "wForwardDot": 3.900137174211248,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 3.000960031311095
+          },
+          {
+            "key": "A",
+            "distance": 2.717616600377078
+          },
+          {
+            "key": "D",
+            "distance": 2.40369893589503
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "settings": {
+        "sensitivity": 0.0018,
+        "invertMouseY": true,
+        "invertDirectionWorks": true
+      },
+      "collision": {
+        "solidCount": 8,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "shifting-facility",
+      "title": "Shifting Facility",
+      "controller": "firstperson",
+      "moveSpeed": 6,
+      "acceleration": 40,
+      "enemySpeedRange": null,
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": -16
+        },
+        "controller": "firstperson",
+        "rotationY": 0.891,
+        "yaw": 0.891,
+        "pitch": 0.0126,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": true,
+        "basis": {
+          "forward": {
+            "x": 0.7776390378421943,
+            "y": -0.01259966660664658,
+            "z": 0.6285847398921388
+          },
+          "right": {
+            "x": -0.6286346402496947,
+            "y": 0,
+            "z": 0.7777007709126543
+          }
+        },
+        "solidCount": 9,
+        "collidingSolids": 0,
+        "frozen": false,
+        "sim": 0.8469999999999999
+      },
+      "look": {
+        "rightDelta": 0.14399999999999993,
+        "upDelta": -0.108,
+        "standardDirections": true
+      },
+      "movement": {
+        "beforeW": {
+          "x": 0,
+          "y": 0.55,
+          "z": -16
+        },
+        "afterW": {
+          "x": 3.3535811411853658,
+          "y": 0.55,
+          "z": -14.008878831625166
+        },
+        "expectedForward": {
+          "x": 0.8598623564730346,
+          "z": 0.5105259326622303
+        },
+        "wDistance": 3.9001371742112485,
+        "wForwardDot": 3.9001371742112485,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 3.0009600313110947
+          },
+          {
+            "key": "A",
+            "distance": 2.717616600377078
+          },
+          {
+            "key": "D",
+            "distance": 2.403698935895029
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "settings": {
+        "sensitivity": 0.0018,
+        "invertMouseY": true,
+        "invertDirectionWorks": true
+      },
+      "collision": {
+        "solidCount": 9,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "signal-zero",
+      "title": "Signal Zero",
+      "controller": "thirdperson",
+      "moveSpeed": 6,
+      "acceleration": 28,
+      "enemySpeedRange": [
+        2.5,
+        2.5
+      ],
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": -8
+        },
+        "controller": "thirdperson",
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": false,
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.5668896557989579,
+            "z": 0.8237937351959765
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "solidCount": 3,
+        "collidingSolids": 0,
+        "health": 100,
+        "frozen": false,
+        "sim": 1.9000000000000006
+      },
+      "movement": {
+        "beforeW": {
+          "x": 0,
+          "y": 0.55,
+          "z": -8
+        },
+        "afterW": {
+          "x": 0,
+          "y": 0.55,
+          "z": -4.477297732126201
+        },
+        "expectedForward": {
+          "x": 0,
+          "z": 0.8237937351959765
+        },
+        "wDistance": 3.5227022678737994,
+        "wForwardDot": 2.9019800592350946,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 0.15681450703361333
+          },
+          {
+            "key": "A",
+            "distance": 0.7460757825016393
+          },
+          {
+            "key": "D",
+            "distance": 0.7069042106859829
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "collision": {
+        "solidCount": 3,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "dungeon-descent",
+      "title": "Dungeon Descent",
+      "controller": "topdown",
+      "moveSpeed": 6,
+      "acceleration": 24,
+      "enemySpeedRange": null,
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": -10,
+          "y": 1.15,
+          "z": 0
+        },
+        "controller": "topdown",
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": false,
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.921027342209249,
+            "z": 0.3894979266991892
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "solidCount": 15,
+        "collidingSolids": 0,
+        "frozen": false,
+        "sim": 0.6
+      },
+      "movement": {
+        "beforeW": {
+          "x": -10,
+          "y": 1.15,
+          "z": 0
+        },
+        "afterW": {
+          "x": -10,
+          "y": 1.15,
+          "z": -3.3251942400000005
+        },
+        "expectedForward": {
+          "x": 0,
+          "z": -1
+        },
+        "wDistance": 3.3251942400000005,
+        "wForwardDot": 3.3251942400000005,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 1.9079995775385603
+          },
+          {
+            "key": "A",
+            "distance": 2.297132623106255
+          },
+          {
+            "key": "D",
+            "distance": 1.4057321468680732
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "collision": {
+        "solidCount": 15,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "sentinel-maze",
+      "title": "Sentinel Maze",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 30,
+      "enemySpeedRange": [
+        3.5,
+        3.5
+      ],
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": -8,
+          "y": 0.5003414976354006,
+          "z": -8
+        },
+        "controller": "thirdperson",
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": false,
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.5142270679462526,
+            "z": 0.8576540809623655
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "solidCount": 8,
+        "collidingSolids": 0,
+        "health": 100,
+        "frozen": false,
+        "sim": 0.6
+      },
+      "movement": {
+        "beforeW": {
+          "x": -8,
+          "y": 0.5003414976354006,
+          "z": -8
+        },
+        "afterW": {
+          "x": -8,
+          "y": 0.5003548845645245,
+          "z": -4.839849660510702
+        },
+        "expectedForward": {
+          "x": 0,
+          "z": 0.8576540809623655
+        },
+        "wDistance": 3.1601503395176525,
+        "wForwardDot": 2.710315835117601,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 0.43145066511884766
+          },
+          {
+            "key": "A",
+            "distance": 0.6459867265941236
+          },
+          {
+            "key": "D",
+            "distance": 0.6322665469555047
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "collision": {
+        "solidCount": 8,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "survival-arena",
+      "title": "Survival Arena",
+      "controller": "hovercraft",
+      "moveSpeed": 6,
+      "acceleration": 28,
+      "enemySpeedRange": [
+        1.65,
+        1.65
+      ],
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": 0,
+          "y": -0.2505871526561789,
+          "z": 0
+        },
+        "controller": "hovercraft",
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": false,
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.48478886319303116,
+            "z": 0.8746312126399379
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "solidCount": 4,
+        "collidingSolids": 0,
+        "health": 3,
+        "frozen": false,
+        "sim": 0.5
+      },
+      "movement": {
+        "beforeW": {
+          "x": 0,
+          "y": -0.2505871526561789,
+          "z": 0
+        },
+        "afterW": {
+          "x": 0,
+          "y": 0.7966830914326108,
+          "z": 4.068987571488849
+        },
+        "expectedForward": {
+          "x": 0,
+          "z": 1
+        },
+        "wDistance": 4.201599079051275,
+        "wForwardDot": 4.068987571488849,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 0.6061544182013142
+          },
+          {
+            "key": "A",
+            "distance": 1.6874491931265394
+          },
+          {
+            "key": "D",
+            "distance": 1.2391934781721674
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "collision": {
+        "solidCount": 4,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "survival-arena-2",
+      "title": "Survival Arena 2",
+      "controller": "hovercraft",
+      "moveSpeed": 11,
+      "acceleration": 10,
+      "enemySpeedRange": null,
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": 0,
+          "y": 1.7280580431016652,
+          "z": 0
+        },
+        "controller": "hovercraft",
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": false,
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.4846385673593989,
+            "z": 0.8747145014390864
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "solidCount": 8,
+        "collidingSolids": 0,
+        "health": 100,
+        "frozen": false,
+        "sim": 0.6
+      },
+      "movement": {
+        "beforeW": {
+          "x": 0,
+          "y": 1.7280580431016652,
+          "z": 0
+        },
+        "afterW": {
+          "x": 0,
+          "y": 1.19634386906648,
+          "z": 2.6974651250672466
+        },
+        "expectedForward": {
+          "x": 0,
+          "z": 1
+        },
+        "wDistance": 2.749370485006336,
+        "wForwardDot": 2.6974651250672466,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 1.6150317729052375
+          },
+          {
+            "key": "A",
+            "distance": 0.38329233724543416
+          },
+          {
+            "key": "D",
+            "distance": 0.25314580209087684
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "collision": {
+        "solidCount": 8,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "survival-arena-3",
+      "title": "Survival Arena 3",
+      "controller": "hovercraft",
+      "moveSpeed": 11,
+      "acceleration": 10,
+      "enemySpeedRange": null,
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": -1.225,
+          "y": 1.0146317449553197,
+          "z": 0
+        },
+        "controller": "hovercraft",
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": false,
+        "basis": {
+          "forward": {
+            "x": -0.0422877390415229,
+            "y": -0.4842050453056279,
+            "z": 0.873932046115332
+          },
+          "right": {
+            "x": -0.9988313572092611,
+            "y": 0,
+            "z": -0.04833135478657253
+          }
+        },
+        "solidCount": 9,
+        "collidingSolids": 0,
+        "health": 100,
+        "frozen": false,
+        "sim": 0.6
+      },
+      "movement": {
+        "beforeW": {
+          "x": -1.225,
+          "y": 1.0146317449553197,
+          "z": 0
+        },
+        "afterW": {
+          "x": -1.225,
+          "y": 0.7791741024521183,
+          "z": 2.6974651250672466
+        },
+        "expectedForward": {
+          "x": 0,
+          "z": 1
+        },
+        "wDistance": 2.7077219950296265,
+        "wForwardDot": 2.6974651250672466,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 1.5461669927394024
+          },
+          {
+            "key": "A",
+            "distance": 0.47572210732825415
+          },
+          {
+            "key": "D",
+            "distance": 0.3026775249600567
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "collision": {
+        "solidCount": 9,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    },
+    {
+      "id": "skyway-trial",
+      "title": "Skyway Trial",
+      "controller": "thirdperson",
+      "moveSpeed": 6.5,
+      "acceleration": 60,
+      "enemySpeedRange": null,
+      "errors": [],
+      "initial": {
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 1
+        },
+        "controller": "thirdperson",
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "paused": false,
+        "ended": false,
+        "pointerLocked": false,
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.5141487819354841,
+            "z": 0.8577010143600498
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "solidCount": 6,
+        "collidingSolids": 0,
+        "frozen": false,
+        "sim": 0.7999999999999999
+      },
+      "movement": {
+        "beforeW": {
+          "x": 0,
+          "y": 0.55,
+          "z": 1
+        },
+        "afterW": {
+          "x": 0,
+          "y": 0.55,
+          "z": 5.3
+        },
+        "expectedForward": {
+          "x": 0,
+          "z": 0.8577010143600498
+        },
+        "wDistance": 4.3,
+        "wForwardDot": 3.6881143617482137,
+        "correctForward": true,
+        "otherDirections": [
+          {
+            "key": "S",
+            "distance": 0.041605514873606864
+          },
+          {
+            "key": "A",
+            "distance": 0.7684450445370264
+          },
+          {
+            "key": "D",
+            "distance": 0.5785937654976947
+          }
+        ],
+        "responsive": true,
+        "forwardVerifiedOrBlocked": true
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true,
+        "resumed": true,
+        "pointerReacquired": true
+      },
+      "collision": {
+        "solidCount": 6,
+        "noResidualPenetration": true,
+        "residualOverlaps": 0
+      },
+      "pass": true
+    }
+  ]
+}

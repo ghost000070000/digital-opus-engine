@@ -1,0 +1,59 @@
+{
+  "phase": 35,
+  "exports": {
+    "editable": {
+      "path": "qualification\\phase-035\\phase-035-editable-game.html",
+      "bytes": 1806985,
+      "autoSets": 3,
+      "autoCells": 44
+    },
+    "playable": {
+      "path": "qualification\\phase-035\\phase-035-playable-game.html",
+      "bytes": 1800831,
+      "autoSets": 0,
+      "autoCells": 0,
+      "policy": "authoring Sets/Rules and cell membership stripped; resolved Tile IDs retained"
+    },
+    "visualParity": true
+  },
+  "editableBoot": {
+    "state": {
+      "tilesetVersion": 3,
+      "tilemapVersion": 3,
+      "autoSets": 3,
+      "cellKeys": [
+        "autoTileSetId",
+        "tileId",
+        "x",
+        "y"
+      ],
+      "autoCells": 44,
+      "cells": 44,
+      "chromeVisible": true
+    },
+    "pageErrors": [],
+    "consoleErrors": [],
+    "externalRequests": []
+  },
+  "playableBoot": {
+    "state": {
+      "tilesetVersion": 3,
+      "tilemapVersion": 3,
+      "autoSets": 0,
+      "cellKeys": [
+        "tileId",
+        "x",
+        "y"
+      ],
+      "autoCells": 0,
+      "cells": 44,
+      "chromeVisible": false
+    },
+    "pageErrors": [],
+    "consoleErrors": [],
+    "externalRequests": []
+  },
+  "network": [],
+  "pageErrors": [],
+  "consoleErrors": []
+}

@@ -1,13 +1,94 @@
 {
-  "generatedAt": "2026-09-08T01:15:26.471Z",
+  "generatedAt": "2026-09-20T21:57:09.368Z",
   "method": "Static source references checked in their separate mesh/texture/audio/prefab namespaces; runtime behavior/graph types read from current editor registries. Text findings are reviewed, not automatically failures.",
   "games": [
     {
-      "id": "foglight",
-      "sha256": "7ed5fd0c3c4987973afd5858b3f2fad5888c327b9f8e384f507aece84394e878",
+      "id": "forest-range",
+      "sha256": "8ec5cf3010fe88ed0fabd3009e0fdb04e9cbd9a245ed81f902740ab94aa6e3dc",
       "referenceCount": {
-        "mesh": 117,
-        "texture": 151,
+        "mesh": 518,
+        "texture": 547,
+        "audio": 3,
+        "prefab": 3
+      },
+      "missingReferences": [],
+      "unsupportedActions": [],
+      "unsupportedGraphTypes": [],
+      "unsupportedAiConditions": [],
+      "copyFindings": [],
+      "identity": []
+    },
+    {
+      "id": "arsenal-run",
+      "sha256": "0ed910ba9c8438594c46e48edc6f8512e621a4833d2eede5ed37ebc7aed8b2d1",
+      "referenceCount": {
+        "mesh": 81,
+        "texture": 109,
+        "audio": 13,
+        "prefab": 3
+      },
+      "missingReferences": [],
+      "unsupportedActions": [],
+      "unsupportedGraphTypes": [],
+      "unsupportedAiConditions": [],
+      "copyFindings": [],
+      "identity": []
+    },
+    {
+      "id": "power-grid",
+      "sha256": "8a6da71d1788c0062708f97a9ab0b5aecdf7ceaebf82724081d266ad85f757e0",
+      "referenceCount": {
+        "mesh": 73,
+        "texture": 97,
+        "audio": 17,
+        "prefab": 0
+      },
+      "missingReferences": [
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.109.textureAssetId",
+          "value": "showcase-floor-panel"
+        }
+      ],
+      "unsupportedActions": [],
+      "unsupportedGraphTypes": [],
+      "unsupportedAiConditions": [],
+      "copyFindings": [],
+      "identity": []
+    },
+    {
+      "id": "moving-temple",
+      "sha256": "84db498b28a8e500e122e6e4c581b7fb55cd400e0bcbe3185fc43a47c2ee4f66",
+      "referenceCount": {
+        "mesh": 48,
+        "texture": 74,
+        "audio": 4,
+        "prefab": 0
+      },
+      "missingReferences": [
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.52.textureAssetId",
+          "value": "showcase-worn-stone"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.53.textureAssetId",
+          "value": "showcase-clean-stone"
+        }
+      ],
+      "unsupportedActions": [],
+      "unsupportedGraphTypes": [],
+      "unsupportedAiConditions": [],
+      "copyFindings": [],
+      "identity": []
+    },
+    {
+      "id": "foglight",
+      "sha256": "ed9def71ec0354fef1a510dffd7a0cac913a419dfa7416e02a52d3960bb17bdb",
+      "referenceCount": {
+        "mesh": 170,
+        "texture": 224,
         "audio": 8,
         "prefab": 4
       },
@@ -19,12 +100,273 @@
       "identity": []
     },
     {
-      "id": "signal-relay",
-      "sha256": "e5416b1cc0463edbd07fe8bb9ac26394962fc77f1ac9ba14629ded51686abb6a",
+      "id": "relic-frontier",
+      "sha256": "f8d73d1861b7d9edd5fc903026d90f29646c30f9c2092e8c571f7bd19bfef511",
       "referenceCount": {
-        "mesh": 71,
-        "texture": 89,
-        "audio": 16,
+        "mesh": 45,
+        "texture": 72,
+        "audio": 12,
+        "prefab": 0
+      },
+      "missingReferences": [
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.53.textureAssetId",
+          "value": "showcase-worn-stone"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.54.textureAssetId",
+          "value": "showcase-worn-stone"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.55.textureAssetId",
+          "value": "showcase-worn-stone"
+        }
+      ],
+      "unsupportedActions": [],
+      "unsupportedGraphTypes": [],
+      "unsupportedAiConditions": [],
+      "copyFindings": [],
+      "identity": []
+    },
+    {
+      "id": "relic-island",
+      "sha256": "20ba8b2cdd31f5ee1d8c2f6fb60c300b6a85934d5fb69200b9d627dfdd884898",
+      "referenceCount": {
+        "mesh": 44,
+        "texture": 68,
+        "audio": 8,
+        "prefab": 0
+      },
+      "missingReferences": [
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.45.textureAssetId",
+          "value": "showcase-moss-stone"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.48.textureAssetId",
+          "value": "showcase-moss-stone"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.51.textureAssetId",
+          "value": "showcase-moss-stone"
+        }
+      ],
+      "unsupportedActions": [],
+      "unsupportedGraphTypes": [],
+      "unsupportedAiConditions": [],
+      "copyFindings": [],
+      "identity": []
+    },
+    {
+      "id": "npc-puzzle-adventure",
+      "sha256": "e06562bdb1db003278e22b4bd3b99bb2356e8ba14005f7bc988158f4df5c5bc3",
+      "referenceCount": {
+        "mesh": 32,
+        "texture": 54,
+        "audio": 3,
+        "prefab": 0
+      },
+      "missingReferences": [
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.23.textureAssetId",
+          "value": "showcase-floor-panel"
+        }
+      ],
+      "unsupportedActions": [],
+      "unsupportedGraphTypes": [],
+      "unsupportedAiConditions": [],
+      "copyFindings": [],
+      "identity": []
+    },
+    {
+      "id": "relic-runner-2",
+      "sha256": "74df57dab31bb4694398bd7b5b3fb4b3c09a3769b69c2c11786ce9cde29992b9",
+      "referenceCount": {
+        "mesh": 26,
+        "texture": 52,
+        "audio": 3,
+        "prefab": 0
+      },
+      "missingReferences": [
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.32.textureAssetId",
+          "value": "showcase-worn-stone"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.34.textureAssetId",
+          "value": "showcase-worn-stone"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.36.textureAssetId",
+          "value": "showcase-worn-stone"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.38.textureAssetId",
+          "value": "showcase-worn-stone"
+        }
+      ],
+      "unsupportedActions": [],
+      "unsupportedGraphTypes": [],
+      "unsupportedAiConditions": [],
+      "copyFindings": [],
+      "identity": []
+    },
+    {
+      "id": "valley-run",
+      "sha256": "920e20748772b77a8a3ae8ba30ded8d2406d960520a9c0632433ab11dda54fd2",
+      "referenceCount": {
+        "mesh": 40,
+        "texture": 61,
+        "audio": 3,
+        "prefab": 0
+      },
+      "missingReferences": [
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.51.textureAssetId",
+          "value": "showcase-dirt-path"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.53.textureAssetId",
+          "value": "showcase-dirt-path"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.55.textureAssetId",
+          "value": "showcase-dirt-path"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.57.textureAssetId",
+          "value": "showcase-dirt-path"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.59.textureAssetId",
+          "value": "showcase-dirt-path"
+        }
+      ],
+      "unsupportedActions": [],
+      "unsupportedGraphTypes": [],
+      "unsupportedAiConditions": [],
+      "copyFindings": [],
+      "identity": []
+    },
+    {
+      "id": "painted-wilds",
+      "sha256": "c5bedeedf579414630d43111b54bff30bfe8ebfe23f289a28e57c408d63122e3",
+      "referenceCount": {
+        "mesh": 27,
+        "texture": 47,
+        "audio": 4,
+        "prefab": 0
+      },
+      "missingReferences": [
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.31.textureAssetId",
+          "value": "showcase-grass"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.34.textureAssetId",
+          "value": "showcase-dirt-path"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.37.textureAssetId",
+          "value": "showcase-foliage"
+        }
+      ],
+      "unsupportedActions": [],
+      "unsupportedGraphTypes": [],
+      "unsupportedAiConditions": [],
+      "copyFindings": [],
+      "identity": []
+    },
+    {
+      "id": "textured-adventure",
+      "sha256": "d93b0d421e72179db7d91a229eb2473622c9fbbb23b30c46b069fa2abad7bc9e",
+      "referenceCount": {
+        "mesh": 24,
+        "texture": 44,
+        "audio": 4,
+        "prefab": 0
+      },
+      "missingReferences": [
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.26.textureAssetId",
+          "value": "showcase-grass"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.28.textureAssetId",
+          "value": "showcase-dirt-path"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.30.textureAssetId",
+          "value": "showcase-moss-stone"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.32.textureAssetId",
+          "value": "showcase-clean-stone"
+        }
+      ],
+      "unsupportedActions": [],
+      "unsupportedGraphTypes": [],
+      "unsupportedAiConditions": [],
+      "copyFindings": [],
+      "identity": []
+    },
+    {
+      "id": "temple-switch-puzzle",
+      "sha256": "d4c8e313beb90b5b68cadc4f097d8816649c358fb7fc8731b1c881c87347070c",
+      "referenceCount": {
+        "mesh": 27,
+        "texture": 46,
+        "audio": 1,
+        "prefab": 0
+      },
+      "missingReferences": [
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.29.textureAssetId",
+          "value": "showcase-worn-stone"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.30.textureAssetId",
+          "value": "showcase-clean-stone"
+        }
+      ],
+      "unsupportedActions": [],
+      "unsupportedGraphTypes": [],
+      "unsupportedAiConditions": [],
+      "copyFindings": [],
+      "identity": []
+    },
+    {
+      "id": "signal-relay",
+      "sha256": "cd30a5795c13f16a39f8fc157ad82417e811c1e56a088736601caeb5a53f1703",
+      "referenceCount": {
+        "mesh": 108,
+        "texture": 142,
+        "audio": 29,
         "prefab": 5
       },
       "missingReferences": [],
@@ -35,93 +377,13 @@
       "identity": []
     },
     {
-      "id": "arsenal-run",
-      "sha256": "55d27c9fa80004ecee35756fc8b73002f25ad0a21d70f0042e85ce25e0b1ddf9",
-      "referenceCount": {
-        "mesh": 45,
-        "texture": 60,
-        "audio": 13,
-        "prefab": 3
-      },
-      "missingReferences": [],
-      "unsupportedActions": [],
-      "unsupportedGraphTypes": [],
-      "unsupportedAiConditions": [],
-      "copyFindings": [],
-      "identity": []
-    },
-    {
       "id": "silent-sector",
-      "sha256": "a3e82a1c41e870809674d478186aa05c277cd69e5edb7dbcbb652ef92e108d5d",
+      "sha256": "258c05cee450a79d9d58699461611fbbfb762b93d29d48e34100adac6927bf0a",
       "referenceCount": {
-        "mesh": 60,
-        "texture": 76,
+        "mesh": 86,
+        "texture": 115,
         "audio": 13,
         "prefab": 0
-      },
-      "missingReferences": [],
-      "unsupportedActions": [],
-      "unsupportedGraphTypes": [],
-      "unsupportedAiConditions": [],
-      "copyFindings": [],
-      "identity": []
-    },
-    {
-      "id": "power-grid",
-      "sha256": "1a3a58299998eb8e7d1a97c538e0f5b55298ce92bd3ba63b238c180997fb0e9b",
-      "referenceCount": {
-        "mesh": 37,
-        "texture": 50,
-        "audio": 13,
-        "prefab": 0
-      },
-      "missingReferences": [],
-      "unsupportedActions": [],
-      "unsupportedGraphTypes": [],
-      "unsupportedAiConditions": [],
-      "copyFindings": [],
-      "identity": []
-    },
-    {
-      "id": "relic-frontier",
-      "sha256": "1cc44d6160bb1e477bd97a0b52068d56d22cb1bf3ad44186c6e4a4a6d3c01c1c",
-      "referenceCount": {
-        "mesh": 38,
-        "texture": 58,
-        "audio": 12,
-        "prefab": 0
-      },
-      "missingReferences": [],
-      "unsupportedActions": [],
-      "unsupportedGraphTypes": [],
-      "unsupportedAiConditions": [],
-      "copyFindings": [],
-      "identity": []
-    },
-    {
-      "id": "relic-island",
-      "sha256": "7f65cf1ede1b8c82c909cbd15224c1efd5b133f573e3dfc6a0dd2c29e7ee594f",
-      "referenceCount": {
-        "mesh": 35,
-        "texture": 50,
-        "audio": 8,
-        "prefab": 0
-      },
-      "missingReferences": [],
-      "unsupportedActions": [],
-      "unsupportedGraphTypes": [],
-      "unsupportedAiConditions": [],
-      "copyFindings": [],
-      "identity": []
-    },
-    {
-      "id": "forest-range",
-      "sha256": "b5b9e07b439afa9961e03f12cc15d2add9794d3fb8a1b58490ced579541725b6",
-      "referenceCount": {
-        "mesh": 497,
-        "texture": 517,
-        "audio": 3,
-        "prefab": 3
       },
       "missingReferences": [],
       "unsupportedActions": [],
@@ -132,46 +394,20 @@
     },
     {
       "id": "iron-arena",
-      "sha256": "e6b6cdb82c8f1968d00bead4512a73616fe4ee11e9ce2530b9cc6c89328fddfb",
+      "sha256": "44d7212ef00b9595723c6897059425a1f790d6541745c705f7120bcee9264bda",
       "referenceCount": {
-        "mesh": 19,
-        "texture": 34,
+        "mesh": 25,
+        "texture": 44,
         "audio": 1,
         "prefab": 0
       },
-      "missingReferences": [],
-      "unsupportedActions": [],
-      "unsupportedGraphTypes": [],
-      "unsupportedAiConditions": [],
-      "copyFindings": [],
-      "identity": []
-    },
-    {
-      "id": "dungeon-descent",
-      "sha256": "53697b9cd910fc60ef512022d577fe8d83444c721700a36d80b15dbfa0878fc6",
-      "referenceCount": {
-        "mesh": 14,
-        "texture": 35,
-        "audio": 4,
-        "prefab": 0
-      },
-      "missingReferences": [],
-      "unsupportedActions": [],
-      "unsupportedGraphTypes": [],
-      "unsupportedAiConditions": [],
-      "copyFindings": [],
-      "identity": []
-    },
-    {
-      "id": "npc-puzzle-adventure",
-      "sha256": "9eb76e7121b099d2e4b9ff8d9a312818b253fd717323346b4eb729b842ed6059",
-      "referenceCount": {
-        "mesh": 26,
-        "texture": 43,
-        "audio": 3,
-        "prefab": 0
-      },
-      "missingReferences": [],
+      "missingReferences": [
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.41.textureAssetId",
+          "value": "showcase-floor-panel"
+        }
+      ],
       "unsupportedActions": [],
       "unsupportedGraphTypes": [],
       "unsupportedAiConditions": [],
@@ -180,14 +416,25 @@
     },
     {
       "id": "opus-arena",
-      "sha256": "d2ed1367ff51bf40eaa5de531730433182563f62e449dfa1f8167c6c82250099",
+      "sha256": "5be8d39047e6f75c9972f69b27e67081a9e465a56888ec265605322b6363ea4d",
       "referenceCount": {
-        "mesh": 20,
-        "texture": 31,
+        "mesh": 29,
+        "texture": 45,
         "audio": 1,
         "prefab": 3
       },
-      "missingReferences": [],
+      "missingReferences": [
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.31.textureAssetId",
+          "value": "showcase-floor-panel"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.32.textureAssetId",
+          "value": "showcase-floor-panel"
+        }
+      ],
       "unsupportedActions": [],
       "unsupportedGraphTypes": [],
       "unsupportedAiConditions": [],
@@ -196,14 +443,20 @@
     },
     {
       "id": "power-station",
-      "sha256": "4d1ec46b3b42825fe6ad4ed46fc35ba701f20162f3e106a892e29aaf0c0ee62a",
+      "sha256": "264c4a648d595e09dd245a2836e32bb64e4542783c28b076cd21c722ce12caf6",
       "referenceCount": {
-        "mesh": 20,
-        "texture": 31,
+        "mesh": 29,
+        "texture": 45,
         "audio": 4,
         "prefab": 0
       },
-      "missingReferences": [],
+      "missingReferences": [
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.29.textureAssetId",
+          "value": "showcase-floor-panel"
+        }
+      ],
       "unsupportedActions": [],
       "unsupportedGraphTypes": [],
       "unsupportedAiConditions": [],
@@ -211,15 +464,139 @@
       "identity": []
     },
     {
-      "id": "relic-runner-2",
-      "sha256": "303ef0fcafedf2b3e463100bfc002bd25beeb7a157e6831ee9513af17427d6d6",
+      "id": "assembly-line",
+      "sha256": "432d56ed9bbe85709ea3af5eca0164cff4bf2ef026f0152958f766d2de05a298",
       "referenceCount": {
-        "mesh": 19,
-        "texture": 37,
-        "audio": 3,
+        "mesh": 33,
+        "texture": 52,
+        "audio": 2,
+        "prefab": 3
+      },
+      "missingReferences": [
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.38.textureAssetId",
+          "value": "showcase-floor-panel"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.42.textureAssetId",
+          "value": "showcase-floor-panel"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.46.textureAssetId",
+          "value": "showcase-floor-panel"
+        }
+      ],
+      "unsupportedActions": [],
+      "unsupportedGraphTypes": [],
+      "unsupportedAiConditions": [],
+      "copyFindings": [],
+      "identity": []
+    },
+    {
+      "id": "blacksite",
+      "sha256": "cb34e95a363d62b3d4394e6615df8c57c5b2317b47fe67be3cce5de03e73d356",
+      "referenceCount": {
+        "mesh": 34,
+        "texture": 66,
+        "audio": 5,
+        "prefab": 3
+      },
+      "missingReferences": [
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.41.textureAssetId",
+          "value": "showcase-floor-panel"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.1.objects.29.textureAssetId",
+          "value": "showcase-terminal-surface"
+        }
+      ],
+      "unsupportedActions": [],
+      "unsupportedGraphTypes": [],
+      "unsupportedAiConditions": [],
+      "copyFindings": [],
+      "identity": []
+    },
+    {
+      "id": "shifting-facility",
+      "sha256": "36706008ce65072a75576962fdf2a6eab567c5aaeb8a016bd7858bd6f5af14ff",
+      "referenceCount": {
+        "mesh": 26,
+        "texture": 45,
+        "audio": 4,
         "prefab": 0
       },
-      "missingReferences": [],
+      "missingReferences": [
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.40.textureAssetId",
+          "value": "showcase-emissive-strip"
+        }
+      ],
+      "unsupportedActions": [],
+      "unsupportedGraphTypes": [],
+      "unsupportedAiConditions": [],
+      "copyFindings": [],
+      "identity": []
+    },
+    {
+      "id": "signal-zero",
+      "sha256": "c7fa71314f2f700d4fccdd4b48f8e0cc144aabc161923805c505c306b1aa8923",
+      "referenceCount": {
+        "mesh": 57,
+        "texture": 81,
+        "audio": 4,
+        "prefab": 0
+      },
+      "missingReferences": [
+        {
+          "kind": "texture",
+          "path": "project.levels.1.objects.34.textureAssetId",
+          "value": "showcase-hazard"
+        }
+      ],
+      "unsupportedActions": [],
+      "unsupportedGraphTypes": [],
+      "unsupportedAiConditions": [],
+      "copyFindings": [],
+      "identity": []
+    },
+    {
+      "id": "dungeon-descent",
+      "sha256": "5fa80bcb148b8c1e6ea179d17a0c8dc403ed12723625f6653a2817477a4fad16",
+      "referenceCount": {
+        "mesh": 18,
+        "texture": 46,
+        "audio": 4,
+        "prefab": 0
+      },
+      "missingReferences": [
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.40.textureAssetId",
+          "value": "showcase-floor-panel"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.41.textureAssetId",
+          "value": "showcase-floor-panel"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.42.textureAssetId",
+          "value": "showcase-floor-panel"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.43.textureAssetId",
+          "value": "showcase-floor-panel"
+        }
+      ],
       "unsupportedActions": [],
       "unsupportedGraphTypes": [],
       "unsupportedAiConditions": [],
@@ -228,10 +605,10 @@
     },
     {
       "id": "sentinel-maze",
-      "sha256": "8e032f0963ac2431eaa8d5eb93d0e8b74cdc21be3ca5bfeedc1f182a6e11e35b",
+      "sha256": "2a0dd7e2656a40735ccb9c35f9bcd388c729848762dd51b8ccd078f92f29f6e3",
       "referenceCount": {
-        "mesh": 19,
-        "texture": 37,
+        "mesh": 25,
+        "texture": 49,
         "audio": 2,
         "prefab": 0
       },
@@ -243,15 +620,26 @@
       "identity": []
     },
     {
-      "id": "signal-zero",
-      "sha256": "933bbef4052b916bb3ac12afc7873df7ac83650965b355f25aeb7c910d54e829",
+      "id": "survival-arena",
+      "sha256": "cfceb4d01f661edd1189a393b471eed4a316e38ad64d24f9953a080059d8931e",
       "referenceCount": {
-        "mesh": 48,
-        "texture": 66,
-        "audio": 4,
+        "mesh": 34,
+        "texture": 49,
+        "audio": 1,
         "prefab": 0
       },
-      "missingReferences": [],
+      "missingReferences": [
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.45.textureAssetId",
+          "value": "showcase-arena-floor"
+        },
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.46.textureAssetId",
+          "value": "showcase-arena-floor"
+        }
+      ],
       "unsupportedActions": [],
       "unsupportedGraphTypes": [],
       "unsupportedAiConditions": [],
@@ -260,14 +648,20 @@
     },
     {
       "id": "survival-arena-2",
-      "sha256": "cdead78a3167f3b1abc0efd31f34e7207508c9405d630ef25af0a4a84414b29c",
+      "sha256": "08dbdd54af3cacd22a286e2af354855c4006622b4b308af7f083ba973e5cb12f",
       "referenceCount": {
-        "mesh": 13,
-        "texture": 20,
+        "mesh": 32,
+        "texture": 43,
         "audio": 1,
         "prefab": 6
       },
-      "missingReferences": [],
+      "missingReferences": [
+        {
+          "kind": "texture",
+          "path": "project.levels.0.objects.47.textureAssetId",
+          "value": "showcase-arena-floor"
+        }
+      ],
       "unsupportedActions": [],
       "unsupportedGraphTypes": [],
       "unsupportedAiConditions": [],
@@ -287,10 +681,10 @@
     },
     {
       "id": "survival-arena-3",
-      "sha256": "485da73ecad19a0f469510b49efb52b34c19eac665401ac54428e80e36cc525d",
+      "sha256": "d7986d491a3a6ea879d84c4201d700c21eba52ac579f2edb07f36ce40dfe71dc",
       "referenceCount": {
-        "mesh": 13,
-        "texture": 20,
+        "mesh": 33,
+        "texture": 44,
         "audio": 1,
         "prefab": 1
       },
@@ -302,156 +696,12 @@
       "identity": []
     },
     {
-      "id": "textured-adventure",
-      "sha256": "53c878bf3b19b31c4cee5b8c6a7020481554814cc560afb9ba5e532b9636b8d6",
-      "referenceCount": {
-        "mesh": 19,
-        "texture": 30,
-        "audio": 4,
-        "prefab": 0
-      },
-      "missingReferences": [],
-      "unsupportedActions": [],
-      "unsupportedGraphTypes": [],
-      "unsupportedAiConditions": [],
-      "copyFindings": [],
-      "identity": []
-    },
-    {
-      "id": "valley-run",
-      "sha256": "099e8bf171e19c0b5320f114207fed6f8d062c1a1958793b947e47aeb3bc8690",
-      "referenceCount": {
-        "mesh": 21,
-        "texture": 33,
-        "audio": 3,
-        "prefab": 0
-      },
-      "missingReferences": [],
-      "unsupportedActions": [],
-      "unsupportedGraphTypes": [],
-      "unsupportedAiConditions": [],
-      "copyFindings": [],
-      "identity": []
-    },
-    {
-      "id": "painted-wilds",
-      "sha256": "58fff8d4c40224607334ce058a59a32e9c294c0e159bfba884bccad3bb579bef",
-      "referenceCount": {
-        "mesh": 20,
-        "texture": 32,
-        "audio": 4,
-        "prefab": 0
-      },
-      "missingReferences": [],
-      "unsupportedActions": [],
-      "unsupportedGraphTypes": [],
-      "unsupportedAiConditions": [],
-      "copyFindings": [],
-      "identity": []
-    },
-    {
-      "id": "assembly-line",
-      "sha256": "50654d9ca499e78e51ab655985813f89f1371e547f868a6118503ebca03f2368",
-      "referenceCount": {
-        "mesh": 26,
-        "texture": 37,
-        "audio": 2,
-        "prefab": 3
-      },
-      "missingReferences": [],
-      "unsupportedActions": [],
-      "unsupportedGraphTypes": [],
-      "unsupportedAiConditions": [],
-      "copyFindings": [],
-      "identity": []
-    },
-    {
-      "id": "blacksite",
-      "sha256": "02a70985a250fbf05696f98282beeccb2a4f68c5fa60a49fd868cfff324dea83",
-      "referenceCount": {
-        "mesh": 26,
-        "texture": 52,
-        "audio": 5,
-        "prefab": 3
-      },
-      "missingReferences": [],
-      "unsupportedActions": [],
-      "unsupportedGraphTypes": [],
-      "unsupportedAiConditions": [],
-      "copyFindings": [],
-      "identity": []
-    },
-    {
-      "id": "moving-temple",
-      "sha256": "9f99480918798a8dcf350ae77913c7e7af31e31b4091853ab45e7e0b4614d289",
-      "referenceCount": {
-        "mesh": 21,
-        "texture": 38,
-        "audio": 4,
-        "prefab": 0
-      },
-      "missingReferences": [],
-      "unsupportedActions": [],
-      "unsupportedGraphTypes": [],
-      "unsupportedAiConditions": [],
-      "copyFindings": [],
-      "identity": []
-    },
-    {
-      "id": "shifting-facility",
-      "sha256": "401bc77344e011e0321fb579cfef8eb02cb21638b7bbfa2113024504e43e9d6a",
-      "referenceCount": {
-        "mesh": 21,
-        "texture": 34,
-        "audio": 4,
-        "prefab": 0
-      },
-      "missingReferences": [],
-      "unsupportedActions": [],
-      "unsupportedGraphTypes": [],
-      "unsupportedAiConditions": [],
-      "copyFindings": [],
-      "identity": []
-    },
-    {
       "id": "skyway-trial",
-      "sha256": "2bfdab1620cdfd9e94c4afe8f769c5a9bac7109fe2f38782f1d4446bf60432f3",
+      "sha256": "f606e30da2790dcb362c4d301548a98ce82ebda81039408870f6c672df63c8bc",
       "referenceCount": {
-        "mesh": 10,
-        "texture": 20,
+        "mesh": 17,
+        "texture": 31,
         "audio": 2,
-        "prefab": 0
-      },
-      "missingReferences": [],
-      "unsupportedActions": [],
-      "unsupportedGraphTypes": [],
-      "unsupportedAiConditions": [],
-      "copyFindings": [],
-      "identity": []
-    },
-    {
-      "id": "survival-arena",
-      "sha256": "b9bd8a75b98fa5cbcb4d5f8b82889ff12620d606f021f6063dd4e57ab0e9f70a",
-      "referenceCount": {
-        "mesh": 19,
-        "texture": 27,
-        "audio": 1,
-        "prefab": 0
-      },
-      "missingReferences": [],
-      "unsupportedActions": [],
-      "unsupportedGraphTypes": [],
-      "unsupportedAiConditions": [],
-      "copyFindings": [],
-      "identity": []
-    },
-    {
-      "id": "temple-switch-puzzle",
-      "sha256": "21898eb8eab1bba919ea01e3ab6e8120c439749dc9e53beab05fe65305652c7f",
-      "referenceCount": {
-        "mesh": 20,
-        "texture": 32,
-        "audio": 1,
         "prefab": 0
       },
       "missingReferences": [],
@@ -465,12 +715,12 @@
   "summary": {
     "games": 28,
     "references": {
-      "mesh": 1314,
-      "texture": 1740,
-      "audio": 140,
+      "mesh": 1741,
+      "texture": 2392,
+      "audio": 157,
       "prefab": 31
     },
-    "missingReferences": 0,
+    "missingReferences": 46,
     "unsupportedActions": 0,
     "unsupportedGraphTypes": 0,
     "unsupportedAiConditions": 0,

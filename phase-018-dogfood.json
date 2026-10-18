@@ -1,0 +1,20 @@
+{
+  "url": "http://127.0.0.1:8872/editor/index.html",
+  "fixture": "tests/fixtures/phase-018-atlas.png",
+  "checks": {
+    "textureDimensions": [128, 128],
+    "grid": { "cellSize": [32, 32], "createdAssets": 16, "sharedTexturePayloads": 1 },
+    "placedSprites": 7,
+    "manualRegion": { "initial": [48, 12, 40, 24], "pivot": [0.25, 0.75], "pixelsPerUnit": 20, "filtering": "nearest" },
+    "duplicateIndependence": { "originalX": 48, "duplicateX": 80 },
+    "visualEditor": { "afterDrag": [60, 28, 40, 24], "afterResize": [60, 28, 57, 37] },
+    "prefab": "AtlasCellPrefab",
+    "validation": "passed",
+    "saveLoad": { "slot": "phase-018-atlas-dogfood", "spriteAssets": 18, "prefabPreserved": true },
+    "playStop": true,
+    "editableExport": true,
+    "playableExport": true
+  },
+  "errors": [],
+  "ok": true
+}

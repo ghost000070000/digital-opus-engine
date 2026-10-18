@@ -1,0 +1,25 @@
+{
+  "id": "signal-zero",
+  "sourceSHA256": "c7fa71314f2f700d4fccdd4b48f8e0cc144aabc161923805c505c306b1aa8923",
+  "errors": [],
+  "capturedAt": "2026-09-11T17:01:58.849Z",
+  "sha256": "423f3c66c0ffbf40f740185e8acbda4a3c1f77d9c490ff3187adb09b3634bc1a",
+  "state": {
+    "title": "Signal Zero",
+    "sim": 1.9697000000476812,
+    "ended": false,
+    "text": "Signal Zero: the relay has gone dark. Reach the console.\nHealth 100 / 100\nReach the outpost console, then restore the deep relay.\nPress F to interact\nWASD / arrows move; Space jumps; Left Click attacks; Escape pauses.",
+    "controller": "thirdperson",
+    "bodyVisible": false,
+    "visualVisible": true,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 41
+  },
+  "pauseText": "Signal Zero: the relay has gone dark. Reach the console.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nMouse Sensitivity\nInvert Mouse Y\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nReach the outpost console, then restore the deep relay.\nPress F to interact\nWASD / arrows move; Space jumps; Left Click attacks; Escape pauses.",
+  "passed": true
+}

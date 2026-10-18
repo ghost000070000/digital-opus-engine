@@ -1,0 +1,14 @@
+'use strict';
+const fs=require('fs'),vm=require('vm'),assert=require('assert'),api=require('../editor/src/00-onboarding');let raw=null;const store=api.createStore({getItem:()=>raw,setItem:(_,v)=>{raw=v;}});
+store.restart('guided');assert.equal(store.read().tutorial.projectScopeId,undefined);store.bindProject('owner');store.pause();store.resume();assert.equal(store.read().tutorial.projectScopeId,'owner');assert.equal(api.normalize(JSON.parse(raw)).tutorial.projectScopeId,'owner');
+const source=fs.readFileSync(require.resolve('../editor/src/01-editor.js'),'utf8'),calls=[];let state={tutorial:{started:true,active:true,completed:false,projectScopeId:'other'}};
+const c={playerPreferenceScope:{id:'owner'},onboardingStore:{read:()=>state,bindProject:id=>{calls.push(['bind',id]);state.tutorial.projectScopeId=id;},resume:()=>calls.push(['resume']),mark:id=>calls.push(['mark',id])},closeEditorHelp:()=>calls.push(['close']),setEditorVisible:v=>calls.push(['visible',v]),renderOnboardingCoach:()=>calls.push(['render']),showStatus:()=>calls.push(['status'])};vm.createContext(c);
+vm.runInContext(source.slice(source.indexOf('function resumeGuidedTutorial('),source.indexOf("document.getElementById('resume-tutorial-btn').addEventListener"))+source.slice(source.indexOf('function markOnboardingProgress('),source.indexOf('function activateTutorialSurface(')),c);
+assert.equal(c.resumeGuidedTutorial(),false);assert.deepStrictEqual(calls,[['status']]);calls.length=0;c.markOnboardingProgress('save');assert.equal(calls.length,0);
+state.tutorial.projectScopeId='owner';state.tutorial.active=false;c.markOnboardingProgress('save');assert.equal(calls.length,0);assert(c.resumeGuidedTutorial());assert.deepStrictEqual(calls,[['close'],['resume'],['visible',true],['render']]);
+calls.length=0;delete state.tutorial.projectScopeId;assert(c.resumeGuidedTutorial());assert.deepStrictEqual(calls[0],['bind','owner']);
+calls.length=0;state.tutorial.active=true;c.markOnboardingProgress('save');assert.deepStrictEqual(calls,[['mark','save'],['render']]);
+console.log('Phase232 tutorial project identity persistence, mismatch refusal, paused progress freeze and explicit legacy binding PASS');
+store.restart('skip-only');for(const step of api.STEPS)store.skip(step.id);let progress=api.evaluate({},store.read());assert(progress.complete);assert.equal(progress.performedCount,0);assert.equal(progress.skippedCount,9);assert.equal(store.complete().tutorial.flags.export,undefined);
+store.mark('export');progress=api.evaluate({},store.read());assert.equal(progress.performedCount,1);assert.equal(progress.skippedCount,8);assert.equal(progress.steps[8].skipped,false);
+console.log('Phase232 skipped versus performed progress and truthful completion/export provenance PASS');

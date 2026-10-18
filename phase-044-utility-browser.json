@@ -1,0 +1,992 @@
+{
+  "phase": 44,
+  "status": "PASS",
+  "productSchemaChanged": false,
+  "cycles": [
+    {
+      "cycle": 1,
+      "visibleTypes": [
+        "Select…",
+        "Static",
+        "Kinematic"
+      ],
+      "gravityFields": 0,
+      "roleHelp": "Kinematic Bodies move using world X/Y velocity and stop or slide against Static Bodies. They do not respond to other Kinematic Bodies.\n\nVelocity X/Y is in world units per second. Trigger Collider 2D does not block movement.\n\nRemove Component",
+      "result": {
+        "y": -1.399999,
+        "velocity": [
+          0,
+          0
+        ],
+        "cappedSweeps": 0,
+        "events": [
+          "trigger2DEnter",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DExit"
+        ],
+        "authoredTypeDuringPlay": "kinematic",
+        "restoredY": 0,
+        "restoredType": "kinematic",
+        "saveLoadExact": true
+      }
+    },
+    {
+      "cycle": 2,
+      "visibleTypes": [
+        "Select…",
+        "Static",
+        "Kinematic"
+      ],
+      "gravityFields": 0,
+      "roleHelp": "Kinematic Bodies move using world X/Y velocity and stop or slide against Static Bodies. They do not respond to other Kinematic Bodies.\n\nVelocity X/Y is in world units per second. Trigger Collider 2D does not block movement.\n\nRemove Component",
+      "result": {
+        "y": -1.399999,
+        "velocity": [
+          0,
+          0
+        ],
+        "cappedSweeps": 0,
+        "events": [
+          "trigger2DEnter",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DExit"
+        ],
+        "authoredTypeDuringPlay": "kinematic",
+        "restoredY": 0,
+        "restoredType": "kinematic",
+        "saveLoadExact": true
+      }
+    },
+    {
+      "cycle": 3,
+      "visibleTypes": [
+        "Select…",
+        "Static",
+        "Kinematic"
+      ],
+      "gravityFields": 0,
+      "roleHelp": "Kinematic Bodies move using world X/Y velocity and stop or slide against Static Bodies. They do not respond to other Kinematic Bodies.\n\nVelocity X/Y is in world units per second. Trigger Collider 2D does not block movement.\n\nRemove Component",
+      "result": {
+        "y": -1.399999,
+        "velocity": [
+          0,
+          0
+        ],
+        "cappedSweeps": 0,
+        "events": [
+          "trigger2DEnter",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DExit"
+        ],
+        "authoredTypeDuringPlay": "kinematic",
+        "restoredY": 0,
+        "restoredType": "kinematic",
+        "saveLoadExact": true
+      }
+    },
+    {
+      "cycle": 4,
+      "visibleTypes": [
+        "Select…",
+        "Static",
+        "Kinematic"
+      ],
+      "gravityFields": 0,
+      "roleHelp": "Kinematic Bodies move using world X/Y velocity and stop or slide against Static Bodies. They do not respond to other Kinematic Bodies.\n\nVelocity X/Y is in world units per second. Trigger Collider 2D does not block movement.\n\nRemove Component",
+      "result": {
+        "y": -1.399999,
+        "velocity": [
+          0,
+          0
+        ],
+        "cappedSweeps": 0,
+        "events": [
+          "trigger2DEnter",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DExit"
+        ],
+        "authoredTypeDuringPlay": "kinematic",
+        "restoredY": 0,
+        "restoredType": "kinematic",
+        "saveLoadExact": true
+      }
+    },
+    {
+      "cycle": 5,
+      "visibleTypes": [
+        "Select…",
+        "Static",
+        "Kinematic"
+      ],
+      "gravityFields": 0,
+      "roleHelp": "Kinematic Bodies move using world X/Y velocity and stop or slide against Static Bodies. They do not respond to other Kinematic Bodies.\n\nVelocity X/Y is in world units per second. Trigger Collider 2D does not block movement.\n\nRemove Component",
+      "result": {
+        "y": -1.399999,
+        "velocity": [
+          0,
+          0
+        ],
+        "cappedSweeps": 0,
+        "events": [
+          "trigger2DEnter",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DExit"
+        ],
+        "authoredTypeDuringPlay": "kinematic",
+        "restoredY": 0,
+        "restoredType": "kinematic",
+        "saveLoadExact": true
+      }
+    },
+    {
+      "cycle": 6,
+      "visibleTypes": [
+        "Select…",
+        "Static",
+        "Kinematic"
+      ],
+      "gravityFields": 0,
+      "roleHelp": "Kinematic Bodies move using world X/Y velocity and stop or slide against Static Bodies. They do not respond to other Kinematic Bodies.\n\nVelocity X/Y is in world units per second. Trigger Collider 2D does not block movement.\n\nRemove Component",
+      "result": {
+        "y": -1.399999,
+        "velocity": [
+          0,
+          0
+        ],
+        "cappedSweeps": 0,
+        "events": [
+          "trigger2DEnter",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DExit"
+        ],
+        "authoredTypeDuringPlay": "kinematic",
+        "restoredY": 0,
+        "restoredType": "kinematic",
+        "saveLoadExact": true
+      }
+    },
+    {
+      "cycle": 7,
+      "visibleTypes": [
+        "Select…",
+        "Static",
+        "Kinematic"
+      ],
+      "gravityFields": 0,
+      "roleHelp": "Kinematic Bodies move using world X/Y velocity and stop or slide against Static Bodies. They do not respond to other Kinematic Bodies.\n\nVelocity X/Y is in world units per second. Trigger Collider 2D does not block movement.\n\nRemove Component",
+      "result": {
+        "y": -1.399999,
+        "velocity": [
+          0,
+          0
+        ],
+        "cappedSweeps": 0,
+        "events": [
+          "trigger2DEnter",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DExit"
+        ],
+        "authoredTypeDuringPlay": "kinematic",
+        "restoredY": 0,
+        "restoredType": "kinematic",
+        "saveLoadExact": true
+      }
+    },
+    {
+      "cycle": 8,
+      "visibleTypes": [
+        "Select…",
+        "Static",
+        "Kinematic"
+      ],
+      "gravityFields": 0,
+      "roleHelp": "Kinematic Bodies move using world X/Y velocity and stop or slide against Static Bodies. They do not respond to other Kinematic Bodies.\n\nVelocity X/Y is in world units per second. Trigger Collider 2D does not block movement.\n\nRemove Component",
+      "result": {
+        "y": -1.399999,
+        "velocity": [
+          0,
+          0
+        ],
+        "cappedSweeps": 0,
+        "events": [
+          "trigger2DEnter",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DExit"
+        ],
+        "authoredTypeDuringPlay": "kinematic",
+        "restoredY": 0,
+        "restoredType": "kinematic",
+        "saveLoadExact": true
+      }
+    },
+    {
+      "cycle": 9,
+      "visibleTypes": [
+        "Select…",
+        "Static",
+        "Kinematic"
+      ],
+      "gravityFields": 0,
+      "roleHelp": "Kinematic Bodies move using world X/Y velocity and stop or slide against Static Bodies. They do not respond to other Kinematic Bodies.\n\nVelocity X/Y is in world units per second. Trigger Collider 2D does not block movement.\n\nRemove Component",
+      "result": {
+        "y": -1.399999,
+        "velocity": [
+          0,
+          0
+        ],
+        "cappedSweeps": 0,
+        "events": [
+          "trigger2DEnter",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DExit"
+        ],
+        "authoredTypeDuringPlay": "kinematic",
+        "restoredY": 0,
+        "restoredType": "kinematic",
+        "saveLoadExact": true
+      }
+    },
+    {
+      "cycle": 10,
+      "visibleTypes": [
+        "Select…",
+        "Static",
+        "Kinematic"
+      ],
+      "gravityFields": 0,
+      "roleHelp": "Kinematic Bodies move using world X/Y velocity and stop or slide against Static Bodies. They do not respond to other Kinematic Bodies.\n\nVelocity X/Y is in world units per second. Trigger Collider 2D does not block movement.\n\nRemove Component",
+      "result": {
+        "y": -1.399999,
+        "velocity": [
+          0,
+          0
+        ],
+        "cappedSweeps": 0,
+        "events": [
+          "trigger2DEnter",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DExit"
+        ],
+        "authoredTypeDuringPlay": "kinematic",
+        "restoredY": 0,
+        "restoredType": "kinematic",
+        "saveLoadExact": true
+      }
+    },
+    {
+      "cycle": 11,
+      "visibleTypes": [
+        "Select…",
+        "Static",
+        "Kinematic"
+      ],
+      "gravityFields": 0,
+      "roleHelp": "Kinematic Bodies move using world X/Y velocity and stop or slide against Static Bodies. They do not respond to other Kinematic Bodies.\n\nVelocity X/Y is in world units per second. Trigger Collider 2D does not block movement.\n\nRemove Component",
+      "result": {
+        "y": -1.399999,
+        "velocity": [
+          0,
+          0
+        ],
+        "cappedSweeps": 0,
+        "events": [
+          "trigger2DEnter",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DExit"
+        ],
+        "authoredTypeDuringPlay": "kinematic",
+        "restoredY": 0,
+        "restoredType": "kinematic",
+        "saveLoadExact": true
+      }
+    },
+    {
+      "cycle": 12,
+      "visibleTypes": [
+        "Select…",
+        "Static",
+        "Kinematic"
+      ],
+      "gravityFields": 0,
+      "roleHelp": "Kinematic Bodies move using world X/Y velocity and stop or slide against Static Bodies. They do not respond to other Kinematic Bodies.\n\nVelocity X/Y is in world units per second. Trigger Collider 2D does not block movement.\n\nRemove Component",
+      "result": {
+        "y": -1.399999,
+        "velocity": [
+          0,
+          0
+        ],
+        "cappedSweeps": 0,
+        "events": [
+          "trigger2DEnter",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DExit"
+        ],
+        "authoredTypeDuringPlay": "kinematic",
+        "restoredY": 0,
+        "restoredType": "kinematic",
+        "saveLoadExact": true
+      }
+    },
+    {
+      "cycle": 13,
+      "visibleTypes": [
+        "Select…",
+        "Static",
+        "Kinematic"
+      ],
+      "gravityFields": 0,
+      "roleHelp": "Kinematic Bodies move using world X/Y velocity and stop or slide against Static Bodies. They do not respond to other Kinematic Bodies.\n\nVelocity X/Y is in world units per second. Trigger Collider 2D does not block movement.\n\nRemove Component",
+      "result": {
+        "y": -1.399999,
+        "velocity": [
+          0,
+          0
+        ],
+        "cappedSweeps": 0,
+        "events": [
+          "trigger2DEnter",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DExit"
+        ],
+        "authoredTypeDuringPlay": "kinematic",
+        "restoredY": 0,
+        "restoredType": "kinematic",
+        "saveLoadExact": true
+      }
+    },
+    {
+      "cycle": 14,
+      "visibleTypes": [
+        "Select…",
+        "Static",
+        "Kinematic"
+      ],
+      "gravityFields": 0,
+      "roleHelp": "Kinematic Bodies move using world X/Y velocity and stop or slide against Static Bodies. They do not respond to other Kinematic Bodies.\n\nVelocity X/Y is in world units per second. Trigger Collider 2D does not block movement.\n\nRemove Component",
+      "result": {
+        "y": -1.399999,
+        "velocity": [
+          0,
+          0
+        ],
+        "cappedSweeps": 0,
+        "events": [
+          "trigger2DEnter",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DExit"
+        ],
+        "authoredTypeDuringPlay": "kinematic",
+        "restoredY": 0,
+        "restoredType": "kinematic",
+        "saveLoadExact": true
+      }
+    },
+    {
+      "cycle": 15,
+      "visibleTypes": [
+        "Select…",
+        "Static",
+        "Kinematic"
+      ],
+      "gravityFields": 0,
+      "roleHelp": "Kinematic Bodies move using world X/Y velocity and stop or slide against Static Bodies. They do not respond to other Kinematic Bodies.\n\nVelocity X/Y is in world units per second. Trigger Collider 2D does not block movement.\n\nRemove Component",
+      "result": {
+        "y": -1.399999,
+        "velocity": [
+          0,
+          0
+        ],
+        "cappedSweeps": 0,
+        "events": [
+          "trigger2DEnter",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DExit"
+        ],
+        "authoredTypeDuringPlay": "kinematic",
+        "restoredY": 0,
+        "restoredType": "kinematic",
+        "saveLoadExact": true
+      }
+    },
+    {
+      "cycle": 16,
+      "visibleTypes": [
+        "Select…",
+        "Static",
+        "Kinematic"
+      ],
+      "gravityFields": 0,
+      "roleHelp": "Kinematic Bodies move using world X/Y velocity and stop or slide against Static Bodies. They do not respond to other Kinematic Bodies.\n\nVelocity X/Y is in world units per second. Trigger Collider 2D does not block movement.\n\nRemove Component",
+      "result": {
+        "y": -1.399999,
+        "velocity": [
+          0,
+          0
+        ],
+        "cappedSweeps": 0,
+        "events": [
+          "trigger2DEnter",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DExit"
+        ],
+        "authoredTypeDuringPlay": "kinematic",
+        "restoredY": 0,
+        "restoredType": "kinematic",
+        "saveLoadExact": true
+      }
+    },
+    {
+      "cycle": 17,
+      "visibleTypes": [
+        "Select…",
+        "Static",
+        "Kinematic"
+      ],
+      "gravityFields": 0,
+      "roleHelp": "Kinematic Bodies move using world X/Y velocity and stop or slide against Static Bodies. They do not respond to other Kinematic Bodies.\n\nVelocity X/Y is in world units per second. Trigger Collider 2D does not block movement.\n\nRemove Component",
+      "result": {
+        "y": -1.399999,
+        "velocity": [
+          0,
+          0
+        ],
+        "cappedSweeps": 0,
+        "events": [
+          "trigger2DEnter",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DExit"
+        ],
+        "authoredTypeDuringPlay": "kinematic",
+        "restoredY": 0,
+        "restoredType": "kinematic",
+        "saveLoadExact": true
+      }
+    },
+    {
+      "cycle": 18,
+      "visibleTypes": [
+        "Select…",
+        "Static",
+        "Kinematic"
+      ],
+      "gravityFields": 0,
+      "roleHelp": "Kinematic Bodies move using world X/Y velocity and stop or slide against Static Bodies. They do not respond to other Kinematic Bodies.\n\nVelocity X/Y is in world units per second. Trigger Collider 2D does not block movement.\n\nRemove Component",
+      "result": {
+        "y": -1.399999,
+        "velocity": [
+          0,
+          0
+        ],
+        "cappedSweeps": 0,
+        "events": [
+          "trigger2DEnter",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DExit"
+        ],
+        "authoredTypeDuringPlay": "kinematic",
+        "restoredY": 0,
+        "restoredType": "kinematic",
+        "saveLoadExact": true
+      }
+    },
+    {
+      "cycle": 19,
+      "visibleTypes": [
+        "Select…",
+        "Static",
+        "Kinematic"
+      ],
+      "gravityFields": 0,
+      "roleHelp": "Kinematic Bodies move using world X/Y velocity and stop or slide against Static Bodies. They do not respond to other Kinematic Bodies.\n\nVelocity X/Y is in world units per second. Trigger Collider 2D does not block movement.\n\nRemove Component",
+      "result": {
+        "y": -1.399999,
+        "velocity": [
+          0,
+          0
+        ],
+        "cappedSweeps": 0,
+        "events": [
+          "trigger2DEnter",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DExit"
+        ],
+        "authoredTypeDuringPlay": "kinematic",
+        "restoredY": 0,
+        "restoredType": "kinematic",
+        "saveLoadExact": true
+      }
+    },
+    {
+      "cycle": 20,
+      "visibleTypes": [
+        "Select…",
+        "Static",
+        "Kinematic"
+      ],
+      "gravityFields": 0,
+      "roleHelp": "Kinematic Bodies move using world X/Y velocity and stop or slide against Static Bodies. They do not respond to other Kinematic Bodies.\n\nVelocity X/Y is in world units per second. Trigger Collider 2D does not block movement.\n\nRemove Component",
+      "result": {
+        "y": -1.399999,
+        "velocity": [
+          0,
+          0
+        ],
+        "cappedSweeps": 0,
+        "events": [
+          "trigger2DEnter",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DStay",
+          "trigger2DExit"
+        ],
+        "authoredTypeDuringPlay": "kinematic",
+        "restoredY": 0,
+        "restoredType": "kinematic",
+        "saveLoadExact": true
+      }
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "networkErrors": [],
+  "startedAt": "2026-09-23T19:30:51.155Z",
+  "endedAt": "2026-09-23T19:31:33.513Z"
+}

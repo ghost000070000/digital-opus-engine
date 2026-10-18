@@ -1,0 +1,22 @@
+# Phase 086 — Menus and screen stack editor
+
+COMPLETED, 2026-10-10T09:17:33Z. Frozen source `8fa5015c2ffc54fa29dc8eebf385e9bbfe063166416eae9e3562b9233a86fc56`. Not full product readiness.
+
+Creators add level-owned Menu Pages from the UI tab, author titles/text and pause policy, choose named page links, reorder/remove with history, and Preview the same canonical push/Back/Close stack. Runtime pages are accessible from Start/Pause; one opaque top page is displayed, Back returns to its parent and Close restores the previous pause. Native Escape navigates without also toggling the App pause; Tab stays within the page. Author pages persist; transient stack, focus, capture and pause owners do not. Unknown/future/ambiguous definitions remain retained and inert. The reusable `OpusMenuScreenStack` has no second game loop or gameplay state store.
+
+Actual product defects and repairs:
+
+- Native `menus-browser-20261010T090019050Z` reproduced Source/Editable/Playable Inventory close resuming an existing Pause. Source/Editable Stop also left Controls visible and Interact rebinding active. Sixteen observations, unchanged085 source679e and zero browser errors; this was a product RED, not an automation failure.
+- Shared transient pause ownership now remembers an existing pause, releases only the final owned pause and prevents a toolbar Resume from running simulation behind a pause-owning modal. Inventory and Dialogue use this same ownership. Stop/fresh session/level transition clear Controls, instructions, credits, Inventory, Dialogue, new pages and capture. Actual-source regressions additionally exercise nested owners and Dialogue guards.
+- Visual review found new authoring controls still using white browser defaults. Scoped theme/focus/disabled styles and bounded cards now match the editor; final screenshots were reviewed under the Computer Use workflow.
+
+Final evidence:
+
+- Native25: `qualification/phase-086/menus-browser-20261010T091546280Z/proof.json`,09:15:46.282–09:16:15.418. Source/exact Editable/Playable; native Add/title/body/link/pause authoring, reorder/remove and independent Undo/Redo, Save/reopen and future-record retention, Start/Controls/Credits/instructions return, real Inventory owned versus existing pause, protected toolbar Resume, Escape/Tab navigation, restart/Main Menu and Stop cleanup. Thirty actual two-page push/Back/Close cycles. Six live parent/child card-fit observations and screenshots across all tiers. Zero page/console errors and external requests; start/final fingerprint identical.
+- Pure core9 plus actual-source lifecycle/authoring suite: validation, limits, record independence, missing references, retained unknowns, baseline ownership, before-mutation history, invalid/no-op/Play guards, reserved inactive-level/missing-link identities, persistence without runtime stack and escaping. Registered in the integrated suite.
+- Core14: `qualification/phase-073/core-browser-20261010T091530588Z/proof.json`; existing Transform/Visual/Collider/hierarchy/Prefab/persistence/export acceptance remains green on the final source.
+- Full8: `qualification/real-demo-collision/regression-20261010T091530279Z/results.json`; integrated suite, engine, all28 public games, both sites,436 syntax files,40 JSON files and diff check PASS, frozen start/final. Capability dashboard regenerated without inflating grades.
+
+Preserved failures: first full086 attempt found an isolated077 transform test context missing the new Stop helper; its unrelated helper stub was added, not its transform oracle weakened. Native final attempts091009/091127/091239 were incorrect Restart/Editable overlay/lifecycle harness expectations. Real Restart resumes gameplay; native Edit This Game exits Play. The harness now follows those real interfaces, not forced clicks or hidden writes. Earlier9f03 functional19-pass proof is retained; final8fa501 includes the visual repair and all gates rerun.
+
+Limits: fixed readable card pages, not an arbitrary menu-layout canvas. Runtime Menu launchers currently Start/Pause; native Menu opening from running gameplay belongs to087 Button Actions. This phase therefore does not claim native Menu-owned pause from an unpaused game; pure stack ownership and actual Inventory-owned pause are separately proven. Pages are level UI, not Object Prefab components. Existing legacy Start/Pause/terminal layouts remain; no wholesale replacement, Game29, commit/push or deployment. Dirty work preserved. Continue exact087.

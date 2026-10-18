@@ -1,0 +1,7 @@
+# Character Collision 2D contract (Phase 045)
+
+At Phase 045, `character-collision-2d` was one v1 component per cube or Sprite. Its authored fields were `enabled`, `wallSlideEnabled`, and positive finite `wallSlideMaxSpeed` (default 3 world units/second). It requires an enabled Kinematic Body 2D and at least one enabled ordinary Box/Circle Collider 2D to run. Missing dependencies are creator-facing warnings, not data loss; a Trigger Collider alone is not a physical shape.
+
+The Body manager routes eligible Characters through `moveCharacter2D`, reusing the Phase 043 X-then-Y conservative solver and Static Body obstacles. Character movement adds direct Tilemap shapes, contact probes, and the downward wall-slide cap. An ordinary Kinematic Body without this enabled component retains Static-only behavior. Runtime state is transient and queried read-only through `getCharacterCollision2DState(objectId)`.
+
+Phase 047 advances the component to v2 with optional slope following, maximum slope angle, step handling, and maximum step height. Migrated v1 records keep both new movement flags disabled, preserving the older path. Newly added Characters enable them with bounded defaults. See the [Slope](CHARACTER-SLOPE-2D-CONTRACT.md), [Step](CHARACTER-STEP-HANDLING-CONTRACT.md), and [Ground Support](CHARACTER-GROUND-SUPPORT-CONTRACT.md) contracts. The component still provides no input, gravity, jump, moving-platform carry, or general collision-event lifecycle.

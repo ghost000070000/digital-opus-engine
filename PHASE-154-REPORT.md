@@ -1,0 +1,15 @@
+# Phase154 — Dialogue tree editor polish
+
+Qualified on `a1b075784c51ca3618bb3287326a07786dc90e0be118a90e435bc148ebde53bf`. Exact authoritative title, bounded transparent derived contract; individual tracker specification is blank.
+
+Real keyboard typing exposed speaker-field rerender/focus loss (Guide→G), and identical ordinary Save added redundant Undo. Actual-source regressions also exposed unsafe Play/stale/detached owner commits and an aliased committed draft. Fixes refresh only entry navigation labels while retaining typing focus/caret, use changed-only independent portable commits, and capture/refuse changed Level/placed-array/Behavior ownership. Cancel still discards detached edits. Controller-state source checks and historical dialogue runtime/condition semantics remain unchanged.
+
+Named navigation now displays speaker plus text excerpt and stable identity, distinguishing entries with the same speaker. Missing saved Start/choice links remain selected unavailable instead of displaying an unrelated default; ambiguous IDs are disabled. Historical null Start remains automatic-first and is not silently rewritten by opening/identical Save. No schema/runtime replacement or Phase155 conditions/actions expansion.
+
+Eight registered actual-source regressions pass; original1PASS/4FAIL and native REDs are preserved. Historical Controller-event authoring fixture now loads the real new owner guard and captures Level/placed/Behavior identity; eleven original assertions pass, no empty stub or weakened oracle.
+
+Native final campaign `native-dialogue-20261011T143607116Z` observed12 checks from14:36:07.117 to14:36:23.279 UTC: actual keyboard typing/Cancel, named two-entry composition/no-op, exact Undo/Redo, actual Prefab palette placement/independent tuning/Undo, Save/reopen including Prefab, explicit imported missing-reference retention, and both conversation routes with actual choice clicks in Source/Editable/Playable. Informed/farewell flags and unpaused closure observed. Previous native geometry/owner foundation only; old Behaviors removed and conversation authored through UI. Root reviewed proof and editor screenshot. Errors/console/external requests empty, fingerprint stable, browser/server closed. Earlier lifecycle/selector harness failures are preserved separately in candidate-review.json; their observations are not borrowed into final12.
+
+Limits: ordinary existing three-choice authoring bound, free-name Flags and leaf conditions retained for later155review. Imported malformed-reference diagnostics are labeled, not native authoring. No new all28 gameplay/gamepad/file-offline/forced-GC, deployment, commit or Game29 claim. Whole product not ready.
+
+Final frozen full regression `regression-20261011T143538060Z` passed all8 gates from14:35:38.061 to14:37:40.664 UTC: integrated tests, engine build, catalog28, both sites,719 syntax files,43 JSON files and diff. Start/final source matches native campaign, resources closed. Build28 is not a new all28 gameplay claim. Next exact155 Dialogue conditions/actions expansion, characterized against existing canonical condition/Action dispatch before implementing additions.

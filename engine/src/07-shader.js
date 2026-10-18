@@ -1,3 +1,25 @@
+// Opt-in LDR scene grading, after every scene draw and before DOM HUDs.
+// This cannot recover clipped highlights and is not HDR tone mapping/bloom.
+const POST_VERT_SRC = `#version 300 es
+layout(location = 0) in vec2 a_ndc;
+out vec2 v_uv;
+void main() { v_uv = a_ndc * 0.5 + 0.5; gl_Position = vec4(a_ndc, 0.0, 1.0); }
+`;
+const POST_FRAG_SRC = `#version 300 es
+precision highp float;
+in vec2 v_uv;
+uniform sampler2D u_scene;
+uniform float u_exposure;
+uniform float u_saturation;
+out vec4 outColor;
+void main() {
+  vec4 scene = texture(u_scene, v_uv);
+  vec3 color = scene.rgb * exp2(u_exposure);
+  float luminance = dot(color, vec3(0.2126, 0.7152, 0.0722));
+  outColor = vec4(clamp(mix(vec3(luminance), color, u_saturation), 0.0, 1.0), scene.a);
+}
+`;
+
 function compileShader(gl, type, source) {
   const shader = gl.createShader(type);
   gl.shaderSource(shader, source);
@@ -132,6 +154,8 @@ uniform bool u_useTexture;
 // self-illumination term independent of any light, useful for terminals/
 // pickups/sci-fi props without needing an actual light object nearby.
 uniform bool u_unlit;
+uniform bool u_lighting2D;
+uniform float u_ambient2D;
 uniform float u_alpha;
 uniform vec3 u_emissiveColor;
 uniform float u_emissiveIntensity;
@@ -169,12 +193,21 @@ float shadowFactor() {
   vec3 proj = v_lightSpacePos.xyz / v_lightSpacePos.w;
   proj = proj * 0.5 + 0.5;
   if (proj.x < 0.0 || proj.x > 1.0 || proj.y < 0.0 || proj.y > 1.0 || proj.z > 1.0) return 1.0;
-  vec2 texelSize = 1.0 / vec2(textureSize(u_shadowMap, 0));
+  vec2 mapSize = vec2(textureSize(u_shadowMap, 0));
+  vec2 samplePos = proj.xy * mapSize - 0.5;
+  vec2 base = floor(samplePos);
+  vec2 fraction = fract(samplePos);
+  // Interpolate comparisons, never depths: bilinear depth filtering moves
+  // occluders. This integrates the same 3x3 PCF footprint continuously
+  // across texels using 16 taps rather than 36 separate bilinear taps.
   float shadow = 0.0;
-  for (int x = -1; x <= 1; x++) {
-    for (int y = -1; y <= 1; y++) {
-      float pcfDepth = texture(u_shadowMap, proj.xy + vec2(x, y) * texelSize).r;
-      shadow += (proj.z - u_shadowBias > pcfDepth) ? 0.0 : 1.0;
+  for (int x = -1; x <= 2; x++) {
+    float weightX = x == -1 ? 1.0 - fraction.x : (x == 2 ? fraction.x : 1.0);
+    for (int y = -1; y <= 2; y++) {
+      float weightY = y == -1 ? 1.0 - fraction.y : (y == 2 ? fraction.y : 1.0);
+      vec2 uv = (base + vec2(float(x), float(y)) + 0.5) / mapSize;
+      float pcfDepth = texture(u_shadowMap, uv).r;
+      shadow += weightX * weightY * ((proj.z - u_shadowBias > pcfDepth) ? 0.0 : 1.0);
     }
   }
   return shadow / 9.0;
@@ -201,6 +234,27 @@ vec3 localLightsContribution(vec3 n, vec3 albedo) {
   return total;
 }
 
+// Stylized XY illumination shares existing bounded Point/Spot lights. Z is
+// intentionally ignored; no normals, specular, occlusion or shadow claims.
+vec3 planarLightsContribution(vec3 albedo) {
+  vec3 total = albedo * u_ambient2D;
+  for (int i = 0; i < MAX_LIGHTS; i++) {
+    if (i >= u_numLights) break;
+    vec2 delta = v_worldPos.xy - u_lightPos[i].xy;
+    float dist = length(delta);
+    float attenuation = clamp(1.0 - dist / max(u_lightRange[i], 0.001), 0.0, 1.0);
+    attenuation *= attenuation;
+    if (u_lightIsSpot[i] > 0.5) {
+      float directionLength = length(u_lightSpotDir[i].xy);
+      if (directionLength < 0.0001) continue;
+      float cosine = dist < 0.0001 ? 1.0 : dot(delta / dist, u_lightSpotDir[i].xy / directionLength);
+      attenuation *= smoothstep(u_lightSpotCos[i], u_lightSpotCos[i] + 0.08, cosine);
+    }
+    total += albedo * u_lightColor[i] * u_lightIntensity[i] * attenuation;
+  }
+  return total;
+}
+
 void main() {
   vec3 n = normalize(v_normal);
   vec2 uv = v_uv * u_uvScale + u_uvOffset;
@@ -218,7 +272,9 @@ void main() {
   vec3 albedo = u_baseColor * texColor;
 
   vec3 color;
-  if (u_unlit) {
+  if (u_lighting2D) {
+    color = planarLightsContribution(albedo);
+  } else if (u_unlit) {
     color = albedo;
   } else {
     vec3 l = normalize(-u_lightDir);
@@ -542,12 +598,21 @@ float shadowFactor() {
   vec3 proj = v_lightSpacePos.xyz / v_lightSpacePos.w;
   proj = proj * 0.5 + 0.5;
   if (proj.x < 0.0 || proj.x > 1.0 || proj.y < 0.0 || proj.y > 1.0 || proj.z > 1.0) return 1.0;
-  vec2 texelSize = 1.0 / vec2(textureSize(u_shadowMap, 0));
+  vec2 mapSize = vec2(textureSize(u_shadowMap, 0));
+  vec2 samplePos = proj.xy * mapSize - 0.5;
+  vec2 base = floor(samplePos);
+  vec2 fraction = fract(samplePos);
+  // Interpolate comparisons, never depths: bilinear depth filtering moves
+  // occluders. This integrates the same 3x3 PCF footprint continuously
+  // across texels using 16 taps rather than 36 separate bilinear taps.
   float shadow = 0.0;
-  for (int x = -1; x <= 1; x++) {
-    for (int y = -1; y <= 1; y++) {
-      float pcfDepth = texture(u_shadowMap, proj.xy + vec2(x, y) * texelSize).r;
-      shadow += (proj.z - u_shadowBias > pcfDepth) ? 0.0 : 1.0;
+  for (int x = -1; x <= 2; x++) {
+    float weightX = x == -1 ? 1.0 - fraction.x : (x == 2 ? fraction.x : 1.0);
+    for (int y = -1; y <= 2; y++) {
+      float weightY = y == -1 ? 1.0 - fraction.y : (y == 2 ? fraction.y : 1.0);
+      vec2 uv = (base + vec2(float(x), float(y)) + 0.5) / mapSize;
+      float pcfDepth = texture(u_shadowMap, uv).r;
+      shadow += weightX * weightY * ((proj.z - u_shadowBias > pcfDepth) ? 0.0 : 1.0);
     }
   }
   return shadow / 9.0;

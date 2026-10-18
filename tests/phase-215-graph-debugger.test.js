@@ -1,0 +1,35 @@
+'use strict';
+const assert=require('assert'),fs=require('fs'),vm=require('vm'),trace=require('../editor/src/00-graph-trace');
+const source=fs.readFileSync(require.resolve('../editor/src/01-editor.js'),'utf8'),start=source.indexOf('function syncGraphTrace('),end=source.indexOf('graphTraceToggle.addEventListener',start);assert(start>=0&&end>start);
+const store=trace.create();store.setEnabled(true);store.record({time:.3,outcome:'DELAY_RESUMED',owner:'Named console',nodeId:'wait'});
+const panel={hidden:true,style:{}},readout={textContent:'',scrollHeight:100,scrollTop:0},follow={checked:true},toolbar={getBoundingClientRect:()=>({bottom:180})};
+const ownerSelect={value:'',replaceChildren(){},add(){}},outcomeSelect={value:'',replaceChildren(){},add(){}},locationSelect={value:'',replaceChildren(){},add(){}};
+const elements={'graph-trace-panel':panel,'graph-trace-readout':readout,'graph-trace-follow':follow,'gizmo-toolbar':toolbar,'graph-trace-owner':ownerSelect,'graph-trace-outcome':outcomeSelect,'graph-trace-location':locationSelect,'graph-trace-open':{}};let clock=1000,timer;
+const ctx={playMode:false,graphTrace:store,graphTraceLastDraw:-Infinity,graphTraceFilterSignature:'',graphTraceLocationSignature:'',Option:function(label,value){this.label=label;this.value=value;},performance:{now:()=>clock},document:{getElementById:id=>elements[id]},canvas:{getBoundingClientRect:()=>({top:40,height:600})},graphFunctions:[],OpusGraphFunctions:require('../editor/src/00-graph-functions'),setInterval:(fn,ms)=>{assert.equal(ms,100);timer=fn;}};vm.createContext(ctx);vm.runInContext(source.slice(source.indexOf('function graphTraceFilterKey('),start)+source.slice(start,end),ctx);
+const line=source.split(/\r?\n/).find(x=>x.includes('setInterval(()=>syncGraphTrace(),100)'));assert(line,'Paused trace needs a DOM-only scheduled refresh');vm.runInContext(line,ctx);
+const before=JSON.stringify(store.snapshot());timer();assert.equal(panel.hidden,false);assert(readout.textContent.includes('Wait resumed'));assert(readout.textContent.includes('Named console'));assert.equal(panel.style.top,'148px');assert.equal(panel.style.maxHeight,'436px');assert.equal(panel.style.maxWidth,'calc(100% - 24px)');assert.equal(readout.scrollTop,100);assert.equal(JSON.stringify(store.snapshot()),before);
+store.record({time:.4,outcome:'GATE_REJECTED',label:'Denied'});clock+=120;timer();assert(readout.textContent.includes('Condition blocked this Action'));const frozen=readout.textContent;clock+=20;timer();assert.equal(readout.textContent,frozen);store.setEnabled(false);clock+=120;timer();assert.equal(panel.hidden,true);
+console.log('Phase215 actual trace DOM timer refreshes captured state during Pause without runtime mutation; bounded toolbar-relative panel and disabled lifecycle PASS');
+store.setEnabled(true);store.record({time:1,ownerId:'other',owner:'Other',outcome:'ACTION_REQUESTED'});ownerSelect.value='object:other';outcomeSelect.value='ACTION_REQUESTED';clock+=120;timer();assert(readout.textContent.includes('1 matching'));assert(readout.textContent.includes('Other'));assert(!readout.textContent.includes('Wait resumed'));ownerSelect.value='object:missing';clock+=120;timer();assert(readout.textContent.includes('No matching captured steps'));assert.equal(ownerSelect.value,'object:missing');
+const locStart=source.indexOf('function graphTraceGraphLocation('),locEnd=source.indexOf('function processPendingDelays(',locStart);assert(locStart>=0&&locEnd>locStart);
+const first={nodes:[{id:'same-node'}]},second={nodes:[{id:'same-node'}]},functionGraph={nodes:[{id:'same-node'}]},actor={id:'named',behaviors:[{graph:first},{graph:second}]};
+const loc={graphFunctions:[{id:'function',graph:functionGraph}],levels:[{id:'level-a'}],currentLevelIndex:0};vm.createContext(loc);vm.runInContext(source.slice(locStart,locEnd),loc);
+assert.equal(loc.graphTraceGraphLocation(first,actor).behaviorIndex,0);assert.equal(loc.graphTraceGraphLocation(second,actor).behaviorIndex,1);assert.equal(loc.graphTraceGraphLocation(first,actor).levelId,'level-a');assert.equal(loc.graphTraceGraphLocation(functionGraph,actor).graphFunctionId,'function');actor.behaviors.push({graph:first});assert.equal(loc.graphTraceGraphLocation(first,actor).graphKind,'unavailable');assert.equal(loc.graphTraceGraphLocation({nodes:[]},actor).graphKind,'unavailable');actor.behaviors=Array.from({length:129},()=>({graph:second}));assert.equal(loc.graphTraceGraphLocation(second,actor).graphKind,'unavailable');
+console.log('Phase215 actual bounded provenance disambiguates same node IDs across behaviors/Functions and refuses ambiguous or oversized ownership PASS');
+actor.behaviors=[{action:'graph',graph:first},{action:'graph',graph:second}];const captured=loc.graphTraceGraphLocation(second,actor),row={...captured,nodeId:'same-node'},context={playing:false,levels:loc.levels,levelIndex:0,placed:[actor],functions:loc.graphFunctions};assert(loc.resolveCapturedGraphStep(row,context).ok);assert.equal(loc.resolveCapturedGraphStep(row,context).behavior,actor.behaviors[1]);assert(!loc.resolveCapturedGraphStep(row,{...context,playing:true}).ok);assert(!loc.resolveCapturedGraphStep(row,{...context,levels:[{id:'level-a'}]}).ok);assert(!loc.resolveCapturedGraphStep(row,{...context,placed:[]}).ok);second.nodes[0].type='changed';assert(!loc.resolveCapturedGraphStep(row,context).ok);delete second.nodes[0].type;assert(loc.resolveCapturedGraphStep(row,context).ok);second.nodes.push({id:'same-node'});assert(!loc.resolveCapturedGraphStep(row,context).ok);
+console.log('Phase215 actual retained location resolver refuses Play/project replacement/retired owner/changed or duplicate nodes and resolves exact behavior2 PASS');
+loc.graphTraceGraphLocation.locations=[];
+const liveGraphs=Array.from({length:201},(_,i)=>({nodes:[{id:'node-'+i}]}));
+const leaseOwner={id:'bounded-owner',behaviors:[]};
+for(let i=0;i<liveGraphs.length;i++){
+  leaseOwner.behaviors=[{action:'graph',graph:liveGraphs[i]}];
+  const entry=loc.graphTraceGraphLocation(liveGraphs[i],leaseOwner);
+  assert.equal(Boolean(entry.locationId),i<200,'Only first200 distinct graph leases retained');
+}
+assert.equal(loc.graphTraceGraphLocation.locations.length,200);
+leaseOwner.behaviors=[{action:'graph',graph:liveGraphs[0]}];
+assert.equal(loc.graphTraceGraphLocation(liveGraphs[0],leaseOwner).locationId,'1','Existing lease stays reusable at capacity');
+loc.graphTraceGraphLocation.locations=[];
+const oversized={nodes:[{id:'large',text:'x'.repeat(32768)}]};leaseOwner.behaviors=[{action:'graph',graph:oversized}];
+assert.equal(loc.graphTraceGraphLocation(oversized,leaseOwner).locationId,'');assert.equal(loc.graphTraceGraphLocation.locations.length,0);
+console.log('Phase215 actual location lease bounds200, cached reuse at capacity and oversized signature refusal PASS');

@@ -1,0 +1,48 @@
+{
+  "name": "Phase 039 Portable Tilemap Bundle Dogfood",
+  "internalOnly": true,
+  "source": {
+    "cells": 576,
+    "layers": 4,
+    "markers": 8,
+    "markerPrefabRefs": [
+      "Dogfood Enemy",
+      "Dogfood Elite",
+      "Dogfood Boss"
+    ],
+    "negativeCoordinates": true,
+    "hiddenLayers": 1,
+    "lockedLayers": 1,
+    "ordinarySceneObjects": 3
+  },
+  "bundle": {
+    "bytes": 100262,
+    "sha256": "4fe01c0849a4ef3bbee262c4575595ab06dd2a144fb98e9e8d65e7d50c0acb35",
+    "summary": {
+      "layers": 4,
+      "cells": 576,
+      "markers": 8,
+      "tilesets": 1,
+      "tiles": 10,
+      "prefabs": 3,
+      "scripts": 1,
+      "textures": 2,
+      "blobs": 1
+    }
+  },
+  "chunk": {
+    "bytes": 55473,
+    "sha256": "62b01fa94075028fa109a9d3fa1b6a39301edd92191ceaf164eb2a0b57555fe0",
+    "summary": {
+      "layers": 4,
+      "cells": 288,
+      "markers": 3,
+      "tilesets": 1,
+      "tiles": 10,
+      "prefabs": 3,
+      "scripts": 1,
+      "textures": 2,
+      "blobs": 1
+    }
+  }
+}

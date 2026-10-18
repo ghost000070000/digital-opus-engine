@@ -1,0 +1,15 @@
+'use strict';const assert=require('assert'),{plan}=require('../tools/real-demo-native-route');
+const wall={visible:true,solid:true,collisionCenter:{x:0,y:1,z:2},collisionGeometry:{shape:'box',half:{x:2,y:2,z:.2}},rotation:{y:0,w:1}};
+const r=plan({x:0,y:1,z:0},{x:0,z:5},[wall]);assert.strictEqual(r.status,'OBSERVED_GEOMETRY_ROUTE_PLANNED');assert(r.points.some(p=>Math.abs(p.x)>2.5));assert(Math.hypot(r.points.at(-1).x,r.points.at(-1).z-5)<=.45);
+const direct=plan({x:0,y:1,z:0},{x:0,z:5},[{...wall,solid:false}]);assert.strictEqual(direct.points.length,1,'Pass-through geometry does not create phantom obstacles');
+const interact=plan({x:0,y:1,z:0},{x:0,z:2},[wall],{reach:2.2});assert.strictEqual(interact.status,'ALREADY_IN_REACH','Driver need not enter a solid switch to interact');
+const deck={...wall,collisionCenter:{x:0,y:.15,z:2},collisionGeometry:{shape:'box',half:{x:20,y:.15,z:1}}};
+const start={x:0,y:.55,z:0},target={x:0,z:5};
+assert.strictEqual(plan(start,target,[deck],{grounded:true,stepHeight:.5}).points.length,1,'Actual grounded box step-height permits a low support deck route');
+assert.strictEqual(plan(start,target,[deck]).status,'NO_CLEAR_OBSERVED_ROUTE','No grounded step capability must not ignore a physical obstacle spanning the bounded search');
+assert(plan(start,target,[{...deck,collisionCenter:{x:0,y:.4,z:2},collisionGeometry:{shape:'box',half:{x:3,y:.4,z:1}}}],{grounded:true,stepHeight:.5}).points.length>1,'A tall box remains a barrier');
+assert(plan(start,target,[{...deck,collisionCenter:{x:0,y:.15,z:2},collisionGeometry:{shape:'sphere',radius:.15}}],{grounded:true,stepHeight:.5,padding:.2}).points.length>1,'Box stepping does not make sphere geometry walkable');
+console.log('Qualification native route: bounded observed obstacle detour, pass-through, interaction reach and grounded box step contract PASS');
+const divider=(x,z,hz)=>({...wall,collisionCenter:{x,y:2.5,z},collisionGeometry:{shape:'box',half:{x:.5,y:2.5,z:hz}}});
+const boundary={...wall,collisionCenter:{x:0,y:2.5,z:-10.5},collisionGeometry:{shape:'box',half:{x:100,y:2.5,z:.5}}};
+assert.strictEqual(plan({x:-26,y:.55,z:-4.5},{x:2,z:-6},[divider(-20,3,7),divider(-5,-3,7),boundary]).status,'OBSERVED_GEOMETRY_ROUTE_PLANNED','Alternating actual corridor dividers require a detour beyond the initial endpoint Z envelope');

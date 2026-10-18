@@ -2,7 +2,7 @@
   "id": "arsenal-run",
   "phase": "after",
   "url": "http://localhost:8837/dist/games/arsenal-run.html",
-  "startedAt": "2026-09-08T16:21:50.753Z",
+  "startedAt": "2026-09-20T21:57:12.492Z",
   "seconds": 24,
   "input": [
     {
@@ -32,11 +32,6 @@
     {
       "key": "d",
       "milliseconds": 1200
-    },
-    {
-      "key": "a",
-      "milliseconds": 700,
-      "reason": "Extend representative simulation time"
     },
     {
       "key": "a",
@@ -658,14 +653,14 @@
         "maxHealth": 100,
         "health": 92
       },
-      "playtime": 3.2106999999955312,
-      "simulationSeconds": 3.2106999999955312,
+      "playtime": 1.0999999999999999,
+      "simulationSeconds": 1.0999999999999999,
       "ended": false,
       "player": {
         "position": {
-          "x": -5.199969053219811,
-          "y": 0.55,
-          "z": 1.655921434171532
+          "x": -0.6398100682749202,
+          "y": 2.35,
+          "z": 10.095063768476109
         },
         "visible": false,
         "controller": "firstperson"
@@ -685,20 +680,20 @@
     },
     {
       "title": "Arsenal Run",
-      "text": "Out of ammo -- Reload\nSidearm 0/28\nHealth 44 / 100\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+      "text": "Out of ammo -- Reload\nSidearm 0/28\nHealth 84 / 100\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
       "state": {
         "kills": 0,
         "maxHealth": 100,
-        "health": 44
+        "health": 84
       },
-      "playtime": 17.724899999998495,
-      "simulationSeconds": 17.724899999998495,
+      "playtime": 10.499999999999979,
+      "simulationSeconds": 10.499999999999979,
       "ended": false,
       "player": {
         "position": {
-          "x": 11.996182870997421,
-          "y": 0.55,
-          "z": -1.2340137043110198
+          "x": 25.87602215160541,
+          "y": -1.4500000000000002,
+          "z": 7.4
         },
         "visible": false,
         "controller": "firstperson"
@@ -719,7 +714,7 @@
   ],
   "start": {
     "title": "Arsenal Run",
-    "text": "Arsenal Run\n\nA compact arena assault. Use cover, switch between sidearm and rifle, defeat three sentries and reach extraction. Visual landmark: Reactor trophy.\n\nBegin mission\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+    "text": "Arsenal Run\n\nA compact arena assault. Use cover, switch between sidearm and rifle, defeat three sentries and reach extraction. Visual landmark: Reactor trophy.\n\nBegin mission\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nMouse Sensitivity\nInvert Mouse Y\nQuality: High\n⛶ Fullscreen\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
     "state": {
       "kills": 0
     },
@@ -748,7 +743,7 @@
     },
     "helpers": []
   },
-  "pause": "Out of ammo -- Reload\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nSidearm 0/28\nHealth 44 / 100\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
+  "pause": "Out of ammo -- Reload\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nMouse Sensitivity\nInvert Mouse Y\nQuality: High\n⛶ Fullscreen\nSidearm 0/28\nHealth 84 / 100\nClear the compound\nSentries cleared: 0/3\nPress F to interact\nQ fire • R reload • V switch • Clear the three sentries",
   "completed": true,
-  "finishedAt": "2026-09-08T16:24:35.959Z"
+  "finishedAt": "2026-09-20T21:59:35.808Z"
 }

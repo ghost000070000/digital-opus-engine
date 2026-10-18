@@ -1,0 +1,14 @@
+'use strict';
+const assert=require('assert'),{c}=require('../tools/characterize-phase-183-real-sampler');
+assert.equal(typeof c.computeRootTranslationDelta,'function','Root translation utility must be available without altering Entity movement');
+const skin={jointCount:1,jointNames:['root'],jointParents:[-1],jointLocalBind:[{translation:[3,0,0],rotation:[0,0,0,1],scale:[1,1,1]}],clips:[{duration:1,tracks:[{jointLocalIndex:0,path:'translation',times:new Float32Array([0,1]),values:new Float32Array([0,0,0,2,1,0]),interpolation:'LINEAR'}]}]};
+const before=JSON.stringify(skin),delta=c.computeRootTranslationDelta(skin,0,.25,.75,0);assert.equal(delta.x,1);assert.equal(delta.y,.5);assert.equal(delta.z,0);assert.equal(JSON.stringify(skin),before);
+const zero=c.computeRootTranslationDelta({...skin,clips:[{duration:1,tracks:[]}]},0,0,1,0);assert.equal(zero.length(),0);
+const reverse=c.computeRootTranslationDelta(skin,0,.75,.25,0);assert.equal(reverse.x,-1);assert.equal(reverse.y,-.5);
+for(const args of [[0,-1,1,0],[0,0,Infinity,0],[0,0,1,1],[9,0,1,0]])assert.throws(()=>c.computeRootTranslationDelta(skin,...args));
+const fs=require('fs'),vm=require('vm'),h={window:{}};vm.runInNewContext(fs.readFileSync('dist/opus-engine.js','utf8'),h);const api=h.window.Opus.Skin;
+assert.equal(api.computeRootMotionDelta(skin,0,0,1,'root').x,2);
+assert.throws(()=>api.computeRootMotionDelta(skin,0,0,1,'Missing'));
+assert.throws(()=>api.computeRootMotionDelta({...skin,jointParents:[-1,-1],jointNames:['root','other']},0,0,1));
+assert.throws(()=>api.computeRootMotionDelta({...skin,jointParents:[-1,-1],jointNames:['root','root']},0,0,1,'root'));
+console.log('Phase189 actual sampler root delta, reverse interval, bind fallback, no input mutation PASS');

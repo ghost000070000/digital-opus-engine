@@ -1,0 +1,1433 @@
+{
+  "generatedAt": "2026-09-11T17:29:25.615Z",
+  "method": "Native player input with read-only telemetry",
+  "results": [
+    {
+      "id": "arsenal-run",
+      "errors": [],
+      "mainDefaults": {
+        "sensitivity": 0.0018,
+        "invertMouseY": false
+      },
+      "lookDefault": {
+        "slowRight": 0.01440000000000019,
+        "right": 0.14400000000000013,
+        "left": -0.2879999999999998,
+        "down": 0.108,
+        "up": -0.216,
+        "largeRight": 2.9375999999999993,
+        "upperExtreme": -1.5,
+        "lowerExtreme": 1.5
+      },
+      "inputs": {
+        "wDistance": 2.069970423115534,
+        "diagonalDistance": 2.8932883125665407,
+        "sprintDistance": 2.5164673235313697
+      },
+      "pause": {
+        "paused": true,
+        "pointerReleased": true
+      },
+      "pauseControls": {
+        "sensitivity": 0.0018,
+        "invertMouseY": false
+      },
+      "inverted": {
+        "chosen": {
+          "sensitivity": 0.0019,
+          "invertMouseY": true
+        },
+        "downDelta": -0.1140000000000001
+      },
+      "resume": {
+        "controller": "firstperson",
+        "position": {
+          "x": 6.663048943158743,
+          "y": 0.55,
+          "z": 16.1
+        },
+        "velocity": {
+          "x": 3.5425652394888276,
+          "y": 0,
+          "z": 0
+        },
+        "rotationY": 1.2556073464102053,
+        "yaw": 7.538792653589793,
+        "pitch": 1.4221,
+        "grounded": true,
+        "basis": {
+          "forward": {
+            "x": 0.1417733773264578,
+            "y": -0.9829736952225625,
+            "z": 0.1168889386638057
+          },
+          "right": {
+            "x": -0.6361429772842396,
+            "y": 0,
+            "z": 0.7715711972669426
+          }
+        },
+        "paused": false,
+        "pointerLocked": true,
+        "ended": false,
+        "endTitle": "",
+        "counters": {},
+        "settings": {
+          "sensitivity": 0.0019,
+          "invertMouseY": true
+        }
+      },
+      "persisted": {
+        "sensitivity": 0.0019,
+        "invertMouseY": true
+      },
+      "pass": true
+    },
+    {
+      "id": "survival-arena",
+      "errors": [],
+      "authored": {
+        "moveSpeed": 6,
+        "acceleration": 28,
+        "bounds": {
+          "minX": -9,
+          "maxX": 9,
+          "minZ": -9,
+          "maxZ": 9
+        },
+        "visibleLandmarks": 10
+      },
+      "initial": {
+        "controller": "hovercraft",
+        "position": {
+          "x": 0,
+          "y": -0.2505871526561789,
+          "z": 0
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "grounded": true,
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.4845666142372384,
+            "z": 0.8747543634453386
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "paused": false,
+        "pointerLocked": false,
+        "ended": false,
+        "endTitle": "",
+        "counters": {},
+        "settings": {
+          "sensitivity": 0.0018,
+          "invertMouseY": false
+        }
+      },
+      "accelerated": {
+        "controller": "hovercraft",
+        "position": {
+          "x": 0,
+          "y": 0.31052380064519425,
+          "z": 1.3541624414271372
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 6
+        },
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "grounded": true,
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.30814240990336716,
+            "z": 0.9513402415639449
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "paused": false,
+        "pointerLocked": false,
+        "ended": false,
+        "endTitle": "",
+        "counters": {},
+        "settings": {
+          "sensitivity": 0.0018,
+          "invertMouseY": false
+        }
+      },
+      "boostPeak": {
+        "controller": "hovercraft",
+        "position": {
+          "x": 0,
+          "y": 1.2407175877888472,
+          "z": 3.2936081892587765
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 15.87417704725709
+        },
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "grounded": true,
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.20864993091141143,
+            "z": 0.977990391737395
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "paused": false,
+        "pointerLocked": false,
+        "ended": false,
+        "endTitle": "",
+        "counters": {},
+        "settings": {
+          "sensitivity": 0.0018,
+          "invertMouseY": false
+        }
+      },
+      "steered": {
+        "controller": "hovercraft",
+        "position": {
+          "x": 0.9947974829193189,
+          "y": -1.1658370196903718,
+          "z": 6.577905547419366
+        },
+        "velocity": {
+          "x": 3.839919354768762,
+          "y": 0,
+          "z": 4.281610087294522
+        },
+        "rotationY": 0.6494151229694006,
+        "yaw": 0,
+        "pitch": 0,
+        "grounded": true,
+        "basis": {
+          "forward": {
+            "x": 0.4867990851925277,
+            "y": -0.36280955119721825,
+            "z": 0.7946042286671972
+          },
+          "right": {
+            "x": -0.8527047042910589,
+            "y": 0,
+            "z": 0.5223932305073427
+          }
+        },
+        "paused": false,
+        "pointerLocked": false,
+        "ended": false,
+        "endTitle": "",
+        "counters": {},
+        "settings": {
+          "sensitivity": 0.0018,
+          "invertMouseY": false
+        }
+      },
+      "coasted": {
+        "controller": "hovercraft",
+        "position": {
+          "x": 3.588058100187793,
+          "y": -1.9178531367480895,
+          "z": 8.45
+        },
+        "velocity": {
+          "x": 1.6490195070772804,
+          "y": 0,
+          "z": 0
+        },
+        "rotationY": 0.9566206966899417,
+        "yaw": 0,
+        "pitch": 0,
+        "grounded": true,
+        "basis": {
+          "forward": {
+            "x": 0.804421618542749,
+            "y": -0.3896415195587365,
+            "z": 0.44842540723850954
+          },
+          "right": {
+            "x": -0.48690734837157523,
+            "y": 0,
+            "z": 0.8734536244711345
+          }
+        },
+        "paused": false,
+        "pointerLocked": false,
+        "ended": false,
+        "endTitle": "",
+        "counters": {},
+        "settings": {
+          "sensitivity": 0.0018,
+          "invertMouseY": false
+        }
+      },
+      "reversed": {
+        "controller": "hovercraft",
+        "position": {
+          "x": 0.8751000000000003,
+          "y": -1.0687523321426162,
+          "z": 6.181495443963718
+        },
+        "velocity": {
+          "x": -8.881784197001252e-16,
+          "y": 0,
+          "z": -3.4096882876514427
+        },
+        "rotationY": 0.9585103861455523,
+        "yaw": 0,
+        "pitch": 0,
+        "grounded": true,
+        "basis": {
+          "forward": {
+            "x": 0.7193027438898528,
+            "y": -0.4873070490585202,
+            "z": 0.49511150518888747
+          },
+          "right": {
+            "x": -0.5669882085180501,
+            "y": 0,
+            "z": 0.8237259079338783
+          }
+        },
+        "paused": false,
+        "pointerLocked": false,
+        "ended": false,
+        "endTitle": "",
+        "counters": {},
+        "settings": {
+          "sensitivity": 0.0018,
+          "invertMouseY": false
+        }
+      },
+      "boosted": {
+        "controller": "hovercraft",
+        "position": {
+          "x": -1.1256858547736455e-15,
+          "y": -0.7872823905151917,
+          "z": 6.125
+        },
+        "velocity": {
+          "x": -2.775557561562891e-15,
+          "y": 0,
+          "z": 7.888609052210118e-31
+        },
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "grounded": true,
+        "basis": {
+          "forward": {
+            "x": -3.8336449294028567e-16,
+            "y": -0.33950847876015816,
+            "z": 0.940602994280777
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": -4.075731156197537e-16
+          }
+        },
+        "paused": false,
+        "pointerLocked": false,
+        "ended": false,
+        "endTitle": "",
+        "counters": {},
+        "settings": {
+          "sensitivity": 0.0018,
+          "invertMouseY": false
+        }
+      },
+      "boundary": {
+        "controller": "hovercraft",
+        "position": {
+          "x": 8.45,
+          "y": -1.8750937623365462,
+          "z": 8.45
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotationY": 0.9585105776522309,
+        "yaw": 0,
+        "pitch": 0,
+        "grounded": true,
+        "basis": {
+          "forward": {
+            "x": 0.7158477602369461,
+            "y": -0.4845573995450269,
+            "z": 0.5027585013800453
+          },
+          "right": {
+            "x": -0.5747391367265704,
+            "y": 0,
+            "z": 0.8183366817605067
+          }
+        },
+        "paused": false,
+        "pointerLocked": false,
+        "ended": false,
+        "endTitle": "",
+        "counters": {},
+        "settings": {
+          "sensitivity": 0.0018,
+          "invertMouseY": false
+        }
+      },
+      "metrics": {
+        "acceleratedSpeed": 6,
+        "steeringDelta": 0.6494151229694006,
+        "coastedSpeed": 1.6490195070772804,
+        "reverseDot": -1.9596829794896884,
+        "boostPeakSpeed": 15.87417704725709,
+        "boostedSpeed": 2.775557561562891e-15,
+        "cameraDot": 0.8747543634453386
+      },
+      "pass": true
+    },
+    {
+      "id": "survival-arena-2",
+      "errors": [],
+      "authored": {
+        "moveSpeed": 11,
+        "acceleration": 10,
+        "bounds": {
+          "minX": -10,
+          "maxX": 10,
+          "minZ": -10,
+          "maxZ": 10
+        },
+        "visibleLandmarks": 20
+      },
+      "initial": {
+        "controller": "hovercraft",
+        "position": {
+          "x": 0,
+          "y": 1.70128224616876,
+          "z": 0
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "grounded": true,
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.48456769956413226,
+            "z": 0.8747537622320495
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "paused": false,
+        "pointerLocked": false,
+        "ended": false,
+        "endTitle": "",
+        "counters": {},
+        "settings": {
+          "sensitivity": 0.0018,
+          "invertMouseY": false
+        }
+      },
+      "accelerated": {
+        "controller": "hovercraft",
+        "position": {
+          "x": 0,
+          "y": 1.625228625820517,
+          "z": 0.5452803578519886
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 3.0730322161456876
+        },
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "grounded": true,
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.3937013604917068,
+            "z": 0.9192384014753623
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "paused": false,
+        "pointerLocked": false,
+        "ended": false,
+        "endTitle": "",
+        "counters": {},
+        "settings": {
+          "sensitivity": 0.0018,
+          "invertMouseY": false
+        }
+      },
+      "boostPeak": {
+        "controller": "hovercraft",
+        "position": {
+          "x": 0,
+          "y": 1.5650822824056947,
+          "z": 1.7587967596972445
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 9.630029929965128
+        },
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "grounded": true,
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.27508330479050247,
+            "z": 0.9614203947418295
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "paused": false,
+        "pointerLocked": false,
+        "ended": false,
+        "endTitle": "",
+        "counters": {},
+        "settings": {
+          "sensitivity": 0.0018,
+          "invertMouseY": false
+        }
+      },
+      "steered": {
+        "controller": "hovercraft",
+        "position": {
+          "x": 0.2744819672787461,
+          "y": -0.4592452468371386,
+          "z": 6.125
+        },
+        "velocity": {
+          "x": 0.8441772831396621,
+          "y": 0,
+          "z": -2.220446049250313e-16
+        },
+        "rotationY": 0.43696809883278437,
+        "yaw": 0,
+        "pitch": 0,
+        "grounded": true,
+        "basis": {
+          "forward": {
+            "x": 0.3200530395578648,
+            "y": -0.47248495964227544,
+            "z": 0.8211723417052046
+          },
+          "right": {
+            "x": -0.9317329542288678,
+            "y": 0,
+            "z": 0.3631441889992823
+          }
+        },
+        "paused": false,
+        "pointerLocked": false,
+        "ended": false,
+        "endTitle": "",
+        "counters": {},
+        "settings": {
+          "sensitivity": 0.0018,
+          "invertMouseY": false
+        }
+      },
+      "coasted": {
+        "controller": "hovercraft",
+        "position": {
+          "x": 0.5632283303011199,
+          "y": -0.5313117190946203,
+          "z": 6.179270978616401
+        },
+        "velocity": {
+          "x": 0.11317150337489781,
+          "y": 0,
+          "z": 0.05438587842087832
+        },
+        "rotationY": 0.5505415207052311,
+        "yaw": 0,
+        "pitch": 0,
+        "grounded": true,
+        "basis": {
+          "forward": {
+            "x": 0.4667111987791395,
+            "y": -0.47680161551327166,
+            "z": 0.7448764168491795
+          },
+          "right": {
+            "x": -0.8474029040068644,
+            "y": 0,
+            "z": 0.5309503915440056
+          }
+        },
+        "paused": false,
+        "pointerLocked": false,
+        "ended": false,
+        "endTitle": "",
+        "counters": {},
+        "settings": {
+          "sensitivity": 0.0018,
+          "invertMouseY": false
+        }
+      },
+      "reversed": {
+        "controller": "hovercraft",
+        "position": {
+          "x": -2.8561831774385227,
+          "y": 0.8097483936171399,
+          "z": 0.5869539936820631
+        },
+        "velocity": {
+          "x": -2.9612325186779467,
+          "y": 0,
+          "z": -4.811628222534603
+        },
+        "rotationY": 0.551710220787716,
+        "yaw": 0,
+        "pitch": 0,
+        "grounded": true,
+        "basis": {
+          "forward": {
+            "x": 0.13416433177854042,
+            "y": -0.9667135917837961,
+            "z": 0.21786409419381075
+          },
+          "right": {
+            "x": -0.8514940817134788,
+            "y": 0,
+            "z": 0.5243642138885142
+          }
+        },
+        "paused": false,
+        "pointerLocked": false,
+        "ended": false,
+        "endTitle": "",
+        "counters": {},
+        "settings": {
+          "sensitivity": 0.0018,
+          "invertMouseY": false
+        }
+      },
+      "boosted": {
+        "controller": "hovercraft",
+        "position": {
+          "x": 0,
+          "y": 0.3089077045441413,
+          "z": 6.081112939881659
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 12.63680085148726
+        },
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "grounded": true,
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.19503172937835314,
+            "z": 0.9807969333841174
+          },
+          "right": {
+            "x": -0.9999999999999999,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "paused": false,
+        "pointerLocked": false,
+        "ended": false,
+        "endTitle": "",
+        "counters": {},
+        "settings": {
+          "sensitivity": 0.0018,
+          "invertMouseY": false
+        }
+      },
+      "boundary": {
+        "controller": "hovercraft",
+        "position": {
+          "x": 6.864967947947299,
+          "y": -1.0255167452699976,
+          "z": 9.45
+        },
+        "velocity": {
+          "x": 2.051557864662817,
+          "y": 0,
+          "z": 0
+        },
+        "rotationY": 0.5517103378272208,
+        "yaw": 0,
+        "pitch": 0,
+        "grounded": true,
+        "basis": {
+          "forward": {
+            "x": 0.6479483870935531,
+            "y": -0.4151195885504571,
+            "z": 0.6386224352969151
+          },
+          "right": {
+            "x": -0.7019627424793667,
+            "y": 0,
+            "z": 0.712213667497926
+          }
+        },
+        "paused": false,
+        "pointerLocked": false,
+        "ended": true,
+        "endTitle": "",
+        "counters": {},
+        "settings": {
+          "sensitivity": 0.0018,
+          "invertMouseY": false
+        }
+      },
+      "metrics": {
+        "acceleratedSpeed": 3.0730322161456876,
+        "steeringDelta": 0.43696809883278437,
+        "coastedSpeed": 0.12556119204493507,
+        "reverseDot": -5.64983753467029,
+        "boostPeakSpeed": 9.630029929965128,
+        "boostedSpeed": 12.63680085148726,
+        "cameraDot": 0.8747537622320495
+      },
+      "pass": true
+    },
+    {
+      "id": "moving-temple",
+      "errors": [],
+      "initial": {
+        "controller": "thirdperson",
+        "position": {
+          "x": 0,
+          "y": 1.8,
+          "z": -0.4
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotationY": 1.5707963267948966,
+        "yaw": 0,
+        "pitch": 0,
+        "grounded": true,
+        "basis": {
+          "forward": {
+            "x": 0.8577009097124503,
+            "y": -0.5141489565081652,
+            "z": 5.127442374948411e-17
+          },
+          "right": {
+            "x": -5.978123978750843e-17,
+            "y": 0,
+            "z": 1
+          }
+        },
+        "paused": false,
+        "pointerLocked": false,
+        "ended": false,
+        "endTitle": "",
+        "counters": {},
+        "settings": {
+          "sensitivity": 0.0018,
+          "invertMouseY": false
+        }
+      },
+      "platform0": {
+        "x": 5.623999999999999,
+        "y": 1,
+        "z": 0
+      },
+      "platform1": {
+        "x": 6.5582666667302405,
+        "y": 1,
+        "z": 0
+      },
+      "lift0": {
+        "x": 16,
+        "y": 0.25,
+        "z": 0
+      },
+      "lift1": {
+        "x": 16,
+        "y": 0.25,
+        "z": 0
+      },
+      "stages": [
+        {
+          "controller": "thirdperson",
+          "position": {
+            "x": 5.583789439593038,
+            "y": 0.7208964139749128,
+            "z": -0.4
+          },
+          "velocity": {
+            "x": 2.7282995204707823,
+            "y": 0,
+            "z": 1.013096212017626e-16
+          },
+          "rotationY": 1.5707963267948966,
+          "yaw": 0,
+          "pitch": 0,
+          "grounded": true,
+          "basis": {
+            "forward": {
+              "x": 0.9240062755366757,
+              "y": -0.38237730420206806,
+              "z": 3.8134379731791116e-17
+            },
+            "right": {
+              "x": -4.127069343727361e-17,
+              "y": 0,
+              "z": 0.9999999999999999
+            }
+          },
+          "paused": false,
+          "pointerLocked": false,
+          "ended": false,
+          "endTitle": "",
+          "counters": {},
+          "settings": {
+            "sensitivity": 0.0018,
+            "invertMouseY": false
+          }
+        },
+        {
+          "controller": "thirdperson",
+          "position": {
+            "x": 9.5,
+            "y": 0.745934183955411,
+            "z": -0.4
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": 1.0749658131302598e-16
+          },
+          "rotationY": 1.5707963267948966,
+          "yaw": 0,
+          "pitch": 0,
+          "grounded": true,
+          "basis": {
+            "forward": {
+              "x": 0.8731488679688825,
+              "y": -0.48745364329816954,
+              "z": 4.861361313003961e-17
+            },
+            "right": {
+              "x": -5.567620243627472e-17,
+              "y": 0,
+              "z": 0.9999999999999999
+            }
+          },
+          "paused": false,
+          "pointerLocked": false,
+          "ended": false,
+          "endTitle": "",
+          "counters": {},
+          "settings": {
+            "sensitivity": 0.0018,
+            "invertMouseY": false
+          }
+        },
+        {
+          "controller": "thirdperson",
+          "position": {
+            "x": 9.5,
+            "y": 0.745934183955411,
+            "z": -0.4
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": 2.683901605299117e-16
+          },
+          "rotationY": 1.5707963267948966,
+          "yaw": 0,
+          "pitch": 0,
+          "grounded": true,
+          "basis": {
+            "forward": {
+              "x": 0.8586519294191914,
+              "y": -0.5125591323005569,
+              "z": 5.1117376403906994e-17
+            },
+            "right": {
+              "x": -5.953212780699598e-17,
+              "y": 0,
+              "z": 1
+            }
+          },
+          "paused": false,
+          "pointerLocked": false,
+          "ended": false,
+          "endTitle": "",
+          "counters": {},
+          "settings": {
+            "sensitivity": 0.0018,
+            "invertMouseY": false
+          }
+        },
+        {
+          "controller": "thirdperson",
+          "position": {
+            "x": 9.5,
+            "y": 0.745934183955411,
+            "z": -0.4
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": 2.594106030680768e-16
+          },
+          "rotationY": 1.5707963267948966,
+          "yaw": 0,
+          "pitch": 0,
+          "grounded": true,
+          "basis": {
+            "forward": {
+              "x": 0.8577211154965115,
+              "y": -0.5141152478106634,
+              "z": 5.127256736090169e-17
+            },
+            "right": {
+              "x": -5.977766716308644e-17,
+              "y": 0,
+              "z": 1
+            }
+          },
+          "paused": false,
+          "pointerLocked": false,
+          "ended": false,
+          "endTitle": "",
+          "counters": {},
+          "settings": {
+            "sensitivity": 0.0018,
+            "invertMouseY": false
+          }
+        },
+        {
+          "controller": "thirdperson",
+          "position": {
+            "x": 13.962488456429131,
+            "y": 1.8,
+            "z": -0.4
+          },
+          "velocity": {
+            "x": 2.394136802514181,
+            "y": 0,
+            "z": 1.019999490304827e-16
+          },
+          "rotationY": 1.5707963267948966,
+          "yaw": 0,
+          "pitch": 0,
+          "grounded": true,
+          "basis": {
+            "forward": {
+              "x": 0.9188580370988779,
+              "y": -0.39458827612943237,
+              "z": 3.9352176489266853e-17
+            },
+            "right": {
+              "x": -4.282726482266398e-17,
+              "y": 0,
+              "z": 0.9999999999999999
+            }
+          },
+          "paused": false,
+          "pointerLocked": false,
+          "ended": false,
+          "endTitle": "",
+          "counters": {},
+          "settings": {
+            "sensitivity": 0.0018,
+            "invertMouseY": false
+          }
+        }
+      ],
+      "final": {
+        "controller": "thirdperson",
+        "position": {
+          "x": 13.962488456429131,
+          "y": 1.8,
+          "z": -0.4
+        },
+        "velocity": {
+          "x": 2.394136802514181,
+          "y": 0,
+          "z": 1.019999490304827e-16
+        },
+        "rotationY": 1.5707963267948966,
+        "yaw": 0,
+        "pitch": 0,
+        "grounded": true,
+        "basis": {
+          "forward": {
+            "x": 0.9188580370988779,
+            "y": -0.39458827612943237,
+            "z": 3.9352176489266853e-17
+          },
+          "right": {
+            "x": -4.282726482266398e-17,
+            "y": 0,
+            "z": 0.9999999999999999
+          }
+        },
+        "paused": false,
+        "pointerLocked": false,
+        "ended": false,
+        "endTitle": "",
+        "counters": {},
+        "settings": {
+          "sensitivity": 0.0018,
+          "invertMouseY": false
+        }
+      },
+      "cameraDot": 0.8577009097124503,
+      "pass": true
+    },
+    {
+      "id": "skyway-trial",
+      "errors": [],
+      "initial": {
+        "controller": "thirdperson",
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 1
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "grounded": true,
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.5141489349754562,
+            "z": 0.8577009226202359
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "paused": false,
+        "pointerLocked": false,
+        "ended": false,
+        "endTitle": "",
+        "counters": {},
+        "settings": {
+          "sensitivity": 0.0018,
+          "invertMouseY": false
+        }
+      },
+      "early": {
+        "controller": "thirdperson",
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 1.3378409276810543
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 3.8819746738991934
+        },
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "grounded": true,
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.4528353293614654,
+            "z": 0.8915941702826983
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "paused": false,
+        "pointerLocked": false,
+        "ended": false,
+        "endTitle": "",
+        "counters": {},
+        "settings": {
+          "sensitivity": 0.0018,
+          "invertMouseY": false
+        }
+      },
+      "accelerated": {
+        "controller": "thirdperson",
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 2.8505950561028097
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 6.320069437495597
+        },
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "grounded": true,
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.34481258198321424,
+            "z": 0.938671552411209
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "paused": false,
+        "pointerLocked": false,
+        "ended": false,
+        "endTitle": "",
+        "counters": {},
+        "settings": {
+          "sensitivity": 0.0018,
+          "invertMouseY": false
+        }
+      },
+      "stopped": {
+        "controller": "thirdperson",
+        "position": {
+          "x": 0,
+          "y": 0.55,
+          "z": 4.071492893992109
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 1.7901334947236194
+        },
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "grounded": true,
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.3978862372552928,
+            "z": 0.9174347618238722
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "paused": false,
+        "pointerLocked": false,
+        "ended": false,
+        "endTitle": "",
+        "counters": {},
+        "settings": {
+          "sensitivity": 0.0018,
+          "invertMouseY": false
+        }
+      },
+      "stages": [
+        {
+          "controller": "thirdperson",
+          "position": {
+            "x": 0,
+            "y": 1.55,
+            "z": 8.768217424630691
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": 1.9517432958287302
+          },
+          "rotationY": 0,
+          "yaw": 0,
+          "pitch": 0,
+          "grounded": true,
+          "basis": {
+            "forward": {
+              "x": 0,
+              "y": -0.38808564850105687,
+              "z": 0.9216233121115776
+            },
+            "right": {
+              "x": -1,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "paused": false,
+          "pointerLocked": false,
+          "ended": false,
+          "endTitle": "",
+          "counters": {},
+          "settings": {
+            "sensitivity": 0.0018,
+            "invertMouseY": false
+          }
+        },
+        {
+          "controller": "thirdperson",
+          "position": {
+            "x": 0,
+            "y": 2.55,
+            "z": 13.370820181675338
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": 1.9519588775576622
+          },
+          "rotationY": 0,
+          "yaw": 0,
+          "pitch": 0,
+          "grounded": true,
+          "basis": {
+            "forward": {
+              "x": 0,
+              "y": -0.3880698807392198,
+              "z": 0.9216299515874296
+            },
+            "right": {
+              "x": -1,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "paused": false,
+          "pointerLocked": false,
+          "ended": false,
+          "endTitle": "",
+          "counters": {},
+          "settings": {
+            "sensitivity": 0.0018,
+            "invertMouseY": false
+          }
+        },
+        {
+          "controller": "thirdperson",
+          "position": {
+            "x": 0,
+            "y": 3.55,
+            "z": 17.973658247094033
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": 1.9512564655687572
+          },
+          "rotationY": 0,
+          "yaw": 0,
+          "pitch": 0,
+          "grounded": true,
+          "basis": {
+            "forward": {
+              "x": 0,
+              "y": -0.38809980626121815,
+              "z": 0.9216173503032619
+            },
+            "right": {
+              "x": -1,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "paused": false,
+          "pointerLocked": false,
+          "ended": false,
+          "endTitle": "",
+          "counters": {},
+          "settings": {
+            "sensitivity": 0.0018,
+            "invertMouseY": false
+          }
+        },
+        {
+          "controller": "thirdperson",
+          "position": {
+            "x": 0,
+            "y": 4.55,
+            "z": 22.577035195861892
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": 1.9519633431937233
+          },
+          "rotationY": 0,
+          "yaw": 0,
+          "pitch": 0,
+          "grounded": true,
+          "basis": {
+            "forward": {
+              "x": 0,
+              "y": -0.38811059865434616,
+              "z": 0.9216128054731906
+            },
+            "right": {
+              "x": -1,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "paused": false,
+          "pointerLocked": false,
+          "ended": false,
+          "endTitle": "",
+          "counters": {},
+          "settings": {
+            "sensitivity": 0.0018,
+            "invertMouseY": false
+          }
+        },
+        {
+          "controller": "thirdperson",
+          "position": {
+            "x": 0,
+            "y": 5.55,
+            "z": 27.256037635074904
+          },
+          "velocity": {
+            "x": 0,
+            "y": 0,
+            "z": 2.0728063497376956
+          },
+          "rotationY": 0,
+          "yaw": 0,
+          "pitch": 0,
+          "grounded": true,
+          "basis": {
+            "forward": {
+              "x": 0,
+              "y": -0.38330854441614365,
+              "z": 0.9236203547873861
+            },
+            "right": {
+              "x": -1,
+              "y": 0,
+              "z": 0
+            }
+          },
+          "paused": false,
+          "pointerLocked": false,
+          "ended": true,
+          "endTitle": "",
+          "counters": {},
+          "settings": {
+            "sensitivity": 0.0018,
+            "invertMouseY": false
+          }
+        }
+      ],
+      "final": {
+        "controller": "thirdperson",
+        "position": {
+          "x": 0,
+          "y": 5.55,
+          "z": 27.256037635074904
+        },
+        "velocity": {
+          "x": 0,
+          "y": 0,
+          "z": 2.0728063497376956
+        },
+        "rotationY": 0,
+        "yaw": 0,
+        "pitch": 0,
+        "grounded": true,
+        "basis": {
+          "forward": {
+            "x": 0,
+            "y": -0.38330854441614365,
+            "z": 0.9236203547873861
+          },
+          "right": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          }
+        },
+        "paused": false,
+        "pointerLocked": false,
+        "ended": true,
+        "endTitle": "",
+        "counters": {},
+        "settings": {
+          "sensitivity": 0.0018,
+          "invertMouseY": false
+        }
+      },
+      "metrics": {
+        "earlySpeed": 3.8819746738991934,
+        "acceleratedSpeed": 6.320069437495597,
+        "stoppedSpeed": 1.7901334947236194,
+        "maxZ": 27.256037635074904
+      },
+      "pass": true
+    }
+  ],
+  "pass": true
+}

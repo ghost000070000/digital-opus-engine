@@ -1,0 +1,71 @@
+{
+  "url": "http://127.0.0.1:8876/editor/index.html?phase=20-final",
+  "profile": "fresh localhost origin",
+  "project": "phase-020-clean-room",
+  "interactionCountApprox": 104,
+  "sourceFixtures": [
+    "tests/fixtures/phase-014-transparent-sprite.png",
+    "tests/fixtures/phase-017-pixel-art.png",
+    "tests/fixtures/phase-018-atlas.png"
+  ],
+  "authored": {
+    "levels": 2,
+    "objectsPerLevel": 21,
+    "spritesPerLevel": 19,
+    "billboardsPerLevel": 1,
+    "opaqueCubesPerLevel": 1,
+    "textures": 3,
+    "spriteAssetsBeforeExportPruning": 19,
+    "spriteAssetsInExport": 11,
+    "linkedPrefab": "Pixel Badge Prefab",
+    "sortingLayers": [
+      ["sprite-layer-default", "Default", 0],
+      ["sprite-layer-1", "Background", 1],
+      ["sprite-layer-2", "World", 2],
+      ["sprite-layer-3", "Effects Layer", 3],
+      ["sprite-layer-4", "Foreground", 4]
+    ]
+  },
+  "checks": {
+    "firstRunStartBlank": true,
+    "normalTransparentImport": true,
+    "pixelNearestImport": true,
+    "atlasManualRegion": [8, 8, 48, 40],
+    "atlasGridCellsCreated": 16,
+    "distinctAtlasCellsPlaced": 8,
+    "assetRowPlacements": 13,
+    "linkedPrefabPlacements": 5,
+    "hierarchyParenting": true,
+    "stableLayerIdSurvivedRenameAndReorder": true,
+    "partialOpacity": 0.65,
+    "customTint": "#88ccff",
+    "customOrderInLayer": 4,
+    "authoredRotationDegrees": 25,
+    "directResize": [1.512973, 0.65],
+    "directPivot": [0.059988, 1],
+    "sequentialInspectorRegressionReproducedThenFixed": true,
+    "billboardRemainedCameraFacingDuringOrbit": true,
+    "spriteRetainedAuthoredOrientationDuringOrbit": true,
+    "opaque3dDepthBoundaryPresent": true,
+    "undoRedoRepresentativeDuplicate": true,
+    "prefabUpdateIsManual": true,
+    "saveReloadLoadSelected": true,
+    "levelDuplicate": true,
+    "projectValidation": "No structured authoring issues found",
+    "editableExport": { "filename": "editable-game (13).html", "bytes": 1512657, "playableOnly": false },
+    "playableExport": { "filename": "playable-game (11).html", "bytes": 1512695, "playableOnly": true },
+    "exportDependencyClosure": { "levels": 2, "objectsPerLevel": [21, 21], "spriteAssets": 11, "textures": 3, "prefabs": 1 },
+    "unusedAtlasCellsPruned": ["Atlas Cell_009", "Atlas Cell_010", "Atlas Cell_011", "Atlas Cell_012", "Atlas Cell_013", "Atlas Cell_014", "Atlas Cell_015", "Atlas Cell_016"],
+    "singleFileOfflineNoExternalHttpAssets": true,
+    "localFileOpenAutomation": "blocked by browser URL policy; not bypassed"
+  },
+  "validationRepairCoverage": {
+    "missingSpriteAsset": "automated break/repair",
+    "missingTexture": "automated break/repair",
+    "missingSortingLayer": "automated break/repair",
+    "guardedSortingLayerDeleteReassign": "existing Phase 013 focused regression"
+  },
+  "consoleErrors": [],
+  "consoleWarnings": [],
+  "ok": true
+}

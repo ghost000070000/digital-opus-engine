@@ -1,0 +1,11 @@
+'use strict';
+// Exact-byte backup/hash-guarded bounded content migration; plan by default.
+const fs=require('fs'),path=require('path'),crypto=require('crypto'),{repair}=require('./real-demo-architectural-assemblies'),{fingerprint}=require('./real-demo-program-state');
+const root=path.resolve(__dirname,'..'),base=path.join(root,'games'),apply=process.argv.includes('--apply'),runId='architecture-migration-'+new Date().toISOString().replace(/[-:.]/g,''),out=path.join(root,'qualification/real-demo-collision',runId);
+fs.mkdirSync(out);const hash=s=>crypto.createHash('sha256').update(s).digest('hex'),report={runId,mode:apply?'APPLY':'PLAN',startedAt:new Date().toISOString(),startFingerprint:fingerprint(),games:[]};
+for(const game of JSON.parse(fs.readFileSync(path.join(base,'catalog.json'))).games.filter(g=>g.visibility==='public')){
+ if(path.basename(game.file)!==game.file)throw new Error('Unsafe catalog source');const file=path.join(base,game.file),before=fs.readFileSync(file,'utf8'),p=JSON.parse(before),result=repair(p);
+ if(!result.changes.length&&!result.skipped.length)continue;const after=JSON.stringify(p,null,2)+'\n';report.games.push({id:game.id,file:game.file,beforeHash:hash(before),afterHash:hash(after),...result});
+ if(result.changes.length){fs.writeFileSync(path.join(out,game.file+'.before'),before,{flag:'wx'});if(apply){if(hash(fs.readFileSync(file,'utf8'))!==hash(before))throw new Error('Concurrent user content changed');fs.writeFileSync(file,after);}}
+}
+report.endedAt=new Date().toISOString();report.finalFingerprint=fingerprint();fs.writeFileSync(path.join(out,'manifest.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({runId,mode:report.mode,games:report.games.filter(g=>g.changes.length).length,assemblies:report.games.reduce((n,g)=>n+g.changes.length,0),skipped:report.games.reduce((n,g)=>n+g.skipped.length,0)}));

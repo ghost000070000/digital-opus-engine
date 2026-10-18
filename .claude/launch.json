@@ -1,0 +1,23 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "doengine-editor",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "tools/dev-server.js"
+      ],
+      "port": 8837
+    },
+    {
+      "name": "engine-site",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "tools/serve-static-root.js",
+        "dist/engine-site",
+        "8851"
+      ],
+      "port": 8851
+    }
+  ]
+}

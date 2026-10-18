@@ -34,8 +34,13 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
+require('./build-editor').buildEditor(); // assemble the editor script from editor/src/modules first
 const DIST_DIR = path.join(ROOT, 'dist');
-const SITE_DIR = path.join(DIST_DIR, 'engine-site');
+const SITE_DIR = process.env.PHASE047_ENGINE_SITE_OUTPUT
+  ? path.resolve(process.env.PHASE047_ENGINE_SITE_OUTPUT)
+  : path.join(DIST_DIR, 'engine-site');
+if (process.env.PHASE047_ENGINE_SITE_OUTPUT && !SITE_DIR.startsWith(path.join(ROOT, 'qualification', 'phase-047') + path.sep))
+  throw new Error('Phase 047 package output must stay inside qualification/phase-047');
 const startedAt = process.hrtime.bigint();
 
 const { buildGamesSite, playerCard, escapeHtml } = require(path.join(ROOT, 'build', 'build-games-site.js'));
@@ -49,9 +54,59 @@ function fail(msg) {
 const engineJSPath = path.join(DIST_DIR, 'opus-engine.js');
 if (!fs.existsSync(engineJSPath)) fail('dist/opus-engine.js not found -- run node build/build.js first');
 const editorHtmlPath = path.join(ROOT, 'editor', 'index.html');
+const inspectorFieldsPath = path.join(ROOT, 'editor', 'src', '00-inspector-fields.js');
+const collider2DPath = path.join(ROOT, 'editor', 'src', '00-collider-2d.js');
+const collisionFilter2DPath = path.join(ROOT, 'editor', 'src', '00-collision-filter-2d.js');
+const triggerCollider2DPath = path.join(ROOT, 'editor', 'src', '00-trigger-collider-2d.js');
+const oneWay2DPath = path.join(ROOT, 'editor', 'src', '00-one-way-2d.js');
+const characterSlope2DPath = path.join(ROOT, 'editor', 'src', '00-character-slope-2d.js');
+const movingPlatform2DPath = path.join(ROOT, 'editor', 'src', '00-moving-platform-2d.js');
+const body2DPath = path.join(ROOT, 'editor', 'src', '00-body-2d.js');
+const platformerController2DPath = path.join(ROOT, 'editor', 'src', '00-platformer-controller-2d.js');
+const topdownController2DPath = path.join(ROOT, 'editor', 'src', '00-topdown-controller-2d.js');
+const controllerStateEventsPath = path.join(ROOT, 'editor', 'src', '00-controller-state-events.js');
+const controllerAbilitiesPath = path.join(ROOT, 'editor', 'src', '00-controller-abilities.js');
+const controllerTemplatesPath = path.join(ROOT, 'editor', 'src', '00-controller-templates.js');
+const aiBrainPath = path.join(ROOT, 'editor', 'src', '00-ai-brain.js');
+const weaponDefinitionsPath = path.join(ROOT, 'editor', 'src', '00-weapon-definitions.js');
+const damagePolicyPath = path.join(ROOT, 'editor', 'src', '00-damage-policy.js');
+const combatVolumesPath = path.join(ROOT, 'editor', 'src', '00-combat-volumes.js');
+const lootTablesPath = path.join(ROOT, 'editor', 'src', '00-loot-tables.js');
+const inventoryTemplatesPath = path.join(ROOT, 'editor', 'src', '00-inventory-templates.js');
+const physicsDebug2DPath = path.join(ROOT, 'editor', 'src', '00-physics-debug-2d.js');
+const authoringSchemaPath = path.join(ROOT, 'editor', 'src', '00-authoring-schema.js');
+const authoringPlumbingPath = path.join(ROOT, 'editor', 'src', '00-authoring-plumbing.js');
+const characterTileQueryPath = path.join(ROOT, 'editor', 'src', '00-character-tile-query.js');
+const tilemapBundlePath = path.join(ROOT, 'editor', 'src', '00-tilemap-bundle.js');
+const spriteAuthoringPath = path.join(ROOT, 'editor', 'src', '00-sprite-authoring.js');
+const authoringLanguagePath = path.join(ROOT, 'editor', 'src', '00-authoring-language.js');
+const gameplayPresetsPath = path.join(ROOT, 'editor', 'src', '00-gameplay-presets.js');
+const componentPresetsPath = path.join(ROOT, 'editor', 'src', '00-component-presets.js');
+const hudCanvasPath = path.join(ROOT, 'editor', 'src', '00-hud-canvas.js');
+const hudLayoutPath = path.join(ROOT, 'editor', 'src', '00-hud-layout.js');
+const hudBindingsPath = path.join(ROOT, 'editor', 'src', '00-hud-bindings.js');
+const hudActionPromptsPath = path.join(ROOT, 'editor', 'src', '00-hud-action-prompts.js');
+const menuScreenStackPath = path.join(ROOT, 'editor', 'src', '00-menu-screen-stack.js');
+const hudButtonActionsPath = path.join(ROOT, 'editor', 'src', '00-hud-button-actions.js');
+const hudWidgetsPath = path.join(ROOT, 'editor', 'src', '00-hud-widgets.js');
+const hudTweensPath = path.join(ROOT, 'editor', 'src', '00-hud-tweens.js');
+const uiTemplatesPath = path.join(ROOT, 'editor', 'src', '00-ui-templates.js');
+const inputActionAssetsPath = path.join(ROOT, 'editor', 'src', '00-input-action-assets.js');
+const inputActionSetsPath = path.join(ROOT, 'editor', 'src', '00-input-action-sets.js');
+const inputDeviceMappingsPath = path.join(ROOT, 'editor', 'src', '00-input-device-mappings.js');
+const playerRebindScreenPath = path.join(ROOT, 'editor', 'src', '00-player-rebind-screen.js');
+const inputTuningPath = path.join(ROOT, 'editor', 'src', '00-input-tuning.js');
+const inputContextsPath = path.join(ROOT, 'editor', 'src', '00-input-contexts.js');
+const touchControlLayoutPath = path.join(ROOT, 'editor', 'src', '00-touch-control-layout.js');
+const inputConflictsPath = path.join(ROOT, 'editor', 'src', '00-input-conflicts.js');
+const onboardingPath = path.join(ROOT, 'editor', 'src', '00-onboarding.js');
+const spriteStartersPath = path.join(ROOT, 'editor', 'src', '00-sprite-starters.js');
+const worldStartersPath = path.join(ROOT, 'editor', 'src', '00-world-starters.js');
+const capabilityCatalogPath = path.join(ROOT, 'no-code-capabilities.json');
+const frictionRegistryPath = path.join(ROOT, 'authoring-friction.json');
 const editorJsPath = path.join(ROOT, 'editor', 'src', '01-editor.js');
 const templateJsPath = path.join(ROOT, 'build', 'export-template.js');
-for (const p of [editorHtmlPath, editorJsPath, templateJsPath]) {
+for (const p of [editorHtmlPath, inspectorFieldsPath, collider2DPath, triggerCollider2DPath, oneWay2DPath, characterSlope2DPath, movingPlatform2DPath, body2DPath, physicsDebug2DPath, authoringSchemaPath, authoringPlumbingPath, characterTileQueryPath, tilemapBundlePath, spriteAuthoringPath, authoringLanguagePath, gameplayPresetsPath, onboardingPath, spriteStartersPath, capabilityCatalogPath, frictionRegistryPath, editorJsPath, templateJsPath]) {
   if (!fs.existsSync(p)) fail(`required source file missing: ${path.relative(ROOT, p)}`);
 }
 
@@ -68,6 +123,63 @@ fs.mkdirSync(path.join(SITE_DIR, 'dist'), { recursive: true });
 fs.mkdirSync(path.join(SITE_DIR, 'build'), { recursive: true });
 fs.mkdirSync(path.join(SITE_DIR, 'assets', 'branding'), { recursive: true });
 fs.copyFileSync(editorHtmlPath, path.join(SITE_DIR, 'editor', 'index.html'));
+fs.copyFileSync(inspectorFieldsPath, path.join(SITE_DIR, 'editor', 'src', '00-inspector-fields.js'));
+fs.copyFileSync(collider2DPath, path.join(SITE_DIR, 'editor', 'src', '00-collider-2d.js'));
+fs.copyFileSync(collisionFilter2DPath, path.join(SITE_DIR, 'editor', 'src', '00-collision-filter-2d.js'));
+fs.copyFileSync(triggerCollider2DPath, path.join(SITE_DIR, 'editor', 'src', '00-trigger-collider-2d.js'));
+fs.copyFileSync(oneWay2DPath, path.join(SITE_DIR, 'editor', 'src', '00-one-way-2d.js'));
+fs.copyFileSync(characterSlope2DPath, path.join(SITE_DIR, 'editor', 'src', '00-character-slope-2d.js'));
+fs.copyFileSync(movingPlatform2DPath, path.join(SITE_DIR, 'editor', 'src', '00-moving-platform-2d.js'));
+fs.copyFileSync(body2DPath, path.join(SITE_DIR, 'editor', 'src', '00-body-2d.js'));
+fs.copyFileSync(platformerController2DPath, path.join(SITE_DIR, 'editor', 'src', '00-platformer-controller-2d.js'));
+fs.copyFileSync(topdownController2DPath, path.join(SITE_DIR, 'editor', 'src', '00-topdown-controller-2d.js'));
+fs.copyFileSync(controllerStateEventsPath, path.join(SITE_DIR, 'editor', 'src', '00-controller-state-events.js'));
+fs.copyFileSync(controllerAbilitiesPath, path.join(SITE_DIR, 'editor', 'src', '00-controller-abilities.js'));
+fs.copyFileSync(controllerTemplatesPath, path.join(SITE_DIR, 'editor', 'src', '00-controller-templates.js'));
+fs.copyFileSync(aiBrainPath, path.join(SITE_DIR, 'editor', 'src', '00-ai-brain.js'));
+fs.copyFileSync(weaponDefinitionsPath, path.join(SITE_DIR, 'editor', 'src', '00-weapon-definitions.js'));
+fs.copyFileSync(damagePolicyPath, path.join(SITE_DIR, 'editor', 'src', '00-damage-policy.js'));
+fs.copyFileSync(combatVolumesPath, path.join(SITE_DIR, 'editor', 'src', '00-combat-volumes.js'));
+fs.copyFileSync(lootTablesPath, path.join(SITE_DIR, 'editor', 'src', '00-loot-tables.js'));
+fs.copyFileSync(inventoryTemplatesPath, path.join(SITE_DIR, 'editor', 'src', '00-inventory-templates.js'));
+fs.copyFileSync(physicsDebug2DPath, path.join(SITE_DIR, 'editor', 'src', '00-physics-debug-2d.js'));
+fs.copyFileSync(authoringSchemaPath, path.join(SITE_DIR, 'editor', 'src', '00-authoring-schema.js'));
+fs.copyFileSync(authoringPlumbingPath, path.join(SITE_DIR, 'editor', 'src', '00-authoring-plumbing.js'));
+fs.copyFileSync(characterTileQueryPath, path.join(SITE_DIR, 'editor', 'src', '00-character-tile-query.js'));
+fs.copyFileSync(tilemapBundlePath, path.join(SITE_DIR, 'editor', 'src', '00-tilemap-bundle.js'));
+fs.copyFileSync(spriteAuthoringPath, path.join(SITE_DIR, 'editor', 'src', '00-sprite-authoring.js'));
+fs.copyFileSync(authoringLanguagePath, path.join(SITE_DIR, 'editor', 'src', '00-authoring-language.js'));
+fs.copyFileSync(path.join(ROOT, 'editor', 'src', '00-graph-values.js'), path.join(SITE_DIR, 'editor', 'src', '00-graph-values.js'));
+fs.copyFileSync(path.join(ROOT, 'editor', 'src', '00-graph-variables.js'), path.join(SITE_DIR, 'editor', 'src', '00-graph-variables.js'));
+fs.copyFileSync(path.join(ROOT, 'editor', 'src', '00-graph-functions.js'), path.join(SITE_DIR, 'editor', 'src', '00-graph-functions.js'));
+fs.copyFileSync(path.join(ROOT, 'editor', 'src', '00-graph-schema.js'), path.join(SITE_DIR, 'editor', 'src', '00-graph-schema.js'));
+fs.copyFileSync(path.join(ROOT, 'editor', 'src', '00-signals.js'), path.join(SITE_DIR, 'editor', 'src', '00-signals.js'));
+fs.copyFileSync(path.join(ROOT, 'editor', 'src', '00-graph-templates.js'), path.join(SITE_DIR, 'editor', 'src', '00-graph-templates.js'));
+fs.copyFileSync(path.join(ROOT, 'editor', 'src', '00-graph-trace.js'), path.join(SITE_DIR, 'editor', 'src', '00-graph-trace.js'));
+fs.copyFileSync(gameplayPresetsPath, path.join(SITE_DIR, 'editor', 'src', '00-gameplay-presets.js'));
+fs.copyFileSync(componentPresetsPath, path.join(SITE_DIR, 'editor', 'src', '00-component-presets.js'));
+fs.copyFileSync(hudCanvasPath, path.join(SITE_DIR, 'editor', 'src', '00-hud-canvas.js'));
+fs.copyFileSync(hudLayoutPath, path.join(SITE_DIR, 'editor', 'src', '00-hud-layout.js'));
+fs.copyFileSync(hudBindingsPath, path.join(SITE_DIR, 'editor', 'src', '00-hud-bindings.js'));
+fs.copyFileSync(hudActionPromptsPath, path.join(SITE_DIR, 'editor', 'src', '00-hud-action-prompts.js'));
+fs.copyFileSync(menuScreenStackPath, path.join(SITE_DIR, 'editor', 'src', '00-menu-screen-stack.js'));
+fs.copyFileSync(hudButtonActionsPath, path.join(SITE_DIR, 'editor', 'src', '00-hud-button-actions.js'));
+fs.copyFileSync(hudWidgetsPath, path.join(SITE_DIR, 'editor', 'src', '00-hud-widgets.js'));
+fs.copyFileSync(hudTweensPath, path.join(SITE_DIR, 'editor', 'src', '00-hud-tweens.js'));
+fs.copyFileSync(uiTemplatesPath, path.join(SITE_DIR, 'editor', 'src', '00-ui-templates.js'));
+fs.copyFileSync(inputActionAssetsPath, path.join(SITE_DIR, 'editor', 'src', '00-input-action-assets.js'));
+fs.copyFileSync(inputActionSetsPath, path.join(SITE_DIR, 'editor', 'src', '00-input-action-sets.js'));
+fs.copyFileSync(inputDeviceMappingsPath, path.join(SITE_DIR, 'editor', 'src', '00-input-device-mappings.js'));
+fs.copyFileSync(playerRebindScreenPath, path.join(SITE_DIR, 'editor', 'src', '00-player-rebind-screen.js'));
+fs.copyFileSync(inputTuningPath, path.join(SITE_DIR, 'editor', 'src', '00-input-tuning.js'));
+fs.copyFileSync(inputContextsPath, path.join(SITE_DIR, 'editor', 'src', '00-input-contexts.js'));
+fs.copyFileSync(touchControlLayoutPath, path.join(SITE_DIR, 'editor', 'src', '00-touch-control-layout.js'));
+fs.copyFileSync(inputConflictsPath, path.join(SITE_DIR, 'editor', 'src', '00-input-conflicts.js'));
+fs.copyFileSync(onboardingPath, path.join(SITE_DIR, 'editor', 'src', '00-onboarding.js'));
+fs.copyFileSync(spriteStartersPath, path.join(SITE_DIR, 'editor', 'src', '00-sprite-starters.js'));
+fs.copyFileSync(worldStartersPath, path.join(SITE_DIR, 'editor', 'src', '00-world-starters.js'));
+fs.copyFileSync(capabilityCatalogPath, path.join(SITE_DIR, 'no-code-capabilities.json'));
+fs.copyFileSync(frictionRegistryPath, path.join(SITE_DIR, 'authoring-friction.json'));
 fs.copyFileSync(editorJsPath, path.join(SITE_DIR, 'editor', 'src', '01-editor.js'));
 fs.copyFileSync(engineJSPath, path.join(SITE_DIR, 'dist', 'opus-engine.js'));
 fs.copyFileSync(templateJsPath, path.join(SITE_DIR, 'build', 'export-template.js'));
@@ -156,6 +268,13 @@ const homeHtml = homeTemplate
   .replace('{{EXAMPLES_BODY}}', examplesBody)
   .replace('{{GAME_COUNT}}', String(gamesResult.built.length));
 fs.writeFileSync(path.join(SITE_DIR, 'index.html'), homeHtml, 'utf8');
+// The generated guide is packaged locally, not deployed or published.
+fs.mkdirSync(path.join(SITE_DIR, 'docs'), { recursive: true });
+const creatorGuideHtml = require('./build-docs').generate();
+fs.writeFileSync(path.join(SITE_DIR, 'docs', 'index.html'), creatorGuideHtml, 'utf8');
+// Match source-editor Help's relative path; retain the short homepage URL too.
+fs.mkdirSync(path.join(SITE_DIR, 'docs', 'generated'), { recursive: true });
+fs.writeFileSync(path.join(SITE_DIR, 'docs', 'generated', 'index.html'), creatorGuideHtml, 'utf8');
 console.log(`Engine home     -> ${path.relative(ROOT, path.join(SITE_DIR, 'index.html'))}`);
 
 // --- Path safety check: nothing in the package should reference the repo's own absolute/dev paths ---

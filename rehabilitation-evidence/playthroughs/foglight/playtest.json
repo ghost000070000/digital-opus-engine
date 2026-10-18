@@ -1,7 +1,7 @@
 {
   "id": "foglight",
   "inputOnly": true,
-  "startedAt": "2026-09-08T15:57:58.317Z",
+  "startedAt": "2026-09-11T17:18:58.513Z",
   "events": [
     {
       "capture": "start",
@@ -14,29 +14,29 @@
         "controller": "thirdperson",
         "basis": {
           "forward": {
-            "x": 0,
+            "x": 0.11114999408218608,
             "y": -0.3713906763541038,
-            "z": 0.9284766908852593
+            "z": 0.9217996768999062
           },
           "right": {
-            "x": -0.9999999999999999,
+            "x": -0.9928086358538663,
             "y": 0,
-            "z": 0
+            "z": 0.11971220728891936
           },
           "up": {
-            "x": 0,
-            "y": 0.9284766908852592,
-            "z": 0.3713906763541037
+            "x": 0.044459997632874435,
+            "y": 0.9284766908852593,
+            "z": 0.3687198707599625
           }
         },
         "eye": {
-          "x": 0,
+          "x": -0.7781293473779759,
           "y": 4.45,
-          "z": -6.5
+          "z": -6.453256133050131
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022,
+        "sensitivity": 0.0018,
         "pointerLocked": false,
         "sim": 0,
         "ended": false,
@@ -48,7 +48,7 @@
         },
         "held": null,
         "nearest": null,
-        "text": "Foglight\n\nCarry light through a layered twilight vale, awaken three beacons, face the guardian and reach the high sanctuary. Visual landmark: Amber beacon spire.\n\nBegin journey\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+        "text": "Foglight\n\nCarry light through a layered twilight vale, awaken three beacons, face the guardian and reach the high sanctuary. Visual landmark: Amber beacon spire.\n\nBegin journey\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nMouse Sensitivity\nInvert Mouse Y\nQuality: High\n⛶ Fullscreen\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
         "beacons": [
           {
             "id": "obj68",
@@ -1358,9 +1358,9 @@
             "id": "promo-1",
             "name": "Route landmark",
             "pos": {
-              "x": 0,
+              "x": -9,
               "y": 0.2,
-              "z": 3
+              "z": 13
             },
             "visible": true
           },
@@ -1828,9 +1828,9 @@
             "id": "elev-1",
             "name": "Amber beacon spire",
             "pos": {
-              "x": 4,
+              "x": 9,
               "y": 0,
-              "z": 11
+              "z": 22
             },
             "visible": true
           },
@@ -1841,6 +1841,196 @@
               "x": 4,
               "y": 4.2,
               "z": 11
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-1",
+            "name": "Bent causeway 1",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 7
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-2",
+            "name": "Bent causeway 2",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 18
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-3",
+            "name": "Bent causeway 3",
+            "pos": {
+              "x": -3,
+              "y": 0.2,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-4",
+            "name": "Bent causeway 4",
+            "pos": {
+              "x": 3,
+              "y": 0.2,
+              "z": 52
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-5",
+            "name": "Bent causeway 5",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 70
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-6",
+            "name": "Bent causeway 6",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 83
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-7",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -6,
+              "y": 0.25,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-8",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -2,
+              "y": 0.1,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-9",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -6,
+              "y": 3,
+              "z": 21
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-10",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": 6,
+              "y": 0.25,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-11",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": 2,
+              "y": 0.1,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-12",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": 6,
+              "y": 3,
+              "z": 45
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-13",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -5,
+              "y": 0.25,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-14",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -1,
+              "y": 0.1,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-15",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -5,
+              "y": 3,
+              "z": 69
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-16",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": -13,
+              "y": 0,
+              "z": 30
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-17",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": 13,
+              "y": 0,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-18",
+            "name": "Sanctuary finale",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 82
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-19",
+            "name": "Sanctuary reveal",
+            "pos": {
+              "x": 0,
+              "y": 7,
+              "z": 82
             },
             "visible": false
           }
@@ -1858,31 +2048,31 @@
         "controller": "thirdperson",
         "basis": {
           "forward": {
-            "x": 0,
-            "y": -0.3074305255050896,
-            "z": 0.9515705291714662
+            "x": 0.11391453193046322,
+            "y": -0.30743250365580027,
+            "z": 0.9447268044842329
           },
           "right": {
-            "x": -1,
+            "x": -0.9928086358538663,
             "y": 0,
-            "z": 0
+            "z": 0.11971220728891936
           },
           "up": {
-            "x": 0,
-            "y": 0.9515705291714662,
-            "z": 0.3074305255050896
+            "x": 0.03680342360499462,
+            "y": 0.9515698900742533,
+            "z": 0.3052216445716538
           }
         },
         "eye": {
-          "x": 0,
-          "y": 3.390003548718319,
-          "z": -6.5
+          "x": -0.7781293473779759,
+          "y": 3.3901629159674957,
+          "z": -6.453256133050131
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022,
+        "sensitivity": 0.0018,
         "pointerLocked": false,
-        "sim": 2.03589999999851,
+        "sim": 1.5018000000119207,
         "ended": false,
         "frozen": false,
         "health": {
@@ -2035,9 +2225,9 @@
             "id": "obj72",
             "name": "MistGuardian",
             "pos": {
-              "x": -10.847720244507896,
+              "x": -10.434892311097023,
               "y": 0.5,
-              "z": 18
+              "z": 25
             },
             "visible": true
           },
@@ -3205,9 +3395,9 @@
             "id": "promo-1",
             "name": "Route landmark",
             "pos": {
-              "x": 0,
+              "x": -9,
               "y": 0.2,
-              "z": 3
+              "z": 13
             },
             "visible": true
           },
@@ -3675,9 +3865,9 @@
             "id": "elev-1",
             "name": "Amber beacon spire",
             "pos": {
-              "x": 4,
+              "x": 9,
               "y": 0,
-              "z": 11
+              "z": 22
             },
             "visible": true
           },
@@ -3688,6 +3878,196 @@
               "x": 4,
               "y": 4.2,
               "z": 11
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-1",
+            "name": "Bent causeway 1",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 7
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-2",
+            "name": "Bent causeway 2",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 18
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-3",
+            "name": "Bent causeway 3",
+            "pos": {
+              "x": -3,
+              "y": 0.2,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-4",
+            "name": "Bent causeway 4",
+            "pos": {
+              "x": 3,
+              "y": 0.2,
+              "z": 52
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-5",
+            "name": "Bent causeway 5",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 70
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-6",
+            "name": "Bent causeway 6",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 83
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-7",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -6,
+              "y": 0.25,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-8",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -2,
+              "y": 0.1,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-9",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -6,
+              "y": 3,
+              "z": 21
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-10",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": 6,
+              "y": 0.25,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-11",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": 2,
+              "y": 0.1,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-12",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": 6,
+              "y": 3,
+              "z": 45
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-13",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -5,
+              "y": 0.25,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-14",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -1,
+              "y": 0.1,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-15",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -5,
+              "y": 3,
+              "z": 69
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-16",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": -13,
+              "y": 0,
+              "z": 30
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-17",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": 13,
+              "y": 0,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-18",
+            "name": "Sanctuary finale",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 82
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-19",
+            "name": "Sanctuary reveal",
+            "pos": {
+              "x": 0,
+              "y": 7,
+              "z": 82
             },
             "visible": false
           }
@@ -3699,38 +4079,38 @@
       "reached": true,
       "state": {
         "pos": {
-          "x": 0,
-          "y": 0.79,
-          "z": 20.2904835597919
+          "x": -0.025327616085042765,
+          "y": 0.925,
+          "z": 20.238314462269855
         },
         "controller": "thirdperson",
         "basis": {
           "forward": {
-            "x": 0,
-            "y": -0.17875725405543155,
-            "z": 0.9838932076818915
+            "x": 0.6188640613076976,
+            "y": -0.3147757877660332,
+            "z": -0.7196690052086553
           },
           "right": {
-            "x": -1,
+            "x": 0.7582119061578759,
             "y": 0,
-            "z": 0
+            "z": 0.6520082095805544
           },
           "up": {
-            "x": 0,
-            "y": 0.9838932076818915,
-            "z": 0.17875725405543155
+            "x": 0.2052363978006399,
+            "y": 0.9491660568289791,
+            "z": -0.23866675005443105
           }
         },
         "eye": {
-          "x": 0,
-          "y": 3.3900000000000006,
-          "z": 12.86019729496726
+          "x": -3.298363306889249,
+          "y": 3.524999992153737,
+          "z": 24.27301231693734
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022,
+        "sensitivity": 0.0018,
         "pointerLocked": false,
-        "sim": 5.719299999997015,
+        "sim": 6.173499999999999,
         "ended": false,
         "frozen": false,
         "health": {
@@ -3883,9 +4263,9 @@
             "id": "obj72",
             "name": "MistGuardian",
             "pos": {
-              "x": -5.9002854705890275,
+              "x": -4.551089704956192,
               "y": 0.5,
-              "z": 18
+              "z": 18.661337813569336
             },
             "visible": true
           },
@@ -5053,9 +5433,9 @@
             "id": "promo-1",
             "name": "Route landmark",
             "pos": {
-              "x": 0,
+              "x": -9,
               "y": 0.2,
-              "z": 3
+              "z": 13
             },
             "visible": true
           },
@@ -5523,9 +5903,9 @@
             "id": "elev-1",
             "name": "Amber beacon spire",
             "pos": {
-              "x": 4,
+              "x": 9,
               "y": 0,
-              "z": 11
+              "z": 22
             },
             "visible": true
           },
@@ -5536,6 +5916,196 @@
               "x": 4,
               "y": 4.2,
               "z": 11
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-1",
+            "name": "Bent causeway 1",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 7
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-2",
+            "name": "Bent causeway 2",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 18
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-3",
+            "name": "Bent causeway 3",
+            "pos": {
+              "x": -3,
+              "y": 0.2,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-4",
+            "name": "Bent causeway 4",
+            "pos": {
+              "x": 3,
+              "y": 0.2,
+              "z": 52
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-5",
+            "name": "Bent causeway 5",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 70
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-6",
+            "name": "Bent causeway 6",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 83
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-7",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -6,
+              "y": 0.25,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-8",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -2,
+              "y": 0.1,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-9",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -6,
+              "y": 3,
+              "z": 21
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-10",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": 6,
+              "y": 0.25,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-11",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": 2,
+              "y": 0.1,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-12",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": 6,
+              "y": 3,
+              "z": 45
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-13",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -5,
+              "y": 0.25,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-14",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -1,
+              "y": 0.1,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-15",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -5,
+              "y": 3,
+              "z": 69
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-16",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": -13,
+              "y": 0,
+              "z": 30
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-17",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": 13,
+              "y": 0,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-18",
+            "name": "Sanctuary finale",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 82
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-19",
+            "name": "Sanctuary reveal",
+            "pos": {
+              "x": 0,
+              "y": 7,
+              "z": 82
             },
             "visible": false
           }
@@ -5546,38 +6116,38 @@
       "interact": "Ignite first beacon",
       "state": {
         "pos": {
-          "x": 0,
-          "y": 0.79,
-          "z": 22.23849624293471
+          "x": -0.08971897650834497,
+          "y": 0.925,
+          "z": 19.316016330743487
         },
         "controller": "thirdperson",
         "basis": {
           "forward": {
-            "x": 0,
-            "y": -0.22162203509835016,
-            "z": 0.9751326440843141
+            "x": -0.5676490339732302,
+            "y": -0.27681472225088544,
+            "z": -0.775337464446562
           },
           "right": {
-            "x": -0.9999999999999999,
+            "x": 0.8068671616181922,
             "y": 0,
-            "z": 0
+            "z": -0.5907329206182794
           },
           "up": {
-            "x": 0,
-            "y": 0.975132644084314,
-            "z": 0.22162203509835013
+            "x": -0.16352356934540338,
+            "y": 0.9609233109593946,
+            "z": -0.22335270923670014
           }
         },
         "eye": {
-          "x": 0,
-          "y": 3.3900000000000006,
-          "z": 15.251958698452704
+          "x": 4.17940823829307,
+          "y": 3.524999999646772,
+          "z": 24.078454434913397
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022,
+        "sensitivity": 0.0018,
         "pointerLocked": false,
-        "sim": 6.217399999998506,
+        "sim": 6.62390000003576,
         "ended": false,
         "frozen": false,
         "health": {
@@ -5731,9 +6301,9 @@
             "id": "obj72",
             "name": "MistGuardian",
             "pos": {
-              "x": -5.231252169590663,
+              "x": -3.3237367869850143,
               "y": 0.5,
-              "z": 18
+              "z": 18.93984529505584
             },
             "visible": true
           },
@@ -6901,9 +7471,9 @@
             "id": "promo-1",
             "name": "Route landmark",
             "pos": {
-              "x": 0,
+              "x": -9,
               "y": 0.2,
-              "z": 3
+              "z": 13
             },
             "visible": true
           },
@@ -7371,9 +7941,9 @@
             "id": "elev-1",
             "name": "Amber beacon spire",
             "pos": {
-              "x": 4,
+              "x": 9,
               "y": 0,
-              "z": 11
+              "z": 22
             },
             "visible": true
           },
@@ -7384,6 +7954,196 @@
               "x": 4,
               "y": 4.2,
               "z": 11
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-1",
+            "name": "Bent causeway 1",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 7
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-2",
+            "name": "Bent causeway 2",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 18
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-3",
+            "name": "Bent causeway 3",
+            "pos": {
+              "x": -3,
+              "y": 0.2,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-4",
+            "name": "Bent causeway 4",
+            "pos": {
+              "x": 3,
+              "y": 0.2,
+              "z": 52
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-5",
+            "name": "Bent causeway 5",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 70
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-6",
+            "name": "Bent causeway 6",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 83
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-7",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -6,
+              "y": 0.25,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-8",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -2,
+              "y": 0.1,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-9",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -6,
+              "y": 3,
+              "z": 21
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-10",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": 6,
+              "y": 0.25,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-11",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": 2,
+              "y": 0.1,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-12",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": 6,
+              "y": 3,
+              "z": 45
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-13",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -5,
+              "y": 0.25,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-14",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -1,
+              "y": 0.1,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-15",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -5,
+              "y": 3,
+              "z": 69
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-16",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": -13,
+              "y": 0,
+              "z": 30
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-17",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": 13,
+              "y": 0,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-18",
+            "name": "Sanctuary finale",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 82
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-19",
+            "name": "Sanctuary reveal",
+            "pos": {
+              "x": 0,
+              "y": 7,
+              "z": 82
             },
             "visible": false
           }
@@ -7394,38 +8154,38 @@
       "capture": "first-beacon",
       "state": {
         "pos": {
-          "x": 0,
-          "y": 0.79,
-          "z": 23.1249428223549
+          "x": -0.10841809547638193,
+          "y": 0.925,
+          "z": 19.048182845443048
         },
         "controller": "thirdperson",
         "basis": {
           "forward": {
-            "x": 0,
-            "y": -0.2721431797504509,
-            "z": 0.9622567691189882
+            "x": -0.6528397340352594,
+            "y": -0.2825049519349944,
+            "z": -0.702845099432996
           },
           "right": {
-            "x": -1,
+            "x": 0.7326906369381949,
             "y": 0,
-            "z": 0
+            "z": -0.6805618491680988
           },
           "up": {
-            "x": 0,
-            "y": 0.9622567691189882,
-            "z": 0.2721431797504509
+            "x": -0.19226209248802467,
+            "y": 0.9592658401778967,
+            "z": -0.2069887331714452
           }
         },
         "eye": {
-          "x": 0,
-          "y": 3.3900000000000006,
-          "z": 16.45615240498309
+          "x": 4.699257206144185,
+          "y": 3.524999999936972,
+          "z": 23.52065018813797
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022,
+        "sensitivity": 0.0018,
         "pointerLocked": false,
-        "sim": 6.818399999998505,
+        "sim": 6.874300000011917,
         "ended": false,
         "frozen": false,
         "health": {
@@ -7579,9 +8339,9 @@
             "id": "obj72",
             "name": "MistGuardian",
             "pos": {
-              "x": -5,
+              "x": -2.624647297964478,
               "y": 0.5,
-              "z": 18.671992289894906
+              "z": 18.989735815714358
             },
             "visible": true
           },
@@ -8749,9 +9509,9 @@
             "id": "promo-1",
             "name": "Route landmark",
             "pos": {
-              "x": 0,
+              "x": -9,
               "y": 0.2,
-              "z": 3
+              "z": 13
             },
             "visible": true
           },
@@ -9219,9 +9979,9 @@
             "id": "elev-1",
             "name": "Amber beacon spire",
             "pos": {
-              "x": 4,
+              "x": 9,
               "y": 0,
-              "z": 11
+              "z": 22
             },
             "visible": true
           },
@@ -9232,6 +9992,196 @@
               "x": 4,
               "y": 4.2,
               "z": 11
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-1",
+            "name": "Bent causeway 1",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 7
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-2",
+            "name": "Bent causeway 2",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 18
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-3",
+            "name": "Bent causeway 3",
+            "pos": {
+              "x": -3,
+              "y": 0.2,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-4",
+            "name": "Bent causeway 4",
+            "pos": {
+              "x": 3,
+              "y": 0.2,
+              "z": 52
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-5",
+            "name": "Bent causeway 5",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 70
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-6",
+            "name": "Bent causeway 6",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 83
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-7",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -6,
+              "y": 0.25,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-8",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -2,
+              "y": 0.1,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-9",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -6,
+              "y": 3,
+              "z": 21
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-10",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": 6,
+              "y": 0.25,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-11",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": 2,
+              "y": 0.1,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-12",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": 6,
+              "y": 3,
+              "z": 45
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-13",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -5,
+              "y": 0.25,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-14",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -1,
+              "y": 0.1,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-15",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -5,
+              "y": 3,
+              "z": 69
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-16",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": -13,
+              "y": 0,
+              "z": 30
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-17",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": 13,
+              "y": 0,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-18",
+            "name": "Sanctuary finale",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 82
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-19",
+            "name": "Sanctuary reveal",
+            "pos": {
+              "x": 0,
+              "y": 7,
+              "z": 82
             },
             "visible": false
           }
@@ -9243,43 +10193,43 @@
       "reached": true,
       "state": {
         "pos": {
-          "x": -9.064688604271923,
+          "x": -8.872705981811333,
           "y": 0.79,
-          "z": 22.026773492232604
+          "z": 22.083840826070606
         },
         "controller": "thirdperson",
         "basis": {
           "forward": {
-            "x": -0.5415696670889616,
-            "y": -0.30932787338867096,
-            "z": -0.781676763396478
+            "x": -0.8952854956083494,
+            "y": -0.20673031477783865,
+            "z": -0.39462191817633235
           },
           "right": {
-            "x": 0.8219909396272104,
+            "x": 0.4033347701976167,
             "y": 0,
-            "z": -0.5695005664358691
+            "z": -0.9150524920187013
           },
           "up": {
-            "x": -0.1761623991092509,
-            "y": 0.9509554494006762,
-            "z": -0.2542647092996404
+            "x": -0.18916908971327182,
+            "y": 0.9783979645072118,
+            "z": -0.08338152400380051
           }
         },
         "eye": {
-          "x": -5.76873502730814,
-          "y": 3.39,
-          "z": 26.2364205813084
+          "x": -2.61090288062389,
+          "y": 3.390000218456696,
+          "z": 25.053142716701963
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022,
+        "sensitivity": 0.0018,
         "pointerLocked": false,
-        "sim": 12.500899999991049,
+        "sim": 9.577100000023842,
         "ended": false,
         "frozen": false,
         "health": {
           "maxHealth": 100,
-          "health": 88,
+          "health": 94,
           "beaconsLit": 1
         },
         "inventory": {
@@ -9290,7 +10240,7 @@
         },
         "held": null,
         "nearest": null,
-        "text": "Health 88 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+        "text": "Health 94 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
         "beacons": [
           {
             "id": "obj68",
@@ -9430,9 +10380,9 @@
             "id": "obj72",
             "name": "MistGuardian",
             "pos": {
-              "x": -9.104059321680682,
+              "x": -5.939531640547329,
               "y": 0.5,
-              "z": 22.222532136680147
+              "z": 21.438294686965413
             },
             "visible": true
           },
@@ -10590,9 +11540,9 @@
             "id": "promo-1",
             "name": "Route landmark",
             "pos": {
-              "x": 0,
+              "x": -9,
               "y": 0.2,
-              "z": 3
+              "z": 13
             },
             "visible": true
           },
@@ -11060,9 +12010,9 @@
             "id": "elev-1",
             "name": "Amber beacon spire",
             "pos": {
-              "x": 4,
+              "x": 9,
               "y": 0,
-              "z": 11
+              "z": 22
             },
             "visible": true
           },
@@ -11073,6 +12023,196 @@
               "x": 4,
               "y": 4.2,
               "z": 11
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-1",
+            "name": "Bent causeway 1",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 7
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-2",
+            "name": "Bent causeway 2",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 18
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-3",
+            "name": "Bent causeway 3",
+            "pos": {
+              "x": -3,
+              "y": 0.2,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-4",
+            "name": "Bent causeway 4",
+            "pos": {
+              "x": 3,
+              "y": 0.2,
+              "z": 52
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-5",
+            "name": "Bent causeway 5",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 70
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-6",
+            "name": "Bent causeway 6",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 83
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-7",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -6,
+              "y": 0.25,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-8",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -2,
+              "y": 0.1,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-9",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -6,
+              "y": 3,
+              "z": 21
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-10",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": 6,
+              "y": 0.25,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-11",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": 2,
+              "y": 0.1,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-12",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": 6,
+              "y": 3,
+              "z": 45
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-13",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -5,
+              "y": 0.25,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-14",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -1,
+              "y": 0.1,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-15",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -5,
+              "y": 3,
+              "z": 69
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-16",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": -13,
+              "y": 0,
+              "z": 30
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-17",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": 13,
+              "y": 0,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-18",
+            "name": "Sanctuary finale",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 82
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-19",
+            "name": "Sanctuary reveal",
+            "pos": {
+              "x": 0,
+              "y": 7,
+              "z": 82
             },
             "visible": false
           }
@@ -11083,43 +12223,43 @@
       "capture": "guardian-court",
       "state": {
         "pos": {
-          "x": -8.614896663129567,
+          "x": -9.591425241580406,
           "y": 0.79,
-          "z": 20.82778856317053
+          "z": 21.765105804987073
         },
         "controller": "thirdperson",
         "basis": {
           "forward": {
-            "x": 0.7461051324960809,
-            "y": -0.28135588380708004,
-            "z": -0.603461678907735
+            "x": -0.8946478253637691,
+            "y": -0.20223982943039698,
+            "z": -0.39837710773065627
           },
           "right": {
-            "x": 0.6288656537513678,
+            "x": 0.4067828582258833,
             "y": 0,
-            "z": 0.7775139802806535
+            "z": -0.9135248799313465
           },
           "up": {
-            "x": 0.21875813309422387,
-            "y": 0.9596034944950631,
-            "z": -0.1769350518071333
+            "x": -0.18475111589773938,
+            "y": 0.9793360257807143,
+            "z": -0.08226769586281199
           }
         },
         "eye": {
-          "x": -13.95103933482496,
-          "y": 3.39,
-          "z": 24.704835383714936
+          "x": -3.1173775618690804,
+          "y": 3.39000006928686,
+          "z": 24.721822325204595
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022,
+        "sensitivity": 0.0018,
         "pointerLocked": false,
-        "sim": 13.28809999999403,
+        "sim": 9.744,
         "ended": false,
         "frozen": false,
         "health": {
           "maxHealth": 100,
-          "health": 88,
+          "health": 94,
           "beaconsLit": 1
         },
         "inventory": {
@@ -11130,7 +12270,7 @@
         },
         "held": null,
         "nearest": null,
-        "text": "Health 88 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+        "text": "Health 94 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
         "beacons": [
           {
             "id": "obj68",
@@ -11270,9 +12410,9 @@
             "id": "obj72",
             "name": "MistGuardian",
             "pos": {
-              "x": -8.644875632780694,
+              "x": -6.401309567960854,
               "y": 0.5,
-              "z": 20.907701806411882
+              "z": 21.507568374777946
             },
             "visible": true
           },
@@ -12430,9 +13570,9 @@
             "id": "promo-1",
             "name": "Route landmark",
             "pos": {
-              "x": 0,
+              "x": -9,
               "y": 0.2,
-              "z": 3
+              "z": 13
             },
             "visible": true
           },
@@ -12900,9 +14040,9 @@
             "id": "elev-1",
             "name": "Amber beacon spire",
             "pos": {
-              "x": 4,
+              "x": 9,
               "y": 0,
-              "z": 11
+              "z": 22
             },
             "visible": true
           },
@@ -12913,6 +14053,196 @@
               "x": 4,
               "y": 4.2,
               "z": 11
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-1",
+            "name": "Bent causeway 1",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 7
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-2",
+            "name": "Bent causeway 2",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 18
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-3",
+            "name": "Bent causeway 3",
+            "pos": {
+              "x": -3,
+              "y": 0.2,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-4",
+            "name": "Bent causeway 4",
+            "pos": {
+              "x": 3,
+              "y": 0.2,
+              "z": 52
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-5",
+            "name": "Bent causeway 5",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 70
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-6",
+            "name": "Bent causeway 6",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 83
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-7",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -6,
+              "y": 0.25,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-8",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -2,
+              "y": 0.1,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-9",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -6,
+              "y": 3,
+              "z": 21
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-10",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": 6,
+              "y": 0.25,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-11",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": 2,
+              "y": 0.1,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-12",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": 6,
+              "y": 3,
+              "z": 45
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-13",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -5,
+              "y": 0.25,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-14",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -1,
+              "y": 0.1,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-15",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -5,
+              "y": 3,
+              "z": 69
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-16",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": -13,
+              "y": 0,
+              "z": 30
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-17",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": 13,
+              "y": 0,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-18",
+            "name": "Sanctuary finale",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 82
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-19",
+            "name": "Sanctuary reveal",
+            "pos": {
+              "x": 0,
+              "y": 7,
+              "z": 82
             },
             "visible": false
           }
@@ -12924,43 +14254,43 @@
       "reached": true,
       "state": {
         "pos": {
-          "x": 0.4401552822755937,
+          "x": -0.717717541959855,
           "y": 0.79,
-          "z": 23.561425247122813
+          "z": 25.373554944750932
         },
         "controller": "thirdperson",
         "basis": {
           "forward": {
-            "x": -0.7834631242892606,
-            "y": -0.3162350981092663,
-            "z": 0.5349587793491504
+            "x": 0.8910167221025072,
+            "y": -0.24037065680074013,
+            "z": 0.38511186463530866
           },
           "right": {
-            "x": -0.5638975184333085,
+            "x": -0.3967439296930317,
             "y": 0,
-            "z": -0.8258447727658971
+            "z": 0.9179293296609117
           },
           "up": {
-            "x": -0.2611611027386482,
-            "y": 0.9486808539882219,
-            "z": 0.17832418706532913
+            "x": 0.22064327586725643,
+            "y": 0.9706811769830405,
+            "z": 0.0953655989620207
           }
         },
         "eye": {
-          "x": 4.852425293207674,
-          "y": 3.39,
-          "z": 20.833654344901905
+          "x": -6.343604974558565,
+          "y": 3.390000000000002,
+          "z": 23.3971591141516
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022,
+        "sensitivity": 0.0018,
         "pointerLocked": false,
-        "sim": 18.98819999998807,
+        "sim": 12.66390000003577,
         "ended": false,
         "frozen": false,
         "health": {
           "maxHealth": 100,
-          "health": 76,
+          "health": 88,
           "beaconsLit": 1
         },
         "inventory": {
@@ -12971,7 +14301,7 @@
         },
         "held": null,
         "nearest": null,
-        "text": "Health 82 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+        "text": "Health 88 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
         "beacons": [
           {
             "id": "obj68",
@@ -13111,9 +14441,9 @@
             "id": "obj72",
             "name": "MistGuardian",
             "pos": {
-              "x": -0.7320549473912736,
+              "x": -3.403399904629838,
               "y": 0.5,
-              "z": 23.480966089589398
+              "z": 23.97029013036452
             },
             "visible": true
           },
@@ -14271,9 +15601,9 @@
             "id": "promo-1",
             "name": "Route landmark",
             "pos": {
-              "x": 0,
+              "x": -9,
               "y": 0.2,
-              "z": 3
+              "z": 13
             },
             "visible": true
           },
@@ -14741,9 +16071,9 @@
             "id": "elev-1",
             "name": "Amber beacon spire",
             "pos": {
-              "x": 4,
+              "x": 9,
               "y": 0,
-              "z": 11
+              "z": 22
             },
             "visible": true
           },
@@ -14754,6 +16084,196 @@
               "x": 4,
               "y": 4.2,
               "z": 11
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-1",
+            "name": "Bent causeway 1",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 7
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-2",
+            "name": "Bent causeway 2",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 18
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-3",
+            "name": "Bent causeway 3",
+            "pos": {
+              "x": -3,
+              "y": 0.2,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-4",
+            "name": "Bent causeway 4",
+            "pos": {
+              "x": 3,
+              "y": 0.2,
+              "z": 52
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-5",
+            "name": "Bent causeway 5",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 70
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-6",
+            "name": "Bent causeway 6",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 83
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-7",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -6,
+              "y": 0.25,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-8",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -2,
+              "y": 0.1,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-9",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -6,
+              "y": 3,
+              "z": 21
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-10",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": 6,
+              "y": 0.25,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-11",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": 2,
+              "y": 0.1,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-12",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": 6,
+              "y": 3,
+              "z": 45
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-13",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -5,
+              "y": 0.25,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-14",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -1,
+              "y": 0.1,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-15",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -5,
+              "y": 3,
+              "z": 69
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-16",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": -13,
+              "y": 0,
+              "z": 30
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-17",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": 13,
+              "y": 0,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-18",
+            "name": "Sanctuary finale",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 82
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-19",
+            "name": "Sanctuary reveal",
+            "pos": {
+              "x": 0,
+              "y": 7,
+              "z": 82
             },
             "visible": false
           }
@@ -14765,43 +16285,43 @@
       "reached": true,
       "state": {
         "pos": {
-          "x": 0.7790718607417287,
+          "x": -0.3704847875268421,
           "y": 0.79,
-          "z": 26.984327472728925
+          "z": 26.78407515301352
         },
         "controller": "thirdperson",
         "basis": {
           "forward": {
-            "x": -0.2937173570319581,
-            "y": -0.30052454635986753,
-            "z": 0.9074222342511544
+            "x": 0.0363304740219,
+            "y": -0.22731754184194822,
+            "z": 0.9731427602506623
           },
           "right": {
-            "x": -0.9514016501425216,
+            "x": -0.9993038459838441,
             "y": 0,
-            "z": -0.30795275628915375
+            "z": 0.03730714947429636
           },
           "up": {
-            "x": -0.09254736238406877,
-            "y": 0.9537740807105191,
-            "z": 0.2859195493151107
+            "x": 0.008480569511627178,
+            "y": 0.9738206894346279,
+            "z": 0.22715929382225228
           }
         },
         "eye": {
-          "x": 2.2197631813072944,
-          "y": 3.39,
-          "z": 22.1392952239703
+          "x": -0.6232963288938672,
+          "y": 3.390000000000002,
+          "z": 20.314964934015453
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022,
+        "sensitivity": 0.0018,
         "pointerLocked": false,
-        "sim": 20.904299999989554,
+        "sim": 13.147900000035772,
         "ended": false,
         "frozen": false,
         "health": {
           "maxHealth": 100,
-          "health": 76,
+          "health": 88,
           "beaconsLit": 1
         },
         "inventory": {
@@ -14812,7 +16332,7 @@
         },
         "held": null,
         "nearest": null,
-        "text": "Health 76 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+        "text": "Health 88 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
         "beacons": [
           {
             "id": "obj68",
@@ -14952,9 +16472,9 @@
             "id": "obj72",
             "name": "MistGuardian",
             "pos": {
-              "x": 0.7795720649077801,
+              "x": -2.2681083491520044,
               "y": 0.5,
-              "z": 26.68970947406584
+              "z": 24.691874864658953
             },
             "visible": true
           },
@@ -16112,9 +17632,9 @@
             "id": "promo-1",
             "name": "Route landmark",
             "pos": {
-              "x": 0,
+              "x": -9,
               "y": 0.2,
-              "z": 3
+              "z": 13
             },
             "visible": true
           },
@@ -16582,9 +18102,9 @@
             "id": "elev-1",
             "name": "Amber beacon spire",
             "pos": {
-              "x": 4,
+              "x": 9,
               "y": 0,
-              "z": 11
+              "z": 22
             },
             "visible": true
           },
@@ -16595,6 +18115,196 @@
               "x": 4,
               "y": 4.2,
               "z": 11
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-1",
+            "name": "Bent causeway 1",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 7
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-2",
+            "name": "Bent causeway 2",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 18
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-3",
+            "name": "Bent causeway 3",
+            "pos": {
+              "x": -3,
+              "y": 0.2,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-4",
+            "name": "Bent causeway 4",
+            "pos": {
+              "x": 3,
+              "y": 0.2,
+              "z": 52
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-5",
+            "name": "Bent causeway 5",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 70
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-6",
+            "name": "Bent causeway 6",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 83
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-7",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -6,
+              "y": 0.25,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-8",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -2,
+              "y": 0.1,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-9",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -6,
+              "y": 3,
+              "z": 21
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-10",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": 6,
+              "y": 0.25,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-11",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": 2,
+              "y": 0.1,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-12",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": 6,
+              "y": 3,
+              "z": 45
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-13",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -5,
+              "y": 0.25,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-14",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -1,
+              "y": 0.1,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-15",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -5,
+              "y": 3,
+              "z": 69
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-16",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": -13,
+              "y": 0,
+              "z": 30
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-17",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": 13,
+              "y": 0,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-18",
+            "name": "Sanctuary finale",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 82
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-19",
+            "name": "Sanctuary reveal",
+            "pos": {
+              "x": 0,
+              "y": 7,
+              "z": 82
             },
             "visible": false
           }
@@ -16606,43 +18316,43 @@
       "reached": true,
       "state": {
         "pos": {
-          "x": 0.07393188140494014,
+          "x": -0.1539416019377214,
           "y": 0.79,
-          "z": 41.21417827981783
+          "z": 40.83549224275359
         },
         "controller": "thirdperson",
         "basis": {
           "forward": {
-            "x": 0.6818840125612299,
-            "y": -0.3618045602765501,
-            "z": -0.6357134996022098
+            "x": 0.016078587322120422,
+            "y": -0.17983303985362964,
+            "z": 0.9835657358848608
           },
           "right": {
-            "x": 0.6819102108172225,
+            "x": -0.9998664106098851,
             "y": 0,
-            "z": 0.7314358921896104
+            "z": 0.01634505840017195
           },
           "up": {
-            "x": 0.2646368413441481,
-            "y": 0.9322539676306518,
-            "z": -0.24671822397281476
+            "x": 0.002939381538688026,
+            "y": 0.9836971473868384,
+            "z": 0.1798090160675131
           }
         },
         "eye": {
-          "x": -3.0617226417005114,
-          "y": 3.39,
-          "z": 45.170874845261494
+          "x": -0.2758621111200284,
+          "y": 3.4428589733526143,
+          "z": 33.37734836357034
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022,
+        "sensitivity": 0.0018,
         "pointerLocked": false,
-        "sim": 26.497699999988065,
+        "sim": 15.43380000001193,
         "ended": false,
         "frozen": false,
         "health": {
           "maxHealth": 100,
-          "health": 64,
+          "health": 88,
           "beaconsLit": 1
         },
         "inventory": {
@@ -16653,7 +18363,7 @@
         },
         "held": null,
         "nearest": "obj69",
-        "text": "Health 64 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+        "text": "Health 88 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
         "beacons": [
           {
             "id": "obj68",
@@ -16793,9 +18503,9 @@
             "id": "obj72",
             "name": "MistGuardian",
             "pos": {
-              "x": -0.10256145094232925,
+              "x": -0.8656695560753236,
               "y": 0.5,
-              "z": 40.9422226674229
+              "z": 30.84309835302538
             },
             "visible": true
           },
@@ -17953,9 +19663,9 @@
             "id": "promo-1",
             "name": "Route landmark",
             "pos": {
-              "x": 0,
+              "x": -9,
               "y": 0.2,
-              "z": 3
+              "z": 13
             },
             "visible": true
           },
@@ -18423,9 +20133,9 @@
             "id": "elev-1",
             "name": "Amber beacon spire",
             "pos": {
-              "x": 4,
+              "x": 9,
               "y": 0,
-              "z": 11
+              "z": 22
             },
             "visible": true
           },
@@ -18436,6 +20146,196 @@
               "x": 4,
               "y": 4.2,
               "z": 11
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-1",
+            "name": "Bent causeway 1",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 7
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-2",
+            "name": "Bent causeway 2",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 18
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-3",
+            "name": "Bent causeway 3",
+            "pos": {
+              "x": -3,
+              "y": 0.2,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-4",
+            "name": "Bent causeway 4",
+            "pos": {
+              "x": 3,
+              "y": 0.2,
+              "z": 52
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-5",
+            "name": "Bent causeway 5",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 70
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-6",
+            "name": "Bent causeway 6",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 83
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-7",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -6,
+              "y": 0.25,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-8",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -2,
+              "y": 0.1,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-9",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -6,
+              "y": 3,
+              "z": 21
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-10",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": 6,
+              "y": 0.25,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-11",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": 2,
+              "y": 0.1,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-12",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": 6,
+              "y": 3,
+              "z": 45
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-13",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -5,
+              "y": 0.25,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-14",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -1,
+              "y": 0.1,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-15",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -5,
+              "y": 3,
+              "z": 69
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-16",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": -13,
+              "y": 0,
+              "z": 30
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-17",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": 13,
+              "y": 0,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-18",
+            "name": "Sanctuary finale",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 82
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-19",
+            "name": "Sanctuary reveal",
+            "pos": {
+              "x": 0,
+              "y": 7,
+              "z": 82
             },
             "visible": false
           }
@@ -18446,43 +20346,43 @@
       "interact": "Ignite second beacon",
       "state": {
         "pos": {
-          "x": -0.17618320584304495,
+          "x": -0.12353862316195001,
           "y": 0.79,
-          "z": 40.10131402667551
+          "z": 42.6953175999037
         },
         "controller": "thirdperson",
         "basis": {
           "forward": {
-            "x": -0.573218552977028,
-            "y": -0.2707657055612172,
-            "z": -0.773373404776023
+            "x": 0.01593434080532682,
+            "y": -0.22276425026048324,
+            "z": 0.974742112350228
           },
           "right": {
-            "x": 0.8033835742522704,
+            "x": -0.9998664106870941,
             "y": 0,
-            "z": -0.5954618649600045
+            "z": 0.016345053677092526
           },
           "up": {
-            "x": -0.16123065200069386,
-            "y": 0.9626452787459855,
-            "z": -0.2175287203187085
+            "x": 0.0036410936278448713,
+            "y": 0.9748723448769508,
+            "z": 0.22273449133735096
           }
         },
         "eye": {
-          "x": 4.068712797242838,
-          "y": 3.39,
-          "z": 45.15872196791508
+          "x": -0.23895610545518037,
+          "y": 3.3925347595176327,
+          "z": 35.63495442143242
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022,
+        "sensitivity": 0.0018,
         "pointerLocked": false,
-        "sim": 27.07479999998955,
+        "sim": 15.87210000002385,
         "ended": false,
         "frozen": false,
         "health": {
           "maxHealth": 100,
-          "health": 64,
+          "health": 88,
           "beaconsLit": 2
         },
         "inventory": {
@@ -18493,7 +20393,7 @@
         },
         "held": null,
         "nearest": "obj69",
-        "text": "Health 64 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+        "text": "Health 88 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
         "beacons": [
           {
             "id": "obj68",
@@ -18633,9 +20533,9 @@
             "id": "obj72",
             "name": "MistGuardian",
             "pos": {
-              "x": -0.15573658472058577,
+              "x": -0.7846853159303833,
               "y": 0.5,
-              "z": 40.19228940123246
+              "z": 32.06765927646572
             },
             "visible": true
           },
@@ -19793,9 +21693,9 @@
             "id": "promo-1",
             "name": "Route landmark",
             "pos": {
-              "x": 0,
+              "x": -9,
               "y": 0.2,
-              "z": 3
+              "z": 13
             },
             "visible": true
           },
@@ -20263,9 +22163,9 @@
             "id": "elev-1",
             "name": "Amber beacon spire",
             "pos": {
-              "x": 4,
+              "x": 9,
               "y": 0,
-              "z": 11
+              "z": 22
             },
             "visible": true
           },
@@ -20276,6 +22176,196 @@
               "x": 4,
               "y": 4.2,
               "z": 11
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-1",
+            "name": "Bent causeway 1",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 7
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-2",
+            "name": "Bent causeway 2",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 18
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-3",
+            "name": "Bent causeway 3",
+            "pos": {
+              "x": -3,
+              "y": 0.2,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-4",
+            "name": "Bent causeway 4",
+            "pos": {
+              "x": 3,
+              "y": 0.2,
+              "z": 52
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-5",
+            "name": "Bent causeway 5",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 70
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-6",
+            "name": "Bent causeway 6",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 83
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-7",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -6,
+              "y": 0.25,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-8",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -2,
+              "y": 0.1,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-9",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -6,
+              "y": 3,
+              "z": 21
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-10",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": 6,
+              "y": 0.25,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-11",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": 2,
+              "y": 0.1,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-12",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": 6,
+              "y": 3,
+              "z": 45
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-13",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -5,
+              "y": 0.25,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-14",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -1,
+              "y": 0.1,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-15",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -5,
+              "y": 3,
+              "z": 69
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-16",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": -13,
+              "y": 0,
+              "z": 30
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-17",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": 13,
+              "y": 0,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-18",
+            "name": "Sanctuary finale",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 82
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-19",
+            "name": "Sanctuary reveal",
+            "pos": {
+              "x": 0,
+              "y": 7,
+              "z": 82
             },
             "visible": false
           }
@@ -20286,43 +22376,43 @@
       "capture": "grove",
       "state": {
         "pos": {
-          "x": -0.27761128013955055,
+          "x": -0.1126457193866243,
           "y": 0.79,
-          "z": 39.65001906725656
+          "z": 43.36166344725508
         },
         "controller": "thirdperson",
         "basis": {
           "forward": {
-            "x": -0.6339072629989942,
-            "y": -0.29554414238408944,
-            "z": -0.7147133983769834
+            "x": 0.015841874182614388,
+            "y": -0.24621536300998748,
+            "z": 0.9690856670285876
           },
           "right": {
-            "x": 0.7481331929389465,
+            "x": -0.999866410676432,
             "y": 0,
-            "z": -0.6635485857290159
+            "z": 0.01634505432933105
           },
           "up": {
-            "x": -0.19610789769945744,
-            "y": 0.9553290846103519,
-            "z": -0.22110638289621146
+            "x": 0.004024403485114212,
+            "y": 0.9692151438240431,
+            "z": 0.24618247126619092
           }
         },
         "eye": {
-          "x": 4.166560259750298,
-          "y": 3.39,
-          "z": 44.460961774880246
+          "x": -0.22426387485753946,
+          "y": 3.390293381975443,
+          "z": 36.53371306475289
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022,
+        "sensitivity": 0.0018,
         "pointerLocked": false,
-        "sim": 27.82529999998955,
+        "sim": 16.184600000023856,
         "ended": false,
         "frozen": false,
         "health": {
           "maxHealth": 100,
-          "health": 64,
+          "health": 88,
           "beaconsLit": 2
         },
         "inventory": {
@@ -20333,7 +22423,7 @@
         },
         "held": null,
         "nearest": "obj69",
-        "text": "Health 64 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+        "text": "Health 88 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
         "beacons": [
           {
             "id": "obj68",
@@ -20473,9 +22563,9 @@
             "id": "obj72",
             "name": "MistGuardian",
             "pos": {
-              "x": -0.2662532328996567,
+              "x": -0.7316315973727351,
               "y": 0.5,
-              "z": 39.70055566182132
+              "z": 32.94104909873194
             },
             "visible": true
           },
@@ -21633,9 +23723,9 @@
             "id": "promo-1",
             "name": "Route landmark",
             "pos": {
-              "x": 0,
+              "x": -9,
               "y": 0.2,
-              "z": 3
+              "z": 13
             },
             "visible": true
           },
@@ -22103,9 +24193,9 @@
             "id": "elev-1",
             "name": "Amber beacon spire",
             "pos": {
-              "x": 4,
+              "x": 9,
               "y": 0,
-              "z": 11
+              "z": 22
             },
             "visible": true
           },
@@ -22116,6 +24206,196 @@
               "x": 4,
               "y": 4.2,
               "z": 11
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-1",
+            "name": "Bent causeway 1",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 7
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-2",
+            "name": "Bent causeway 2",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 18
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-3",
+            "name": "Bent causeway 3",
+            "pos": {
+              "x": -3,
+              "y": 0.2,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-4",
+            "name": "Bent causeway 4",
+            "pos": {
+              "x": 3,
+              "y": 0.2,
+              "z": 52
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-5",
+            "name": "Bent causeway 5",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 70
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-6",
+            "name": "Bent causeway 6",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 83
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-7",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -6,
+              "y": 0.25,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-8",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -2,
+              "y": 0.1,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-9",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -6,
+              "y": 3,
+              "z": 21
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-10",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": 6,
+              "y": 0.25,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-11",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": 2,
+              "y": 0.1,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-12",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": 6,
+              "y": 3,
+              "z": 45
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-13",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -5,
+              "y": 0.25,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-14",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -1,
+              "y": 0.1,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-15",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -5,
+              "y": 3,
+              "z": 69
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-16",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": -13,
+              "y": 0,
+              "z": 30
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-17",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": 13,
+              "y": 0,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-18",
+            "name": "Sanctuary finale",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 82
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-19",
+            "name": "Sanctuary reveal",
+            "pos": {
+              "x": 0,
+              "y": 7,
+              "z": 82
             },
             "visible": false
           }
@@ -22127,43 +24407,43 @@
       "reached": true,
       "state": {
         "pos": {
-          "x": -0.08665911792422144,
-          "y": 0.79,
-          "z": 46.92527081740242
+          "x": -0.05770894445833084,
+          "y": 0.925,
+          "z": 46.72227884863869
         },
         "controller": "thirdperson",
         "basis": {
           "forward": {
-            "x": -0.7505070050691758,
-            "y": -0.2128127830905118,
-            "z": 0.625659615682015
+            "x": 0.016060695453991334,
+            "y": -0.18571966933200287,
+            "z": 0.9824715051769927
           },
           "right": {
-            "x": -0.640327603803613,
+            "x": -0.9998664106799681,
             "y": 0,
-            "z": -0.76810192019492
+            "z": 0.01634505411300803
           },
           "up": {
-            "x": -0.1634619073338471,
-            "y": 0.9770929942197266,
-            "z": 0.13626989945512546
+            "x": 0.0030355980450815453,
+            "y": 0.9826027704129533,
+            "z": 0.18569485916766026
           }
         },
         "eye": {
-          "x": 5.305916315946966,
-          "y": 3.39,
-          "z": 43.19947483393334
+          "x": -0.17855038491722597,
+          "y": 3.4909761968207182,
+          "z": 39.330116356548864
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022,
+        "sensitivity": 0.0018,
         "pointerLocked": false,
-        "sim": 31.02229999999697,
+        "sim": 16.885300000011956,
         "ended": false,
         "frozen": false,
         "health": {
           "maxHealth": 100,
-          "health": 58,
+          "health": 88,
           "beaconsLit": 2
         },
         "inventory": {
@@ -22174,7 +24454,7 @@
         },
         "held": null,
         "nearest": null,
-        "text": "Health 58 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+        "text": "Health 88 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
         "beacons": [
           {
             "id": "obj68",
@@ -22314,9 +24594,9 @@
             "id": "obj72",
             "name": "MistGuardian",
             "pos": {
-              "x": 0.16514359352441677,
+              "x": -0.6252562844431379,
               "y": 0.5,
-              "z": 45.332998514412814
+              "z": 34.90011126026732
             },
             "visible": true
           },
@@ -23474,9 +25754,9 @@
             "id": "promo-1",
             "name": "Route landmark",
             "pos": {
-              "x": 0,
+              "x": -9,
               "y": 0.2,
-              "z": 3
+              "z": 13
             },
             "visible": true
           },
@@ -23944,9 +26224,9 @@
             "id": "elev-1",
             "name": "Amber beacon spire",
             "pos": {
-              "x": 4,
+              "x": 9,
               "y": 0,
-              "z": 11
+              "z": 22
             },
             "visible": true
           },
@@ -23957,6 +26237,196 @@
               "x": 4,
               "y": 4.2,
               "z": 11
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-1",
+            "name": "Bent causeway 1",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 7
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-2",
+            "name": "Bent causeway 2",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 18
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-3",
+            "name": "Bent causeway 3",
+            "pos": {
+              "x": -3,
+              "y": 0.2,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-4",
+            "name": "Bent causeway 4",
+            "pos": {
+              "x": 3,
+              "y": 0.2,
+              "z": 52
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-5",
+            "name": "Bent causeway 5",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 70
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-6",
+            "name": "Bent causeway 6",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 83
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-7",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -6,
+              "y": 0.25,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-8",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -2,
+              "y": 0.1,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-9",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -6,
+              "y": 3,
+              "z": 21
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-10",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": 6,
+              "y": 0.25,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-11",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": 2,
+              "y": 0.1,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-12",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": 6,
+              "y": 3,
+              "z": 45
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-13",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -5,
+              "y": 0.25,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-14",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -1,
+              "y": 0.1,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-15",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -5,
+              "y": 3,
+              "z": 69
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-16",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": -13,
+              "y": 0,
+              "z": 30
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-17",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": 13,
+              "y": 0,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-18",
+            "name": "Sanctuary finale",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 82
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-19",
+            "name": "Sanctuary reveal",
+            "pos": {
+              "x": 0,
+              "y": 7,
+              "z": 82
             },
             "visible": false
           }
@@ -23968,43 +26438,43 @@
       "reached": true,
       "state": {
         "pos": {
-          "x": -0.05356094976188781,
-          "y": 0.79,
-          "z": 52.15849607860083
+          "x": 0.022671540673821194,
+          "y": 0.925,
+          "z": 51.6393471439061
         },
         "controller": "thirdperson",
         "basis": {
           "forward": {
-            "x": 0.139550590970642,
-            "y": -0.22022884465346199,
-            "z": -0.965414361060755
+            "x": 0.01608052088185925,
+            "y": -0.17918331968855902,
+            "z": 0.9836842759714907
           },
           "right": {
-            "x": 0.9897135778558557,
+            "x": -0.9998664106803812,
             "y": 0,
-            "z": 0.14306304137603498
+            "z": 0.016345054087742186
           },
           "up": {
-            "x": 0.03150660831485461,
-            "y": 0.9754482333689477,
-            "z": -0.2179634777890393
+            "x": 0.0029287610519306965,
+            "y": 0.983815703241917,
+            "z": 0.1791593827107948
           }
         },
         "eye": {
-          "x": -0.8005843698271112,
-          "y": 3.39,
-          "z": 59.10031117726436
+          "x": -0.09939832847795842,
+          "y": 3.5248624476284545,
+          "z": 44.17203860836633
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022,
+        "sensitivity": 0.0018,
         "pointerLocked": false,
-        "sim": 34.3673999999836,
+        "sim": 17.686100000023906,
         "ended": false,
         "frozen": false,
         "health": {
           "maxHealth": 100,
-          "health": 52,
+          "health": 88,
           "beaconsLit": 2
         },
         "inventory": {
@@ -24015,7 +26485,7 @@
         },
         "held": null,
         "nearest": null,
-        "text": "Health 52 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+        "text": "Health 88 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
         "beacons": [
           {
             "id": "obj68",
@@ -24155,9 +26625,9 @@
             "id": "obj72",
             "name": "MistGuardian",
             "pos": {
-              "x": -0.13436741387129758,
+              "x": -5.514526859771647,
               "y": 0.5,
-              "z": 52.55940745350264
+              "z": 18
             },
             "visible": true
           },
@@ -25315,9 +27785,9 @@
             "id": "promo-1",
             "name": "Route landmark",
             "pos": {
-              "x": 0,
+              "x": -9,
               "y": 0.2,
-              "z": 3
+              "z": 13
             },
             "visible": true
           },
@@ -25785,9 +28255,9 @@
             "id": "elev-1",
             "name": "Amber beacon spire",
             "pos": {
-              "x": 4,
+              "x": 9,
               "y": 0,
-              "z": 11
+              "z": 22
             },
             "visible": true
           },
@@ -25798,6 +28268,196 @@
               "x": 4,
               "y": 4.2,
               "z": 11
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-1",
+            "name": "Bent causeway 1",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 7
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-2",
+            "name": "Bent causeway 2",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 18
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-3",
+            "name": "Bent causeway 3",
+            "pos": {
+              "x": -3,
+              "y": 0.2,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-4",
+            "name": "Bent causeway 4",
+            "pos": {
+              "x": 3,
+              "y": 0.2,
+              "z": 52
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-5",
+            "name": "Bent causeway 5",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 70
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-6",
+            "name": "Bent causeway 6",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 83
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-7",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -6,
+              "y": 0.25,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-8",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -2,
+              "y": 0.1,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-9",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -6,
+              "y": 3,
+              "z": 21
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-10",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": 6,
+              "y": 0.25,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-11",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": 2,
+              "y": 0.1,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-12",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": 6,
+              "y": 3,
+              "z": 45
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-13",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -5,
+              "y": 0.25,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-14",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -1,
+              "y": 0.1,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-15",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -5,
+              "y": 3,
+              "z": 69
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-16",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": -13,
+              "y": 0,
+              "z": 30
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-17",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": 13,
+              "y": 0,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-18",
+            "name": "Sanctuary finale",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 82
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-19",
+            "name": "Sanctuary reveal",
+            "pos": {
+              "x": 0,
+              "y": 7,
+              "z": 82
             },
             "visible": false
           }
@@ -25809,43 +28469,43 @@
       "reached": true,
       "state": {
         "pos": {
-          "x": 0.25647933910409904,
-          "y": 0.79,
-          "z": 56.70212886622624
+          "x": 0.1030139717400059,
+          "y": 0.925,
+          "z": 56.55408757523733
         },
         "controller": "thirdperson",
         "basis": {
           "forward": {
-            "x": 0.8243939945330356,
-            "y": -0.25118825749399787,
-            "z": -0.5072267748009702
+            "x": 0.01608222310817573,
+            "y": -0.17861057007220033,
+            "z": 0.9837884052774674
           },
           "right": {
-            "x": 0.5240280295337623,
+            "x": -0.999866410680385,
             "y": 0,
-            "z": 0.8517010181178384
+            "z": 0.01634505408751752
           },
           "up": {
-            "x": 0.21393729464688374,
-            "y": 0.9679382517997359,
-            "z": -0.131629687616599
+            "x": 0.0029193994284324523,
+            "y": 0.9839198464603118,
+            "z": 0.17858670960766831
           }
         },
         "eye": {
-          "x": -3.680907558982605,
-          "y": 3.39,
-          "z": 60.317834287042594
+          "x": -0.01911532063234874,
+          "y": 3.524999375923524,
+          "z": 49.08314397668789
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022,
+        "sensitivity": 0.0018,
         "pointerLocked": false,
-        "sim": 40.3870999999866,
+        "sim": 18.47030000001201,
         "ended": false,
         "frozen": false,
         "health": {
           "maxHealth": 100,
-          "health": 46,
+          "health": 88,
           "beaconsLit": 2
         },
         "inventory": {
@@ -25856,7 +28516,7 @@
         },
         "held": null,
         "nearest": null,
-        "text": "Health 46 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+        "text": "Health 88 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
         "beacons": [
           {
             "id": "obj68",
@@ -25996,9 +28656,9 @@
             "id": "obj72",
             "name": "MistGuardian",
             "pos": {
-              "x": -0.27015670459336416,
+              "x": -5,
               "y": 0.5,
-              "z": 56.68710670301086
+              "z": 18.628585491691016
             },
             "visible": true
           },
@@ -27156,9 +29816,9 @@
             "id": "promo-1",
             "name": "Route landmark",
             "pos": {
-              "x": 0,
+              "x": -9,
               "y": 0.2,
-              "z": 3
+              "z": 13
             },
             "visible": true
           },
@@ -27626,9 +30286,9 @@
             "id": "elev-1",
             "name": "Amber beacon spire",
             "pos": {
-              "x": 4,
+              "x": 9,
               "y": 0,
-              "z": 11
+              "z": 22
             },
             "visible": true
           },
@@ -27639,6 +30299,196 @@
               "x": 4,
               "y": 4.2,
               "z": 11
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-1",
+            "name": "Bent causeway 1",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 7
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-2",
+            "name": "Bent causeway 2",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 18
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-3",
+            "name": "Bent causeway 3",
+            "pos": {
+              "x": -3,
+              "y": 0.2,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-4",
+            "name": "Bent causeway 4",
+            "pos": {
+              "x": 3,
+              "y": 0.2,
+              "z": 52
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-5",
+            "name": "Bent causeway 5",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 70
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-6",
+            "name": "Bent causeway 6",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 83
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-7",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -6,
+              "y": 0.25,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-8",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -2,
+              "y": 0.1,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-9",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -6,
+              "y": 3,
+              "z": 21
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-10",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": 6,
+              "y": 0.25,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-11",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": 2,
+              "y": 0.1,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-12",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": 6,
+              "y": 3,
+              "z": 45
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-13",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -5,
+              "y": 0.25,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-14",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -1,
+              "y": 0.1,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-15",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -5,
+              "y": 3,
+              "z": 69
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-16",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": -13,
+              "y": 0,
+              "z": 30
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-17",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": 13,
+              "y": 0,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-18",
+            "name": "Sanctuary finale",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 82
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-19",
+            "name": "Sanctuary reveal",
+            "pos": {
+              "x": 0,
+              "y": 7,
+              "z": 82
             },
             "visible": false
           }
@@ -27650,43 +30500,43 @@
       "reached": true,
       "state": {
         "pos": {
-          "x": -0.2705376689008071,
+          "x": 0.1945889102809225,
           "y": 0.79,
-          "z": 62.30567565284018
+          "z": 62.15594760071925
         },
         "controller": "thirdperson",
         "basis": {
           "forward": {
-            "x": -0.7308057002419144,
-            "y": -0.21775413959039977,
-            "z": 0.6469205230823722
+            "x": 0.016080127203977283,
+            "y": -0.1793155116639827,
+            "z": 0.9836601937588956
           },
           "right": {
-            "x": -0.6628259225549137,
+            "x": -0.9998664106803848,
             "y": 0,
-            "z": -0.7487735281039437
+            "z": 0.01634505408751515
           },
           "up": {
-            "x": -0.16304853536034228,
-            "y": 0.9760036550603921,
-            "z": 0.14433308846415818
+            "x": 0.002930921736878251,
+            "y": 0.9837916178117619,
+            "z": 0.17929155702678307
           }
         },
         "eye": {
-          "x": 5.17811917137174,
-          "y": 3.39,
-          "z": 57.72220614358903
+          "x": 0.07254364456628568,
+          "y": 3.3942256861947624,
+          "z": 54.69014411562486
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022,
+        "sensitivity": 0.0018,
         "pointerLocked": false,
-        "sim": 42.83829999998213,
+        "sim": 19.37140000003589,
         "ended": false,
         "frozen": false,
         "health": {
           "maxHealth": 100,
-          "health": 34,
+          "health": 88,
           "beaconsLit": 2
         },
         "inventory": {
@@ -27697,7 +30547,7 @@
         },
         "held": null,
         "nearest": null,
-        "text": "Health 34 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+        "text": "Health 88 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
         "beacons": [
           {
             "id": "obj68",
@@ -27837,9 +30687,9 @@
             "id": "obj72",
             "name": "MistGuardian",
             "pos": {
-              "x": 0.47469446057597253,
+              "x": -5,
               "y": 0.5,
-              "z": 61.10156027082325
+              "z": 20.04063841038418
             },
             "visible": true
           },
@@ -28997,9 +31847,9 @@
             "id": "promo-1",
             "name": "Route landmark",
             "pos": {
-              "x": 0,
+              "x": -9,
               "y": 0.2,
-              "z": 3
+              "z": 13
             },
             "visible": true
           },
@@ -29467,9 +32317,9 @@
             "id": "elev-1",
             "name": "Amber beacon spire",
             "pos": {
-              "x": 4,
+              "x": 9,
               "y": 0,
-              "z": 11
+              "z": 22
             },
             "visible": true
           },
@@ -29480,6 +32330,196 @@
               "x": 4,
               "y": 4.2,
               "z": 11
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-1",
+            "name": "Bent causeway 1",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 7
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-2",
+            "name": "Bent causeway 2",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 18
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-3",
+            "name": "Bent causeway 3",
+            "pos": {
+              "x": -3,
+              "y": 0.2,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-4",
+            "name": "Bent causeway 4",
+            "pos": {
+              "x": 3,
+              "y": 0.2,
+              "z": 52
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-5",
+            "name": "Bent causeway 5",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 70
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-6",
+            "name": "Bent causeway 6",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 83
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-7",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -6,
+              "y": 0.25,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-8",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -2,
+              "y": 0.1,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-9",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -6,
+              "y": 3,
+              "z": 21
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-10",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": 6,
+              "y": 0.25,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-11",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": 2,
+              "y": 0.1,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-12",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": 6,
+              "y": 3,
+              "z": 45
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-13",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -5,
+              "y": 0.25,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-14",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -1,
+              "y": 0.1,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-15",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -5,
+              "y": 3,
+              "z": 69
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-16",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": -13,
+              "y": 0,
+              "z": 30
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-17",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": 13,
+              "y": 0,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-18",
+            "name": "Sanctuary finale",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 82
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-19",
+            "name": "Sanctuary reveal",
+            "pos": {
+              "x": 0,
+              "y": 7,
+              "z": 82
             },
             "visible": false
           }
@@ -29491,43 +32531,43 @@
       "reached": true,
       "state": {
         "pos": {
-          "x": -0.16460443401520425,
-          "y": 0.79,
-          "z": 67.0384658106576
+          "x": -0.08718050582035047,
+          "y": 0.925,
+          "z": 67.00088353836297
         },
         "controller": "thirdperson",
         "basis": {
           "forward": {
-            "x": 0.3584239608987225,
-            "y": -0.31680986185024185,
-            "z": 0.8781593111093806
+            "x": 0.782407654730479,
+            "y": -0.3052361039720592,
+            "z": -0.542834397078068
           },
           "right": {
-            "x": -0.9258507462753293,
+            "x": 0.5700385138506,
             "y": 0,
-            "z": 0.3778893960161039
+            "z": 0.8216179724951246
           },
           "up": {
-            "x": 0.1197190873465332,
-            "y": 0.948489067640967,
-            "z": 0.2933186470214304
+            "x": 0.2507874688778343,
+            "y": 0.9522767039216901,
+            "z": -0.17399633508177983
           }
         },
         "eye": {
-          "x": -2.2827841947876437,
-          "y": 3.39,
-          "z": 62.29275476593991
+          "x": -4.373892684383616,
+          "y": 3.5249956354453857,
+          "z": 69.70607265235725
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022,
+        "sensitivity": 0.0018,
         "pointerLocked": false,
-        "sim": 48.28829999998213,
+        "sim": 21.106500000000196,
         "ended": false,
         "frozen": false,
         "health": {
           "maxHealth": 100,
-          "health": 28,
+          "health": 88,
           "beaconsLit": 2
         },
         "inventory": {
@@ -29538,7 +32578,7 @@
         },
         "held": null,
         "nearest": "obj70",
-        "text": "Health 28 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+        "text": "Health 88 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
         "beacons": [
           {
             "id": "obj68",
@@ -29678,9 +32718,9 @@
             "id": "obj72",
             "name": "MistGuardian",
             "pos": {
-              "x": -0.26560110965769906,
+              "x": -5,
               "y": 0.5,
-              "z": 66.97313200777192
+              "z": 22.759596371885873
             },
             "visible": true
           },
@@ -30838,9 +33878,9 @@
             "id": "promo-1",
             "name": "Route landmark",
             "pos": {
-              "x": 0,
+              "x": -9,
               "y": 0.2,
-              "z": 3
+              "z": 13
             },
             "visible": true
           },
@@ -31308,9 +34348,9 @@
             "id": "elev-1",
             "name": "Amber beacon spire",
             "pos": {
-              "x": 4,
+              "x": 9,
               "y": 0,
-              "z": 11
+              "z": 22
             },
             "visible": true
           },
@@ -31321,6 +34361,196 @@
               "x": 4,
               "y": 4.2,
               "z": 11
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-1",
+            "name": "Bent causeway 1",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 7
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-2",
+            "name": "Bent causeway 2",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 18
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-3",
+            "name": "Bent causeway 3",
+            "pos": {
+              "x": -3,
+              "y": 0.2,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-4",
+            "name": "Bent causeway 4",
+            "pos": {
+              "x": 3,
+              "y": 0.2,
+              "z": 52
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-5",
+            "name": "Bent causeway 5",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 70
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-6",
+            "name": "Bent causeway 6",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 83
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-7",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -6,
+              "y": 0.25,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-8",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -2,
+              "y": 0.1,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-9",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -6,
+              "y": 3,
+              "z": 21
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-10",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": 6,
+              "y": 0.25,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-11",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": 2,
+              "y": 0.1,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-12",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": 6,
+              "y": 3,
+              "z": 45
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-13",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -5,
+              "y": 0.25,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-14",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -1,
+              "y": 0.1,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-15",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -5,
+              "y": 3,
+              "z": 69
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-16",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": -13,
+              "y": 0,
+              "z": 30
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-17",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": 13,
+              "y": 0,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-18",
+            "name": "Sanctuary finale",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 82
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-19",
+            "name": "Sanctuary reveal",
+            "pos": {
+              "x": 0,
+              "y": 7,
+              "z": 82
             },
             "visible": false
           }
@@ -31331,43 +34561,43 @@
       "interact": "Ignite third beacon",
       "state": {
         "pos": {
-          "x": 0.7373752035983063,
-          "y": 0.79,
-          "z": 67.37377352553334
+          "x": 0.9309987973044239,
+          "y": 0.925,
+          "z": 67.10630367188507
         },
         "controller": "thirdperson",
         "basis": {
           "forward": {
-            "x": 0.9379715264130403,
-            "y": -0.2776027962254675,
-            "z": -0.20771640081176293
+            "x": 0.7273226615825187,
+            "y": -0.2745183373745068,
+            "z": 0.6290003405354067
           },
           "right": {
-            "x": 0.21621450902804693,
+            "x": -0.6541308271834819,
             "y": 0,
-            "z": 0.976345884451694
+            "z": 0.756381425557406
           },
           "up": {
-            "x": 0.27103634760701745,
-            "y": 0.9606959391648335,
-            "z": -0.06002175229070242
+            "x": 0.20764057136497838,
+            "y": 0.9615818646611096,
+            "z": 0.17957090710382032
           }
         },
         "eye": {
-          "x": -5.455825408290078,
-          "y": 3.39,
-          "z": 69.3067791211507
+          "x": -3.3859648294124525,
+          "y": 3.5249998032921863,
+          "z": 62.37218739750937
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022,
+        "sensitivity": 0.0018,
         "pointerLocked": false,
-        "sim": 48.806299999982144,
+        "sim": 21.557000000000208,
         "ended": false,
         "frozen": false,
         "health": {
           "maxHealth": 100,
-          "health": 28,
+          "health": 88,
           "beaconsLit": 3
         },
         "inventory": {
@@ -31378,7 +34608,7 @@
         },
         "held": null,
         "nearest": "obj70",
-        "text": "Health 28 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+        "text": "Health 88 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
         "beacons": [
           {
             "id": "obj68",
@@ -31518,9 +34748,9 @@
             "id": "obj72",
             "name": "MistGuardian",
             "pos": {
-              "x": 0.6551222102574276,
+              "x": -5,
               "y": 0.5,
-              "z": 67.34319615321255
+              "z": 23.465544479592495
             },
             "visible": true
           },
@@ -32678,9 +35908,9 @@
             "id": "promo-1",
             "name": "Route landmark",
             "pos": {
-              "x": 0,
+              "x": -9,
               "y": 0.2,
-              "z": 3
+              "z": 13
             },
             "visible": true
           },
@@ -33148,9 +36378,9 @@
             "id": "elev-1",
             "name": "Amber beacon spire",
             "pos": {
-              "x": 4,
+              "x": 9,
               "y": 0,
-              "z": 11
+              "z": 22
             },
             "visible": true
           },
@@ -33161,6 +36391,196 @@
               "x": 4,
               "y": 4.2,
               "z": 11
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-1",
+            "name": "Bent causeway 1",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 7
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-2",
+            "name": "Bent causeway 2",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 18
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-3",
+            "name": "Bent causeway 3",
+            "pos": {
+              "x": -3,
+              "y": 0.2,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-4",
+            "name": "Bent causeway 4",
+            "pos": {
+              "x": 3,
+              "y": 0.2,
+              "z": 52
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-5",
+            "name": "Bent causeway 5",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 70
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-6",
+            "name": "Bent causeway 6",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 83
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-7",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -6,
+              "y": 0.25,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-8",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -2,
+              "y": 0.1,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-9",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -6,
+              "y": 3,
+              "z": 21
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-10",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": 6,
+              "y": 0.25,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-11",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": 2,
+              "y": 0.1,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-12",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": 6,
+              "y": 3,
+              "z": 45
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-13",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -5,
+              "y": 0.25,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-14",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -1,
+              "y": 0.1,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-15",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -5,
+              "y": 3,
+              "z": 69
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-16",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": -13,
+              "y": 0,
+              "z": 30
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-17",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": 13,
+              "y": 0,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-18",
+            "name": "Sanctuary finale",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 82
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-19",
+            "name": "Sanctuary reveal",
+            "pos": {
+              "x": 0,
+              "y": 7,
+              "z": 82
             },
             "visible": false
           }
@@ -33171,43 +36591,43 @@
       "capture": "last-beacon",
       "state": {
         "pos": {
-          "x": 1.1698442510494629,
-          "y": 0.79,
-          "z": 67.53454235224321
+          "x": 1.177673985666778,
+          "y": 0.925,
+          "z": 67.13184389963665
         },
         "controller": "thirdperson",
         "basis": {
           "forward": {
-            "x": 0.8952529488154995,
-            "y": -0.29748082546031246,
-            "z": -0.3317036570805389
+            "x": 0.6551074226984291,
+            "y": -0.2796584340563187,
+            "z": 0.7018727982950966
           },
           "right": {
-            "x": 0.34743270234387114,
+            "x": -0.7310416850330995,
             "y": 0,
-            "z": 0.9377049201865345
+            "z": 0.6823328035086444
           },
           "up": {
-            "x": 0.2789492336952867,
-            "y": 0.954727792872634,
-            "z": -0.10335456708516182
+            "x": 0.1908201233344853,
+            "y": 0.9600995574736859,
+            "z": 0.20444197286624916
           }
         },
         "eye": {
-          "x": -4.903933773948526,
-          "y": 3.39,
-          "z": 69.9677217748404
+          "x": -2.83529735679961,
+          "y": 3.524999950456769,
+          "z": 61.94223450709627
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022,
+        "sensitivity": 0.0018,
         "pointerLocked": false,
-        "sim": 49.55699999997768,
+        "sim": 21.757400000035975,
         "ended": false,
         "frozen": false,
         "health": {
           "maxHealth": 100,
-          "health": 28,
+          "health": 88,
           "beaconsLit": 3
         },
         "inventory": {
@@ -33218,7 +36638,7 @@
         },
         "held": null,
         "nearest": "obj70",
-        "text": "Health 28 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+        "text": "Health 88 / 100\nLight the Three Foglights\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
         "beacons": [
           {
             "id": "obj68",
@@ -33358,9 +36778,9 @@
             "id": "obj72",
             "name": "MistGuardian",
             "pos": {
-              "x": 1.1271262448131159,
+              "x": -5,
               "y": 0.5,
-              "z": 67.51866208570743
+              "z": 23.779577777727127
             },
             "visible": true
           },
@@ -34518,9 +37938,9 @@
             "id": "promo-1",
             "name": "Route landmark",
             "pos": {
-              "x": 0,
+              "x": -9,
               "y": 0.2,
-              "z": 3
+              "z": 13
             },
             "visible": true
           },
@@ -34988,9 +38408,9 @@
             "id": "elev-1",
             "name": "Amber beacon spire",
             "pos": {
-              "x": 4,
+              "x": 9,
               "y": 0,
-              "z": 11
+              "z": 22
             },
             "visible": true
           },
@@ -35001,6 +38421,196 @@
               "x": 4,
               "y": 4.2,
               "z": 11
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-1",
+            "name": "Bent causeway 1",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 7
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-2",
+            "name": "Bent causeway 2",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 18
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-3",
+            "name": "Bent causeway 3",
+            "pos": {
+              "x": -3,
+              "y": 0.2,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-4",
+            "name": "Bent causeway 4",
+            "pos": {
+              "x": 3,
+              "y": 0.2,
+              "z": 52
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-5",
+            "name": "Bent causeway 5",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 70
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-6",
+            "name": "Bent causeway 6",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 83
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-7",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -6,
+              "y": 0.25,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-8",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -2,
+              "y": 0.1,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-9",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -6,
+              "y": 3,
+              "z": 21
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-10",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": 6,
+              "y": 0.25,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-11",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": 2,
+              "y": 0.1,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-12",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": 6,
+              "y": 3,
+              "z": 45
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-13",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -5,
+              "y": 0.25,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-14",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -1,
+              "y": 0.1,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-15",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -5,
+              "y": 3,
+              "z": 69
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-16",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": -13,
+              "y": 0,
+              "z": 30
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-17",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": 13,
+              "y": 0,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-18",
+            "name": "Sanctuary finale",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 82
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-19",
+            "name": "Sanctuary reveal",
+            "pos": {
+              "x": 0,
+              "y": 7,
+              "z": 82
             },
             "visible": false
           }
@@ -35012,43 +38622,43 @@
       "reached": true,
       "state": {
         "pos": {
-          "x": 0.28619304731073525,
-          "y": 0.79,
-          "z": 72.34533554213553
+          "x": -0.13149598030170861,
+          "y": 0.925,
+          "z": 72.24916158753462
         },
         "controller": "thirdperson",
         "basis": {
           "forward": {
-            "x": 0.08294950569828688,
-            "y": -0.20293962891645795,
-            "z": 0.9756715054359538
+            "x": 0.2017091013224149,
+            "y": -0.18284111386394813,
+            "z": 0.9622279176602051
           },
           "right": {
-            "x": -0.9964054559727517,
+            "x": -0.9787268291875653,
             "y": 0,
-            "z": 0.08471226184994023
+            "z": 0.20516772121475219
           },
           "up": {
-            "x": 0.017191474984500688,
-            "y": 0.979191251500569,
-            "z": 0.2022101534854443
+            "x": 0.037513094675833275,
+            "y": 0.9831424754739216,
+            "z": 0.17895150361718454
           }
         },
         "eye": {
-          "x": -0.340643531357621,
-          "y": 3.39,
-          "z": 65.02885152006355
+          "x": -1.6737192089321828,
+          "y": 3.524998614518963,
+          "z": 65.00004521124
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022,
+        "sensitivity": 0.0018,
         "pointerLocked": false,
-        "sim": 51.14439999997617,
+        "sim": 23.259000000000285,
         "ended": false,
         "frozen": false,
         "health": {
           "maxHealth": 100,
-          "health": 28,
+          "health": 88,
           "beaconsLit": 3
         },
         "inventory": {
@@ -35060,7 +38670,7 @@
         },
         "held": null,
         "nearest": null,
-        "text": "Health 28 / 100\nReach the Sanctuary\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+        "text": "Health 88 / 100\nReach the Sanctuary\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
         "beacons": [
           {
             "id": "obj68",
@@ -35200,9 +38810,9 @@
             "id": "obj72",
             "name": "MistGuardian",
             "pos": {
-              "x": 0.1269626823931332,
+              "x": -5.9708288581697975,
               "y": 0.5,
-              "z": 70.49233496549901
+              "z": 25
             },
             "visible": true
           },
@@ -36360,9 +39970,9 @@
             "id": "promo-1",
             "name": "Route landmark",
             "pos": {
-              "x": 0,
+              "x": -9,
               "y": 0.2,
-              "z": 3
+              "z": 13
             },
             "visible": true
           },
@@ -36830,9 +40440,9 @@
             "id": "elev-1",
             "name": "Amber beacon spire",
             "pos": {
-              "x": 4,
+              "x": 9,
               "y": 0,
-              "z": 11
+              "z": 22
             },
             "visible": true
           },
@@ -36843,6 +40453,196 @@
               "x": 4,
               "y": 4.2,
               "z": 11
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-1",
+            "name": "Bent causeway 1",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 7
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-2",
+            "name": "Bent causeway 2",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 18
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-3",
+            "name": "Bent causeway 3",
+            "pos": {
+              "x": -3,
+              "y": 0.2,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-4",
+            "name": "Bent causeway 4",
+            "pos": {
+              "x": 3,
+              "y": 0.2,
+              "z": 52
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-5",
+            "name": "Bent causeway 5",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 70
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-6",
+            "name": "Bent causeway 6",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 83
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-7",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -6,
+              "y": 0.25,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-8",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -2,
+              "y": 0.1,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-9",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -6,
+              "y": 3,
+              "z": 21
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-10",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": 6,
+              "y": 0.25,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-11",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": 2,
+              "y": 0.1,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-12",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": 6,
+              "y": 3,
+              "z": 45
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-13",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -5,
+              "y": 0.25,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-14",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -1,
+              "y": 0.1,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-15",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -5,
+              "y": 3,
+              "z": 69
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-16",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": -13,
+              "y": 0,
+              "z": 30
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-17",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": 13,
+              "y": 0,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-18",
+            "name": "Sanctuary finale",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 82
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-19",
+            "name": "Sanctuary reveal",
+            "pos": {
+              "x": 0,
+              "y": 7,
+              "z": 82
             },
             "visible": false
           }
@@ -36854,43 +40654,43 @@
       "reached": true,
       "state": {
         "pos": {
-          "x": 0.0737361925240873,
-          "y": 0.79,
-          "z": 77.31339821917513
+          "x": -0.23055884493599002,
+          "y": 0.925,
+          "z": 77.14526407870899
         },
         "controller": "thirdperson",
         "basis": {
           "forward": {
-            "x": -0.7060988849007354,
-            "y": -0.24946705084643592,
-            "z": 0.6627145352894563
+            "x": -0.3902441306315855,
+            "y": -0.30076759116497453,
+            "z": -0.8702001922617674
           },
           "right": {
-            "x": -0.6843514796110711,
+            "x": 0.9124488881937266,
             "y": 0,
-            "z": -0.7291522833771678
+            "z": -0.4091906969055286
           },
           "up": {
-            "x": -0.18189946975204677,
-            "y": 0.968383287000546,
-            "z": 0.17072314536096872
+            "x": -0.12307130023539305,
+            "y": 0.9536974657116474,
+            "z": -0.2744350541631863
           }
         },
         "eye": {
-          "x": 4.633143029626199,
-          "y": 3.39,
-          "z": 73.80202500733117
+          "x": 1.5080927735568719,
+          "y": 3.5245713068008424,
+          "z": 82.03672861259723
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022,
+        "sensitivity": 0.0018,
         "pointerLocked": false,
-        "sim": 52.14439999997618,
+        "sim": 24.5939000000361,
         "ended": false,
         "frozen": false,
         "health": {
           "maxHealth": 100,
-          "health": 28,
+          "health": 88,
           "beaconsLit": 3
         },
         "inventory": {
@@ -36902,7 +40702,7 @@
         },
         "held": null,
         "nearest": null,
-        "text": "Health 28 / 100\nReach the Sanctuary\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+        "text": "Health 88 / 100\nReach the Sanctuary\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
         "beacons": [
           {
             "id": "obj68",
@@ -37042,9 +40842,9 @@
             "id": "obj72",
             "name": "MistGuardian",
             "pos": {
-              "x": 0.3270854581425156,
+              "x": -7.763827359522848,
               "y": 0.5,
-              "z": 73.28376312053186
+              "z": 25
             },
             "visible": true
           },
@@ -38202,9 +42002,9 @@
             "id": "promo-1",
             "name": "Route landmark",
             "pos": {
-              "x": 0,
+              "x": -9,
               "y": 0.2,
-              "z": 3
+              "z": 13
             },
             "visible": true
           },
@@ -38672,9 +42472,9 @@
             "id": "elev-1",
             "name": "Amber beacon spire",
             "pos": {
-              "x": 4,
+              "x": 9,
               "y": 0,
-              "z": 11
+              "z": 22
             },
             "visible": true
           },
@@ -38685,6 +42485,196 @@
               "x": 4,
               "y": 4.2,
               "z": 11
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-1",
+            "name": "Bent causeway 1",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 7
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-2",
+            "name": "Bent causeway 2",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 18
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-3",
+            "name": "Bent causeway 3",
+            "pos": {
+              "x": -3,
+              "y": 0.2,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-4",
+            "name": "Bent causeway 4",
+            "pos": {
+              "x": 3,
+              "y": 0.2,
+              "z": 52
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-5",
+            "name": "Bent causeway 5",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 70
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-6",
+            "name": "Bent causeway 6",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 83
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-7",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -6,
+              "y": 0.25,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-8",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -2,
+              "y": 0.1,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-9",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -6,
+              "y": 3,
+              "z": 21
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-10",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": 6,
+              "y": 0.25,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-11",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": 2,
+              "y": 0.1,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-12",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": 6,
+              "y": 3,
+              "z": 45
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-13",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -5,
+              "y": 0.25,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-14",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -1,
+              "y": 0.1,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-15",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -5,
+              "y": 3,
+              "z": 69
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-16",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": -13,
+              "y": 0,
+              "z": 30
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-17",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": 13,
+              "y": 0,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-18",
+            "name": "Sanctuary finale",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 82
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-19",
+            "name": "Sanctuary reveal",
+            "pos": {
+              "x": 0,
+              "y": 7,
+              "z": 82
             },
             "visible": false
           }
@@ -38696,43 +42686,43 @@
       "reached": false,
       "state": {
         "pos": {
-          "x": 0.1745497933784679,
-          "y": 0.79,
-          "z": 79.9884435827219
+          "x": -0.9036579048304165,
+          "y": 0.925,
+          "z": 79.83942590970332
         },
         "controller": "thirdperson",
         "basis": {
           "forward": {
-            "x": 0.3382153442900675,
-            "y": -0.19260722476819858,
-            "z": 0.9211475657319211
+            "x": 0.005818276216279311,
+            "y": -0.20899379000995155,
+            "z": 0.9778996591671086
           },
           "right": {
-            "x": -0.9387243023283247,
+            "x": -0.9999823005995758,
             "y": 0,
-            "z": 0.3446689487293572
+            "z": 0.005949662812270743
           },
           "up": {
-            "x": 0.06638572967853403,
-            "y": 0.9812759331437275,
-            "z": 0.18080508269392204
+            "x": 0.0012434425804177295,
+            "y": 0.9779169677111019,
+            "z": 0.208990090945176
           }
         },
         "eye": {
-          "x": -2.3540561029985287,
-          "y": 3.39,
-          "z": 73.32046339715174
+          "x": -0.9604235171607493,
+          "y": 3.5222904358258726,
+          "z": 72.95473023363095
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022,
+        "sensitivity": 0.0018,
         "pointerLocked": false,
-        "sim": 52.94359999997916,
+        "sim": 26.245500000000412,
         "ended": true,
         "frozen": false,
         "health": {
           "maxHealth": 100,
-          "health": 28,
+          "health": 88,
           "beaconsLit": 3
         },
         "inventory": {
@@ -38744,7 +42734,7 @@
         },
         "held": null,
         "nearest": null,
-        "text": "🔥 The Vale Is Lit\n\nYou reached the Sanctuary. The mist recedes.\n\nRestart\nHealth 28 / 100\nReach the Sanctuary\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+        "text": "🔥 The Vale Is Lit\n\nYou reached the Sanctuary. The mist recedes.\n\nRestart\nHealth 88 / 100\nReach the Sanctuary\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
         "beacons": [
           {
             "id": "obj68",
@@ -38884,9 +42874,9 @@
             "id": "obj72",
             "name": "MistGuardian",
             "pos": {
-              "x": 0.056183156151248276,
+              "x": -9.982208005781935,
               "y": 0.5,
-              "z": 75.49982633537043
+              "z": 25
             },
             "visible": true
           },
@@ -40044,9 +44034,9 @@
             "id": "promo-1",
             "name": "Route landmark",
             "pos": {
-              "x": 0,
+              "x": -9,
               "y": 0.2,
-              "z": 3
+              "z": 13
             },
             "visible": true
           },
@@ -40514,9 +44504,9 @@
             "id": "elev-1",
             "name": "Amber beacon spire",
             "pos": {
-              "x": 4,
+              "x": 9,
               "y": 0,
-              "z": 11
+              "z": 22
             },
             "visible": true
           },
@@ -40527,6 +44517,196 @@
               "x": 4,
               "y": 4.2,
               "z": 11
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-1",
+            "name": "Bent causeway 1",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 7
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-2",
+            "name": "Bent causeway 2",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 18
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-3",
+            "name": "Bent causeway 3",
+            "pos": {
+              "x": -3,
+              "y": 0.2,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-4",
+            "name": "Bent causeway 4",
+            "pos": {
+              "x": 3,
+              "y": 0.2,
+              "z": 52
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-5",
+            "name": "Bent causeway 5",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 70
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-6",
+            "name": "Bent causeway 6",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 83
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-7",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -6,
+              "y": 0.25,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-8",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -2,
+              "y": 0.1,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-9",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -6,
+              "y": 3,
+              "z": 21
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-10",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": 6,
+              "y": 0.25,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-11",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": 2,
+              "y": 0.1,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-12",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": 6,
+              "y": 3,
+              "z": 45
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-13",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -5,
+              "y": 0.25,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-14",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -1,
+              "y": 0.1,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-15",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -5,
+              "y": 3,
+              "z": 69
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-16",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": -13,
+              "y": 0,
+              "z": 30
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-17",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": 13,
+              "y": 0,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-18",
+            "name": "Sanctuary finale",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 82
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-19",
+            "name": "Sanctuary reveal",
+            "pos": {
+              "x": 0,
+              "y": 7,
+              "z": 82
             },
             "visible": false
           }
@@ -40537,43 +44717,43 @@
       "capture": "outcome",
       "state": {
         "pos": {
-          "x": 1.1313785334160937,
-          "y": 0.79,
-          "z": 82.65366419793021
+          "x": -0.9183139594869592,
+          "y": 0.925,
+          "z": 82.5088607304117
         },
         "controller": "thirdperson",
         "basis": {
           "forward": {
-            "x": 0.3281953289664893,
-            "y": -0.3023377978227714,
-            "z": 0.8949188131066721
+            "x": 0.007553609717598175,
+            "y": -0.294291175292722,
+            "z": 0.9556859563293074
           },
           "right": {
-            "x": -0.9388565015335849,
+            "x": -0.9999687659477782,
             "y": 0,
-            "z": 0.3443086834921795
+            "z": 0.007903614924686697
           },
           "up": {
-            "x": 0.10409752913828317,
-            "y": 0.953200847674653,
-            "z": 0.2838518071452555
+            "x": 0.0023259641252471462,
+            "y": 0.9557158072067391,
+            "z": 0.29428198338678446
           }
         },
         "eye": {
-          "x": -1.1158054706471783,
-          "y": 3.39,
-          "z": 76.52797425388086
+          "x": -0.9736434779943656,
+          "y": 3.524999969174767,
+          "z": 75.94951710975705
         },
         "yaw": 0,
         "pitch": 0,
-        "sensitivity": 0.0022,
+        "sensitivity": 0.0018,
         "pointerLocked": false,
-        "sim": 55.03639999997618,
+        "sim": 27.84669999998854,
         "ended": true,
         "frozen": false,
         "health": {
           "maxHealth": 100,
-          "health": 28,
+          "health": 88,
           "beaconsLit": 3
         },
         "inventory": {
@@ -40585,7 +44765,7 @@
         },
         "held": null,
         "nearest": null,
-        "text": "🔥 The Vale Is Lit\n\nYou reached the Sanctuary. The mist recedes.\n\nRestart\nHealth 28 / 100\nReach the Sanctuary\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+        "text": "🔥 The Vale Is Lit\n\nYou reached the Sanctuary. The mist recedes.\n\nRestart\nHealth 88 / 100\nReach the Sanctuary\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
         "beacons": [
           {
             "id": "obj68",
@@ -40725,9 +44905,9 @@
             "id": "obj72",
             "name": "MistGuardian",
             "pos": {
-              "x": 0.8841025897031202,
+              "x": -9.86710714871036,
               "y": 0.5,
-              "z": 81.29646212204808
+              "z": 18
             },
             "visible": true
           },
@@ -41885,9 +46065,9 @@
             "id": "promo-1",
             "name": "Route landmark",
             "pos": {
-              "x": 0,
+              "x": -9,
               "y": 0.2,
-              "z": 3
+              "z": 13
             },
             "visible": true
           },
@@ -42355,9 +46535,9 @@
             "id": "elev-1",
             "name": "Amber beacon spire",
             "pos": {
-              "x": 4,
+              "x": 9,
               "y": 0,
-              "z": 11
+              "z": 22
             },
             "visible": true
           },
@@ -42370,6 +46550,196 @@
               "z": 11
             },
             "visible": false
+          },
+          {
+            "id": "deep1-1",
+            "name": "Bent causeway 1",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 7
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-2",
+            "name": "Bent causeway 2",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 18
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-3",
+            "name": "Bent causeway 3",
+            "pos": {
+              "x": -3,
+              "y": 0.2,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-4",
+            "name": "Bent causeway 4",
+            "pos": {
+              "x": 3,
+              "y": 0.2,
+              "z": 52
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-5",
+            "name": "Bent causeway 5",
+            "pos": {
+              "x": -2,
+              "y": 0.2,
+              "z": 70
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-6",
+            "name": "Bent causeway 6",
+            "pos": {
+              "x": 2,
+              "y": 0.2,
+              "z": 83
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-7",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -6,
+              "y": 0.25,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-8",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -2,
+              "y": 0.1,
+              "z": 21
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-9",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -6,
+              "y": 3,
+              "z": 21
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-10",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": 6,
+              "y": 0.25,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-11",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": 2,
+              "y": 0.1,
+              "z": 45
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-12",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": 6,
+              "y": 3,
+              "z": 45
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-13",
+            "name": "Distinct beacon court",
+            "pos": {
+              "x": -5,
+              "y": 0.25,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-14",
+            "name": "Beacon court frame",
+            "pos": {
+              "x": -1,
+              "y": 0.1,
+              "z": 69
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-15",
+            "name": "Beacon court glow",
+            "pos": {
+              "x": -5,
+              "y": 3,
+              "z": 69
+            },
+            "visible": false
+          },
+          {
+            "id": "deep1-16",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": -13,
+              "y": 0,
+              "z": 30
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-17",
+            "name": "Guardian clearing wall",
+            "pos": {
+              "x": 13,
+              "y": 0,
+              "z": 34
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-18",
+            "name": "Sanctuary finale",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 82
+            },
+            "visible": true
+          },
+          {
+            "id": "deep1-19",
+            "name": "Sanctuary reveal",
+            "pos": {
+              "x": 0,
+              "y": 7,
+              "z": 82
+            },
+            "visible": false
           }
         ]
       }
@@ -42378,43 +46748,43 @@
   "errors": [],
   "final": {
     "pos": {
-      "x": 1.098058598291688,
-      "y": 0.79,
-      "z": 82.56085241848108
+      "x": -0.9181415616809537,
+      "y": 0.925,
+      "z": 82.47746041722039
     },
     "controller": "thirdperson",
     "basis": {
       "forward": {
-        "x": 0.3285479111395756,
-        "y": -0.2982470965556911,
-        "z": 0.8961612240450496
+        "x": 0.007442636414026022,
+        "y": -0.29183933365241516,
+        "z": 0.956438398694094
       },
       "right": {
-        "x": -0.93889139650061,
+        "x": -0.9999697246006185,
         "y": 0,
-        "z": 0.34421351742361017
+        "z": 0.007781380479284277
       },
       "up": {
-        "x": 0.10266068216681352,
-        "y": 0.9544886952688858,
-        "z": 0.2800216329874251
+        "x": 0.002270912893970234,
+        "y": 0.9564673561252962,
+        "z": 0.2918304981000336
       }
     },
     "eye": {
-      "x": -1.1605241041385912,
-      "y": 3.39,
-      "z": 76.40341474879517
+      "x": -0.9734052513695125,
+      "y": 3.5249999386225874,
+      "z": 75.90641989921468
     },
     "yaw": 0,
     "pitch": 0,
-    "sensitivity": 0.0022,
+    "sensitivity": 0.0018,
     "pointerLocked": false,
-    "sim": 54.53719999998065,
+    "sim": 27.7466000000243,
     "ended": true,
     "frozen": false,
     "health": {
       "maxHealth": 100,
-      "health": 28,
+      "health": 88,
       "beaconsLit": 3
     },
     "inventory": {
@@ -42426,7 +46796,7 @@
     },
     "held": null,
     "nearest": null,
-    "text": "🔥 The Vale Is Lit\n\nYou reached the Sanctuary. The mist recedes.\n\nRestart\nHealth 28 / 100\nReach the Sanctuary\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+    "text": "🔥 The Vale Is Lit\n\nYou reached the Sanctuary. The mist recedes.\n\nRestart\nHealth 88 / 100\nReach the Sanctuary\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
     "beacons": [
       {
         "id": "obj68",
@@ -42566,9 +46936,9 @@
         "id": "obj72",
         "name": "MistGuardian",
         "pos": {
-          "x": 0.6391494924480623,
+          "x": -10.001558530773819,
           "y": 0.5,
-          "z": 79.92033690365474
+          "z": 18
         },
         "visible": true
       },
@@ -43726,9 +48096,9 @@
         "id": "promo-1",
         "name": "Route landmark",
         "pos": {
-          "x": 0,
+          "x": -9,
           "y": 0.2,
-          "z": 3
+          "z": 13
         },
         "visible": true
       },
@@ -44196,9 +48566,9 @@
         "id": "elev-1",
         "name": "Amber beacon spire",
         "pos": {
-          "x": 4,
+          "x": 9,
           "y": 0,
-          "z": 11
+          "z": 22
         },
         "visible": true
       },
@@ -44209,6 +48579,196 @@
           "x": 4,
           "y": 4.2,
           "z": 11
+        },
+        "visible": false
+      },
+      {
+        "id": "deep1-1",
+        "name": "Bent causeway 1",
+        "pos": {
+          "x": -2,
+          "y": 0.2,
+          "z": 7
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-2",
+        "name": "Bent causeway 2",
+        "pos": {
+          "x": 2,
+          "y": 0.2,
+          "z": 18
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-3",
+        "name": "Bent causeway 3",
+        "pos": {
+          "x": -3,
+          "y": 0.2,
+          "z": 34
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-4",
+        "name": "Bent causeway 4",
+        "pos": {
+          "x": 3,
+          "y": 0.2,
+          "z": 52
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-5",
+        "name": "Bent causeway 5",
+        "pos": {
+          "x": -2,
+          "y": 0.2,
+          "z": 70
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-6",
+        "name": "Bent causeway 6",
+        "pos": {
+          "x": 2,
+          "y": 0.2,
+          "z": 83
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-7",
+        "name": "Distinct beacon court",
+        "pos": {
+          "x": -6,
+          "y": 0.25,
+          "z": 21
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-8",
+        "name": "Beacon court frame",
+        "pos": {
+          "x": -2,
+          "y": 0.1,
+          "z": 21
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-9",
+        "name": "Beacon court glow",
+        "pos": {
+          "x": -6,
+          "y": 3,
+          "z": 21
+        },
+        "visible": false
+      },
+      {
+        "id": "deep1-10",
+        "name": "Distinct beacon court",
+        "pos": {
+          "x": 6,
+          "y": 0.25,
+          "z": 45
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-11",
+        "name": "Beacon court frame",
+        "pos": {
+          "x": 2,
+          "y": 0.1,
+          "z": 45
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-12",
+        "name": "Beacon court glow",
+        "pos": {
+          "x": 6,
+          "y": 3,
+          "z": 45
+        },
+        "visible": false
+      },
+      {
+        "id": "deep1-13",
+        "name": "Distinct beacon court",
+        "pos": {
+          "x": -5,
+          "y": 0.25,
+          "z": 69
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-14",
+        "name": "Beacon court frame",
+        "pos": {
+          "x": -1,
+          "y": 0.1,
+          "z": 69
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-15",
+        "name": "Beacon court glow",
+        "pos": {
+          "x": -5,
+          "y": 3,
+          "z": 69
+        },
+        "visible": false
+      },
+      {
+        "id": "deep1-16",
+        "name": "Guardian clearing wall",
+        "pos": {
+          "x": -13,
+          "y": 0,
+          "z": 30
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-17",
+        "name": "Guardian clearing wall",
+        "pos": {
+          "x": 13,
+          "y": 0,
+          "z": 34
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-18",
+        "name": "Sanctuary finale",
+        "pos": {
+          "x": 0,
+          "y": 0.2,
+          "z": 82
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-19",
+        "name": "Sanctuary reveal",
+        "pos": {
+          "x": 0,
+          "y": 7,
+          "z": 82
         },
         "visible": false
       }
@@ -44223,29 +48783,29 @@
     "controller": "thirdperson",
     "basis": {
       "forward": {
-        "x": 0,
+        "x": 0.11114999408218608,
         "y": -0.3713906763541038,
-        "z": 0.9284766908852593
+        "z": 0.9217996768999062
       },
       "right": {
-        "x": -0.9999999999999999,
+        "x": -0.9928086358538663,
         "y": 0,
-        "z": 0
+        "z": 0.11971220728891936
       },
       "up": {
-        "x": 0,
-        "y": 0.9284766908852592,
-        "z": 0.3713906763541037
+        "x": 0.044459997632874435,
+        "y": 0.9284766908852593,
+        "z": 0.3687198707599625
       }
     },
     "eye": {
-      "x": 0,
+      "x": -0.7781293473779759,
       "y": 4.45,
-      "z": -6.5
+      "z": -6.453256133050131
     },
     "yaw": 0,
     "pitch": 0,
-    "sensitivity": 0.0022,
+    "sensitivity": 0.0018,
     "pointerLocked": false,
     "sim": 0,
     "ended": false,
@@ -44257,7 +48817,7 @@
     },
     "held": null,
     "nearest": null,
-    "text": "Foglight\n\nCarry light through a layered twilight vale, awaken three beacons, face the guardian and reach the high sanctuary. Visual landmark: Amber beacon spire.\n\nBegin journey\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
+    "text": "Foglight\n\nCarry light through a layered twilight vale, awaken three beacons, face the guardian and reach the high sanctuary. Visual landmark: Amber beacon spire.\n\nBegin journey\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nMouse Sensitivity\nInvert Mouse Y\nQuality: High\n⛶ Fullscreen\nPress F to interact\nFollow the lanterns • F lights beacons • Find the Vale Key",
     "beacons": [
       {
         "id": "obj68",
@@ -45567,9 +50127,9 @@
         "id": "promo-1",
         "name": "Route landmark",
         "pos": {
-          "x": 0,
+          "x": -9,
           "y": 0.2,
-          "z": 3
+          "z": 13
         },
         "visible": true
       },
@@ -46037,9 +50597,9 @@
         "id": "elev-1",
         "name": "Amber beacon spire",
         "pos": {
-          "x": 4,
+          "x": 9,
           "y": 0,
-          "z": 11
+          "z": 22
         },
         "visible": true
       },
@@ -46052,8 +50612,198 @@
           "z": 11
         },
         "visible": false
+      },
+      {
+        "id": "deep1-1",
+        "name": "Bent causeway 1",
+        "pos": {
+          "x": -2,
+          "y": 0.2,
+          "z": 7
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-2",
+        "name": "Bent causeway 2",
+        "pos": {
+          "x": 2,
+          "y": 0.2,
+          "z": 18
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-3",
+        "name": "Bent causeway 3",
+        "pos": {
+          "x": -3,
+          "y": 0.2,
+          "z": 34
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-4",
+        "name": "Bent causeway 4",
+        "pos": {
+          "x": 3,
+          "y": 0.2,
+          "z": 52
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-5",
+        "name": "Bent causeway 5",
+        "pos": {
+          "x": -2,
+          "y": 0.2,
+          "z": 70
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-6",
+        "name": "Bent causeway 6",
+        "pos": {
+          "x": 2,
+          "y": 0.2,
+          "z": 83
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-7",
+        "name": "Distinct beacon court",
+        "pos": {
+          "x": -6,
+          "y": 0.25,
+          "z": 21
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-8",
+        "name": "Beacon court frame",
+        "pos": {
+          "x": -2,
+          "y": 0.1,
+          "z": 21
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-9",
+        "name": "Beacon court glow",
+        "pos": {
+          "x": -6,
+          "y": 3,
+          "z": 21
+        },
+        "visible": false
+      },
+      {
+        "id": "deep1-10",
+        "name": "Distinct beacon court",
+        "pos": {
+          "x": 6,
+          "y": 0.25,
+          "z": 45
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-11",
+        "name": "Beacon court frame",
+        "pos": {
+          "x": 2,
+          "y": 0.1,
+          "z": 45
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-12",
+        "name": "Beacon court glow",
+        "pos": {
+          "x": 6,
+          "y": 3,
+          "z": 45
+        },
+        "visible": false
+      },
+      {
+        "id": "deep1-13",
+        "name": "Distinct beacon court",
+        "pos": {
+          "x": -5,
+          "y": 0.25,
+          "z": 69
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-14",
+        "name": "Beacon court frame",
+        "pos": {
+          "x": -1,
+          "y": 0.1,
+          "z": 69
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-15",
+        "name": "Beacon court glow",
+        "pos": {
+          "x": -5,
+          "y": 3,
+          "z": 69
+        },
+        "visible": false
+      },
+      {
+        "id": "deep1-16",
+        "name": "Guardian clearing wall",
+        "pos": {
+          "x": -13,
+          "y": 0,
+          "z": 30
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-17",
+        "name": "Guardian clearing wall",
+        "pos": {
+          "x": 13,
+          "y": 0,
+          "z": 34
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-18",
+        "name": "Sanctuary finale",
+        "pos": {
+          "x": 0,
+          "y": 0.2,
+          "z": 82
+        },
+        "visible": true
+      },
+      {
+        "id": "deep1-19",
+        "name": "Sanctuary reveal",
+        "pos": {
+          "x": 0,
+          "y": 7,
+          "z": 82
+        },
+        "visible": false
       }
     ]
   },
-  "finishedAt": "2026-09-08T15:58:59.259Z"
+  "finishedAt": "2026-09-11T17:19:28.634Z"
 }

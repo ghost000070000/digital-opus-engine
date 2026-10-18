@@ -1,0 +1,88 @@
+{
+  "format": "digital-opus-tilemap-bundle",
+  "version": 1,
+  "bundleA": {
+    "bytes": 100262,
+    "sha256": "4fe01c0849a4ef3bbee262c4575595ab06dd2a144fb98e9e8d65e7d50c0acb35"
+  },
+  "repeatExports": {
+    "count": 100,
+    "uniqueHashes": [
+      "4fe01c0849a4ef3bbee262c4575595ab06dd2a144fb98e9e8d65e7d50c0acb35"
+    ]
+  },
+  "cleanImport": {
+    "planned": true,
+    "warnings": [
+      "1 imported Custom Script will remain untrusted"
+    ],
+    "bundleBBytes": 100262,
+    "bundleBSha256": "4fe01c0849a4ef3bbee262c4575595ab06dd2a144fb98e9e8d65e7d50c0acb35",
+    "byteEqual": true
+  },
+  "sameProjectConflictMap": {
+    "tilesets": {
+      "dogfood-tileset": "dogfood-tileset-2"
+    },
+    "spriteAssets": {
+      "sprite-0": "sprite-0-2",
+      "sprite-1": "sprite-1-2",
+      "sprite-2": "sprite-2-2",
+      "sprite-3": "sprite-3-2",
+      "sprite-4": "sprite-4-2",
+      "sprite-5": "sprite-5-2",
+      "sprite-6": "sprite-6-2",
+      "sprite-7": "sprite-7-2",
+      "sprite-8": "sprite-8-2",
+      "sprite-9": "sprite-9-2"
+    },
+    "textures": {
+      "atlas-a": "atlas-a-2",
+      "atlas-b": "atlas-b-2"
+    },
+    "prefabs": {
+      "Dogfood Boss": "Dogfood Boss-2",
+      "Dogfood Elite": "Dogfood Elite-2",
+      "Dogfood Enemy": "Dogfood Enemy-2"
+    },
+    "meshAssets": {},
+    "audio": {},
+    "spriteAnimations": {},
+    "sortingLayers": {
+      "world": "world-2"
+    }
+  },
+  "chunk": {
+    "bytes": 55473,
+    "sha256": "62b01fa94075028fa109a9d3fa1b6a39301edd92191ceaf164eb2a0b57555fe0",
+    "cleanVerified": true
+  },
+  "dependencies": {
+    "layers": 4,
+    "cells": 576,
+    "markers": 8,
+    "tilesets": 1,
+    "tiles": 10,
+    "prefabs": 3,
+    "scripts": 1,
+    "textures": 2,
+    "blobs": 1
+  },
+  "blobs": [
+    {
+      "id": "sha256-17dea3851f35167568a1a96ecde4cdea16021c24a5ce23f509fc41544844dbdb",
+      "mimeType": "image/png",
+      "sha256": "17dea3851f35167568a1a96ecde4cdea16021c24a5ce23f509fc41544844dbdb",
+      "decodedBytes": 70
+    }
+  ],
+  "corruptRejections": {
+    "envelopeHash": true,
+    "blobHash": true,
+    "truncated": true,
+    "wrongVersion": true,
+    "remoteDependency": true
+  },
+  "ordinaryObjectsExcluded": true,
+  "customScriptsRemainUntrusted": true
+}

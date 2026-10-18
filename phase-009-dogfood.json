@@ -1,0 +1,58 @@
+{
+  "url": "http://127.0.0.1:8869/editor/",
+  "browser": "Microsoft Edge",
+  "cleanProfile": true,
+  "clicks": 24,
+  "authoredSteps": 9,
+  "checks": {
+    "firstRun": {
+      "visible": true,
+      "focusedChoice": true
+    },
+    "skip": true,
+    "guidedBlank": true,
+    "resume": {
+      "beforeReload": {
+        "count": 1,
+        "progress": 5
+      },
+      "afterReload": {
+        "count": 1,
+        "progress": 5,
+        "project": "guided-first-game"
+      }
+    },
+    "finalExport": {
+      "filename": "playable-game.html",
+      "bytes": 1383658,
+      "playableOnly": true
+    },
+    "saveLoad": true,
+    "runtimeIsolation": true,
+    "finalProgress": {
+      "started": true,
+      "active": false,
+      "completed": true,
+      "projectName": "guided-first-game",
+      "startedAt": "2026-09-14T00:19:37.288Z",
+      "completedAt": "2026-09-14T00:19:38.469Z",
+      "flags": {
+        "move": true,
+        "save": true,
+        "player": true,
+        "play": true,
+        "export": true
+      }
+    },
+    "help": true
+  },
+  "confusingPoints": [
+    "Objects are placed by dragging from the Palette; the coach highlight makes this interaction discoverable.",
+    "Player is level-scoped and appears on Play, so the guide points to Level → Player Controller instead of implying a Palette object.",
+    "Playable Export is nested under Project; Show me and contextual Help expose the exact control."
+  ],
+  "frictionDiscovered": [],
+  "errors": [],
+  "elapsedSeconds": 4.5,
+  "ok": true
+}

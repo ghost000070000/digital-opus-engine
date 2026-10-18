@@ -1,0 +1,25 @@
+{
+  "id": "valley-run",
+  "sourceSHA256": "920e20748772b77a8a3ae8ba30ded8d2406d960520a9c0632433ab11dda54fd2",
+  "errors": [],
+  "capturedAt": "2026-09-11T17:01:12.076Z",
+  "sha256": "7b0f9be4b48096fe7a05476b2dcce420f0ee0a0b42a536dafab032cbb81e11be",
+  "state": {
+    "title": "Valley Run",
+    "sim": 1.401399999976157,
+    "ended": false,
+    "text": "Health 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+    "controller": "thirdperson",
+    "bodyVisible": false,
+    "visualVisible": true,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 65
+  },
+  "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nMouse Sensitivity\nInvert Mouse Y\nQuality: High\n⛶ Fullscreen\nHealth 100 / 100\nReach the far ridge using the raised stepping stones.\nPress F to interact\nWASD / arrows move; Space jumps; Escape pauses.",
+  "passed": true
+}

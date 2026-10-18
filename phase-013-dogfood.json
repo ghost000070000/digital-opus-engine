@@ -1,0 +1,39 @@
+{
+  "phase": 13,
+  "method": "Normal editor UI through the local in-app browser; no project or scene state injection",
+  "sourceProject": "phase-011-legacy-dogfood",
+  "layers": [
+    { "name": "Default", "id": "sprite-layer-default", "order": 0, "protected": true },
+    { "name": "Background", "id": "sprite-layer-1", "order": 1 },
+    { "name": "World", "id": "sprite-layer-2", "order": 2 },
+    { "name": "Actors", "id": "sprite-layer-3", "order": 3, "renamedFrom": "Characters" },
+    { "name": "Effects", "id": "sprite-layer-4", "order": 4 },
+    { "name": "Foreground", "id": "sprite-layer-5", "order": 5 }
+  ],
+  "scene": [
+    ["Background A", "Background", 0],
+    ["Background B", "Background", 10],
+    ["World Prop", "World", 0],
+    ["Player", "Actors", 0],
+    ["Enemy", "Actors", 5],
+    ["Effect", "Effects", -5],
+    ["Foreground", "Foreground", 0],
+    ["Tie A", "Actors", 20],
+    ["Tie B", "Actors", 20]
+  ],
+  "steps": {
+    "migration": "passed: a Phase 011/012-format saved project loaded into Default with Order in Layer 0 and no creator-facing legacy Layer",
+    "defaultProtection": "passed: reserved stable ID visible; rename and delete disabled",
+    "addRename": "passed: six generated stable IDs; Characters renamed to Actors while Player retained sprite-layer-3",
+    "reorder": "passed: Foreground moved below Actors with an immediate Sprite-order update and then restored",
+    "exactTie": "passed: Tie A and Tie B share Actors/20; stable Object ID is the final key",
+    "safeDelete": "passed: deleting Temporary reported exactly 1 dependent Sprite, used the explicit reassignment path, removed the layer, retained Tie A, and reassigned it to Default",
+    "saveLoad": "passed: saved under the new phase-013-dogfood name and reloaded all six final layers, stable IDs, order, names, and nine Sprite records",
+    "validation": "passed: No structured authoring issues found",
+    "play": "passed: entered and stopped Play through the top-bar controls",
+    "editablePlayableExport": "passed: editor reported Editable game exported and Playable game exported (no editor access)",
+    "browserConsole": "passed: no errors or warnings"
+  },
+  "visualEvidence": "Captured in the browser session: six-layer manager with stable IDs; nine named Sprite records; reordered viewport; Actors rename reflected in Player; referenced Temporary deletion result; Tie A on Default after reload.",
+  "passed": true
+}

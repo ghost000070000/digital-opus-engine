@@ -1,0 +1,243 @@
+{
+  "phase": 26,
+  "url": "http://127.0.0.1:8876/editor/",
+  "fixtures": [
+    "tests\\fixtures\\phase-026-nine-slice-panel.png",
+    "tests\\fixtures\\phase-026-nine-slice-atlas.png"
+  ],
+  "checks": {
+    "validation": "No structured authoring issues found.",
+    "editable": {
+      "file": ".tmp-phase026\\phase-026-editable.html",
+      "bytes": 1635918,
+      "playableOnly": false,
+      "chromeVisible": true,
+      "editorOpened": true,
+      "guideControlsVisible": true,
+      "runtime": {
+        "objectCount": 8,
+        "panelGuides": {
+          "left": 8,
+          "right": 16,
+          "top": 6,
+          "bottom": 12
+        },
+        "atlasGuides": {
+          "left": 8,
+          "right": 16,
+          "top": 6,
+          "bottom": 12
+        },
+        "atlasRegion": {
+          "x": 32,
+          "y": 16,
+          "width": 64,
+          "height": 64
+        },
+        "atlasFiltering": "nearest",
+        "sprites": [
+          {
+            "name": "Phase 026 Simple",
+            "renderMode": "simple",
+            "width": 0.64,
+            "height": 0.64,
+            "flipX": false,
+            "flipY": false,
+            "cellCount": 0,
+            "finite": true
+          },
+          {
+            "name": "Phase 026 Normal",
+            "renderMode": "nine-slice",
+            "width": 2,
+            "height": 2,
+            "flipX": false,
+            "flipY": false,
+            "cellCount": 9,
+            "finite": true
+          },
+          {
+            "name": "Phase 026 Wide",
+            "renderMode": "nine-slice",
+            "width": 6,
+            "height": 1,
+            "flipX": false,
+            "flipY": false,
+            "cellCount": 9,
+            "finite": true
+          },
+          {
+            "name": "Phase 026 Tall",
+            "renderMode": "nine-slice",
+            "width": 1,
+            "height": 5,
+            "flipX": false,
+            "flipY": false,
+            "cellCount": 9,
+            "finite": true
+          },
+          {
+            "name": "Phase 026 Tiny",
+            "renderMode": "nine-slice",
+            "width": 0.15,
+            "height": 0.12,
+            "flipX": false,
+            "flipY": false,
+            "cellCount": 6,
+            "finite": true
+          },
+          {
+            "name": "Phase 026 Flip X",
+            "renderMode": "nine-slice",
+            "width": 3,
+            "height": 2,
+            "flipX": true,
+            "flipY": false,
+            "cellCount": 9,
+            "finite": true
+          },
+          {
+            "name": "Phase 026 Flip Y",
+            "renderMode": "nine-slice",
+            "width": 3,
+            "height": 2,
+            "flipX": false,
+            "flipY": true,
+            "cellCount": 9,
+            "finite": true
+          },
+          {
+            "name": "Phase 026 Atlas",
+            "renderMode": "nine-slice",
+            "width": 4,
+            "height": 2,
+            "flipX": false,
+            "flipY": false,
+            "cellCount": 9,
+            "finite": true
+          }
+        ]
+      },
+      "errors": [],
+      "network": [],
+      "pass": true
+    },
+    "playable": {
+      "file": ".tmp-phase026\\phase-026-playable.html",
+      "bytes": 1635979,
+      "playableOnly": true,
+      "chromeVisible": false,
+      "editorOpened": false,
+      "guideControlsVisible": false,
+      "runtime": {
+        "objectCount": 8,
+        "panelGuides": {
+          "left": 8,
+          "right": 16,
+          "top": 6,
+          "bottom": 12
+        },
+        "atlasGuides": {
+          "left": 8,
+          "right": 16,
+          "top": 6,
+          "bottom": 12
+        },
+        "atlasRegion": {
+          "x": 32,
+          "y": 16,
+          "width": 64,
+          "height": 64
+        },
+        "atlasFiltering": "nearest",
+        "sprites": [
+          {
+            "name": "Phase 026 Simple",
+            "renderMode": "simple",
+            "width": 0.64,
+            "height": 0.64,
+            "flipX": false,
+            "flipY": false,
+            "cellCount": 0,
+            "finite": true
+          },
+          {
+            "name": "Phase 026 Normal",
+            "renderMode": "nine-slice",
+            "width": 2,
+            "height": 2,
+            "flipX": false,
+            "flipY": false,
+            "cellCount": 9,
+            "finite": true
+          },
+          {
+            "name": "Phase 026 Wide",
+            "renderMode": "nine-slice",
+            "width": 6,
+            "height": 1,
+            "flipX": false,
+            "flipY": false,
+            "cellCount": 9,
+            "finite": true
+          },
+          {
+            "name": "Phase 026 Tall",
+            "renderMode": "nine-slice",
+            "width": 1,
+            "height": 5,
+            "flipX": false,
+            "flipY": false,
+            "cellCount": 9,
+            "finite": true
+          },
+          {
+            "name": "Phase 026 Tiny",
+            "renderMode": "nine-slice",
+            "width": 0.15,
+            "height": 0.12,
+            "flipX": false,
+            "flipY": false,
+            "cellCount": 6,
+            "finite": true
+          },
+          {
+            "name": "Phase 026 Flip X",
+            "renderMode": "nine-slice",
+            "width": 3,
+            "height": 2,
+            "flipX": true,
+            "flipY": false,
+            "cellCount": 9,
+            "finite": true
+          },
+          {
+            "name": "Phase 026 Flip Y",
+            "renderMode": "nine-slice",
+            "width": 3,
+            "height": 2,
+            "flipX": false,
+            "flipY": true,
+            "cellCount": 9,
+            "finite": true
+          },
+          {
+            "name": "Phase 026 Atlas",
+            "renderMode": "nine-slice",
+            "width": 4,
+            "height": 2,
+            "flipX": false,
+            "flipY": false,
+            "cellCount": 9,
+            "finite": true
+          }
+        ]
+      },
+      "errors": [],
+      "network": [],
+      "pass": true
+    }
+  },
+  "errors": [],
+  "ok": true
+}

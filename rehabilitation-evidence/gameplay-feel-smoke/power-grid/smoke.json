@@ -1,0 +1,24 @@
+{
+  "id": "power-grid",
+  "sourceSHA256": "8a6da71d1788c0062708f97a9ab0b5aecdf7ceaebf82724081d266ad85f757e0",
+  "errors": [],
+  "capturedAt": "2026-09-11T17:00:46.309Z",
+  "sha256": "6acd8264c677f78136f686d22909a1afac92c4fa96e1c1f4e5dbeb7f50d73168",
+  "state": {
+    "title": "Power Grid",
+    "sim": 1.4182000000476824,
+    "ended": false,
+    "text": "Restore Emergency Power\nF interact / carry\nPress F to interact\nF carry / interact • Cell → generator → two coolant consoles",
+    "controller": "firstperson",
+    "bodyVisible": false,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 127
+  },
+  "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nMouse Sensitivity\nInvert Mouse Y\nQuality: High\n⛶ Fullscreen\nRestore Emergency Power\nF interact / carry\nPress F to interact\nF carry / interact • Cell → generator → two coolant consoles",
+  "passed": true
+}

@@ -1,0 +1,52 @@
+{
+  "phase": "038",
+  "feature": "tilemap-chunk-prefab-reuse",
+  "runId": "phase-038-20260919T105943511Z",
+  "status": "PASS",
+  "smoke": true,
+  "targetSeconds": 10,
+  "startTimestamp": "2026-09-19T10:59:43.511Z",
+  "endTimestamp": "2026-09-19T10:59:53.600Z",
+  "elapsedSeconds": 10.09,
+  "stage": "endurance-complete",
+  "completedStages": [
+    "baseline",
+    "implementation",
+    "focused",
+    "fuzz",
+    "serialization",
+    "browser-dogfood"
+  ],
+  "chunkAssetCount": 3,
+  "captureOperations": 3360,
+  "chunkNormalizations": 3360,
+  "dryRunPlans": 3360,
+  "stampCommits": 3360,
+  "semanticCellWrites": 80640,
+  "autoTileRecomputes": 6685,
+  "terrainResolutions": 40320,
+  "markersCreated": 3360,
+  "undoRedoOperations": 6720,
+  "saveLoadCycles": 3360,
+  "browserCycles": 0,
+  "editableExports": 0,
+  "playableExports": 0,
+  "heartbeatCount": 1,
+  "memoryObservations": 4,
+  "midpoint": null,
+  "twoHour": null,
+  "transientLocks": [],
+  "sourceFingerprintStart": "db40874ce7b5673296c08710455f7b8cf3ef0c26b4aabb3398bee643ba4b6493",
+  "sourceFingerprintCurrent": "db40874ce7b5673296c08710455f7b8cf3ef0c26b4aabb3398bee643ba4b6493",
+  "failures": [],
+  "processes": [
+    {
+      "pid": 52700,
+      "command": "node tools/audit-phase-038-endurance.js 10",
+      "port": null,
+      "purpose": "fresh continuous Phase 038 semantic endurance"
+    }
+  ],
+  "boundedMemoryObservation": true,
+  "leakProof": false
+}

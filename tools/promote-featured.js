@@ -104,6 +104,17 @@ const TAU=Math.PI*2;
 function valley(p,l){environment(l,{skyTop:[.18,.36,.45],skyHorizon:[.68,.71,.55],groundColor:[.28,.34,.2],sunColor:[1,.84,.55],fogDensity:.01});l.ambientAudio={audioAssetId:'showcase-forest-bed',volume:.17};for(const [x,z,s] of [[-11,-18,1.8],[10,-8,2],[-10,4,1.7],[11,15,2.1]])mesh(p,l,'cliff-spire',[x,sampleGround(l,x,z),z],s,'Valley wall');for(const z of [-15,-3,10,22]){mesh(p,l,'arch-pointed',[0,sampleGround(l,0,z),z],.9,'Ridge landmark');light(l,[0,sampleGround(l,0,z)+3,z],[1,.58,.12],1.6,9);}mesh(p,l,'sanctuary-grand',[0,sampleGround(l,0,25),25],1.5,'Far ridge goal');const hint='The tall amber arches mark every checkpoint and the sanctuary crowns the final ridge.';if(!l.ui.startScreen.howToPlay.includes(hint))l.ui.startScreen.howToPlay+=' '+hint;}
 
 for(const id of ids){serial=0;const file=path.join(ROOT,'games',id+'.json'),p=JSON.parse(fs.readFileSync(file)),l=p.levels[0];prep(p,l);kit.install(p,selections[id]);if(id==='foglight')foglight(p,l);else if(id==='signal-relay')signal(p,l);else if(id==='arsenal-run')arsenal(p,l);else if(id==='silent-sector')silent(p,l);else if(id==='power-grid')power(p,l);else if(id==='moving-temple')moving(p,l);else if(id==='forest-range')forest(p,l);else if(id==='opus-arena')opus(p,l);else if(id==='survival-arena')survival(p,l,1);else if(id==='survival-arena-2')survival(p,l,2);else if(id==='survival-arena-3')survival(p,l,3);else if(id==='valley-run')valley(p,l);
+  // Preserve qualified physical roles when reconstructing presentation props;
+  // this local constructor must not restore accidental pass-through defaults.
+  require('./real-demo-masonry-assembly').repair(p);
+  require('./real-demo-architectural-assemblies').repair(p);
+  require('./real-demo-stone-roles').repair(p);
+  require('./real-demo-machinery-roles').repair(p);
+  require('./real-demo-actor-policy').apply(p,id);
+  require('./real-demo-gate-visuals').repair(p,id);
+  require('./real-demo-extraction-frame').repair(p,id);
+  require('./real-demo-platform-decoration').repair(p,id);
+  require('./real-demo-character-body').repair(p);
   // Standalone files embed assets, so retain only referenced material. This
   // prevents the differentiated ambience bank from being copied into every
   // game while preserving exact portability.

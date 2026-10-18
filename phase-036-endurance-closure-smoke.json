@@ -1,0 +1,92 @@
+{
+  "phase": 36,
+  "purpose": "endurance closure",
+  "runId": "phase-036-endurance-closure-20260917T105539Z",
+  "baselineHead": "f1dc3516b585ebf5aa868006792c1dc1b9039da9",
+  "branch": "main",
+  "workerPid": 13712,
+  "startTimestamp": "2026-09-17T10:55:39.866Z",
+  "latestHeartbeatTimestamp": "2026-09-17T10:55:57.403Z",
+  "endTimestamp": "2026-09-17T10:55:57.394Z",
+  "targetSeconds": 10,
+  "elapsedSeconds": 17.528,
+  "status": "SMOKE_PASS_NONQUALIFYING",
+  "cycles": 8,
+  "modelOperations": 1496,
+  "weightedResolutions": 662,
+  "autoTileResolutions": 226,
+  "terrainTransitions": 8,
+  "serializeLoadCycles": 2,
+  "undoRedoOperations": 4,
+  "browserCycles": 2,
+  "editableExportCycles": 2,
+  "playableExportCycles": 2,
+  "memoryObservations": 4,
+  "transientLockCount": 0,
+  "semanticMismatches": 0,
+  "crashes": 0,
+  "unresolvedFailures": [],
+  "ownedProcesses": [
+    {
+      "pid": 13712,
+      "kind": "worker",
+      "command": "node tools/audit-phase-036-endurance-closure.js"
+    }
+  ],
+  "actualElapsedSeconds": 17.528,
+  "qualifying": false,
+  "heartbeatCount": 2,
+  "midpoint": null,
+  "finalHour": null,
+  "memory": {
+    "observations": [
+      {
+        "label": "start",
+        "timestamp": "2026-09-17T10:55:39.868Z",
+        "elapsedSeconds": 0.002,
+        "rssBytes": 38334464,
+        "heapUsedBytes": 6074136,
+        "heapTotalBytes": 7352320,
+        "externalBytes": 2133180
+      },
+      {
+        "label": "heartbeat-1",
+        "timestamp": "2026-09-17T10:55:48.175Z",
+        "elapsedSeconds": 8.309,
+        "rssBytes": 39858176,
+        "heapUsedBytes": 5673240,
+        "heapTotalBytes": 8925184,
+        "externalBytes": 2164483
+      },
+      {
+        "label": "heartbeat-2",
+        "timestamp": "2026-09-17T10:55:57.391Z",
+        "elapsedSeconds": 17.525,
+        "rssBytes": 47489024,
+        "heapUsedBytes": 7863496,
+        "heapTotalBytes": 11546624,
+        "externalBytes": 2164445
+      },
+      {
+        "label": "finish",
+        "timestamp": "2026-09-17T10:55:57.394Z",
+        "elapsedSeconds": 17.528,
+        "rssBytes": 47620096,
+        "heapUsedBytes": 7961040,
+        "heapTotalBytes": 11546624,
+        "externalBytes": 2164445
+      }
+    ],
+    "assessment": "BOUNDED_OBSERVATION_ONLY"
+  },
+  "semanticFailures": [],
+  "processCleanup": {
+    "workerPid": 13712,
+    "browserAuditOwnsAndCleansChildren": true,
+    "expectedOrphans": 0
+  },
+  "previousNonqualifyingRun": {
+    "elapsedSeconds": 60.025,
+    "preservedAt": "phase-036-endurance.json"
+  }
+}

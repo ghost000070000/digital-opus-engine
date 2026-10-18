@@ -1,0 +1,25 @@
+{
+  "id": "survival-arena-2",
+  "sourceSHA256": "08dbdd54af3cacd22a286e2af354855c4006622b4b308af7f083ba973e5cb12f",
+  "errors": [],
+  "capturedAt": "2026-09-11T17:02:12.977Z",
+  "sha256": "3f57f64a47e81f29b3d5d74751a48b277706b2a86506fda54269f8bb22a9b7fa",
+  "state": {
+    "title": "Survival Arena 2",
+    "sim": 1.4183000000119197,
+    "ended": false,
+    "text": "Wave 1 incoming!\nSurvive the waves! Avoid the hunter drones.\nHealth 100 / 100\nSurvived: 1.4s\nSurvive both waves for 32 seconds.\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+    "controller": "hovercraft",
+    "bodyVisible": false,
+    "visualVisible": true,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 51
+  },
+  "pauseText": "Wave 1 incoming!\nSurvive the waves! Avoid the hunter drones.\n⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nMouse Sensitivity\nInvert Mouse Y\nQuality: High\n⛶ Fullscreen\nHealth 90 / 100\nSurvived: 2.1s\nSurvive both waves for 32 seconds.\nPress F to interact\nWASD / arrows steer and accelerate; Space boosts; Escape pauses.",
+  "passed": true
+}

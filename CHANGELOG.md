@@ -1,8 +1,148 @@
 # Changelog
 
+## 2026-10-18 — Real-game controls and collision repair
+
+- Third-person camera no longer spins. Movement was camera-relative while the chase camera followed the character's facing, so holding A or D ran the player in circles. The controller now owns the camera yaw: strafing goes straight, forward-diagonal input steers gently (1.6 rad/s), the character turns toward travel at a bounded 12 rad/s instead of snapping, and authored camera bearings are still respected. Added hold-right-mouse-drag and gamepad right-stick camera orbit (no Pointer Lock, so On Click behaviors keep working) and a "Rotate Camera" row in the in-game Controls screen.
+- Low ledges are climbable again. Step-up required the player's centre to already be over the ledge, but the wall push kept it one radius outside, so any solid up to STEP_HEIGHT acted as a wall. It now tests the player's footprint; tall walls still block.
+- Added Inspector "Fit Box to Trunk/Base" (trees, lamp posts, statues block at the base, not the canopy). Applied it to 296 trees, including Scatter-generated ones, plus 7 floor-standing pipes across 16 example games, which players previously walked straight through.
+- Added `tools/playtest-collision-sweep.js` + `tools/run-collision-sweep.js`: a headless real-game random-walk sweep over all 28 public games that reports solid-collider penetration and walk-through visible objects. Before this pass: 0 solid penetrations across 28 games; walk-through props were the remaining failures.
+- Editor deep links (`editor/?game=<id>`) open straight into the editor with the sample loaded, no spurious "unsaved changes" prompt for the untouched starter, and the tab title follows the opened project. Leaving an untouched starter/sample no longer triggers the browser's leave-site warning.
+- Game pages embed compact project JSON (site 297 MB → 213 MB). `tools/package-hostinger.ps1` now runs on Windows PowerShell 5.1 and writes '/' ZIP entry names.
+
+## Phase 046 — One-Way Platform 2D
+
+- Added a first-class singleton One-Way Platform 2D component for Character response on enabled Static Body + Box objects, including invisible support, validation, Inspector readiness, selected top-edge affordance, and solid fallback for unsupported rotation. Ordinary Kinematic Body response is unchanged.
+- Advanced Tilesets v4→v5 with Tile-owned `collision.oneWay` for Full Cell and Custom Rectangle collision. The Tile Palette toggle and preview, sparse Layer query, Terrain/Auto-Tile resolution, Save/Load, Prefab, Bundle, and both export tiers preserve semantics without per-cell objects.
+- Analytic previous-position/top-crossing logic passes upward and sideways, catches downward/high-speed/diagonal landings, maintains grounded on top, and excludes ceiling/wall/wall-slide contact. Qualification: 44 focused tests, 500,000 seeded moves, 100,000 Tile-query comparisons, 20 browser cycles, full integrated regression, 28/28 public builds, and an exact-final 30-minute active soak with 161,030 ticks passed. Final verdict: `PHASE_046_ONE_WAY_PLATFORMS_READY`. Phase 047 remains unimplemented.
+
+## Phase 045 — Character Collision 2D and Tilemap response
+
+- Added a versioned Character Collision 2D component for an enabled Kinematic Body plus ordinary Box/Circle Collider. It reuses the Phase 043 conservative mover, reports transient grounded/ceiling/wall contact, and optionally clamps world-down wall sliding without changing authored velocity.
+- Added direct sparse Tilemap collision queries for Full Cell and Custom Rectangle shapes, including rotated/scaled/mirrored and multilayer maps. Tile Layers now author `collisionEnabled` independently of visibility and edit locking; no per-Tile scene objects or Bodies are created.
+- Qualified 36 focused checks, 500,000 seeded movement cases, 100,000 transformed Tile-query comparisons, a 10,240-cell performance fixture, 20 isolated browser cycles, standalone Editable/Playable collision execution, the unchanged 28-game public boundary, and an exact-final 30-minute active soak with 162,850 Character moves. Final verdict: `PHASE_045_CHARACTER_COLLISION_WALL_SLIDE_READY`. General Dynamic physics, controller input/jump, one-way platforms, slopes, carry, filtering, and collision events remain deferred; Phase 046 remains untouched.
+
+## Phase 044 — Dynamic Body utility gate
+
+- Completed a qualification-only gravity/mutable-velocity prototype over the Phase 043 Static collision service before any product schema change. Analytic free fall, Static contact, 60-second rest, Trigger ordering, parent conversion, thin walls, and bounded performance passed.
+- Qualified 15 focused checks, 500,595 seeded movement cases, 240,000 resting ticks, 20/20 isolated browser cycles, full integrated regression, and 28/28 public game builds. Disclosed 6,065 fail-closed high-speed/grazing sweep caps with zero recurring rest caps.
+- Rejected canonical Dynamic promotion: the examples provide only two materially distinct simpler no-code workflows, while absent Dynamic/Dynamic, Dynamic/Kinematic, and Tilemap response would make the label misleading. Body remains v1 Static/Kinematic; final verdict `PHASE_044_DYNAMIC_BODY_NOT_JUSTIFIED`. Phase 045 is untouched.
+
+## Phase 043 — Static/Kinematic Body 2D
+
+- Added a versioned singleton Body 2D component with Static/Kinematic roles, world-XY velocity, searchable Add Component and Inspector authoring, validation, Save/Load, Prefabs, Undo, and Editable/Playable export support.
+- Added conservative Kinematic-versus-Static Box/Circle movement, thin-wall anti-tunneling, deterministic X-then-Y sliding, parent-transform conversion, and post-motion Trigger lifecycle ordering. Static objects never solver-move, and requested velocity survives contact.
+- Kept the scope explicit: no Dynamic, gravity, forces, mass, friction/restitution, Kinematic/Kinematic response, filtering, character controller, Tilemap collision consumption, or collision-contact events. The internal dogfood project does not enter the 28-game public catalog.
+- Qualified 24 focused checks, 1,939 Phase 011–043 and 2,301 integrated assertions, 500,607 movement fuzz cases, 20/20 isolated browser cycles, 28/28 public game builds, and a 30.0034-minute active browser soak with 1,361,600 ticks, bounded/reclaimed heap, and zero page/console/network errors. Final verdict: `PHASE_043_STATIC_KINEMATIC_BODIES_READY`; Phase 044 remains untouched.
+
+## Phase 042 — Trigger Collider 2D
+
+- Added a separate versioned Trigger Collider 2D component with independent Box/Circle geometry, retained subshape values, visible-control authoring, selected-only dashed/diamond-handle gizmos, Fit to Visual, validation, persistence, Prefabs, and Editable/Playable export support.
+- Added deterministic object-level Enter/Stay/Exit lifecycle over ordinary Phase 041 colliders, including multi-shape deduplication, self/Trigger-only exclusion, stable frozen payloads, Behavior/Action routing, callback-safe snapshots, live-disable Exit, silent deletion cleanup, and Play/Level resets.
+- Reused Phase 041 world-shape/AABB/narrow overlap functions; added no Body, response, velocity, gravity, filtering, Tilemap collision consumption, or global physics debug system.
+- Qualified 73 focused checks, 500,000 transitions over 20 seeds, callback mutation, a 100,000-pair median of 19.535 ms, 20/20 isolated browser cycles, exact Editable/Playable lifecycle, and the unchanged 28-game public boundary. A 30.0004-minute active soak completed 2,500,950 ticks with 163,312 Enter, 615,902 Stay, 163,307 Exit, zero final pairs, bounded/reclaimed heap, and no page, console, network, persistence, restart, Prefab, or export failure. Final verdict: `PHASE_042_TRIGGER_COLLIDER_READY`; Phase 043 remains untouched.
+
+## Phase 040 — 10K Tilemap Performance and Epoch 04 Qualification
+
+- Replaced per-cell Tilemap draw submission with revision-invalidated, transient consecutive render-state batches that preserve authored order, reuse buffers across camera motion, stay below Uint16 limits, and release GPU resources on replacement/deletion/destruction.
+- Qualified a 10,240-cell, four-Layer world containing Manual, Auto-Tile, weighted Terrain, Auto-Terrain, mixed filtering and collision metadata, 100 Spawn Markers, 75 ordinary Prefab objects, and a reusable 1,000-cell Chunk.
+- Reduced the canonical mixed-filter world from about 10,240 Tilemap draws to three; sustained editor and Playable p99 frame time is approximately 7.1 ms on the recorded AMD/Edge hardware environment.
+- Completed a corrected 60.32-minute active browser soak with 26,894 mutations, 119 save/load + Chunk + Bundle cycles, stable cache memory, zero semantic mismatches/crashes/browser errors, 30/30 focused checks, 250,000 cache-fuzz mutations, 2,121 integrated assertions, and 28/28 public game builds.
+- Closed Phase 040 as `PHASE_040_TILEMAP_10K_PERFORMANCE_READY` and Epoch 04 as `EPOCH_04_TILEMAPS_GRIDS_2D_WORLDS_QUALIFIED`. Isolated Windows/Chromium RAF gaps remain disclosed as an `ENVIRONMENT_LIMITED` maximum-stall sub-gate. Phase 041 was not started.
+
+## Phase 036 — Terrain and Biome Tile Brushes
+
+- Added Tileset-v4 Weighted and Connected Auto-Tile Terrain Brushes with stable local identity, signed Seeds, bounded weights, canonical FNV-1a coordinate resolution, semantic cells, validation, repair, recompute, and deterministic Editable/Playable export policy.
+- Added Terrain Palette authoring plus single/square/circle radius 1-8 footprints, exact hover previews, interpolated batch paint/erase, active-Layer isolation, connected-neighbor recompute, and one Undo record per drag.
+- Passed 102 focused checks, 1,480 Phase 011-036 checks, 1,842 integrated checks, 750,000 fuzz operations, real-browser dogfood, isolated export boots, 28/28 site builds, and final packaging with zero engine-byte delta.
+- Preserved the initial `PHASE_036_BLOCKED` 60.025-second attempt, then closed the endurance gate with one fresh 21,639.369-second continuous campaign: 37 heartbeats, 14 isolated browser/Editable/Playable cycles, zero semantic failures or crashes, and green post-run regression/build/site gates. Final verdict is `PHASE_036_TERRAIN_BRUSHES_READY`; Phase 037 was not implemented.
+
+## Phase 033 — Multi-Layer Tilemaps
+
+- Advanced Tilemaps to version 2 with deterministic Phase-032 migration, stable local Layer IDs, bottom-to-top per-layer sparse cells, canonical layered Save/Load, and conservative all-layer export dependencies.
+- Added a topmost-first Layer panel with active selection, Add, rename, reorder, visibility, edit lock, duplicate, delete, Clear Layer, Clear All Layers, and snapshot Undo/Redo.
+- Made Paint/Erase and stroke history Layer-ID-aware while preserving one Tilemap scene object, one shared Tileset/Transform/sort slot, contiguous Sprite-pass composition, Orthographic/Perspective picking, and the 28-game public boundary.
+
+## Phase 031 — Tileset asset and Tile Palette foundation
+
+- Added first-class versioned Tileset assets whose stable local Tiles reference existing Sprite Assets; Texture payloads and atlas rectangles remain owned by Texture/Sprite Asset records.
+- Added a dedicated searchable, keyboard-operable Tile Palette with pixel-correct thumbnails, bulk Sprite Asset intake, stable selection, immediate rename, reorder, duplicate, remove, broken-reference repair, and card-size state.
+- Extended validation, usage warnings, navigation, Undo/Redo snapshots, Save/Load, Editable export, dependency closure, and Playable pruning without adding a Tilemap/Grid scene object or runtime tile renderer.
+- Qualified a visible-control 4x4 atlas workflow, two independent Tilesets, deliberate break/repair, Save/reload, real Editable/Playable exports, direct-Sprite dependency overlap, 1,000-Tile lookup/serialization, and the unchanged 28-game public boundary. Tilemaps remains honestly graded D.
+
+## Phase 030 — Sprite starters and Epoch 03 qualification
+
+- Added three discoverable, local, deep-independent normal-project Sprite starters: 2D Sprite Scene, Animated Character, and Parallax Hybrid Scene; Start Blank remains first.
+- Qualified starter validation, Save/Load, Editable/Playable export, offline closure, removability, and source immutability through 67 focused checks and fresh-origin browser runs.
+- Built the internal `Phase 030 Sprite Dogfood` through visible controls, exercised Orthographic Camera, sorting, parallax, animation clips/states/events/direction, Nine-Slice, Pixel/Smooth, Prefabs, and hybrid layering, then verified break/repair, Save/reload, isolated exports, and public-catalog exclusion.
+- Closed Epoch 03 at 1,335/1,335 integrated and 973/973 Phase 011–030 focused checks with 28/28 public games. Sprites / 2D remains B, Animation C, Tilemaps D; Phase 031 was not implemented.
+
+## Phase 029 — Explicit hybrid scene layering
+
+- Split the historical transparent 3D pass into deterministic Behind Sprites and In Front of Sprites bands around one contiguous Sprite pass; both bands depth-test, disable depth writes, sort farthest-first, and use stable Object ID ties.
+- Added the bounded `spritePassRelation` authoring field for transparent Meshes and Billboards with historical fallback, opaque alpha-roundtrip preservation, structured validation, Inspector summaries, and Project help.
+- Qualified save/load, duplicate, prefab/update, level storage, perspective/orthographic camera switching, Editable/Playable exports, and a 1,750-object minimum stress matrix. Added 50 focused checks while retaining Sprites / 2D B and Animation C; Phase 030 was not started.
+
+## Phase 022 — Sprite Animation Editor
+
+- Advanced Sprite Animation Clips to v2 with explicit `once`/`loop` playback, lossless v1-to-Once migration, efficient modulo catch-up across large deltas, and safe one-frame/empty-loop behavior.
+- Replaced detailed vertical frame forms with one dedicated visual editor: atlas-aware thumbnails, broken slots, typed Sprite selection, millisecond timing, Add/Remove/Duplicate, native drag reorder, Left/Right fallback, and derived frame/duration summaries.
+- Added an isolated checkerboard preview with Play, Pause, Stop/reset, scrubbing, frame-click seek, current-frame indication, source-rect transparency, and per-frame Smooth/Pixel treatment, all on the shared runtime timing helpers.
+- Qualified Save/Load, validation repair, animated Sprite Prefabs, real Editable and Playable export boots, 100-frame editor timing, and 100 independent Loop instances with 61 focused Phase 022 checks. Browser dogfood also caught and repaired a scrubber repaint-order bug. Animation remains C and Sprites / 2D remains B; Phase 023 was not started.
+
+## Phase 019 — Sprite Asset placement workflow
+
+- Made every normal Sprite Asset library row a thresholded pointer drag source with cropped-region ghost feedback, a viewport drop indicator, Escape/outside cancellation, and click-to-inspect preservation.
+- Added a typed stable-ID placement payload and routed drag, row Place, and command-palette Place Sprite through the existing perspective ground-ray, spatial snap, Sprite instantiation, selection, and single-snapshot Undo/Redo paths.
+- New instances receive natural full/atlas-region size, asset pivot, white/opaque/visible appearance, Default/0 sorting, unique Object IDs, and collision-safe asset-derived names while source/region/filtering remain live-linked and size/pivot remain overrides.
+- Added 39 Phase 019 checks, normal-editor blank/atlas/Pixel/Prefab/Save/Load/Level/export dogfood, contracts, characterization, and retained the honest Sprites / 2D grade B without adding later 2D systems.
+
+## Phase 018 — Sprite atlases and sub-rect assets
+
+- Advanced Sprite Assets to v3 with optional top-left-origin pixel source regions, strict bounds validation, full-image migration, region-relative natural size/pivot, and one authoritative WebGL UV conversion.
+- Added cropped previews, numeric and drag/resize Source Region editing, Use Full Image, and a deterministic regular-grid slicer with optional margins/spacing and collision-safe bulk naming.
+- Preserved one Texture payload across independent Sprite Assets, duplicate editing, Prefabs, pruning, Save/Load, editor Play, and both export tiers; added a bounded half-texel Smooth treatment and documented extreme-minification mip bleed.
+- Added 33 Phase 018 checks, a reproducible 4×4 atlas fixture, normal-editor dogfood, contracts, characterization, and retained the honest Sprites / 2D grade B without adding animation.
+
+## Phase 017 — Sprite material controls
+
+- Added per–Sprite Asset Smooth and Pixel / Nearest sampling without duplicating source Texture bytes or leaking sampler state between assets sharing one Texture.
+- Added bounded per-instance Sprite opacity that composes with source image alpha through the existing standard-alpha Sprite pass.
+- Versioned and migrated Sprite Asset and Sprite Renderer records with appearance-preserving defaults; direct Texture, Mesh, and Billboard users retain Smooth sampling.
+- Added 30 Phase 017 checks, normal-editor Save/Load/Play/export dogfood, checked-in pixel-art proof, filtering and presentation contracts, and retained the honest Sprites / 2D grade B.
+
+## Phase 016 — Sprite prefab, serialization, and portability hardening
+
+- Preserved linked-prefab identity and instance parameter overrides on Sprite records, closing a Save/Load and export-pruning gap.
+- Extended structured project validation into prefab member components, including missing Sprite Assets, Textures, Sorting Layers, and newer unsupported Sprite Renderer versions.
+- Added prefab-aware repair context and focus behavior without introducing a Sprite-specific serializer or changing generic prefab override semantics.
+- Qualified deterministic migration, duplication, cross-level reuse, dependency closure, editable/playable export, and a 100-instance reuse case in `tests/phase-016-sprite-prefab-serialization.test.js`.
+
 All notable changes to Digital Opus Engine will be documented in this file.
 
 ## [Unreleased]
+
+### Phase 013 — Named Sprite Sorting Layers
+
+- Added a project-owned Sprite Sorting Layer registry with stable IDs, explicit contiguous order, a protected Default layer, rename-safe references, deterministic reordering, and guarded deletion with an exact reference count and explicit reassignment to Default.
+- Advanced Sprite Renderer to schema version 3 with typed `sortingLayerRef` and integer `orderInLayer`; legacy version 1/2 `layer` values migrate to Default plus Order in Layer without changing their relative order.
+- Runtime Sprite stacking is now exactly project layer order, then Order in Layer, then persisted Object ID. Transform Z remains spatial and is not an ordering key; transparent Sprite depth-write behavior is unchanged.
+- Added 38 Phase 013 characterization checks, a 300-Sprite randomized-insertion determinism stress test, normal-editor browser dogfood, migration documentation, and capability/friction evidence. Sprites / 2D remains grade B; Phase 014 was not started.
+
+### Phase 012 — First-Class Sprite Asset
+
+- Registered reusable Sprite Assets through the Phase 003 asset registry. Each versioned record owns a stable Texture reference, default pivot, and Pixels Per Unit while the Texture remains the sole owner of image bytes and GPU decode state.
+- Added Texture → Create Sprite and composed Import as Sprite workflows, registry-derived asset type filtering, local previews, Sprite metadata inspection, natural-size calculation, duplication, placement, missing-source repair, and dependency-aware deletion warnings.
+- Sprite Renderer now prefers a stable Sprite Asset reference while preserving Phase 011 direct-Texture records, explicit per-instance Width/Height, conversion, Save/Load, Prefabs, validation, and shared Editable/Playable export.
+- Added 36 Phase 012 characterization checks and normal-editor browser dogfood. Sprites / 2D remains grade B; Phase 013 sorting work was not started.
+
+### Digital Opus Engine 1.0.0-rc.1 (human acceptance pending — not deployed)
+
+- Packaged the 28-game public library as RC1 with 4 Featured and 24 Samples.
+- Hardened controls with corrected mouse-look axes, persistent sensitivity, Invert Mouse Y, and pointer-lock release/reacquire handling.
+- Hardened collision with movement sweeps, wall sliding, and coverage for ramps, steps, crouch, terrain, and moving platforms.
+- Made Hovercraft controllers respect authored movement tuning.
+- Built and clean-room tested the exact flat-root RC ZIP; subjective human acceptance is still pending.
+- This is not a Production Launch. Nothing was deployed, DNS was not changed, and Wave 10 was not started.
 
 ### Featured Promotion + Final Rehabilitation (ready for human review -- not deployed, not Wave 10)
 

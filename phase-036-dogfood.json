@@ -1,0 +1,135 @@
+{
+  "phase": 36,
+  "project": "Phase 036 Terrain Brush Dogfood",
+  "runId": "phase-036-20260916T204608-0700",
+  "method": "real editor controls, canvas pointer authoring, Save/reload, Editable/Playable export and isolated boot",
+  "ok": true,
+  "process": {
+    "pid": 26032,
+    "command": "node tools/serve-static-root.js <root> 8850",
+    "port": 8850,
+    "purpose": "Phase 036 local browser qualification"
+  },
+  "authoring": {
+    "brushes": [
+      {
+        "id": "terrain-brush",
+        "name": "Grass",
+        "mode": "weighted-tiles",
+        "seed": 42,
+        "variants": 4,
+        "autoTileSetId": null
+      },
+      {
+        "id": "terrain-brush-2",
+        "name": "Desert Sand",
+        "mode": "weighted-tiles",
+        "seed": 0,
+        "variants": 1,
+        "autoTileSetId": null
+      },
+      {
+        "id": "terrain-brush-3",
+        "name": "Shoreline",
+        "mode": "auto-tile",
+        "seed": 0,
+        "variants": 1,
+        "autoTileSetId": "auto-tile-set"
+      }
+    ],
+    "previewChanged": true,
+    "footprints": {
+      "circleLongStrokeCells": 141,
+      "squareAutoCells": 55
+    },
+    "undoRedo": {
+      "before": 141,
+      "undo": 0,
+      "redo": 141
+    },
+    "authored": {
+      "cells": 196,
+      "terrainCells": 196,
+      "autoTerrainCells": 55,
+      "negative": true,
+      "grassCounts": {
+        "tile-phase-031-tileset-atlas-001": 92,
+        "tile-phase-031-tileset-atlas-003": 15,
+        "tile-phase-031-tileset-atlas-002": 19,
+        "tile-phase-031-tileset-atlas-004": 15
+      },
+      "semanticKeys": [
+        "autoTileSetId",
+        "terrainBrushId",
+        "tileId",
+        "x",
+        "y"
+      ]
+    },
+    "reloaded": {
+      "version": 4,
+      "brushes": 3,
+      "terrainCells": 196
+    },
+    "validation": "No structured authoring issues found.",
+    "pageErrors": [],
+    "consoleErrors": [],
+    "externalRequests": []
+  },
+  "exports": {
+    "editable": {
+      "path": "qualification\\phase-036\\phase-036-editable-game.html",
+      "bytes": 1857513,
+      "terrainBrushes": 3,
+      "terrainCells": 196
+    },
+    "playable": {
+      "path": "qualification\\phase-036\\phase-036-playable-game.html",
+      "bytes": 1845891,
+      "terrainBrushes": 0,
+      "terrainCells": 0,
+      "autoCells": 0,
+      "policy": "Terrain and Auto-Tile authoring stripped; resolved Tile IDs retained"
+    },
+    "visualParity": true
+  },
+  "editableBoot": {
+    "state": {
+      "tilesetVersion": 4,
+      "terrainBrushes": 3,
+      "autoSets": 1,
+      "terrainCells": 196,
+      "autoCells": 55,
+      "cellKeys": [
+        "autoTileSetId",
+        "terrainBrushId",
+        "tileId",
+        "x",
+        "y"
+      ],
+      "chromeVisible": true
+    },
+    "pageErrors": [],
+    "consoleErrors": [],
+    "externalRequests": []
+  },
+  "playableBoot": {
+    "state": {
+      "tilesetVersion": 4,
+      "terrainBrushes": 0,
+      "autoSets": 0,
+      "terrainCells": 0,
+      "autoCells": 0,
+      "cellKeys": [
+        "tileId",
+        "x",
+        "y"
+      ],
+      "chromeVisible": false
+    },
+    "pageErrors": [],
+    "consoleErrors": [],
+    "externalRequests": []
+  },
+  "verdict": "PASS"
+}

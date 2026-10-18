@@ -1,0 +1,571 @@
+{
+  "phase": "038",
+  "feature": "tilemap-chunk-prefab-reuse",
+  "runId": "phase-038-endurance-closure-20260919T112921342Z",
+  "status": "PASS",
+  "smoke": false,
+  "baselineHead": "f1dc3516b585ebf5aa868006792c1dc1b9039da9",
+  "branch": "main",
+  "startTimestamp": "2026-09-19T11:29:21.342Z",
+  "lastTimestamp": "2026-09-19T14:29:51.561Z",
+  "endTimestamp": "2026-09-19T14:29:51.561Z",
+  "targetSeconds": 10830,
+  "elapsedActiveSeconds": 10830.064,
+  "excludedSuspendedSeconds": 0,
+  "currentSubcampaign": "timed-endurance-complete",
+  "currentCycle": 79722,
+  "operations": {
+    "captureOperations": 3826656,
+    "chunkNormalizations": 3826656,
+    "dryRunPlans": 3826656,
+    "stampCommits": 3826656,
+    "semanticCellWrites": 89926416,
+    "autoTileRecomputes": 956664,
+    "terrainResolutions": 50224860,
+    "markersCreated": 2551104,
+    "markerIdChecks": 2551104,
+    "layerMapsResolved": 5739984,
+    "overwritePlans": 3746934,
+    "holePreservationChecks": 3268602,
+    "previewCommitComparisons": 3826656,
+    "undoOperations": 3826656,
+    "redoOperations": 3826656,
+    "saveLoadCycles": 3826656,
+    "browserCycles": 9,
+    "editableCycles": 4,
+    "playableCycles": 4
+  },
+  "sourceFingerprintStart": "005bb7157ec842dee6b7e1ea806d5d2268e3da7be859b9714a58bc5f185f537d",
+  "sourceFingerprintCurrent": "005bb7157ec842dee6b7e1ea806d5d2268e3da7be859b9714a58bc5f185f537d",
+  "projectChecksum": "9a3f7593871dad459d69e9c7b88eb466124b4697b835906fe08225aeffc8f2ae",
+  "semanticChecksum": "9a3f7593871dad459d69e9c7b88eb466124b4697b835906fe08225aeffc8f2ae",
+  "memoryObservation": {
+    "label": "final",
+    "timestamp": "2026-09-19T14:29:51.561Z",
+    "activeElapsedSeconds": 10830.063,
+    "rssBytes": 232960000,
+    "heapUsedBytes": 54488184,
+    "heapTotalBytes": 157368320,
+    "externalBytes": 4037009
+  },
+  "memoryObservations": [
+    {
+      "label": "start",
+      "timestamp": "2026-09-19T11:29:21.507Z",
+      "activeElapsedSeconds": 0.008,
+      "rssBytes": 57044992,
+      "heapUsedBytes": 6290576,
+      "heapTotalBytes": 8994816,
+      "externalBytes": 3942798
+    },
+    {
+      "label": "memory-1",
+      "timestamp": "2026-09-19T11:29:27.323Z",
+      "activeElapsedSeconds": 5.824,
+      "rssBytes": 67981312,
+      "heapUsedBytes": 10909528,
+      "heapTotalBytes": 27869184,
+      "externalBytes": 2359462
+    },
+    {
+      "label": "heartbeat-1",
+      "timestamp": "2026-09-19T11:29:27.323Z",
+      "activeElapsedSeconds": 5.824,
+      "rssBytes": 67981312,
+      "heapUsedBytes": 10910712,
+      "heapTotalBytes": 27869184,
+      "externalBytes": 2359462
+    },
+    {
+      "label": "memory-3",
+      "timestamp": "2026-09-19T11:36:51.693Z",
+      "activeElapsedSeconds": 450.194,
+      "rssBytes": 232951808,
+      "heapUsedBytes": 34699104,
+      "heapTotalBytes": 161038336,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "heartbeat-2",
+      "timestamp": "2026-09-19T11:39:21.939Z",
+      "activeElapsedSeconds": 600.437,
+      "rssBytes": 233148416,
+      "heapUsedBytes": 47851928,
+      "heapTotalBytes": 160776192,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "memory-5",
+      "timestamp": "2026-09-19T11:44:21.731Z",
+      "activeElapsedSeconds": 900.232,
+      "rssBytes": 233222144,
+      "heapUsedBytes": 34709800,
+      "heapTotalBytes": 160514048,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "heartbeat-3",
+      "timestamp": "2026-09-19T11:49:25.392Z",
+      "activeElapsedSeconds": 1203.893,
+      "rssBytes": 233365504,
+      "heapUsedBytes": 82948344,
+      "heapTotalBytes": 160776192,
+      "externalBytes": 2356702
+    },
+    {
+      "label": "memory-7",
+      "timestamp": "2026-09-19T11:51:51.882Z",
+      "activeElapsedSeconds": 1350.383,
+      "rssBytes": 233099264,
+      "heapUsedBytes": 76356352,
+      "heapTotalBytes": 160776192,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "memory-8",
+      "timestamp": "2026-09-19T11:59:21.945Z",
+      "activeElapsedSeconds": 1800.446,
+      "rssBytes": 232742912,
+      "heapUsedBytes": 76429272,
+      "heapTotalBytes": 160514048,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "heartbeat-4",
+      "timestamp": "2026-09-19T11:59:25.441Z",
+      "activeElapsedSeconds": 1803.943,
+      "rssBytes": 233086976,
+      "heapUsedBytes": 41384840,
+      "heapTotalBytes": 160776192,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "memory-10",
+      "timestamp": "2026-09-19T12:06:51.991Z",
+      "activeElapsedSeconds": 2250.489,
+      "rssBytes": 231256064,
+      "heapUsedBytes": 41371480,
+      "heapTotalBytes": 160514048,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "heartbeat-5",
+      "timestamp": "2026-09-19T12:09:25.564Z",
+      "activeElapsedSeconds": 2404.062,
+      "rssBytes": 233000960,
+      "heapUsedBytes": 34716648,
+      "heapTotalBytes": 160514048,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "memory-12",
+      "timestamp": "2026-09-19T12:14:22.073Z",
+      "activeElapsedSeconds": 2700.573,
+      "rssBytes": 233254912,
+      "heapUsedBytes": 41376128,
+      "heapTotalBytes": 159465472,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "heartbeat-6",
+      "timestamp": "2026-09-19T12:19:25.617Z",
+      "activeElapsedSeconds": 3004.116,
+      "rssBytes": 233259008,
+      "heapUsedBytes": 54458496,
+      "heapTotalBytes": 159465472,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "memory-14",
+      "timestamp": "2026-09-19T12:21:52.175Z",
+      "activeElapsedSeconds": 3150.675,
+      "rssBytes": 232980480,
+      "heapUsedBytes": 82705784,
+      "heapTotalBytes": 159465472,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "memory-15",
+      "timestamp": "2026-09-19T12:29:24.958Z",
+      "activeElapsedSeconds": 3603.457,
+      "rssBytes": 233639936,
+      "heapUsedBytes": 82877344,
+      "heapTotalBytes": 159203328,
+      "externalBytes": 2356713
+    },
+    {
+      "label": "heartbeat-7",
+      "timestamp": "2026-09-19T12:29:25.727Z",
+      "activeElapsedSeconds": 3604.225,
+      "rssBytes": 233644032,
+      "heapUsedBytes": 76425688,
+      "heapTotalBytes": 159465472,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "memory-17",
+      "timestamp": "2026-09-19T12:36:55.083Z",
+      "activeElapsedSeconds": 4053.583,
+      "rssBytes": 233439232,
+      "heapUsedBytes": 41378040,
+      "heapTotalBytes": 159465472,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "heartbeat-8",
+      "timestamp": "2026-09-19T12:39:25.804Z",
+      "activeElapsedSeconds": 4204.304,
+      "rssBytes": 231399424,
+      "heapUsedBytes": 76393416,
+      "heapTotalBytes": 159465472,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "memory-19",
+      "timestamp": "2026-09-19T12:44:25.136Z",
+      "activeElapsedSeconds": 4503.638,
+      "rssBytes": 233185280,
+      "heapUsedBytes": 47852112,
+      "heapTotalBytes": 159727616,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "heartbeat-9",
+      "timestamp": "2026-09-19T12:49:25.930Z",
+      "activeElapsedSeconds": 4804.43,
+      "rssBytes": 233439232,
+      "heapUsedBytes": 41392504,
+      "heapTotalBytes": 159465472,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "memory-21",
+      "timestamp": "2026-09-19T12:51:55.224Z",
+      "activeElapsedSeconds": 4953.724,
+      "rssBytes": 233828352,
+      "heapUsedBytes": 47908280,
+      "heapTotalBytes": 158941184,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "memory-22",
+      "timestamp": "2026-09-19T12:59:25.324Z",
+      "activeElapsedSeconds": 5403.823,
+      "rssBytes": 231591936,
+      "heapUsedBytes": 76376496,
+      "heapTotalBytes": 158941184,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "heartbeat-10",
+      "timestamp": "2026-09-19T12:59:25.986Z",
+      "activeElapsedSeconds": 5404.485,
+      "rssBytes": 233123840,
+      "heapUsedBytes": 41378240,
+      "heapTotalBytes": 158941184,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "memory-24",
+      "timestamp": "2026-09-19T13:06:55.368Z",
+      "activeElapsedSeconds": 5853.867,
+      "rssBytes": 233463808,
+      "heapUsedBytes": 82739664,
+      "heapTotalBytes": 159203328,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "heartbeat-11",
+      "timestamp": "2026-09-19T13:09:26.037Z",
+      "activeElapsedSeconds": 6004.536,
+      "rssBytes": 231079936,
+      "heapUsedBytes": 47904728,
+      "heapTotalBytes": 151601152,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "memory-26",
+      "timestamp": "2026-09-19T13:14:25.432Z",
+      "activeElapsedSeconds": 6303.931,
+      "rssBytes": 233869312,
+      "heapUsedBytes": 63486736,
+      "heapTotalBytes": 152387584,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "heartbeat-12",
+      "timestamp": "2026-09-19T13:19:26.157Z",
+      "activeElapsedSeconds": 6604.656,
+      "rssBytes": 233345024,
+      "heapUsedBytes": 76434184,
+      "heapTotalBytes": 152649728,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "memory-28",
+      "timestamp": "2026-09-19T13:21:55.556Z",
+      "activeElapsedSeconds": 6754.056,
+      "rssBytes": 233345024,
+      "heapUsedBytes": 63485832,
+      "heapTotalBytes": 152911872,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "memory-29",
+      "timestamp": "2026-09-19T13:29:25.649Z",
+      "activeElapsedSeconds": 7204.149,
+      "rssBytes": 230850560,
+      "heapUsedBytes": 35016400,
+      "heapTotalBytes": 153174016,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "heartbeat-13",
+      "timestamp": "2026-09-19T13:29:26.287Z",
+      "activeElapsedSeconds": 7204.787,
+      "rssBytes": 230948864,
+      "heapUsedBytes": 76474352,
+      "heapTotalBytes": 153174016,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "memory-31",
+      "timestamp": "2026-09-19T13:36:55.782Z",
+      "activeElapsedSeconds": 7654.282,
+      "rssBytes": 231669760,
+      "heapUsedBytes": 69859552,
+      "heapTotalBytes": 154484736,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "heartbeat-14",
+      "timestamp": "2026-09-19T13:39:26.311Z",
+      "activeElapsedSeconds": 7804.809,
+      "rssBytes": 231096320,
+      "heapUsedBytes": 69844200,
+      "heapTotalBytes": 154222592,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "memory-33",
+      "timestamp": "2026-09-19T13:44:25.787Z",
+      "activeElapsedSeconds": 8104.288,
+      "rssBytes": 233369600,
+      "heapUsedBytes": 47869400,
+      "heapTotalBytes": 154222592,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "heartbeat-15",
+      "timestamp": "2026-09-19T13:49:26.428Z",
+      "activeElapsedSeconds": 8404.927,
+      "rssBytes": 233476096,
+      "heapUsedBytes": 63510824,
+      "heapTotalBytes": 155271168,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "memory-35",
+      "timestamp": "2026-09-19T13:51:55.818Z",
+      "activeElapsedSeconds": 8554.317,
+      "rssBytes": 233299968,
+      "heapUsedBytes": 69875080,
+      "heapTotalBytes": 155533312,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "memory-36",
+      "timestamp": "2026-09-19T13:59:25.849Z",
+      "activeElapsedSeconds": 9004.351,
+      "rssBytes": 233558016,
+      "heapUsedBytes": 63233200,
+      "heapTotalBytes": 155533312,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "heartbeat-16",
+      "timestamp": "2026-09-19T13:59:26.468Z",
+      "activeElapsedSeconds": 9004.969,
+      "rssBytes": 233558016,
+      "heapUsedBytes": 54401000,
+      "heapTotalBytes": 157368320,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "memory-38",
+      "timestamp": "2026-09-19T14:06:55.865Z",
+      "activeElapsedSeconds": 9454.364,
+      "rssBytes": 233013248,
+      "heapUsedBytes": 76451624,
+      "heapTotalBytes": 156057600,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "heartbeat-17",
+      "timestamp": "2026-09-19T14:09:26.483Z",
+      "activeElapsedSeconds": 9604.982,
+      "rssBytes": 233590784,
+      "heapUsedBytes": 82953064,
+      "heapTotalBytes": 157892608,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "memory-40",
+      "timestamp": "2026-09-19T14:14:25.942Z",
+      "activeElapsedSeconds": 9904.442,
+      "rssBytes": 233443328,
+      "heapUsedBytes": 63504048,
+      "heapTotalBytes": 155009024,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "heartbeat-18",
+      "timestamp": "2026-09-19T14:19:26.492Z",
+      "activeElapsedSeconds": 10204.991,
+      "rssBytes": 233299968,
+      "heapUsedBytes": 76439912,
+      "heapTotalBytes": 155009024,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "memory-42",
+      "timestamp": "2026-09-19T14:21:56.068Z",
+      "activeElapsedSeconds": 10354.569,
+      "rssBytes": 231641088,
+      "heapUsedBytes": 69889224,
+      "heapTotalBytes": 154746880,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "memory-43",
+      "timestamp": "2026-09-19T14:29:26.085Z",
+      "activeElapsedSeconds": 10804.585,
+      "rssBytes": 233517056,
+      "heapUsedBytes": 41443368,
+      "heapTotalBytes": 155009024,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "heartbeat-19",
+      "timestamp": "2026-09-19T14:29:26.613Z",
+      "activeElapsedSeconds": 10805.113,
+      "rssBytes": 233517056,
+      "heapUsedBytes": 54444256,
+      "heapTotalBytes": 157368320,
+      "externalBytes": 2356377
+    },
+    {
+      "label": "final",
+      "timestamp": "2026-09-19T14:29:51.561Z",
+      "activeElapsedSeconds": 10830.063,
+      "rssBytes": 232960000,
+      "heapUsedBytes": 54488184,
+      "heapTotalBytes": 157368320,
+      "externalBytes": 4037009
+    }
+  ],
+  "heartbeats": 19,
+  "transientFileLockRetries": 0,
+  "suspensionAnomalies": [],
+  "semanticMismatches": 0,
+  "crashes": 0,
+  "unresolvedFailures": 0,
+  "failures": [],
+  "midpoint": {
+    "timestamp": "2026-09-19T12:59:21.590Z",
+    "activeElapsedSeconds": 5400.089,
+    "operations": {
+      "captureOperations": 1791648,
+      "chunkNormalizations": 1791648,
+      "dryRunPlans": 1791648,
+      "stampCommits": 1791648,
+      "semanticCellWrites": 42103728,
+      "autoTileRecomputes": 447912,
+      "terrainResolutions": 23515380,
+      "markersCreated": 1194432,
+      "markerIdChecks": 1194432,
+      "layerMapsResolved": 2687472,
+      "overwritePlans": 1754322,
+      "holePreservationChecks": 1530366,
+      "previewCommitComparisons": 1791648,
+      "undoOperations": 1791648,
+      "redoOperations": 1791648,
+      "saveLoadCycles": 1791648,
+      "browserCycles": 5,
+      "editableCycles": 3,
+      "playableCycles": 3
+    },
+    "sourceFingerprint": "005bb7157ec842dee6b7e1ea806d5d2268e3da7be859b9714a58bc5f185f537d",
+    "projectChecksum": "e40320e06b90439c9443b560c245cba22f8768828bbacb1b7f8eebecca31fcce",
+    "memory": {
+      "label": "memory-21",
+      "timestamp": "2026-09-19T12:51:55.224Z",
+      "activeElapsedSeconds": 4953.724,
+      "rssBytes": 233828352,
+      "heapUsedBytes": 47908280,
+      "heapTotalBytes": 158941184,
+      "externalBytes": 2356377
+    },
+    "failures": []
+  },
+  "twoHour": {
+    "timestamp": "2026-09-19T13:29:24.350Z",
+    "activeElapsedSeconds": 7200.048,
+    "operations": {
+      "captureOperations": 2466000,
+      "chunkNormalizations": 2466000,
+      "dryRunPlans": 2466000,
+      "stampCommits": 2466000,
+      "semanticCellWrites": 57951000,
+      "autoTileRecomputes": 616500,
+      "terrainResolutions": 32366250,
+      "markersCreated": 1644000,
+      "markerIdChecks": 1644000,
+      "layerMapsResolved": 3699000,
+      "overwritePlans": 2414625,
+      "holePreservationChecks": 2106375,
+      "previewCommitComparisons": 2466000,
+      "undoOperations": 2466000,
+      "redoOperations": 2466000,
+      "saveLoadCycles": 2466000,
+      "browserCycles": 7,
+      "editableCycles": 3,
+      "playableCycles": 3
+    },
+    "sourceFingerprint": "005bb7157ec842dee6b7e1ea806d5d2268e3da7be859b9714a58bc5f185f537d",
+    "projectChecksum": "3ddb4be7ea247d377c8b877dfc6887ce3a48ec9e4c9fbc9e7b63db3b95101c76",
+    "memory": {
+      "label": "memory-28",
+      "timestamp": "2026-09-19T13:21:55.556Z",
+      "activeElapsedSeconds": 6754.056,
+      "rssBytes": 233345024,
+      "heapUsedBytes": 63485832,
+      "heapTotalBytes": 152911872,
+      "externalBytes": 2356377
+    },
+    "failures": []
+  },
+  "retainedArtifacts": [
+    "qualification\\phase-038\\closure-artifacts\\first-editable.html",
+    "qualification\\phase-038\\closure-artifacts\\first-playable.html",
+    "qualification\\phase-038\\closure-artifacts\\midpoint-editable.html",
+    "qualification\\phase-038\\closure-artifacts\\midpoint-playable.html",
+    "qualification\\phase-038\\closure-artifacts\\final-editable.html",
+    "qualification\\phase-038\\closure-artifacts\\final-playable.html"
+  ],
+  "lastSuccessfulReferenceComparison": {
+    "timestamp": "2026-09-19T14:29:51.455Z",
+    "cycle": 79721,
+    "operation": 47,
+    "checksum": "9a3f7593871dad459d69e9c7b88eb466124b4697b835906fe08225aeffc8f2ae",
+    "status": "PASS"
+  },
+  "processes": [],
+  "boundedMemoryObservation": true,
+  "formalLeakProof": false,
+  "cleanup": {
+    "browserContextsClosed": true,
+    "serversClosed": true,
+    "coreWorkerExitsAfterWrite": true
+  }
+}

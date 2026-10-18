@@ -1,0 +1,8855 @@
+{
+  "id": "signal-relay",
+  "method": "Native Playwright keyboard and mouse input; evaluate is read-only instrumentation.",
+  "startedAt": "2026-09-11T17:16:59.096Z",
+  "standaloneSHA256": "dd9787bb552cfce3f76749f3c12992e0430a337373c3910767a6305b60e27f17",
+  "errors": [],
+  "actions": [
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -25,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 1.0346000000238413,
+      "yawError": 0.001121959815696627,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 1.0346000000238413
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -25,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 1.602900000035761,
+      "yawError": 0.0016804888470667303,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 1.602900000035761
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -25,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 2.170900000035761,
+      "yawError": 0.004900973130889774,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.16704191027183876,
+      "sim": 2.170900000035761
+    },
+    {
+      "kind": "key",
+      "key": "f",
+      "seconds": 0.08,
+      "sim": 2.4534999999999973
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -25,
+        1.2,
+        -6
+      ],
+      "from": "camera-eye",
+      "sim": 3.1534999999999966,
+      "yawError": -0.001047654460609703,
+      "pitchError": 0.0013044970404677836,
+      "pointerLocked": true
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -14,
+        0.55,
+        -6.8
+      ],
+      "from": "camera-eye",
+      "sim": 3.4706000000238397,
+      "yawError": 0.001595486291803505,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 3.4706000000238397
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -14,
+        0.55,
+        -6.8
+      ],
+      "from": "camera-eye",
+      "sim": 4.054499999999997,
+      "yawError": 0.004464595266197469,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 4.054499999999997
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -14,
+        0.55,
+        -6.8
+      ],
+      "from": "camera-eye",
+      "sim": 4.755400000035759,
+      "yawError": -0.0030118760536010925,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 4.755400000035759
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -14,
+        0.55,
+        -6.8
+      ],
+      "from": "camera-eye",
+      "sim": 5.456100000023836,
+      "yawError": 0.0007760209393941064,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 5.456100000023836
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -14,
+        0.55,
+        -6.8
+      ],
+      "from": "camera-eye",
+      "sim": 6.140100000023835,
+      "yawError": -0.00010921915506556523,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 6.140100000023835
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -14,
+        0.55,
+        -6.8
+      ],
+      "from": "camera-eye",
+      "sim": 6.824300000011913,
+      "yawError": 0.0005452781458024081,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 6.8419999999999925
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -14,
+        0.55,
+        -6.8
+      ],
+      "from": "camera-eye",
+      "sim": 7.5249999999999915,
+      "yawError": -0.00012406285000143846,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 7.5249999999999915
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -14,
+        0.55,
+        -6.8
+      ],
+      "from": "camera-eye",
+      "sim": 8.09499999999999,
+      "yawError": 0.005430738685328729,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 8.09499999999999
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -14,
+        0.55,
+        -6.8
+      ],
+      "from": "camera-eye",
+      "sim": 8.676400000035754,
+      "yawError": 0.005497388130703884,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 8.676400000035754
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -11,
+        0.55,
+        6.7
+      ],
+      "from": "camera-eye",
+      "sim": 9.46049999999999,
+      "yawError": -0.0010459295077255295,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 9.46049999999999
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -11,
+        0.55,
+        6.7
+      ],
+      "from": "camera-eye",
+      "sim": 10.144499999999992,
+      "yawError": 0.0005116282805622818,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 10.144499999999992
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -11,
+        0.55,
+        6.7
+      ],
+      "from": "camera-eye",
+      "sim": 10.828699999988073,
+      "yawError": 0.0005382517743141024,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 10.828699999988073
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -11,
+        0.55,
+        6.7
+      ],
+      "from": "camera-eye",
+      "sim": 11.53030000001192,
+      "yawError": -0.0006610290857225198,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 11.53030000001192
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -11,
+        0.55,
+        6.7
+      ],
+      "from": "camera-eye",
+      "sim": 12.213600000023842,
+      "yawError": -0.000277469849708889,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.3939692137934402,
+      "sim": 12.23030000001192
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -11,
+        0.55,
+        6.7
+      ],
+      "from": "camera-eye",
+      "sim": 12.897600000023841,
+      "yawError": 0.000049487527515990066,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.08,
+      "sim": 12.915199999988078
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -11,
+        0.55,
+        6.7
+      ],
+      "from": "camera-eye",
+      "sim": 13.198000000000002,
+      "yawError": -0.0003763893614094904,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.08,
+      "sim": 13.198000000000002
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -11,
+        0.55,
+        6.7
+      ],
+      "from": "camera-eye",
+      "sim": 13.501000000000003,
+      "yawError": 0.0007249470061636565,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.0988517437499147,
+      "sim": 13.501000000000003
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        -11,
+        0.55,
+        6.7
+      ],
+      "from": "camera-eye",
+      "sim": 13.782000000000005,
+      "yawError": 0.0006810967730623612,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.08,
+      "sim": 13.782000000000005
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0.5,
+        0.55,
+        6.7
+      ],
+      "from": "camera-eye",
+      "sim": 14.315900000035766,
+      "yawError": -0.0016622191621762602,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 14.332699999988082
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0.5,
+        0.55,
+        6.7
+      ],
+      "from": "camera-eye",
+      "sim": 15.017900000035766,
+      "yawError": 0.000778836582023356,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 15.017900000035766
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0.5,
+        0.55,
+        6.7
+      ],
+      "from": "camera-eye",
+      "sim": 15.700999999999999,
+      "yawError": 0.0008086975122762788,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 15.700999999999999
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        0.5,
+        0.55,
+        6.7
+      ],
+      "from": "camera-eye",
+      "sim": 16.401500000000013,
+      "yawError": -0.00025246783550538843,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.16706158085198156,
+      "sim": 16.418199999988094
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        2.9974616016524456,
+        0.75,
+        -0.36538385140452073
+      ],
+      "from": "camera-eye",
+      "sim": 16.852100000023867,
+      "yawError": -0.00015303379555067287,
+      "pitchError": 0.0000031878498051862714,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 16.852100000023867
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        3.3187359383942088,
+        0.75,
+        -2.339410903030496
+      ],
+      "from": "camera-eye",
+      "sim": 17.838199999988134,
+      "yawError": -0.000506800307879441,
+      "pitchError": -0.0009322606467702596,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 17.838199999988134
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        3.3187359383942088,
+        0.75,
+        -2.339410903030496
+      ],
+      "from": "camera-eye",
+      "sim": 18.67069999998816,
+      "yawError": 0.0006324671366806138,
+      "pitchError": 0.0007495120546376632,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 18.67069999998816
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        3.3158924248428154,
+        0.75,
+        -1.883735718260039
+      ],
+      "from": "camera-eye",
+      "sim": 19.489300000012026,
+      "yawError": 0.0030130670508900833,
+      "pitchError": 0.0028554917558542836,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 19.489300000012026
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        3.3344652644664325,
+        0.75,
+        -3.8270069652874477
+      ],
+      "from": "camera-eye",
+      "sim": 20.19030000001203,
+      "yawError": 0.0032320100306024494,
+      "pitchError": -0.004973817779827978,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 20.19030000001203
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        3.3297409737168495,
+        0.75,
+        -3.3172688555089955
+      ],
+      "from": "camera-eye",
+      "sim": 21.023300000012053,
+      "yawError": 0.0032707978826544745,
+      "pitchError": -0.0032016699930496814,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "q",
+      "seconds": 0.14,
+      "sim": 21.023300000012053
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        2,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 21.840800000012077,
+      "yawError": 0.00020526540653431624,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 21.840800000012077
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        2,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 22.424900000035944,
+      "yawError": 0.0002581484729082817,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 22.424900000035944
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        2,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 23.092199999988296,
+      "yawError": -0.00007163491631301255,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 23.092199999988296
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        2,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 23.793900000035986,
+      "yawError": 0.00031945558218460235,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 23.793900000035986
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        2,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 24.477100000024084,
+      "yawError": -0.0005463937141563235,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.08,
+      "sim": 24.477100000024084
+    },
+    {
+      "kind": "key",
+      "key": "f",
+      "seconds": 0.08,
+      "sim": 24.628500000000244
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        2,
+        1.2,
+        -6
+      ],
+      "from": "camera-eye",
+      "sim": 25.31140000003604,
+      "yawError": -0.0010095100225735684,
+      "pitchError": -0.0005988942522473263,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "r",
+      "seconds": 0.08,
+      "sim": 25.544699999988367
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        20,
+        0.55,
+        -6.7
+      ],
+      "from": "camera-eye",
+      "sim": 27.346800000012273,
+      "yawError": 0.0009482632299995013,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 27.346800000012273
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        20,
+        0.55,
+        -6.7
+      ],
+      "from": "camera-eye",
+      "sim": 27.914300000012283,
+      "yawError": 0.0009478965393119092,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 27.914300000012283
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        20,
+        0.55,
+        -6.7
+      ],
+      "from": "camera-eye",
+      "sim": 28.48150000000038,
+      "yawError": 0.0013282896274666492,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 28.48150000000038
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        20,
+        0.55,
+        -6.7
+      ],
+      "from": "camera-eye",
+      "sim": 29.14880000001233,
+      "yawError": -0.00014276862710651606,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 29.14880000001233
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        20,
+        0.55,
+        -6.7
+      ],
+      "from": "camera-eye",
+      "sim": 29.83300000000044,
+      "yawError": -0.0008268376744953406,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 29.83300000000044
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        20,
+        0.55,
+        -6.7
+      ],
+      "from": "camera-eye",
+      "sim": 30.53519999998854,
+      "yawError": -0.00008933073985975049,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 30.53519999998854
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        20,
+        0.55,
+        -6.7
+      ],
+      "from": "camera-eye",
+      "sim": 31.201199999988564,
+      "yawError": 0.0006801031002241268,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 31.201199999988564
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        20,
+        0.55,
+        -6.7
+      ],
+      "from": "camera-eye",
+      "sim": 31.902000000000513,
+      "yawError": 0.00044495862910551786,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 31.902000000000513
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        20,
+        0.55,
+        -6.7
+      ],
+      "from": "camera-eye",
+      "sim": 32.4693000000124,
+      "yawError": 0.005133658098552129,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 32.4693000000124
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        20,
+        0.55,
+        -6.7
+      ],
+      "from": "camera-eye",
+      "sim": 33.15330000001238,
+      "yawError": -0.00034061098494511183,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 33.15330000001238
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        20,
+        0.55,
+        -6.7
+      ],
+      "from": "camera-eye",
+      "sim": 33.72110000002429,
+      "yawError": 0.0018134997795031574,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 33.72110000002429
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        20,
+        0.55,
+        -6.7
+      ],
+      "from": "camera-eye",
+      "sim": 34.287900000036196,
+      "yawError": 0.0029431111363178216,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 34.287900000036196
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        22,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 35.05550000000042,
+      "yawError": 0.0007465541873903129,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 35.05550000000042
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        22,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 35.75630000001233,
+      "yawError": -0.0015172734034154761,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 35.75630000001233
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        22,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 36.440400000036156,
+      "yawError": 0.001079398873428982,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 36.45769999998847
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        22,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 37.15790000003616,
+      "yawError": 0.0004837726671744529,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 37.15790000003616
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        22,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 37.858699999988445,
+      "yawError": -0.001445870734805755,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 37.87540000003613
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        22,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 38.459199999988456,
+      "yawError": 0.004374782542190236,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 38.459199999988456
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        22,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 39.16000000000038,
+      "yawError": 0.0014079418491641286,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 39.16000000000038
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        22,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 39.72740000003612,
+      "yawError": 0.0050099141923724885,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 39.72740000003612
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        22,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 40.41130000001224,
+      "yawError": -0.001388814006093387,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 40.41130000001224
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        22,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 40.96180000001223,
+      "yawError": 0.00001170161790551226,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 40.979500000000314
+    },
+    {
+      "kind": "key",
+      "key": "f",
+      "seconds": 0.08,
+      "sim": 41.6125000000003
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        22,
+        1.2,
+        -6
+      ],
+      "from": "camera-eye",
+      "sim": 42.296600000024135,
+      "yawError": -0.00020454515672010468,
+      "pitchError": 0.00018182595869198305,
+      "pointerLocked": true
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        27,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 42.53030000001221,
+      "yawError": 0.0013019930478683542,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 42.53030000001221
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        27,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 43.08230000001218,
+      "yawError": 0.0016071529799910104,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 43.08230000001218
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        27,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 43.64990000003603,
+      "yawError": 0.0020182433743254117,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 43.64990000003603
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        33,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 44.29980000001214,
+      "yawError": 0.0024665627103599196,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 44.29980000001214
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        33,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 44.86640000003597,
+      "yawError": 0.0027616501965252774,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 44.86640000003597
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        33,
+        0.55,
+        -5.7
+      ],
+      "from": "camera-eye",
+      "sim": 45.4340000000002,
+      "yawError": 0.0030838593865369682,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 45.45030000001212
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        38,
+        0.55,
+        0
+      ],
+      "from": "camera-eye",
+      "sim": 46.200900000035965,
+      "yawError": -0.0007818723184327643,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 46.217699999988284
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        38,
+        0.55,
+        0
+      ],
+      "from": "camera-eye",
+      "sim": 46.90180000001209,
+      "yawError": -0.000339054151187202,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 46.918500000000165
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        38,
+        0.55,
+        0
+      ],
+      "from": "camera-eye",
+      "sim": 47.60460000002399,
+      "yawError": 0.0008933981286103114,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 47.60460000002399
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        38,
+        0.55,
+        0
+      ],
+      "from": "camera-eye",
+      "sim": 48.18719999998822,
+      "yawError": 0.0018264476757205766,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 48.18719999998822
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        38,
+        0.55,
+        0
+      ],
+      "from": "camera-eye",
+      "sim": 48.88910000002399,
+      "yawError": 0.0003554884041647492,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 48.88910000002399
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        38,
+        0.55,
+        0
+      ],
+      "from": "camera-eye",
+      "sim": 49.55480000001206,
+      "yawError": 0.0002254500072458081,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 49.55480000001206
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        38,
+        0.55,
+        0
+      ],
+      "from": "camera-eye",
+      "sim": 50.23880000001204,
+      "yawError": -0.0008299868799783956,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 50.23880000001204
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        38,
+        0.55,
+        0
+      ],
+      "from": "camera-eye",
+      "sim": 50.92290000003587,
+      "yawError": -0.0004352402660628092,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 50.939699999988186
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        38,
+        0.55,
+        0
+      ],
+      "from": "camera-eye",
+      "sim": 51.60700000000009,
+      "yawError": -0.000264111503357501,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 51.60700000000009
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        38,
+        0.55,
+        0
+      ],
+      "from": "camera-eye",
+      "sim": 52.29119999998816,
+      "yawError": 0.0012272299461677286,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 52.29119999998816
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        38,
+        0.55,
+        0
+      ],
+      "from": "camera-eye",
+      "sim": 52.97510000002391,
+      "yawError": -0.00014509243022711238,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 52.97510000002391
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        38,
+        0.55,
+        0
+      ],
+      "from": "camera-eye",
+      "sim": 53.65930000001197,
+      "yawError": 0.00028581192101626506,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 53.65930000001197
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        38,
+        0.55,
+        0
+      ],
+      "from": "camera-eye",
+      "sim": 54.36010000002386,
+      "yawError": -0.0005145268369546548,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 54.3766999999881
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        38,
+        0.55,
+        0
+      ],
+      "from": "camera-eye",
+      "sim": 54.94390000003577,
+      "yawError": 0.004916578766785061,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 54.94390000003577
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        38,
+        0.55,
+        0
+      ],
+      "from": "camera-eye",
+      "sim": 55.64619999998807,
+      "yawError": 0.00026047185321662546,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 55.64619999998807
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        38,
+        0.55,
+        0
+      ],
+      "from": "camera-eye",
+      "sim": 56.21210000002381,
+      "yawError": 0.004287997103163943,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 56.21210000002381
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        38,
+        0.55,
+        0
+      ],
+      "from": "camera-eye",
+      "sim": 56.9296000000238,
+      "yawError": 0.00014758702376724763,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 56.9296000000238
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        38,
+        0.55,
+        0
+      ],
+      "from": "camera-eye",
+      "sim": 57.49690000003568,
+      "yawError": 0.003003694291350034,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 57.513499999999915
+    },
+    {
+      "kind": "mouse-aim",
+      "point": [
+        38,
+        0.55,
+        0
+      ],
+      "from": "camera-eye",
+      "sim": 58.064100000023764,
+      "yawError": 0.005035463044334531,
+      "pitchError": 0,
+      "pointerLocked": true
+    },
+    {
+      "kind": "key",
+      "key": "w",
+      "seconds": 0.42,
+      "sim": 58.064100000023764
+    }
+  ],
+  "frames": [
+    {
+      "label": "start",
+      "title": "Signal Relay",
+      "text": "Signal Relay\n\nRestore three relay consoles in a silent communications station. Slip past patrol drones or use your sidearm, then reach the green extraction bay. Visual landmark: Split relay crown.\n\nBegin mission\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nMouse Sensitivity\nInvert Mouse Y\nQuality: High\n⛶ Fullscreen\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 0,
+      "playtime": 0,
+      "ended": false,
+      "paused": true,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {},
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": -30,
+          "y": 1.25,
+          "z": 0
+        },
+        "forward": {
+          "x": 0.8632093666488738,
+          "y": 0,
+          "z": -0.5048461045998578
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": -30,
+          "y": 1.85,
+          "z": 0
+        },
+        "target": {
+          "x": -29.136790633351126,
+          "y": 1.85,
+          "z": -0.5048461045998578
+        },
+        "yaw": 2.1,
+        "pitch": 0,
+        "sensitivity": 0.0018
+      },
+      "pointerLocked": false,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ],
+      "weaponRuntime": {},
+      "enemies": [
+        {
+          "id": "obj58",
+          "name": "DroneA",
+          "p": {
+            "x": 5.223195999925002,
+            "y": 0.75,
+            "z": -0.7968622505996049
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj59",
+          "name": "DroneB",
+          "p": {
+            "x": 21.08921743284909,
+            "y": 0.75,
+            "z": 5.200339393601992
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "promo-33",
+          "name": "Facility zone",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-35",
+          "name": "Facility zone",
+          "p": {
+            "x": -9,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-38",
+          "name": "Facility zone",
+          "p": {
+            "x": 17,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-39",
+          "name": "Facility zone",
+          "p": {
+            "x": 26,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "deep1-2",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-3",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-5",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-6",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-8",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-9",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-10",
+          "name": "Alpha analysis wall",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1.15,
+            "y": 1.15,
+            "z": 1.15
+          }
+        },
+        {
+          "id": "deep1-11",
+          "name": "Beta signal engine",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        },
+        {
+          "id": "deep1-12",
+          "name": "Gamma archive stack",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "opening",
+      "title": "Signal Relay",
+      "text": "Health 100 / 100\nRestore power at all three relay consoles\nWeapon 8/24\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 0.700800000011921,
+      "playtime": 0.700800000011921,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100
+      },
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": -30,
+          "y": 0.55,
+          "z": 0
+        },
+        "forward": {
+          "x": 0.19963045634744495,
+          "y": 0.010799790049224435,
+          "z": -0.9798117397915802
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": -30,
+          "y": 1.15,
+          "z": 0
+        },
+        "target": {
+          "x": -29.800369543652554,
+          "y": 1.1607997900492244,
+          "z": -0.9798117397915802
+        },
+        "yaw": 2.9406,
+        "pitch": -0.0108,
+        "sensitivity": 0.0018
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": -29.61108237301873,
+            "y": 0.8867116160774646,
+            "z": -0.5564371539668418
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "fixed": {
+          "magazine": 8,
+          "reserve": 24,
+          "reloading": false,
+          "reloadEnd": 0
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj58",
+          "name": "DroneA",
+          "p": {
+            "x": 5.600428319677726,
+            "y": 0.75,
+            "z": -1.46913581943464
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj59",
+          "name": "DroneB",
+          "p": {
+            "x": 21.801784600949375,
+            "y": 0.75,
+            "z": 4.906223760957761
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "promo-33",
+          "name": "Facility zone",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-35",
+          "name": "Facility zone",
+          "p": {
+            "x": -9,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-38",
+          "name": "Facility zone",
+          "p": {
+            "x": 17,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-39",
+          "name": "Facility zone",
+          "p": {
+            "x": 26,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "deep1-2",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-3",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-5",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-6",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-8",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-9",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-10",
+          "name": "Alpha analysis wall",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1.15,
+            "y": 1.15,
+            "z": 1.15
+          }
+        },
+        {
+          "id": "deep1-11",
+          "name": "Beta signal engine",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        },
+        {
+          "id": "deep1-12",
+          "name": "Gamma archive stack",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "alpha-console",
+      "title": "Signal Relay",
+      "text": "Health 100 / 100\nRestore power at all three relay consoles\nWeapon 8/24\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 3.1534999999999966,
+      "playtime": 3.1534999999999966,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100,
+        "consolesPowered": 1
+      },
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": -23.751545924114396,
+          "y": 0.55,
+          "z": -5.1
+        },
+        "forward": {
+          "x": -0.7809568079474825,
+          "y": 0.03599222450386924,
+          "z": -0.6235471304526559
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": -23.751545924114396,
+          "y": 1.15,
+          "z": -5.1
+        },
+        "target": {
+          "x": -24.53250273206188,
+          "y": 1.1859922245038692,
+          "z": -5.723547130452656
+        },
+        "yaw": 4.0386,
+        "pitch": -0.036,
+        "sensitivity": 0.0018
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": -24.074866446213864,
+            "y": 0.9024901202975351,
+            "z": -5.7036577668174235
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "fixed": {
+          "magazine": 8,
+          "reserve": 24,
+          "reloading": false,
+          "reloadEnd": 0
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj58",
+          "name": "DroneA",
+          "p": {
+            "x": 5.684968528264998,
+            "y": 0.75,
+            "z": -1.829780556490812
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj59",
+          "name": "DroneB",
+          "p": {
+            "x": 22.310411241542326,
+            "y": 0.75,
+            "z": 3.3026931949374703
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "promo-33",
+          "name": "Facility zone",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-35",
+          "name": "Facility zone",
+          "p": {
+            "x": -9,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-38",
+          "name": "Facility zone",
+          "p": {
+            "x": 17,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-39",
+          "name": "Facility zone",
+          "p": {
+            "x": 26,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "deep1-2",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-3",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-5",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-6",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-8",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-9",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-10",
+          "name": "Alpha analysis wall",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1.15,
+            "y": 1.15,
+            "z": 1.15
+          }
+        },
+        {
+          "id": "deep1-11",
+          "name": "Beta signal engine",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        },
+        {
+          "id": "deep1-12",
+          "name": "Gamma archive stack",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "collision-stop-1",
+      "title": "Signal Relay",
+      "text": "Health 100 / 100\nRestore power at all three relay consoles\nWeapon 8/24\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 9.230100000023835,
+      "playtime": 9.230100000023835,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100,
+        "consolesPowered": 1
+      },
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": -18.625,
+          "y": 0.55,
+          "z": -6.774563731426105
+        },
+        "forward": {
+          "x": 0.9999999999932538,
+          "y": 0,
+          "z": -0.0000036732051031940216
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": -18.625,
+          "y": 1.15,
+          "z": -6.774563731426105
+        },
+        "target": {
+          "x": -17.625000000006747,
+          "y": 1.15,
+          "z": -6.774567404631208
+        },
+        "yaw": 1.5707999999999998,
+        "pitch": 0,
+        "sensitivity": 0.0018
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": -18.004999008238805,
+            "y": 0.8799999999999999,
+            "z": -6.50456600881509
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "fixed": {
+          "magazine": 8,
+          "reserve": 24,
+          "reloading": false,
+          "reloadEnd": 0
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj58",
+          "name": "DroneA",
+          "p": {
+            "x": 5.326438765616108,
+            "y": 0.75,
+            "z": -2.149490872506957
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj59",
+          "name": "DroneB",
+          "p": {
+            "x": 23.345939812915866,
+            "y": 0.75,
+            "z": 4.587374489017258
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "promo-33",
+          "name": "Facility zone",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-35",
+          "name": "Facility zone",
+          "p": {
+            "x": -9,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-38",
+          "name": "Facility zone",
+          "p": {
+            "x": 17,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-39",
+          "name": "Facility zone",
+          "p": {
+            "x": 26,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "deep1-2",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-3",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-5",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-6",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-8",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-9",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-10",
+          "name": "Alpha analysis wall",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1.15,
+            "y": 1.15,
+            "z": 1.15
+          }
+        },
+        {
+          "id": "deep1-11",
+          "name": "Beta signal engine",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        },
+        {
+          "id": "deep1-12",
+          "name": "Gamma archive stack",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "entry-divider-cleared",
+      "title": "Signal Relay",
+      "text": "Health 100 / 100\nRestore power at all three relay consoles\nWeapon 8/24\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 13.932199999988084,
+      "playtime": 13.932199999988084,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100,
+        "consolesPowered": 1
+      },
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": -11.501949819012491,
+          "y": 0.55,
+          "z": 6.455180469299511
+        },
+        "forward": {
+          "x": 0.45912264312397344,
+          "y": 0,
+          "z": -0.8883728938744453
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": -11.501949819012491,
+          "y": 1.15,
+          "z": 6.455180469299511
+        },
+        "target": {
+          "x": -11.042827175888519,
+          "y": 1.15,
+          "z": 5.566807575425066
+        },
+        "yaw": -3.6186000000000003,
+        "pitch": 0,
+        "sensitivity": 0.0018
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": -10.977433098929529,
+            "y": 0.8799999999999999,
+            "z": 6.028352388740828
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "fixed": {
+          "magazine": 8,
+          "reserve": 24,
+          "reloading": false,
+          "reloadEnd": 0
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj58",
+          "name": "DroneA",
+          "p": {
+            "x": 4.731636128187668,
+            "y": 0.75,
+            "z": 0.5876295729812796
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj59",
+          "name": "DroneB",
+          "p": {
+            "x": 24.198022941035124,
+            "y": 0.75,
+            "z": 3.1882863169472837
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "promo-33",
+          "name": "Facility zone",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-35",
+          "name": "Facility zone",
+          "p": {
+            "x": -9,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-38",
+          "name": "Facility zone",
+          "p": {
+            "x": 17,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-39",
+          "name": "Facility zone",
+          "p": {
+            "x": 26,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "deep1-2",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-3",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-5",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-6",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-8",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-9",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-10",
+          "name": "Alpha analysis wall",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1.15,
+            "y": 1.15,
+            "z": 1.15
+          }
+        },
+        {
+          "id": "deep1-11",
+          "name": "Beta signal engine",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        },
+        {
+          "id": "deep1-12",
+          "name": "Gamma archive stack",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "encounter-obj58",
+      "title": "Signal Relay",
+      "text": "Health 100 / 100\nRestore power at all three relay consoles\nWeapon 7/24\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 17.552900000035805,
+      "playtime": 17.552900000035805,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 100,
+        "consolesPowered": 1
+      },
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": 2.946240954899887,
+          "y": 0.55,
+          "z": 7.100661099638671
+        },
+        "forward": {
+          "x": 0.25246452785840523,
+          "y": -0.053973759826109545,
+          "z": -0.9660996301745826
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 2.946240954899887,
+          "y": 1.15,
+          "z": 7.100661099638671
+        },
+        "target": {
+          "x": 3.1987054827582924,
+          "y": 1.0960262401738903,
+          "z": 6.134561469464089
+        },
+        "yaw": -3.3972000000000007,
+        "pitch": 0.054,
+        "sensitivity": 0.0018
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": 3.3603121248696852,
+            "y": 0.8469298332577294,
+            "z": 6.584043697463081
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "fixed": {
+          "magazine": 7,
+          "reserve": 24,
+          "reloading": false,
+          "reloadEnd": 0
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj58",
+          "name": "DroneA",
+          "p": {
+            "x": 3.3187359383942088,
+            "y": 0.75,
+            "z": -2.339410903030496
+          },
+          "health": {
+            "current": 78,
+            "max": 100
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        },
+        {
+          "id": "obj59",
+          "name": "DroneB",
+          "p": {
+            "x": 21.52962490343241,
+            "y": 0.75,
+            "z": 3.393279346741971
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "promo-33",
+          "name": "Facility zone",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-35",
+          "name": "Facility zone",
+          "p": {
+            "x": -9,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-38",
+          "name": "Facility zone",
+          "p": {
+            "x": 17,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-39",
+          "name": "Facility zone",
+          "p": {
+            "x": 26,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "deep1-2",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-3",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-5",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-6",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-8",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-9",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-10",
+          "name": "Alpha analysis wall",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1.15,
+            "y": 1.15,
+            "z": 1.15
+          }
+        },
+        {
+          "id": "deep1-11",
+          "name": "Beta signal engine",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        },
+        {
+          "id": "deep1-12",
+          "name": "Gamma archive stack",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "beta-console",
+      "title": "Signal Relay",
+      "text": "Health 79 / 100\nRestore power at all three relay consoles\nWeapon 2/24\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 25.31140000003604,
+      "playtime": 25.31140000003604,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 79,
+        "consolesPowered": 2,
+        "kills": 1
+      },
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": 1.7374056144036738,
+          "y": 0.55,
+          "z": -7.95629639290291
+        },
+        "forward": {
+          "x": 0.13512100301316196,
+          "y": 0.02699671961957215,
+          "z": 0.9904612519803585
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 1.7374056144036738,
+          "y": 1.15,
+          "z": -7.95629639290291
+        },
+        "target": {
+          "x": 1.8725266174168358,
+          "y": 1.176996719619572,
+          "z": -6.965835140922552
+        },
+        "yaw": -6.147600000000001,
+        "pitch": -0.027,
+        "sensitivity": 0.0018
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": 1.5546438639204223,
+            "y": 0.8968363751855686,
+            "z": -7.298492226276462
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "fixed": {
+          "magazine": 2,
+          "reserve": 24,
+          "reloading": false,
+          "reloadEnd": 0
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj59",
+          "name": "DroneB",
+          "p": {
+            "x": 20.963877643592237,
+            "y": 0.75,
+            "z": 1.7083994117748036
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "promo-33",
+          "name": "Facility zone",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-35",
+          "name": "Facility zone",
+          "p": {
+            "x": -9,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-38",
+          "name": "Facility zone",
+          "p": {
+            "x": 17,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-39",
+          "name": "Facility zone",
+          "p": {
+            "x": 26,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "deep1-2",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-3",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-5",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-6",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-8",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-9",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-10",
+          "name": "Alpha analysis wall",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1.15,
+            "y": 1.15,
+            "z": 1.15
+          }
+        },
+        {
+          "id": "deep1-11",
+          "name": "Beta signal engine",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        },
+        {
+          "id": "deep1-12",
+          "name": "Gamma archive stack",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "reloaded",
+      "title": "Signal Relay",
+      "text": "Health 79 / 100\nRestore power at all three relay consoles\nWeapon 8/18\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 27.029800000012262,
+      "playtime": 27.029800000012262,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 79,
+        "consolesPowered": 2,
+        "kills": 1
+      },
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": 1.6863447075952185,
+          "y": 0.55,
+          "z": -8.377264450873453
+        },
+        "forward": {
+          "x": 0.13512100301316196,
+          "y": 0.02699671961957215,
+          "z": 0.9904612519803585
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 1.6863447075952185,
+          "y": 1.15,
+          "z": -8.377264450873453
+        },
+        "target": {
+          "x": 1.8214657106083805,
+          "y": 1.176996719619572,
+          "z": -7.3868031988930944
+        },
+        "yaw": -6.147600000000001,
+        "pitch": -0.027,
+        "sensitivity": 0.0018
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": 1.503582957111967,
+            "y": 0.8968363751855686,
+            "z": -7.719460284247005
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "fixed": {
+          "magazine": 8,
+          "reserve": 18,
+          "reloading": false,
+          "reloadEnd": 26.77840000003605
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj59",
+          "name": "DroneB",
+          "p": {
+            "x": 20.078755327646487,
+            "y": 0.75,
+            "z": 1.5496258361558484
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "promo-33",
+          "name": "Facility zone",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-35",
+          "name": "Facility zone",
+          "p": {
+            "x": -9,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-38",
+          "name": "Facility zone",
+          "p": {
+            "x": 17,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-39",
+          "name": "Facility zone",
+          "p": {
+            "x": 26,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "deep1-2",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-3",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-5",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-6",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-8",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-9",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-10",
+          "name": "Alpha analysis wall",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1.15,
+            "y": 1.15,
+            "z": 1.15
+          }
+        },
+        {
+          "id": "deep1-11",
+          "name": "Beta signal engine",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        },
+        {
+          "id": "deep1-12",
+          "name": "Gamma archive stack",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "collision-stop-3",
+      "title": "Signal Relay",
+      "text": "Health 79 / 100\nRestore power at all three relay consoles\nWeapon 8/18\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 34.839000000000425,
+      "playtime": 34.839000000000425,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 79,
+        "consolesPowered": 2,
+        "kills": 1
+      },
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": 7.375,
+          "y": 0.55,
+          "z": -6.70181164881558
+        },
+        "forward": {
+          "x": 0.9999911336700017,
+          "y": 0,
+          "z": 0.004211007169872549
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 7.375,
+          "y": 1.15,
+          "z": -6.70181164881558
+        },
+        "target": {
+          "x": 8.374991133670001,
+          "y": 1.15,
+          "z": -6.697600641645708
+        },
+        "yaw": -4.7166,
+        "pitch": 0,
+        "sensitivity": 0.0018
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": 7.993857530939535,
+            "y": 0.8799999999999999,
+            "z": -6.429203218279359
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "fixed": {
+          "magazine": 8,
+          "reserve": 18,
+          "reloading": false,
+          "reloadEnd": 26.77840000003605
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj59",
+          "name": "DroneB",
+          "p": {
+            "x": 19.615318363448413,
+            "y": 0.75,
+            "z": 3.785468978387554
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "promo-33",
+          "name": "Facility zone",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-35",
+          "name": "Facility zone",
+          "p": {
+            "x": -9,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-38",
+          "name": "Facility zone",
+          "p": {
+            "x": 17,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-39",
+          "name": "Facility zone",
+          "p": {
+            "x": 26,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "deep1-2",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-3",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-5",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-6",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-8",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-9",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-10",
+          "name": "Alpha analysis wall",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1.15,
+            "y": 1.15,
+            "z": 1.15
+          }
+        },
+        {
+          "id": "deep1-11",
+          "name": "Beta signal engine",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        },
+        {
+          "id": "deep1-12",
+          "name": "Gamma archive stack",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "collision-stop-4",
+      "title": "Signal Relay",
+      "text": "Health 79 / 100\nRestore power at all three relay consoles\nWeapon 8/18\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 41.529100000024144,
+      "playtime": 41.529100000024144,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 79,
+        "consolesPowered": 2,
+        "kills": 1
+      },
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": 7.375,
+          "y": 0.55,
+          "z": -5.726935207801646
+        },
+        "forward": {
+          "x": 0.9999970934936153,
+          "y": 0,
+          "z": 0.0024110172794278295
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 7.375,
+          "y": 1.15,
+          "z": -5.726935207801646
+        },
+        "target": {
+          "x": 8.374997093493615,
+          "y": 1.15,
+          "z": -5.724524190522218
+        },
+        "yaw": -4.714799999999999,
+        "pitch": 0,
+        "sensitivity": 0.0018
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": 7.994347223300596,
+            "y": 0.8799999999999999,
+            "z": -5.455441161845125
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "fixed": {
+          "magazine": 8,
+          "reserve": 18,
+          "reloading": false,
+          "reloadEnd": 26.77840000003605
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj59",
+          "name": "DroneB",
+          "p": {
+            "x": 21.600481661088057,
+            "y": 0.75,
+            "z": 2.555899583622999
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "promo-33",
+          "name": "Facility zone",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-35",
+          "name": "Facility zone",
+          "p": {
+            "x": -9,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-38",
+          "name": "Facility zone",
+          "p": {
+            "x": 17,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-39",
+          "name": "Facility zone",
+          "p": {
+            "x": 26,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "deep1-2",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-3",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-5",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-6",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-8",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-9",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-10",
+          "name": "Alpha analysis wall",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1.15,
+            "y": 1.15,
+            "z": 1.15
+          }
+        },
+        {
+          "id": "deep1-11",
+          "name": "Beta signal engine",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        },
+        {
+          "id": "deep1-12",
+          "name": "Gamma archive stack",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "gamma-console",
+      "title": "Signal Relay",
+      "text": "Health 79 / 100\nRestore power at all three relay consoles\nWeapon 8/18\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 42.296600000024135,
+      "playtime": 42.296600000024135,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 79,
+        "consolesPowered": 2,
+        "kills": 1
+      },
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": 7.375,
+          "y": 0.55,
+          "z": -5.721966414943758
+        },
+        "forward": {
+          "x": 0.9998094183651344,
+          "y": 0.0035999922240050383,
+          "z": -0.01918767845151348
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 7.375,
+          "y": 1.15,
+          "z": -5.721966414943758
+        },
+        "target": {
+          "x": 8.374809418365134,
+          "y": 1.153599992224005,
+          "z": -5.741154093395271
+        },
+        "yaw": -4.693199999999999,
+        "pitch": -0.0036,
+        "sensitivity": 0.0018
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": 8.001034365092147,
+            "y": 0.8822337447769935,
+            "z": -5.46393113385313
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "fixed": {
+          "magazine": 8,
+          "reserve": 18,
+          "reloading": false,
+          "reloadEnd": 26.77840000003605
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj59",
+          "name": "DroneB",
+          "p": {
+            "x": 22.309836492772742,
+            "y": 0.75,
+            "z": 2.98479747262589
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "promo-33",
+          "name": "Facility zone",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-35",
+          "name": "Facility zone",
+          "p": {
+            "x": -9,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-38",
+          "name": "Facility zone",
+          "p": {
+            "x": 17,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-39",
+          "name": "Facility zone",
+          "p": {
+            "x": 26,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "deep1-2",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-3",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-5",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-6",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-8",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-9",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-10",
+          "name": "Alpha analysis wall",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1.15,
+            "y": 1.15,
+            "z": 1.15
+          }
+        },
+        {
+          "id": "deep1-11",
+          "name": "Beta signal engine",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        },
+        {
+          "id": "deep1-12",
+          "name": "Gamma archive stack",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "collision-stop-5",
+      "title": "Signal Relay",
+      "text": "Health 79 / 100\nRestore power at all three relay consoles\nWeapon 8/18\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 44.19880000001215,
+      "playtime": 44.19880000001215,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 79,
+        "consolesPowered": 2,
+        "kills": 1
+      },
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": 7.375,
+          "y": 0.55,
+          "z": -5.6996087243651505
+        },
+        "forward": {
+          "x": 0.9999970934936153,
+          "y": 0,
+          "z": 0.0024110172794278295
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 7.375,
+          "y": 1.15,
+          "z": -5.6996087243651505
+        },
+        "target": {
+          "x": 8.374997093493615,
+          "y": 1.15,
+          "z": -5.6971977070857225
+        },
+        "yaw": -4.714799999999999,
+        "pitch": 0,
+        "sensitivity": 0.0018
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": 7.994347223300596,
+            "y": 0.8799999999999999,
+            "z": -5.42811467840863
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "fixed": {
+          "magazine": 8,
+          "reserve": 18,
+          "reloading": false,
+          "reloadEnd": 26.77840000003605
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj59",
+          "name": "DroneB",
+          "p": {
+            "x": 24.285677504347998,
+            "y": 0.75,
+            "z": 3.673472833969971
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "promo-33",
+          "name": "Facility zone",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-35",
+          "name": "Facility zone",
+          "p": {
+            "x": -9,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-38",
+          "name": "Facility zone",
+          "p": {
+            "x": 17,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-39",
+          "name": "Facility zone",
+          "p": {
+            "x": 26,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "deep1-2",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-3",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-5",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-6",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-8",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-9",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-10",
+          "name": "Alpha analysis wall",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1.15,
+            "y": 1.15,
+            "z": 1.15
+          }
+        },
+        {
+          "id": "deep1-11",
+          "name": "Beta signal engine",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        },
+        {
+          "id": "deep1-12",
+          "name": "Gamma archive stack",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "collision-stop-6",
+      "title": "Signal Relay",
+      "text": "Health 79 / 100\nRestore power at all three relay consoles\nWeapon 8/18\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 45.98419999998828,
+      "playtime": 45.98419999998828,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 79,
+        "consolesPowered": 2,
+        "kills": 1
+      },
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": 7.375,
+          "y": 0.55,
+          "z": -5.6749657940455664
+        },
+        "forward": {
+          "x": 0.9999970934936153,
+          "y": 0,
+          "z": 0.0024110172794278295
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 7.375,
+          "y": 1.15,
+          "z": -5.6749657940455664
+        },
+        "target": {
+          "x": 8.374997093493615,
+          "y": 1.15,
+          "z": -5.672554776766138
+        },
+        "yaw": -4.714799999999999,
+        "pitch": 0,
+        "sensitivity": 0.0018
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": 7.994347223300596,
+            "y": 0.8799999999999999,
+            "z": -5.4034717480890455
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "fixed": {
+          "magazine": 8,
+          "reserve": 18,
+          "reloading": false,
+          "reloadEnd": 26.77840000003605
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj59",
+          "name": "DroneB",
+          "p": {
+            "x": 23.911523765995437,
+            "y": 0.75,
+            "z": 3.873914322867498
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "promo-33",
+          "name": "Facility zone",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-35",
+          "name": "Facility zone",
+          "p": {
+            "x": -9,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-38",
+          "name": "Facility zone",
+          "p": {
+            "x": 17,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-39",
+          "name": "Facility zone",
+          "p": {
+            "x": 26,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "deep1-2",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-3",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-5",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-6",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-8",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-9",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-10",
+          "name": "Alpha analysis wall",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1.15,
+            "y": 1.15,
+            "z": 1.15
+          }
+        },
+        {
+          "id": "deep1-11",
+          "name": "Beta signal engine",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        },
+        {
+          "id": "deep1-12",
+          "name": "Gamma archive stack",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ],
+      "helpers": []
+    },
+    {
+      "label": "extraction-attempt",
+      "title": "Signal Relay",
+      "text": "Health 79 / 100\nRestore power at all three relay consoles\nWeapon 8/18\nPress F to interact\nThree relays to restore • F interact • C move quietly",
+      "sim": 58.631600000023745,
+      "playtime": 58.631600000023745,
+      "ended": false,
+      "paused": false,
+      "overlay": {
+        "classes": "",
+        "title": ""
+      },
+      "state": {
+        "maxHealth": 100,
+        "health": 79,
+        "consolesPowered": 2,
+        "kills": 1
+      },
+      "objectives": {
+        "obj_restore_power": "active"
+      },
+      "inventory": {
+        "Relay sidearm": 1
+      },
+      "player": {
+        "position": {
+          "x": 14.1,
+          "y": 0.55,
+          "z": -0.1864250838223071
+        },
+        "forward": {
+          "x": 0.9998873367606189,
+          "y": 0,
+          "z": 0.01501045588104144
+        },
+        "visible": false,
+        "radius": 0.4
+      },
+      "camera": {
+        "eye": {
+          "x": 14.1,
+          "y": 1.15,
+          "z": -0.1864250838223071
+        },
+        "target": {
+          "x": 15.099887336760618,
+          "y": 1.15,
+          "z": -0.17141462794126566
+        },
+        "yaw": -4.727399999999998,
+        "pitch": 0,
+        "sensitivity": 0.0018
+      },
+      "pointerLocked": true,
+      "activeSlot": "primaryHand",
+      "equipment": [
+        {
+          "slot": "primaryHand",
+          "name": "Relay sidearm",
+          "entity": true,
+          "visible": true,
+          "destroyed": false,
+          "position": {
+            "x": 14.715877325703701,
+            "y": 0.8799999999999999,
+            "z": 0.0928509797493057
+          }
+        }
+      ],
+      "weaponRuntime": {
+        "fixed": {
+          "magazine": 8,
+          "reserve": 18,
+          "reloading": false,
+          "reloadEnd": 26.77840000003605
+        }
+      },
+      "enemies": [
+        {
+          "id": "obj59",
+          "name": "DroneB",
+          "p": {
+            "x": 22.557985121321813,
+            "y": 0.75,
+            "z": 3.413523754323552
+          },
+          "tags": [
+            "enemy"
+          ],
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 0.9
+          }
+        }
+      ],
+      "interactables": [
+        {
+          "id": "obj55",
+          "name": "ConsoleBeta",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        },
+        {
+          "id": "obj56",
+          "name": "ConsoleGamma",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": false
+          }
+        },
+        {
+          "id": "obj57",
+          "name": "ConsoleAlpha",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "variables": {
+            "powered": true
+          }
+        }
+      ],
+      "solids": [
+        {
+          "id": "obj45",
+          "name": "Floor",
+          "p": {
+            "x": 5,
+            "y": -0.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 80,
+            "y": 1,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj46",
+          "name": "WallNorth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": -10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj47",
+          "name": "WallSouth",
+          "p": {
+            "x": 5,
+            "y": 2.5,
+            "z": 10
+          },
+          "scale": {
+            "x": 80,
+            "y": 5,
+            "z": 1
+          }
+        },
+        {
+          "id": "obj48",
+          "name": "WallWest",
+          "p": {
+            "x": -35,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj49",
+          "name": "WallEast",
+          "p": {
+            "x": 45,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "obj50",
+          "name": "DividerEntry",
+          "p": {
+            "x": -20,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj51",
+          "name": "DividerHubA",
+          "p": {
+            "x": -5,
+            "y": 2.5,
+            "z": -3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj52",
+          "name": "DividerHubB",
+          "p": {
+            "x": 15,
+            "y": 2.5,
+            "z": 3
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 14
+          }
+        },
+        {
+          "id": "obj53",
+          "name": "SecurityGate",
+          "p": {
+            "x": 30,
+            "y": 2.5,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 5,
+            "z": 20
+          }
+        },
+        {
+          "id": "rehab-92",
+          "name": "Cargo cover",
+          "p": {
+            "x": -29,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-93",
+          "name": "Cargo cover",
+          "p": {
+            "x": -13,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-94",
+          "name": "Cargo cover",
+          "p": {
+            "x": 8,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "rehab-95",
+          "name": "Cargo cover",
+          "p": {
+            "x": 24,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 1.5
+          }
+        },
+        {
+          "id": "promo-33",
+          "name": "Facility zone",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "promo-35",
+          "name": "Facility zone",
+          "p": {
+            "x": -9,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-38",
+          "name": "Facility zone",
+          "p": {
+            "x": 17,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2,
+            "z": 1.2
+          }
+        },
+        {
+          "id": "promo-39",
+          "name": "Facility zone",
+          "p": {
+            "x": 26,
+            "y": 0,
+            "z": -6
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        },
+        {
+          "id": "deep1-2",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-3",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": -18,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-5",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-6",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 8,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-8",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": -7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-9",
+          "name": "Threshold bulkhead",
+          "p": {
+            "x": 28,
+            "y": 2.1,
+            "z": 7.7
+          },
+          "scale": {
+            "x": 0.45,
+            "y": 4.2,
+            "z": 4.6
+          }
+        },
+        {
+          "id": "deep1-10",
+          "name": "Alpha analysis wall",
+          "p": {
+            "x": -25,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1.15,
+            "y": 1.15,
+            "z": 1.15
+          }
+        },
+        {
+          "id": "deep1-11",
+          "name": "Beta signal engine",
+          "p": {
+            "x": 2,
+            "y": 0,
+            "z": 5
+          },
+          "scale": {
+            "x": 1.1,
+            "y": 1.1,
+            "z": 1.1
+          }
+        },
+        {
+          "id": "deep1-12",
+          "name": "Gamma archive stack",
+          "p": {
+            "x": 22,
+            "y": 0,
+            "z": 5.8
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          }
+        }
+      ],
+      "helpers": []
+    }
+  ],
+  "observations": [
+    {
+      "type": "collision-stop",
+      "destination": [
+        -14,
+        -6.8
+      ],
+      "position": {
+        "x": -18.625,
+        "y": 0.55,
+        "z": -6.774563311811941
+      },
+      "sim": 9.210300000011914
+    },
+    {
+      "type": "combat-attempt",
+      "enemy": "obj58",
+      "endHealth": 0,
+      "sim": 21.69069999998823
+    },
+    {
+      "type": "collision-stop",
+      "destination": [
+        20,
+        -6.7
+      ],
+      "position": {
+        "x": 7.375,
+        "y": 0.55,
+        "z": -6.702248430368203
+      },
+      "sim": 34.8216999999885
+    },
+    {
+      "type": "collision-stop",
+      "destination": [
+        22,
+        -5.7
+      ],
+      "position": {
+        "x": 7.375,
+        "y": 0.55,
+        "z": -5.727173780189979
+      },
+      "sim": 41.51260000002414
+    },
+    {
+      "type": "collision-stop",
+      "destination": [
+        27,
+        -5.7
+      ],
+      "position": {
+        "x": 7.375,
+        "y": 0.55,
+        "z": -5.6998392465290495
+      },
+      "sim": 44.182199999988306
+    },
+    {
+      "type": "collision-stop",
+      "destination": [
+        33,
+        -5.7
+      ],
+      "position": {
+        "x": 7.375,
+        "y": 0.55,
+        "z": -5.6752069418915365
+      },
+      "sim": 45.9675000000002
+    },
+    {
+      "type": "waypoint-not-reached",
+      "destination": [
+        38,
+        0
+      ],
+      "position": {
+        "x": 14.1,
+        "y": 0.55,
+        "z": -0.18787714310697945
+      },
+      "sim": 58.614800000011826
+    }
+  ],
+  "finishedAt": "2026-09-11T17:17:59.066Z",
+  "outcome": "No ending reached"
+}

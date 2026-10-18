@@ -1,0 +1,504 @@
+{
+  "phase": 36,
+  "purpose": "endurance closure",
+  "runId": "phase-036-endurance-closure-20260917T105609Z",
+  "baselineHead": "f1dc3516b585ebf5aa868006792c1dc1b9039da9",
+  "branch": "main",
+  "workerPid": 28356,
+  "startTimestamp": "2026-09-17T10:56:09.466Z",
+  "latestHeartbeatTimestamp": "2026-09-17T16:56:48.826Z",
+  "endTimestamp": "2026-09-17T16:56:48.829Z",
+  "targetSeconds": 21630,
+  "elapsedSeconds": 21639.369,
+  "status": "PHASE_036_TERRAIN_BRUSHES_READY",
+  "cycles": 40956,
+  "modelOperations": 6593944,
+  "weightedResolutions": 723425435,
+  "autoTileResolutions": 501759,
+  "terrainTransitions": 40956,
+  "serializeLoadCycles": 1640,
+  "undoRedoOperations": 16384,
+  "browserCycles": 14,
+  "editableExportCycles": 14,
+  "playableExportCycles": 14,
+  "memoryObservations": 41,
+  "transientLockCount": 0,
+  "semanticMismatches": 0,
+  "crashes": 0,
+  "unresolvedFailures": [],
+  "ownedProcesses": [
+    {
+      "pid": 28356,
+      "kind": "worker",
+      "command": "node tools/audit-phase-036-endurance-closure.js"
+    }
+  ],
+  "actualElapsedSeconds": 21639.369,
+  "qualifying": true,
+  "heartbeatCount": 37,
+  "midpoint": {
+    "timestamp": "2026-09-17T13:56:17.732Z",
+    "elapsedSeconds": 10808.274,
+    "cycles": 22976,
+    "modelOperations": 3699136,
+    "weightedResolutions": 349176568,
+    "autoTileResolutions": 281456,
+    "terrainTransitions": 22976,
+    "serializeLoadCycles": 920,
+    "undoRedoOperations": 9192,
+    "browserCycles": 7,
+    "editableExportCycles": 7,
+    "playableExportCycles": 7,
+    "heartbeatCount": 18,
+    "semanticChecksum": "7d096977",
+    "cellCounts": {
+      "ground": 135694,
+      "detail": 80867
+    },
+    "memory": {
+      "label": "midpoint",
+      "timestamp": "2026-09-17T13:56:17.732Z",
+      "elapsedSeconds": 10808.274,
+      "rssBytes": 703070208,
+      "heapUsedBytes": 157221088,
+      "heapTotalBytes": 297963520,
+      "externalBytes": 2163043
+    },
+    "failures": []
+  },
+  "finalHour": {
+    "timestamp": "2026-09-17T15:56:16.779Z",
+    "elapsedSeconds": 18007.312,
+    "cycles": 35057,
+    "modelOperations": 5644433,
+    "weightedResolutions": 599425729,
+    "autoTileResolutions": 429608,
+    "terrainTransitions": 35057,
+    "serializeLoadCycles": 1403,
+    "undoRedoOperations": 14024,
+    "browserCycles": 11,
+    "editableExportCycles": 11,
+    "playableExportCycles": 11,
+    "heartbeatCount": 30,
+    "semanticChecksum": "178767db",
+    "cellCounts": {
+      "ground": 154126,
+      "detail": 82383
+    },
+    "memory": {
+      "label": "final-hour",
+      "timestamp": "2026-09-17T15:56:16.779Z",
+      "elapsedSeconds": 18007.312,
+      "rssBytes": 751693824,
+      "heapUsedBytes": 289016112,
+      "heapTotalBytes": 379613184,
+      "externalBytes": 2163043
+    },
+    "failures": []
+  },
+  "memory": {
+    "observations": [
+      {
+        "label": "start",
+        "timestamp": "2026-09-17T10:56:09.469Z",
+        "elapsedSeconds": 0.002,
+        "rssBytes": 42024960,
+        "heapUsedBytes": 6036488,
+        "heapTotalBytes": 7352320,
+        "externalBytes": 2134330
+      },
+      {
+        "label": "heartbeat-1",
+        "timestamp": "2026-09-17T10:56:17.283Z",
+        "elapsedSeconds": 7.817,
+        "rssBytes": 43393024,
+        "heapUsedBytes": 5685144,
+        "heapTotalBytes": 8400896,
+        "externalBytes": 2165679
+      },
+      {
+        "label": "heartbeat-2",
+        "timestamp": "2026-09-17T11:06:17.466Z",
+        "elapsedSeconds": 608.007,
+        "rssBytes": 316137472,
+        "heapUsedBytes": 88530288,
+        "heapTotalBytes": 199983104,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-3",
+        "timestamp": "2026-09-17T11:16:17.503Z",
+        "elapsedSeconds": 1208.035,
+        "rssBytes": 428232704,
+        "heapUsedBytes": 122946368,
+        "heapTotalBytes": 223309824,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-4",
+        "timestamp": "2026-09-17T11:26:27.648Z",
+        "elapsedSeconds": 1818.18,
+        "rssBytes": 444907520,
+        "heapUsedBytes": 115953544,
+        "heapTotalBytes": 231866368,
+        "externalBytes": 2163043
+      },
+      {
+        "label": "heartbeat-5",
+        "timestamp": "2026-09-17T11:36:27.794Z",
+        "elapsedSeconds": 2418.327,
+        "rssBytes": 536371200,
+        "heapUsedBytes": 174598824,
+        "heapTotalBytes": 292380672,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-6",
+        "timestamp": "2026-09-17T11:46:28.013Z",
+        "elapsedSeconds": 3018.545,
+        "rssBytes": 523763712,
+        "heapUsedBytes": 100744704,
+        "heapTotalBytes": 223772672,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-7",
+        "timestamp": "2026-09-17T11:56:38.044Z",
+        "elapsedSeconds": 3628.587,
+        "rssBytes": 547074048,
+        "heapUsedBytes": 82307288,
+        "heapTotalBytes": 215724032,
+        "externalBytes": 2163043
+      },
+      {
+        "label": "heartbeat-8",
+        "timestamp": "2026-09-17T12:06:38.310Z",
+        "elapsedSeconds": 4228.849,
+        "rssBytes": 597762048,
+        "heapUsedBytes": 232341168,
+        "heapTotalBytes": 331722752,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-9",
+        "timestamp": "2026-09-17T12:16:38.622Z",
+        "elapsedSeconds": 4829.156,
+        "rssBytes": 619364352,
+        "heapUsedBytes": 142803480,
+        "heapTotalBytes": 273678336,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-10",
+        "timestamp": "2026-09-17T12:26:46.169Z",
+        "elapsedSeconds": 5436.703,
+        "rssBytes": 727166976,
+        "heapUsedBytes": 253836048,
+        "heapTotalBytes": 355348480,
+        "externalBytes": 2163043
+      },
+      {
+        "label": "heartbeat-11",
+        "timestamp": "2026-09-17T12:36:46.484Z",
+        "elapsedSeconds": 6037.019,
+        "rssBytes": 706662400,
+        "heapUsedBytes": 189522344,
+        "heapTotalBytes": 272445440,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-12",
+        "timestamp": "2026-09-17T12:46:47.591Z",
+        "elapsedSeconds": 6638.136,
+        "rssBytes": 725868544,
+        "heapUsedBytes": 341390184,
+        "heapTotalBytes": 415158272,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-13",
+        "timestamp": "2026-09-17T12:56:54.231Z",
+        "elapsedSeconds": 7244.773,
+        "rssBytes": 672481280,
+        "heapUsedBytes": 137981168,
+        "heapTotalBytes": 236003328,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-14",
+        "timestamp": "2026-09-17T13:06:54.784Z",
+        "elapsedSeconds": 7845.316,
+        "rssBytes": 704290816,
+        "heapUsedBytes": 315214568,
+        "heapTotalBytes": 402632704,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-15",
+        "timestamp": "2026-09-17T13:16:54.904Z",
+        "elapsedSeconds": 8445.438,
+        "rssBytes": 684527616,
+        "heapUsedBytes": 83266976,
+        "heapTotalBytes": 245985280,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-16",
+        "timestamp": "2026-09-17T13:27:01.484Z",
+        "elapsedSeconds": 9052.017,
+        "rssBytes": 689713152,
+        "heapUsedBytes": 82091048,
+        "heapTotalBytes": 246849536,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-17",
+        "timestamp": "2026-09-17T13:37:01.622Z",
+        "elapsedSeconds": 9652.156,
+        "rssBytes": 718286848,
+        "heapUsedBytes": 235804360,
+        "heapTotalBytes": 352739328,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-18",
+        "timestamp": "2026-09-17T13:47:01.998Z",
+        "elapsedSeconds": 10252.536,
+        "rssBytes": 739422208,
+        "heapUsedBytes": 350457304,
+        "heapTotalBytes": 442191872,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "midpoint",
+        "timestamp": "2026-09-17T13:56:17.732Z",
+        "elapsedSeconds": 10808.274,
+        "rssBytes": 703070208,
+        "heapUsedBytes": 157221088,
+        "heapTotalBytes": 297963520,
+        "externalBytes": 2163043
+      },
+      {
+        "label": "heartbeat-19",
+        "timestamp": "2026-09-17T13:57:03.132Z",
+        "elapsedSeconds": 10853.674,
+        "rssBytes": 680927232,
+        "heapUsedBytes": 176484328,
+        "heapTotalBytes": 306044928,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-20",
+        "timestamp": "2026-09-17T14:07:03.419Z",
+        "elapsedSeconds": 11453.961,
+        "rssBytes": 712019968,
+        "heapUsedBytes": 157753984,
+        "heapTotalBytes": 254726144,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-21",
+        "timestamp": "2026-09-17T14:17:03.950Z",
+        "elapsedSeconds": 12054.494,
+        "rssBytes": 709222400,
+        "heapUsedBytes": 184038560,
+        "heapTotalBytes": 311775232,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-22",
+        "timestamp": "2026-09-17T14:27:06.450Z",
+        "elapsedSeconds": 12656.986,
+        "rssBytes": 694996992,
+        "heapUsedBytes": 145726152,
+        "heapTotalBytes": 265068544,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-23",
+        "timestamp": "2026-09-17T14:37:06.513Z",
+        "elapsedSeconds": 13257.057,
+        "rssBytes": 699043840,
+        "heapUsedBytes": 234219352,
+        "heapTotalBytes": 321875968,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-24",
+        "timestamp": "2026-09-17T14:47:08.934Z",
+        "elapsedSeconds": 13859.477,
+        "rssBytes": 743522304,
+        "heapUsedBytes": 313908432,
+        "heapTotalBytes": 415961088,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-25",
+        "timestamp": "2026-09-17T14:57:09.025Z",
+        "elapsedSeconds": 14459.558,
+        "rssBytes": 696492032,
+        "heapUsedBytes": 117479728,
+        "heapTotalBytes": 236642304,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-26",
+        "timestamp": "2026-09-17T15:07:09.656Z",
+        "elapsedSeconds": 15060.188,
+        "rssBytes": 734093312,
+        "heapUsedBytes": 282510888,
+        "heapTotalBytes": 403554304,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-27",
+        "timestamp": "2026-09-17T15:17:09.841Z",
+        "elapsedSeconds": 15660.378,
+        "rssBytes": 725549056,
+        "heapUsedBytes": 324156736,
+        "heapTotalBytes": 407601152,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-28",
+        "timestamp": "2026-09-17T15:27:11.263Z",
+        "elapsedSeconds": 16261.808,
+        "rssBytes": 753647616,
+        "heapUsedBytes": 318477296,
+        "heapTotalBytes": 420970496,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-29",
+        "timestamp": "2026-09-17T15:37:11.584Z",
+        "elapsedSeconds": 16862.116,
+        "rssBytes": 698875904,
+        "heapUsedBytes": 98574608,
+        "heapTotalBytes": 232914944,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-30",
+        "timestamp": "2026-09-17T15:47:12.211Z",
+        "elapsedSeconds": 17462.743,
+        "rssBytes": 722550784,
+        "heapUsedBytes": 289945384,
+        "heapTotalBytes": 386805760,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "final-hour",
+        "timestamp": "2026-09-17T15:56:16.779Z",
+        "elapsedSeconds": 18007.312,
+        "rssBytes": 751693824,
+        "heapUsedBytes": 289016112,
+        "heapTotalBytes": 379613184,
+        "externalBytes": 2163043
+      },
+      {
+        "label": "heartbeat-31",
+        "timestamp": "2026-09-17T15:57:14.148Z",
+        "elapsedSeconds": 18064.681,
+        "rssBytes": 693989376,
+        "heapUsedBytes": 91861264,
+        "heapTotalBytes": 223449088,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-32",
+        "timestamp": "2026-09-17T16:07:14.450Z",
+        "elapsedSeconds": 18664.988,
+        "rssBytes": 776744960,
+        "heapUsedBytes": 328802552,
+        "heapTotalBytes": 405929984,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-33",
+        "timestamp": "2026-09-17T16:17:14.597Z",
+        "elapsedSeconds": 19265.129,
+        "rssBytes": 719405056,
+        "heapUsedBytes": 205132144,
+        "heapTotalBytes": 337432576,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-34",
+        "timestamp": "2026-09-17T16:27:14.715Z",
+        "elapsedSeconds": 19865.254,
+        "rssBytes": 749924352,
+        "heapUsedBytes": 236016384,
+        "heapTotalBytes": 326807552,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-35",
+        "timestamp": "2026-09-17T16:37:15.169Z",
+        "elapsedSeconds": 20465.712,
+        "rssBytes": 788766720,
+        "heapUsedBytes": 332993928,
+        "heapTotalBytes": 425955328,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-36",
+        "timestamp": "2026-09-17T16:47:16.011Z",
+        "elapsedSeconds": 21066.543,
+        "rssBytes": 765218816,
+        "heapUsedBytes": 275367256,
+        "heapTotalBytes": 374693888,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "heartbeat-37",
+        "timestamp": "2026-09-17T16:56:48.763Z",
+        "elapsedSeconds": 21639.302,
+        "rssBytes": 714268672,
+        "heapUsedBytes": 82010144,
+        "heapTotalBytes": 228986880,
+        "externalBytes": 2163005
+      },
+      {
+        "label": "finish",
+        "timestamp": "2026-09-17T16:56:48.829Z",
+        "elapsedSeconds": 21639.369,
+        "rssBytes": 728678400,
+        "heapUsedBytes": 141531200,
+        "heapTotalBytes": 243204096,
+        "externalBytes": 2163005
+      }
+    ],
+    "assessment": "BOUNDED_OBSERVATION_ONLY"
+  },
+  "semanticFailures": [],
+  "processCleanup": {
+    "workerPid": 28356,
+    "browserAuditOwnsAndCleansChildren": true,
+    "expectedOrphans": 0,
+    "observedOrphans": 0
+  },
+  "postClosureChecks": {
+    "phase036": { "passed": 102, "failed": 0 },
+    "phase011Through036": { "passed": 1480, "failed": 0 },
+    "integrated": { "passed": 1842, "failed": 0 },
+    "showcase": { "passed": 15, "failed": 0 },
+    "publicSiteIntegration": { "passed": 1, "failed": 0, "publicGames": 28 },
+    "engineBuild": { "status": "PASS", "bytes": 166134, "gzipBytes": 42573, "sources": 22, "byteDelta": 0 },
+    "gamesBuild": { "status": "PASS", "built": 28, "expected": 28 },
+    "engineSite": { "status": "PASS", "publicGames": 28, "editorPackageKB": 1786 },
+    "gamesSite": { "status": "PASS", "publicGames": 28 },
+    "diffCheck": "PASS_WITH_EXISTING_LINE_ENDING_WARNINGS",
+    "syntaxChecks": "PASS",
+    "capabilityValidation": "PASS",
+    "frictionValidation": "PASS",
+    "externalRequests": 0,
+    "consoleErrors": 0,
+    "pageErrors": 0,
+    "dirtyWorktreePreserved": true,
+    "phase037Implemented": false
+  },
+  "previousNonqualifyingRun": {
+    "elapsedSeconds": 60.025,
+    "preservedAt": "phase-036-endurance.json"
+  }
+}

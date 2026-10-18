@@ -1,0 +1,3990 @@
+{
+  "content": {
+    "blobs": [
+      {
+        "base64": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADElEQVR42mNk+M/wHwAF/gL+XZR5WQAAAABJRU5ErkJggg==",
+        "id": "sha256-17dea3851f35167568a1a96ecde4cdea16021c24a5ce23f509fc41544844dbdb",
+        "mimeType": "image/png",
+        "sha256": "17dea3851f35167568a1a96ecde4cdea16021c24a5ce23f509fc41544844dbdb"
+      }
+    ],
+    "dependencies": {
+      "audio": [],
+      "meshAssets": [],
+      "prefabs": [
+        {
+          "name": "Dogfood Boss",
+          "record": {
+            "behaviors": [
+              {
+                "action": "customScript",
+                "params": {
+                  "code": "/* imported as untrusted data */"
+                },
+                "trigger": "start"
+              }
+            ],
+            "components": {
+              "sprite-renderer": {
+                "animationStates": [],
+                "flipX": false,
+                "flipY": false,
+                "height": 0.125,
+                "initialAnimationStateRef": null,
+                "initialDirection": "none",
+                "opacity": 1,
+                "orderInLayer": 0,
+                "parallaxLayerRef": null,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "playOnStart": false,
+                "renderMode": "simple",
+                "sortingLayerRef": "world",
+                "sourceTexture": null,
+                "spriteAssetRef": "sprite-9",
+                "tint": "#ffffff",
+                "version": 9,
+                "visible": true,
+                "width": 0.125
+              }
+            },
+            "id": "boss-source",
+            "kind": "sprite"
+          }
+        },
+        {
+          "name": "Dogfood Elite",
+          "record": {
+            "behaviors": [
+              {
+                "action": "spawn",
+                "params": {
+                  "prefabName": "Dogfood Enemy"
+                },
+                "trigger": "start"
+              }
+            ],
+            "id": "elite-source",
+            "kind": "cube",
+            "sourcePrefabName": "Dogfood Enemy"
+          }
+        },
+        {
+          "name": "Dogfood Enemy",
+          "record": {
+            "components": {
+              "sprite-renderer": {
+                "animationStates": [],
+                "flipX": false,
+                "flipY": false,
+                "height": 0.125,
+                "initialAnimationStateRef": null,
+                "initialDirection": "none",
+                "opacity": 1,
+                "orderInLayer": 0,
+                "parallaxLayerRef": null,
+                "pivotX": 0.5,
+                "pivotY": 0.5,
+                "playOnStart": false,
+                "renderMode": "simple",
+                "sortingLayerRef": "world",
+                "sourceTexture": null,
+                "spriteAssetRef": "sprite-0",
+                "tint": "#ffffff",
+                "version": 9,
+                "visible": true,
+                "width": 0.125
+              }
+            },
+            "id": "enemy-source",
+            "kind": "sprite"
+          }
+        }
+      ],
+      "sortingLayers": [
+        {
+          "id": "world",
+          "name": "World",
+          "order": 4
+        }
+      ],
+      "spriteAnimations": [],
+      "spriteAssets": [
+        {
+          "filtering": "nearest",
+          "id": "sprite-0",
+          "name": "Dogfood Sprite 0",
+          "nineSlice": null,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "pixelsPerUnit": 8,
+          "sourceRect": null,
+          "sourceTexture": "atlas-a",
+          "type": "sprite",
+          "version": 4
+        },
+        {
+          "filtering": "nearest",
+          "id": "sprite-1",
+          "name": "Dogfood Sprite 1",
+          "nineSlice": null,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "pixelsPerUnit": 8,
+          "sourceRect": null,
+          "sourceTexture": "atlas-a",
+          "type": "sprite",
+          "version": 4
+        },
+        {
+          "filtering": "nearest",
+          "id": "sprite-2",
+          "name": "Dogfood Sprite 2",
+          "nineSlice": null,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "pixelsPerUnit": 8,
+          "sourceRect": null,
+          "sourceTexture": "atlas-a",
+          "type": "sprite",
+          "version": 4
+        },
+        {
+          "filtering": "nearest",
+          "id": "sprite-3",
+          "name": "Dogfood Sprite 3",
+          "nineSlice": null,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "pixelsPerUnit": 8,
+          "sourceRect": null,
+          "sourceTexture": "atlas-a",
+          "type": "sprite",
+          "version": 4
+        },
+        {
+          "filtering": "nearest",
+          "id": "sprite-4",
+          "name": "Dogfood Sprite 4",
+          "nineSlice": null,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "pixelsPerUnit": 8,
+          "sourceRect": null,
+          "sourceTexture": "atlas-a",
+          "type": "sprite",
+          "version": 4
+        },
+        {
+          "filtering": "nearest",
+          "id": "sprite-5",
+          "name": "Dogfood Sprite 5",
+          "nineSlice": null,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "pixelsPerUnit": 8,
+          "sourceRect": null,
+          "sourceTexture": "atlas-b",
+          "type": "sprite",
+          "version": 4
+        },
+        {
+          "filtering": "nearest",
+          "id": "sprite-6",
+          "name": "Dogfood Sprite 6",
+          "nineSlice": null,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "pixelsPerUnit": 8,
+          "sourceRect": null,
+          "sourceTexture": "atlas-b",
+          "type": "sprite",
+          "version": 4
+        },
+        {
+          "filtering": "nearest",
+          "id": "sprite-7",
+          "name": "Dogfood Sprite 7",
+          "nineSlice": null,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "pixelsPerUnit": 8,
+          "sourceRect": null,
+          "sourceTexture": "atlas-b",
+          "type": "sprite",
+          "version": 4
+        },
+        {
+          "filtering": "nearest",
+          "id": "sprite-8",
+          "name": "Dogfood Sprite 8",
+          "nineSlice": null,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "pixelsPerUnit": 8,
+          "sourceRect": null,
+          "sourceTexture": "atlas-b",
+          "type": "sprite",
+          "version": 4
+        },
+        {
+          "filtering": "nearest",
+          "id": "sprite-9",
+          "name": "Dogfood Sprite 9",
+          "nineSlice": null,
+          "pivot": [
+            0.5,
+            0.5
+          ],
+          "pixelsPerUnit": 8,
+          "sourceRect": null,
+          "sourceTexture": "atlas-b",
+          "type": "sprite",
+          "version": 4
+        }
+      ],
+      "textures": [
+        {
+          "blobRef": "sha256-17dea3851f35167568a1a96ecde4cdea16021c24a5ce23f509fc41544844dbdb",
+          "id": "atlas-a",
+          "name": "Dogfood Atlas A"
+        },
+        {
+          "blobRef": "sha256-17dea3851f35167568a1a96ecde4cdea16021c24a5ce23f509fc41544844dbdb",
+          "id": "atlas-b",
+          "name": "Dogfood Atlas B"
+        }
+      ],
+      "tilesets": [
+        {
+          "autoTileSets": [
+            {
+              "defaultTileId": "tile-0",
+              "id": "roads",
+              "name": "Roads",
+              "neighborMode": "four-way",
+              "rules": [
+                {
+                  "mask": 0,
+                  "tileId": "tile-0"
+                },
+                {
+                  "mask": 10,
+                  "tileId": "tile-1"
+                }
+              ]
+            }
+          ],
+          "cellSize": {
+            "height": 1,
+            "width": 1
+          },
+          "id": "dogfood-tileset",
+          "name": "Phase 039 Dogfood Tiles",
+          "terrainBrushes": [
+            {
+              "id": "meadow",
+              "mode": "weighted-tiles",
+              "name": "Meadow",
+              "seed": 39,
+              "variants": [
+                {
+                  "tileId": "tile-2",
+                  "weight": 3
+                },
+                {
+                  "tileId": "tile-3",
+                  "weight": 1
+                }
+              ]
+            },
+            {
+              "autoTileSetId": "roads",
+              "id": "connected-meadow",
+              "mode": "auto-tile",
+              "name": "Connected Meadow",
+              "seed": 0,
+              "variants": []
+            }
+          ],
+          "tiles": [
+            {
+              "collision": {
+                "mode": "none"
+              },
+              "id": "tile-0",
+              "name": "Tile 0",
+              "spriteAssetRef": "sprite-0"
+            },
+            {
+              "collision": {
+                "mode": "full-cell"
+              },
+              "id": "tile-1",
+              "name": "Tile 1",
+              "spriteAssetRef": "sprite-1"
+            },
+            {
+              "collision": {
+                "mode": "full-cell"
+              },
+              "id": "tile-2",
+              "name": "Tile 2",
+              "spriteAssetRef": "sprite-2"
+            },
+            {
+              "collision": {
+                "mode": "none"
+              },
+              "id": "tile-3",
+              "name": "Tile 3",
+              "spriteAssetRef": "sprite-3"
+            },
+            {
+              "collision": {
+                "mode": "full-cell"
+              },
+              "id": "tile-4",
+              "name": "Tile 4",
+              "spriteAssetRef": "sprite-4"
+            },
+            {
+              "collision": {
+                "mode": "full-cell"
+              },
+              "id": "tile-5",
+              "name": "Tile 5",
+              "spriteAssetRef": "sprite-5"
+            },
+            {
+              "collision": {
+                "mode": "none"
+              },
+              "id": "tile-6",
+              "name": "Tile 6",
+              "spriteAssetRef": "sprite-6"
+            },
+            {
+              "collision": {
+                "mode": "full-cell"
+              },
+              "id": "tile-7",
+              "name": "Tile 7",
+              "spriteAssetRef": "sprite-7"
+            },
+            {
+              "collision": {
+                "mode": "full-cell"
+              },
+              "id": "tile-8",
+              "name": "Tile 8",
+              "spriteAssetRef": "sprite-8"
+            },
+            {
+              "collision": {
+                "mode": "none"
+              },
+              "id": "tile-9",
+              "name": "Tile 9",
+              "spriteAssetRef": "sprite-9"
+            }
+          ],
+          "type": "tileset",
+          "version": 4
+        }
+      ]
+    },
+    "root": {
+      "kind": "tilemap",
+      "layers": [
+        {
+          "cells": [
+            {
+              "tileId": "tile-0",
+              "x": -12,
+              "y": -3
+            },
+            {
+              "tileId": "tile-1",
+              "x": -11,
+              "y": -3
+            },
+            {
+              "tileId": "tile-2",
+              "x": -10,
+              "y": -3
+            },
+            {
+              "tileId": "tile-3",
+              "x": -9,
+              "y": -3
+            },
+            {
+              "tileId": "tile-4",
+              "x": -8,
+              "y": -3
+            },
+            {
+              "tileId": "tile-5",
+              "x": -7,
+              "y": -3
+            },
+            {
+              "tileId": "tile-6",
+              "x": -6,
+              "y": -3
+            },
+            {
+              "tileId": "tile-7",
+              "x": -5,
+              "y": -3
+            },
+            {
+              "tileId": "tile-8",
+              "x": -4,
+              "y": -3
+            },
+            {
+              "tileId": "tile-9",
+              "x": -3,
+              "y": -3
+            },
+            {
+              "tileId": "tile-0",
+              "x": -2,
+              "y": -3
+            },
+            {
+              "tileId": "tile-1",
+              "x": -1,
+              "y": -3
+            },
+            {
+              "tileId": "tile-2",
+              "x": 0,
+              "y": -3
+            },
+            {
+              "tileId": "tile-3",
+              "x": 1,
+              "y": -3
+            },
+            {
+              "tileId": "tile-4",
+              "x": 2,
+              "y": -3
+            },
+            {
+              "tileId": "tile-5",
+              "x": 3,
+              "y": -3
+            },
+            {
+              "tileId": "tile-6",
+              "x": 4,
+              "y": -3
+            },
+            {
+              "tileId": "tile-7",
+              "x": 5,
+              "y": -3
+            },
+            {
+              "tileId": "tile-8",
+              "x": 6,
+              "y": -3
+            },
+            {
+              "tileId": "tile-9",
+              "x": 7,
+              "y": -3
+            },
+            {
+              "tileId": "tile-0",
+              "x": 8,
+              "y": -3
+            },
+            {
+              "tileId": "tile-1",
+              "x": 9,
+              "y": -3
+            },
+            {
+              "tileId": "tile-2",
+              "x": 10,
+              "y": -3
+            },
+            {
+              "tileId": "tile-3",
+              "x": 11,
+              "y": -3
+            },
+            {
+              "tileId": "tile-4",
+              "x": -12,
+              "y": -2
+            },
+            {
+              "tileId": "tile-5",
+              "x": -11,
+              "y": -2
+            },
+            {
+              "tileId": "tile-6",
+              "x": -10,
+              "y": -2
+            },
+            {
+              "tileId": "tile-7",
+              "x": -9,
+              "y": -2
+            },
+            {
+              "tileId": "tile-8",
+              "x": -8,
+              "y": -2
+            },
+            {
+              "tileId": "tile-9",
+              "x": -7,
+              "y": -2
+            },
+            {
+              "tileId": "tile-0",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "tileId": "tile-1",
+              "x": -5,
+              "y": -2
+            },
+            {
+              "tileId": "tile-2",
+              "x": -4,
+              "y": -2
+            },
+            {
+              "tileId": "tile-3",
+              "x": -3,
+              "y": -2
+            },
+            {
+              "tileId": "tile-4",
+              "x": -2,
+              "y": -2
+            },
+            {
+              "tileId": "tile-5",
+              "x": -1,
+              "y": -2
+            },
+            {
+              "tileId": "tile-6",
+              "x": 0,
+              "y": -2
+            },
+            {
+              "tileId": "tile-7",
+              "x": 1,
+              "y": -2
+            },
+            {
+              "tileId": "tile-8",
+              "x": 2,
+              "y": -2
+            },
+            {
+              "tileId": "tile-9",
+              "x": 3,
+              "y": -2
+            },
+            {
+              "tileId": "tile-0",
+              "x": 4,
+              "y": -2
+            },
+            {
+              "tileId": "tile-1",
+              "x": 5,
+              "y": -2
+            },
+            {
+              "tileId": "tile-2",
+              "x": 6,
+              "y": -2
+            },
+            {
+              "tileId": "tile-3",
+              "x": 7,
+              "y": -2
+            },
+            {
+              "tileId": "tile-4",
+              "x": 8,
+              "y": -2
+            },
+            {
+              "tileId": "tile-5",
+              "x": 9,
+              "y": -2
+            },
+            {
+              "tileId": "tile-6",
+              "x": 10,
+              "y": -2
+            },
+            {
+              "tileId": "tile-7",
+              "x": 11,
+              "y": -2
+            },
+            {
+              "tileId": "tile-8",
+              "x": -12,
+              "y": -1
+            },
+            {
+              "tileId": "tile-9",
+              "x": -11,
+              "y": -1
+            },
+            {
+              "tileId": "tile-0",
+              "x": -10,
+              "y": -1
+            },
+            {
+              "tileId": "tile-1",
+              "x": -9,
+              "y": -1
+            },
+            {
+              "tileId": "tile-2",
+              "x": -8,
+              "y": -1
+            },
+            {
+              "tileId": "tile-3",
+              "x": -7,
+              "y": -1
+            },
+            {
+              "tileId": "tile-4",
+              "x": -6,
+              "y": -1
+            },
+            {
+              "tileId": "tile-5",
+              "x": -5,
+              "y": -1
+            },
+            {
+              "tileId": "tile-6",
+              "x": -4,
+              "y": -1
+            },
+            {
+              "tileId": "tile-7",
+              "x": -3,
+              "y": -1
+            },
+            {
+              "tileId": "tile-8",
+              "x": -2,
+              "y": -1
+            },
+            {
+              "tileId": "tile-9",
+              "x": -1,
+              "y": -1
+            },
+            {
+              "tileId": "tile-0",
+              "x": 0,
+              "y": -1
+            },
+            {
+              "tileId": "tile-1",
+              "x": 1,
+              "y": -1
+            },
+            {
+              "tileId": "tile-2",
+              "x": 2,
+              "y": -1
+            },
+            {
+              "tileId": "tile-3",
+              "x": 3,
+              "y": -1
+            },
+            {
+              "tileId": "tile-4",
+              "x": 4,
+              "y": -1
+            },
+            {
+              "tileId": "tile-5",
+              "x": 5,
+              "y": -1
+            },
+            {
+              "tileId": "tile-6",
+              "x": 6,
+              "y": -1
+            },
+            {
+              "tileId": "tile-7",
+              "x": 7,
+              "y": -1
+            },
+            {
+              "tileId": "tile-8",
+              "x": 8,
+              "y": -1
+            },
+            {
+              "tileId": "tile-9",
+              "x": 9,
+              "y": -1
+            },
+            {
+              "tileId": "tile-0",
+              "x": 10,
+              "y": -1
+            },
+            {
+              "tileId": "tile-1",
+              "x": 11,
+              "y": -1
+            },
+            {
+              "tileId": "tile-2",
+              "x": -12,
+              "y": 0
+            },
+            {
+              "tileId": "tile-3",
+              "x": -11,
+              "y": 0
+            },
+            {
+              "tileId": "tile-4",
+              "x": -10,
+              "y": 0
+            },
+            {
+              "tileId": "tile-5",
+              "x": -9,
+              "y": 0
+            },
+            {
+              "tileId": "tile-6",
+              "x": -8,
+              "y": 0
+            },
+            {
+              "tileId": "tile-7",
+              "x": -7,
+              "y": 0
+            },
+            {
+              "tileId": "tile-8",
+              "x": -6,
+              "y": 0
+            },
+            {
+              "tileId": "tile-9",
+              "x": -5,
+              "y": 0
+            },
+            {
+              "tileId": "tile-0",
+              "x": -4,
+              "y": 0
+            },
+            {
+              "tileId": "tile-1",
+              "x": -3,
+              "y": 0
+            },
+            {
+              "tileId": "tile-2",
+              "x": -2,
+              "y": 0
+            },
+            {
+              "tileId": "tile-3",
+              "x": -1,
+              "y": 0
+            },
+            {
+              "tileId": "tile-4",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "tileId": "tile-5",
+              "x": 1,
+              "y": 0
+            },
+            {
+              "tileId": "tile-6",
+              "x": 2,
+              "y": 0
+            },
+            {
+              "tileId": "tile-7",
+              "x": 3,
+              "y": 0
+            },
+            {
+              "tileId": "tile-8",
+              "x": 4,
+              "y": 0
+            },
+            {
+              "tileId": "tile-9",
+              "x": 5,
+              "y": 0
+            },
+            {
+              "tileId": "tile-0",
+              "x": 6,
+              "y": 0
+            },
+            {
+              "tileId": "tile-1",
+              "x": 7,
+              "y": 0
+            },
+            {
+              "tileId": "tile-2",
+              "x": 8,
+              "y": 0
+            },
+            {
+              "tileId": "tile-3",
+              "x": 9,
+              "y": 0
+            },
+            {
+              "tileId": "tile-4",
+              "x": 10,
+              "y": 0
+            },
+            {
+              "tileId": "tile-5",
+              "x": 11,
+              "y": 0
+            },
+            {
+              "tileId": "tile-6",
+              "x": -12,
+              "y": 1
+            },
+            {
+              "tileId": "tile-7",
+              "x": -11,
+              "y": 1
+            },
+            {
+              "tileId": "tile-8",
+              "x": -10,
+              "y": 1
+            },
+            {
+              "tileId": "tile-9",
+              "x": -9,
+              "y": 1
+            },
+            {
+              "tileId": "tile-0",
+              "x": -8,
+              "y": 1
+            },
+            {
+              "tileId": "tile-1",
+              "x": -7,
+              "y": 1
+            },
+            {
+              "tileId": "tile-2",
+              "x": -6,
+              "y": 1
+            },
+            {
+              "tileId": "tile-3",
+              "x": -5,
+              "y": 1
+            },
+            {
+              "tileId": "tile-4",
+              "x": -4,
+              "y": 1
+            },
+            {
+              "tileId": "tile-5",
+              "x": -3,
+              "y": 1
+            },
+            {
+              "tileId": "tile-6",
+              "x": -2,
+              "y": 1
+            },
+            {
+              "tileId": "tile-7",
+              "x": -1,
+              "y": 1
+            },
+            {
+              "tileId": "tile-8",
+              "x": 0,
+              "y": 1
+            },
+            {
+              "tileId": "tile-9",
+              "x": 1,
+              "y": 1
+            },
+            {
+              "tileId": "tile-0",
+              "x": 2,
+              "y": 1
+            },
+            {
+              "tileId": "tile-1",
+              "x": 3,
+              "y": 1
+            },
+            {
+              "tileId": "tile-2",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "tileId": "tile-3",
+              "x": 5,
+              "y": 1
+            },
+            {
+              "tileId": "tile-4",
+              "x": 6,
+              "y": 1
+            },
+            {
+              "tileId": "tile-5",
+              "x": 7,
+              "y": 1
+            },
+            {
+              "tileId": "tile-6",
+              "x": 8,
+              "y": 1
+            },
+            {
+              "tileId": "tile-7",
+              "x": 9,
+              "y": 1
+            },
+            {
+              "tileId": "tile-8",
+              "x": 10,
+              "y": 1
+            },
+            {
+              "tileId": "tile-9",
+              "x": 11,
+              "y": 1
+            },
+            {
+              "tileId": "tile-0",
+              "x": -12,
+              "y": 2
+            },
+            {
+              "tileId": "tile-1",
+              "x": -11,
+              "y": 2
+            },
+            {
+              "tileId": "tile-2",
+              "x": -10,
+              "y": 2
+            },
+            {
+              "tileId": "tile-3",
+              "x": -9,
+              "y": 2
+            },
+            {
+              "tileId": "tile-4",
+              "x": -8,
+              "y": 2
+            },
+            {
+              "tileId": "tile-5",
+              "x": -7,
+              "y": 2
+            },
+            {
+              "tileId": "tile-6",
+              "x": -6,
+              "y": 2
+            },
+            {
+              "tileId": "tile-7",
+              "x": -5,
+              "y": 2
+            },
+            {
+              "tileId": "tile-8",
+              "x": -4,
+              "y": 2
+            },
+            {
+              "tileId": "tile-9",
+              "x": -3,
+              "y": 2
+            },
+            {
+              "tileId": "tile-0",
+              "x": -2,
+              "y": 2
+            },
+            {
+              "tileId": "tile-1",
+              "x": -1,
+              "y": 2
+            },
+            {
+              "tileId": "tile-2",
+              "x": 0,
+              "y": 2
+            },
+            {
+              "tileId": "tile-3",
+              "x": 1,
+              "y": 2
+            },
+            {
+              "tileId": "tile-4",
+              "x": 2,
+              "y": 2
+            },
+            {
+              "tileId": "tile-5",
+              "x": 3,
+              "y": 2
+            },
+            {
+              "tileId": "tile-6",
+              "x": 4,
+              "y": 2
+            },
+            {
+              "tileId": "tile-7",
+              "x": 5,
+              "y": 2
+            },
+            {
+              "tileId": "tile-8",
+              "x": 6,
+              "y": 2
+            },
+            {
+              "tileId": "tile-9",
+              "x": 7,
+              "y": 2
+            },
+            {
+              "tileId": "tile-0",
+              "x": 8,
+              "y": 2
+            },
+            {
+              "tileId": "tile-1",
+              "x": 9,
+              "y": 2
+            },
+            {
+              "tileId": "tile-2",
+              "x": 10,
+              "y": 2
+            },
+            {
+              "tileId": "tile-3",
+              "x": 11,
+              "y": 2
+            }
+          ],
+          "id": "ground",
+          "locked": false,
+          "name": "Ground",
+          "visible": true
+        },
+        {
+          "cells": [
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -12,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -11,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -10,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -9,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -8,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -7,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -6,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -5,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -4,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -3,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -2,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -1,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 0,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 1,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 2,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 3,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 4,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 5,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 6,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 7,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 8,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 9,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 10,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 11,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -12,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -11,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -10,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -9,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -8,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -7,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -5,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -4,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -3,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -2,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -1,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 0,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 1,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 2,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 3,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 4,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 5,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 6,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 7,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 8,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 9,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 10,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 11,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -12,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -11,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -10,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -9,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -8,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -7,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -6,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -5,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -4,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -3,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -2,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -1,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 0,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 1,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 2,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 3,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 4,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 5,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 6,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 7,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 8,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 9,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 10,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 11,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -12,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -11,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -10,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -9,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -8,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -7,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -6,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -5,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -4,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -3,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -2,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -1,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 1,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 2,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 3,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 4,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 5,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 6,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 7,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 8,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 9,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 10,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 11,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -12,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -11,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -10,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -9,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -8,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -7,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -6,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -5,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -4,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -3,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -2,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -1,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 0,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 1,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 2,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 3,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 5,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 6,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 7,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 8,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 9,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 10,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 11,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -12,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -11,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -10,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -9,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -8,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -7,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -6,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -5,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -4,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -3,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -2,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": -1,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 0,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 1,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 2,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 3,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 4,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 5,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 6,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 7,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 8,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 9,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 10,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "tileId": "tile-0",
+              "x": 11,
+              "y": 2
+            }
+          ],
+          "id": "roads",
+          "locked": false,
+          "name": "Roads",
+          "visible": true
+        },
+        {
+          "cells": [
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -12,
+              "y": -3
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": -11,
+              "y": -3
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -10,
+              "y": -3
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -9,
+              "y": -3
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": -8,
+              "y": -3
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -7,
+              "y": -3
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -6,
+              "y": -3
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -5,
+              "y": -3
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": -4,
+              "y": -3
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -3,
+              "y": -3
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -2,
+              "y": -3
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -1,
+              "y": -3
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 0,
+              "y": -3
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 1,
+              "y": -3
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 2,
+              "y": -3
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": 3,
+              "y": -3
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 4,
+              "y": -3
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 5,
+              "y": -3
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 6,
+              "y": -3
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": 7,
+              "y": -3
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 8,
+              "y": -3
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 9,
+              "y": -3
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": 10,
+              "y": -3
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 11,
+              "y": -3
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": -12,
+              "y": -2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -11,
+              "y": -2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -10,
+              "y": -2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -9,
+              "y": -2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -8,
+              "y": -2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": -7,
+              "y": -2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -5,
+              "y": -2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -4,
+              "y": -2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": -3,
+              "y": -2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -2,
+              "y": -2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -1,
+              "y": -2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": 0,
+              "y": -2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 1,
+              "y": -2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 2,
+              "y": -2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 3,
+              "y": -2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": 4,
+              "y": -2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 5,
+              "y": -2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 6,
+              "y": -2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 7,
+              "y": -2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": 8,
+              "y": -2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 9,
+              "y": -2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 10,
+              "y": -2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 11,
+              "y": -2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -12,
+              "y": -1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -11,
+              "y": -1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -10,
+              "y": -1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -9,
+              "y": -1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -8,
+              "y": -1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -7,
+              "y": -1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": -6,
+              "y": -1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -5,
+              "y": -1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -4,
+              "y": -1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -3,
+              "y": -1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": -2,
+              "y": -1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -1,
+              "y": -1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 0,
+              "y": -1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": 1,
+              "y": -1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 2,
+              "y": -1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 3,
+              "y": -1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 4,
+              "y": -1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": 5,
+              "y": -1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 6,
+              "y": -1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 7,
+              "y": -1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 8,
+              "y": -1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": 9,
+              "y": -1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 10,
+              "y": -1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 11,
+              "y": -1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -12,
+              "y": 0
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -11,
+              "y": 0
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -10,
+              "y": 0
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -9,
+              "y": 0
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -8,
+              "y": 0
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -7,
+              "y": 0
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": -6,
+              "y": 0
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -5,
+              "y": 0
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -4,
+              "y": 0
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -3,
+              "y": 0
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": -2,
+              "y": 0
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -1,
+              "y": 0
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": 1,
+              "y": 0
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 2,
+              "y": 0
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 3,
+              "y": 0
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 4,
+              "y": 0
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": 5,
+              "y": 0
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 6,
+              "y": 0
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 7,
+              "y": 0
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 8,
+              "y": 0
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": 9,
+              "y": 0
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 10,
+              "y": 0
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 11,
+              "y": 0
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": -12,
+              "y": 1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -11,
+              "y": 1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -10,
+              "y": 1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -9,
+              "y": 1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -8,
+              "y": 1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": -7,
+              "y": 1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -6,
+              "y": 1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -5,
+              "y": 1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -4,
+              "y": 1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": -3,
+              "y": 1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -2,
+              "y": 1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -1,
+              "y": 1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": 0,
+              "y": 1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 1,
+              "y": 1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 2,
+              "y": 1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 3,
+              "y": 1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 5,
+              "y": 1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 6,
+              "y": 1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 7,
+              "y": 1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": 8,
+              "y": 1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 9,
+              "y": 1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 10,
+              "y": 1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 11,
+              "y": 1
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -12,
+              "y": 2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": -11,
+              "y": 2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -10,
+              "y": 2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -9,
+              "y": 2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": -8,
+              "y": 2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -7,
+              "y": 2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -6,
+              "y": 2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -5,
+              "y": 2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": -4,
+              "y": 2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -3,
+              "y": 2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -2,
+              "y": 2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": -1,
+              "y": 2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 0,
+              "y": 2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 1,
+              "y": 2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 2,
+              "y": 2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": 3,
+              "y": 2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 4,
+              "y": 2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 5,
+              "y": 2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 6,
+              "y": 2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": 7,
+              "y": 2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 8,
+              "y": 2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 9,
+              "y": 2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-3",
+              "x": 10,
+              "y": 2
+            },
+            {
+              "terrainBrushId": "meadow",
+              "tileId": "tile-2",
+              "x": 11,
+              "y": 2
+            }
+          ],
+          "id": "props",
+          "locked": false,
+          "name": "Props",
+          "visible": true
+        },
+        {
+          "cells": [
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -12,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -11,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -10,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -9,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -8,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -7,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -6,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -5,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -4,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -3,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -2,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -1,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 0,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 1,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 2,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 3,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 4,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 5,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 6,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 7,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 8,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 9,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 10,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 11,
+              "y": -3
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -12,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -11,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -10,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -9,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -8,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -7,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -6,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -5,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -4,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -3,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -2,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -1,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 0,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 1,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 2,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 3,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 4,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 5,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 6,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 7,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 8,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 9,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 10,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 11,
+              "y": -2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -12,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -11,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -10,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -9,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -8,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -7,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -6,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -5,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -4,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -3,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -2,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -1,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 0,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 1,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 2,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 3,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 4,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 5,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 6,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 7,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 8,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 9,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 10,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 11,
+              "y": -1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -12,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -11,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -10,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -9,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -8,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -7,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -6,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -5,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -4,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -3,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -2,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -1,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 1,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 2,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 3,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 4,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 5,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 6,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 7,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 8,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 9,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 10,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 11,
+              "y": 0
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -12,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -11,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -10,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -9,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -8,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -7,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -6,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -5,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -4,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -3,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -2,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -1,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 0,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 1,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 2,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 3,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 4,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 5,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 6,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 7,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 8,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 9,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 10,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 11,
+              "y": 1
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -12,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -11,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -10,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -9,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -8,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -7,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -6,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -5,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -4,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -3,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -2,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": -1,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 0,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 1,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 2,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 3,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 4,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 5,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 6,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 7,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 8,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 9,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 10,
+              "y": 2
+            },
+            {
+              "autoTileSetId": "roads",
+              "terrainBrushId": "connected-meadow",
+              "tileId": "tile-0",
+              "x": 11,
+              "y": 2
+            }
+          ],
+          "id": "canopy",
+          "locked": true,
+          "name": "Canopy",
+          "visible": false
+        }
+      ],
+      "name": "Phase 039 Portable World",
+      "orderInLayer": 4,
+      "position": [
+        4,
+        0,
+        -2
+      ],
+      "rotationY": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "sortingLayerRef": "world",
+      "spawnMarkers": [
+        {
+          "id": "spawn-0",
+          "name": "Spawn 1",
+          "prefabRef": "Dogfood Enemy",
+          "x": -10,
+          "y": -2
+        },
+        {
+          "id": "spawn-1",
+          "name": "Spawn 2",
+          "prefabRef": "Dogfood Elite",
+          "x": -7,
+          "y": -1
+        },
+        {
+          "id": "spawn-2",
+          "name": "Spawn 3",
+          "prefabRef": "Dogfood Boss",
+          "x": -4,
+          "y": 0
+        },
+        {
+          "id": "spawn-3",
+          "name": "Spawn 4",
+          "prefabRef": "Dogfood Enemy",
+          "x": -1,
+          "y": 1
+        },
+        {
+          "id": "spawn-4",
+          "name": "Spawn 5",
+          "prefabRef": "Dogfood Elite",
+          "x": 2,
+          "y": 2
+        },
+        {
+          "id": "spawn-5",
+          "name": "Spawn 6",
+          "prefabRef": "Dogfood Boss",
+          "x": 5,
+          "y": 3
+        },
+        {
+          "id": "spawn-6",
+          "name": "Spawn 7",
+          "prefabRef": "Dogfood Enemy",
+          "x": 8,
+          "y": -2
+        },
+        {
+          "id": "spawn-7",
+          "name": "Spawn 8",
+          "prefabRef": "Dogfood Elite",
+          "x": 11,
+          "y": -1
+        }
+      ],
+      "tilesetRef": "dogfood-tileset",
+      "version": 4
+    }
+  },
+  "format": "digital-opus-tilemap-bundle",
+  "integrity": {
+    "algorithm": "SHA-256",
+    "sha256": "4fe01c0849a4ef3bbee262c4575595ab06dd2a144fb98e9e8d65e7d50c0acb35"
+  },
+  "rootKind": "tilemap",
+  "version": 1
+}

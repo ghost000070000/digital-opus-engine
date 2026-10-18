@@ -1,0 +1,73 @@
+{
+  "phase": 27,
+  "feature": "Parallax Layers and Backgrounds",
+  "status": "qualified",
+  "date": "2026-09-15",
+  "browser": {
+    "engine": "Codex in-app Chromium browser",
+    "url": "http://127.0.0.1:8842/editor/",
+    "project": "Phase 027 Parallax Dogfood",
+    "interactionBoundary": "Blank-project creation, five layer entries, five image imports, six Sprite placements, Inspector assignment, nine-slice guides, flip/sorting edits, Prefab creation/placement, Play, validation, Save/Load, and both export commands used visible editor controls. No project state was injected into the visible dogfood run.",
+    "warningsOrErrors": []
+  },
+  "camera": {
+    "identityPolicy": "active authored camera preset ID or session-default-camera",
+    "referencePolicy": "captured after spawn at fresh Play; reset on Stop, level change, and active-camera identity change",
+    "movement": "existing Play controls exercised with repeated W and D input",
+    "shakePolicy": "reference and delta use stable eye position with transient shakeOffset removed"
+  },
+  "layers": [
+    { "id": "parallax-layer-1", "name": "Far Sky", "factorX": 0.1, "factorY": 0.1, "sprite": "Far Sky Sprite" },
+    { "id": "parallax-layer-2", "name": "Distant Mountains", "factorX": 0.45, "factorY": 0.45, "sprite": "Distant Mountains Sprite", "rename": "Mountains to Distant Mountains", "factorEdit": "0.30 to 0.45" },
+    { "id": "parallax-layer-3", "name": "Trees", "factorX": 0.6, "factorY": 0.6, "sprite": "Trees Sprite" },
+    { "id": "parallax-layer-4", "name": "Foreground", "factorX": 1.2, "factorY": 1.2, "sprite": "Foreground Nine-Slice" },
+    { "id": "parallax-layer-5", "name": "Screen Lock X", "factorX": 0, "factorY": 1, "sprite": "Screen Lock Sprite" }
+  ],
+  "normalWorld": { "sprite": "Normal World Sprite", "parallaxLayerRef": null, "effectiveFactors": { "x": 1, "y": 1 } },
+  "expectedOffsetsForCameraDelta20x10": {
+    "far": { "x": 18, "y": 9 },
+    "mountains": { "x": 11, "y": 5.5 },
+    "trees": { "x": 8, "y": 4 },
+    "normalWorld": { "x": 0, "y": 0 },
+    "foreground": { "x": -4, "y": -2 },
+    "screenLockX": { "x": 20, "y": 0 }
+  },
+  "composition": {
+    "sorting": "Default Sorting Layer remained independent; Prefab Sprite used Order in Layer 5",
+    "nineSlice": "Foreground asset used asymmetric 8/16/6/12 guides and nine-slice mode; shared outer offset is covered by focused tests and export audit",
+    "flip": "Prefab source used Flip X with the same parallax contract",
+    "animation": "Phase 021-025 regression suites prove playback, states, events, and directional/flip behavior remain independent"
+  },
+  "saveReload": {
+    "pass": true,
+    "evidence": "Fresh browser reload plus Load Selected restored five IDs, names, factors, ten scene Sprites, and Far Sky Sprite selected parallax-layer-1 with effective 0.1,0.1. A first attempt exposed onchange-only persistence friction; oninput synchronization was added and the round trip was repeated successfully."
+  },
+  "prefab": {
+    "name": "Parallax Layer Prefab",
+    "savedThroughInspector": true,
+    "requestedCopies": 3,
+    "observedLinkedCopies": 4,
+    "referenceProof": "ordinary component serialization plus focused copy test; loaded linked instances retained shared Renderer fields"
+  },
+  "breakRepair": {
+    "automated": true,
+    "evidence": "Focused tests preserve a missing stable ID, report dangling-reference, and resolve runtime factors to 1,1.",
+    "visibleDestructiveDelete": false,
+    "reason": "A referenced-layer Delete requires an immediate confirmation; no destructive click was performed without a separate confirmation."
+  },
+  "validation": { "final": "No structured authoring issues found.", "pass": true },
+  "exports": {
+    "uiCommands": { "editable": "completed", "playable": "Playable game exported (no editor access)" },
+    "proof": "phase-027-export-proof.json",
+    "editable": ".tmp-phase027/phase-027-editable.html",
+    "playable": ".tmp-phase027/phase-027-playable.html",
+    "editableBytes": 1648026,
+    "playableBytes": 1647778,
+    "offlineNetworkRequests": 0,
+    "errors": []
+  },
+  "stress": { "sprites": 500, "layers": 100, "finite": true, "transformMutation": false },
+  "capabilityGrades": { "sprites2d": "B", "animation": "C" },
+  "verdict": "PHASE_027_SPRITE_PARALLAX_READY"
+}
+

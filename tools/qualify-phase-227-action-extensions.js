@@ -1,0 +1,70 @@
+'use strict';
+// Host API installation is intentional; creator Behavior/Graph work uses native UI.
+const fs = require('fs'), path = require('path'), http = require('http'), assert = require('assert');
+const { chromium } = require('C:/Users/THINKPAD/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const root = path.resolve(__dirname, '..'), runId = 'action-extensions-' + new Date().toISOString().replace(/[-:.]/g, ''), dir = path.join(root, 'qualification/phase-227', runId);
+fs.mkdirSync(dir, { recursive: true });
+const proof = { runId, startedAt: new Date().toISOString(), fingerprint: require('./real-demo-program-state').fingerprint(), errors: [], external: [] };
+const server = http.createServer((req, res) => { const file = path.resolve(root, '.' + decodeURIComponent(req.url.split('?')[0])); if (!file.startsWith(root + path.sep)) { res.writeHead(403); return res.end(); } fs.readFile(file, (err, data) => { res.writeHead(err ? 404 : 200, { 'Content-Type': file.endsWith('.js') ? 'text/javascript' : file.endsWith('.html') ? 'text/html' : 'application/octet-stream' }); res.end(err ? 'Not found' : data); }); });
+(async () => {
+  let browser;
+  try {
+    await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
+    browser = await chromium.launch({ channel: 'msedge', headless: true });
+    const p = await browser.newPage({ viewport: { width: 1280, height: 960 } }); p.setDefaultTimeout(12000);
+    p.on('pageerror', e => proof.errors.push(e.stack)); p.on('dialog', dialog => dialog.accept());
+    p.on('request', r => { if (!/^(http:\/\/127\.0\.0\.1:|data:|blob:)/.test(r.url())) proof.external.push(r.url()); });
+    await p.goto('http://127.0.0.1:' + server.address().port + '/editor/index.html');
+    await p.waitForFunction(() => !!window.Opus?.ActionExtensions);
+    if (await p.locator('#first-run-skip').isVisible()) await p.locator('#first-run-skip').click();
+    const project = require('../editor/src/00-sprite-starters').instantiate('platformer-sky-steps').project;
+    project.meta.title = 'Private227 custom action host';
+    project.levels[0].objects.find(o => o.id === 'obj3').behaviors = [];
+    const file = path.join(dir, 'fixture.json'); fs.writeFileSync(file, JSON.stringify(project));
+    await p.locator('#import-project-input').setInputFiles(file); await p.waitForFunction(() => projectMeta.title === 'Private227 custom action host');
+    await p.evaluate(() => { Opus.ActionExtensions.register('custom_bonus', { label: 'Award Host Bonus', help: 'Benign private host counter.', fields: [{ key: 'amount', label: 'Amount', type: 'number' }], exec(params) { window.__hostBonus = (window.__hostBonus || 0) + params.amount; } }); });
+    proof.installed = await p.evaluate(() => ({ count: Opus.ActionExtensions.list().length, trusted: scriptsTrusted, graph: !!GRAPH_NODE_TYPES.custom_bonus }));
+    assert.deepStrictEqual(proof.installed, { count: 1, trusted: false, graph: true });
+    // Selection is fixture navigation; action creation and values use mounted controls.
+    await p.evaluate(() => { selectedItem = placed.find(o => o.id === 'obj3'); selectedItems.clear(); selectedItems.add(selectedItem); renderInspector(); });
+    await p.locator('#b-action-search').fill('Host Bonus'); await p.locator('#b-action').selectOption('custom_bonus');
+    await p.locator('#b-trigger').selectOption('start'); await p.locator('#b-fields [data-field="amount"]').fill('7');
+    const before = await p.evaluate(() => JSON.stringify(serializeProject()));
+    await p.locator('#add-behavior-btn').click();
+    proof.behavior = await p.evaluate(() => placed.find(o => o.id === 'obj3').behaviors.at(-1));
+    assert.equal(proof.behavior.action, 'custom_bonus'); assert.equal(proof.behavior.params.amount, 7);
+    const after = await p.evaluate(() => JSON.stringify(serializeProject()));
+    await p.keyboard.press('Control+z'); assert.equal(await p.evaluate(() => JSON.stringify(serializeProject())), before);
+    await p.keyboard.press('Control+y'); assert.equal(await p.evaluate(() => JSON.stringify(serializeProject())), after);
+    await p.evaluate(() => { selectedItem = placed.find(o => o.id === 'obj3'); selectedItems.clear(); selectedItems.add(selectedItem); renderInspector(); });
+    await p.locator('#b-action-search').fill('Visual Graph'); await p.locator('#b-action').selectOption('graph'); await p.locator('#b-trigger').selectOption('start'); await p.locator('#add-behavior-btn').click();
+    await p.locator('#graph-node-search').fill('Host Bonus'); await p.locator('[data-node-type="custom_bonus"]').click();
+    const nodeId = await p.evaluate(() => graphEditorState.graph.nodes.at(-1).id);
+    await p.locator('[data-node-id="' + nodeId + '"] [data-field="amount"]').fill('3');
+    await p.locator('[data-node="start"][data-port="next-out"]').click();
+    await p.locator('[data-node="' + nodeId + '"][data-port="next-in"]').click();
+    await p.locator('#graph-save-btn').click();
+    proof.graph = await p.evaluate(() => placed.find(o => o.id === 'obj3').behaviors.at(-1).graph);
+    assert.equal(proof.graph.nodes[0].type, 'custom_bonus'); assert.equal(proof.graph.nodes[0].amount, 3); assert.equal(proof.graph.edges.length, 1);
+    await p.locator('[data-right-tab="level"]').click(); if (!await p.locator('#sequence-add-btn').isVisible()) await p.locator('[data-section="sequences"]').click();
+    await p.locator('#sequence-add-btn').click(); const sequenceId = await p.evaluate(() => selectedSequenceId);
+    await p.locator('#sequence-action-search').fill('Host Bonus'); await p.locator('#sequence-add-step-type').selectOption('custom_bonus'); await p.locator('#sequence-add-step-btn').click();
+    await p.locator('#sequence-step-list [data-field="amount"]').fill('4'); await p.locator('#sequence-step-list [data-field="amount"]').press('Tab');
+    proof.sequence = await p.evaluate(id => currentSequences.find(s => s.id === id), sequenceId); assert.equal(proof.sequence.steps[0].params.amount, 4);
+    await p.evaluate(() => { selectedItem = placed.find(o => o.id === 'obj3'); selectedItems.clear(); selectedItems.add(selectedItem); renderInspector(); });
+    await p.locator('[data-right-tab="inspector"]').click(); await p.locator('#b-action-search').fill('Sequence'); await p.locator('#b-action').selectOption('playSequence'); await p.locator('#b-trigger').selectOption('start'); await p.locator('#b-fields [data-field="sequenceId"]').selectOption(sequenceId); await p.locator('#add-behavior-btn').click();
+    const play = async () => { await p.locator('#play-btn').click(); await p.waitForFunction(() => playMode && simElapsed > .05); };
+    const stop = async () => { await p.keyboard.press('Escape'); await p.locator('#play-btn').click(); await p.waitForFunction(() => !playMode); };
+    await play(); assert.equal(await p.evaluate(() => window.__hostBonus || 0), 0); await stop();
+    await p.locator('#script-trust-enable-btn').click(); assert.match(await p.locator('#script-trust-code').textContent(), /__hostBonus/);
+    await p.locator('#script-trust-agree').check(); await p.locator('#script-trust-confirm').click();
+    await play(); assert.equal(await p.evaluate(() => window.__hostBonus), 14); await stop();
+    await p.locator('#script-trust-revoke-btn').click(); await play(); assert.equal(await p.evaluate(() => window.__hostBonus), 14); await stop();
+    proof.portable = await p.evaluate(() => ({ retained: serializeProject().levels[0].objects.find(o => o.id === 'obj3').behaviors.some(b => b.action === 'custom_bonus'), noCallback: !JSON.stringify(serializeProject()).includes('__hostBonus') }));
+    assert.deepStrictEqual(proof.portable, { retained: true, noCallback: true });
+    await p.screenshot({ path: path.join(dir, 'Custom-action-authoring.png') });
+    assert.deepStrictEqual(proof.errors, []); assert.deepStrictEqual(proof.external, []);
+    proof.status = 'NATIVE_HOST_ACTION_BEHAVIOR_GRAPH_HISTORY_TRUST_PASS_NOT_PHASE_QUALIFIED';
+  } catch (error) { proof.status = 'FAIL'; proof.failure = error.stack; process.exitCode = 1; }
+  finally { if (browser) await browser.close(); await new Promise(resolve => server.close(resolve)); proof.resourcesClosed = true; proof.endedAt = new Date().toISOString(); fs.writeFileSync(path.join(dir, 'results.json'), JSON.stringify(proof, null, 2)); console.log(JSON.stringify(proof)); }
+})();

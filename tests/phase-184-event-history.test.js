@@ -1,0 +1,12 @@
+'use strict';
+const fs=require('fs'),vm=require('vm'),assert=require('assert'),source=fs.readFileSync(require.resolve('../editor/src/01-editor.js'),'utf8');
+const start=source.indexOf('function captureAnimationEventAssets('),end=source.indexOf('function captureScatterAuthoringSnapshot(',start);assert(start>=0&&end>start);
+const asset={id:'rig',type:'skinnedMesh',animationEvents:[{id:'evt',clipIndex:0,time:.2,action:'message',params:{text:'before'}}]},legacy={id:'old',type:'skinnedMesh'},mesh={id:'mesh',type:'mesh'};
+const c={assets:[asset,legacy,mesh]};vm.createContext(c);vm.runInContext(source.slice(start,end),c);
+const before=c.captureAnimationEventAssets();assert.equal(before.length,2);asset.animationEvents[0].params.text='after';legacy.animationEvents=[];assert.equal(before[0].events[0].params.text,'before');
+c.restoreAnimationEventAssets(before);assert.equal(asset.animationEvents[0].params.text,'before');assert(!Object.hasOwn(legacy,'animationEvents'));asset.animationEvents[0].params.text='independent';assert.equal(before[0].events[0].params.text,'before');
+c.restoreAnimationEventAssets(undefined);assert.equal(asset.animationEvents[0].params.text,'independent');
+c.assets.push({id:'rig',type:'skinnedMesh'});c.restoreAnimationEventAssets(before);assert.equal(asset.animationEvents[0].params.text,'independent');c.assets.pop();
+asset.animationEvents=null;const malformed=c.captureAnimationEventAssets();asset.animationEvents=[];c.restoreAnimationEventAssets(malformed);assert.equal(asset.animationEvents,null);
+assert(source.includes("animationEventAssets: typeof captureAnimationEventAssets==='undefined'?undefined:captureAnimationEventAssets()"));assert(source.includes('Array.isArray(snapshot.animationEventAssets)) restoreAnimationEventAssets(snapshot.animationEventAssets)'));
+console.log('PASS184 actual shared event metadata history capture/restore, detached nested params, legacy absence, duplicate-owner refusal and retained null. Native changing-time transaction/dispatch gates pending.');

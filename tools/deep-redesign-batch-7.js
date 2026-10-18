@@ -8,7 +8,7 @@ function open(id){const file=path.join(ROOT,'games',id+'.json'),project=JSON.par
 function cube(l,name,position,scale,color=[.3,.34,.38],solid=false,extra={}){l.objects.push({kind:'cube',id:`deep7-${++serial}`,name,position,scale,color,rotationY:0,mesh:'cube',behaviors:[],solid,...extra});}
 function mesh(p,l,key,position,scale=1,name=key,solid=false,rotationY=0){kit.install(p,{meshes:[key]});cube(l,name,position,[scale,scale,scale],[1,1,1],solid,{mesh:'asset',assetId:'showcase-'+key,textureAssetId:'showcase-palette',rotationY});}
 function light(l,position,color){l.objects.push({kind:'light',id:`deep7-${++serial}`,name:'Destination light',position,options:{lightType:'point',position,color,intensity:2.6,range:12,enabled:true}});}
-function done(x){fs.writeFileSync(x.file,JSON.stringify(x.project,null,2)+'\n');console.log(path.basename(x.file),'deep layout authored');}
+function done(x){if(path.basename(x.file)==='skyway-trial.json')require('./real-demo-architectural-assemblies').repair(x.project);fs.writeFileSync(x.file,JSON.stringify(x.project,null,2)+'\n');console.log(path.basename(x.file),'deep layout authored');}
 {
  const x=open('shifting-facility');const p=x.project,l=x.level;
  cube(l,'Fixed architecture wing',[-8,.2,0],[12,.4,14],[.24,.3,.34],true,{textureAssetId:'showcase-floor-panel'});
@@ -22,7 +22,7 @@ function done(x){fs.writeFileSync(x.file,JSON.stringify(x.project,null,2)+'\n');
 {
  const x=open('skyway-trial');const p=x.project,l=x.level,h=l.objects.find(o=>o.id==='elev-1');if(h){h.position=[0,7,30];h.scale=[.5,.5,.5];}
  const shapes=[[5.4,4.4],[4.5,5.2],[6,3.8],[4.4,5.6],[6.2,4.6]];
- for(let i=1;i<=5;i++){const o=l.objects.find(o=>o.name==='Platform'+i);if(o){o.scale[0]=shapes[i-1][0];o.scale[2]=shapes[i-1][1];}mesh(p,l,i%2?'railing':'stone-walkway',[i%2?2.1:-2.1,i-.5,i*5+3],.55,'Skyway silhouette');}
+ for(let i=1;i<=5;i++){const o=l.objects.find(o=>o.name==='Platform'+i);if(o){o.scale[0]=shapes[i-1][0];o.scale[2]=shapes[i-1][1];}const floorTop=o?o.position[1]+Math.abs(o.scale[1])/2:i;mesh(p,l,i%2?'railing':'stone-walkway',[i%2?2.1:-2.1,floorTop,i*5+3],.55,'Skyway silhouette');}
  mesh(p,l,'arch-pointed',[0,5,29],1,'Visible summit gate');light(l,[0,9,29],[.2,.8,1]);done(x);
 }
 {

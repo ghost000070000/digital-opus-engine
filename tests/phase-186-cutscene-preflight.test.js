@@ -1,0 +1,32 @@
+'use strict';
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const source=fs.readFileSync('editor/src/01-editor.js','utf8');
+const actions=source.slice(source.indexOf('  freezePlayer: {'),source.indexOf('  incrementCounter: {'));
+const dispatch=source.slice(source.indexOf('function executeAction('),source.indexOf('// Reads a behavior record',source.indexOf('function executeAction(')));
+const runtime=source.slice(source.indexOf('let runningSequenceIds = [];'),source.indexOf('function runGraph(',source.indexOf('let runningSequenceIds = [];')));
+assert(actions&&dispatch&&runtime,'actual source extraction');
+const host={showToast:()=>{},findSequenceById:()=>null};vm.createContext(host);
+vm.runInContext('let playerFrozen=false,simElapsed=0,deferredCalls=[];const ACTION_TYPES={'+actions+'};\n'+dispatch+runtime,host);
+const state=()=>vm.runInContext('({playerFrozen,running:runningSequenceIds.slice(),pending:deferredCalls.length})',host);
+vm.runInContext("playSequence({id:'valid',steps:[{kind:'action',actionType:'freezePlayer'},{kind:'delay',seconds:1},{kind:'action',actionType:'unfreezePlayer'}]},null)",host);
+const pending=state();assert.equal(pending.playerFrozen,true);assert.equal(pending.pending,1);
+vm.runInContext('simElapsed=1;const ready=deferredCalls.splice(0);ready.forEach(d=>d.fn())',host);
+const completed=state();assert.equal(completed.playerFrozen,false);assert.equal(completed.running.length,0);
+vm.runInContext("playSequence({id:'invalid',steps:[{kind:'action',actionType:'freezePlayer'},null,{kind:'action',actionType:'unfreezePlayer'}]},null)",host);
+const stopped=state();assert.equal(stopped.running.length,0);assert.equal(stopped.playerFrozen,false);
+vm.runInContext("executeAction('freezePlayer',{},null);playSequence({id:'invalid-other-owner',steps:[null,{kind:'action',actionType:'unfreezePlayer'}]},null)",host);
+const preserved=state();assert.equal(preserved.playerFrozen,true);
+for(const bad of [null,[],{kind:'future'},{kind:'action',actionType:'constructor'},{kind:'action',actionType:'freezePlayer',params:null},{kind:'delay',seconds:Infinity}]){
+  host.bad=bad;
+  vm.runInContext("playerFrozen=false;playSequence({id:'bad',steps:[{kind:'action',actionType:'freezePlayer'},bad,{kind:'action',actionType:'unfreezePlayer'}]},null)",host);
+  assert.equal(state().playerFrozen,false);assert.equal(state().pending,0);
+}
+console.log('Phase186 actual whole-composition preflight: no partial Freeze, valid timed flow and unrelated Freeze preserved PASS');
+const levelSource=source.slice(source.indexOf('function switchToLevelDuringPlay('));
+const reset=levelSource.slice(levelSource.indexOf('  runningSequenceIds = [];'),levelSource.indexOf('  lastAppliedCameraItemId = null;'));
+host.activeCameraBlend={};host.activeCameraPath={};
+vm.runInContext("playerFrozen=true;runningSequenceIds=['old'];deferredCalls=[{sequenceRun:true},{unrelated:true}];"+reset,host);
+assert.equal(state().playerFrozen,false);assert.equal(state().running.length,0);assert.equal(state().pending,1);
+assert.equal(host.activeCameraBlend,null);assert.equal(host.activeCameraPath,null);
+vm.runInContext("executeAction('freezePlayer',{},null)",host);assert.equal(state().playerFrozen,true);
+console.log('Phase186 actual Level cancellation clears outgoing Freeze/presentation/Sequence work, retains unrelated deferred work and permits destination explicit Freeze PASS');

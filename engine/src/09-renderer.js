@@ -1,4 +1,17 @@
 const MAX_PARTICLES = 500;
+const SPRITE_PASS_RELATIONS = Object.freeze(['behind-sprites', 'in-front-of-sprites']);
+
+function normalizeSpritePassRelation(value) {
+  return value === 'in-front-of-sprites' ? 'in-front-of-sprites' : 'behind-sprites';
+}
+
+function compareTransparentEntitiesBackToFront(a, b, eye) {
+  const depth = eye.sub(b.position).length() - eye.sub(a.position).length();
+  if (Math.abs(depth) > 1e-9) return depth;
+  const aId = String(a.renderStableId || a.spriteStableId || '');
+  const bId = String(b.renderStableId || b.spriteStableId || '');
+  return aId < bId ? -1 : aId > bId ? 1 : 0;
+}
 
 class Renderer {
   constructor(gl) {
@@ -33,6 +46,9 @@ class Renderer {
     this.uTexture = gl.getUniformLocation(this.program, 'u_texture');
     this.uUseTexture = gl.getUniformLocation(this.program, 'u_useTexture');
     this.uUnlit = gl.getUniformLocation(this.program, 'u_unlit');
+    this.uLighting2D = gl.getUniformLocation(this.program, 'u_lighting2D');
+    this.uAmbient2D = gl.getUniformLocation(this.program, 'u_ambient2D');
+    this.lighting2D = { enabled: false, ambient: 0.25 };
     this.uAlpha = gl.getUniformLocation(this.program, 'u_alpha');
     this.uEmissiveColor = gl.getUniformLocation(this.program, 'u_emissiveColor');
     this.uEmissiveIntensity = gl.getUniformLocation(this.program, 'u_emissiveIntensity');
@@ -55,6 +71,26 @@ class Renderer {
     // starting there, the standard WebGL pattern for a whole uniform array.
     this.uJointMatrices = gl.getUniformLocation(this.program, 'u_jointMatrices[0]');
     this.uUseSkinning = gl.getUniformLocation(this.program, 'u_useSkinning');
+
+    // Phase 017: sampler state is separate from the shared WebGLTexture.
+    // Two Sprite Assets can therefore reference the same Texture payload
+    // while choosing different presentation, without mutating each other or
+    // uploading duplicate image bytes. These are created once, never per
+    // frame. Smooth exactly matches the texture's historical parameters;
+    // Nearest samples base-level texels for crisp pixel-art magnification
+    // and minification without an invalid mipmap combination.
+    this.textureSamplers = {
+      linear: gl.createSampler(),
+      nearest: gl.createSampler(),
+    };
+    gl.samplerParameteri(this.textureSamplers.linear, gl.TEXTURE_MIN_FILTER, gl.LINEAR_MIPMAP_LINEAR);
+    gl.samplerParameteri(this.textureSamplers.linear, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+    gl.samplerParameteri(this.textureSamplers.linear, gl.TEXTURE_WRAP_S, gl.REPEAT);
+    gl.samplerParameteri(this.textureSamplers.linear, gl.TEXTURE_WRAP_T, gl.REPEAT);
+    gl.samplerParameteri(this.textureSamplers.nearest, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
+    gl.samplerParameteri(this.textureSamplers.nearest, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
+    gl.samplerParameteri(this.textureSamplers.nearest, gl.TEXTURE_WRAP_S, gl.REPEAT);
+    gl.samplerParameteri(this.textureSamplers.nearest, gl.TEXTURE_WRAP_T, gl.REPEAT);
 
     this.uSkyCamForward = gl.getUniformLocation(this.skyProgram, 'u_camForward');
     this.uSkyCamRight = gl.getUniformLocation(this.skyProgram, 'u_camRight');
@@ -129,6 +165,19 @@ class Renderer {
     ];
     this.MAX_LIGHTS = 8;
 
+    // Phase 040: Tilemaps used to submit one quad per Cell every frame.
+    // Keep derived geometry outside the authoring model and cache it by the
+    // Tilemap Entity. The editor/runtime bridge replaces tilemapRenderer on
+    // every relevant authored mutation, which is the cache revision token.
+    this._tilemapBatchCaches = new Map();
+    this.tilemapRenderMetrics = {
+      drawCalls: 0, submittedCells: 0, batchCount: 0,
+      geometryRebuilds: 0, bufferUploads: 0, cacheBytes: 0,
+    };
+    // Qualification/debug readout on the owned canvas. Bracket notation
+    // keeps the opt-in hook stable through the production property mangler.
+    globalThis[Symbol.for('opus.tilemap.metrics')] = this.tilemapRenderMetrics;
+
     this.skyTop = [0.06, 0.10, 0.24];
     this.skyHorizon = [0.62, 0.68, 0.80];
     this.groundColor = [0.16, 0.16, 0.14];
@@ -136,6 +185,91 @@ class Renderer {
     this.fogDensity = 0.035;
 
     gl.enable(gl.DEPTH_TEST);
+  }
+
+  // Post resources are lazy and owned here, never per-object or editor-only.
+  _releasePostTarget() {
+    const gl = this.gl, target = this._postTarget;
+    if (!target) return;
+    gl.deleteTexture(target.texture);
+    gl.deleteFramebuffer(target.resolve);
+    gl.deleteFramebuffer(target.framebuffer);
+    gl.deleteRenderbuffer(target.depth);
+    if (target.color) gl.deleteRenderbuffer(target.color);
+    this._postTarget = null;
+  }
+
+  beginSceneFrame(config) {
+    const gl = this.gl;
+    if (!config.enabled || (config.exposure === 0 && config.saturation === 1)) {
+      this._releasePostTarget();
+      gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+      return false;
+    }
+    if (!this._postProgram) {
+      this._postProgram = createProgram(gl, POST_VERT_SRC, POST_FRAG_SRC);
+      this._postUniforms = {scene: gl.getUniformLocation(this._postProgram, 'u_scene'), exposure: gl.getUniformLocation(this._postProgram, 'u_exposure'), saturation: gl.getUniformLocation(this._postProgram, 'u_saturation')};
+    }
+    const width = gl.canvas.width, height = gl.canvas.height;
+    if (!this._postTarget || this._postTarget.width !== width || this._postTarget.height !== height) {
+      this._releasePostTarget();
+      const samples = gl.getContextAttributes()?.antialias ? Math.min(4, gl.getParameter(gl.MAX_SAMPLES)) : 0;
+      const target = {width, height, samples, texture: gl.createTexture(), resolve: gl.createFramebuffer(), framebuffer: gl.createFramebuffer(), depth: gl.createRenderbuffer(), color: samples > 0 ? gl.createRenderbuffer() : null};
+      this._postTarget = target;
+      gl.bindTexture(gl.TEXTURE_2D, target.texture);
+      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA8, width, height, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+      gl.bindFramebuffer(gl.FRAMEBUFFER, target.resolve);
+      gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, target.texture, 0);
+      if (gl.checkFramebufferStatus(gl.FRAMEBUFFER) !== gl.FRAMEBUFFER_COMPLETE) {
+        this._releasePostTarget(); gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+        throw new Error('Scene Look: resolve target unavailable at the current canvas size');
+      }
+      gl.bindFramebuffer(gl.FRAMEBUFFER, target.framebuffer);
+      gl.bindRenderbuffer(gl.RENDERBUFFER, target.depth);
+      if (samples > 0) gl.renderbufferStorageMultisample(gl.RENDERBUFFER, samples, gl.DEPTH_COMPONENT24, width, height);
+      else gl.renderbufferStorage(gl.RENDERBUFFER, gl.DEPTH_COMPONENT24, width, height);
+      gl.framebufferRenderbuffer(gl.FRAMEBUFFER, gl.DEPTH_ATTACHMENT, gl.RENDERBUFFER, target.depth);
+      if (samples > 0) {
+        gl.bindRenderbuffer(gl.RENDERBUFFER, target.color);
+        gl.renderbufferStorageMultisample(gl.RENDERBUFFER, samples, gl.RGBA8, width, height);
+        gl.framebufferRenderbuffer(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.RENDERBUFFER, target.color);
+      } else gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, target.texture, 0);
+      if (gl.checkFramebufferStatus(gl.FRAMEBUFFER) !== gl.FRAMEBUFFER_COMPLETE) {
+        this._releasePostTarget(); gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+        throw new Error('Scene Look: render target unavailable at the current canvas size');
+      }
+      gl.bindRenderbuffer(gl.RENDERBUFFER, null);
+      gl.bindTexture(gl.TEXTURE_2D, null);
+    }
+    gl.bindFramebuffer(gl.FRAMEBUFFER, this._postTarget.framebuffer);
+    return true;
+  }
+
+  finishSceneFrame(config) {
+    const gl = this.gl, target = this._postTarget;
+    if (!target) return;
+    if (target.samples > 0) {
+      gl.bindFramebuffer(gl.READ_FRAMEBUFFER, target.framebuffer);
+      gl.bindFramebuffer(gl.DRAW_FRAMEBUFFER, target.resolve);
+      gl.blitFramebuffer(0, 0, target.width, target.height, 0, 0, target.width, target.height, gl.COLOR_BUFFER_BIT, gl.NEAREST);
+    }
+    gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+    gl.viewport(0, 0, target.width, target.height);
+    gl.disable(gl.BLEND); gl.disable(gl.DEPTH_TEST); gl.depthMask(false);
+    gl.useProgram(this._postProgram);
+    gl.activeTexture(gl.TEXTURE0); gl.bindSampler(0, null);
+    gl.bindTexture(gl.TEXTURE_2D, target.texture);
+    gl.uniform1i(this._postUniforms.scene, 0);
+    gl.uniform1f(this._postUniforms.exposure, config.exposure);
+    gl.uniform1f(this._postUniforms.saturation, config.saturation);
+    gl.bindVertexArray(this.skyQuad.vao);
+    gl.drawArrays(gl.TRIANGLES, 0, this.skyQuad.vertexCount);
+    gl.bindVertexArray(null); gl.bindTexture(gl.TEXTURE_2D, null);
+    gl.depthMask(true); gl.enable(gl.DEPTH_TEST);
   }
 
   // Bounded Directional Shadows (Wave 5, Priority H): a single small
@@ -186,6 +320,7 @@ class Renderer {
     gl.useProgram(this.shadowProgram);
     gl.uniformMatrix4fv(this.uShadowLightViewProj, false, lightViewProj.m);
     for (const entity of casters) {
+      if (entity.spriteRenderer) continue; // Sprites are unlit alpha surfaces and never shadow casters.
       const mesh = getEntityRenderMesh(entity);
       if (!mesh) continue;
       gl.uniformMatrix4fv(this.uShadowModel, false, entity.modelMatrix.m);
@@ -255,6 +390,20 @@ class Renderer {
     const eye = camera.eye;
     const { forward, right, up } = camera.getBasis();
 
+    // A deleted Tilemap never reaches _drawTilemapEntity again, so sweep its
+    // transient buffers here. This makes Scene removal deterministic instead
+    // of waiting for JavaScript GC (which cannot release WebGL resources).
+    const liveTilemaps = new Set(scene.entities.filter((entity) => entity.tilemapRenderer));
+    for (const [entity, cache] of this._tilemapBatchCaches) {
+      if (!liveTilemaps.has(entity)) {
+        this._destroyTilemapBatchCache(cache);
+        this._tilemapBatchCaches.delete(entity);
+      }
+    }
+    this.tilemapRenderMetrics.drawCalls = 0;
+    this.tilemapRenderMetrics.submittedCells = 0;
+    this.tilemapRenderMetrics.batchCount = 0;
+
     // renderShadowPass (if it ran this frame) points the viewport at the
     // small shadow-map framebuffer's own resolution -- restore the real
     // canvas viewport unconditionally here rather than depending on the
@@ -314,54 +463,90 @@ class Renderer {
     gl.enable(gl.BLEND);
     gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
 
-    // Materials 2.0 transparency: a bounded, deliberately-not-order-
+    // Materials 2.0 transparency and Phase 014 hybrid boundary: a bounded,
+    // deliberately-not-order-
     // independent draw strategy -- opaque entities (alpha >= 1, the
     // overwhelming majority, unaffected by any of this) draw first with
     // normal depth writes, exactly as before this feature existed.
-    // Transparent entities draw AFTER, depth-write OFF (so two overlapping
+    // Transparent entities draw in one of two bounded bands around the
+    // contiguous Sprite pass, depth-write OFF (so two overlapping
     // transparent objects don't fight over which one is "in front" in the
     // depth buffer) and sorted back-to-front by distance from the camera,
     // which is the standard bounded approximation every non-OIT renderer
     // uses -- correct for the common cases this is meant to serve (a single
     // window, a force field, a ghost object), not guaranteed correct for
-    // deeply overlapping transparent geometry.
+    // deeply overlapping transparent geometry. A Billboard has no
+    // spriteRenderer, so it stays in these ordinary opaque/transparent 3D
+    // passes and responds to depth and lighting like any other 3D entity.
     const opaque = [];
-    const transparent = [];
+    const transparentBehindSprites = [];
+    const transparentInFrontOfSprites = [];
+    const sprites = [];
     for (const entity of scene.entities) {
       if (!entity.visible) continue;
       if (!getEntityRenderMesh(entity)) continue;
-      (entity.alpha < 1 ? transparent : opaque).push(entity);
+      if (entity.spriteRenderer || entity.tilemapRenderer) sprites.push(entity);
+      else if (entity.alpha < 1) {
+        (normalizeSpritePassRelation(entity.spritePassRelation) === 'in-front-of-sprites'
+          ? transparentInFrontOfSprites
+          : transparentBehindSprites).push(entity);
+      } else opaque.push(entity);
     }
     for (const entity of opaque) this._drawEntity(entity);
-    if (transparent.length > 0) {
-      transparent.sort((a, b) => eye.sub(b.position).length() - eye.sub(a.position).length()); // farthest first
+    const drawTransparentBand = (entities) => {
+      if (entities.length === 0) return;
+      entities.sort((a, b) => compareTransparentEntitiesBackToFront(a, b, eye));
       gl.depthMask(false);
-      for (const entity of transparent) this._drawEntity(entity);
+      for (const entity of entities) this._drawEntity(entity);
+      gl.depthMask(true);
+    };
+    drawTransparentBand(transparentBehindSprites);
+    // Phase 013 Sprite pass. Project layer order and per-instance Order in
+    // Layer are cached on each entity by the authoring/runtime bridge. Exact
+    // ties use the persisted stable Object ID, never insertion or frame time.
+    // Depth testing remains enabled against opaque 3D geometry (including
+    // opaque Billboards); Sprite depth writes remain disabled. Higher tuple
+    // values draw later/in front. Transparent 3D geometry, including alpha
+    // Billboards in the behind-Sprites band have already drawn; the
+    // in-front-of-Sprites band follows this complete Sprite pass.
+    if (sprites.length > 0) {
+      sprites.sort((a, b) => (a.spriteSortingLayerOrder || 0) - (b.spriteSortingLayerOrder || 0)
+        || (a.spriteOrderInLayer || 0) - (b.spriteOrderInLayer || 0)
+        || ((a.spriteStableId || '') < (b.spriteStableId || '') ? -1 : (a.spriteStableId || '') > (b.spriteStableId || '') ? 1 : 0));
+      gl.depthMask(false);
+      for (const entity of sprites) this._drawEntity(entity);
       gl.depthMask(true);
     }
+    // Phase 029 second transparent band. Depth testing remains enabled, so
+    // "in front of Sprites" is a pass relationship rather than an x-ray:
+    // opaque depth can still occlude these objects. Like the historical
+    // transparent pass, this band writes no depth and is deterministic.
+    drawTransparentBand(transparentInFrontOfSprites);
     gl.disable(gl.BLEND);
+    gl.bindSampler(0, null);
     gl.bindTexture(gl.TEXTURE_2D, null);
     gl.bindVertexArray(null);
   }
 
   _drawEntity(entity) {
+    if (entity.tilemapRenderer) { this._drawTilemapEntity(entity); return; }
     const gl = this.gl;
     const mesh = getEntityRenderMesh(entity);
-    gl.uniformMatrix4fv(this.uModel, false, entity.modelMatrix.m);
-    gl.uniform3f(this.uBaseColor, entity.color[0], entity.color[1], entity.color[2]);
-    gl.uniform1i(this.uUnlit, entity.unlit ? 1 : 0);
+    const baseColor = entity.spriteMissingTexture ? [1, 0.15, 0.8] : entity.color;
+    gl.uniform3f(this.uBaseColor, baseColor[0], baseColor[1], baseColor[2]);
+    gl.uniform1i(this.uUnlit, (entity.unlit || entity.spriteRenderer) ? 1 : 0);
+    gl.uniform1i(this.uLighting2D, !!entity.spriteRenderer && this.lighting2D.enabled ? 1 : 0);
+    gl.uniform1f(this.uAmbient2D, this.lighting2D.ambient);
     gl.uniform1f(this.uAlpha, entity.alpha ?? 1);
     const em = entity.emissiveColor || [0, 0, 0];
     gl.uniform3f(this.uEmissiveColor, em[0], em[1], em[2]);
     gl.uniform1f(this.uEmissiveIntensity, entity.emissiveIntensity || 0);
-    const uvScale = entity.uvScale || [1, 1];
-    const uvOffset = entity.uvOffset || [0, 0];
-    gl.uniform2f(this.uUvScale, uvScale[0], uvScale[1]);
-    gl.uniform2f(this.uUvOffset, uvOffset[0], uvOffset[1]);
     if (entity.texture) {
       gl.bindTexture(gl.TEXTURE_2D, entity.texture);
+      gl.bindSampler(0, this.textureSamplers[entity.textureSampling === 'nearest' ? 'nearest' : 'linear']);
       gl.uniform1i(this.uUseTexture, 1);
     } else {
+      gl.bindSampler(0, null);
       gl.uniform1i(this.uUseTexture, 0);
     }
     // Wave 6 (Priority C): entity.skin (set by App.addEntity only for a
@@ -377,7 +562,127 @@ class Renderer {
       gl.uniform1i(this.uUseSkinning, 0);
     }
     gl.bindVertexArray(mesh.vao);
-    gl.drawElements(gl.TRIANGLES, mesh.indexCount, gl.UNSIGNED_SHORT, 0);
+    // Phase 026: a nine-slice is still one sorted Entity and one Texture.
+    // Its cells are emitted contiguously inside this entity draw, sharing
+    // material, sampler, tint, opacity, and depth state. Degenerate cells
+    // were removed by the authoritative authoring/runtime resolver.
+    const cells = entity.spriteNineSliceCells;
+    if (entity.spriteRenderer && Array.isArray(cells) && cells.length) {
+      for (const cell of cells) {
+        gl.uniformMatrix4fv(this.uModel, false, entity._spriteCellModelMatrix(cell).m);
+        gl.uniform2f(this.uUvScale, cell.uvScale[0], cell.uvScale[1]);
+        gl.uniform2f(this.uUvOffset, cell.uvOffset[0], cell.uvOffset[1]);
+        gl.drawElements(gl.TRIANGLES, mesh.indexCount, gl.UNSIGNED_SHORT, 0);
+      }
+    } else {
+      const uvScale = entity.uvScale || [1, 1];
+      const uvOffset = entity.uvOffset || [0, 0];
+      gl.uniformMatrix4fv(this.uModel, false, entity.modelMatrix.m);
+      gl.uniform2f(this.uUvScale, uvScale[0], uvScale[1]);
+      gl.uniform2f(this.uUvOffset, uvOffset[0], uvOffset[1]);
+      gl.drawElements(gl.TRIANGLES, mesh.indexCount, gl.UNSIGNED_SHORT, 0);
+    }
+  }
+
+  _destroyTilemapBatchCache(cache) {
+    if (!cache) return;
+    const gl = this.gl;
+    for (const batch of cache.batches || []) {
+      for (const resource of batch.mesh.resources || []) {
+        if (resource === batch.mesh.vao) gl.deleteVertexArray(resource);
+        else gl.deleteBuffer(resource);
+      }
+    }
+    this.tilemapRenderMetrics.cacheBytes = Math.max(0, this.tilemapRenderMetrics.cacheBytes - (cache.bytes || 0));
+  }
+
+  _buildTilemapBatchCache(renderer) {
+    const cells = renderer.cells || [];
+    const batches = [];
+    let bytes = 0;
+    // Uint16 indices allow at most 16,383 quads in one mesh. Consecutive
+    // render-state runs preserve exact authored cell/layer order; unlike a
+    // global texture regroup they cannot reorder overhanging alpha artwork.
+    for (let start = 0; start < cells.length;) {
+      const first = cells[start];
+      let end = start + 1;
+      while (end < cells.length && end - start < 16383) {
+        const next = cells[end];
+        if (next.texture !== first.texture || next.sampling !== first.sampling || !!next.missing !== !!first.missing) break;
+        end++;
+      }
+      const count = end - start;
+      const positions = new Float32Array(count * 12);
+      const normals = new Float32Array(count * 12);
+      const uvs = new Float32Array(count * 8);
+      const indices = new Uint16Array(count * 6);
+      for (let i = 0; i < count; i++) {
+        const cell = cells[start + i];
+        const halfW = cell.artWidth * 0.5; const halfH = cell.artHeight * 0.5;
+        const left = cell.centerX - halfW; const right = cell.centerX + halfW;
+        const bottom = cell.centerY - halfH; const top = cell.centerY + halfH;
+        positions.set([left, bottom, 0, right, bottom, 0, right, top, 0, left, top, 0], i * 12);
+        normals.set([0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1], i * 12);
+        const scale = cell.uvScale || [1, 1]; const offset = cell.uvOffset || [0, 0];
+        const u0 = offset[0]; const v0 = offset[1]; const u1 = u0 + scale[0]; const v1 = v0 + scale[1];
+        uvs.set([u0, v0, u1, v0, u1, v1, u0, v1], i * 8);
+        const vertex = i * 4; const at = i * 6;
+        indices.set([vertex, vertex + 1, vertex + 2, vertex, vertex + 2, vertex + 3], at);
+      }
+      const mesh = createMeshFromArrays(this.gl, positions, normals, indices, uvs);
+      const batchBytes = positions.byteLength + normals.byteLength + uvs.byteLength + indices.byteLength;
+      bytes += batchBytes;
+      batches.push({ mesh, texture: first.texture, sampling: first.sampling, missing: !!first.missing, cellCount: count, bytes: batchBytes });
+      start = end;
+    }
+    this.tilemapRenderMetrics.geometryRebuilds++;
+    this.tilemapRenderMetrics.bufferUploads += batches.length * 4;
+    this.tilemapRenderMetrics.cacheBytes += bytes;
+    return { renderer, batches, bytes };
+  }
+
+  // Phase 040: a Tilemap still occupies one contiguous Sprite-pass sort
+  // slot, but unchanged Cell quads are now cached into consecutive
+  // atlas/sampler batches. Camera/Transform changes only update u_model;
+  // authoring changes replace renderer and rebuild once on next draw.
+  _drawTilemapEntity(entity) {
+    const gl = this.gl;
+    const renderer = entity.tilemapRenderer;
+    const cells = renderer && renderer.cells;
+    if (!Array.isArray(cells) || !cells.length) return;
+    let cache = this._tilemapBatchCaches.get(entity);
+    if (!cache || cache.renderer !== renderer) {
+      if (cache) this._destroyTilemapBatchCache(cache);
+      cache = this._buildTilemapBatchCache(renderer);
+      this._tilemapBatchCaches.set(entity, cache);
+    }
+    gl.uniform1i(this.uUnlit, 1);
+    gl.uniform1i(this.uLighting2D, this.lighting2D.enabled ? 1 : 0);
+    gl.uniform1f(this.uAmbient2D, this.lighting2D.ambient);
+    gl.uniform1f(this.uAlpha, 1);
+    gl.uniform3f(this.uEmissiveColor, 0, 0, 0);
+    gl.uniform1f(this.uEmissiveIntensity, 0);
+    gl.uniform1i(this.uUseSkinning, 0);
+    gl.uniformMatrix4fv(this.uModel, false, entity.modelMatrix.m);
+    gl.uniform2f(this.uUvScale, 1, 1);
+    gl.uniform2f(this.uUvOffset, 0, 0);
+    for (const batch of cache.batches) {
+      const color = batch.missing ? [1, 0.15, 0.8] : [1, 1, 1];
+      gl.uniform3f(this.uBaseColor, color[0], color[1], color[2]);
+      if (batch.texture) {
+        gl.bindTexture(gl.TEXTURE_2D, batch.texture);
+        gl.bindSampler(0, this.textureSamplers[batch.sampling === 'nearest' ? 'nearest' : 'linear']);
+        gl.uniform1i(this.uUseTexture, 1);
+      } else {
+        gl.bindSampler(0, null);
+        gl.uniform1i(this.uUseTexture, 0);
+      }
+      gl.bindVertexArray(batch.mesh.vao);
+      gl.drawElements(gl.TRIANGLES, batch.mesh.indexCount, gl.UNSIGNED_SHORT, 0);
+      this.tilemapRenderMetrics.drawCalls++;
+      this.tilemapRenderMetrics.submittedCells += batch.cellCount;
+    }
+    this.tilemapRenderMetrics.batchCount += cache.batches.length;
   }
 
   renderTerrain(camera, aspect, terrain, lightDir = new Vec3(-0.5, -1.0, -0.3), lights = [], shadowInfo = null) {
@@ -505,6 +810,11 @@ class Renderer {
 
   destroy() {
     const gl = this.gl;
+    this._releasePostTarget();
+    if (this._postProgram) gl.deleteProgram(this._postProgram);
+    for (const cache of this._tilemapBatchCaches.values()) this._destroyTilemapBatchCache(cache);
+    this._tilemapBatchCaches.clear();
+    if (globalThis[Symbol.for('opus.tilemap.metrics')] === this.tilemapRenderMetrics) delete globalThis[Symbol.for('opus.tilemap.metrics')];
     const deleteResource = (resource, index) => {
       if (!resource) return;
       if (index === 0) gl.deleteVertexArray(resource);
@@ -518,5 +828,6 @@ class Renderer {
     }
     if (this._shadowTexture) gl.deleteTexture(this._shadowTexture);
     if (this._shadowFbo) gl.deleteFramebuffer(this._shadowFbo);
+    for (const sampler of Object.values(this.textureSamplers || {})) if (sampler) gl.deleteSampler(sampler);
   }
 }

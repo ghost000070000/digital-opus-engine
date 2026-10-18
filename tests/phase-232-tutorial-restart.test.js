@@ -1,0 +1,8 @@
+'use strict';
+const fs=require('fs'),vm=require('vm'),assert=require('assert'),source=fs.readFileSync(require.resolve('../editor/src/01-editor.js'),'utf8');
+const calls=[],c={playMode:false,playerPreferenceScope:{id:'owner'},window:{confirm:message=>{calls.push(['confirm',message]);return false;}},showStatus:message=>calls.push(['status',message]),closeEditorHelp:()=>calls.push(['close']),createBlankProject:name=>calls.push(['blank',name]),onboardingStore:{restart:name=>calls.push(['restart',name]),bindProject:id=>calls.push(['bind',id])},setEditorVisible:value=>calls.push(['visible',value]),renderOnboardingCoach:()=>calls.push(['render'])};vm.createContext(c);vm.runInContext(source.slice(source.indexOf('function restartGuidedTutorial('),source.indexOf("document.getElementById('restart-tutorial-btn').addEventListener")),c);
+assert.equal(c.restartGuidedTutorial(),false);assert.equal(calls.length,1);assert.match(calls[0][1],/replaces the open document and clears its Undo\/Redo history/);
+calls.length=0;c.playMode=true;assert.equal(c.restartGuidedTutorial(),false);assert.deepStrictEqual(calls.map(c=>c[0]),['status']);
+c.playMode=false;calls.length=0;c.window.confirm=()=>{c.playMode=true;return true;};assert.equal(c.restartGuidedTutorial(),false);assert.deepStrictEqual(calls.map(c=>c[0]),['status']);
+c.playMode=false;calls.length=0;c.window.confirm=()=>true;assert.equal(c.restartGuidedTutorial(),true);assert.deepStrictEqual(calls,[['close'],['blank','guided-first-game'],['restart','guided-first-game'],['bind','owner'],['visible',true],['render']]);
+console.log('Phase232 actual tutorial Restart: Cancel read-only, Play/stale-Play refusal, explicit reviewed replacement PASS');

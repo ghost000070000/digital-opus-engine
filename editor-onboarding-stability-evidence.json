@@ -1,0 +1,510 @@
+{
+  "generatedAt": "2026-09-20T21:48:47.295Z",
+  "url": "http://127.0.0.1:8898/editor/",
+  "cycles": [
+    {
+      "cycle": 1,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 2,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 3,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 4,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 5,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 6,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 7,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 8,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 9,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 10,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 11,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 12,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 13,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 14,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 15,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 16,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 17,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 18,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 19,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 20,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 21,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 22,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 23,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 24,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 25,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 26,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 27,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 28,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 29,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 30,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 31,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 32,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 33,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 34,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 35,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 36,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 37,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 38,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 39,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 40,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 41,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 42,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 43,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 44,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 45,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 46,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 47,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 48,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 49,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 50,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 51,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 52,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 53,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 54,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 55,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 56,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 57,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 58,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 59,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 60,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 61,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 62,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 63,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 64,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 65,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 66,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 67,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 68,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 69,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 70,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 71,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 72,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 73,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 74,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 75,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 76,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 77,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 78,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 79,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 80,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 81,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 82,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 83,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 84,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 85,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 86,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 87,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 88,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 89,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 90,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 91,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 92,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 93,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 94,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 95,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 96,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 97,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 98,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 99,
+      "coachVisible": true,
+      "recoveryVisible": false
+    },
+    {
+      "cycle": 100,
+      "coachVisible": true,
+      "recoveryVisible": false
+    }
+  ],
+  "errors": [],
+  "missingTargetRecovery": true,
+  "malformedRecovered": true,
+  "pass": true
+}

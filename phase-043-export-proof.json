@@ -1,0 +1,191 @@
+{
+  "phase": 43,
+  "status": "PASS",
+  "exports": {
+    "editable": {
+      "bytes": 2008698,
+      "simulation": {
+        "originalX": 0,
+        "originalY": 0,
+        "actual": {
+          "x": 2.3999990000049998,
+          "y": 2
+        },
+        "restored": {
+          "x": 0,
+          "y": 0
+        },
+        "restoredBody": {
+          "version": 1,
+          "enabled": true,
+          "type": "kinematic",
+          "linearVelocity": [
+            50,
+            10
+          ]
+        },
+        "authoredVelocity": [
+          50,
+          10
+        ],
+        "wallPosition": {
+          "x": 3,
+          "y": 0,
+          "z": 0
+        },
+        "parentedBefore": {
+          "x": 14.116265123685377,
+          "y": -4.041148922791594
+        },
+        "parentedAfter": {
+          "x": 14.216265123685378,
+          "y": -4.041148922791594
+        },
+        "singularMove": {
+          "requestedDelta": {
+            "x": 0.1,
+            "y": 0
+          },
+          "actualDelta": {
+            "x": 0,
+            "y": 0
+          },
+          "blockedX": false,
+          "blockedY": false,
+          "hitObjectIds": [],
+          "initialOverlap": false
+        },
+        "mirroredBefore": {
+          "x": 9.941671252448169,
+          "y": -6.431000446703868
+        },
+        "mirroredAfter": {
+          "x": 10.041671252448168,
+          "y": -6.431000446703868
+        },
+        "firstEvents": [
+          "trigger2DEnter"
+        ],
+        "secondEvents": [
+          "trigger2DEnter",
+          "trigger2DStay"
+        ],
+        "blockedEvents": 0,
+        "move": {
+          "requestedDelta": {
+            "x": 5,
+            "y": 1
+          },
+          "actualDelta": {
+            "x": 2.3999990000049998,
+            "y": 1
+          },
+          "blockedX": true,
+          "blockedY": false,
+          "hitObjectIds": [
+            "wall"
+          ],
+          "initialOverlap": false
+        },
+        "metrics": {
+          "candidates": 95,
+          "broadRejects": 85,
+          "narrowTests": 10
+        }
+      }
+    },
+    "playable": {
+      "bytes": 1985071,
+      "simulation": {
+        "originalX": 0,
+        "originalY": 0,
+        "actual": {
+          "x": 2.3999990000049998,
+          "y": 2
+        },
+        "restored": {
+          "x": 0,
+          "y": 0
+        },
+        "restoredBody": {
+          "version": 1,
+          "enabled": true,
+          "type": "kinematic",
+          "linearVelocity": [
+            50,
+            10
+          ]
+        },
+        "authoredVelocity": [
+          50,
+          10
+        ],
+        "wallPosition": {
+          "x": 3,
+          "y": 0,
+          "z": 0
+        },
+        "parentedBefore": {
+          "x": 14.011765123804587,
+          "y": -4.041148922791594
+        },
+        "parentedAfter": {
+          "x": 14.111765123804586,
+          "y": -4.041148922791594
+        },
+        "singularMove": {
+          "requestedDelta": {
+            "x": 0.1,
+            "y": 0
+          },
+          "actualDelta": {
+            "x": 0,
+            "y": 0
+          },
+          "blockedX": false,
+          "blockedY": false,
+          "hitObjectIds": [],
+          "initialOverlap": false
+        },
+        "mirroredBefore": {
+          "x": 9.99813284334698,
+          "y": -6.3430667288917535
+        },
+        "mirroredAfter": {
+          "x": 10.098132843346981,
+          "y": -6.3430667288917535
+        },
+        "firstEvents": [
+          "trigger2DEnter"
+        ],
+        "secondEvents": [
+          "trigger2DEnter",
+          "trigger2DStay"
+        ],
+        "blockedEvents": 0,
+        "move": {
+          "requestedDelta": {
+            "x": 5,
+            "y": 1
+          },
+          "actualDelta": {
+            "x": 2.3999990000049998,
+            "y": 1
+          },
+          "blockedX": true,
+          "blockedY": false,
+          "hitObjectIds": [
+            "wall"
+          ],
+          "initialOverlap": false
+        },
+        "metrics": {
+          "candidates": 95,
+          "broadRejects": 86,
+          "narrowTests": 9
+        }
+      }
+    }
+  },
+  "publicCatalog": false
+}

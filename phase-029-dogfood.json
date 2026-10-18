@@ -1,0 +1,88 @@
+{
+  "phase": 29,
+  "url": "http://127.0.0.1:8879/editor/",
+  "status": "passed",
+  "checks": {
+    "inspector": {
+      "relationVisible": true,
+      "value": "in-front-of-sprites",
+      "label": "Hybrid Layering\n        Relative to Sprites\n        \n          Behind Sprites\n          In Front of Sprites\n        \n        Available to transparent Meshes and Billboards. Both choices depth-test against opaque 3D; neither is an x-ray. The saved choice is retained while the material is opaque.\n      "
+    },
+    "spriteReadOnly": "Hybrid Layering (read-only)Sprites always draw as one contiguous pass: after opaque depth and Behind Sprites transparency, before In Front of Sprites transparency. Transform Z is tested against opaque depth; Sprite order is Sorting Layer, Order in Layer, then stable Object ID.",
+    "projectHelp": "Hybrid Scene LayeringPass order: Opaque 3D → transparent Meshes/Billboards Behind Sprites → the complete Sprite pass → transparent Meshes/Billboards In Front of Sprites. Transparent bands depth-test but do not write depth. Sprite Z only interacts spatially with opaque depth.",
+    "validation": "No structured authoring issues found.",
+    "cameraSwitch": {
+      "perspective": {
+        "projection": "perspective",
+        "relation": "in-front-of-sprites",
+        "quat": [
+          -0.03302445685991804,
+          -0.05527012925342211,
+          -0.001829064105099717,
+          0.9979234703051717
+        ]
+      },
+      "orthographic": {
+        "projection": "orthographic",
+        "relation": "in-front-of-sprites",
+        "quat": [
+          -0.05488111277368636,
+          -0.055216786461323095,
+          -0.0030395980121057592,
+          0.9969603456494803
+        ]
+      }
+    },
+    "duplicate": {
+      "relation": "in-front-of-sprites",
+      "runtime": "in-front-of-sprites",
+      "billboard": true
+    },
+    "stress": {
+      "sprites": 1000,
+      "behind": 251,
+      "front": 252,
+      "opaque": 285,
+      "elapsedMs": 93.19999998807907
+    },
+    "editable": {
+      "file": ".tmp-phase029\\phase-029-editable.html",
+      "bytes": 1665410,
+      "playableOnly": false,
+      "chromeVisible": true,
+      "inspectorReady": true,
+      "proof": {
+        "behind": "behind-sprites",
+        "front": "in-front-of-sprites",
+        "frontBillboard": true,
+        "spriteOwnsRelation": false,
+        "runtimeFront": "in-front-of-sprites"
+      },
+      "errors": [],
+      "network": [],
+      "pass": true
+    },
+    "playable": {
+      "file": ".tmp-phase029\\phase-029-playable.html",
+      "bytes": 1665470,
+      "playableOnly": true,
+      "chromeVisible": false,
+      "inspectorReady": true,
+      "proof": {
+        "behind": "behind-sprites",
+        "front": "in-front-of-sprites",
+        "frontBillboard": true,
+        "spriteOwnsRelation": false,
+        "runtimeFront": "in-front-of-sprites"
+      },
+      "errors": [],
+      "network": [],
+      "pass": true
+    }
+  },
+  "limitations": [
+    "Bounded two-band alpha transparency; universal order-independent transparency remains out of scope."
+  ],
+  "errors": [],
+  "ok": true
+}

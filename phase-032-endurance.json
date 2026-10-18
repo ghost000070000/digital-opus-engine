@@ -1,0 +1,39 @@
+{
+  "phase": 32,
+  "kind": "bounded-endurance",
+  "requestedSeconds": 7200,
+  "actualDurationSeconds": 7200.009,
+  "campaigns": [
+    "model-storage",
+    "undo-redo",
+    "tileset-mutation",
+    "browser",
+    "export-loop"
+  ],
+  "seeds": [
+    11,
+    23,
+    47,
+    97,
+    193
+  ],
+  "cycles": 1038134,
+  "actions": 2076268000,
+  "paintOps": 1661014400,
+  "eraseOps": 415253600,
+  "serializeCycles": 1038134,
+  "saveReloadCycles": 1038134,
+  "undoRedoCycles": 1038134,
+  "tilesetMutationCycles": 1038134,
+  "browserCycles": 4,
+  "exportCycles": 4,
+  "heartbeatCount": 13,
+  "occupied": 3380,
+  "peakHeapBytes": 95449504,
+  "finalHeapBytes": 93367872,
+  "transientWindowsLocks": 0,
+  "failures": [],
+  "ok": true,
+  "verdict": "PASS",
+  "limitations": null
+}

@@ -1,0 +1,27 @@
+{
+  "phase": 44,
+  "status": "PASS",
+  "decision": "NOT_JUSTIFIED",
+  "finalVerdict": "PHASE_044_DYNAMIC_BODY_NOT_JUSTIFIED",
+  "productBodyVersion": 1,
+  "productBodyTypes": ["static", "kinematic"],
+  "prototype": {
+    "semantics": "analytic constant world-XY acceleration; mutable runtime velocity; blocked Static-contact velocity axis zeroed",
+    "focusedTests": { "passed": 15, "total": 15 },
+    "movementFuzz": { "cases": 500595, "seeds": 20, "thinWalls": 100235, "cappedSweeps": 6065, "restCapHits": 0 },
+    "rest": { "bodies": 2000, "ticks": 240000, "singleBodySimulatedSeconds": 60, "jitterOrSink": false },
+    "browserCycles": 20,
+    "performanceMedianMs": { "1x1000": 0.647, "10x1000": 3.723, "50x500": 7.384, "100resting": 4.662 }
+  },
+  "creatorWorkflows": [
+    { "name": "gravity drop and rest", "substantialNoCodeValue": true, "variants": ["falling crate", "falling ball", "falling Trigger hazard"] },
+    { "name": "ballistic arc", "substantialNoCodeValue": true, "variants": ["projectile", "arched prop"] },
+    { "name": "sideways or zero gravity", "substantialNoCodeValue": false, "reason": "direction/absence variant of the same acceleration rule" }
+  ],
+  "materiallyDistinctUsefulWorkflowCount": 2,
+  "requiredWorkflowCount": 3,
+  "expectationGaps": ["no Dynamic-Dynamic response", "no Dynamic-Kinematic response", "no Tilemap collision consumption"],
+  "soak": { "performed": false, "reason": "utility and product-clarity gate rejected promotion before conditional 30-minute prototype soak" },
+  "evidence": ["PHASE-044-DYNAMIC-BODY-UTILITY-GATE.md", "phase-044-dogfood.json", "phase-044-dynamic-fuzz.json", "phase-044-dynamic-performance.json", "phase-044-utility-browser.json", "tests/phase-044-dynamic-body-utility.test.js"],
+  "unresolvedPrototypePhysicsFailures": 0
+}

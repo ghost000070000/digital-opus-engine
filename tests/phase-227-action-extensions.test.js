@@ -1,0 +1,55 @@
+'use strict';
+const assert = require('assert'), fs = require('fs'), vm = require('vm');
+const source = fs.readFileSync(require.resolve('../editor/src/01-editor.js'), 'utf8');
+assert(source.includes('function registerCustomAction('), 'canonical action registry has no supported extension registration API');
+const begin = source.indexOf('// Phase 227: host-installed'), end = source.indexOf('// End Phase 227 host API', begin);
+assert(begin >= 0 && end > begin);
+function mounted() {
+  const messages = [], c = { ACTION_TYPES: { addScore: { fields: [], exec() {} } }, GRAPH_NODE_TYPES: { and: {} }, playMode: false,
+    scriptsTrusted: true, scriptTrustRevoked: false, scriptTrustSeen: false, window: { Opus: {} },
+    closeScriptTrustReview() {}, renderScriptTrustControls() {}, renderGraphActionPalette() {}, renderInspector() {}, showToast: v => messages.push(v) };
+  vm.createContext(c); vm.runInContext(source.slice(begin, end), c); return { c, messages };
+}
+const { c, messages } = mounted(); let calls = 0;
+const definition = { label: 'Award bonus', help: 'Adds a creator-defined bonus.', fields: [{ key: 'amount', label: 'Amount', type: 'number' }], exec: p => { calls += p.amount; } };
+c.registerCustomAction('custom_bonus', definition);
+assert(c.ACTION_TYPES.custom_bonus && c.GRAPH_NODE_TYPES.custom_bonus);
+assert.strictEqual(c.scriptsTrusted, false, 'new executable registration must revoke approval');
+c.ACTION_TYPES.custom_bonus.exec({ amount: 2 }, null); assert.strictEqual(calls, 0);
+c.scriptsTrusted = true; c.ACTION_TYPES.custom_bonus.exec({ amount: 2 }, null); assert.strictEqual(calls, 2);
+definition.fields[0].label = 'Changed'; assert.strictEqual(c.ACTION_TYPES.custom_bonus.fields[0].label, 'Amount');
+assert.throws(() => c.registerCustomAction('custom_bonus', definition));
+assert.throws(() => c.registerCustomAction('addScore', definition));
+assert.throws(() => c.registerCustomAction('__proto__', definition));
+assert.throws(() => c.registerCustomAction('custom_bad', { ...definition, fields: [{ key: 'id', type: 'text', label: 'ID' }] }));
+assert.throws(() => c.registerCustomAction('custom_bad', { ...definition, fields: [{ key: 'x"', type: 'text', label: 'X' }] }));
+assert.throws(() => c.registerCustomAction('custom_bad', { ...definition, fields: [{ key: 'x', type: 'html', label: 'X' }] }));
+c.playMode = true; assert.throws(() => c.registerCustomAction('custom_play', definition)); c.playMode = false;
+c.registerCustomAction('custom_error', { label: 'Throw', help: 'Reports host failure.', fields: [], exec() { throw new Error('host failure'); } });
+c.scriptsTrusted = true; c.ACTION_TYPES.custom_error.exec({}, null); assert(messages.some(v => v.includes('host failure')));
+assert(c.customActionReviewSources().join('\n').includes('custom_bonus'));
+const snapshot = c.window.Opus.ActionExtensions.list(); assert.strictEqual(snapshot.length, 2);
+assert(Object.isFrozen(c.window.Opus.ActionExtensions));
+snapshot[0].fields[0].label = 'Changed copy'; assert.strictEqual(c.ACTION_TYPES.custom_bonus.fields[0].label, 'Amount');
+const limited = mounted().c;
+for (let i = 0; i < 32; i++) limited.registerCustomAction('custom_test_' + i, { label: 'Test', help: '', fields: [], exec() {} });
+assert.throws(() => limited.registerCustomAction('custom_overflow', { label: 'Test', help: '', fields: [], exec() {} }));
+assert.strictEqual(Object.keys(limited.ACTION_TYPES).length, 33, 'Rejected registration leaves canonical registry unchanged');
+const detection = { WeakSet }; vm.createContext(detection);
+vm.runInContext(source.slice(source.indexOf('function projectHasScripts('), source.indexOf('function loadProjectData(', source.indexOf('function projectHasScripts('))), detection);
+assert(detection.projectHasScripts({ levels: [{ objects: [{ behaviors: [{ action: 'custom_absent', params: { keep: 7 } }] }] }] }));
+assert(!detection.projectHasScripts({ note: 'custom_absent is plain text, not a reference' }));
+let next = 100;
+const remap = { generateItemId: () => 'obj' + next++, ACTION_TYPES: { custom_test: { fields: [{ key: 'subject', type: 'target' }, { key: 'literal', type: 'text' }] } } };
+vm.createContext(remap); vm.runInContext(source.slice(source.indexOf('function remapObjectIds('), source.indexOf('// "<Name> Copy"', source.indexOf('function remapObjectIds('))), remap);
+const original = [{ id: 'obj3', behaviors: [{ action: 'custom_test', params: { subject: 'obj4', literal: 'obj4', unknown: 'obj4' } }, { action: 'graph', graph: { nodes: [{ id: 'n1', type: 'custom_test', subject: 'obj4', literal: 'obj4', unknown: 'obj4' }] } }, { action: 'custom_missing', params: { subject: 'obj4', unknown: 'obj4' } }] }, { id: 'obj4' }], beforeRemap = JSON.stringify(original);
+const copied = remap.remapObjectIds(original), owner = copied[0];
+assert.equal(owner.behaviors[0].params.subject, copied[1].id);
+assert.equal(owner.behaviors[0].params.literal, 'obj4'); assert.equal(owner.behaviors[0].params.unknown, 'obj4');
+assert.equal(owner.behaviors[1].graph.nodes[0].subject, copied[1].id); assert.equal(owner.behaviors[1].graph.nodes[0].literal, 'obj4');
+assert.equal(owner.behaviors[2].params.subject, 'obj4', 'Unknown host schema must retain inert parameter bytes, not guess references');
+assert.equal(JSON.stringify(original), beforeRemap);
+const extra = remap.remapObjectIds([{ id: 'obj4', behaviors: [{ action: 'message', param: 'obj4' }] }], [{ steps: [{ actionType: 'custom_test', params: { subject: 'obj4', literal: 'obj4' } }] }]);
+assert.equal(extra.extra[0].steps[0].params.subject, extra.objects[0].id); assert.equal(extra.extra[0].steps[0].params.literal, 'obj4');
+assert.equal(extra.objects[0].behaviors[0].param, extra.objects[0].id, 'Historical built-in broad remap unchanged');
+console.log('Phase 227 canonical host extension registration, schema, trust, collision and error gates PASS');

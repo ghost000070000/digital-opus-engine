@@ -1,0 +1,10 @@
+'use strict';
+const fs=require('fs'),vm=require('vm'),assert=require('assert'),src=fs.readFileSync(require.resolve('../editor/src/01-editor.js'),'utf8'),bundle=require('../editor/src/00-tilemap-bundle');
+(async()=>{const original=fs.readFileSync(require.resolve('../phase-039-dogfood.opus-tilemap.json'),'utf8'),verified=await bundle.verifyBundleText(original),state=bundle.materializeImport(bundle.planImport(verified,{}),{});
+const c={OpusTilemapBundle:{planImport:()=>({dependencies:{prefabs:state.prefabs}})},tilemapBundleProjectView:()=>({})};vm.createContext(c);
+vm.runInContext(src.slice(src.indexOf('function validateImportedSceneRecords('),src.indexOf('function normalizeProjectData(')),c);
+vm.runInContext(src.slice(src.indexOf('function planTilemapBundleImport('),src.indexOf('function commitTilemapBundleImport(')),c);
+const before=JSON.stringify(state);assert.throws(()=>c.planTilemapBundleImport(verified),/Prefab Dogfood Elite.*scale/);assert.equal(JSON.stringify(state),before,'Invalid imported dependencies remain unchanged');
+const commit=src.slice(src.indexOf('function commitTilemapBundleImport('),src.indexOf('async function previewTilemapBundleImportFile('));assert(commit.indexOf('validateImportedPrefabs(d.prefabs)')<commit.indexOf('collisionLayers.push'),'Validate before first library mutation, including direct commit');
+for(const p of state.prefabs){if((p.record.kind||'cube')==='cube'){p.record.scale??=[1,1,1];p.record.color??=[1,1,1];}}assert(c.planTilemapBundleImport(verified));
+console.log('PASS179 actual portable-bundle prerequisite validation reproduces historical invalid root refusal before mutation; explicitly valid internal fixture accepted.');})().catch(e=>{console.error(e);process.exitCode=1;});

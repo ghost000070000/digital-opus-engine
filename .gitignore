@@ -4,3 +4,14 @@ node_modules/
 Thumbs.db
 .vscode/
 .idea/
+
+# Generated: assembled from editor/src/modules by build/build-editor.js
+editor/src/01-editor.js
+# Build and release output (rebuild with node build/build.js and the site builders)
+dist/
+release/
+# Scratch
+tmp/
+.tmp/
+.tmp-*/
+*.tmp

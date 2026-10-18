@@ -1,0 +1,39 @@
+{
+  "phase": 36,
+  "historyPolicy": "Previous nonqualifying evidence is preserved verbatim; fresh closure evidence is stored separately in full detail.",
+  "previousNonqualifyingRun": {
+    "runId": "phase-036-20260916T204608-0700",
+    "started": "2026-09-17T04:10:13.898Z",
+    "ended": "2026-09-17T04:11:13.923Z",
+    "actualElapsedSeconds": 60.025,
+    "status": "INCOMPLETE_DURATION",
+    "verbatimEvidence": "qualification/phase-036/phase-036-endurance-previous-60s.json",
+    "sha256": "B85BB5AF82A7EC8A2814A63E365846C859C945DA3AA006478888A3C5A5A3FB22"
+  },
+  "freshQualifyingClosureRun": {
+    "runId": "phase-036-endurance-closure-20260917T105609Z",
+    "started": "2026-09-17T10:56:09.466Z",
+    "ended": "2026-09-17T16:56:48.829Z",
+    "targetSeconds": 21630,
+    "actualElapsedSeconds": 21639.369,
+    "qualifying": true,
+    "status": "PHASE_036_TERRAIN_BRUSHES_READY",
+    "modelOperations": 6593944,
+    "weightedResolutions": 723425435,
+    "autoTileResolutions": 501759,
+    "terrainTransitions": 40956,
+    "serializeLoadCycles": 1640,
+    "undoRedoOperations": 16384,
+    "browserCycles": 14,
+    "editableExportCycles": 14,
+    "playableExportCycles": 14,
+    "heartbeatCount": 37,
+    "memoryObservations": 41,
+    "transientLockCount": 0,
+    "semanticFailures": 0,
+    "crashes": 0,
+    "unresolvedFailures": [],
+    "fullEvidence": "phase-036-endurance-closure.json"
+  },
+  "finalVerdict": "PHASE_036_TERRAIN_BRUSHES_READY"
+}

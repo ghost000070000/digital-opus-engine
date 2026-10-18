@@ -2,7 +2,7 @@
   "id": "power-grid",
   "phase": "after",
   "url": "http://localhost:8837/dist/games/power-grid.html",
-  "startedAt": "2026-09-08T16:24:36.733Z",
+  "startedAt": "2026-09-20T21:59:37.293Z",
   "seconds": 24,
   "input": [
     {
@@ -502,6 +502,121 @@
       "key": "a",
       "milliseconds": 700,
       "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
+    },
+    {
+      "key": "a",
+      "milliseconds": 700,
+      "reason": "Extend representative simulation time"
     }
   ],
   "errors": [],
@@ -511,13 +626,13 @@
       "title": "Power Grid",
       "text": "Restore Emergency Power\nF interact / carry\nPress F to interact\nF carry / interact • Cell → generator → two coolant consoles",
       "state": {},
-      "playtime": 0.30000000000000004,
-      "simulationSeconds": 0.30000000000000004,
+      "playtime": 0.2,
+      "simulationSeconds": 0.2,
       "ended": false,
       "player": {
         "position": {
           "x": -17,
-          "y": 0.55,
+          "y": 0.65,
           "z": 0
         },
         "visible": false,
@@ -537,14 +652,14 @@
       "title": "Power Grid",
       "text": "Restore Emergency Power\nF interact / carry\nPress F to interact\nF carry / interact • Cell → generator → two coolant consoles",
       "state": {},
-      "playtime": 3.5000000000000018,
-      "simulationSeconds": 3.5000000000000018,
+      "playtime": 2.800000000000001,
+      "simulationSeconds": 2.800000000000001,
       "ended": false,
       "player": {
         "position": {
-          "x": -5.299994921796676,
-          "y": 0.55,
-          "z": -4.199994921796715
+          "x": -8.299954337956784,
+          "y": 1.35,
+          "z": -3.5999543379854644
         },
         "visible": false,
         "controller": "firstperson"
@@ -563,14 +678,14 @@
       "title": "Power Grid",
       "text": "Restore Emergency Power\nF interact / carry\nPress F to interact\nF carry / interact • Cell → generator → two coolant consoles",
       "state": {},
-      "playtime": 20.008400000005977,
-      "simulationSeconds": 20.008400000005977,
+      "playtime": 15.99999999999996,
+      "simulationSeconds": 15.99999999999996,
       "ended": false,
       "player": {
         "position": {
-          "x": -1.9338749052775075,
+          "x": -6.98980523457241,
           "y": 0.55,
-          "z": 9.1
+          "z": 9.272958404444976
         },
         "visible": false,
         "controller": "firstperson"
@@ -588,7 +703,7 @@
   ],
   "start": {
     "title": "Power Grid",
-    "text": "Power Grid\n\nBring an abandoned generator hall back online. Carry the power cell to its socket, activate two coolant consoles and open the emergency exit. Visual landmark: Power lattice.\n\nBegin mission\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nQuality: High\n⛶ Fullscreen\nPress F to interact\nF carry / interact • Cell → generator → two coolant consoles",
+    "text": "Power Grid\n\nBring an abandoned generator hall back online. Carry the power cell to its socket, activate two coolant consoles and open the emergency exit. Visual landmark: Power lattice.\n\nBegin mission\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nMouse Sensitivity\nInvert Mouse Y\nQuality: High\n⛶ Fullscreen\nPress F to interact\nF carry / interact • Cell → generator → two coolant consoles",
     "state": {},
     "playtime": 0,
     "simulationSeconds": 0,
@@ -612,7 +727,7 @@
     "inventory": {},
     "helpers": []
   },
-  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nQuality: High\n⛶ Fullscreen\nRestore Emergency Power\nF interact / carry\nPress F to interact\nF carry / interact • Cell → generator → two coolant consoles",
+  "pause": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nMouse Sensitivity\nInvert Mouse Y\nQuality: High\n⛶ Fullscreen\nRestore Emergency Power\nF interact / carry\nPress F to interact\nF carry / interact • Cell → generator → two coolant consoles",
   "completed": true,
-  "finishedAt": "2026-09-08T16:26:49.176Z"
+  "finishedAt": "2026-09-20T22:01:52.789Z"
 }

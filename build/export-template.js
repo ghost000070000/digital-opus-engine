@@ -60,6 +60,8 @@
   //   title                - the resolved <title> text (caller decides the
   //                          fallback chain -- see buildExportHTML)
   function composeExportHTML(opts) {
+    const bootPattern=/<script>\n\/\/ Dev-time cache-busting[\s\S]*?<\/script>/;
+    if(typeof opts.htmlTemplate!=='string'||!bootPattern.test(opts.htmlTemplate))throw new Error('HTML template is missing its export boot section.');
     const embeddedFlags = opts.playableOnly
       ? `window.__OPUS_EMBEDDED_PROJECT__ = ${escapeForInlineScript(opts.embeddedProjectJSON)};\nwindow.__OPUS_PLAYABLE_ONLY__ = true;`
       : `window.__OPUS_EMBEDDED_PROJECT__ = ${escapeForInlineScript(opts.embeddedProjectJSON)};`;
@@ -68,7 +70,10 @@
       // into one-file game exports. Removing these tagged links preserves the
       // standalone contract instead of leaving a broken relative asset URL.
       .replace(/<link data-opus-app-icon[^>]*>\s*/g, '')
-      .replace(/<script>\n\/\/ Dev-time cache-busting[\s\S]*?<\/script>/, () => `<script>${embeddedFlags}</script>\n<script>\n${escapeForInlineScript(opts.templateJS)}\n</script>\n<script>\n${escapeForInlineScript(opts.engineJS)}\n</script>\n<script>\n${escapeForInlineScript(opts.editorJS)}\n</script>`)
+      // Explicit empty data favicon keeps standalone/editor exports fully
+      // offline; otherwise browsers synthesize a /favicon.ico request.
+      .replace(/<head>/, '<head>\n<link rel="icon" href="data:,">')
+      .replace(bootPattern, () => `<script>${embeddedFlags}</script>\n${opts.playableOnly?'':`<script id="opus-export-template" type="application/json">${escapeForInlineScript(JSON.stringify(opts.htmlTemplate))}</script>\n`}<script id="opus-export-composer">\n${escapeForInlineScript(opts.templateJS)}\n</script>\n<script id="opus-export-engine">\n${escapeForInlineScript(opts.engineJS)}\n</script>\n<script id="opus-export-editor">\n${escapeForInlineScript(opts.editorJS)}\n</script>`)
       .replace(/<title>[^<]*<\/title>/, `<title>${escapeHtmlForTitle(opts.title || 'Digital Opus Game')}</title>`);
   }
 

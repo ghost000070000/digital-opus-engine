@@ -1,0 +1,27 @@
+{
+  "phase": 41,
+  "status": "PASS",
+  "exports": {
+    "editable": {
+      "bytes": 1977008,
+      "bootMs": 1399,
+      "shapes": 24,
+      "hasResponseState": false,
+      "hasTriggerState": false,
+      "hasAuthoringOverlay": true,
+      "authoringOverlayVisible": false,
+      "authoringMutation": true
+    },
+    "playable": {
+      "bytes": 1953381,
+      "bootMs": 1237,
+      "shapes": 24,
+      "hasResponseState": false,
+      "hasTriggerState": false,
+      "hasAuthoringOverlay": true,
+      "authoringOverlayVisible": false
+    }
+  },
+  "noResponse": true,
+  "noTrigger": true
+}

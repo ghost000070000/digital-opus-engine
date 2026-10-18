@@ -1,0 +1,2403 @@
+{
+  "id": "moving-temple",
+  "inputOnly": true,
+  "startedAt": "2026-09-11T17:19:34.237Z",
+  "events": [
+    {
+      "capture": "start",
+      "state": {
+        "pos": {
+          "x": 0,
+          "y": 2.35,
+          "z": -0.4
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "forward": {
+            "x": 0.8283275959665198,
+            "y": -0.5602440483934886,
+            "z": 4.951845063708493e-17
+          },
+          "right": {
+            "x": -5.978123978750844e-17,
+            "y": 0,
+            "z": 1
+          },
+          "up": {
+            "x": 0.5602440483934886,
+            "y": 0.8283275959665198,
+            "z": 3.3492083796535623e-17
+          }
+        },
+        "eye": {
+          "x": -6.5,
+          "y": 6.74631171566674,
+          "z": -0.4000000000000004
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0018,
+        "pointerLocked": false,
+        "sim": 0,
+        "ended": false,
+        "frozen": false,
+        "health": {},
+        "inventory": {},
+        "objectives": {},
+        "held": null,
+        "nearest": null,
+        "text": "Moving Temple\n\nRide the crossing slab, activate the amber lift, and jump to the high shrine. Visual landmark: Kinetic shrine crown.\n\nBegin\n📖 How To Play\n🎮 Controls\n🎬 Credits\nVolume\nMouse Sensitivity\nInvert Mouse Y\nQuality: High\n⛶ Fullscreen\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "beacons": [],
+        "objs": [
+          {
+            "id": "rehab-1",
+            "name": "Temple pier",
+            "pos": {
+              "x": -1.7,
+              "y": -0.5,
+              "z": 2.4
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-2",
+            "name": "Temple pier",
+            "pos": {
+              "x": -1.7,
+              "y": -0.5,
+              "z": -2.4
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-3",
+            "name": "Temple pier",
+            "pos": {
+              "x": 1.7,
+              "y": -0.5,
+              "z": 2.4
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-4",
+            "name": "Temple pier",
+            "pos": {
+              "x": 1.7,
+              "y": -0.5,
+              "z": -2.4
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-5",
+            "name": "Temple pier",
+            "pos": {
+              "x": 10.3,
+              "y": -0.5,
+              "z": 2.4
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-6",
+            "name": "Temple pier",
+            "pos": {
+              "x": 10.3,
+              "y": -0.5,
+              "z": -2.4
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-7",
+            "name": "Temple pier",
+            "pos": {
+              "x": 13.7,
+              "y": -0.5,
+              "z": 2.4
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-8",
+            "name": "Temple pier",
+            "pos": {
+              "x": 13.7,
+              "y": -0.5,
+              "z": -2.4
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-9",
+            "name": "High shrine arch",
+            "pos": {
+              "x": 20,
+              "y": 6.7,
+              "z": 1.3
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-10",
+            "name": "Practical light",
+            "pos": {
+              "x": 20,
+              "y": 9,
+              "z": 0
+            },
+            "visible": false
+          },
+          {
+            "id": "rehab-11",
+            "name": "Woodland canopy",
+            "pos": {
+              "x": -6,
+              "y": -2.1922768877426315,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-12",
+            "name": "Woodland canopy",
+            "pos": {
+              "x": -4,
+              "y": -1.783107379021957,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-13",
+            "name": "Woodland canopy",
+            "pos": {
+              "x": 5,
+              "y": -0.5465708876325714,
+              "z": -9
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-14",
+            "name": "Woodland canopy",
+            "pos": {
+              "x": 11,
+              "y": -0.6209825897335102,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-15",
+            "name": "Woodland canopy",
+            "pos": {
+              "x": 23,
+              "y": -1.7957433187099023,
+              "z": -7
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-16",
+            "name": "Temple retaining wall",
+            "pos": {
+              "x": 0,
+              "y": -0.6000734661893374,
+              "z": 5
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-17",
+            "name": "Temple retaining wall",
+            "pos": {
+              "x": 12,
+              "y": -0.6849114042742408,
+              "z": 5
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-18",
+            "name": "Temple retaining wall",
+            "pos": {
+              "x": 20,
+              "y": -1.0132289880483667,
+              "z": 5
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-19",
+            "name": "Boundary edging",
+            "pos": {
+              "x": -10,
+              "y": -2.48873030823322,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-20",
+            "name": "Boundary edging",
+            "pos": {
+              "x": 30,
+              "y": -2.6855819236469007,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-21",
+            "name": "Boundary edging",
+            "pos": {
+              "x": 10,
+              "y": -1.1281114284209428,
+              "z": -13
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-22",
+            "name": "Boundary edging",
+            "pos": {
+              "x": 10,
+              "y": -0.6670588178472104,
+              "z": 13
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-23",
+            "name": "Objective visual",
+            "pos": {
+              "x": 20,
+              "y": 6.9,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-1",
+            "name": "Temple silhouette",
+            "pos": {
+              "x": -3,
+              "y": 0,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-2",
+            "name": "Temple silhouette",
+            "pos": {
+              "x": 4,
+              "y": 0,
+              "z": 5
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-3",
+            "name": "Temple silhouette",
+            "pos": {
+              "x": 10,
+              "y": 0,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-4",
+            "name": "Temple silhouette",
+            "pos": {
+              "x": 16,
+              "y": 0,
+              "z": 5
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-5",
+            "name": "Temple silhouette",
+            "pos": {
+              "x": 20,
+              "y": 6,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-6",
+            "name": "Temple silhouette",
+            "pos": {
+              "x": 25,
+              "y": 0,
+              "z": -7
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-7",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 0,
+              "y": -2,
+              "z": -8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-8",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 0,
+              "y": -2,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-9",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 6,
+              "y": -2,
+              "z": -8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-10",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 6,
+              "y": -2,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-11",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 12,
+              "y": -2,
+              "z": -8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-12",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 12,
+              "y": -2,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-13",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 18,
+              "y": -2,
+              "z": -8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-14",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 18,
+              "y": -2,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-15",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 24,
+              "y": -2,
+              "z": -8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-16",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 24,
+              "y": -2,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-17",
+            "name": "Summit stair",
+            "pos": {
+              "x": 17,
+              "y": 0.35,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-light-18",
+            "name": "Summit shrine light",
+            "pos": {
+              "x": 20,
+              "y": 9,
+              "z": 0
+            },
+            "visible": false
+          },
+          {
+            "id": "elev-1",
+            "name": "Kinetic shrine crown",
+            "pos": {
+              "x": 20,
+              "y": 6,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-2",
+            "name": "Kinetic shrine crown key light",
+            "pos": {
+              "x": 11,
+              "y": 4.7,
+              "z": -4.3999999999999995
+            },
+            "visible": false
+          },
+          {
+            "id": "deep6-1",
+            "name": "Lower temple court",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-2",
+            "name": "Upper temple terrace",
+            "pos": {
+              "x": 20,
+              "y": 6.2,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-3",
+            "name": "Temple massing pier",
+            "pos": {
+              "x": -5,
+              "y": 0,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-4",
+            "name": "Temple massing pier",
+            "pos": {
+              "x": -5,
+              "y": 0,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-5",
+            "name": "Temple massing pier",
+            "pos": {
+              "x": 5,
+              "y": 0,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-6",
+            "name": "Temple massing pier",
+            "pos": {
+              "x": 5,
+              "y": 0,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-7",
+            "name": "Temple massing pier",
+            "pos": {
+              "x": 15,
+              "y": 0,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-8",
+            "name": "Temple massing pier",
+            "pos": {
+              "x": 15,
+              "y": 0,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-9",
+            "name": "Temple massing pier",
+            "pos": {
+              "x": 25,
+              "y": 0,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-10",
+            "name": "Temple massing pier",
+            "pos": {
+              "x": 25,
+              "y": 0,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-11",
+            "name": "Earned summit shrine",
+            "pos": {
+              "x": 22,
+              "y": 6.4,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-12",
+            "name": "Deep light",
+            "pos": {
+              "x": 22,
+              "y": 11,
+              "z": 0
+            },
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "capture": "opening",
+      "state": {
+        "pos": {
+          "x": 0,
+          "y": 1.8,
+          "z": -0.4
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "forward": {
+            "x": 0.8577056846422497,
+            "y": -0.5141409909084957,
+            "z": 5.1274709200707415e-17
+          },
+          "right": {
+            "x": -5.978123978750844e-17,
+            "y": 0,
+            "z": 1
+          },
+          "up": {
+            "x": 0.5141409909084957,
+            "y": 0.8577056846422497,
+            "z": 3.073598586208798e-17
+          }
+        },
+        "eye": {
+          "x": -6.5,
+          "y": 6.196423560927753,
+          "z": -0.4000000000000004
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0018,
+        "pointerLocked": false,
+        "sim": 1.4017999999523152,
+        "ended": false,
+        "frozen": false,
+        "health": {},
+        "inventory": {},
+        "objectives": {},
+        "held": null,
+        "nearest": null,
+        "text": "Cross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "beacons": [],
+        "objs": [
+          {
+            "id": "rehab-1",
+            "name": "Temple pier",
+            "pos": {
+              "x": -1.7,
+              "y": -0.5,
+              "z": 2.4
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-2",
+            "name": "Temple pier",
+            "pos": {
+              "x": -1.7,
+              "y": -0.5,
+              "z": -2.4
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-3",
+            "name": "Temple pier",
+            "pos": {
+              "x": 1.7,
+              "y": -0.5,
+              "z": 2.4
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-4",
+            "name": "Temple pier",
+            "pos": {
+              "x": 1.7,
+              "y": -0.5,
+              "z": -2.4
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-5",
+            "name": "Temple pier",
+            "pos": {
+              "x": 10.3,
+              "y": -0.5,
+              "z": 2.4
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-6",
+            "name": "Temple pier",
+            "pos": {
+              "x": 10.3,
+              "y": -0.5,
+              "z": -2.4
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-7",
+            "name": "Temple pier",
+            "pos": {
+              "x": 13.7,
+              "y": -0.5,
+              "z": 2.4
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-8",
+            "name": "Temple pier",
+            "pos": {
+              "x": 13.7,
+              "y": -0.5,
+              "z": -2.4
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-9",
+            "name": "High shrine arch",
+            "pos": {
+              "x": 20,
+              "y": 6.7,
+              "z": 1.3
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-10",
+            "name": "Practical light",
+            "pos": {
+              "x": 20,
+              "y": 9,
+              "z": 0
+            },
+            "visible": false
+          },
+          {
+            "id": "rehab-11",
+            "name": "Woodland canopy",
+            "pos": {
+              "x": -6,
+              "y": -2.1922768877426315,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-12",
+            "name": "Woodland canopy",
+            "pos": {
+              "x": -4,
+              "y": -1.783107379021957,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-13",
+            "name": "Woodland canopy",
+            "pos": {
+              "x": 5,
+              "y": -0.5465708876325714,
+              "z": -9
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-14",
+            "name": "Woodland canopy",
+            "pos": {
+              "x": 11,
+              "y": -0.6209825897335102,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-15",
+            "name": "Woodland canopy",
+            "pos": {
+              "x": 23,
+              "y": -1.7957433187099023,
+              "z": -7
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-16",
+            "name": "Temple retaining wall",
+            "pos": {
+              "x": 0,
+              "y": -0.6000734661893374,
+              "z": 5
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-17",
+            "name": "Temple retaining wall",
+            "pos": {
+              "x": 12,
+              "y": -0.6849114042742408,
+              "z": 5
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-18",
+            "name": "Temple retaining wall",
+            "pos": {
+              "x": 20,
+              "y": -1.0132289880483667,
+              "z": 5
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-19",
+            "name": "Boundary edging",
+            "pos": {
+              "x": -10,
+              "y": -2.48873030823322,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-20",
+            "name": "Boundary edging",
+            "pos": {
+              "x": 30,
+              "y": -2.6855819236469007,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-21",
+            "name": "Boundary edging",
+            "pos": {
+              "x": 10,
+              "y": -1.1281114284209428,
+              "z": -13
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-22",
+            "name": "Boundary edging",
+            "pos": {
+              "x": 10,
+              "y": -0.6670588178472104,
+              "z": 13
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-23",
+            "name": "Objective visual",
+            "pos": {
+              "x": 20,
+              "y": 6.9,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-1",
+            "name": "Temple silhouette",
+            "pos": {
+              "x": -3,
+              "y": 0,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-2",
+            "name": "Temple silhouette",
+            "pos": {
+              "x": 4,
+              "y": 0,
+              "z": 5
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-3",
+            "name": "Temple silhouette",
+            "pos": {
+              "x": 10,
+              "y": 0,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-4",
+            "name": "Temple silhouette",
+            "pos": {
+              "x": 16,
+              "y": 0,
+              "z": 5
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-5",
+            "name": "Temple silhouette",
+            "pos": {
+              "x": 20,
+              "y": 6,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-6",
+            "name": "Temple silhouette",
+            "pos": {
+              "x": 25,
+              "y": 0,
+              "z": -7
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-7",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 0,
+              "y": -2,
+              "z": -8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-8",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 0,
+              "y": -2,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-9",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 6,
+              "y": -2,
+              "z": -8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-10",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 6,
+              "y": -2,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-11",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 12,
+              "y": -2,
+              "z": -8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-12",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 12,
+              "y": -2,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-13",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 18,
+              "y": -2,
+              "z": -8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-14",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 18,
+              "y": -2,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-15",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 24,
+              "y": -2,
+              "z": -8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-16",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 24,
+              "y": -2,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-17",
+            "name": "Summit stair",
+            "pos": {
+              "x": 17,
+              "y": 0.35,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-light-18",
+            "name": "Summit shrine light",
+            "pos": {
+              "x": 20,
+              "y": 9,
+              "z": 0
+            },
+            "visible": false
+          },
+          {
+            "id": "elev-1",
+            "name": "Kinetic shrine crown",
+            "pos": {
+              "x": 20,
+              "y": 6,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-2",
+            "name": "Kinetic shrine crown key light",
+            "pos": {
+              "x": 11,
+              "y": 4.7,
+              "z": -4.3999999999999995
+            },
+            "visible": false
+          },
+          {
+            "id": "deep6-1",
+            "name": "Lower temple court",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-2",
+            "name": "Upper temple terrace",
+            "pos": {
+              "x": 20,
+              "y": 6.2,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-3",
+            "name": "Temple massing pier",
+            "pos": {
+              "x": -5,
+              "y": 0,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-4",
+            "name": "Temple massing pier",
+            "pos": {
+              "x": -5,
+              "y": 0,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-5",
+            "name": "Temple massing pier",
+            "pos": {
+              "x": 5,
+              "y": 0,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-6",
+            "name": "Temple massing pier",
+            "pos": {
+              "x": 5,
+              "y": 0,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-7",
+            "name": "Temple massing pier",
+            "pos": {
+              "x": 15,
+              "y": 0,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-8",
+            "name": "Temple massing pier",
+            "pos": {
+              "x": 15,
+              "y": 0,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-9",
+            "name": "Temple massing pier",
+            "pos": {
+              "x": 25,
+              "y": 0,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-10",
+            "name": "Temple massing pier",
+            "pos": {
+              "x": 25,
+              "y": 0,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-11",
+            "name": "Earned summit shrine",
+            "pos": {
+              "x": 22,
+              "y": 6.4,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-12",
+            "name": "Deep light",
+            "pos": {
+              "x": 22,
+              "y": 11,
+              "z": 0
+            },
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "capture": "outcome",
+      "state": {
+        "pos": {
+          "x": 0,
+          "y": 1.8,
+          "z": -0.4
+        },
+        "controller": "thirdperson",
+        "basis": {
+          "forward": {
+            "x": 0.8577075661427539,
+            "y": -0.5141378521189367,
+            "z": 5.127482167914022e-17
+          },
+          "right": {
+            "x": -5.978123978750844e-17,
+            "y": 0,
+            "z": 1
+          },
+          "up": {
+            "x": 0.5141378521189367,
+            "y": 0.8577075661427539,
+            "z": 3.073579822135671e-17
+          }
+        },
+        "eye": {
+          "x": -6.5,
+          "y": 6.196311716453438,
+          "z": -0.4000000000000004
+        },
+        "yaw": 0,
+        "pitch": 0,
+        "sensitivity": 0.0018,
+        "pointerLocked": false,
+        "sim": 3.120399999976156,
+        "ended": false,
+        "frozen": false,
+        "health": {},
+        "inventory": {},
+        "objectives": {},
+        "held": null,
+        "nearest": null,
+        "text": "Cross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+        "beacons": [],
+        "objs": [
+          {
+            "id": "rehab-1",
+            "name": "Temple pier",
+            "pos": {
+              "x": -1.7,
+              "y": -0.5,
+              "z": 2.4
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-2",
+            "name": "Temple pier",
+            "pos": {
+              "x": -1.7,
+              "y": -0.5,
+              "z": -2.4
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-3",
+            "name": "Temple pier",
+            "pos": {
+              "x": 1.7,
+              "y": -0.5,
+              "z": 2.4
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-4",
+            "name": "Temple pier",
+            "pos": {
+              "x": 1.7,
+              "y": -0.5,
+              "z": -2.4
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-5",
+            "name": "Temple pier",
+            "pos": {
+              "x": 10.3,
+              "y": -0.5,
+              "z": 2.4
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-6",
+            "name": "Temple pier",
+            "pos": {
+              "x": 10.3,
+              "y": -0.5,
+              "z": -2.4
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-7",
+            "name": "Temple pier",
+            "pos": {
+              "x": 13.7,
+              "y": -0.5,
+              "z": 2.4
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-8",
+            "name": "Temple pier",
+            "pos": {
+              "x": 13.7,
+              "y": -0.5,
+              "z": -2.4
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-9",
+            "name": "High shrine arch",
+            "pos": {
+              "x": 20,
+              "y": 6.7,
+              "z": 1.3
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-10",
+            "name": "Practical light",
+            "pos": {
+              "x": 20,
+              "y": 9,
+              "z": 0
+            },
+            "visible": false
+          },
+          {
+            "id": "rehab-11",
+            "name": "Woodland canopy",
+            "pos": {
+              "x": -6,
+              "y": -2.1922768877426315,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-12",
+            "name": "Woodland canopy",
+            "pos": {
+              "x": -4,
+              "y": -1.783107379021957,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-13",
+            "name": "Woodland canopy",
+            "pos": {
+              "x": 5,
+              "y": -0.5465708876325714,
+              "z": -9
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-14",
+            "name": "Woodland canopy",
+            "pos": {
+              "x": 11,
+              "y": -0.6209825897335102,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-15",
+            "name": "Woodland canopy",
+            "pos": {
+              "x": 23,
+              "y": -1.7957433187099023,
+              "z": -7
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-16",
+            "name": "Temple retaining wall",
+            "pos": {
+              "x": 0,
+              "y": -0.6000734661893374,
+              "z": 5
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-17",
+            "name": "Temple retaining wall",
+            "pos": {
+              "x": 12,
+              "y": -0.6849114042742408,
+              "z": 5
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-18",
+            "name": "Temple retaining wall",
+            "pos": {
+              "x": 20,
+              "y": -1.0132289880483667,
+              "z": 5
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-19",
+            "name": "Boundary edging",
+            "pos": {
+              "x": -10,
+              "y": -2.48873030823322,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-20",
+            "name": "Boundary edging",
+            "pos": {
+              "x": 30,
+              "y": -2.6855819236469007,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-21",
+            "name": "Boundary edging",
+            "pos": {
+              "x": 10,
+              "y": -1.1281114284209428,
+              "z": -13
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-22",
+            "name": "Boundary edging",
+            "pos": {
+              "x": 10,
+              "y": -0.6670588178472104,
+              "z": 13
+            },
+            "visible": true
+          },
+          {
+            "id": "rehab-23",
+            "name": "Objective visual",
+            "pos": {
+              "x": 20,
+              "y": 6.9,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-1",
+            "name": "Temple silhouette",
+            "pos": {
+              "x": -3,
+              "y": 0,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-2",
+            "name": "Temple silhouette",
+            "pos": {
+              "x": 4,
+              "y": 0,
+              "z": 5
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-3",
+            "name": "Temple silhouette",
+            "pos": {
+              "x": 10,
+              "y": 0,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-4",
+            "name": "Temple silhouette",
+            "pos": {
+              "x": 16,
+              "y": 0,
+              "z": 5
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-5",
+            "name": "Temple silhouette",
+            "pos": {
+              "x": 20,
+              "y": 6,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-6",
+            "name": "Temple silhouette",
+            "pos": {
+              "x": 25,
+              "y": 0,
+              "z": -7
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-7",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 0,
+              "y": -2,
+              "z": -8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-8",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 0,
+              "y": -2,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-9",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 6,
+              "y": -2,
+              "z": -8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-10",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 6,
+              "y": -2,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-11",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 12,
+              "y": -2,
+              "z": -8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-12",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 12,
+              "y": -2,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-13",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 18,
+              "y": -2,
+              "z": -8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-14",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 18,
+              "y": -2,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-15",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 24,
+              "y": -2,
+              "z": -8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-16",
+            "name": "Depth pillar",
+            "pos": {
+              "x": 24,
+              "y": -2,
+              "z": 8
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-17",
+            "name": "Summit stair",
+            "pos": {
+              "x": 17,
+              "y": 0.35,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "promo-light-18",
+            "name": "Summit shrine light",
+            "pos": {
+              "x": 20,
+              "y": 9,
+              "z": 0
+            },
+            "visible": false
+          },
+          {
+            "id": "elev-1",
+            "name": "Kinetic shrine crown",
+            "pos": {
+              "x": 20,
+              "y": 6,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "elev-2",
+            "name": "Kinetic shrine crown key light",
+            "pos": {
+              "x": 11,
+              "y": 4.7,
+              "z": -4.3999999999999995
+            },
+            "visible": false
+          },
+          {
+            "id": "deep6-1",
+            "name": "Lower temple court",
+            "pos": {
+              "x": 0,
+              "y": 0.2,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-2",
+            "name": "Upper temple terrace",
+            "pos": {
+              "x": 20,
+              "y": 6.2,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-3",
+            "name": "Temple massing pier",
+            "pos": {
+              "x": -5,
+              "y": 0,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-4",
+            "name": "Temple massing pier",
+            "pos": {
+              "x": -5,
+              "y": 0,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-5",
+            "name": "Temple massing pier",
+            "pos": {
+              "x": 5,
+              "y": 0,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-6",
+            "name": "Temple massing pier",
+            "pos": {
+              "x": 5,
+              "y": 0,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-7",
+            "name": "Temple massing pier",
+            "pos": {
+              "x": 15,
+              "y": 0,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-8",
+            "name": "Temple massing pier",
+            "pos": {
+              "x": 15,
+              "y": 0,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-9",
+            "name": "Temple massing pier",
+            "pos": {
+              "x": 25,
+              "y": 0,
+              "z": -6
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-10",
+            "name": "Temple massing pier",
+            "pos": {
+              "x": 25,
+              "y": 0,
+              "z": 6
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-11",
+            "name": "Earned summit shrine",
+            "pos": {
+              "x": 22,
+              "y": 6.4,
+              "z": 0
+            },
+            "visible": true
+          },
+          {
+            "id": "deep6-12",
+            "name": "Deep light",
+            "pos": {
+              "x": 22,
+              "y": 11,
+              "z": 0
+            },
+            "visible": false
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "final": {
+    "pos": {
+      "x": 0,
+      "y": 1.8,
+      "z": -0.4
+    },
+    "controller": "thirdperson",
+    "basis": {
+      "forward": {
+        "x": 0.8577075661035192,
+        "y": -0.5141378521843893,
+        "z": 5.1274821676794716e-17
+      },
+      "right": {
+        "x": -5.978123978750843e-17,
+        "y": 0,
+        "z": 1
+      },
+      "up": {
+        "x": 0.5141378521843893,
+        "y": 0.8577075661035192,
+        "z": 3.073579822526954e-17
+      }
+    },
+    "eye": {
+      "x": -6.5,
+      "y": 6.1963117187857115,
+      "z": -0.4000000000000004
+    },
+    "yaw": 0,
+    "pitch": 0,
+    "sensitivity": 0.0018,
+    "pointerLocked": false,
+    "sim": 2.920199999988077,
+    "ended": false,
+    "frozen": false,
+    "health": {},
+    "inventory": {},
+    "objectives": {},
+    "held": null,
+    "nearest": null,
+    "text": "Cross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "beacons": [],
+    "objs": [
+      {
+        "id": "rehab-1",
+        "name": "Temple pier",
+        "pos": {
+          "x": -1.7,
+          "y": -0.5,
+          "z": 2.4
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-2",
+        "name": "Temple pier",
+        "pos": {
+          "x": -1.7,
+          "y": -0.5,
+          "z": -2.4
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-3",
+        "name": "Temple pier",
+        "pos": {
+          "x": 1.7,
+          "y": -0.5,
+          "z": 2.4
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-4",
+        "name": "Temple pier",
+        "pos": {
+          "x": 1.7,
+          "y": -0.5,
+          "z": -2.4
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-5",
+        "name": "Temple pier",
+        "pos": {
+          "x": 10.3,
+          "y": -0.5,
+          "z": 2.4
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-6",
+        "name": "Temple pier",
+        "pos": {
+          "x": 10.3,
+          "y": -0.5,
+          "z": -2.4
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-7",
+        "name": "Temple pier",
+        "pos": {
+          "x": 13.7,
+          "y": -0.5,
+          "z": 2.4
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-8",
+        "name": "Temple pier",
+        "pos": {
+          "x": 13.7,
+          "y": -0.5,
+          "z": -2.4
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-9",
+        "name": "High shrine arch",
+        "pos": {
+          "x": 20,
+          "y": 6.7,
+          "z": 1.3
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-10",
+        "name": "Practical light",
+        "pos": {
+          "x": 20,
+          "y": 9,
+          "z": 0
+        },
+        "visible": false
+      },
+      {
+        "id": "rehab-11",
+        "name": "Woodland canopy",
+        "pos": {
+          "x": -6,
+          "y": -2.1922768877426315,
+          "z": -6
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-12",
+        "name": "Woodland canopy",
+        "pos": {
+          "x": -4,
+          "y": -1.783107379021957,
+          "z": 8
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-13",
+        "name": "Woodland canopy",
+        "pos": {
+          "x": 5,
+          "y": -0.5465708876325714,
+          "z": -9
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-14",
+        "name": "Woodland canopy",
+        "pos": {
+          "x": 11,
+          "y": -0.6209825897335102,
+          "z": 8
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-15",
+        "name": "Woodland canopy",
+        "pos": {
+          "x": 23,
+          "y": -1.7957433187099023,
+          "z": -7
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-16",
+        "name": "Temple retaining wall",
+        "pos": {
+          "x": 0,
+          "y": -0.6000734661893374,
+          "z": 5
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-17",
+        "name": "Temple retaining wall",
+        "pos": {
+          "x": 12,
+          "y": -0.6849114042742408,
+          "z": 5
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-18",
+        "name": "Temple retaining wall",
+        "pos": {
+          "x": 20,
+          "y": -1.0132289880483667,
+          "z": 5
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-19",
+        "name": "Boundary edging",
+        "pos": {
+          "x": -10,
+          "y": -2.48873030823322,
+          "z": 0
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-20",
+        "name": "Boundary edging",
+        "pos": {
+          "x": 30,
+          "y": -2.6855819236469007,
+          "z": 0
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-21",
+        "name": "Boundary edging",
+        "pos": {
+          "x": 10,
+          "y": -1.1281114284209428,
+          "z": -13
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-22",
+        "name": "Boundary edging",
+        "pos": {
+          "x": 10,
+          "y": -0.6670588178472104,
+          "z": 13
+        },
+        "visible": true
+      },
+      {
+        "id": "rehab-23",
+        "name": "Objective visual",
+        "pos": {
+          "x": 20,
+          "y": 6.9,
+          "z": 0
+        },
+        "visible": true
+      },
+      {
+        "id": "promo-1",
+        "name": "Temple silhouette",
+        "pos": {
+          "x": -3,
+          "y": 0,
+          "z": -6
+        },
+        "visible": true
+      },
+      {
+        "id": "promo-2",
+        "name": "Temple silhouette",
+        "pos": {
+          "x": 4,
+          "y": 0,
+          "z": 5
+        },
+        "visible": true
+      },
+      {
+        "id": "promo-3",
+        "name": "Temple silhouette",
+        "pos": {
+          "x": 10,
+          "y": 0,
+          "z": -6
+        },
+        "visible": true
+      },
+      {
+        "id": "promo-4",
+        "name": "Temple silhouette",
+        "pos": {
+          "x": 16,
+          "y": 0,
+          "z": 5
+        },
+        "visible": true
+      },
+      {
+        "id": "promo-5",
+        "name": "Temple silhouette",
+        "pos": {
+          "x": 20,
+          "y": 6,
+          "z": 0
+        },
+        "visible": true
+      },
+      {
+        "id": "promo-6",
+        "name": "Temple silhouette",
+        "pos": {
+          "x": 25,
+          "y": 0,
+          "z": -7
+        },
+        "visible": true
+      },
+      {
+        "id": "promo-7",
+        "name": "Depth pillar",
+        "pos": {
+          "x": 0,
+          "y": -2,
+          "z": -8
+        },
+        "visible": true
+      },
+      {
+        "id": "promo-8",
+        "name": "Depth pillar",
+        "pos": {
+          "x": 0,
+          "y": -2,
+          "z": 8
+        },
+        "visible": true
+      },
+      {
+        "id": "promo-9",
+        "name": "Depth pillar",
+        "pos": {
+          "x": 6,
+          "y": -2,
+          "z": -8
+        },
+        "visible": true
+      },
+      {
+        "id": "promo-10",
+        "name": "Depth pillar",
+        "pos": {
+          "x": 6,
+          "y": -2,
+          "z": 8
+        },
+        "visible": true
+      },
+      {
+        "id": "promo-11",
+        "name": "Depth pillar",
+        "pos": {
+          "x": 12,
+          "y": -2,
+          "z": -8
+        },
+        "visible": true
+      },
+      {
+        "id": "promo-12",
+        "name": "Depth pillar",
+        "pos": {
+          "x": 12,
+          "y": -2,
+          "z": 8
+        },
+        "visible": true
+      },
+      {
+        "id": "promo-13",
+        "name": "Depth pillar",
+        "pos": {
+          "x": 18,
+          "y": -2,
+          "z": -8
+        },
+        "visible": true
+      },
+      {
+        "id": "promo-14",
+        "name": "Depth pillar",
+        "pos": {
+          "x": 18,
+          "y": -2,
+          "z": 8
+        },
+        "visible": true
+      },
+      {
+        "id": "promo-15",
+        "name": "Depth pillar",
+        "pos": {
+          "x": 24,
+          "y": -2,
+          "z": -8
+        },
+        "visible": true
+      },
+      {
+        "id": "promo-16",
+        "name": "Depth pillar",
+        "pos": {
+          "x": 24,
+          "y": -2,
+          "z": 8
+        },
+        "visible": true
+      },
+      {
+        "id": "promo-17",
+        "name": "Summit stair",
+        "pos": {
+          "x": 17,
+          "y": 0.35,
+          "z": 0
+        },
+        "visible": true
+      },
+      {
+        "id": "promo-light-18",
+        "name": "Summit shrine light",
+        "pos": {
+          "x": 20,
+          "y": 9,
+          "z": 0
+        },
+        "visible": false
+      },
+      {
+        "id": "elev-1",
+        "name": "Kinetic shrine crown",
+        "pos": {
+          "x": 20,
+          "y": 6,
+          "z": 0
+        },
+        "visible": true
+      },
+      {
+        "id": "elev-2",
+        "name": "Kinetic shrine crown key light",
+        "pos": {
+          "x": 11,
+          "y": 4.7,
+          "z": -4.3999999999999995
+        },
+        "visible": false
+      },
+      {
+        "id": "deep6-1",
+        "name": "Lower temple court",
+        "pos": {
+          "x": 0,
+          "y": 0.2,
+          "z": 0
+        },
+        "visible": true
+      },
+      {
+        "id": "deep6-2",
+        "name": "Upper temple terrace",
+        "pos": {
+          "x": 20,
+          "y": 6.2,
+          "z": 0
+        },
+        "visible": true
+      },
+      {
+        "id": "deep6-3",
+        "name": "Temple massing pier",
+        "pos": {
+          "x": -5,
+          "y": 0,
+          "z": -6
+        },
+        "visible": true
+      },
+      {
+        "id": "deep6-4",
+        "name": "Temple massing pier",
+        "pos": {
+          "x": -5,
+          "y": 0,
+          "z": 6
+        },
+        "visible": true
+      },
+      {
+        "id": "deep6-5",
+        "name": "Temple massing pier",
+        "pos": {
+          "x": 5,
+          "y": 0,
+          "z": -6
+        },
+        "visible": true
+      },
+      {
+        "id": "deep6-6",
+        "name": "Temple massing pier",
+        "pos": {
+          "x": 5,
+          "y": 0,
+          "z": 6
+        },
+        "visible": true
+      },
+      {
+        "id": "deep6-7",
+        "name": "Temple massing pier",
+        "pos": {
+          "x": 15,
+          "y": 0,
+          "z": -6
+        },
+        "visible": true
+      },
+      {
+        "id": "deep6-8",
+        "name": "Temple massing pier",
+        "pos": {
+          "x": 15,
+          "y": 0,
+          "z": 6
+        },
+        "visible": true
+      },
+      {
+        "id": "deep6-9",
+        "name": "Temple massing pier",
+        "pos": {
+          "x": 25,
+          "y": 0,
+          "z": -6
+        },
+        "visible": true
+      },
+      {
+        "id": "deep6-10",
+        "name": "Temple massing pier",
+        "pos": {
+          "x": 25,
+          "y": 0,
+          "z": 6
+        },
+        "visible": true
+      },
+      {
+        "id": "deep6-11",
+        "name": "Earned summit shrine",
+        "pos": {
+          "x": 22,
+          "y": 6.4,
+          "z": 0
+        },
+        "visible": true
+      },
+      {
+        "id": "deep6-12",
+        "name": "Deep light",
+        "pos": {
+          "x": 22,
+          "y": 11,
+          "z": 0
+        },
+        "visible": false
+      }
+    ]
+  },
+  "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nMouse Sensitivity\nInvert Mouse Y\nQuality: High\n⛶ Fullscreen\nCross the moving slab, use the lift switch, and reach the high shrine.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+  "finishedAt": "2026-09-11T17:19:38.879Z"
+}

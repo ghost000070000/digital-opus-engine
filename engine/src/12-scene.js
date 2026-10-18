@@ -1,6 +1,9 @@
 class Scene {
   constructor() {
     this.entities = [];
+    // The editor disables automatic visual spin while authoring. Animation
+    // sampling and standalone runtime motion retain their normal time step.
+    this.spinEnabled = true;
   }
 
   add(entity) {
@@ -24,6 +27,6 @@ class Scene {
   }
 
   update(dt) {
-    for (const entity of this.entities) entity.update(dt);
+    for (const entity of this.entities) entity.update(dt, this.spinEnabled);
   }
 }

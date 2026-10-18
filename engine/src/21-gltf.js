@@ -500,6 +500,18 @@ function localTRSToPalette(skinData, localTRS) {
 // (Opus.Skin.computeJointTransforms) is what composes with an entity's own
 // world transform, so this stays a pure, entity-agnostic skin-data function
 // like every other one in this file.
+// Explicit diagnostic extraction only: never changes skin, entity or collider.
+// Times are clip-local and bounded, not automatically wrapped across cycles.
+function computeRootTranslationDelta(skinData, clipIndex, fromTime, toTime, rootIndex) {
+  const clip = skinData?.clips?.[clipIndex];
+  if (!Number.isInteger(clipIndex) || clipIndex < 0 || !clip || !Number.isFinite(clip.duration) || clip.duration <= 0 || !Array.isArray(clip.tracks)) throw new RangeError('Choose an available finite-duration clip');
+  if (!Number.isInteger(rootIndex) || rootIndex < 0 || skinData.jointParents?.[rootIndex] !== -1 || !skinData.jointLocalBind?.[rootIndex]) throw new RangeError('Choose a skeleton root joint');
+  if (![fromTime,toTime].every(t => Number.isFinite(t) && t >= 0 && t <= clip.duration)) throw new RangeError('Root motion sample times must be within the clip duration');
+  const a = sampleClipLocalTRS(skinData, clip, fromTime)[rootIndex].translation;
+  const b = sampleClipLocalTRS(skinData, clip, toTime)[rootIndex].translation;
+  if (![...a,...b].every(Number.isFinite)) throw new RangeError('Root translation is unavailable or nonfinite');
+  return new Vec3(b[0]-a[0],b[1]-a[1],b[2]-a[2]);
+}
 function sampleClipJointWorldTRS(skinData, clip, t) {
   const localTRS = sampleClipLocalTRS(skinData, clip, t);
   const world = new Array(skinData.jointCount);
@@ -551,6 +563,12 @@ function computeSkinPaletteBlended(skinData, clipIndexA, tA, clipIndexB, tB, ble
   const clipB = clipIndexB != null ? skinData.clips[clipIndexB] : null;
   const trsA = sampleClipLocalTRS(skinData, clipA, tA);
   const trsB = sampleClipLocalTRS(skinData, clipB, tB);
+  return localTRSToPalette(skinData, blendLocalTRS(trsA, trsB, blend));
+}
+
+// Pose-space crossfade also accepts the visible pose of an interrupted fade.
+// Never interpolate final skin matrices: that would distort rotations/scales.
+function blendLocalTRS(trsA, trsB, blend) {
   const b = Math.max(0, Math.min(1, blend));
   const blended = trsA.map((a, i) => {
     const bb = trsB[i];
@@ -561,7 +579,7 @@ function computeSkinPaletteBlended(skinData, clipIndexA, tA, clipIndexB, tB, ble
     const qr = Quat.slerp(qa, qb, b);
     return { translation, scale, rotation: [qr.x, qr.y, qr.z, qr.w] };
   });
-  return localTRSToPalette(skinData, blended);
+  return blended;
 }
 
 function parseGLTFToArrays(input) {

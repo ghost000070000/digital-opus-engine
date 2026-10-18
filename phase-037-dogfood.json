@@ -1,0 +1,63 @@
+{
+  "format": "digital-opus-project",
+  "version": 6,
+  "levels": [{
+    "id": "phase037-level",
+    "name": "Phase 037 Grid Objects and Spawn Markers",
+    "objects": [
+      {
+        "kind": "tilemap", "version": 4, "id": "phase037-map", "name": "Phase 037 Grid",
+        "position": [0, 0, 0], "scale": [1, 1, 1], "rotationY": 0, "tilesetRef": "phase037-tiles",
+        "layers": [{ "id": "ground", "name": "Ground", "visible": true, "locked": false, "cells": [] }],
+        "sortingLayerRef": "sprite-layer-default", "orderInLayer": 0,
+        "spawnMarkers": [
+          { "id": "player-entry", "name": "Player Entry", "x": 0, "y": 0, "prefabRef": "Phase 037 Hero" },
+          { "id": "enemy-left", "name": "Enemy Left", "x": -4, "y": 2, "prefabRef": "Phase 037 Enemy" },
+          { "id": "enemy-right", "name": "Enemy Right", "x": 8, "y": 2, "prefabRef": "Phase 037 Enemy" },
+          { "id": "checkpoint", "name": "Checkpoint", "x": 5, "y": -3, "prefabRef": null },
+          { "id": "exit", "name": "Exit", "x": 12, "y": 6, "prefabRef": null },
+          { "id": "negative-origin-proof", "name": "Negative Origin Proof", "x": -12, "y": -7, "prefabRef": "Phase 037 Hero" }
+        ]
+      },
+      { "kind": "cube", "id": "grid-object-1", "name": "Grid Object 1", "position": [0.5, 0.5, 0], "scale": [0.8, 0.8, 0.8], "rotationY": 0, "mesh": "cube", "color": [0.2, 0.75, 0.65], "behaviors": [] },
+      { "kind": "cube", "id": "grid-object-2", "name": "Grid Object 2", "position": [1.5, 0.5, 0], "scale": [0.8, 0.8, 0.8], "rotationY": 0, "mesh": "cube", "color": [0.2, 0.75, 0.65], "behaviors": [] },
+      { "kind": "cube", "id": "grid-object-3", "name": "Grid Object 3", "position": [2.5, 0.5, 0], "scale": [0.8, 0.8, 0.8], "rotationY": 0, "mesh": "cube", "color": [0.2, 0.75, 0.65], "behaviors": [] },
+      { "kind": "cube", "id": "grid-object-4", "name": "Grid Object 4", "position": [3.5, 0.5, 0], "scale": [0.8, 0.8, 0.8], "rotationY": 0, "mesh": "cube", "color": [0.2, 0.75, 0.65], "behaviors": [] },
+      { "kind": "cube", "id": "grid-object-5", "name": "Grid Object 5", "position": [4.5, 0.5, 0], "scale": [0.8, 0.8, 0.8], "rotationY": 0, "mesh": "cube", "color": [0.2, 0.75, 0.65], "behaviors": [] },
+      { "kind": "cube", "id": "grid-object-6", "name": "Grid Object 6", "position": [0.5, 1.5, 0], "scale": [0.8, 0.8, 0.8], "rotationY": 0, "mesh": "cube", "color": [0.2, 0.75, 0.65], "behaviors": [] },
+      { "kind": "cube", "id": "grid-object-7", "name": "Grid Object 7", "position": [1.5, 1.5, 0], "scale": [0.8, 0.8, 0.8], "rotationY": 0, "mesh": "cube", "color": [0.2, 0.75, 0.65], "behaviors": [] },
+      { "kind": "cube", "id": "grid-object-8", "name": "Grid Object 8", "position": [2.5, 1.5, 0], "scale": [0.8, 0.8, 0.8], "rotationY": 0, "mesh": "cube", "color": [0.2, 0.75, 0.65], "behaviors": [] },
+      { "kind": "cube", "id": "grid-object-9", "name": "Grid Object 9", "position": [3.5, 1.5, 0], "scale": [0.8, 0.8, 0.8], "rotationY": 0, "mesh": "cube", "color": [0.2, 0.75, 0.65], "behaviors": [] },
+      { "kind": "cube", "id": "grid-object-10", "name": "Grid Object 10", "position": [4.5, 1.5, 0], "scale": [0.8, 0.8, 0.8], "rotationY": 0, "mesh": "cube", "color": [0.2, 0.75, 0.65], "behaviors": [] },
+      { "kind": "cube", "id": "grid-object-11", "name": "Grid Object 11", "position": [0.5, 2.5, 0], "scale": [0.8, 0.8, 0.8], "rotationY": 0, "mesh": "cube", "color": [0.2, 0.75, 0.65], "behaviors": [] },
+      { "kind": "cube", "id": "grid-object-12", "name": "Grid Object 12", "position": [1.5, 2.5, 0], "scale": [0.8, 0.8, 0.8], "rotationY": 0, "mesh": "cube", "color": [0.2, 0.75, 0.65], "behaviors": [] },
+      { "kind": "cube", "id": "grid-object-13", "name": "Grid Object 13", "position": [2.5, 2.5, 0], "scale": [0.8, 0.8, 0.8], "rotationY": 0, "mesh": "cube", "color": [0.2, 0.75, 0.65], "behaviors": [] },
+      { "kind": "cube", "id": "grid-object-14", "name": "Grid Object 14", "position": [3.5, 2.5, 0], "scale": [0.8, 0.8, 0.8], "rotationY": 0, "mesh": "cube", "color": [0.2, 0.75, 0.65], "behaviors": [] },
+      { "kind": "cube", "id": "grid-object-15", "name": "Grid Object 15", "position": [4.5, 2.5, 0], "scale": [0.8, 0.8, 0.8], "rotationY": 0, "mesh": "cube", "color": [0.2, 0.75, 0.65], "behaviors": [] },
+      { "kind": "cube", "id": "grid-object-16", "name": "Grid Object 16", "position": [0.5, 3.5, 0], "scale": [0.8, 0.8, 0.8], "rotationY": 0, "mesh": "cube", "color": [0.2, 0.75, 0.65], "behaviors": [] },
+      { "kind": "cube", "id": "grid-object-17", "name": "Grid Object 17", "position": [1.5, 3.5, 0], "scale": [0.8, 0.8, 0.8], "rotationY": 0, "mesh": "cube", "color": [0.2, 0.75, 0.65], "behaviors": [] },
+      { "kind": "cube", "id": "grid-object-18", "name": "Grid Object 18", "position": [2.5, 3.5, 0], "scale": [0.8, 0.8, 0.8], "rotationY": 0, "mesh": "cube", "color": [0.2, 0.75, 0.65], "behaviors": [] },
+      { "kind": "cube", "id": "grid-object-19", "name": "Grid Object 19", "position": [3.5, 3.5, 0], "scale": [0.8, 0.8, 0.8], "rotationY": 0, "mesh": "cube", "color": [0.2, 0.75, 0.65], "behaviors": [] },
+      { "kind": "cube", "id": "grid-object-20", "name": "Grid Object 20", "position": [4.5, 3.5, 0], "scale": [0.8, 0.8, 0.8], "rotationY": 0, "mesh": "cube", "color": [0.2, 0.75, 0.65], "behaviors": [] },
+      { "kind": "cube", "id": "grid-object-21", "name": "Grid Object 21", "position": [0.5, 4.5, 0], "scale": [0.8, 0.8, 0.8], "rotationY": 0, "mesh": "cube", "color": [0.2, 0.75, 0.65], "behaviors": [] },
+      { "kind": "cube", "id": "grid-object-22", "name": "Grid Object 22", "position": [1.5, 4.5, 0], "scale": [0.8, 0.8, 0.8], "rotationY": 0, "mesh": "cube", "color": [0.2, 0.75, 0.65], "behaviors": [] },
+      { "kind": "cube", "id": "grid-object-23", "name": "Grid Object 23", "position": [2.5, 4.5, 0], "scale": [0.8, 0.8, 0.8], "rotationY": 0, "mesh": "cube", "color": [0.2, 0.75, 0.65], "behaviors": [] },
+      { "kind": "cube", "id": "grid-object-24", "name": "Grid Object 24", "position": [3.5, 4.5, 0], "scale": [0.8, 0.8, 0.8], "rotationY": 0, "mesh": "cube", "color": [0.2, 0.75, 0.65], "behaviors": [] },
+      { "kind": "cube", "id": "grid-object-25", "name": "Grid Object 25", "position": [4.5, 4.5, 0], "scale": [0.8, 0.8, 0.8], "rotationY": 0, "mesh": "cube", "color": [0.2, 0.75, 0.65], "behaviors": [] }
+    ],
+    "environment": null, "playerSettings": null, "ui": null, "description": "Phase 037 dogfood",
+    "ambientAudio": null, "sequences": [], "objectiveDefs": [], "scatterLayers": []
+  }],
+  "currentLevelIndex": 0, "startLevelIndex": 0,
+  "spriteSortingLayers": [{ "id": "sprite-layer-default", "name": "Default", "order": 0 }],
+  "parallaxLayers": [],
+  "prefabs": [
+    { "name": "Phase 037 Hero", "record": { "kind": "cube", "id": "prefab-hero-source", "name": "Hero", "position": [0,0,0], "scale": [0.7,0.9,0.7], "rotationY": 0, "mesh": "cube", "color": [0.25,0.8,1], "behaviors": [] } },
+    { "name": "Phase 037 Enemy", "record": { "kind": "cube", "id": "prefab-enemy-source", "name": "Enemy", "position": [0,0,0], "scale": [0.8,0.8,0.8], "rotationY": 0, "mesh": "cube", "color": [1,0.35,0.3], "behaviors": [] } }
+  ],
+  "assets": [], "textures": [], "spriteAssets": [], "spriteAnimations": [],
+  "tilesets": [{ "id": "phase037-tiles", "type": "tileset", "name": "Phase 037 Grid", "version": 4, "cellSize": { "width": 1, "height": 1 }, "tiles": [], "autoTileSets": [], "terrainBrushes": [] }],
+  "audio": [],
+  "meta": { "title": "Phase 037 Grid Objects and Spawn Markers", "author": "Digital Opus qualification", "version": "1.0.0", "description": "Dogfood fixture with 25 ordinary placed objects and 6 Tilemap-local Spawn Markers." },
+  "inputActionMap": {}, "itemDefs": []
+}

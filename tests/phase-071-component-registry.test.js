@@ -1,0 +1,38 @@
+'use strict';
+const assert=require('assert'),Authoring=require('../editor/src/00-authoring-schema');
+const registry=new Authoring.AuthoringSchemaRegistry();
+const definition={id:'example',displayName:'Example',category:'Gameplay',version:1,addable:true,eligibility:['scene-object'],defaults:{amount:3},fields:[{key:'amount',type:'number',label:'Amount',choices:[]}],ownedFields:['amount'],serialization:{owner:'example',duplicate:'deep-copy',prefab:'shared-record-path'}};
+const schema=registry.register(definition);definition.defaults.amount=99;definition.eligibility.push('terrain');definition.fields[0].label='Changed';definition.serialization.owner='wrong';
+assert.equal(schema.defaults.amount,3,'Registration must own its immutable defaults, not the caller map');
+assert.deepStrictEqual(schema.eligibility,['scene-object']);assert.equal(schema.fields[0].label,'Amount');assert.equal(schema.serialization.owner,'example');
+assert.throws(()=>{schema.defaults.amount=10;},TypeError);
+assert.throws(()=>registry.register({...definition,id:'duplicates',fields:[{key:'amount',type:'number'},{key:'amount',type:'number'}]}),/duplicate.*field/i);
+assert.equal(typeof registry.describe,'function');assert.equal(typeof registry.catalog,'function');
+const description=registry.describe('example');assert.equal(description.id,'example');assert.equal(description.version,1);assert.equal(description.defaults.amount,3);assert(Object.isFrozen(description.defaults));assert.equal(registry.describe('missing'),null);
+assert.equal(registry.catalog().version,1);assert.deepStrictEqual(JSON.parse(JSON.stringify(registry.catalog())).components[0],JSON.parse(JSON.stringify(description)));
+const api=Authoring.createAuthoringApi(registry),target={kind:'cube'};
+assert.equal(api.discoverComponents(target,'Example')[0].contract.version,1);
+assert(api.addComponent(target,'example').ok);assert.equal(target.components.example.amount,3,'Actual attachment uses the independently owned original defaults');
+const portable=api.serializeComponents(target),loaded={kind:'cube'};api.applyRecord({components:portable},loaded);assert.deepStrictEqual(api.serializeComponents(loaded),portable);
+portable.future={version:8,meaning:'retain',nested:{value:7}};api.applyRecord({components:portable},loaded);assert.equal(api.serializeComponents(loaded).future.nested.value,7,'Unknown authoring records remain inert and portable');
+loaded.components.example={version:99,amount:81,futureMeaning:'unchanged'};assert.equal(api.serializeComponents(loaded).example.futureMeaning,'unchanged');assert.equal(api.serializeComponents(loaded).example.version,99,'Future known-schema versions remain preserved, not normalized');
+const cyclic={...definition,id:'cyclic',defaults:{amount:1}};cyclic.defaults.self=cyclic.defaults;assert.throws(()=>registry.register(cyclic),/cycle/);assert.equal(registry.get('cyclic'),null);
+assert.throws(()=>registry.register({...definition,id:'invalid-field',fields:[null]}),/Invalid field/);
+for(const actual of Authoring.registry.list()){const described=Authoring.registry.describe(actual.id);assert.equal(described.id,actual.id);assert.equal(described.displayName,actual.displayName);assert.equal(described.serialization.owner,actual.serialization.owner);assert.equal(described.fields.length,actual.fields.length);assert(Object.isFrozen(actual.defaults));assert(Object.isFrozen(actual.eligibility));}
+console.log('Phase071 canonical immutable registration/unique fields/deterministic portable contract and existing production adapters PASS');
+const fs=require('fs'),vm=require('vm'),source=fs.readFileSync(require.resolve('../editor/src/01-editor.js'),'utf8'),ctx={OpusAuthoring:Authoring};vm.createContext(ctx);
+vm.runInContext(source.slice(source.indexOf('function captureAuthoredObjectVariables('),source.indexOf('function enterPlayMode(')),ctx);
+assert.equal(typeof ctx.captureAuthoredObjectHealth,'function','Actual Play must own a Health authoring baseline');
+const owner={health:{max:25,current:25},components:{health:{version:1,max:25,current:25},unrelated:{value:8}}},absent={};
+ctx.captureAuthoredObjectHealth([owner,absent]);owner.health.current=18;owner.components.health.current=18;absent.health={max:100,current:93};absent.components={health:{version:1,max:100,current:93},unrelated:{value:9}};
+ctx.restoreAuthoredObjectHealth([owner,absent]);assert.equal(owner.health.current,25);assert.equal(owner.components.health.current,25);assert.equal(owner.components.unrelated.value,8);assert.equal(absent.health,undefined);assert.equal(absent.components.health,undefined);assert.equal(absent.components.unrelated.value,9,'Only Health authoring is restored, unrelated component semantics are untouched');
+assert.notStrictEqual(owner.health,owner._authoredHealth.health);owner.health.current=22;ctx.captureAuthoredObjectHealth([owner]);owner.health.current=1;ctx.restoreAuthoredObjectHealth([owner]);assert.equal(owner.health.current,22,'New Inspector edits become the next baseline');
+owner.health.current=25;owner.components.health.current=25;ctx.captureAuthoredObjectHealth([owner]);owner.health.current=18;owner.components.health.current=18;ctx.playMode=true;
+const view=ctx.authoredHealthSerializationTarget(owner);assert.equal(view.health.current,25);assert.equal(Authoring.serializeComponents({...view,kind:'cube'}).health.current,25);assert.equal(owner.health.current,18,'Authoring serialization must not rewrite live gameplay Health');
+owner.id='actor';owner.kind='cube';owner.persistRuntimeState=true;owner.entity={visible:true,position:{x:0,y:0,z:0},quaternion:{x:0,y:0,z:0,w:1}};ctx.placed=[owner];ctx.levels=[{id:'one'}];ctx.currentLevelIndex=0;ctx.window={__destroyedPersistentIds:{}};
+ctx.validDoorGate=()=>false; // This historical Health fixture has no Door component.
+vm.runInContext(source.slice(source.indexOf('function collectWorldStateForLevel('),source.indexOf('function captureCurrentLevelWorldState(')),ctx);assert.equal(ctx.collectWorldStateForLevel('one').actor.health,18,'Intentional saved-game world state still captures live damage, not authored baseline');
+ctx.playMode=false;assert.strictEqual(ctx.authoredHealthSerializationTarget(owner),owner);
+assert(source.slice(source.indexOf('function preparePlacedForPlay('),source.indexOf('function enterPlayMode(')).includes('captureAuthoredObjectHealth(placed)'));
+assert(source.slice(source.indexOf('function exitPlayMode('),source.indexOf("document.getElementById('play-btn').addEventListener")).includes('restoreAuthoredObjectHealth(placed)'));
+console.log('Phase071 actual Play/Stop Health legacy/component baseline ownership, absent-on-start cleanup and later Inspector edits PASS');

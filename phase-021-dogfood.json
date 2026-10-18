@@ -1,0 +1,41 @@
+{
+  "url": "http://127.0.0.1:8879/editor/index.html?phase=21&fix=tags",
+  "profile": "fresh localhost origin",
+  "project": "phase-021-animation-dogfood",
+  "sourceFixture": "tests/fixtures/phase-018-atlas.png",
+  "authored": {
+    "atlasSize": [128, 128],
+    "gridCellSize": [32, 32],
+    "slicedSpriteAssets": 16,
+    "clipId": "spriteAnimation1",
+    "clipName": "Atlas Pulse",
+    "frameOrder": ["spriteAsset2", "spriteAsset3", "spriteAsset4", "spriteAsset5"],
+    "spriteAssetNames": ["phase-018-atlas_001", "phase-018-atlas_002", "phase-018-atlas_003", "phase-018-atlas_004"],
+    "durationsMs": [800, 900, 1600, 3000],
+    "playOnStart": true,
+    "spriteInstances": 5,
+    "prefab": "Animated Atlas Sprite",
+    "prefabInstantiations": 2
+  },
+  "checks": {
+    "normalVisibleControlsOnly": true,
+    "developerStateInjection": false,
+    "atlasImportedAndSliced": true,
+    "explicitFrameSelection": true,
+    "orderedPlaybackObserved": true,
+    "stopAndRestart": true,
+    "multipleIndependentInstances": true,
+    "prefabSavedAndInstantiated": true,
+    "saveReloadLoadSelected": true,
+    "clipSurvivedReload": true,
+    "projectValidation": "No structured authoring issues found.",
+    "editableExportControlCompleted": true,
+    "playableExportControlCompleted": true,
+    "browserDownloadEventExposed": false,
+    "exportClosureVerifiedByFocusedTests": true,
+    "initialInspectorFailureReproducedThenFixed": "assetTagInputValue typo replaced with formatAssetTagInput"
+  },
+  "consoleErrorsAfterRepair": [],
+  "consoleWarningsAfterRepair": [],
+  "ok": true
+}

@@ -1,0 +1,9 @@
+# Phase 087 — Button actions without scripts
+
+COMPLETED 2026-10-10T09:40:50Z; see PHASE-087-REPORT.md and qualification/phase-087/closure.json. Original contract: existing HUD Buttons invoke canonical `executeAction`, but creators could choose an Action without authoring its required parameters, and button-only asset dependencies were not scanned for exports. Repair this actual workflow rather than creating another logic runtime.
+
+Author one registered no-code Action with its existing typed fields on a HUD Button. Reuse canonical Object/Prefab/Audio/Objective/Sequence/Level/Signal references and validation; HUD has no fake Object Self. Valid changes own before-mutation history; invalid/no-op changes do not. Preserve unknown Actions/fields and historical button semantics. Do not silently coerce invalid numeric input to0. Keep author preview non-executing and actual gameplay guarded by Play/terminal/pause policy.
+
+Add canonical Open Menu Page with a named page picker so a creator can open086 pages from an actually running game; it must use the existing transient stack and App pause ownership. Do not add a second UI/action dispatcher. Extend existing registered dependency collection to HUD Button parameters, including button-only assets, in inactive levels and exact exports.
+
+Native gates: real HUD button opens Menu from running gameplay and Close resumes its owned pause; configured counter/target/typed Signal actions, zero/false values, one click/one effect, invalid/missing references and retained future records; Undo/Redo/Save/reopen; button-only asset retained and functional in Editable/Playable; preview does not execute and paused/terminal gameplay Actions do not fire. Run permanent actual-source regressions, core acceptance and proportional integrated/build/site gates. No Game29 or deployment.

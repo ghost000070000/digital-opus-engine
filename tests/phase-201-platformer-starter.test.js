@@ -1,0 +1,12 @@
+'use strict';
+const assert=require('assert'),starters=require('../editor/src/00-sprite-starters'),schema=require('../editor/src/00-authoring-schema');
+const a=starters.instantiate('platformer-sky-steps').project,b=starters.instantiate('platformer-sky-steps').project,level=a.levels[0],hero=level.objects.find(x=>x.id===level.playerSettings.platformerObjectRef);
+assert.equal(level.playerSettings.controllerType,'platformer2d');assert(hero);assert.equal(level.objects.filter(x=>x.components?.['platformer-controller-2d']).length,1);
+for(const [id,record] of Object.entries(hero.components)){const def=schema.registry.get(id);assert(def,id);assert.equal(record.version,def.version,id+' canonical version');if(def.validate)assert.deepStrictEqual(def.validate(record,hero),[],id+' canonical validation');}
+const ground=level.objects.filter(x=>x.components?.['body-2d']?.type==='static');assert.equal(ground.length,4);assert(ground.every(x=>x.components['box-collider-2d'].size[0]===x.components['sprite-renderer'].width));assert(level.objects.some(x=>x.kind==='camera'&&x.options.projection==='orthographic'));
+assert.equal(level.ui.hudElements[0].kind,'label','Existing canonical HUD renderer uses label, not text');assert.equal(level.objects.find(x=>x.id==='obj8').components['sprite-renderer'].visible,false,'Recovery sensor is not misleading visible ground');
+assert.equal(a.textures.length,2);assert(a.textures.every(x=>x.dataURL.startsWith('data:image/svg+xml')));assert(!JSON.stringify(a).includes('"script"'));assert(a.meta.instructions.includes('Space'));assert(hero.behaviors.some(x=>x.trigger==='start'&&x.action==='setCheckpoint'));
+for(const action of ['win','respawnAtCheckpoint']){const zone=level.objects.find(x=>x.behaviors?.some(b=>b.action===action));assert(zone);assert.equal(zone.behaviors[0].trigger,'trigger2DEnter');assert.deepStrictEqual(zone.components['trigger-collider-2d'].collisionMaskRefs,[hero.components['box-collider-2d'].collisionLayerRef]);assert.deepStrictEqual(schema.registry.get('trigger-collider-2d').validate(zone.components['trigger-collider-2d'],zone),[]);}
+hero.components['platformer-controller-2d'].moveSpeed=99;assert.equal(b.levels[0].objects.find(x=>x.id===hero.id).components['platformer-controller-2d'].moveSpeed,5);
+assert.equal(starters.list().length,3,'Historical art-only catalog remains unchanged');
+console.log('PASS201 independent canonical platformer starter composition/static visible-collider fit/no Script; native traversal/goal/history/export acceptance still required');

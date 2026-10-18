@@ -1,0 +1,25 @@
+{
+  "id": "npc-puzzle-adventure",
+  "sourceSHA256": "e06562bdb1db003278e22b4bd3b99bb2356e8ba14005f7bc988158f4df5c5bc3",
+  "errors": [],
+  "capturedAt": "2026-09-11T17:01:05.237Z",
+  "sha256": "78b6a241a810975d5b3586de7c38e219b17ff09484577eb2bef4629147b4fc82",
+  "state": {
+    "title": "The Sanctum Key",
+    "sim": 1.4014999999999993,
+    "ended": false,
+    "text": "Speak to the sailor, use the door console, and enter the sanctum.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+    "controller": "thirdperson",
+    "bodyVisible": false,
+    "visualVisible": true,
+    "canvas": [
+      1280,
+      720
+    ],
+    "webglLost": false,
+    "helpers": [],
+    "objects": 28
+  },
+  "pauseText": "⏸ Paused\n\nPress Escape or Resume to continue\n\n▶ Resume\n↻ Restart Level\n⌂ Main Menu\n🎮 Controls\nVolume\nMouse Sensitivity\nInvert Mouse Y\nQuality: High\n⛶ Fullscreen\nSpeak to the sailor, use the door console, and enter the sanctum.\nPress F to interact\nWASD / arrows move; Space jumps; F interacts; Escape pauses.",
+  "passed": true
+}

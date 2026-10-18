@@ -29,11 +29,32 @@ class Entity {
     // exactly like every entity before texturing existed). Freely
     // reassignable after construction, same convention as .color/.visible.
     this.texture = texture;
+    // Phase 011: populated only by a true Sprite object. This is deliberately
+    // distinct from editor billboards: sprites keep their authored world
+    // rotation, while billboards are camera-facing editor behavior.
+    this.spriteRenderer = null;
+    this.spriteSortingLayerRef = 'sprite-layer-default';
+    this.spriteSortingLayerOrder = 0;
+    this.spriteOrderInLayer = 0;
+    this.spriteStableId = '';
+    this.spriteMissingTexture = false;
+    // Phase 032: one Tilemap scene Entity owns one ordered transient render
+    // batch. Cells are plain descriptors consumed inside one Sprite-pass
+    // slot; they are never child Entities, timers, textures, or DOM nodes.
+    this.tilemapRenderer = null;
+    // Phase 027: transient Sprite-only world-axis offset. It is applied to
+    // draw matrices and never written into the authored Transform.
+    this.spriteRenderOffset = new Vec3();
     // Materials 2.0: all freely reassignable after construction, same
     // convention as .color/.texture/.visible -- no separate "material"
     // object, just a few more plain fields on the entity itself, since this
     // engine already treats an entity's paintable properties this way.
     this.alpha = 1; // < 1 routes the entity through the renderer's separate depth-write-off, back-to-front transparent pass
+    // Phase 029: only consulted while this non-Sprite entity is transparent.
+    // Keeping the value while opaque makes alpha toggles lossless. Unknown
+    // values fail closed to the historical behind-Sprites band at render.
+    this.spritePassRelation = 'behind-sprites';
+    this.renderStableId = '';
     this.unlit = false; // skips ambient/diffuse/spec/local-lights entirely -- just baseColor * texture, for a UI-like flat look
     this.emissiveColor = [0, 0, 0];
     this.emissiveIntensity = 0; // added on top of the lit (or unlit) result, independent of any light -- self-illumination, not global illumination
@@ -66,6 +87,9 @@ class Entity {
     this._blendFromClip = null;
     this._blendFromTime = 0;
     this._blendElapsed = 0;
+    this._blendFromPose = null;
+    this._sampledLocalTRS = null;
+    this._sampledSkin = null;
   }
 
   get rotationY() { return this._rotationY; }
@@ -88,7 +112,40 @@ class Entity {
   }
 
   get modelMatrix() {
-    return Mat4.compose(this.position, this._quat, this.scale);
+    const base = Mat4.compose(this.position, this._quat, this.scale);
+    if (!this.spriteRenderer) return base;
+    const renderOffset = this.spriteRenderOffset || new Vec3();
+    base.m[12] += Number(renderOffset.x) || 0;
+    base.m[13] += Number(renderOffset.y) || 0;
+    base.m[14] += Number(renderOffset.z) || 0;
+    const sprite = this.spriteRenderer;
+    const width = Math.max(0.0001, Number(sprite.width) || 1);
+    const height = Math.max(0.0001, Number(sprite.height) || 1);
+    const pivotX = Number.isFinite(sprite.pivotX) ? sprite.pivotX : 0.5;
+    const pivotY = Number.isFinite(sprite.pivotY) ? sprite.pivotY : 0.5;
+    const offset = new Vec3((0.5 - pivotX) * width, (0.5 - pivotY) * height, 0);
+    return Mat4.multiply(base, Mat4.multiply(Mat4.translation(offset), Mat4.scaling(new Vec3(width, height, 1))));
+  }
+
+  // Phase 026: a nine-slice remains one Entity. The renderer asks this
+  // internal helper for each transient cell matrix so every cell inherits
+  // the same Transform while the outer Sprite pivot stays authoritative.
+  _spriteCellModelMatrix(cell) {
+    const base = Mat4.compose(this.position, this._quat, this.scale);
+    const renderOffset = this.spriteRenderOffset || new Vec3();
+    base.m[12] += Number(renderOffset.x) || 0;
+    base.m[13] += Number(renderOffset.y) || 0;
+    base.m[14] += Number(renderOffset.z) || 0;
+    const offset = new Vec3(Number(cell && cell.x) || 0, Number(cell && cell.y) || 0, 0);
+    const size = new Vec3(Math.max(0, Number(cell && cell.width) || 0), Math.max(0, Number(cell && cell.height) || 0), 1);
+    return Mat4.multiply(base, Mat4.multiply(Mat4.translation(offset), Mat4.scaling(size)));
+  }
+
+  _tilemapCellModelMatrix(cell) {
+    const base = Mat4.compose(this.position, this._quat, this.scale);
+    const center = new Vec3(Number(cell && cell.centerX) || 0, Number(cell && cell.centerY) || 0, 0);
+    const size = new Vec3(Math.max(0.0001, Number(cell && cell.artWidth) || 1), Math.max(0.0001, Number(cell && cell.artHeight) || 1), 1);
+    return Mat4.multiply(base, Mat4.multiply(Mat4.translation(center), Mat4.scaling(size)));
   }
 
   // Local-space axes rotated into world space by this entity's own
@@ -102,9 +159,9 @@ class Entity {
   get right() { return this._quat.rotateVec3(new Vec3(1, 0, 0)); }
   get up() { return this._quat.rotateVec3(new Vec3(0, 1, 0)); }
 
-  update(dt) {
+  update(dt, spinEnabled = true) {
     if (this.destroyed) return;
-    if (this.spin) this.rotationY += this.spin * dt;
+    if (this.spin && spinEnabled) this.rotationY += this.spin * dt;
     // Wave 6 (Priority C): CPU-sample the current clip's pose into a fresh
     // bone palette every frame -- computeSkinPalette (21-gltf.js) is cheap
     // by construction (joint count capped at GLTF_MAX_JOINTS), so there's
@@ -112,6 +169,13 @@ class Entity {
     // than continuing the old clip's timeline, the least-surprising default
     // for "I just told this entity to play a different animation."
     if (this.skin) {
+      if (this._sampledSkin && this._sampledSkin !== this.skin) {
+        // A replacement skeleton is a fresh assignment, never a pose donor.
+        this._lastAnimationClip = undefined;
+        this._blendFromClip = null;
+        this._blendFromPose = null;
+        this._sampledLocalTRS = null;
+      }
       if (this.animationClip !== this._lastAnimationClip) {
         // Wave 6B (Priority B): a genuine clip SWITCH (not the very first
         // clip ever assigned, and only when a blend time is configured)
@@ -121,12 +185,18 @@ class Entity {
         // stale snapshot. First assignment ever (_lastAnimationClip still
         // undefined) and animationBlendTime === 0 both stay an instant cut,
         // bit-identical to every entity's behavior before this priority.
-        if (this._lastAnimationClip !== undefined && this.animationBlendTime > 0) {
+        if (this._lastAnimationClip !== undefined && Number.isFinite(this.animationBlendTime) && this.animationBlendTime > 0) {
+          // Only an interrupted fade (or bind-pose source) needs a snapshot.
+          // Ordinary two-clip fades retain the historical advancing source clock.
+          this._blendFromPose = this._sampledSkin === this.skin &&
+            (this._blendFromClip !== null || this._blendFromPose || this._lastAnimationClip === null)
+            ? this._sampledLocalTRS : null;
           this._blendFromClip = this._lastAnimationClip;
           this._blendFromTime = this.animationTime;
           this._blendElapsed = 0;
         } else {
           this._blendFromClip = null;
+          this._blendFromPose = null;
         }
         this.animationTime = 0;
         this._lastAnimationClip = this.animationClip;
@@ -136,23 +206,26 @@ class Entity {
         this.animationTime += dt * this.animationSpeed;
         if (clip.duration > 0) this.animationTime %= clip.duration;
       }
-      if (this._blendFromClip !== null) {
+      let localTRS = sampleClipLocalTRS(this.skin, clip, this.animationTime);
+      if (this._blendFromClip !== null || this._blendFromPose) {
         this._blendElapsed += dt;
         const fromClip = this.skin.clips[this._blendFromClip];
         if (fromClip) {
           this._blendFromTime += dt * this.animationSpeed;
           if (fromClip.duration > 0) this._blendFromTime %= fromClip.duration;
         }
-        if (this._blendElapsed >= this.animationBlendTime) {
+        if (!Number.isFinite(this.animationBlendTime) || this.animationBlendTime <= 0 || this._blendElapsed >= this.animationBlendTime) {
           this._blendFromClip = null; // blend finished -- fall through to a plain single-clip sample below
+          this._blendFromPose = null;
         } else {
           const blendT = this._blendElapsed / this.animationBlendTime;
-          this._palette = computeSkinPaletteBlended(this.skin, this._blendFromClip, this._blendFromTime, this.animationClip, this.animationTime, blendT);
+          const sourcePose = this._blendFromPose || sampleClipLocalTRS(this.skin, fromClip, this._blendFromTime);
+          localTRS = blendLocalTRS(sourcePose, localTRS, blendT);
         }
       }
-      if (this._blendFromClip === null) {
-        this._palette = clip ? computeSkinPalette(this.skin, this.animationClip, this.animationTime) : computeSkinPalette(this.skin, null, 0);
-      }
+      this._sampledLocalTRS = localTRS;
+      this._sampledSkin = this.skin;
+      this._palette = localTRSToPalette(this.skin, localTRS);
     }
   }
 

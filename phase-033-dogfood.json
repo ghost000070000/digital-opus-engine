@@ -1,0 +1,214 @@
+{
+  "phase": 33,
+  "method": "normal Import, Layer panel, Paint/Erase, Undo/Redo, validation, and export controls",
+  "serverPid": 28172,
+  "fixture": "qualification\\phase-033\\phase-033-browser-input.json",
+  "browser": {
+    "migration": {
+      "version": 2,
+      "layerId": "tilemap-layer-default",
+      "name": "Layer 1",
+      "visible": true,
+      "locked": false,
+      "cells": [
+        {
+          "x": -2,
+          "y": -1,
+          "tileId": "tile-phase-031-tileset-atlas-001"
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "tileId": "tile-phase-031-tileset-atlas-002"
+        },
+        {
+          "x": 2,
+          "y": 1,
+          "tileId": "tile-phase-031-tileset-atlas-003"
+        }
+      ],
+      "renderCells": 3,
+      "topLevelCellsEnumerable": false
+    },
+    "authoring": {
+      "live": {
+        "objectCount": 1,
+        "version": 2,
+        "layers": [
+          {
+            "id": "layer-ground",
+            "name": "Ground",
+            "visible": true,
+            "locked": false,
+            "cells": 3
+          },
+          {
+            "id": "layer-detail",
+            "name": "Details",
+            "visible": true,
+            "locked": false,
+            "cells": 2
+          },
+          {
+            "id": "layer-foreground",
+            "name": "Foreground",
+            "visible": false,
+            "locked": true,
+            "cells": 1
+          },
+          {
+            "id": "layer-objects",
+            "name": "Objects",
+            "visible": true,
+            "locked": false,
+            "cells": 1
+          }
+        ],
+        "renderOrder": [
+          "layer-ground",
+          "layer-ground",
+          "layer-ground",
+          "layer-detail",
+          "layer-detail",
+          "layer-objects"
+        ],
+        "sameCell": [
+          "layer-detail",
+          "layer-ground",
+          "layer-objects"
+        ]
+      },
+      "paint": {
+        "beforePaint": 2,
+        "afterPaint": 3,
+        "afterErase": 2,
+        "afterUndo": 3,
+        "afterRedo": 2
+      },
+      "validation": "No structured authoring issues found.",
+      "pageErrors": [],
+      "consoleErrors": [],
+      "externalRequests": []
+    },
+    "editable": {
+      "state": {
+        "version": 2,
+        "layers": [
+          {
+            "id": "layer-ground",
+            "name": "Ground",
+            "visible": true,
+            "locked": false,
+            "cells": 3
+          },
+          {
+            "id": "layer-detail",
+            "name": "Details",
+            "visible": true,
+            "locked": false,
+            "cells": 2
+          },
+          {
+            "id": "layer-foreground",
+            "name": "Foreground",
+            "visible": false,
+            "locked": true,
+            "cells": 1
+          },
+          {
+            "id": "layer-objects",
+            "name": "Objects",
+            "visible": true,
+            "locked": false,
+            "cells": 1
+          }
+        ],
+        "renderCells": [
+          "layer-ground",
+          "layer-ground",
+          "layer-ground",
+          "layer-detail",
+          "layer-detail",
+          "layer-objects"
+        ],
+        "objectCount": 1,
+        "layerPanel": 4,
+        "addLayerVisible": true,
+        "paintVisible": true
+      },
+      "toggleVisible": true,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "externalRequests": []
+    },
+    "playable": {
+      "state": {
+        "version": 2,
+        "layers": [
+          {
+            "id": "layer-ground",
+            "name": "Ground",
+            "visible": true,
+            "locked": false,
+            "cells": 3
+          },
+          {
+            "id": "layer-detail",
+            "name": "Details",
+            "visible": true,
+            "locked": false,
+            "cells": 2
+          },
+          {
+            "id": "layer-foreground",
+            "name": "Foreground",
+            "visible": false,
+            "locked": true,
+            "cells": 1
+          },
+          {
+            "id": "layer-objects",
+            "name": "Objects",
+            "visible": true,
+            "locked": false,
+            "cells": 1
+          }
+        ],
+        "renderCells": [
+          "layer-ground",
+          "layer-ground",
+          "layer-ground",
+          "layer-detail",
+          "layer-detail",
+          "layer-objects"
+        ],
+        "objectCount": 1
+      },
+      "toggleVisible": false,
+      "pageErrors": [],
+      "consoleErrors": [],
+      "externalRequests": []
+    }
+  },
+  "ok": true,
+  "exports": {
+    "editable": {
+      "path": "qualification\\phase-033\\phase-033-editable-game.html",
+      "bytes": 1747734,
+      "layers": 4,
+      "cells": 7
+    },
+    "playable": {
+      "path": "qualification\\phase-033\\phase-033-playable-game.html",
+      "bytes": 1747772,
+      "layers": 4,
+      "cells": 7,
+      "tiles": 3,
+      "sprites": 3,
+      "textures": 1
+    },
+    "layerParity": true,
+    "hiddenDependenciesRetained": true
+  },
+  "verdict": "PASS"
+}

@@ -1,0 +1,7 @@
+# Phase 045 baseline characterization
+
+At start: HEAD `f1dc3516b585ebf5aa868006792c1dc1b9039da9`, branch `main`, approximately 746 dirty worktree entries from prior work. Phase 044 verdict was `PHASE_044_DYNAMIC_BODY_NOT_JUSTIFIED`; product Body 2D remained v1 Static/Kinematic. Engine build passed at 168,984 raw bytes, 43,457 gzip bytes, 22 source files. Prior editor package was 1,956 KB. Prior Phase 011–044 aggregate was 1,954 checks; integrated was 2,316. Public catalog was 28 games. No commit/push/deploy was authorized.
+
+Phase 043 movement lived in `editor/src/00-body-2d.js`: Static shapes were resolved once per tick; Kinematic movement used X-then-Y swept AABBs and conservative advancement with `CONTACT_EPSILON = 1e-6` and `MAX_ADVANCES = 48`. Hit IDs were sorted. The editor's world-translation callback converted parented world deltas to local coordinates. Trigger lifecycle ran after Body movement.
+
+Phase 034 Tile collision authority was the resolved `cell.tileId` and Tile definition `collision` metadata. `tileCollisionLocalRect` supplied Full Cell or normalized Custom Rectangle; `tileCollisionWorldQuad` transformed four corners. Phase 040 exposed per-Layer `ensureTilemapCellIndex(...).byKey` sparse lookups. Tilemap schema was v4 with Layers and Spawn Markers, but no Layer collision participation switch. Phase 045 advances Tilemap to v5 and defaults historical/new Layers to `collisionEnabled: true`.
