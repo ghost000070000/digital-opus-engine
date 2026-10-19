@@ -356,7 +356,9 @@ function enterPlayMode() {
   if (body2DManager) body2DManager.clearCharacterCollision2DState();
   // A fresh session always boots from the designated Start Level, not
   // necessarily whichever level happens to be open for editing.
-  if (startLevelIndex !== currentLevelIndex && levels[startLevelIndex]) switchToLevel(startLevelIndex);
+  // Play From Here tests the level being edited instead.
+  const fromHere = typeof playFromHereActive === 'function' && playFromHereActive();
+  if (!fromHere && startLevelIndex !== currentLevelIndex && levels[startLevelIndex]) switchToLevel(startLevelIndex);
   captureAuthoredBody2DTransforms();
   if(typeof authoringFixtureCapture!=='undefined')authoringFixtureCapture=null;
   if(typeof authoringFixtureCheck!=='undefined')cancelAuthoringFixtureCheck('Play started; isolated check cancelled without changing the authored project.');
@@ -468,6 +470,7 @@ function showStartScreenIfConfigured() {
   updateMainMenuExtras(); // Controls also appears in Pause when Start is disabled.
   const cfg = currentUiConfig.startScreen;
   if (!cfg.enabled) return;
+  if (typeof playFromHereActive === 'function' && playFromHereActive()) return; // testing a spot: straight into the game
   document.getElementById('start-overlay-title').textContent = cfg.title || '';
   document.getElementById('start-overlay-subtitle').textContent = cfg.subtitle || '';
   document.getElementById('start-overlay-btn').textContent = cfg.buttonText || 'Start';

@@ -361,6 +361,8 @@ function findSolidGroundTopAt(x, z) {
 //   4. a safe fixed default, for a level with no Spawn Point/solid/terrain at all
 function computeSpawnPoint() {
   const clearance = ['thirdperson', 'firstperson'].includes(currentPlayerSettings.controllerType) ? playerBodyHeight() * 0.5 : SPAWN_CLEARANCE;
+  const here = typeof playFromHereSpawn === 'function' ? playFromHereSpawn() : null;
+  if (here) return here.clone().add(new Opus.Vec3(0, clearance, 0)); // Play From Here (and its respawns)
   const spawnPointItem = findDefaultSpawnPointItem();
   if (spawnPointItem) return spawnPointItem.entity.position.clone().add(new Opus.Vec3(0, clearance, 0));
 
