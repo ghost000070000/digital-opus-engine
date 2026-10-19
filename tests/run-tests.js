@@ -33,6 +33,7 @@ run(path.join('tests', 'multi-edit.test.js'));
 run(path.join('tests', 'animation-timeline.test.js'));
 run(path.join('tests', 'scene-links.test.js'));
 run(path.join('tests', 'hierarchy-tools.test.js'));
+run(path.join('tests', 'number-scrub.test.js'));
 run(path.join('tests', 'real-demo-evidence.test.js'));
 run(path.join('tests', 'real-demo-wall-content.test.js'));
 run(path.join('tests', 'real-demo-masonry-assembly.test.js'));
