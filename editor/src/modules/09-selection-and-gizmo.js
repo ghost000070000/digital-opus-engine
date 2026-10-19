@@ -593,7 +593,7 @@ canvas.addEventListener('pointermove', (e) => {
     return;
   }
   if (e.pointerId !== activePointerId) return;
-  if (typeof applySurfaceDragMovement === 'function' && applySurfaceDragMovement(dragState, e.clientX, e.clientY)) { suppressCameraDrag(); return; }
+  if (typeof applySurfaceDragMovement === 'function' && applySurfaceDragMovement(dragState, e.clientX, e.clientY)) { if (typeof applyCornerSnap === 'function') applyCornerSnap(dragState); suppressCameraDrag(); return; }
   const point = Number.isFinite(dragState.planeY) ? screenToPlanePoint(e.clientX, e.clientY, new Opus.Vec3(0, dragState.planeY, 0), new Opus.Vec3(0, 1, 0)) : screenToGroundPoint(e.clientX, e.clientY);
   if (!point) return;
   // A single shared delta (from the grab point) applied to each item's own
@@ -605,6 +605,8 @@ canvas.addEventListener('pointermove', (e) => {
   const dz = point.z - dragState.grabStartZ;
   suppressCameraDrag(); // Own the gesture even while a sub-grid displacement is unchanged.
   applyGroundDragMovement(dragState, dx, dz);
+  // Hold V: line corners up with nearby objects.
+  if (typeof applyCornerSnap === 'function') applyCornerSnap(dragState);
 });
 
 window.addEventListener('pointerup', (e) => {

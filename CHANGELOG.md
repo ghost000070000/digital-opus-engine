@@ -22,6 +22,7 @@
 - Thumbnails for your own imported Models (Assets tab) and saved Prefabs, drawn in the browser with the same software renderer as the Content Library pictures (textured, lit, transparent background); drawn a few at a time when idle and cached.
 - Script editor autocomplete: suggestions with one-line descriptions after ctx., ctx.entity., ctx.input., ctx.game., ctx.player. and vectors (including variables assigned from them), lifecycle hooks after "function " (inserted with their body), Ctrl+Space on demand; Enter keeps indentation.
 - Move gizmo: a yellow XZ plane square drags an object along the ground in one motion at its own height; hold Ctrl while dragging to flip snapping for the moment (never saved).
+- Corner snapping: hold V while dragging and the object's nearest bounding-box corner locks onto a nearby object's corner (within 16 px on screen), with a marker; walls, floors and crates line up edge to edge.
 - Hosted game pages share one cached, content-hashed engine/editor runtime: average page 7.6 MB → 1.8 MB, site 215 MB → 127 MB, upload ZIP 84 MB → 61 MB. Exports remain single-file.
 
 ## 2026-10-18 — Real-game controls and collision repair
