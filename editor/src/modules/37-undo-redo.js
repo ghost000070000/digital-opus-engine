@@ -209,6 +209,19 @@ function pushUndo() {
   updateUndoRedoButtons();
 }
 
+// Undo/Redo rebuild objects from records with the same ids; keep whichever
+// of the previously selected objects still exist selected, as Unity does.
+function historySelectionIds() { return typeof selectedItems !== 'undefined' ? [...selectedItems].map((item) => item && item.id).filter(Boolean) : []; }
+function restoreHistorySelection(ids) {
+  if (!ids.length || playMode) return;
+  const items = ids.map((id) => placed.find((item) => item.id === id)).filter(Boolean);
+  if (!items.length) return;
+  selectedItems.clear();
+  for (const item of items) selectedItems.add(item);
+  selectedItem = items[items.length - 1];
+  syncSelectionMarkers(); renderSceneList(); renderInspector();
+}
+
 function undo() {
   if(typeof authoringFixtureCapture!=='undefined')authoringFixtureCapture=null;
   if (undoStack.length === 0) return;
@@ -222,7 +235,9 @@ function undo() {
   const target = undoStack.pop();
   if (target && target._phase039FullProject) redoStack.push(captureTilemapBundleSnapshot());
   else redoStack.push(captureEditorSnapshot());
+  const keep = typeof historySelectionIds === 'function' ? historySelectionIds() : [];
   loadEditorSnapshot(target);
+  if (typeof restoreHistorySelection === 'function') restoreHistorySelection(keep);
   updateUndoRedoButtons();
   showStatus('Undo');
 }
@@ -240,7 +255,9 @@ function redo() {
   const target = redoStack.pop();
   if (target && target._phase039FullProject) undoStack.push(captureTilemapBundleSnapshot());
   else undoStack.push(captureEditorSnapshot());
+  const keep = typeof historySelectionIds === 'function' ? historySelectionIds() : [];
   loadEditorSnapshot(target);
+  if (typeof restoreHistorySelection === 'function') restoreHistorySelection(keep);
   updateUndoRedoButtons();
   showStatus('Redo');
 }

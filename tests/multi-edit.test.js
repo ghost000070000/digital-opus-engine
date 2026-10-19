@@ -49,6 +49,23 @@ ctx.randomizeItems([d], 'scale', rng); // 0.8 + 0.5 * 0.4 = 1.0
 ctx.randomizeItems([d], 'scale', rng); // 0.8 + 0.75 * 0.4 = 1.1
 assert(near(d.entity.scale.x, 1.1) && near(d.entity.scale.y, 1.1), 'uniform random size');
 
+// Undo/Redo keep whichever previously selected objects still exist selected.
+{
+  const history = fs.readFileSync(path.join(root, 'editor/src/modules/37-undo-redo.js'), 'utf8');
+  const start = history.indexOf('function historySelectionIds'), end = history.indexOf('function undo()');
+  const rebuilt = [{ id: 'a' }, { id: 'b' }];
+  const h = { placed: rebuilt, selectedItems: new Set([{ id: 'a' }, { id: 'gone' }]), selectedItem: null, playMode: false, calls: 0 };
+  h.syncSelectionMarkers = h.renderSceneList = h.renderInspector = () => { h.calls++; };
+  vm.createContext(h);
+  vm.runInContext(history.slice(start, end), h);
+  const ids = h.historySelectionIds();
+  h.restoreHistorySelection(ids);
+  assert.strictEqual(h.selectedItems.size, 1, 'deleted objects drop out of the selection');
+  assert.strictEqual([...h.selectedItems][0], rebuilt[0], 'the rebuilt object, not the stale one, is selected');
+  assert.strictEqual(h.selectedItem, rebuilt[0]);
+  assert(history.includes('restoreHistorySelection(keep);'), 'both Undo and Redo restore it');
+}
+
 // Wiring: the multi-selection Inspector mounts it; boot order.
 assert(fs.readFileSync(path.join(root, 'editor/src/modules/33-inspector.js'), 'utf8').includes("if (typeof mountMultiEditSection === 'function') mountMultiEditSection(inspectorBody);"));
 const modules = fs.readdirSync(path.join(root, 'editor/src/modules')).sort();
