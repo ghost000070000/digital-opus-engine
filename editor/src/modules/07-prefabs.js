@@ -870,6 +870,8 @@ function applyPlacementSnap(point) {
 }
 
 function screenToPlacementPoint(payload,clientX,clientY) {
+  const surface=typeof surfacePlacementPoint==='function'?surfacePlacementPoint(payload,clientX,clientY):null;
+  if(surface)return surface;
   const ground=screenToGroundPoint(clientX,clientY);
   if(ground)return {point:ground,plane:'ground'};
   let depth=0;
@@ -889,14 +891,16 @@ function screenToPlacementPoint(payload,clientX,clientY) {
 function commitPlacementPayload(payload, point, placementOptions) {
   const placementPoint = applyPlacementSnap(point);
   if(placementOptions?.plane==='xy')placementPoint.z=point.z; // snap XY authoring coordinates, not the chosen layer depth
+  const surfaceY=placementOptions&&Number.isFinite(placementOptions.surfaceY)&&typeof restNewItemsOnSurface==='function'?placementOptions.surfaceY:null;
+  if(surfaceY!==null)placementPoint.y=surfaceY; // grid snap is horizontal; height comes from the surface
   if (OpusAuthoringPlumbing.isSpritePlacementPayload(payload)) {
     const asset = findSpriteAssetById(payload.assetId); // stable ID resolved only at commit
     if (!asset) { showStatus(`Sprite Asset ${payload.assetId} is unavailable; nothing was placed`); return null; }
     if(placementOptions?.plane!=='xy')placementPoint.y = 1; // historical ground placement height
     return placeSpriteAssetInstance(asset, placementPoint);
   }
-  if (payload && typeof payload.libraryModel === 'string') { addContentLibraryModel(payload.libraryModel, placementPoint); return null; } // Content Library drag (loads asynchronously)
-  if (payload && payload.paletteType) { placeItem(payload.paletteType, placementPoint,placementOptions); return selectedItem; }
+  if (payload && typeof payload.libraryModel === 'string') { const added = addContentLibraryModel(payload.libraryModel, placementPoint); if (surfaceY !== null && added && added.then) added.then((item) => { if (item) restNewItemsOnSurface([item], surfaceY); }); return null; } // Content Library drag (loads asynchronously)
+  if (payload && payload.paletteType) { const before = surfaceY !== null ? new Set(placed) : null; placeItem(payload.paletteType, placementPoint,placementOptions); if (before) restNewItemsOnSurface(placed.filter((item) => !before.has(item)), surfaceY); return selectedItem; }
   return null;
 }
 

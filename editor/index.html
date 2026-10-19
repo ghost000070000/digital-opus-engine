@@ -1797,13 +1797,14 @@
         <summary title="Scene view options and read-only diagnostics; never saved in your game">View ▾</summary>
         <div id="viewport-debug-menu-items">
           <label title="Editor-only ground grid. Hidden in Play and never exported."><input type="checkbox" id="scene-grid-toggle" checked> Ground grid</label>
+          <label id="surface-snap-label" title="Dragged and dropped objects rest on whatever is under the cursor (models, cubes, terrain). End drops the selection onto the surface below. A browser preference, never saved in your game."><input type="checkbox" id="surface-snap-toggle" checked> Snap to surfaces</label>
           <label id="show-colliders-label" title="Read-only legacy 3D Cube solid and authored Trigger bounds; selected combat volumes. For modern XY Collider/Trigger diagnostics use 2D Debug."><input type="checkbox" id="show-colliders-toggle"> Show Colliders</label>
           <label id="physics-debug-2d-label" title="2D Physics Debug: read-only modern XY Collider/Trigger and runtime support diagnostics. Not legacy 3D solid bounds. Session only; never saved in your game."><input type="checkbox" id="physics-debug-2d-toggle" aria-label="2D Physics Debug"> 2D Debug</label>
           <label style="white-space:nowrap;flex-shrink:0" title="Read current Game, Object and retained waiting Graph variable state. No writes or simulation steps."><input type="checkbox" id="live-state-toggle" aria-label="State Inspector"> State Inspector</label>
           <label id="graph-trace-label" style="white-space:nowrap;flex-shrink:0" title="Observe actual Graph steps, gates, Delays and Function calls. Read-only, session-only and bounded."><input type="checkbox" id="graph-trace-toggle" aria-label="Graph Trace"> Graph Trace</label>
           <label style="white-space:nowrap;flex-shrink:0" title="Opt-in actual loop CPU and wall-frame cadence. Bounded, read-only and never saved."><input type="checkbox" id="performance-profiler-toggle" aria-label="Performance profiler"> Profiler</label>
           <label style="white-space:nowrap;flex-shrink:0" title="Inspect actual AI state, hearing memory, cooldown and animation. Read-only and never saved."><input type="checkbox" id="ai-debug-toggle" aria-label="AI Debug"> AI Debug</label>
-          <div class="scene-nav-help"><strong>Navigate</strong><br>Right-drag: look · hold + WASD/QE: fly<br>Middle-drag: pan · Alt+drag: orbit<br>Wheel: zoom · F: frame selection</div>
+          <div class="scene-nav-help"><strong>Navigate</strong><br>Right-drag: look · hold + WASD/QE: fly<br>Middle-drag: pan · Alt+drag: orbit<br>Wheel: zoom · F: frame selection<br>End: drop selection onto surface</div>
         </div>
       </details>
     </div>

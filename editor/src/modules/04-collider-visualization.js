@@ -804,6 +804,19 @@ function pickEntity(clientX, clientY) {
   // sits on an island and grabbing the whole island instead.
   let closestCubeT = Infinity;
   let cubeHit = null;
+  // Authoring picks the real mesh (or box) under the cursor, so a crate on a
+  // table selects the crate rather than the table's oversized bounding
+  // sphere. Play keeps the generous sphere for gameplay clicks, and the
+  // sphere still catches near-misses on tiny markers when nothing is hit.
+  if (!playMode && typeof surfaceRayEntity === 'function') {
+    const o = [ray.origin.x, ray.origin.y, ray.origin.z], d = [ray.direction.x, ray.direction.y, ray.direction.z];
+    for (const item of placed) {
+      if (item.kind !== 'cube' || !item.entity || !item.entity.mesh || !item.entity.modelMatrix) continue;
+      const t = surfaceRayEntity(o, d, item.entity, closestCubeT);
+      if (t !== null && t < closestCubeT) { closestCubeT = t; cubeHit = item; }
+    }
+    if (cubeHit) return cubeHit;
+  }
   for (const item of placed) {
     if (item.kind !== 'cube') continue;
     // Hidden gameplay objects cannot intercept visible interactions. Editor

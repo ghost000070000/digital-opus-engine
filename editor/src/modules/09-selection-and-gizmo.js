@@ -366,6 +366,7 @@ canvas.addEventListener('pointerdown', (e) => {
     grabStartZ: point.z,
     moved: false,
   };
+  if (typeof prepareSurfaceDrag === 'function') prepareSurfaceDrag(dragState, hit, e.clientX, e.clientY);
   suppressCameraDrag();
   canvas.style.cursor = 'grabbing';
 });
@@ -578,6 +579,7 @@ canvas.addEventListener('pointermove', (e) => {
     return;
   }
   if (e.pointerId !== activePointerId) return;
+  if (typeof applySurfaceDragMovement === 'function' && applySurfaceDragMovement(dragState, e.clientX, e.clientY)) { suppressCameraDrag(); return; }
   const point = screenToGroundPoint(e.clientX, e.clientY);
   if (!point) return;
   // A single shared delta (from the grab point) applied to each item's own

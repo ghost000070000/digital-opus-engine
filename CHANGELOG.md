@@ -8,6 +8,8 @@
 - Reusable content: linked named Materials (saving updates every linked object; hand edits make one unique), Update Prefab From This rebuilds every other instance while keeping per-instance overrides, and assets get default colliders on drop and Scatter (trees at the trunk, ground cover walk-through).
 - Durable saves: projects, previous revisions, version history and the Prefab library live in IndexedDB with automatic migration from localStorage, cross-tab sync and a persistent-storage request. Several large projects now save where the second used to fail.
 - Scene navigation: right-drag to look, hold it with W/A/S/D/Q/E to fly (Shift faster, wheel sets fly speed), middle-drag pan, Alt-drag orbit, Alt+right-drag zoom, distance-proportional wheel zoom from 0.5 m to 600 m with a far plane that follows, and F to frame the selection. Games keep the engine's default orbit limits (new opt-in `Camera.setOrbitOptions`).
+- Surface snapping: dragged objects and drops from the Objects palette or Content Library rest on whatever is under the cursor (models by their triangles, cubes and ramps by their oriented boxes, terrain by its heightfield) instead of the Y = 0 plane; End drops the selection onto the surface below. Toggle in View ▾ → Snap to surfaces.
+- Authoring picks use the real mesh/box under the cursor instead of an oversized bounding sphere, so a crate on a table selects the crate (Play keeps the generous gameplay pick).
 - Hosted game pages share one cached, content-hashed engine/editor runtime: average page 7.6 MB → 1.8 MB, site 215 MB → 127 MB, upload ZIP 84 MB → 61 MB. Exports remain single-file.
 
 ## 2026-10-18 — Real-game controls and collision repair
