@@ -16,6 +16,7 @@
 - Multi-object editing: with several objects selected the Inspector's new "Edit all" card sets Position / Rotation / Scale (blank when values differ), Color and Solid on every object at once, aligns (X/Y/Z low side, centre, high side), spreads evenly on X/Z, randomizes turn and size, and drops everything to the surface; each change is one Undo step and children follow their parents.
 - Undo / Redo keep the selection: objects that still exist stay selected instead of everything being deselected.
 - Animation timeline: the Property Animation editor docks at the bottom so the scene stays usable, with a dopesheet (track rows, keyframe diamonds, playhead). Drag the playhead, pose the object in the scene, press Key; drag diamonds to retime, Delete removes a key (never the object). Previously the editor covered the scene and Add Keyframe restored the authored pose before capturing.
+- Scene links: every object dropdown in Behaviors, Graph nodes and Sequences has a 🎯 button: click it, then click the target in the scene. With one object selected the viewport draws arrows to the objects its logic targets (labelled with the actions) and dashed arrows from objects that target it, including off-screen ones; toggle in View ▾ → Logic links.
 - Hosted game pages share one cached, content-hashed engine/editor runtime: average page 7.6 MB → 1.8 MB, site 215 MB → 127 MB, upload ZIP 84 MB → 61 MB. Exports remain single-file.
 
 ## 2026-10-18 — Real-game controls and collision repair

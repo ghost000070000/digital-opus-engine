@@ -121,7 +121,7 @@ function renderActionFieldInput(f, value, idAttr, values, contextItem) {
     const unavailable = retained ? `<option value="${escapeHtml(typeof value === 'string' ? value : '__unavailable__')}" selected disabled>Unavailable saved Object — choose replacement</option>` : '';
     const options = choices
       .map((option) => `<option value="${escapeHtml(option.value)}"${value === option.value ? ' selected' : ''}>${escapeHtml(option.label)}</option>`).join('');
-    return `<select data-field="${f.key}"${idPart}>${emptyLabel != null ? `<option value="">${emptyLabel}</option>` : ''}${unavailable}${options}</select>`;
+    return `<select data-field="${f.key}"${idPart}${type === 'object' ? ' data-object-ref="1"' : ''}>${emptyLabel != null ? `<option value="">${emptyLabel}</option>` : ''}${unavailable}${options}</select>`;
   };
   if (f.type === 'target' && f.cameraPath) {
     // Same object ID/schema/reference collector, but only Paths can drive this Action.
