@@ -23,6 +23,7 @@
 - Script editor autocomplete: suggestions with one-line descriptions after ctx., ctx.entity., ctx.input., ctx.game., ctx.player. and vectors (including variables assigned from them), lifecycle hooks after "function " (inserted with their body), Ctrl+Space on demand; Enter keeps indentation.
 - Move gizmo: a yellow XZ plane square drags an object along the ground in one motion at its own height; hold Ctrl while dragging to flip snapping for the moment (never saved).
 - Corner snapping: hold V while dragging and the object's nearest bounding-box corner locks onto a nearby object's corner (within 16 px on screen), with a marker; walls, floors and crates line up edge to edge.
+- Workflow tools: Copy Logic / Paste Logic (Hierarchy right-click, Ctrl+Shift+C/V) copies Behaviors, Script and Object Variables onto the selection, retargeting references to the source onto each receiver and never overwriting a script; Select Similar picks every object with the same model, prefab or base name; Shift+1…9 saves the scene view and 1…9 returns to it (per project and level).
 - Hosted game pages share one cached, content-hashed engine/editor runtime: average page 7.6 MB → 1.8 MB, site 215 MB → 127 MB, upload ZIP 84 MB → 61 MB. Exports remain single-file.
 
 ## 2026-10-18 — Real-game controls and collision repair

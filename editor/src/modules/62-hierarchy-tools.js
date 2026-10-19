@@ -112,6 +112,9 @@ function sceneMenuEntries(item) {
     { label: 'Duplicate', hint: 'Ctrl+D', enabled: true, run: () => duplicateSelected() },
     { label: 'Copy', hint: 'Ctrl+C', enabled: typeof copySelection === 'function', run: () => copySelection(false) },
     { label: 'Paste', hint: 'Ctrl+V', enabled: typeof pasteClipboard === 'function', run: () => pasteClipboard() },
+    { label: 'Select Similar', hint: '', enabled: typeof selectSimilar === 'function', run: () => selectSimilar(item) },
+    { label: 'Copy Logic', hint: 'Ctrl+Shift+C', enabled: one && typeof copyLogic === 'function', run: () => copyLogic(item) },
+    { label: 'Paste Logic', hint: 'Ctrl+Shift+V', enabled: typeof pasteLogic === 'function', run: () => pasteLogic() },
     { label: 'Unparent', hint: '', enabled: one && !!item.parentId, run: () => { pushUndo(); unparentItem(item); renderSceneList(); renderInspector(); showStatus('Moved to the top level'); } },
     { label: 'Delete', hint: 'Del', enabled: true, danger: true, run: () => deleteSelected() },
   ];
