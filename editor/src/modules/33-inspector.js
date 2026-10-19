@@ -2808,7 +2808,7 @@ function organizeInspectorCards() {
 }
 
 function renderInspector() {
-  queueMicrotask(() => { mountScriptInspectorSection(); organizeInspectorCards(); });
+  queueMicrotask(() => { mountScriptInspectorSection(); if (typeof mountPhysicsInspectorSection === 'function') mountPhysicsInspectorSection(); organizeInspectorCards(); });
   if (terrainSculptPreview) terrainSculptPreview.style.display = 'none';
   renderInspectorBody();
   if (selectedItems.size !== 1 || !selectedItem) return;

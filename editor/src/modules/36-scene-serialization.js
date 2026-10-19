@@ -105,6 +105,7 @@ function serializeCubeRecord(item) {
     // World State Save Game persistence.
     persistRuntimeState: item.persistRuntimeState || undefined,
     carryable: item.carryable || undefined,
+    physics: item.physics ? { ...item.physics } : undefined, // Physics Object settings (68-physics-objects.js)
     variables: (item.variables && Object.keys(item.variables).length) ? item.variables : undefined,
     prefabParams: (item.prefabParams && Object.keys(item.prefabParams).length) ? item.prefabParams : undefined,
     localPosition: item.localPosition ? [item.localPosition.x, item.localPosition.y, item.localPosition.z] : undefined,
@@ -210,6 +211,7 @@ function serializeBaseItemRecord(item) {
     // World State Save Game persistence.
     persistRuntimeState: item.persistRuntimeState || undefined,
     carryable: item.carryable || undefined,
+    physics: item.physics ? { ...item.physics } : undefined, // Physics Object settings (68-physics-objects.js)
     variables: (item.variables && Object.keys(item.variables).length) ? item.variables : undefined,
     prefabParams: (item.prefabParams && Object.keys(item.prefabParams).length) ? item.prefabParams : undefined,
     localPosition: item.localPosition ? [item.localPosition.x, item.localPosition.y, item.localPosition.z] : undefined,
@@ -424,6 +426,7 @@ function instantiateCubeRecord(record, position, originDelta = null) {
     socketName: record.socketName || undefined,
     persistRuntimeState: record.persistRuntimeState || undefined,
     carryable: record.carryable || undefined,
+    physics: record.physics && typeof record.physics === 'object' ? { ...record.physics } : undefined,
     // Wave 8 (Priority B): a plain copy, not a shared reference -- each
     // revived instance (including every member of a Duplicate/Array/Scatter
     // batch built from the SAME source record) gets its own independent
@@ -503,6 +506,7 @@ function instantiateItemFromRecord(record) {
     socketName: record.socketName || undefined,
     persistRuntimeState: record.persistRuntimeState || undefined,
     carryable: record.carryable || undefined,
+    physics: record.physics && typeof record.physics === 'object' ? { ...record.physics } : undefined,
     // Wave 8 (Priority B): a plain copy, not a shared reference -- each
     // revived instance (including every member of a Duplicate/Array/Scatter
     // batch built from the SAME source record) gets its own independent
