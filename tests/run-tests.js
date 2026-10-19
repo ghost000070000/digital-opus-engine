@@ -36,6 +36,7 @@ run(path.join('tests', 'hierarchy-tools.test.js'));
 run(path.join('tests', 'number-scrub.test.js'));
 run(path.join('tests', 'asset-thumbnails.test.js'));
 run(path.join('tests', 'script-autocomplete.test.js'));
+run(path.join('tests', 'gizmo-plane.test.js'));
 run(path.join('tests', 'real-demo-evidence.test.js'));
 run(path.join('tests', 'real-demo-wall-content.test.js'));
 run(path.join('tests', 'real-demo-masonry-assembly.test.js'));

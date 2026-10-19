@@ -236,6 +236,20 @@ canvas.addEventListener('pointerdown', (e) => {
   // (or extends past) whatever's selected, so it must win the hit-test
   // first or clicking it would just re-select/drag the object underneath.
   const gizmoAxis = pickGizmoHandle(e.clientX, e.clientY);
+  if (gizmoAxis === 'xz') {
+    const planeY = itemPosition(selectedItem).y;
+    const grab = screenToPlanePoint(e.clientX, e.clientY, new Opus.Vec3(0, planeY, 0), new Opus.Vec3(0, 1, 0));
+    if (!grab) return;
+    activePointerId = e.pointerId;
+    dragState = {
+      items: [...selectedItems].map((item) => { const pos = itemPosition(item); return { item, startX: pos.x, startZ: pos.z }; }),
+      grabStartX: grab.x, grabStartZ: grab.z, planeY, moved: false,
+    };
+    justDragged = true; // the click after releasing a handle never re-selects
+    suppressCameraDrag();
+    canvas.style.cursor = 'grabbing';
+    return;
+  }
   if (gizmoAxis === 'rx' || gizmoAxis === 'ry' || gizmoAxis === 'rz') {
     const axisInfo = GIZMO_ROTATE_AXES.find((a) => a.axis === gizmoAxis);
     // Wave 6B (Priority L): multi-select Rotate -- `items` covers every
@@ -580,7 +594,7 @@ canvas.addEventListener('pointermove', (e) => {
   }
   if (e.pointerId !== activePointerId) return;
   if (typeof applySurfaceDragMovement === 'function' && applySurfaceDragMovement(dragState, e.clientX, e.clientY)) { suppressCameraDrag(); return; }
-  const point = screenToGroundPoint(e.clientX, e.clientY);
+  const point = Number.isFinite(dragState.planeY) ? screenToPlanePoint(e.clientX, e.clientY, new Opus.Vec3(0, dragState.planeY, 0), new Opus.Vec3(0, 1, 0)) : screenToGroundPoint(e.clientX, e.clientY);
   if (!point) return;
   // A single shared delta (from the grab point) applied to each item's own
   // start position -- not a per-item grab offset -- so a group of several
@@ -770,6 +784,9 @@ const GIZMO_SCALE_AXES = [
 // One extra point handle (not an axis) near the origin for uniform scale --
 // deliberately off all three axes so it never overlaps their pick regions.
 const GIZMO_UNIFORM_OFFSET = new Opus.Vec3(0.5, 0.5, 0.5);
+// The Move gizmo's XZ plane square sits between the X and Z handles.
+const GIZMO_PLANE_SIZE = 0.7;
+const GIZMO_PLANE_OFFSET = new Opus.Vec3(0.95, 0, 0.95);
 // Deliberately clear of the three move/scale handles' own reach
 // ([GAP, GAP+LENGTH] along their axis) so the rotate handle doesn't
 // visually or pick-wise collide with them regardless of rotation angle.
@@ -851,7 +868,7 @@ function syncGizmo() {
   // it's the wrong tool, so every handle not valid for the CURRENT mode is
   // torn down first. Rotate ring segments use composite ids ('rx-0', 'ry-3',
   // ...), matched by prefix rather than listed individually.
-  const keep = (id) => (gizmoMode === 'move' ? ['x', 'y', 'z'].includes(id)
+  const keep = (id) => (gizmoMode === 'move' ? ['x', 'y', 'z', 'xz'].includes(id)
     : gizmoMode === 'rotate' ? /^r[xyz]-/.test(id)
     : ['sx', 'sy', 'sz', 'uniform'].includes(id));
   for (const [id, entity] of gizmoHandles) {
@@ -879,6 +896,14 @@ function syncGizmo() {
       if (!entity) { entity = app.addEntity({ mesh: cubeMesh, color, position: center, scale }); gizmoHandles.set(axis, entity); }
       else entity.position.set(center.x, center.y, center.z);
       entity.quaternion = handleQuat;
+    }
+    // XZ plane handle: drag along the ground in one motion (world space only).
+    let plane = gizmoHandles.get('xz');
+    if (gizmoSpace === 'local') { if (plane) { app.scene.remove(plane); gizmoHandles.delete('xz'); } }
+    else {
+      const center = origin.add(GIZMO_PLANE_OFFSET);
+      if (!plane) { plane = app.addEntity({ mesh: cubeMesh, color: [0.95, 0.8, 0.25], position: center, scale: new Opus.Vec3(GIZMO_PLANE_SIZE, 0.04, GIZMO_PLANE_SIZE) }); plane.alpha = 0.6; gizmoHandles.set('xz', plane); }
+      else plane.position.set(center.x, center.y, center.z);
     }
   } else if (gizmoMode === 'rotate') {
     // Each ring is drawn as GIZMO_RING_SEGMENTS small markers around a
@@ -957,6 +982,15 @@ function pickGizmoHandle(clientX, clientY) {
     const rayPoint = ray.origin.add(ray.direction.scale(rayT));
     const dist = rayPoint.sub(handlePoint).length();
     if (dist < closestDist) { closestDist = dist; closestId = axis; }
+  }
+  // The XZ plane square wins wherever the ray actually crosses it.
+  const planeHandle = gizmoMode === 'move' ? gizmoHandles.get('xz') : null;
+  if (planeHandle && Math.abs(ray.direction.y) > 1e-4) {
+    const t = (origin.y - ray.origin.y) / ray.direction.y;
+    if (t > 0) {
+      const hit = ray.origin.add(ray.direction.scale(t)), half = GIZMO_PLANE_SIZE / 2 + 0.08;
+      if (Math.abs(hit.x - planeHandle.position.x) <= half && Math.abs(hit.z - planeHandle.position.z) <= half) return 'xz';
+    }
   }
   // The uniform-scale handle is a single point -- plain closest-point-on-
   // ray-to-a-point, the degenerate case of the same math.
@@ -1122,9 +1156,28 @@ document.getElementById('gizmo-mode-move').classList.add('active'); // matches t
 const gizmoSnapToggleEl = document.getElementById('gizmo-snap-toggle');
 gizmoSnapToggleEl.checked = gizmoSnap.enabled;
 gizmoSnapToggleEl.addEventListener('change', (e) => {
+  if (gizmoSnapCtrlHeld) setGizmoSnapCtrlHeld(false);
   changeGizmoSnapSetting('enabled',e.target.checked);
   gizmoSnapToggleEl.checked=gizmoSnap.enabled;
 });
+// Hold Ctrl to flip snapping for the moment (Unity-style): on while held if
+// Snap is off, off while held if it is on. Never saved; released on keyup/blur.
+let gizmoSnapCtrlHeld = false;
+function setGizmoSnapCtrlHeld(held) {
+  if (held === gizmoSnapCtrlHeld) return;
+  gizmoSnapCtrlHeld = held;
+  gizmoSnap.enabled = !gizmoSnap.enabled;
+  gizmoSnapToggleEl.checked = gizmoSnap.enabled;
+  document.getElementById('gizmo-snap-label')?.classList.toggle('snap-held', held);
+}
+window.addEventListener('keydown', (e) => {
+  if (e.key !== 'Control' || e.repeat || playMode) return;
+  const tag = document.activeElement && document.activeElement.tagName;
+  if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+  setGizmoSnapCtrlHeld(true);
+});
+window.addEventListener('keyup', (e) => { if (e.key === 'Control') setGizmoSnapCtrlHeld(false); });
+window.addEventListener('blur', () => setGizmoSnapCtrlHeld(false));
 const gridSettingsEl=document.getElementById('gizmo-grid-settings');
 function syncGridSettings(){for(const field of ['position','rotationDegrees','scale'])document.getElementById('gizmo-grid-'+field).value=gizmoSnap[field];}
 syncGridSettings();

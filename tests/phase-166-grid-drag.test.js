@@ -1,7 +1,7 @@
 'use strict';
 const fs=require('fs'),vm=require('vm'),assert=require('assert'),src=fs.readFileSync(require.resolve('../editor/src/01-editor.js'),'utf8');
 // Execute the actual free-drag handler suffix, not a duplicate movement model.
-const start=src.indexOf('  const point = screenToGroundPoint(e.clientX, e.clientY);',src.indexOf('  if (!dragState) {',src.indexOf("window.addEventListener('pointermove'")));
+const start=src.indexOf('  const point = Number.isFinite(dragState.planeY) ? screenToPlanePoint(',src.indexOf('  if (!dragState) {',src.indexOf("window.addEventListener('pointermove'")));
 const code=src.slice(start,src.indexOf('\n});',start));
 function fixture(dx,dz){const a={kind:'cube',entity:{position:{x:1,y:.5,z:2}}},b={kind:'cube',entity:{position:{x:2.25,y:.5,z:3.5}}},history=[],state={items:[{item:a,startX:1,startZ:2},{item:b,startX:2.25,startZ:3.5}],grabStartX:0,grabStartZ:0,moved:false},c={playMode:false,placed:[a,b],dragState:state,gizmoSnap:{enabled:true,position:1},screenToGroundPoint:()=>({x:dx,z:dz}),pushUndo:()=>history.push('undo'),suppressCameraDrag(){},snapValue:(v,n)=>Math.round(v/n)*n};vm.createContext(c);const helperStart=src.indexOf('function applyGroundDragMovement(');if(helperStart>=0)vm.runInContext(src.slice(helperStart,src.indexOf('// --- Marquee',helperStart)),c);vm.runInContext('function run(e){'+code+'}',c);return {c,a,b,state,history,run:()=>c.run({clientX:0,clientY:0})};}
 let pass=0,fail=0;function test(n,fn){try{fn();pass++;console.log('PASS '+n);}catch(e){fail++;console.error('FAIL '+n+' '+e.message);}}
