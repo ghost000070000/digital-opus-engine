@@ -233,6 +233,7 @@ function renderAnimationEditor() {
       renderAnimationEditor();
     };
   });
+  if (typeof renderAnimationTimeline === 'function') renderAnimationTimeline(); // dopesheet + Key buttons (60-animation-timeline.js)
 }
 document.getElementById('animation-editor-cancel-btn').addEventListener('click', closeAnimationEditor);
 document.getElementById('animation-editor-save-btn').addEventListener('click', saveAnimationEditorClip);

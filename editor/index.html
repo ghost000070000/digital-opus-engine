@@ -1257,10 +1257,27 @@
     display: none; flex-direction: column;
   }
   #dialogue-editor-modal.visible { display: flex; }
+  /* Docked at the bottom: the scene above stays usable for posing keys. */
   #animation-editor-modal {
-    position: fixed; inset: 0; background: rgba(6, 9, 18, 0.92); z-index: 500;
-    display: none; flex-direction: column;
+    position: fixed; left: 0; right: 0; bottom: 0; height: min(50vh, 470px); background: #0b1222; z-index: 500;
+    display: none; flex-direction: column; border-top: 1px solid #2b3a55; box-shadow: 0 -10px 28px #000a;
   }
+  #animation-editor-body { overflow-y: auto; }
+  #animation-editor-modal #animation-editor-body { max-width: 1100px; }
+  #anim-timeline { margin: 4px 0 12px; }
+  .anim-tl-head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
+  .anim-tl-head .toolbar-btn { width: auto; margin: 0; }
+  .anim-tl-grid { display: grid; grid-template-columns: 130px 1fr; border: 1px solid #2b3a55; border-radius: 6px; background: #0f1a2e; user-select: none; }
+  .anim-tl-labels > div { height: 26px; display: flex; align-items: center; justify-content: space-between; padding: 0 8px; font-size: 11px; color: #c7d3ea; border-bottom: 1px solid #1c2a44; }
+  .anim-tl-labels button { width: auto; margin: 0; padding: 0 6px; background: none; border: none; color: #f2c14e; cursor: pointer; font-size: 12px; }
+  .anim-tl-lanes { position: relative; border-left: 1px solid #2b3a55; cursor: pointer; margin-right: 10px; }
+  .anim-tl-ruler, .anim-tl-lane { position: relative; height: 26px; border-bottom: 1px solid #1c2a44; }
+  .anim-tl-ruler span { position: absolute; top: 6px; transform: translateX(-50%); font-size: 10px; color: #7d8fb0; }
+  .anim-tl-ruler span::after { content: ''; position: absolute; left: 50%; top: 14px; height: 6px; border-left: 1px solid #3a4b6b; }
+  .anim-tl-diamond { position: absolute; top: 7px; width: 11px; height: 11px; margin-left: -6px; background: #f2c14e; transform: rotate(45deg); border-radius: 2px; cursor: ew-resize; box-shadow: 0 0 0 1px #0b1222; }
+  .anim-tl-diamond.selected { background: #fff3c4; box-shadow: 0 0 0 2px #4fd1a5; }
+  .anim-tl-playhead { position: absolute; top: 0; bottom: 0; width: 0; border-left: 2px solid #4fd1a5; pointer-events: none; }
+  .anim-tl-playhead::before { content: ''; position: absolute; top: 0; left: -6px; border: 5px solid transparent; border-top-color: #4fd1a5; }
   #animation-editor-modal.visible { display: flex; }
   #animation-editor-toolbar { flex-wrap: wrap; }
   #animation-editor-modal input, #animation-editor-modal select { background:#152238;color:#dce6f5;border:1px solid #536785;border-radius:4px;padding:4px; }
@@ -2847,7 +2864,7 @@
     <button id="animation-editor-save-btn">Save Clip</button>
   </div>
   <div id="animation-editor-body">
-    <p style="color:#c7d3ea">Edit keyframe values below (Rotation Y in degrees, not flat XY spin). Add captures the authored pose; matching time replaces that keyframe. Preview and scrubbing are temporary; Stop, Cancel and Save restore the authored pose. Cube and Sprite property clips use the existing Play Animation action; Sprite frame animations are separate.</p>
+    <p style="color:#c7d3ea">Drag the playhead, pose the object in the scene above, then press Key; or type exact values in the tracks below (Rotation Y in degrees). Preview and scrubbing are temporary: Stop, Cancel and Save restore the authored pose. Cube and Sprite clips play with the Play Animation action; Sprite frame animations are separate.</p>
     <label style="display:flex;gap:10px;align-items:center">Preview time <input id="anim-scrub" type="range" min="0" max="2" step="0.01" value="0" aria-label="Property Animation preview time" style="flex:1"></label>
     <p id="anim-feedback" role="status" style="color:#79e4d2;min-height:20px"></p>
     <div id="anim-track-list"></div>
