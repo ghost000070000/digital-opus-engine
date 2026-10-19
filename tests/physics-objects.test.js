@@ -36,6 +36,20 @@ const body = (id, pos, settings = {}) => { const item = box(id, pos, [1, 1, 1], 
   assert.strictEqual(crate._phys.vel.x, 0, 'slides to a stop');
 }
 {
+  // Models with their origin at their base (like the library Crate) rest on the ground and still move.
+  const F32 = vm.runInContext('Float32Array', c), U16 = vm.runInContext('Uint16Array', c);
+  const P = F32.from([-0.5, 0, -0.5, 0.5, 0, -0.5, 0.5, 1, -0.5, -0.5, 1, -0.5, -0.5, 0, 0.5, 0.5, 0, 0.5, 0.5, 1, 0.5, -0.5, 1, 0.5]);
+  const mesh = O.Mesh.fromArrays(P, new F32(P.length), U16.from([0, 1, 2, 0, 2, 3, 4, 6, 5, 4, 7, 6, 3, 2, 6, 3, 6, 7, 0, 5, 1, 0, 4, 5, 1, 5, 6, 1, 6, 2, 0, 3, 7, 0, 7, 4]));
+  const ground = box('ground', [0, -0.25, 0], [40, 0.5, 40]);
+  const crate = body('base-crate', [0, 2, 0]);
+  crate.entity.mesh = mesh;
+  ctx.placed.splice(0, ctx.placed.length, ground, crate);
+  run(crate, 1.5);
+  assert(Math.abs(crate.entity.position.y) < 0.02, 'its base sits on the ground: ' + crate.entity.position.y);
+  run(crate, 1, new O.Vec3(3, 0, 0));
+  assert(crate.entity.position.x > 1.5, 'and it can be pushed: ' + crate.entity.position.x);
+}
+{
   // Heavier objects are pushed more slowly.
   const ground = box('ground', [0, -0.25, 0], [80, 0.5, 80]);
   const light = body('light', [0, 0.5, 0], { mass: 1 }), heavy = body('heavy', [0, 0.5, 10], { mass: 4 });
@@ -76,6 +90,31 @@ const body = (id, pos, settings = {}) => { const item = box(id, pos, [1, 1, 1], 
   assert.deepStrictEqual(JSON.parse(JSON.stringify(n)), { enabled: true, shape: 'box', gravity: true, pushable: true, mass: 0.1, bounce: 0.95, friction: 6 }, 'settings are bounded');
   assert.strictEqual(ctx.normalizePhysicsSettings(null), null);
 }
+{
+  // Object triggers: a plate notices crates resting on it; Exit only when the last one leaves.
+  vm.runInContext(physics.slice(physics.indexOf('// --- Object triggers ---'), physics.indexOf('function updateObjectTriggers')), ctx);
+  const plate = box('plate', [0, 0.05, 0], [2, 0.1, 2]);
+  const a = body('a', [0, 0.6, 0]), b2 = body('b2', [0.4, 0.6, 0.4]), far = body('far', [6, 0.5, 6]);
+  let r = ctx.updateObjectTrigger(plate, [a, far]);
+  assert.strictEqual(r.entered.length, 1, 'a crate resting on the plate counts');
+  assert.strictEqual(r.emptied, false);
+  r = ctx.updateObjectTrigger(plate, [a, b2, far]);
+  assert.strictEqual(r.entered.length, 1, 'each new arrival runs Enter once');
+  a.entity.position = new O.Vec3(8, 0.5, 0);
+  r = ctx.updateObjectTrigger(plate, [a, b2, far]);
+  assert.strictEqual(r.emptied, false, 'still pressed while anything is on it');
+  b2.entity.position = new O.Vec3(-8, 0.5, 0);
+  r = ctx.updateObjectTrigger(plate, [a, b2, far]);
+  assert.strictEqual(r.emptied, true, 'released when the last one leaves');
+  // A Trigger Volume counts objects inside it, without the on-top margin.
+  const volume = box('zone', [0, 1, 0], [2, 2, 2], { isTrigger: true });
+  const ball = body('ball', [0, 3.2, 0]);
+  assert.strictEqual(ctx.updateObjectTrigger(volume, [ball]).entered.length, 0, 'above a volume is outside');
+  ball.entity.position = new O.Vec3(0, 1, 0);
+  assert.strictEqual(ctx.updateObjectTrigger(volume, [ball]).entered.length, 1, 'inside a volume');
+}
+const language = fs.readFileSync(path.join(root, 'editor/src/00-authoring-language.js'), 'utf8');
+assert(language.includes("id: 'objectEnter', label: 'On Object Enter'") && language.includes("id: 'objectExit', label: 'On Object Exit'"), 'events offered in behavior pickers');
 // Wiring: saved and loaded with the object; Inspector card mounted.
 const serialization = fs.readFileSync(path.join(root, 'editor/src/modules/36-scene-serialization.js'), 'utf8');
 assert.strictEqual((serialization.match(/physics: item\.physics \? \{ \.\.\.item\.physics \} : undefined/g) || []).length, 2, 'saved in both record writers');

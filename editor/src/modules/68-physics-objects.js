@@ -23,10 +23,21 @@ function normalizePhysicsSettings(raw) {
     friction: num(raw.friction, PHYSICS_DEFAULTS.friction, 0, 30),
   };
 }
-function physicsHalf(item) {
-  const s = item.entity.scale;
-  if (item.physics && item.physics.shape === 'ball') { const r = Math.max(s.x, s.y, s.z) / 2; return new Opus.Vec3(r, r, r); }
-  return new Opus.Vec3(Math.abs(s.x) / 2, Math.abs(s.y) / 2, Math.abs(s.z) / 2);
+// World-space box of the body's real mesh (models may have their origin at
+// their base, not their centre), falling back to a centred unit cube.
+function physicsBounds(item) {
+  // Balls roll, so their box must not grow with rotation: a sphere from the
+  // mesh's unrotated size.
+  if (item.physics && item.physics.shape === 'ball' && typeof surfaceLocalData === 'function') {
+    const d = surfaceLocalData(item.entity.mesh), s = item.entity.scale, p = item.entity.position;
+    const centre = [0, 1, 2].map((i) => ((d.min[i] + d.max[i]) / 2) * [s.x, s.y, s.z][i]);
+    const r = Math.max(...[0, 1, 2].map((i) => ((d.max[i] - d.min[i]) / 2) * Math.abs([s.x, s.y, s.z][i])));
+    return { min: [p.x + centre[0] - r, p.y + centre[1] - r, p.z + centre[2] - r], max: [p.x + centre[0] + r, p.y + centre[1] + r, p.z + centre[2] + r] };
+  }
+  const real = typeof surfaceWorldBounds === 'function' ? surfaceWorldBounds(item.entity) : null;
+  if (real) return real;
+  const s = item.entity.scale, p = item.entity.position;
+  return { min: [p.x - Math.abs(s.x) / 2, p.y - Math.abs(s.y) / 2, p.z - Math.abs(s.z) / 2], max: [p.x + Math.abs(s.x) / 2, p.y + Math.abs(s.y) / 2, p.z + Math.abs(s.z) / 2] };
 }
 function aabbOverlap(aMin, aMax, bMin, bMax, eps = 1e-4) {
   return aMin[0] < bMax[0] - eps && aMax[0] > bMin[0] + eps && aMin[1] < bMax[1] - eps && aMax[1] > bMin[1] + eps && aMin[2] < bMax[2] - eps && aMax[2] > bMin[2] + eps;
@@ -38,9 +49,7 @@ function physicsObstacles(self) {
     if (item === self || item.kind !== 'cube' || !item.entity || item.entity.solid !== true || item.entity.visible === false) continue;
     if (typeof heldObjectItem !== 'undefined' && item === heldObjectItem) continue;
     if (player && item.entity === player.entity) continue;
-    const bounds = item.physics && item.physics.enabled !== false
-      ? (() => { const h = physicsHalf(item), p = item.entity.position; return { min: [p.x - h.x, p.y - h.y, p.z - h.z], max: [p.x + h.x, p.y + h.y, p.z + h.z] }; })()
-      : (typeof surfaceWorldBounds === 'function' ? surfaceWorldBounds(item.entity) : null);
+    const bounds = physicsBounds(item);
     if (bounds) out.push(bounds);
   }
   return out;
@@ -61,14 +70,14 @@ function terrainHeightUnder(x, z) {
 function stepPhysicsBody(item, dt, obstacles, pushVelocity) {
   const s = item._phys;
   const settings = item.physics;
-  const p = item.entity.position, half = physicsHalf(item);
+  const p = item.entity.position, b0 = physicsBounds(item);
   if (settings.gravity) s.vel.y -= PHYSICS_GRAVITY * dt;
   if (pushVelocity) {
     const share = Math.min(1, 1 / settings.mass); // heavier = slower to push
     s.vel.x += (pushVelocity.x * share - s.vel.x) * Math.min(1, 12 * dt);
     s.vel.z += (pushVelocity.z * share - s.vel.z) * Math.min(1, 12 * dt);
   }
-  const box = (pos) => ({ min: [pos.x - half.x, pos.y - half.y, pos.z - half.z], max: [pos.x + half.x, pos.y + half.y, pos.z + half.z] });
+  const box = (pos) => { const d = [pos.x - p.x, pos.y - p.y, pos.z - p.z]; return { min: b0.min.map((v, i) => v + d[i]), max: b0.max.map((v, i) => v + d[i]) }; };
   const blocked = (pos) => { const b = box(pos); return obstacles.some((o) => aabbOverlap(b.min, b.max, o.min, o.max)); };
   let grounded = false;
   const next = p.clone();
@@ -86,8 +95,9 @@ function stepPhysicsBody(item, dt, obstacles, pushVelocity) {
     s.vel[axis] = Math.abs(s.vel[axis]) > 2 ? -s.vel[axis] * settings.bounce : 0;
   }
   const ground = terrainHeightUnder(next.x, next.z);
-  if (next.y - half.y < ground) {
-    next.y = ground + half.y;
+  const bottom = b0.min[1] + (next.y - p.y);
+  if (bottom < ground) {
+    next.y += ground - bottom;
     if (s.vel.y < 0) { grounded = true; s.vel.y = Math.abs(s.vel.y) > 2 ? -s.vel.y * settings.bounce : 0; }
   }
   if (grounded || !settings.gravity) {
@@ -98,7 +108,7 @@ function stepPhysicsBody(item, dt, obstacles, pushVelocity) {
   // Balls roll with their travel.
   if (settings.shape === 'ball') {
     const dx = next.x - p.x, dz = next.z - p.z, dist = Math.hypot(dx, dz);
-    if (dist > 1e-5) item.entity.quaternion = Opus.Quat.fromAxisAngle(new Opus.Vec3(dz / dist, 0, -dx / dist), dist / Math.max(0.05, half.x)).multiply(item.entity.quaternion);
+    if (dist > 1e-5) item.entity.quaternion = Opus.Quat.fromAxisAngle(new Opus.Vec3(dz / dist, 0, -dx / dist), dist / Math.max(0.05, (b0.max[1] - b0.min[1]) / 2)).multiply(item.entity.quaternion);
   }
   item.entity.position = next;
   // Fell out of the world: back to where Play started.
@@ -113,11 +123,12 @@ function stepPhysicsBody(item, dt, obstacles, pushVelocity) {
 // intent: { moving, facing: Vec3 (flat), speed, velocity: Vec3|null }
 function physicsPushFor(item, playerPos, intent, playerRadius) {
   if (!item.physics.pushable || !playerPos || !intent) return null;
-  const p = item.entity.position, half = physicsHalf(item), margin = 0.15;
-  const cx = Math.max(p.x - half.x, Math.min(p.x + half.x, playerPos.x)), cz = Math.max(p.z - half.z, Math.min(p.z + half.z, playerPos.z));
+  const b = physicsBounds(item), margin = 0.15;
+  const mid = { x: (b.min[0] + b.max[0]) / 2, z: (b.min[2] + b.max[2]) / 2 }, half = { x: (b.max[0] - b.min[0]) / 2, z: (b.max[2] - b.min[2]) / 2 };
+  const cx = Math.max(b.min[0], Math.min(b.max[0], playerPos.x)), cz = Math.max(b.min[2], Math.min(b.max[2], playerPos.z));
   if (Math.hypot(playerPos.x - cx, playerPos.z - cz) > playerRadius + margin) return null;
-  if (playerPos.y + 0.2 < p.y - half.y || playerPos.y - 0.2 > p.y + half.y + 0.6) return null; // standing on top or far below
-  let dx = p.x - playerPos.x, dz = p.z - playerPos.z;
+  if (playerPos.y + 0.2 < b.min[1] || playerPos.y - 0.2 > b.max[1] + 0.6) return null; // standing on top or far below
+  let dx = mid.x - playerPos.x, dz = mid.z - playerPos.z;
   if (item.physics.shape === 'box') { if (Math.abs(dx) / Math.max(half.x, 1e-3) > Math.abs(dz) / Math.max(half.z, 1e-3)) dz = 0; else dx = 0; }
   const len = Math.hypot(dx, dz) || 1; dx /= len; dz /= len;
   let speed = 0;
@@ -151,10 +162,45 @@ function updatePhysicsObjects(dt) {
     if (!item._phys) item._phys = { vel: new Opus.Vec3(), start: item.entity.position.clone(), grounded: false };
     stepPhysicsBody(item, dt, physicsObstacles(item), physicsPushFor(item, playerPos, intent, playerRadius));
   }
+  updateObjectTriggers(bodies);
+}
+// --- Object triggers ---
+// Objects with On Object Enter / On Object Exit behaviors notice Physics
+// Objects: inside a Trigger Volume, or resting on top of a solid object such
+// as a pressure plate. Enter runs for each object that arrives; Exit runs
+// when the last one leaves, so a plate stays "pressed" while anything is on it.
+function objectTriggerZone(item) {
+  const bounds = typeof surfaceWorldBounds === 'function' ? surfaceWorldBounds(item.entity) : null;
+  if (!bounds) return null;
+  return { min: bounds.min.slice(), max: [bounds.max[0], bounds.max[1] + (item.isTrigger ? 0 : 0.3), bounds.max[2]] };
+}
+function physicsBodyBox(item) { return physicsBounds(item); }
+// Returns { entered: [bodies], emptied: bool } and updates the zone's memory.
+function updateObjectTrigger(zoneItem, bodies) {
+  const zone = objectTriggerZone(zoneItem);
+  const inside = new Set();
+  if (zone) for (const body of bodies) {
+    if (body === zoneItem) continue;
+    const b = physicsBodyBox(body);
+    if (aabbOverlap(b.min, b.max, zone.min, zone.max, 1e-3)) inside.add(body.id);
+  }
+  const before = zoneItem._objectsInside || new Set();
+  const entered = bodies.filter((body) => inside.has(body.id) && !before.has(body.id));
+  const emptied = before.size > 0 && inside.size === 0;
+  zoneItem._objectsInside = inside;
+  return { entered, emptied };
+}
+function updateObjectTriggers(bodies) {
+  for (const item of placed.slice()) {
+    if (item.kind !== 'cube' || !item.entity || !item.behaviors || !item.behaviors.some((b) => b.trigger === 'objectEnter' || b.trigger === 'objectExit')) continue;
+    const { entered, emptied } = updateObjectTrigger(item, bodies);
+    for (let i = 0; i < entered.length; i++) runBehaviors(item, 'objectEnter');
+    if (emptied) runBehaviors(item, 'objectExit');
+  }
 }
 app.onUpdate((dt) => { try { updatePhysicsObjects(dt); } catch (error) { console.warn('Physics Objects:', error); } });
 // Play starts fresh: drop runtime motion whenever Play is not running.
-app.onUpdate(() => { if (!playMode) for (const item of placed) if (item._phys) delete item._phys; });
+app.onUpdate(() => { if (!playMode) for (const item of placed) { if (item._phys) delete item._phys; if (item._objectsInside) delete item._objectsInside; } });
 
 // --- Inspector card ---
 function mountPhysicsInspectorSection() {
@@ -188,4 +234,107 @@ function mountPhysicsInspectorSection() {
   field('#physics-mass', 'mass', (el) => Number(el.value));
   field('#physics-bounce', 'bounce', (el) => Number(el.value));
   field('#physics-friction', 'friction', (el) => Number(el.value));
+}
+
+// --- Ready-made physics items (Objects palette) ---
+// A built-in ball model: a small UV sphere stored as an ordinary model asset,
+// so it saves, exports and copies like any imported model.
+const PHYSICS_BALL_ASSET_ID = 'opus-ball';
+function physicsBallArrays(rings = 12, segments = 18) {
+  const positions = [], normals = [], uvs = [], indices = [];
+  for (let r = 0; r <= rings; r++) {
+    const v = r / rings, phi = v * Math.PI;
+    for (let s = 0; s <= segments; s++) {
+      const u = s / segments, theta = u * Math.PI * 2;
+      const x = Math.sin(phi) * Math.cos(theta), y = Math.cos(phi), z = Math.sin(phi) * Math.sin(theta);
+      positions.push(x * 0.5, y * 0.5, z * 0.5); normals.push(x, y, z); uvs.push(u, 1 - v);
+    }
+  }
+  for (let r = 0; r < rings; r++) for (let s = 0; s < segments; s++) {
+    const a = r * (segments + 1) + s, b = a + segments + 1;
+    indices.push(a, a + 1, b, b, a + 1, b + 1);
+  }
+  return { positions, normals, uvs, indices };
+}
+function ensurePhysicsBallAsset() {
+  let asset = findAssetById(PHYSICS_BALL_ASSET_ID);
+  if (!asset) {
+    loadAssets([{ id: PHYSICS_BALL_ASSET_ID, name: 'Ball', type: 'mesh', ...physicsBallArrays(), sourceFilename: 'built-in ball', folder: 'Built-in' }]);
+    asset = findAssetById(PHYSICS_BALL_ASSET_ID);
+  }
+  return asset;
+}
+function restReadyMade(items, surfaceY) {
+  if (Number.isFinite(surfaceY) && typeof restNewItemsOnSurface === 'function') restNewItemsOnSurface(items, surfaceY);
+}
+// Returns the selected item (or null while a library model loads).
+function placeReadyMade(kind, point, surfaceY) {
+  if (playMode) return null;
+  const at = new Opus.Vec3(point.x, point.y, point.z);
+  if (kind === 'physicsCrate') {
+    const finish = (item) => {
+      if (!item) return;
+      item.name = 'Crate';
+      item.physics = { ...PHYSICS_DEFAULTS };
+      item.entity.solid = true;
+      restReadyMade([item], surfaceY);
+      selectItem(item); renderSceneList(); renderInspector();
+    };
+    if (typeof addContentLibraryModel === 'function') {
+      addContentLibraryModel('crate', at).then((item) => {
+        if (item) finish(item);
+        else { placeItem('cube', at); const cube = selectedItem; cube.entity.color = [0.62, 0.45, 0.26]; finish(cube); }
+      });
+      return null;
+    }
+    placeItem('cube', at); const cube = selectedItem; cube.entity.color = [0.62, 0.45, 0.26]; finish(cube);
+    return cube;
+  }
+  if (kind === 'physicsBall') {
+    const asset = ensurePhysicsBallAsset();
+    if (!asset) return null;
+    pushUndo(); // placeAssetInstance(..., false) leaves history to the caller
+    const item = placeAssetInstance(asset, at, false);
+    if (!item) return null;
+    item.name = 'Ball';
+    item.entity.scale.set(0.8, 0.8, 0.8);
+    item.entity.color = [0.95, 0.55, 0.2];
+    item.physics = { ...PHYSICS_DEFAULTS, shape: 'ball', mass: 0.5, bounce: 0.5, friction: 1.5 };
+    item.entity.solid = true;
+    restReadyMade([item], surfaceY);
+    if (typeof refreshAssetDiscovery === 'function') refreshAssetDiscovery();
+    selectItem(item); renderSceneList(); renderInspector();
+    return item;
+  }
+  if (kind === 'pressurePlate') {
+    placeItem('cube', at);
+    const plate = selectedItem;
+    plate.name = 'Pressure Plate';
+    plate.entity.scale.set(1.6, 0.06, 1.6);
+    plate.entity.color = [0.95, 0.78, 0.25];
+    plate.entity.solid = false; // walk-over: crates slide onto it instead of bumping a step
+    restReadyMade([plate], surfaceY);
+    placeItem('cube', new Opus.Vec3(at.x, at.y, at.z + 4));
+    const door = selectedItem;
+    door.name = 'Plate Door';
+    door.entity.scale.set(2.4, 2.6, 0.3);
+    door.entity.color = [0.45, 0.32, 0.22];
+    door.entity.solid = true;
+    restReadyMade([door], surfaceY);
+    plate.behaviors = [
+      { trigger: 'objectEnter', action: 'setVisibility', params: { targetId: door.id, visible: false } },
+      { trigger: 'objectExit', action: 'setVisibility', params: { targetId: door.id, visible: true } },
+    ];
+    selectedItems.clear(); selectedItems.add(plate); selectedItems.add(door); selectedItem = plate;
+    syncSelectionMarkers(); renderSceneList(); renderInspector();
+    showStatus('Pressure Plate + Door: push a Physics Object onto the plate to open the door');
+    return plate;
+  }
+  return null;
+}
+for (const [kind, label] of [['physicsCrate', '📦 Physics Crate'], ['physicsBall', '⚽ Physics Ball'], ['pressurePlate', '⏏ Pressure Plate + Door']]) {
+  const el = document.getElementById(`palette-ready-${kind}`);
+  if (!el) continue;
+  el.style.touchAction = 'none';
+  el.addEventListener('pointerdown', (event) => { if (!playMode) beginPlacementPointerDrag(event, { readyMade: kind }, label, { immediate: true }); });
 }

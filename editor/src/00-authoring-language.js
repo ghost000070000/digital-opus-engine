@@ -45,6 +45,8 @@
     { id: 'trigger2DExit', label: 'On Trigger 2D Exit', category: 'Gameplay', help: 'Runs once when an eligible Collider 2D Object leaves this Object\'s Trigger Collider 2D.', aliases: ['On 2D Exit'] },
     { id: 'signal', label: 'On Signal', category: 'Gameplay', help: 'Runs once for each queued occurrence of the chosen named Signal on this active level. Repeated sends remain distinct.', aliases: [] },
     { id: 'controllerStateEvent', label: 'On Controller State', category: 'Gameplay', help: 'Runs once when this level\'s Player enters a chosen resolved movement or grounding state. Blocked input is not movement; Airborne also includes walking off an edge.', aliases: [] },
+    { id: 'objectEnter', label: 'On Object Enter', category: 'Gameplay', help: 'Runs when a Physics Object enters this trigger area or lands on this object (a crate on a pressure plate, a ball in a goal).', aliases: ['On Physics Enter'] },
+    { id: 'objectExit', label: 'On Object Exit', category: 'Gameplay', help: 'Runs when the last Physics Object leaves this trigger area or this object (the plate is released).', aliases: ['On Physics Exit'] },
   ]);
 
   const PRESETS = Object.freeze([

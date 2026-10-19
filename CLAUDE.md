@@ -12,6 +12,7 @@ Zero-dependency WebGL2 engine (`engine/src`, built to `dist/opus-engine.js`) plu
 ## Commands
 - Build: `node build/build.js` (engine + editor), then `node build/build-games.js` and `node build/build-engine-site.js` for the public site in `dist/engine-site`.
 - Tests: `node tests/run-tests.js` (~2–10 min; builds first). Many tests extract named functions from `editor/src/01-editor.js` by regex into a vm sandbox: when a controller starts calling a new top-level helper or state variable, add it to those tests' extraction lists.
+- After adding behavior events, actions, conditions or components, regenerate the creator guide: `node build/build-docs.js --write` (tests compare docs/generated/index.html). New EVENTS entries go at the end of the list.
 - Real-game check: `node tools/run-collision-sweep.js dist/engine-site 30 [id,id]` (headless Edge via the Playwright copy referenced in the script).
 - Release: `powershell tools/package-hostinger.ps1`, then `node tools/audit-hostinger-upload.js release/<dir>/public_html`.
 
