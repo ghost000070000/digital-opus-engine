@@ -1449,6 +1449,7 @@ window.addEventListener('keydown', (e) => {
   if (playMode) return;
   const tag = document.activeElement && document.activeElement.tagName;
   if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+  if (typeof sceneNavigationActive === 'function' && sceneNavigationActive()) return; // WASD/QE fly while right-dragging
   if (e.key === 'w' || e.key === 'W') setGizmoMode('move');
   else if (e.key === 'e' || e.key === 'E') setGizmoMode('rotate');
   else if (e.key === 'r' || e.key === 'R') setGizmoMode('scale');

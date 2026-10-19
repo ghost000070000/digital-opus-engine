@@ -112,6 +112,9 @@
   #viewport-debug-menu > summary::-webkit-details-marker { display: none; }
   #viewport-debug-menu[open] > summary { background: #1c2a44; }
   #viewport-debug-menu-items { position: absolute; right: 0; top: calc(100% + 6px); z-index: 30; display: flex; flex-direction: column; gap: 6px; min-width: 190px; padding: 10px 12px; background: #121c30; border: 1px solid #2b3a55; border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,.4); }
+  canvas.scene-nav-fly { cursor: crosshair; }
+  canvas.scene-nav-pan { cursor: grabbing; }
+  .scene-nav-help { font-size: 11px; line-height: 1.5; color: #8fa0bf; border-top: 1px solid #2b3a55; padding-top: 6px; white-space: normal; }
   #viewport-debug-menu-items label { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
   #hierarchy-pane { flex: 0 0 38%; min-height: 120px; display: flex; flex-direction: column; border-bottom: 1px solid rgba(255,255,255,0.1); padding: 0 10px 8px; overflow: hidden; }
   .hierarchy-head { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.06em; color: #8592a8; padding: 9px 2px 6px; }
@@ -1800,6 +1803,7 @@
           <label id="graph-trace-label" style="white-space:nowrap;flex-shrink:0" title="Observe actual Graph steps, gates, Delays and Function calls. Read-only, session-only and bounded."><input type="checkbox" id="graph-trace-toggle" aria-label="Graph Trace"> Graph Trace</label>
           <label style="white-space:nowrap;flex-shrink:0" title="Opt-in actual loop CPU and wall-frame cadence. Bounded, read-only and never saved."><input type="checkbox" id="performance-profiler-toggle" aria-label="Performance profiler"> Profiler</label>
           <label style="white-space:nowrap;flex-shrink:0" title="Inspect actual AI state, hearing memory, cooldown and animation. Read-only and never saved."><input type="checkbox" id="ai-debug-toggle" aria-label="AI Debug"> AI Debug</label>
+          <div class="scene-nav-help"><strong>Navigate</strong><br>Right-drag: look · hold + WASD/QE: fly<br>Middle-drag: pan · Alt+drag: orbit<br>Wheel: zoom · F: frame selection</div>
         </div>
       </details>
     </div>

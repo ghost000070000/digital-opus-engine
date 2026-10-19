@@ -243,7 +243,7 @@ function focusViewportSelection() {
   const fit=app.camera.computeFraming(bounds.corners,{aspect:cameraViewportAspect(),padding:0.1});
   if(!fit.ok){showStatus(`Cannot focus selection: ${fit.reason}. No camera settings changed.`);return false;}
   const distance=fit.eye.sub(fit.target).length();
-  if(!Number.isFinite(distance)||distance<=0||distance>30){showStatus('Selection cannot fit the editor orbit range. Focus a smaller group; no camera settings changed.');return false;}
+  if(!Number.isFinite(distance)||distance<=0||distance>(app.camera.orbitOptions?.maxDistance||30)){showStatus('Selection cannot fit the editor orbit range. Focus a smaller group; no camera settings changed.');return false;}
   const direction=fit.eye.sub(fit.target);
   const pitch=Math.asin(Math.max(-1,Math.min(1,direction.y/distance)));
   if(Math.abs(pitch)>1.5){showStatus('This view is too steep for editor orbit. Adjust the viewing angle before focusing; no camera settings changed.');return false;}
@@ -255,7 +255,7 @@ function focusViewportSelection() {
   app.camera.pitch=pitch;
   app.camera.setMode('orbit');
   app.camera.target=fit.target.clone();
-  app.camera.distance=Math.max(2,distance);
+  app.camera.distance=Math.max(app.camera.orbitOptions?.minDistance||2,distance);
   if(fit.projection==='orthographic')app.camera.setOrthographicHeight(fit.orthographicHeight);
   showStatus('Focused selection in the authoring viewport only; game Cameras and project history are unchanged.');
   return true;

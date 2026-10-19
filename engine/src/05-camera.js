@@ -38,6 +38,10 @@ class Camera {
     this.orthographicHeight = 10;
     this.near = 0.1;
     this.far = 100;
+    // Orbit-mode input policy. Defaults keep the historical 2-30 range and
+    // arrow/WASD/QE keys; hosts such as a scene editor can widen the range or
+    // take over the keys while they drive the view themselves.
+    this.orbitOptions = { minDistance: 2, maxDistance: 30, keyControls: true };
 
     // Chase mode state
     this.targetEntity = null;
@@ -144,6 +148,16 @@ class Camera {
     }
     if (opts.bearingYaw !== undefined) finite(opts.bearingYaw, 'options.bearingYaw', 'Camera.setChaseOptions');
     Object.assign(this.chaseOptions, opts);
+  }
+
+  setOrbitOptions(opts = {}) {
+    const method = 'Camera.setOrbitOptions';
+    optionsObject(opts, 'options', method);
+    for (const name of ['minDistance', 'maxDistance']) if (opts[name] !== undefined) positive(opts[name], `options.${name}`, method);
+    if (opts.keyControls !== undefined && typeof opts.keyControls !== 'boolean') fail(method, 'options.keyControls', 'a boolean', opts.keyControls);
+    const next = { ...this.orbitOptions, ...opts };
+    if (next.maxDistance < next.minDistance) fail(method, 'options.maxDistance', 'at least minDistance', next.maxDistance);
+    Object.assign(this.orbitOptions, next);
   }
 
   setObstructionOptions(opts = {}) {
@@ -284,16 +298,19 @@ class Camera {
     this.yaw -= drag.dx * 0.005;
     this.pitch = Math.max(-1.5, Math.min(1.5, this.pitch + drag.dy * 0.005));
 
+    const { minDistance = 2, maxDistance = 30, keyControls = true } = this.orbitOptions || {};
     const rotSpeed = 1.2;
+    if (keyControls) {
     if (input.isDown('ArrowLeft') || input.isDown('KeyA')) this.yaw -= rotSpeed * dt;
     if (input.isDown('ArrowRight') || input.isDown('KeyD')) this.yaw += rotSpeed * dt;
     if (input.isDown('ArrowUp') || input.isDown('KeyW')) this.pitch = Math.min(1.5, this.pitch + rotSpeed * dt);
     if (input.isDown('ArrowDown') || input.isDown('KeyS')) this.pitch = Math.max(-1.5, this.pitch - rotSpeed * dt);
+    }
 
     const wheel = input.consumeWheel();
-    this.distance = Math.max(2, Math.min(30, this.distance + wheel * 0.01));
-    if (input.isDown('KeyQ')) this.distance = Math.min(30, this.distance + 5 * dt);
-    if (input.isDown('KeyE')) this.distance = Math.max(2, this.distance - 5 * dt);
+    this.distance = Math.max(minDistance, Math.min(maxDistance, this.distance + wheel * 0.01));
+    if (keyControls && input.isDown('KeyQ')) this.distance = Math.min(maxDistance, this.distance + 5 * dt);
+    if (keyControls && input.isDown('KeyE')) this.distance = Math.max(minDistance, this.distance - 5 * dt);
   }
 
   viewMatrix() {

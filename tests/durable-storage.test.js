@@ -60,7 +60,9 @@ async function installInto(root, options) {
   fresh.runInContext(require('fs').readFileSync(require.resolve('../editor/src/00-durable-storage.js'), 'utf8'), ctx);
   return ctx.OpusDurableStorage.install(options);
 }
-const settle = () => new Promise((r) => setTimeout(r, 50));
+// Many short turns instead of one fixed wait: chained fake-IndexedDB timers
+// still finish first when the machine is busy running the whole suite.
+const settle = async () => { for (let i = 0; i < 40; i++) await new Promise((r) => setTimeout(r, 5)); };
 
 (async () => {
   {
