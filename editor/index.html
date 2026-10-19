@@ -335,6 +335,10 @@
   .asset-row-actions button { flex: 1; padding: 3px 4px; font-size: 10px; background: #0e1526; border: 1px solid rgba(255,255,255,0.1); color: #c7d3ea; border-radius: 3px; cursor: pointer; }
   .asset-row-actions button:hover { background: #223050; }
   #texture-library-list .asset-row-actions { flex-wrap: wrap; }
+  #texture-library-list .asset-row[data-texture-id] { cursor: grab; }
+  .texture-drag-ghost { position: fixed; z-index: 1000; pointer-events: none; display: flex; align-items: center; gap: 6px; padding: 4px 8px 4px 4px; background: #152238; border: 1px solid #536785; border-radius: 6px; color: #c7d3ea; font-size: 11px; box-shadow: 0 4px 14px #0008; }
+  .texture-drag-ghost img { width: 28px; height: 28px; object-fit: cover; border-radius: 4px; }
+  .texture-drag-ghost.has-target { border-color: #4fd1a5; color: #e8fff6; }
   #texture-library-list [data-apply-texture] { flex: 1 0 100%; }
   .asset-filter-row { display: flex; gap: 4px; margin: 4px 0; }
   .asset-filter-row input[type="text"] { flex: 1; min-width: 0; }

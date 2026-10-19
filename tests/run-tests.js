@@ -27,6 +27,7 @@ run(path.join('tests', 'logic-debugger.test.js'));
 run(path.join('tests', 'scene-navigation.test.js'));
 run(path.join('tests', 'surface-snap.test.js'));
 run(path.join('tests', 'clipboard.test.js'));
+run(path.join('tests', 'scene-drop.test.js'));
 run(path.join('tests', 'real-demo-evidence.test.js'));
 run(path.join('tests', 'real-demo-wall-content.test.js'));
 run(path.join('tests', 'real-demo-masonry-assembly.test.js'));

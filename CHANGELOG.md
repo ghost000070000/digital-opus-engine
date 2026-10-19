@@ -11,6 +11,7 @@
 - Surface snapping: dragged objects and drops from the Objects palette or Content Library rest on whatever is under the cursor (models by their triangles, cubes and ramps by their oriented boxes, terrain by its heightfield) instead of the Y = 0 plane; End drops the selection onto the surface below. Toggle in View ▾ → Snap to surfaces.
 - Authoring picks use the real mesh/box under the cursor instead of an oversized bounding sphere, so a crate on a table selects the crate (Play keeps the generous gameplay pick).
 - Copy / Cut / Paste (Ctrl+C / X / V, also in Ctrl+K): copies the selection with its children, behaviors and hierarchy; pastes under the mouse (resting on surfaces) or beside the original; works across levels, projects and tabs. Models, Textures, Sprites and Audio travel with the objects, and an id that means a different asset in the target project is renamed instead of reused.
+- Drag assets into the scene: model files dropped from the desktop onto the viewport are imported (through the usual review) and placed where dropped, resting on the surface; images dropped onto an object become its texture; Texture library rows drag onto objects to apply them.
 - Hosted game pages share one cached, content-hashed engine/editor runtime: average page 7.6 MB → 1.8 MB, site 215 MB → 127 MB, upload ZIP 84 MB → 61 MB. Exports remain single-file.
 
 ## 2026-10-18 — Real-game controls and collision repair
