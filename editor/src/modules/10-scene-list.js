@@ -155,6 +155,7 @@ function renderSceneList() {
     };
   });
   wireSceneListDragReparenting();
+  if (typeof enhanceSceneList === 'function') enhanceSceneList(); // icons, rename, menu (62-hierarchy-tools.js)
 }
 // Wave 6 (Priority J): drag-and-drop reparenting directly in the Scene
 // tree -- the ONE existing way to reparent before this (an Inspector
