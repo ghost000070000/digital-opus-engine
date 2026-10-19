@@ -401,6 +401,10 @@
   .scene-list-item-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; min-width: 0; }
   #inspector-body input[type=number]:not(:focus), .anim-track-card input[type=number]:not(:focus) { cursor: ew-resize; }
   body.number-scrubbing, body.number-scrubbing * { cursor: ew-resize !important; user-select: none; }
+  .asset-thumb { flex: none; width: 56px; height: 56px; margin-right: 8px; border-radius: 6px; background: #0f1a2e; object-fit: contain; opacity: 0; transition: opacity .2s; }
+  .asset-thumb.ready { opacity: 1; }
+  #asset-library-list .asset-row-header { display: flex; align-items: center; }
+  .prefab-thumb { width: 40px; height: 40px; margin-right: 6px; }
   .scene-list-icon { flex: none; width: 16px; text-align: center; font-size: 11px; color: #7d8fb0; margin-right: 4px; }
   .scene-list-rename { flex: 1; min-width: 0; margin: 0; padding: 1px 4px; font-size: 12px; background: #0b1222; color: #e8eefb; border: 1px solid #4fd1a5; border-radius: 3px; }
   .scene-context-menu { position: fixed; z-index: 1200; min-width: 180px; padding: 4px; background: #121c30; border: 1px solid #2b3a55; border-radius: 8px; box-shadow: 0 10px 28px #000a; }

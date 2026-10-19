@@ -19,6 +19,7 @@
 - Scene links: every object dropdown in Behaviors, Graph nodes and Sequences has a 🎯 button: click it, then click the target in the scene. With one object selected the viewport draws arrows to the objects its logic targets (labelled with the actions) and dashed arrows from objects that target it, including off-screen ones; toggle in View ▾ → Logic links.
 - Hierarchy tools: type icons on every row, rename in place (double-click a name or F2), double-click to frame an object, a right-click menu (Rename, Focus, Duplicate, Copy, Paste, Unparent, Delete), and the selected row scrolls into view when you pick objects in the scene.
 - Drag-to-scrub number fields in the Inspector and animation tracks: press and drag left/right (Shift faster, Alt finer); a click still types; each scrub is one Undo step.
+- Thumbnails for your own imported Models (Assets tab) and saved Prefabs, drawn in the browser with the same software renderer as the Content Library pictures (textured, lit, transparent background); drawn a few at a time when idle and cached.
 - Hosted game pages share one cached, content-hashed engine/editor runtime: average page 7.6 MB → 1.8 MB, site 215 MB → 127 MB, upload ZIP 84 MB → 61 MB. Exports remain single-file.
 
 ## 2026-10-18 — Real-game controls and collision repair
