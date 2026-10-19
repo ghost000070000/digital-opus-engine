@@ -644,6 +644,7 @@ function renderInspectorBody() {
       savePrefabs(); renderPrefabPalette(); renderInspector();
       showStatus(`Saved prefab "${name}" (${memberCount} objects)`);
     };
+    if (typeof mountMultiEditSection === 'function') mountMultiEditSection(inspectorBody); // shared transform/look edits, align, randomize
     return;
   }
 

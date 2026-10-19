@@ -338,6 +338,14 @@
   .asset-row-actions button:hover { background: #223050; }
   #texture-library-list .asset-row-actions { flex-wrap: wrap; }
   #texture-library-list .asset-row[data-texture-id] { cursor: grab; }
+  .multi-edit { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px; }
+  .multi-edit-row { display: grid; grid-template-columns: 64px repeat(3, minmax(0, 1fr)); gap: 4px; align-items: center; margin: 4px 0; font-size: 11px; color: #9fb3d9; }
+  .multi-edit-row input { min-width: 0; }
+  .multi-edit-look { display: flex; align-items: center; gap: 12px; margin: 8px 0; font-size: 11px; }
+  .multi-edit-look label { display: flex; align-items: center; gap: 6px; }
+  .multi-edit-tools { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; margin: 6px 0; font-size: 11px; color: #9fb3d9; }
+  .multi-edit-tools > span { width: 100%; }
+  .multi-edit-tools .toolbar-btn { margin: 0; padding: 4px 7px; font-size: 11px; width: auto; }
   .texture-drag-ghost { position: fixed; z-index: 1000; pointer-events: none; display: flex; align-items: center; gap: 6px; padding: 4px 8px 4px 4px; background: #152238; border: 1px solid #536785; border-radius: 6px; color: #c7d3ea; font-size: 11px; box-shadow: 0 4px 14px #0008; }
   .texture-drag-ghost img { width: 28px; height: 28px; object-fit: cover; border-radius: 4px; }
   .texture-drag-ghost.has-target { border-color: #4fd1a5; color: #e8fff6; }
