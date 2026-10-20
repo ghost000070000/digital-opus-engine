@@ -27,6 +27,7 @@
 - Physics Objects: tick "Physics Object" in the Inspector and a Cube or model falls with gravity in Play, lands on solid objects and terrain, can be pushed by walking into it (heavier = slower), bounces, slides to a stop with friction, and Ball shapes roll. Settings save and export with the object; Stop restores authored positions.
 - On Object Enter / On Object Exit behavior events: a Trigger Volume, or a solid object such as a pressure plate, notices Physics Objects inside it or resting on it. Enter runs per arriving object, Exit when the last one leaves, so push-a-crate-onto-the-plate puzzles need no code.
 - Ready-made physics items in the Objects palette: Physics Crate (the textured library crate), Physics Ball (a built-in sphere model that rolls and bounces) and Pressure Plate + Door (a walk-over plate already wired with On Object Enter/Exit to open and close its door). Physics now uses each model's real mesh bounds, so base-origin models rest and slide correctly.
+- Scripts can use physics: onObjectEnter(ctx) / onObjectExit(ctx) hooks, ctx.velocity (get/set) and ctx.kick(x, y, z), usable from onStart; autocomplete and the API reference list them.
 - Hosted game pages share one cached, content-hashed engine/editor runtime: average page 7.6 MB → 1.8 MB, site 215 MB → 127 MB, upload ZIP 84 MB → 61 MB. Exports remain single-file.
 
 ## 2026-10-18 — Real-game controls and collision repair

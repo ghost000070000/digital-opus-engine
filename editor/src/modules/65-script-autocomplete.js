@@ -11,6 +11,8 @@ const SCRIPT_COMPLETIONS = {
     ['object', 'This object\'s id and name', 'object'],
     ['position', 'A copy of this object\'s position; assign a vector to move it', 'vec'],
     ['vec3', 'Make a vector', null, '(x, y, z)'],
+    ['velocity', 'Physics Object speed and direction; assign a vector to change it', 'vec'],
+    ['kick', 'Push a Physics Object: adds to its velocity', null, '(x, y, z)'],
     ['time', 'Seconds since Play started'],
     ['dt', 'Seconds since the last frame'],
     ['vars', 'Your own values for this object, kept between frames'],
@@ -62,6 +64,8 @@ const SCRIPT_HOOK_SNIPPETS = [
   ['onInteract', 'The player presses Interact nearby', '(ctx) {\n  \n}'],
   ['onClick', 'This object is clicked in Play', '(ctx) {\n  \n}'],
   ['onStop', 'Play stops', '(ctx) {\n  \n}'],
+  ['onObjectEnter', 'A Physics Object arrives in or on this object', '(ctx) {\n  \n}'],
+  ['onObjectExit', 'The last Physics Object leaves this object', '(ctx) {\n  \n}'],
 ];
 
 // What type does an expression like `ctx.player.position` have? null = unknown.

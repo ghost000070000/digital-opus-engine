@@ -20,6 +20,8 @@ assert(at('const v = ctx.vec3(1, 2, 3);\nv.').includes('length()'));
 assert.strictEqual(at('foo.'), null, 'unknown objects stay quiet');
 assert.strictEqual(at('ctx.vars.'), null, 'free-form values stay quiet');
 
+assert(at('ctx.ki').includes('kick(x, y, z)') && at('ctx.velocity.').includes('x'), 'physics members');
+assert(at('function onObj').includes('onObjectEnter'), 'object hooks');
 const hooks = at('function onU');
 assert.deepStrictEqual(hooks, ['onUpdate'], 'hook names after function');
 assert(!at('function onStart(ctx) {}\nfunction ').includes('onStart'), 'already-declared hooks are not offered again');

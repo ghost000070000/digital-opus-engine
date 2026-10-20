@@ -115,6 +115,11 @@ const body = (id, pos, settings = {}) => { const item = box(id, pos, [1, 1, 1], 
 }
 const language = fs.readFileSync(path.join(root, 'editor/src/00-authoring-language.js'), 'utf8');
 assert(language.includes("id: 'objectEnter', label: 'On Object Enter'") && language.includes("id: 'objectExit', label: 'On Object Exit'"), 'events offered in behavior pickers');
+// Scripts: object hooks and physics API.
+const script = fs.readFileSync(path.join(root, 'editor/src/modules/51-script-component.js'), 'utf8');
+assert(script.includes("objectEnter: 'onObjectEnter', objectExit: 'onObjectExit'") && script.includes("'onObjectEnter', 'onObjectExit']"), 'onObjectEnter/onObjectExit script hooks');
+assert(script.includes('kick: (x = 0, y = 0, z = 0) => { scriptPhysicsState(item);') && script.includes('set velocity(value) { scriptPhysicsState(item);'), 'ctx.kick and ctx.velocity work from onStart');
+assert(physics.includes('onObject(?:Enter|Exit)') && physics.includes('const scripted = item.script'), 'scripted objects are watched for object triggers');
 // Wiring: saved and loaded with the object; Inspector card mounted.
 const serialization = fs.readFileSync(path.join(root, 'editor/src/modules/36-scene-serialization.js'), 'utf8');
 assert.strictEqual((serialization.match(/physics: item\.physics \? \{ \.\.\.item\.physics \} : undefined/g) || []).length, 2, 'saved in both record writers');

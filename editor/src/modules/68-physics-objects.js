@@ -192,7 +192,8 @@ function updateObjectTrigger(zoneItem, bodies) {
 }
 function updateObjectTriggers(bodies) {
   for (const item of placed.slice()) {
-    if (item.kind !== 'cube' || !item.entity || !item.behaviors || !item.behaviors.some((b) => b.trigger === 'objectEnter' || b.trigger === 'objectExit')) continue;
+    const scripted = item.script && item.script.enabled !== false && /function\s+onObject(?:Enter|Exit)\s*\(/.test(item.script.code || '');
+    if (item.kind !== 'cube' || !item.entity || !(scripted || (item.behaviors || []).some((b) => b.trigger === 'objectEnter' || b.trigger === 'objectExit'))) continue;
     const { entered, emptied } = updateObjectTrigger(item, bodies);
     for (let i = 0; i < entered.length; i++) runBehaviors(item, 'objectEnter');
     if (emptied) runBehaviors(item, 'objectExit');

@@ -17,8 +17,8 @@
 // exported and hosted games boot straight into Play, which dispatches script
 // hooks, so its state has to be initialized first.
 
-var SCRIPT_HOOKS = ['onStart', 'onUpdate', 'onTriggerEnter', 'onTriggerExit', 'onInteract', 'onClick', 'onStop'];
-var SCRIPT_TRIGGER_HOOKS = { enter: 'onTriggerEnter', exit: 'onTriggerExit', interact: 'onInteract', click: 'onClick' };
+var SCRIPT_HOOKS = ['onStart', 'onUpdate', 'onTriggerEnter', 'onTriggerExit', 'onInteract', 'onClick', 'onStop', 'onObjectEnter', 'onObjectExit'];
+var SCRIPT_TRIGGER_HOOKS = { enter: 'onTriggerEnter', exit: 'onTriggerExit', interact: 'onInteract', click: 'onClick', objectEnter: 'onObjectEnter', objectExit: 'onObjectExit' };
 var SCRIPT_MAX_CODE = 64 * 1024;
 var scriptInstances = [];
 var scriptConsoleEntries = [];
@@ -59,6 +59,11 @@ function scriptLog(item, level, parts, line) {
   if (level === 'error') setScriptConsoleVisible(true);
   renderScriptConsole();
 }
+// Physics state on demand, so onStart can kick a Physics Object before its first physics step.
+function scriptPhysicsState(item) {
+  if (!item._phys && item.physics && item.physics.enabled !== false && item.entity) item._phys = { vel: new Opus.Vec3(), start: item.entity.position.clone(), grounded: false };
+  return item._phys || null;
+}
 function makeScriptContext(item) {
   const vars = {};
   const ctx = {
@@ -67,6 +72,10 @@ function makeScriptContext(item) {
     get position() { return item.entity.position.clone(); },
     set position(value) { if (value && [value.x, value.y, value.z].every(Number.isFinite)) item.entity.position = new Opus.Vec3(value.x, value.y, value.z); },
     vec3: (x = 0, y = 0, z = 0) => new Opus.Vec3(x, y, z),
+    // Physics Objects: current velocity (copy) and impulses.
+    get velocity() { return item._phys ? item._phys.vel.clone() : new Opus.Vec3(); },
+    set velocity(value) { scriptPhysicsState(item); if (item._phys && value && [value.x, value.y, value.z].every(Number.isFinite)) item._phys.vel = new Opus.Vec3(value.x, value.y, value.z); },
+    kick: (x = 0, y = 0, z = 0) => { scriptPhysicsState(item); if (item._phys && [x, y, z].every(Number.isFinite)) item._phys.vel = item._phys.vel.add(new Opus.Vec3(x, y, z)); return !!item._phys; },
     time: 0,
     dt: 0,
     vars,
@@ -309,6 +318,7 @@ var SCRIPT_API_REFERENCE_HTML = `<h3>Script API</h3>
 <li><code>ctx.input.action('jump')</code>, <code>.isDown('KeyE')</code>, <code>.wasPressed('Space')</code></li>
 <li><code>ctx.player.position</code>, <code>ctx.player.entity</code></li>
 <li><code>ctx.find('Name')</code> another object's entity</li>
+<li><code>ctx.velocity</code> get/set, <code>ctx.kick(x, y, z)</code> for Physics Objects; <code>onObjectEnter(ctx)</code> / <code>onObjectExit(ctx)</code> when Physics Objects arrive on / leave this object</li>
 <li><code>ctx.game.win()</code>, <code>.lose()</code>, <code>.setObjective(text)</code>, <code>.state</code></li>
 <li><code>ctx.toast(text)</code>, <code>ctx.playSound(hz, seconds)</code></li>
 <li><code>ctx.spawn('Prefab', dx, dz)</code>, <code>ctx.destroy()</code></li>
