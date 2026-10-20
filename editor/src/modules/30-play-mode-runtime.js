@@ -555,9 +555,12 @@ function wireItemTrigger(item) {
   const shapeOptions = useBoxShape
     ? { shape: 'box', half: item.entity.scale.scale(0.5), quat: item.entity.quaternion }
     : { shape: 'sphere', radius: 1.5 * Math.max(item.entity.scale.x, item.entity.scale.z) };
+  // Walk-over pads (Jump Pad, Teleporter, Finish Line): a box over the pad's
+  // footprint reaching about 2 m up, so standing on the pad is what counts.
+  const padBox = item.padTrigger ? { shape: 'box', half: new Opus.Vec3(Math.abs(item.entity.scale.x) / 2, 1.1 + Math.abs(item.entity.scale.y) / 2, Math.abs(item.entity.scale.z) / 2), quat: item.entity.quaternion } : null;
   const volume = new Opus.Physics.TriggerVolume({
-    center: item.entity.position,
-    ...shapeOptions,
+    center: padBox ? item.entity.position.add(new Opus.Vec3(0, 1.1, 0)) : item.entity.position,
+    ...(padBox || shapeOptions),
     onEnter: hasEnter ? () => {
       if (oneShot && item.triggerFired) return;
       item.triggerFired = true;

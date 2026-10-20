@@ -106,6 +106,7 @@ function serializeCubeRecord(item) {
     persistRuntimeState: item.persistRuntimeState || undefined,
     carryable: item.carryable || undefined,
     physics: item.physics ? { ...item.physics } : undefined, // Physics Object settings (68-physics-objects.js)
+    padTrigger: item.padTrigger || undefined, // walk-over pad trigger box
     variables: (item.variables && Object.keys(item.variables).length) ? item.variables : undefined,
     prefabParams: (item.prefabParams && Object.keys(item.prefabParams).length) ? item.prefabParams : undefined,
     localPosition: item.localPosition ? [item.localPosition.x, item.localPosition.y, item.localPosition.z] : undefined,
@@ -212,6 +213,7 @@ function serializeBaseItemRecord(item) {
     persistRuntimeState: item.persistRuntimeState || undefined,
     carryable: item.carryable || undefined,
     physics: item.physics ? { ...item.physics } : undefined, // Physics Object settings (68-physics-objects.js)
+    padTrigger: item.padTrigger || undefined, // walk-over pad trigger box
     variables: (item.variables && Object.keys(item.variables).length) ? item.variables : undefined,
     prefabParams: (item.prefabParams && Object.keys(item.prefabParams).length) ? item.prefabParams : undefined,
     localPosition: item.localPosition ? [item.localPosition.x, item.localPosition.y, item.localPosition.z] : undefined,
@@ -427,6 +429,7 @@ function instantiateCubeRecord(record, position, originDelta = null) {
     persistRuntimeState: record.persistRuntimeState || undefined,
     carryable: record.carryable || undefined,
     physics: record.physics && typeof record.physics === 'object' ? { ...record.physics } : undefined,
+    padTrigger: record.padTrigger === true || undefined,
     // Wave 8 (Priority B): a plain copy, not a shared reference -- each
     // revived instance (including every member of a Duplicate/Array/Scatter
     // batch built from the SAME source record) gets its own independent
@@ -507,6 +510,7 @@ function instantiateItemFromRecord(record) {
     persistRuntimeState: record.persistRuntimeState || undefined,
     carryable: record.carryable || undefined,
     physics: record.physics && typeof record.physics === 'object' ? { ...record.physics } : undefined,
+    padTrigger: record.padTrigger === true || undefined,
     // Wave 8 (Priority B): a plain copy, not a shared reference -- each
     // revived instance (including every member of a Duplicate/Array/Scatter
     // batch built from the SAME source record) gets its own independent

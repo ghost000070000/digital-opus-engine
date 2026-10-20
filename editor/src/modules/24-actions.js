@@ -222,6 +222,39 @@ const ACTION_TYPES = {
       showToast('⚡ Boost!');
     },
   },
+  launchPlayer: {
+    label: 'Launch Player', help: 'Throws the player upward (a jump pad). Upward speed in metres per second; 14 clears about 5 m.',
+    fields: [{ key: 'force', label: 'Upward speed', type: 'number', placeholder: '14' }],
+    exec: (p) => {
+      if (!player || !player.entity || !player.velocity) return;
+      const force = Number.isFinite(parseFloat(p.force)) ? Math.max(0, Math.min(60, parseFloat(p.force))) : 14;
+      const v = player.velocity;
+      player.velocity = new Opus.Vec3(v.x, force, v.z);
+      player.entity.position = player.entity.position.add(new Opus.Vec3(0, 0.05, 0)); // leave the ground this frame
+      app.audio.playBlip({ frequency: 520, duration: 0.12, type: 'sine' });
+    },
+  },
+  teleportPlayer: {
+    label: 'Teleport Player', help: 'Moves the player to stand on or beside another object (a teleporter or portal) and stops their movement.',
+    fields: [{ key: 'targetId', label: 'Destination object', type: 'target', implicitSelf: false, emptyLabel: 'Choose destination' }],
+    exec: (p, item) => {
+      const target = p.targetId ? findItemById(p.targetId) : null;
+      if (!player || !player.entity || !target || !placed.includes(target)) return;
+      const bounds = typeof surfaceWorldBounds === 'function' && target.entity ? surfaceWorldBounds(target.entity) : null;
+      const at = itemPosition(target);
+      // Land just beside the destination so arriving does not immediately re-trigger it.
+      // Clear of the destination's own trigger: its box for pads/volumes, its generous touch sphere otherwise.
+      const footprint = bounds ? Math.max(bounds.max[0] - bounds.min[0], bounds.max[2] - bounds.min[2]) / 2 : 0.5;
+      const sphere = target.padTrigger || target.isTrigger || !target.entity ? 0 : 1.5 * Math.max(target.entity.scale.x, target.entity.scale.z);
+      const side = Math.max(footprint + 0.9, sphere + 0.5);
+      const top = bounds ? bounds.max[1] : at.y;
+      const heading = target.entity ? target.entity.forward : new Opus.Vec3(0, 0, 1);
+      const flat = Math.hypot(heading.x, heading.z) > 1e-4 ? new Opus.Vec3(heading.x / Math.hypot(heading.x, heading.z), 0, heading.z / Math.hypot(heading.x, heading.z)) : new Opus.Vec3(0, 0, 1);
+      player.entity.position = new Opus.Vec3(at.x + flat.x * side, top + 1.2, at.z + flat.z * side);
+      if (player.velocity) player.velocity = new Opus.Vec3(0, 0, 0);
+      app.audio.playBlip({ frequency: 880, duration: 0.18, type: 'triangle' });
+    },
+  },
   moveObject: {
     label: 'Move Object (relative)',
     fields: [

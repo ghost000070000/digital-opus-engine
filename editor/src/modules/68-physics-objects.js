@@ -331,9 +331,43 @@ function placeReadyMade(kind, point, surfaceY) {
     showStatus('Pressure Plate + Door: push a Physics Object onto the plate to open the door');
     return plate;
   }
+  // A flat walk-over pad that runs its behaviors when the player steps on it.
+  const pad = (name, color, position, behaviors) => {
+    placeItem('cube', position);
+    const item = selectedItem;
+    item.name = name;
+    item.entity.scale.set(1.6, 0.08, 1.6);
+    item.entity.color = color;
+    item.entity.solid = false;
+    item.padTrigger = true;
+    item.behaviors = behaviors;
+    restReadyMade([item], surfaceY);
+    return item;
+  };
+  if (kind === 'jumpPad') {
+    const item = pad('Jump Pad', [0.2, 0.75, 0.95], at, [{ trigger: 'enter', action: 'launchPlayer', params: { force: 14 } }]);
+    selectItem(item); renderSceneList(); renderInspector();
+    return item;
+  }
+  if (kind === 'teleporterPair') {
+    const a = pad('Teleporter A', [0.65, 0.35, 0.95], at, []);
+    const b = pad('Teleporter B', [0.65, 0.35, 0.95], new Opus.Vec3(at.x + 8, at.y, at.z), []);
+    a.behaviors = [{ trigger: 'enter', action: 'teleportPlayer', params: { targetId: b.id } }];
+    b.behaviors = [{ trigger: 'enter', action: 'teleportPlayer', params: { targetId: a.id } }];
+    selectedItems.clear(); selectedItems.add(a); selectedItems.add(b); selectedItem = a;
+    syncSelectionMarkers(); renderSceneList(); renderInspector();
+    showStatus('Teleporter Pair: drag either pad anywhere; each sends the player beside the other');
+    return a;
+  }
+  if (kind === 'finishLine') {
+    const item = pad('Finish Line', [0.95, 0.95, 0.95], at, [{ trigger: 'enter', action: 'win', params: {} }]);
+    item.entity.scale.set(4, 0.08, 1.2);
+    selectItem(item); renderSceneList(); renderInspector();
+    return item;
+  }
   return null;
 }
-for (const [kind, label] of [['physicsCrate', '📦 Physics Crate'], ['physicsBall', '⚽ Physics Ball'], ['pressurePlate', '⏏ Pressure Plate + Door']]) {
+for (const [kind, label] of [['physicsCrate', '📦 Physics Crate'], ['physicsBall', '⚽ Physics Ball'], ['pressurePlate', '⏏ Pressure Plate + Door'], ['jumpPad', '🟦 Jump Pad'], ['teleporterPair', '🌀 Teleporter Pair'], ['finishLine', '🏁 Finish Line (Win)']]) {
   const el = document.getElementById(`palette-ready-${kind}`);
   if (!el) continue;
   el.style.touchAction = 'none';
