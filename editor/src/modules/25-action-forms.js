@@ -226,6 +226,7 @@ function renderActionFieldInput(f, value, idAttr, values, contextItem) {
 }
 
 function runAction(behavior, item, signalEvent, controllerEvent) {
+  if (behavior && behavior.requires && typeof behaviorRequirementGate === 'function' && !behaviorRequirementGate(behavior, item)) return; // Requires item (69-requires-item.js)
   if (behavior.action === 'graph') {
     const scope=(signalEvent&&signalEvent.type!=='none'||controllerEvent)?OpusGraphVariables.createScope(behavior.graph):undefined;
     if(scope)scope.signalEvent=signalEvent;

@@ -29,6 +29,7 @@
 - Ready-made physics items in the Objects palette: Physics Crate (the textured library crate), Physics Ball (a built-in sphere model that rolls and bounces) and Pressure Plate + Door (a walk-over plate already wired with On Object Enter/Exit to open and close its door). Physics now uses each model's real mesh bounds, so base-origin models rest and slide correctly.
 - Scripts can use physics: onObjectEnter(ctx) / onObjectExit(ctx) hooks, ctx.velocity (get/set) and ctx.kick(x, y, z), usable from onStart; autocomplete and the API reference list them.
 - More ready-made pieces: Jump Pad, Teleporter Pair and Finish Line (Win), built on two new actions (Launch Player, Teleport Player). Walk-over pads trigger on their own footprint (a box reaching about 2 m up) instead of the wide touch sphere, and teleport arrivals land clear of the destination so nothing bounces back.
+- Requires item: any Behavior can need a named item (🔑 on its Inspector row): it runs only when the player carries enough, can use the item up, and otherwise shows a message such as "Locked: find the Key". New ready-made Key + Locked Door uses it.
 - Hosted game pages share one cached, content-hashed engine/editor runtime: average page 7.6 MB → 1.8 MB, site 215 MB → 127 MB, upload ZIP 84 MB → 61 MB. Exports remain single-file.
 
 ## 2026-10-18 — Real-game controls and collision repair

@@ -416,6 +416,13 @@
   .physics-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 10px; font-size: 11px; color: #9fb3d9; margin-top: 6px; }
   .physics-grid label { display: flex; align-items: center; gap: 6px; }
   .physics-grid input[type=number], .physics-grid select { min-width: 0; width: 100%; }
+  .requires-btn { width: auto !important; margin: 0 4px 0 0 !important; padding: 1px 6px !important; font-size: 11px; background: none; border: 1px solid #2b3a55; border-radius: 4px; color: #8fa0bf; cursor: pointer; }
+  .requires-btn.set { color: #f2c14e; border-color: #7a6326; }
+  .requires-editor { display: grid; gap: 6px; margin: 4px 0 8px; padding: 8px; background: #0f1a2e; border: 1px solid #2b3a55; border-radius: 6px; font-size: 11px; color: #9fb3d9; }
+  .requires-editor label { display: grid; gap: 2px; }
+  .requires-editor .requires-check { display: flex; align-items: center; gap: 6px; }
+  .requires-actions { display: flex; gap: 6px; }
+  .requires-actions .toolbar-btn { margin: 0; width: auto; }
   .scene-list-icon { flex: none; width: 16px; text-align: center; font-size: 11px; color: #7d8fb0; margin-right: 4px; }
   .scene-list-rename { flex: 1; min-width: 0; margin: 0; padding: 1px 4px; font-size: 12px; background: #0b1222; color: #e8eefb; border: 1px solid #4fd1a5; border-radius: 3px; }
   .scene-context-menu { position: fixed; z-index: 1200; min-width: 180px; padding: 4px; background: #121c30; border: 1px solid #2b3a55; border-radius: 8px; box-shadow: 0 10px 28px #000a; }
@@ -1638,6 +1645,7 @@
       <div class="palette-item" id="palette-ready-jumpPad" title="Stepping on it throws the player upward">🟦 Jump Pad</div>
       <div class="palette-item" id="palette-ready-teleporterPair" title="Two linked pads: step on one to arrive beside the other">🌀 Teleporter Pair</div>
       <div class="palette-item" id="palette-ready-finishLine" title="Reaching it wins the game">🏁 Finish Line (Win)</div>
+      <div class="palette-item" id="palette-ready-keyAndDoor" title="A Key pickup and a door that opens only when the player has it">🔑 Key + Locked Door</div>
       <p class="palette-category">Effects</p>
       <div class="palette-item" id="palette-emitter">✨ Particle Emitter</div>
       <p class="palette-category">Cameras</p>

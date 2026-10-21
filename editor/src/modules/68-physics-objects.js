@@ -365,7 +365,7 @@ function placeReadyMade(kind, point, surfaceY) {
     selectItem(item); renderSceneList(); renderInspector();
     return item;
   }
-  return null;
+  return typeof placeExtraReadyMade === 'function' ? placeExtraReadyMade(kind, at, surfaceY) : null;
 }
 for (const [kind, label] of [['physicsCrate', '📦 Physics Crate'], ['physicsBall', '⚽ Physics Ball'], ['pressurePlate', '⏏ Pressure Plate + Door'], ['jumpPad', '🟦 Jump Pad'], ['teleporterPair', '🌀 Teleporter Pair'], ['finishLine', '🏁 Finish Line (Win)']]) {
   const el = document.getElementById(`palette-ready-${kind}`);
