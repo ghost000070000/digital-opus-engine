@@ -27,7 +27,9 @@ function blankStarterLevelContent() {
 }
 function createBlankProject(name, options = {}) {
   if(playMode){showStatus('Stop Play before creating a project.');return false;}
-  if(projectDurability?.signature!==undefined&&projectHasUnsavedChanges()&&!window.confirm('Replace the current unsaved document? Back Up Project JSON or save first. Named saved projects are kept.'))return false;
+  // The untouched starter/sample is not creator work: no prompt for it.
+  const untouched=typeof projectIsUntouchedBaseline==='function'&&projectIsUntouchedBaseline();
+  if(projectDurability?.signature!==undefined&&!untouched&&projectHasUnsavedChanges()&&!window.confirm('Replace the current unsaved document? Back Up Project JSON or save first. Named saved projects are kept.'))return false;
   // Explicit choice boundary: replace only the current in-memory document;
   // named saved projects and the user's separate Prefab library stay intact.
   assets = []; textureAssets = []; spriteAssets = []; spriteAnimationClips = []; tilesets = []; tilemapChunks = []; audioAssets = [];

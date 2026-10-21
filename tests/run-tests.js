@@ -42,6 +42,7 @@ run(path.join('tests', 'workflow-tools.test.js'));
 run(path.join('tests', 'physics-objects.test.js'));
 run(path.join('tests', 'gameplay-pads.test.js'));
 run(path.join('tests', 'requires-item.test.js'));
+run(path.join('tests', 'shortcuts-sheet.test.js'));
 run(path.join('tests', 'real-demo-evidence.test.js'));
 run(path.join('tests', 'real-demo-wall-content.test.js'));
 run(path.join('tests', 'real-demo-masonry-assembly.test.js'));
