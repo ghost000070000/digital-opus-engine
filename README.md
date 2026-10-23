@@ -1,13 +1,25 @@
 # Digital Opus Engine
 
-A zero-dependency, vanilla-JavaScript WebGL2 game engine — and, built entirely on top of its own public API, **Crate Run**: a no-code drag-and-drop game editor shipped as a real, playable game/editor hybrid.
+A zero-dependency, vanilla-JavaScript WebGL2 game engine — and, built entirely on top of its own public API, a no-code drag-and-drop game editor for browser mini-games, with 28 example games.
 
 ```bash
-python -m http.server 8199
+node tools/dev-server.js
 ```
-then open `http://localhost:8199/editor/index.html` — it opens straight into a playable game (drive a hovercraft across a 7-island archipelago collecting crates), with the full editor one click away ("Edit This Game"), editing the exact same live scene the game just ran.
+then open `http://localhost:8837/editor/index.html`. The start screen offers **Start Blank** (a playable scene with ground, a player start and a third-person character), a guided tour, playable starters and the example games; press **?** in the editor for every keyboard shortcut.
 
-`file://` won't reliably work for the editor (module loading and some browser APIs need a real origin) — serve it over HTTP.
+`file://` won't reliably work for the editor (module loading and some browser APIs need a real origin) — serve it over HTTP. The public site build lives in `dist/engine-site` (see Build & test).
+
+## Editor at a glance
+
+- **Scene view like Unity**: right-drag to look and fly with WASD/QE, middle-drag pan, Alt-drag orbit, proportional zoom, F to frame, Shift+1…9 / 1…9 saved views, Play From Here (Shift+P).
+- **Placing and arranging**: drag from the Objects palette, the Content Library (with thumbnails) or straight from the desktop (models, images); objects rest on whatever is under the cursor; move-gizmo plane handle, hold Ctrl to snap, hold V to snap corners, End to drop to the surface; precise click selection.
+- **Editing many things at once**: copy/cut/paste across levels and projects (assets travel along), multi-object Inspector (shared transform, colour, align, distribute, randomize), copy/paste logic, select similar, drag-to-scrub number fields, Hierarchy rename/focus/context menu, Undo keeps the selection.
+- **Gameplay without code**: Behaviors with searchable actions, 🎯 pick targets in the scene, logic arrows in the viewport, Requires-item (keys, locks), Physics Objects (fall, push, bounce, roll) with On Object Enter/Exit, and ready-made pieces: Physics Crate/Ball, Pressure Plate + Door, Jump Pad, Teleporter Pair, Finish Line, Key + Locked Door, Coin Trail and Countdown Timer, which add their own HUD.
+- **Code when you want it**: a per-object Script component with lifecycle hooks, autocomplete, a Script Console and physics access (`ctx.kick`, `onObjectEnter`).
+- **Visual logic and animation**: Visual Graphs with live debugging and a project Variables panel with safe rename; a docked animation timeline where you pose objects in the scene and key them.
+- **Durable saves and sharing**: projects live in IndexedDB; export a single-file Playable or Editable HTML game.
+
+Everything new is listed in [`CHANGELOG.md`](CHANGELOG.md).
 
 ---
 
@@ -74,7 +86,7 @@ The editor is the actual product. The engine is the proven runtime underneath it
 
 ## Current state
 
-**The engine** exports a documented, tested public API (`node tests/run-tests.js` — 18 passing regression tests covering math, procedural sampling, physics, scene/entity ownership, particles, input, settings, save slots) plus everything added this session: glTF import/export-of-arrays, touch input primitives, and the HUD's touch button.
+**The engine** exports a documented, tested public API (`node tests/run-tests.js` — 468 test files, run together, covering math, procedural sampling, physics, scene/entity ownership, particles, input, settings, save slots) plus everything added this session: glTF import/export-of-arrays, touch input primitives, and the HUD's touch button.
 
 **Crate Run** (`editor/index.html`) is a 7-island archipelago: 21 crates (disappear on collection, no double-counting on re-entry), 7 hazards (3 patrol on a moving path, the rest static — all a spiky mine shape, not a plain cube), 5 boost pads (a pyramid shape, force-configurable), one bonus crate authored entirely via the node-graph editor, and one landmark imported via `Opus.Mesh.fromGLTF` from a genuinely multi-node model. Playable start to finish on desktop (mouse + keyboard) and touch (on-screen D-pad + boost button, touch-capable editor).
 
