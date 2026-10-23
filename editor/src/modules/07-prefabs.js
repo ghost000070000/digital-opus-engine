@@ -899,7 +899,13 @@ function commitPlacementPayload(payload, point, placementOptions) {
     if(placementOptions?.plane!=='xy')placementPoint.y = 1; // historical ground placement height
     return placeSpriteAssetInstance(asset, placementPoint);
   }
-  if (payload && typeof payload.readyMade === 'string' && typeof placeReadyMade === 'function') return placeReadyMade(payload.readyMade, placementPoint, surfaceY); // physics ready-mades (68-physics-objects.js)
+  if (payload && typeof payload.readyMade === 'string' && typeof placeReadyMade === 'function') { // ready-mades (68-physics-objects.js and friends)
+    const historyBefore = undoStack.length;
+    const result = placeReadyMade(payload.readyMade, placementPoint, surfaceY);
+    // Several parts (key + door, plate + door, coin trail) are still one placement: one Undo step.
+    if (undoStack.length > historyBefore + 1) { undoStack.splice(historyBefore + 1); if (typeof updateUndoRedoButtons === 'function') updateUndoRedoButtons(); }
+    return result;
+  }
   if (payload && typeof payload.libraryModel === 'string') { const added = addContentLibraryModel(payload.libraryModel, placementPoint); if (surfaceY !== null && added && added.then) added.then((item) => { if (item) restNewItemsOnSurface([item], surfaceY); }); return null; } // Content Library drag (loads asynchronously)
   if (payload && payload.paletteType) { const before = surfaceY !== null ? new Set(placed) : null; placeItem(payload.paletteType, placementPoint,placementOptions); if (before) restNewItemsOnSurface(placed.filter((item) => !before.has(item)), surfaceY); return selectedItem; }
   return null;

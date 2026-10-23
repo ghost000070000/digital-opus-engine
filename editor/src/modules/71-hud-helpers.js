@@ -46,13 +46,46 @@ function placeCoinTrail(at, surfaceY) {
   showStatus('Coin Trail: five coins that add to the Score shown on screen');
   return coins[2];
 }
+function ensureTimerHud(timer, template = '⏱ {value}') {
+  if (playMode || !currentUiConfig || !Array.isArray(currentUiConfig.hudElements)) return null;
+  if (currentUiConfig.hudElements.some((el) => el && el.binding && el.binding.source === 'timer' && el.binding.name === timer)) return null;
+  const element = { id: generateHudElementId(), kind: 'label', anchor: 'top-center', offsetX: 0, offsetY: 60, keepInside: true, visible: true,
+    text: 'Time', binding: { version: 1, source: 'timer', name: timer }, bindingTemplate: template };
+  currentUiConfig.hudElements.push(element);
+  if (typeof refreshHudBindingCatalog === 'function') { try { refreshHudBindingCatalog(); } catch (error) { /* refreshed on render */ } }
+  if (typeof renderHudElementList === 'function') renderHudElementList();
+  return element;
+}
+// Countdown Timer: a game-timer marker (hidden in Play) that counts down from
+// 60 s, shows the time at the top of the screen and loses the game at zero.
+function placeCountdownTimer(at, seconds = 60) {
+  placeItem('trigger', new Opus.Vec3(at.x, at.y, at.z));
+  const timer = selectedItem;
+  timer.name = 'Countdown Timer';
+  timer.behaviors = [
+    { trigger: 'start', action: 'startTimer', params: { name: 'Countdown', duration: seconds, countDown: true } },
+    { trigger: 'update', action: 'graph', graph: {
+      nodes: [
+        { id: 'done', type: 'timerFinished', timer: 'Countdown', x: 40, y: 40 },
+        { id: 'lose', type: 'lose', x: 340, y: 40 },
+      ],
+      edges: [{ from: 'start', to: 'lose', kind: 'next' }, { from: 'done', to: 'lose', kind: 'gate' }],
+      variables: [],
+    } },
+  ];
+  ensureTimerHud('Countdown');
+  selectItem(timer); renderSceneList(); renderInspector();
+  showStatus('Countdown Timer: 60 seconds shown at the top; the game is lost at zero. Change Duration in its Start Timer behavior.');
+  return timer;
+}
 function placeMoreReadyMade(kind, at, surfaceY) {
   if (kind === 'coinTrail') return placeCoinTrail(at, surfaceY);
+  if (kind === 'countdown') return placeCountdownTimer(at);
   return null;
 }
-(function wireCoinTrailPalette() {
-  const el = document.getElementById('palette-ready-coinTrail');
-  if (!el) return;
+for (const [kind, label] of [['coinTrail', '🪙 Coin Trail'], ['countdown', '⏱ Countdown Timer']]) {
+  const el = document.getElementById('palette-ready-' + kind);
+  if (!el) continue;
   el.style.touchAction = 'none';
-  el.addEventListener('pointerdown', (event) => { if (!playMode) beginPlacementPointerDrag(event, { readyMade: 'coinTrail' }, '🪙 Coin Trail', { immediate: true }); });
-})();
+  el.addEventListener('pointerdown', (event) => { if (!playMode) beginPlacementPointerDrag(event, { readyMade: kind }, label, { immediate: true }); });
+}

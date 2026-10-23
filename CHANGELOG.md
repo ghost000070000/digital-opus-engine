@@ -33,6 +33,7 @@
 - Keyboard shortcuts sheet: press ? (or Ctrl+K → Keyboard Shortcuts, or View ▾) for every editor shortcut in one place.
 - Start Blank on a first launch no longer asks to "Replace the current unsaved document?": the untouched starter is not creator work. Edited projects still ask.
 - Gameplay pieces bring their HUD: placing a Collectible adds a ⭐ Score label bound to the score counter (once), and the Key + Locked Door adds the inventory widget. New Coin Trail ready-made places five coins.
+- Countdown Timer ready-made: a 60-second countdown shown at the top of the screen that loses the game at zero (a hidden timer object with Start Timer and a small Graph). Multi-part ready-mades (Key + Door, Plate + Door, Teleporter Pair, Coin Trail) are now one Undo step.
 - Hosted game pages share one cached, content-hashed engine/editor runtime: average page 7.6 MB → 1.8 MB, site 215 MB → 127 MB, upload ZIP 84 MB → 61 MB. Exports remain single-file.
 
 ## 2026-10-18 — Real-game controls and collision repair
