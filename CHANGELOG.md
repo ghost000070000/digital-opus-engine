@@ -32,6 +32,7 @@
 - Requires item: any Behavior can need a named item (🔑 on its Inspector row): it runs only when the player carries enough, can use the item up, and otherwise shows a message such as "Locked: find the Key". New ready-made Key + Locked Door uses it.
 - Keyboard shortcuts sheet: press ? (or Ctrl+K → Keyboard Shortcuts, or View ▾) for every editor shortcut in one place.
 - Start Blank on a first launch no longer asks to "Replace the current unsaved document?": the untouched starter is not creator work. Edited projects still ask.
+- Gameplay pieces bring their HUD: placing a Collectible adds a ⭐ Score label bound to the score counter (once), and the Key + Locked Door adds the inventory widget. New Coin Trail ready-made places five coins.
 - Hosted game pages share one cached, content-hashed engine/editor runtime: average page 7.6 MB → 1.8 MB, site 215 MB → 127 MB, upload ZIP 84 MB → 61 MB. Exports remain single-file.
 
 ## 2026-10-18 — Real-game controls and collision repair

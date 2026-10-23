@@ -103,7 +103,7 @@ function openRequirementEditor(item, index, row) {
 
 // --- Ready-made Key + Locked Door ---
 function placeExtraReadyMade(kind, at, surfaceY) {
-  if (kind !== 'keyAndDoor') return null;
+  if (kind !== 'keyAndDoor') return typeof placeMoreReadyMade === 'function' ? placeMoreReadyMade(kind, at, surfaceY) : null;
   const rest = (items) => { if (Number.isFinite(surfaceY) && typeof restNewItemsOnSurface === 'function') restNewItemsOnSurface(items, surfaceY); };
   placeItem('cube', new Opus.Vec3(at.x, at.y, at.z));
   const key = selectedItem;
@@ -128,6 +128,7 @@ function placeExtraReadyMade(kind, at, surfaceY) {
   door.behaviors = [
     { trigger: 'enter', action: 'setVisibility', params: { visible: false }, requires: { item: 'Key', count: 1, consume: true, message: 'Locked: find the Key' } },
   ];
+  if (typeof ensureInventoryHud === 'function') ensureInventoryHud(); // so the player sees they carry the Key
   selectedItems.clear(); selectedItems.add(key); selectedItems.add(door); selectedItem = door;
   syncSelectionMarkers(); renderSceneList(); renderInspector();
   showStatus('Key + Locked Door: touching the Key collects it; the door opens when the player arrives with it');

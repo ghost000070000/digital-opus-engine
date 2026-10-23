@@ -266,6 +266,7 @@ function placeItem(type, point, placementOptions) {
     };
     addPlaced(item);
     selectItem(item);
+    if (typeof ensureScoreHud === 'function') ensureScoreHud('score'); // show the score it adds to (71-hud-helpers.js)
   } else if (type === 'healthPickup') {
     point.y = 0.6;
     const entity = app.addEntity({ mesh: cubeMesh, color: [0.3, 0.9, 0.4], position: point, scale: new Opus.Vec3(0.4, 0.4, 0.4), unlit: true });
