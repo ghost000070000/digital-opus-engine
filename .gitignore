@@ -15,3 +15,6 @@ tmp/
 .tmp/
 .tmp-*/
 *.tmp
+# Test-run artifacts and local previews (regenerate with the qualification tools)
+qualification/
+live-local-preview/
